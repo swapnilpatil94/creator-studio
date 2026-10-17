@@ -1,0 +1,19 @@
+{
+ "zoom": {
+  "army": 0.729,
+  "face": 0.94
+ },
+ "moonShift": {
+  "flight": {
+   "dx": 140,
+   "dy": -40
+  }
+ },
+ "heroGain": {
+  "all": 1
+ },
+ "camDx": {
+  "face": -140
+ },
+ "camDy": {}
+}

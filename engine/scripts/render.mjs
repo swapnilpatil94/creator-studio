@@ -41,7 +41,7 @@ await fs.mkdir(frameDir, { recursive: true });
 let duration, frameCount;
 const browserErrors = [];
 const externalRequests = [];
-const browser = await chromium.launch({ headless: true, args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
+const browser = await chromium.launch(args.includes("--gpu") ? { headless: true } : { headless: true, args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
 try {
   const page = await browser.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 2, reducedMotion: "reduce" });
   page.on("console", message => {

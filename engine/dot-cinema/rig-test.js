@@ -1,0 +1,22 @@
+import * as L from "./lib.js";
+const c = document.getElementById("c"), g = c.getContext("2d");
+const pose = new URLSearchParams(location.search).get("pose") || "stand";
+const zoomHead = new URLSearchParams(location.search).get("head") === "1";
+const mask = L.makeLayer(), lit = L.makeLayer(), tmp = { c: document.createElement("canvas") }; tmp.c.width = L.W; tmp.c.height = L.H; tmp.g = tmp.c.getContext("2d");
+window.getDuration = () => 1;
+window.renderAt = t => {
+  g.fillStyle = "#020204"; g.fillRect(0, 0, L.W, L.H);
+  const p = L.POSES[pose], S = zoomHead ? 620 : 175;
+  L.clearLayer(mask); const cam = { x: 540, y: 960, zoom: 1, roll: 0 }; L.applyCam(mask.g, cam, 1);
+  const gs = L.groundShift(p);
+  const oy = zoomHead ? 960 + 1.05 * S : 960 + 1.5 * 190 - gs * 190 * 0.5;
+  const ox = zoomHead ? 380 : (pose.startsWith("leap") || pose === "glide" ? 640 : 540);
+  const rotq = Number(new URLSearchParams(location.search).get('rot')||0); const info = L.drawHeroMask(mask.g, p, S, ox, oy, t, {rot: rotq});
+  L.shade(mask, lit, { light: [0.45, -0.5, 0.74], rim: [0.7, -0.7], blur: 4, K: 11, amb: 0.1, dif: 0.75, rimGain: 1.4, tint: 0, tintRim: 0.0, fur: 0, top: 0.3 });
+  lit.g.setTransform(1,0,0,1,0,0); L.applyCam(lit.g, cam, 1);
+  lit.g.fillStyle = "rgb(255,255,0)"; lit.g.beginPath(); lit.g.arc(info.eye[0], info.eye[1], S * 0.03, 0, L.TAU); lit.g.fill();
+  L.dotify(g, lit, { cell: zoomHead ? 6 : 7 });
+  L.bloom(g, tmp, [[18, 0.5]]);
+  L.filmFinish(g, 1);
+};
+window.renderAt(0);

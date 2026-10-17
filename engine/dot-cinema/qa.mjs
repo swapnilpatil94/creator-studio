@@ -1,0 +1,61 @@
+#!/usr/bin/env node
+// QA on the ACTUAL rendered mp4: dimensions, fps, duration, audio level/clipping/silence, a/v sync onset,
+// blank / frozen / repeated frames, caption presence + margin clipping.
+// usage: node qa.mjs <video.mp4> <segments.json> <leadSeconds> <report.json>
+import { spawnSync } from "node:child_process"; import fs from "node:fs";
+const [video, segFile, leadS, out] = process.argv.slice(2); const LEAD = Number(leadS || 0);
+const segs = JSON.parse(fs.readFileSync(segFile, "utf8")); const narrEnd = segs.duration_seconds, firstWord = segs.segments[0].words[0].start;
+const run = (cmd, args, o = {}) => spawnSync(cmd, args, { encoding: o.buffer ? "buffer" : "utf8", maxBuffer: 1 << 30 });
+const checks = []; const add = (name, pass, detail) => { checks.push({ name, pass, detail }); console.log((pass ? "PASS " : "FAIL ") + name + " — " + detail); };
+
+const pr = JSON.parse(run("ffprobe", ["-v", "error", "-show_streams", "-show_format", "-of", "json", video]).stdout);
+const v = pr.streams.find(s => s.codec_type === "video"), a = pr.streams.find(s => s.codec_type === "audio"), dur = Number(pr.format.duration);
+const [fn, fd] = v.r_frame_rate.split("/").map(Number), fps = fn / fd;
+add("dimensions 1080x1920", v.width === 1080 && v.height === 1920, v.width + "x" + v.height);
+add("frame rate 24", Math.abs(fps - 24) < 0.01, fps.toFixed(2) + " fps");
+add("audio stream present", !!a, a ? a.codec_name + " " + a.sample_rate + "Hz" : "missing");
+add("duration covers narration + lead", dur >= narrEnd + LEAD - 0.05, dur.toFixed(2) + "s vs needed " + (narrEnd + LEAD).toFixed(2) + "s");
+
+// audio levels / clipping / silence inside the narration window
+const vd = run("ffmpeg", ["-i", video, "-vn", "-af", "volumedetect", "-f", "null", "-"]).stderr;
+const mean = Number((vd.match(/mean_volume: (-?[\d.]+)/) || [])[1]), peak = Number((vd.match(/max_volume: (-?[\d.]+)/) || [])[1]);
+add("audio loudness sane (-30..-12 dB mean)", mean > -30 && mean < -12, "mean " + mean + " dB");
+add("no clipping (peak < -0.5 dB)", peak < -0.5, "peak " + peak + " dB");
+const sd = run("ffmpeg", ["-i", video, "-vn", "-af", "silencedetect=noise=-38dB:d=0.9", "-f", "null", "-"]).stderr;
+const sil = [...sd.matchAll(/silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+)/g)].map(m => [Number(m[1]), Number(m[2])]).filter(([s, e]) => s > LEAD + 0.5 && e < LEAD + narrEnd - 0.2);
+add("no unintended silence >0.9s inside narration", sil.length === 0, sil.length ? JSON.stringify(sil) : "none");
+
+// sync: first audible onset vs expected first word
+const pcm = run("ffmpeg", ["-v", "error", "-i", video, "-vn", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], { buffer: true }).stdout;
+const f = new Float32Array(pcm.buffer, pcm.byteOffset, Math.floor(pcm.length / 4)); let onset = -1; const win = 800;
+for (let i = 0; i + win < f.length; i += win) { let e = 0; for (let k = 0; k < win; k++) e += f[i + k] * f[i + k]; if (Math.sqrt(e / win) > 0.02) { onset = i / 16000; break; } }
+const expected = LEAD + firstWord;
+add("audio onset matches scene timeline (±0.25s)", onset >= 0 && Math.abs(onset - expected) < 0.25, "onset " + onset.toFixed(2) + "s vs expected " + expected.toFixed(2) + "s");
+
+// frames
+const W = 270, H = 480, raw = run("ffmpeg", ["-v", "error", "-i", video, "-vf", "fps=4,scale=" + W + ":" + H + ",format=gray", "-f", "rawvideo", "-"], { buffer: true }).stdout;
+const n = Math.floor(raw.length / (W * H)), fr = i => raw.subarray(i * W * H, (i + 1) * W * H);
+const mean0 = i => { let s = 0; const b = fr(i); for (let k = 0; k < b.length; k += 7) s += b[k]; return s / (b.length / 7); };
+let blank = [], diffs = [], longestStatic = 0, run0 = 0;
+for (let i = 0; i < n; i++) {
+  const t = i / 4; const m = mean0(i); if (m < 6 && t > 1.4 && t < dur - 0.8) blank.push(t);
+  if (i > 0) { let d = 0; const A = fr(i), B = fr(i - 1); for (let k = 0; k < A.length; k += 5) d += Math.abs(A[k] - B[k]); d /= A.length / 5; diffs.push(d); if (d < 0.35) { run0++; longestStatic = Math.max(longestStatic, run0); } else run0 = 0; }
+}
+add("no blank frames mid-film", blank.length === 0, blank.length ? blank.join(",") : "none");
+add("no frozen stretch >1.5s", longestStatic / 4 < 1.5, "longest static run " + (longestStatic / 4).toFixed(2) + "s");
+const dup = diffs.filter(d => d < 0.35).length / diffs.length; add("repeated-frame share < 12%", dup < 0.12, (dup * 100).toFixed(1) + "% near-identical samples");
+const mo = diffs.reduce((x, y) => x + y, 0) / diffs.length; add("motion present (mean diff > 1.0)", mo > 1.0, "mean frame delta " + mo.toFixed(2));
+
+// captions: bright text in band during speech; nothing bright hugging the side margins
+let capMiss = [], clip = [];
+for (const s of segs.segments) for (const tt of [s.start_seconds + (s.end_seconds - s.start_seconds) * 0.5]) {
+  const i = Math.round((tt + LEAD) * 4); if (i >= n) continue; const b = fr(i); let band = 0, side = 0;
+  for (let y = Math.floor(H * 0.7); y < Math.floor(H * 0.9); y++) for (let x = 0; x < W; x++) { const val = b[y * W + x]; if (val > 215) { band++; if (x < W * 0.04 || x > W * 0.96) side++; } }
+  if (band < 120) capMiss.push(s.beat_id); if (side > 6) clip.push(s.beat_id);
+}
+add("captions visible for every beat", capMiss.length === 0, capMiss.length ? "missing " + capMiss.join(",") : "all beats");
+add("captions inside side margins (no clipping)", clip.length === 0, clip.length ? "clipped " + clip.join(",") : "ok");
+
+const failed = checks.filter(c => !c.pass).length;
+fs.writeFileSync(out, JSON.stringify({ video, duration: dur, fps, checks, failed }, null, 2)); console.log(failed ? failed + " FAILED" : "ALL " + checks.length + " PASSED");
+process.exit(failed ? 1 : 0);

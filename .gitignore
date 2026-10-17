@@ -6,3 +6,5 @@ node_modules/
 # reference-analysis/REFERENCE_PROFILE.md "Important finding about the source file") and must
 # not be committed or distributed.
 reference-analysis/sources/
+stories/*/output/
+stories/*/build/
