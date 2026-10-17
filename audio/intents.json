@@ -3,43 +3,51 @@
  "intents": {
   "hook": {
    "exaggeration": 0.7,
-   "tempo": 1.0,
-   "pause_after": 0.35
+   "tempo": 1.1,
+   "pause_after": 0.35,
+   "gain_db": 1.0
   },
   "narrate": {
    "exaggeration": 0.6,
-   "tempo": 1.0,
-   "pause_after": 0.25
+   "tempo": 1.08,
+   "pause_after": 0.25,
+   "gain_db": 0.0
   },
   "calm": {
    "exaggeration": 0.45,
-   "tempo": 0.97,
-   "pause_after": 0.3
+   "tempo": 1.0,
+   "pause_after": 0.3,
+   "gain_db": -1.0
   },
   "tense": {
    "exaggeration": 0.68,
-   "tempo": 1.03,
-   "pause_after": 0.2
+   "tempo": 1.1,
+   "pause_after": 0.2,
+   "gain_db": 1.0
   },
   "awe": {
    "exaggeration": 0.72,
-   "tempo": 0.96,
-   "pause_after": 0.45
+   "tempo": 1.0,
+   "pause_after": 0.45,
+   "gain_db": 0.5
   },
   "punch": {
    "exaggeration": 0.75,
-   "tempo": 0.98,
-   "pause_after": 0.4
+   "tempo": 1.05,
+   "pause_after": 0.4,
+   "gain_db": 1.5
   },
   "question": {
    "exaggeration": 0.62,
-   "tempo": 1.0,
-   "pause_after": 0.4
+   "tempo": 1.05,
+   "pause_after": 0.4,
+   "gain_db": 0.0
   },
   "reflective": {
    "exaggeration": 0.5,
-   "tempo": 0.94,
-   "pause_after": 0.5
+   "tempo": 0.98,
+   "pause_after": 0.5,
+   "gain_db": -1.5
   }
  },
  "limits": {
@@ -54,5 +62,11 @@
   "repetition_penalty_min": 2.0,
   "max_words_per_take": 28
  },
- "global_tempo": 1.06
+ "global_tempo": 1.0,
+ "voice_profile": {
+  "name": "kathaaya-narrator-v1",
+  "post": "warm",
+  "room_tone_dbfs": -62,
+  "note": "Contrast design: fast/louder on action (hook, tense, punch), slower/softer on awe/reflective, so energy comes from dynamics instead of one flat pace. Whether it sounds better is a listening judgement; metrics only confirm it did what was specified."
+ }
 }

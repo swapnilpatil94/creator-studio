@@ -36,7 +36,7 @@ def take(voice, spoken, p):
     f = CACHE / f"{key}.npy"; CACHE.mkdir(parents=True, exist_ok=True)
     if f.exists(): return np.load(f), 0.0
     y, gen = voice.generate(spoken, seed=p["seed"], **p["params"]); y = trim(y, SR); np.save(f, y); return y, gen
-def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None, pause_scale=1.0):
+def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None, pause_scale=1.0, room_tone=True):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8"))
     out = sd / "narration" / "variants" / name; out.mkdir(parents=True, exist_ok=True)
     voice = voice or Voice()
@@ -49,11 +49,15 @@ def run(story, name, mode="director", post="light", punct="director", target_db=
         y = atempo(y, p["tempo"])
         if mode == "director":
             y = y * 10 ** ((target_db - rms_db(y)) / 20) if abs(target_db - rms_db(y)) < 6 else y * 10 ** (np.clip(target_db - rms_db(y), -6, 6) / 20)
-            y = fade(y)
+            y = fade(y * 10 ** (p.get('gain_db', 0.0) / 20))
         gap = np.zeros(int(SR * p["pause_after"]), dtype=np.float32)
         segs.append(dict(beat_id=p["id"], text=p["text"], spoken=spoken, intent=p["intent"], params=p["params"], tempo=p["tempo"], start_seconds=round(t, 3), end_seconds=round(t + len(y) / SR, 3), gen_s=round(gen, 1)))
         chunks += [y, gap]; t += (len(y) + len(gap)) / SR; log(f"{p['id']} {p['intent']} {p['params']} dur={len(y)/SR:.2f}s gen={gen:.1f}s")
-    y = np.concatenate(chunks); y = y / max(1.0, np.abs(y).max() / 0.89)
+    y = np.concatenate(chunks)
+    rt = director.CFG.get('voice_profile', {}).get('room_tone_dbfs') if mode == 'director' and room_tone else None
+    if rt is not None:
+        rng = np.random.default_rng(7); n = rng.standard_normal(len(y)).astype(np.float32); n = np.cumsum(n) ; n -= np.convolve(n, np.ones(2400) / 2400, mode='same'); n *= 10 ** (rt / 20) / (np.sqrt(np.mean(n ** 2)) + 1e-9); y = y + n
+    y = y / max(1.0, np.abs(y).max() / 0.89)
     raw = out / "pre_post.wav"; sf.write(raw, y, SR)
     final = out / "narration.wav"; postprocess.process(raw, final, post if mode == "director" else "off")
     if do_align: segs = align(final, segs)

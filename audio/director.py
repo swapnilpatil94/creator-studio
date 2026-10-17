@@ -26,7 +26,7 @@ def plan(beats, overrides=None, global_tempo=None, pause_scale=1.0):
         t = b["text"]
         if "…" in t or "..." in t: pause = max(pause, 0.4 * pause_scale)
         seed = int(hashlib.sha1(b["id"].encode()).hexdigest()[:6], 16) % 100000
-        out.append(dict(id=b["id"], text=t, intent=intent, params=dict(exaggeration=ex), tempo=tempo, pause_after=round(pause, 2), seed=seed,
+        out.append(dict(id=b["id"], text=t, intent=intent, params=dict(exaggeration=ex), tempo=tempo, gain_db=float(b.get('gain_db', spec.get('gain_db', 0.0))), pause_after=round(pause, 2), seed=seed,
                         words=words(t), warn=("long take" if words(t) > LIMITS["max_words_per_take"] else None)))
     return out
 if __name__ == "__main__":

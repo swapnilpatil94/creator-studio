@@ -7,6 +7,7 @@ from common import ffmpeg
 CHAINS = {
   "off": None,
   "light": "highpass=f=70,deesser=i=0.25:m=0.5:f=0.5,loudnorm=I={lufs}:TP={tp}:LRA=11",
+  "warm": "highpass=f=70,equalizer=f=150:t=q:w=0.8:g=1.5,equalizer=f=3000:t=q:w=1.2:g=1.2,deesser=i=0.25:m=0.5:f=0.5,acompressor=threshold=-22dB:ratio=1.8:attack=25:release=250:makeup=1,loudnorm=I={lufs}:TP={tp}:LRA=11",
   "medium": "highpass=f=75,afftdn=nr=8:nf=-45:tn=0,deesser=i=0.3:m=0.5:f=0.5,equalizer=f=3200:t=q:w=1.2:g=1.2,acompressor=threshold=-24dB:ratio=2:attack=20:release=200:makeup=2,loudnorm=I={lufs}:TP={tp}:LRA=9",
 }
 def process(src, dst, preset="light", lufs=-18, tp=-2.0):

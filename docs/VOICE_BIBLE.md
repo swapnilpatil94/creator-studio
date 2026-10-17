@@ -1,0 +1,7 @@
+# KATHAAYA narrator — voice bible (v1)
+**Honest basis.** Research found little authoritative guidance on Hindi mythology narration (mostly voice-actor listings and vendor blogs; one EACL 2024 paper on Hindi storytelling TTS found character voice modulation improves rated expressiveness). Working numbers used: general narration ≈130–160 wpm, >180 wpm tires listeners, pauses should stay but not everywhere (vendor claims, unverified; no retention % is relied on). The design below is therefore a **hypothesis to be judged by ear**, not a proven optimum.
+
+**Design: energy from contrast.** Fast and louder on action (hook, tense, punch: tempo 1.05–1.10, +1 to +1.5 dB); slow and softer on awe/reflection (tempo 0.98–1.0, −1.5 to +0.5 dB, longer pauses 0.45–0.5 s); questions get a 0.4 s beat. Warm post chain (low-shelf, presence, gentle compression, −18 LUFS, −2 dBTP), faint room tone so gaps are not digital silence. Config: `audio/intents.json` (`voice_profile`).
+**Hard limits:** one reference voice sets identity and baseline expressiveness; the model's only reliable emotional control is `exaggeration`. A better reference recording is the biggest untested lever.
+**Next levers (not done):** record/choose a reference with true storyteller delivery; multi-seed candidates per beat with human pick; split dialogue into its own take with a different intent; music/ambience bed.
+**Measured, Hanuman:** original −25.5 LUFS, 3.53 w/s; kathaaya_v5 −18.4 LUFS, 2.75 w/s, LRA 2.1. Pitch spread per beat ≈2.9 st for every directed variant (no measured expressive gain).
