@@ -19,14 +19,14 @@
   "wordmark": "KATHAAYA (small caps, wide letter-spacing, top-left of thumbnails); logo = gold ring with a Devanagari \"क\" on black",
   "tagline": "ANCIENT STORIES, REIMAGINED THROUGH INK. MAHABHARATA · RAMAYANA · PURANAS · FORGOTTEN STORIES",
   "palette": {
-   "bg_dark": "#050a16",
-   "storm_blue": "#16335e",
-   "gold": "#f2c14e",
-   "gold_soft": "#ffd37a",
-   "title_white": "#f4f6fb",
-   "ice_blue": "#bfe3ff"
+   "bg_dark": "#07060a",
+   "ink_glow": "#2a1b10",
+   "gold": "#d4a94a",
+   "gold_soft": "#ecc873",
+   "crimson": "#a8261c",
+   "title_white": "#f4efe6"
   },
-  "thumbnail_template": "16:9, dark navy/stormy cinematic art, figure on the right, 2-line bold Devanagari title on the left (line 1 white, line 2 gold or ice-blue glow), optional small subtitle with a thin gold rule, tiny KATHAAYA wordmark top-left",
+  "thumbnail_template": "ink-black field with warm ink-brown glow, subject on one side, 2-line bold Devanagari title (line 1 warm white, line 2 antique gold) with ONE crimson brush stroke as the only accent, round channel logo + serif KATHAAYA wordmark top-left",
   "title_style": "Devanagari question (+ one emoji) then \" | KATHAAYA\"",
   "description_brand_line": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n🕉️ कथा सुनिए। अर्थ खोजिए। परंपरा को नए रूप में देखिए।",
   "mismatch_noted": "Existing videos are painted/photoreal AI art; our films are dot-cinema. Thumbnails keep the channel template and colours; the hero image is a dot-cinema frame, so the look differs from past uploads.",
@@ -39,6 +39,10 @@
     31
    ],
    "note": "tiny baseline: 3 videos, 31-201 views"
+  },
+  "logo": {
+   "url": "https://yt3.ggpht.com/U22f1XoGEIMHHSt6GZM6JAjYnI7B3ZYfv4X1iJ0oI8J3Epgokkxz00dAdXHCUJASIuMLwBqW=s240-c-k-c0x00ffffff-no-rj",
+   "observed": "black circle; antique-gold textured ink-brush Devanagari \"क\" with ONE crimson brush stroke; thin ornate gold ring with four small diamonds; serif KATHAAYA below; aged-ink texture"
   }
  }
 }

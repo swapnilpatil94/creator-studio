@@ -49,3 +49,11 @@ network instructions, no hidden promotion), craft depth, and fit for **spoken, s
 
 Our own additions: `narration-craft` (Hindi/TTS-aware, built on measured Chatterbox rates), `hook-formulas`, `retention-psychology`
 (evidence-graded), and `planner/hook-lint.mjs`. The third-party craft skills use English marketing examples: take the principle, not the wording.
+
+## Added 2026-10-17 (title / description / thumbnail skills)
+| Source | License | Verdict |
+|---|---|---|
+| `Jakeschincariol/youtube-agent-skill` `yt-package`, `yt-seo`, `yt-chapters`, `yt-shorts` | MIT (already vetted) | **DISTILLED** into `youtube-packaging` and `youtube-seo-description`. Their python tools (`title.py`, `chapters.py`) are not copied: `planner/seo.mjs` implements the checks for Devanagari. Clean of injection/destructive instructions (read in full) |
+| `kostja94/marketing-skills` `skills/platforms/youtube` | MIT (LICENSE file) | **DISTILLED** mechanical rules only (title < 60, keyword early, first 160 chars, tags minor, contrast). Unsourced percentage claims NOT adopted |
+| `inferen-sh/skills` `youtube-thumbnail-design` | README MIT badge, no LICENSE file | **IDEAS ONLY** (120 px test, safe zones, <= 3 colours, face rules, checklist) in `youtube-thumbnail-design`. NOT installed: needs the third-party `belt` CLI and paid image generation (`allowed-tools: Bash(belt *)`) |
+| claudskills.com `youtube-publisher` / `youtube-optimizer` | repo and license not found | **NOT USED** (cannot verify source) |
