@@ -1,8 +1,8 @@
 {
  "name": "mahishasura-mardini",
  "scene": "scene.js",
- "segments": "narration/variants/kathaaya_cands/segments.json",
- "audio": "narration/variants/kathaaya_cands/narration.wav",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
  "lead": 0.9,
  "fps": 24,
  "requireGates": true,

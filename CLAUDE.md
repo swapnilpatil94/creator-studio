@@ -11,3 +11,5 @@
 - Topics come from data (`planner/yt-outliers.mjs` + `yt-analyze.mjs`), not from memory or taste; the decision is written in `docs/PLAN_*.md` with the numbers.
 - The YouTube API key lives only in `.env.local` (gitignored). Never print it, commit it, or send it anywhere except googleapis.com.
 - Storytelling is audited with the `storytelling` skill's audit mode and `hook-lint` before any narration is generated.
+
+- **Narration: one version only.** No variants/candidates/picking. Use `audio/synth.py` (emotion per phrase, auto-validated takes); the owner wants energetic, punchy, reels-paced, smooth delivery with emotion following the story.

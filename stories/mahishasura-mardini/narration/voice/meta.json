@@ -1,0 +1,549 @@
+{
+ "story": "mahishasura-mardini",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 131,
+ "duration_s": 47.9,
+ "speech_words_per_s": 3.02,
+ "phrases": [
+  {
+   "id": "m01.1",
+   "text": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 3.279,
+   "tries": 1,
+   "words_per_s": 3.66,
+   "beat": "m01",
+   "pause_after": 0.24,
+   "spoken": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?",
+   "raw_dur_s": 4.09,
+   "checks": [
+    {
+     "seed": 16329,
+     "rate": 2.93,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m02.1",
+   "text": "सामने था महिषासुर — बहुरूपिया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 3.519,
+   "end": 5.545,
+   "tries": 1,
+   "words_per_s": 2.47,
+   "beat": "m02",
+   "pause_after": 0.07,
+   "spoken": "सामने था महिषासुर, बहुरूपिया.",
+   "raw_dur_s": 2.53,
+   "checks": [
+    {
+     "seed": 8498,
+     "rate": 1.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m02.2",
+   "text": "कभी भैंसा, कभी कुछ और।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 5.615,
+   "end": 7.398,
+   "tries": 1,
+   "words_per_s": 2.8,
+   "beat": "m02",
+   "pause_after": 0.07,
+   "spoken": "कभी भैंसा, कभी कुछ और.",
+   "raw_dur_s": 2.22,
+   "checks": [
+    {
+     "seed": 46962,
+     "rate": 2.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m02.3",
+   "text": "हर रूप में पहले से ज़्यादा ख़तरनाक।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 7.468,
+   "end": 9.626,
+   "tries": 2,
+   "words_per_s": 3.24,
+   "beat": "m02",
+   "pause_after": 0.22,
+   "spoken": "हर रूप में पहले से ज़्यादा ख़तरनाक.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 91556,
+     "rate": 2.45,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 99475,
+     "rate": 2.58,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m03.1",
+   "text": "इसलिए इंद्र का सिंहासन छिन गया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 9.846,
+   "end": 11.966,
+   "tries": 1,
+   "words_per_s": 2.83,
+   "beat": "m03",
+   "pause_after": 0.07,
+   "spoken": "इसलिए इंद्र का सिंहासन छिन गया.",
+   "raw_dur_s": 2.64,
+   "checks": [
+    {
+     "seed": 61070,
+     "rate": 2.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m03.2",
+   "text": "देवताओं को अपना ही स्वर्ग छोड़ना पड़ा।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 12.036,
+   "end": 14.692,
+   "tries": 1,
+   "words_per_s": 2.64,
+   "beat": "m03",
+   "pause_after": 0.95,
+   "spoken": "देवताओं को अपना ही स्वर्ग छोड़ना पड़ा.",
+   "raw_dur_s": 2.99,
+   "checks": [
+    {
+     "seed": 63080,
+     "rate": 2.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m04.1",
+   "text": "लेकिन तभी उनका क्रोध एक हो गया…",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 15.642,
+   "end": 17.59,
+   "tries": 1,
+   "words_per_s": 3.59,
+   "beat": "m04",
+   "pause_after": 0.25,
+   "spoken": "लेकिन तभी उनका क्रोध एक हो गया,",
+   "raw_dur_s": 2.21,
+   "checks": [
+    {
+     "seed": 64278,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m04.2",
+   "text": "और उस तेज से एक देवी प्रकट हुईं —",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 17.84,
+   "end": 20.109,
+   "tries": 3,
+   "words_per_s": 3.97,
+   "beat": "m04",
+   "pause_after": 0.25,
+   "spoken": "और उस तेज से एक देवी प्रकट हुईं,",
+   "raw_dur_s": 2.59,
+   "checks": [
+    {
+     "seed": 73569,
+     "rate": 2.72,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 81488,
+     "rate": 2.62,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 89407,
+     "rate": 3.48,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m04.3",
+   "text": "बिना किसी माँ के।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 20.359,
+   "end": 21.533,
+   "tries": 1,
+   "words_per_s": 3.41,
+   "beat": "m04",
+   "pause_after": 0.48,
+   "spoken": "बिना किसी माँ के.",
+   "raw_dur_s": 1.31,
+   "checks": [
+    {
+     "seed": 81500,
+     "rate": 3.06,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m05.1",
+   "text": "विष्णु ने चक्र दिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 22.013,
+   "end": 23.218,
+   "tries": 1,
+   "words_per_s": 3.32,
+   "beat": "m05",
+   "pause_after": 0.07,
+   "spoken": "विष्णु ने चक्र दिया.",
+   "raw_dur_s": 1.51,
+   "checks": [
+    {
+     "seed": 55787,
+     "rate": 2.65,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m05.2",
+   "text": "वायु ने धनुष-बाण।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 23.288,
+   "end": 24.466,
+   "tries": 1,
+   "words_per_s": 2.55,
+   "beat": "m05",
+   "pause_after": 0.07,
+   "spoken": "वायु ने धनुष-बाण.",
+   "raw_dur_s": 1.47,
+   "checks": [
+    {
+     "seed": 64170,
+     "rate": 2.04,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m05.3",
+   "text": "हिमालय ने सिंह।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 24.536,
+   "end": 25.492,
+   "tries": 2,
+   "words_per_s": 3.14,
+   "beat": "m05",
+   "pause_after": 0.11,
+   "spoken": "हिमालय ने सिंह.",
+   "raw_dur_s": 1.18,
+   "checks": [
+    {
+     "seed": 36664,
+     "rate": 1.11,
+     "problems": [
+      "raw pace 1.1 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 44583,
+     "rate": 2.55,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m05.4",
+   "text": "हर देवता का थोड़ा-थोड़ा हिस्सा।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 25.602,
+   "end": 27.454,
+   "tries": 1,
+   "words_per_s": 2.7,
+   "beat": "m05",
+   "pause_after": 0.38,
+   "spoken": "हर देवता का थोड़ा-थोड़ा हिस्सा.",
+   "raw_dur_s": 2.15,
+   "checks": [
+    {
+     "seed": 22848,
+     "rate": 2.32,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m06.1",
+   "text": "तब सिंह पर सवार होकर वो रणभूमि में उतरीं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 27.834,
+   "end": 30.811,
+   "tries": 1,
+   "words_per_s": 3.02,
+   "beat": "m06",
+   "pause_after": 0.22,
+   "spoken": "तब सिंह पर सवार होकर वो रणभूमि में उतरीं.",
+   "raw_dur_s": 3.72,
+   "checks": [
+    {
+     "seed": 83561,
+     "rate": 2.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m07.1",
+   "text": "महिषासुर रूप बदलता रहा…",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 31.031,
+   "end": 32.593,
+   "tries": 1,
+   "words_per_s": 2.56,
+   "beat": "m07",
+   "pause_after": 0.11,
+   "spoken": "महिषासुर रूप बदलता रहा,",
+   "raw_dur_s": 1.96,
+   "checks": [
+    {
+     "seed": 8304,
+     "rate": 2.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m07.2",
+   "text": "पर अब बचने की जगह नहीं थी।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 32.703,
+   "end": 34.344,
+   "tries": 1,
+   "words_per_s": 4.27,
+   "beat": "m07",
+   "pause_after": 0.28,
+   "spoken": "पर अब बचने की जगह नहीं थी.",
+   "raw_dur_s": 2.07,
+   "checks": [
+    {
+     "seed": 28789,
+     "rate": 3.38,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m08a.1",
+   "text": "और अंत में — त्रिशूल।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 34.624,
+   "end": 36.207,
+   "tries": 1,
+   "words_per_s": 3.16,
+   "beat": "m08a",
+   "pause_after": 0.95,
+   "spoken": "और अंत में, त्रिशूल.",
+   "raw_dur_s": 1.76,
+   "checks": [
+    {
+     "seed": 13462,
+     "rate": 2.84,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m08b.1",
+   "text": "भैंसे का सिर कटा…",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 37.157,
+   "end": 38.205,
+   "tries": 1,
+   "words_per_s": 3.82,
+   "beat": "m08b",
+   "pause_after": 0.11,
+   "spoken": "भैंसे का सिर कटा,",
+   "raw_dur_s": 1.29,
+   "checks": [
+    {
+     "seed": 50944,
+     "rate": 3.09,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m08b.2",
+   "text": "और भीतर से असुर निकला।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 38.315,
+   "end": 39.754,
+   "tries": 1,
+   "words_per_s": 3.47,
+   "beat": "m08b",
+   "pause_after": 0.07,
+   "spoken": "और भीतर से असुर निकला.",
+   "raw_dur_s": 1.8,
+   "checks": [
+    {
+     "seed": 75593,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m08b.3",
+   "text": "देवी ने उसे भी ख़त्म किया।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 39.824,
+   "end": 41.486,
+   "tries": 1,
+   "words_per_s": 3.61,
+   "beat": "m08b",
+   "pause_after": 0.11,
+   "spoken": "देवी ने उसे भी ख़त्म किया.",
+   "raw_dur_s": 2.1,
+   "checks": [
+    {
+     "seed": 51183,
+     "rate": 2.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m08b.4",
+   "text": "वो बनीं — महिषासुरमर्दिनी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 41.596,
+   "end": 43.582,
+   "tries": 1,
+   "words_per_s": 2.01,
+   "beat": "m08b",
+   "pause_after": 0.48,
+   "spoken": "वो बनीं, महिषासुरमर्दिनी.",
+   "raw_dur_s": 2.21,
+   "checks": [
+    {
+     "seed": 30798,
+     "rate": 1.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m09.1",
+   "text": "देवता अकेले हारे थे।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 44.062,
+   "end": 45.568,
+   "tries": 1,
+   "words_per_s": 2.66,
+   "beat": "m09",
+   "pause_after": 0.17,
+   "spoken": "देवता अकेले हारे थे.",
+   "raw_dur_s": 1.68,
+   "checks": [
+    {
+     "seed": 98492,
+     "rate": 2.37,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "m09.2",
+   "text": "साथ मिले, तो देवी बन गए।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 45.738,
+   "end": 47.604,
+   "tries": 1,
+   "words_per_s": 3.22,
+   "beat": "m09",
+   "pause_after": 0.3,
+   "spoken": "साथ मिले, तो देवी बन गए.",
+   "raw_dur_s": 2.07,
+   "checks": [
+    {
+     "seed": 47340,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

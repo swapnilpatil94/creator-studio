@@ -177,7 +177,7 @@
   {
    "name": "format fits Shorts (<= 180 s)",
    "ok": true,
-   "detail": "59 s"
+   "detail": "51 s"
   },
   {
    "name": "channel brand line in description",
@@ -264,7 +264,7 @@
   "Pair test: covering the title, the thumbnail alone still raises a question",
   "Pair test: covering the thumbnail, the title alone still pulls",
   "Honesty test: the film delivers what the title and thumbnail promise (variant note stated)",
-  "I watched the film with sound and picked takes",
+  "I watched the film with sound and the narration pace and emotion feel right",
   "Thumbnail reads in the 120 px preview (mood, subject, text)",
   "I reviewed the claims warnings and sources",
   "Title, description and tags read correctly in Devanagari and Roman spelling"
@@ -277,5 +277,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-17T12:20:51.329Z"
+ "generated": "2026-10-17T13:10:06.962Z"
 }

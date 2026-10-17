@@ -69,3 +69,6 @@ See `.claude/skills/chatterbox-voice-director/SKILL.md`. Code in `audio/`, UI at
 - Every video follows `.claude/skills/workflow-gate`; `planner/gates.mjs` + `"requireGates": true` make the pipeline refuse to build without topic evidence, claims, TREATMENT, authored sound with >= 2 silences, hook lint and recorded skill reads.
 - A/V QA exempts silences declared in `sound.json` (they are measured, not hidden); `sound.mjs` honours `silences`.
 - First film through the strict path: `stories/mahishasura-mardini` (Durga's birth).
+
+## Update 2026-10-17 (later): one narration, emotional flow
+Voice is now a single narration per film (`audio/synth.py`, phrase-level emotions in `beats.json`, auto-validated takes). Variants, candidate takes and the pick/assemble UI were removed.

@@ -1,55 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Voice Director</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Narration</title>
 <style>
-:root{--bg:#0e0f12;--fg:#e8e6e1;--mut:#8b8f98;--card:#17191e;--line:#2a2d35;--acc:#e8b04a;--ok:#6fcf97;--bad:#eb5757}
+:root{--bg:#0e0f12;--fg:#e8e6e1;--mut:#8b8f98;--card:#17191e;--line:#2a2d35;--acc:#e8b04a}
 @media (prefers-color-scheme:light){:root{--bg:#f6f5f1;--fg:#1b1c1f;--mut:#666b75;--card:#fff;--line:#dcdad2;--acc:#a66a00}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;padding:16px;max-width:980px;margin-inline:auto}
 h1{font-size:20px;margin:0 0 4px}a{color:var(--acc)}.mut{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
-.row{display:flex;gap:12px;flex-wrap:wrap;align-items:end}label{display:flex;flex-direction:column;font-size:12px;color:var(--mut);gap:3px}select,input,button{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
-button{cursor:pointer;background:var(--acc);color:#111;border:0;font-weight:600}button.sec{background:transparent;color:var(--fg);border:1px solid var(--line)}button:disabled{opacity:.5}
-.ab{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:640px){.ab{grid-template-columns:1fr}}audio{width:100%}
-table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--mut);font-weight:500}
-pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;max-height:220px;overflow:auto;font-size:12px;white-space:pre-wrap}
-.pill{display:inline-block;font-size:11px;padding:1px 8px;border:1px solid var(--line);border-radius:99px;color:var(--mut)}
+select,input,button{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}button{cursor:pointer;background:var(--acc);color:#111;border:0;font-weight:600}button:disabled{opacity:.5}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--mut);font-weight:500}audio{width:100%}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;max-height:200px;overflow:auto;font-size:12px;white-space:pre-wrap}.chip{display:inline-block;font-size:11px;padding:1px 8px;border:1px solid var(--line);border-radius:99px;color:var(--mut)}
+.bar{display:inline-block;height:8px;background:var(--acc);border-radius:4px;vertical-align:middle}
 </style></head><body>
-<h1>Voice Director <a class="mut" href="/">← Studio</a></h1>
-<div class="mut">Same Chatterbox model and reference voice. Your original <code>raw.wav</code> is never modified; variants live in <code>narration/variants/</code>. Metrics are measurements (loudness, pitch spread, pace, pauses), not a judgement of emotional quality — listen to decide.</div>
-<div class="card"><div class="row"><label>Story<select id="story"></select></label>
-<label>Variant name<input id="name" value="directed_v1" size="14"></label>
-<label>Tempo (model has no speed control; ffmpeg atempo ×)<input id="tempo" type="number" step="0.01" min="0.92" max="1.10" value="1.08" style="width:90px"></label>
-<label>Candidates per beat<input id="cands" type="number" min="1" max="5" value="1" style="width:70px"></label>
-<label>Post-processing<select id="post"><option>warm</option><option>light</option><option>medium</option><option>off</option></select></label>
-<label>Punctuation<select id="punct"><option>director</option><option>asis</option></select></label>
-<button id="gen">Generate variant</button><button class="sec" id="meas">Measure A/B</button></div>
-<div class="mut" style="margin-top:8px">Supported model controls used by the director: <b>exaggeration</b> (per-beat intent). Tempo/pauses/loudness are post-assembly edits. Generating re-uses cached takes when only tempo/pause/post change.</div></div>
-<div class="card"><div class="ab"><div><b>A · Original</b> <span class="pill" id="aTag"></span><audio id="a" controls preload="none"></audio></div>
-<div><b>B · Variant</b> <select id="vsel"></select><audio id="b" controls preload="none"></audio></div></div>
-<div class="row" style="margin-top:10px"><button class="sec" id="swap">Play A ⇄ B at same position</button><button class="sec" id="act">Use B in the film</button><button class="sec" id="rest">Restore original</button><span class="mut" id="actNote"></span></div></div>
-<div class="card" id="candCard" style="display:none"><b>Pick the best take per beat</b> <span class="mut">(each candidate = same text, different seed; listen, choose, then Assemble picks — takes are cached, so it is quick)</span><div id="cands2"></div><div class="row" style="margin-top:10px"><button id="asm">Assemble picks</button><span class="mut" id="asmNote"></span></div></div>
-<div class="card"><b>Measured</b><div id="tbl" class="mut">Run “Measure A/B”.</div></div>
-<div class="card"><b>Job log</b><pre id="log">idle</pre></div>
+<h1>Narration <a class="mut" href="/dash">← Dashboard</a></h1>
+<div class="mut">One narration per film: energetic, punchy, reels-paced, with the emotion moving phrase by phrase. The model's only reliable emotional control is <b>exaggeration</b>; tempo, loudness and pauses are post edits. No variants to pick: a take that fails objective checks (pace, clipping, dead air) is regenerated automatically.</div>
+<div class="card"><select id="story"></select> <span id="state" class="mut"></span><div style="margin-top:10px"><label class="mut">Pace nudge (0.90-1.10 × the emotion tempos; 1.00 = designed)</label><br><input id="ts" type="number" step="0.01" min="0.9" max="1.1" value="1" style="width:90px"> <button id="gen">Regenerate narration</button> <span class="mut">≈ 5-8 minutes; cached phrases are instant</span></div></div>
+<div class="card" id="play"></div><div class="card" id="flow"></div><div class="card"><b>Job log</b><pre id="log">idle</pre></div>
 <script>
-const $=id=>document.getElementById(id);let S=[];
-const j=async(u,o)=>{const r=await fetch(u,o);const d=await r.json();if(!r.ok)throw new Error(d.error||r.status);return d};
-const post=(u,b)=>j(u,{method:'POST',body:JSON.stringify(b)});
-async function load(keep){S=await j('/api/voice/stories');const cur=keep||$('story').value;$('story').innerHTML=S.map(s=>`<option ${s.id===cur?'selected':''}>${s.id}</option>`).join('');pick()}
-function cur(){return S.find(s=>s.id===$('story').value)}
-function pick(){const s=cur();if(!s)return;$('a').src=s.original?`/voice/file/${s.id}/raw.wav`:'';$('aTag').textContent=s.active&&!/raw\.wav$/.test(s.active)?'not active':'active in film';
- $('vsel').innerHTML=s.variants.map(v=>`<option>${v.name}</option>`).join('')||'<option value="">(none yet)</option>';setB();table(s);$('actNote').textContent='film uses: '+(s.active||'raw.wav (default)')}
-let PK={};
-async function setB(){const s=cur(),v=$('vsel').value;$('b').src=v?`/voice/file/${s.id}/variants/${v}/narration.wav`:'';$('candCard').style.display='none';if(!v)return;
- try{const c=await j(`/api/voice/candidates?story=${s.id}&variant=${v}`);if(c.candidates<2)return;PK={...c.picks};$('candCard').style.display='';
-  $('cands2').innerHTML=c.beats.map(b=>`<div style="margin:10px 0;border-top:1px solid var(--line);padding-top:8px"><div class="mut">${b.id} · ${b.intent}</div><div style="margin-bottom:4px">${b.text}</div><div class="row">`+(c.info[b.id]||[]).map(x=>`<label style="flex:1;min-width:200px"><span><input type="radio" name="p_${b.id}" value="${x.k}" ${(PK[b.id]||0)===x.k?'checked':''} onchange="PK['${b.id}']=${x.k}"> take ${x.k+1} · ${x.dur_s}s</span><audio controls preload="none" src="/voice/file/${s.id}/variants/${v}/candidates/${b.id}_${x.k}.wav"></audio></label>`).join('')+'</div></div>').join('')}catch(e){}}
-const KEYS=[['lufs_integrated','LUFS (loudness)'],['true_peak_dbfs','true peak dBFS'],['lra_lu','loudness range LU'],['beat_loudness.max_dev_from_median_db','worst beat vs median dB'],['rate.mean_words_per_s','words/s'],['rate.fastest','fastest beat w/s'],['longest_pause_s','longest pause s'],['pitch_dynamics.mean_f0_std_st','pitch spread / beat (semitones)'],['click_events','click events'],['duration_s','duration s']];
+const $=id=>document.getElementById(id),j=async(u,o)=>{const r=await fetch(u,o);const d=await r.json();if(!r.ok)throw new Error(d.error||r.status);return d};let S=[];
 const g=(o,k)=>k.split('.').reduce((a,p)=>a==null?a:a[p],o);
-function table(s){const r=s.abReport;if(!r){$('tbl').textContent='No measurement yet — click Measure A/B.';return}const c=Object.keys(r);
- $('tbl').innerHTML='<table><tr><th>metric</th>'+c.map(x=>`<th>${x}</th>`).join('')+'</tr>'+KEYS.map(([k,l])=>`<tr><td>${l}</td>${c.map(x=>`<td>${g(r[x],k)??'–'}</td>`).join('')}</tr>`).join('')+'</table>'}
-$('asm').onclick=async()=>{const s=cur(),v=$('vsel').value;try{await post('/api/voice/picks',{story:s.id,variant:v,picks:PK});const m=(await j(`/api/voice/candidates?story=${s.id}&variant=${v}`));await post('/api/voice/synth',{story:s.id,name:v,tempo:+$('tempo').value,candidates:m.candidates,post:$('post').value,punct:$('punct').value});$('asmNote').textContent='assembling…';poll()}catch(e){alert(e.message)}};
-$('story').onchange=pick;$('vsel').onchange=setB;
-$('swap').onclick=()=>{const a=$('a'),b=$('b');const [from,to]=!a.paused?[a,b]:[b,a];const t=from.currentTime;from.pause();to.currentTime=t;to.play()};
-$('gen').onclick=async()=>{try{await post('/api/voice/synth',{story:$('story').value,name:$('name').value,tempo:+$('tempo').value,candidates:+$('cands').value,post:$('post').value,punct:$('punct').value});poll()}catch(e){alert(e.message)}};
-$('meas').onclick=async()=>{try{await post('/api/voice/measure',{story:$('story').value,variants:cur().variants.map(v=>v.name)});poll()}catch(e){alert(e.message)}};
-$('act').onclick=async()=>{const v=$('vsel').value;if(!v)return;await post('/api/voice/activate',{story:$('story').value,variant:v});load($('story').value)};
-$('rest').onclick=async()=>{await post('/api/voice/activate',{story:$('story').value,variant:''});load($('story').value)};
-let timer;async function poll(){clearInterval(timer);timer=setInterval(async()=>{const jb=await j('/api/job');if(!jb)return;$('log').textContent=jb.lines.filter(l=>!/it\/s|%\|/.test(l)).slice(-60).join('\n');if(jb.status!=='running'){clearInterval(timer);load($('story').value)}},1500)}
+async function load(){S=await j('/api/voice/stories');const c=$('story').value;$('story').innerHTML=S.map(s=>`<option ${s.id===c?'selected':''}>${s.id}</option>`).join('');show()}
+function show(){const s=S.find(x=>x.id===$('story').value);if(!s)return;const m=s.meta,a=s.analysis;$('state').textContent=s.hasVoice?'film uses: '+(s.active||''):'no narration yet';
+ $('play').innerHTML=s.hasVoice?`<b>Narration</b> <span class="chip">${m.profile}</span> <span class="chip">${m.words} words · ${m.duration_s}s · ${m.speech_words_per_s} words/s while speaking</span>${a?`<span class="chip">${a.lufs_integrated} LUFS</span><span class="chip">true peak ${a.true_peak_dbfs} dBFS</span><span class="chip">worst beat vs median ${g(a,'beat_loudness.max_dev_from_median_db')} dB</span><span class="chip">${a.click_events} clicks</span>`:''}<audio controls preload="metadata" src="/voice/file/${s.id}/voice/narration.wav?x=${Date.now()}"></audio>${s.original?`<div class="mut" style="margin-top:8px">Original raw.wav for reference</div><audio controls preload="none" src="/voice/file/${s.id}/raw.wav"></audio>`:''}<div class="mut" style="margin-top:6px">Metrics are measurements (loudness, pace, pauses, clicks), not a judgement of emotion: listen to decide.</div>`:'<div class="mut">Press Regenerate.</div>';
+ $('flow').innerHTML=s.hasVoice?`<b>Emotional flow</b> <span class="mut">(one row per phrase: emotion → exaggeration, tempo, pace)</span><table><tr><th>phrase</th><th>emotion</th><th>exaggeration</th><th>tempo</th><th>words/s</th><th>tries</th><th></th></tr>${m.phrases.map(p=>`<tr><td>${p.text}</td><td><span class="chip">${p.emotion}</span></td><td>${p.exaggeration}</td><td>×${p.tempo}</td><td>${p.words_per_s}</td><td>${p.tries}</td><td><span class="bar" style="width:${Math.round(p.exaggeration*120)}px"></span></td></tr>`).join('')}</table>`:''}
+$('story').onchange=show;
+$('gen').onclick=async()=>{try{await j('/api/voice/synth',{method:'POST',body:JSON.stringify({story:$('story').value,tempoScale:+$('ts').value})});poll()}catch(e){alert(e.message)}};
+let tm;function poll(){clearInterval(tm);tm=setInterval(async()=>{const jb=await j('/api/job');if(!jb)return;$('log').textContent=jb.lines.filter(l=>!/it\/s|%\|/.test(l)).slice(-40).join('\n');if(jb.status!=='running'){clearInterval(tm);load()}},1500)}
 load().catch(e=>$('log').textContent=e.message);
 </script></body></html>

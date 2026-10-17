@@ -1,0 +1,288 @@
+{
+ "file": "/Users/swapnil/creator-studio/stories/mahishasura-mardini/narration/voice/narration.wav",
+ "duration_s": 47.904,
+ "peak_dbfs": -1.85,
+ "clipped_samples": 0,
+ "lufs_integrated": -18.28,
+ "lra_lu": 2.2,
+ "true_peak_dbfs": -1.8,
+ "noise_floor_dbfs": -64.4,
+ "crest_db": 14.2,
+ "speech_ratio": 0.796,
+ "pauses": [
+  {
+   "at": 3.23,
+   "len": 0.33
+  },
+  {
+   "at": 9.38,
+   "len": 0.48
+  },
+  {
+   "at": 14.45,
+   "len": 1.23
+  },
+  {
+   "at": 17.53,
+   "len": 0.33
+  },
+  {
+   "at": 20.05,
+   "len": 0.33
+  },
+  {
+   "at": 21.48,
+   "len": 0.55
+  },
+  {
+   "at": 27.4,
+   "len": 0.43
+  },
+  {
+   "at": 30.35,
+   "len": 0.4
+  },
+  {
+   "at": 34.3,
+   "len": 0.35
+  },
+  {
+   "at": 36.15,
+   "len": 1.03
+  },
+  {
+   "at": 43.53,
+   "len": 0.55
+  }
+ ],
+ "longest_pause_s": 1.23,
+ "pauses_over_1_2s": [
+  {
+   "at": 14.45,
+   "len": 1.23
+  }
+ ],
+ "click_events": 13,
+ "voiced_ratio": 0.637,
+ "pitch": {
+  "mean_hz": 111.11,
+  "std_st": 3.42,
+  "range_st": 11.95
+ },
+ "beats": [
+  {
+   "id": "m01",
+   "start": 0.0,
+   "end": 3.28,
+   "words": 12,
+   "words_per_s": 3.66,
+   "chars_per_s": 14.9,
+   "rms_dbfs": -16.3,
+   "peak_dbfs": -2.3,
+   "f0_mean_hz": 118.4,
+   "f0_std_st": 2.39,
+   "f0_range_st": 6.91,
+   "energy_std_db": 5.95
+  },
+  {
+   "id": "m02",
+   "start": 3.52,
+   "end": 9.63,
+   "words": 16,
+   "words_per_s": 2.62,
+   "chars_per_s": 12.0,
+   "rms_dbfs": -16.5,
+   "peak_dbfs": -1.8,
+   "f0_mean_hz": 109.1,
+   "f0_std_st": 3.19,
+   "f0_range_st": 11.49,
+   "energy_std_db": 6.56
+  },
+  {
+   "id": "m03",
+   "start": 9.85,
+   "end": 14.69,
+   "words": 13,
+   "words_per_s": 2.68,
+   "chars_per_s": 12.0,
+   "rms_dbfs": -16.2,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 115.7,
+   "f0_std_st": 2.93,
+   "f0_range_st": 9.44,
+   "energy_std_db": 7.52
+  },
+  {
+   "id": "m04",
+   "start": 15.64,
+   "end": 21.53,
+   "words": 19,
+   "words_per_s": 3.23,
+   "chars_per_s": 10.9,
+   "rms_dbfs": -16.0,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 106.9,
+   "f0_std_st": 2.86,
+   "f0_range_st": 10.4,
+   "energy_std_db": 7.07
+  },
+  {
+   "id": "m05",
+   "start": 22.01,
+   "end": 27.45,
+   "words": 15,
+   "words_per_s": 2.76,
+   "chars_per_s": 13.2,
+   "rms_dbfs": -16.2,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 112.8,
+   "f0_std_st": 3.48,
+   "f0_range_st": 11.56,
+   "energy_std_db": 7.52
+  },
+  {
+   "id": "m06",
+   "start": 27.83,
+   "end": 30.81,
+   "words": 9,
+   "words_per_s": 3.02,
+   "chars_per_s": 11.1,
+   "rms_dbfs": -15.6,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 113.7,
+   "f0_std_st": 3.73,
+   "f0_range_st": 12.67,
+   "energy_std_db": 6.9
+  },
+  {
+   "id": "m07",
+   "start": 31.03,
+   "end": 34.34,
+   "words": 11,
+   "words_per_s": 3.32,
+   "chars_per_s": 12.1,
+   "rms_dbfs": -15.7,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 108.0,
+   "f0_std_st": 3.73,
+   "f0_range_st": 14.66,
+   "energy_std_db": 7.14
+  },
+  {
+   "id": "m08a",
+   "start": 34.62,
+   "end": 36.21,
+   "words": 4,
+   "words_per_s": 2.53,
+   "chars_per_s": 10.7,
+   "rms_dbfs": -15.8,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 114.2,
+   "f0_std_st": 3.56,
+   "f0_range_st": 13.85,
+   "energy_std_db": 6.89
+  },
+  {
+   "id": "m08b",
+   "start": 37.16,
+   "end": 43.58,
+   "words": 18,
+   "words_per_s": 2.8,
+   "chars_per_s": 11.8,
+   "rms_dbfs": -15.8,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 113.6,
+   "f0_std_st": 3.08,
+   "f0_range_st": 10.47,
+   "energy_std_db": 7.04
+  },
+  {
+   "id": "m09",
+   "start": 44.06,
+   "end": 47.6,
+   "words": 10,
+   "words_per_s": 2.82,
+   "chars_per_s": 10.2,
+   "rms_dbfs": -16.4,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 105.9,
+   "f0_std_st": 3.99,
+   "f0_range_st": 14.4,
+   "energy_std_db": 6.94
+  }
+ ],
+ "beat_loudness": {
+  "std_db": 0.3,
+  "max_dev_from_median_db": 0.5
+ },
+ "rate": {
+  "mean_words_per_s": 2.93,
+  "fastest": 3.66,
+  "slowest": 2.53
+ },
+ "pitch_dynamics": {
+  "mean_f0_std_st": 3.29,
+  "mean_f0_range_st": 11.58,
+  "between_beat_f0_spread_st": 0.61
+ },
+ "boundaries": [
+  {
+   "at": 3.4,
+   "take_join": false,
+   "loudness_jump_db": 2.39,
+   "pitch_jump_st": 4.7
+  },
+  {
+   "at": 9.74,
+   "take_join": false,
+   "loudness_jump_db": 7.56,
+   "pitch_jump_st": 11.9
+  },
+  {
+   "at": 15.16,
+   "take_join": false,
+   "loudness_jump_db": 8.9,
+   "pitch_jump_st": 7.5
+  },
+  {
+   "at": 21.77,
+   "take_join": false,
+   "loudness_jump_db": 3.28,
+   "pitch_jump_st": 9.2
+  },
+  {
+   "at": 27.64,
+   "take_join": false,
+   "loudness_jump_db": 6.72,
+   "pitch_jump_st": 6.9
+  },
+  {
+   "at": 34.48,
+   "take_join": false,
+   "loudness_jump_db": 3.44,
+   "pitch_jump_st": 4.25
+  },
+  {
+   "at": 36.69,
+   "take_join": false,
+   "loudness_jump_db": 5.26,
+   "pitch_jump_st": 4.0
+  },
+  {
+   "at": 43.82,
+   "take_join": false,
+   "loudness_jump_db": 5.34,
+   "pitch_jump_st": 6.85
+  }
+ ],
+ "take_joins": {
+  "n": 0,
+  "loudness_jump_abs_mean_db": null,
+  "pitch_jump_abs_mean_st": null
+ },
+ "within_take": {
+  "n": 8,
+  "loudness_jump_abs_mean_db": 5.36,
+  "pitch_jump_abs_mean_st": 6.91
+ }
+}

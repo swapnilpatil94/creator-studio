@@ -1,7 +1,0 @@
-[
- {"id":"a01","text":"आपका AI एजेंट 42 टूल कॉल करता है… और फिर भी गलत जवाब देता है।"},
- {"id":"a02","text":"वजह? Retry logic नहीं है। एक API फेल हुई, और पूरा workflow बैठ गया।"},
- {"id":"a03","text":"₹5000 का नुकसान, सिर्फ़ 3.5% error rate से।"},
- {"id":"a04","text":"तो fix क्या है? पहले rate limit लगाओ, फिर exponential backoff।"},
- {"id":"a05","text":"याद रखो — agent smart नहीं होता। उसका सिस्टम smart होता है।"}
-]
