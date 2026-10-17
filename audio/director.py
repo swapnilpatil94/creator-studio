@@ -37,6 +37,7 @@ def plan(beats, tempo_scale=1.0):
     """Returns phrase dicts: beat, id, text, emotion, params(exaggeration), tempo, gain_db, pause_after, seed, warn."""
     n = len(beats); out = []
     for i, b in enumerate(beats):
+        if not b.get("text", "").strip() and not b.get("phrases"): continue      # silent cards/breaths: the synth inserts their silence
         base = beat_emotion(b, i, n)
         phs = [dict(text=p["text"], emotion=emotion_name(p.get("emotion", base))) for p in b["phrases"]] if b.get("phrases") else [dict(text=t, emotion=phrase_emotion(base, t, k == 0, i == n - 1)) for k, t in enumerate(split_phrases(b["text"]))]
         if b.get("emotions") and not b.get("phrases"):                       # authored emotional flow: one emotion per auto-split phrase
