@@ -1,5 +1,7 @@
 // Dot-cinema runtime: everything is a pure function of time t. No Math.random, no wall clock.
-export const W = 1080, H = 1920, LW = 540, LH = 960, TAU = Math.PI * 2;
+export let W = 1080, H = 1920, LW = 540, LH = 960; export const TAU = Math.PI * 2;
+// world frame defaults to 1080x1920 (9:16); long-form films call setFormat(1920,1080) before drawing (ES live bindings)
+export function setFormat(w, h) { W = w; H = h; LW = w / 2; LH = h / 2; }
 export const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 export const smooth = v => { v = clamp(v); return v * v * (3 - 2 * v); };
 export const smoother = v => { v = clamp(v); return v * v * v * (v * (v * 6 - 15) + 10); };

@@ -1,0 +1,14 @@
+{
+ "name": "durga-janm-katha",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "format": "1920x1080",
+ "lead": 0.9,
+ "tail": 1.9,
+ "fps": 24,
+ "requireGates": true,
+ "visualQa": false,
+ "topic_evidence": "docs/PLAN_2026-10-17.md",
+ "title": "Durga's birth: the full Devi Mahatmya account"
+}

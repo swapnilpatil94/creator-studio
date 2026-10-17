@@ -18,9 +18,11 @@ const audioPath = arg("--audio") ? path.resolve(process.cwd(), arg("--audio")) :
 const audioOffset = Number(arg("--audio-offset", "0"));
 if (!Number.isFinite(audioOffset) || audioOffset < -5 || audioOffset > 5) fail("--audio-offset must be between -5 and 5 seconds.");
 const fps = Number(arg("--fps", "30"));
+// CSS viewport (DSF 2): default 540x960 (9:16 short); long-form landscape uses --size 960x540 -> 1920x1080
+const [VW, VH] = arg("--size", "540x960").split("x").map(Number);
 const forcedDuration = arg("--duration") ? Number(arg("--duration")) : null;
 if (!Number.isFinite(fps) || fps < 1 || fps > 60) fail("--fps must be between 1 and 60.");
-if (forcedDuration !== null && (!Number.isFinite(forcedDuration) || forcedDuration <= 0 || forcedDuration > 600)) fail("--duration must be > 0 and <= 600 seconds.");
+if (forcedDuration !== null && (!Number.isFinite(forcedDuration) || forcedDuration <= 0 || forcedDuration > 1800)) fail("--duration must be > 0 and <= 1800 seconds.");
 await fs.access(htmlPath);
 if (audioPath) await fs.access(audioPath);
 let audioDuration = 0;
@@ -43,7 +45,7 @@ const browserErrors = [];
 const externalRequests = [];
 const browser = await chromium.launch(args.includes("--gpu") ? { headless: true } : { headless: true, args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
 try {
-  const page = await browser.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 2, reducedMotion: "reduce" });
+  const page = await browser.newPage({ viewport: { width: VW, height: VH }, deviceScaleFactor: 2, reducedMotion: "reduce" });
   page.on("console", message => {
     if (message.type() === "error") browserErrors.push(`console: ${message.text()}`);
   });
@@ -66,9 +68,9 @@ try {
   if (contract.renderAt !== "function" || contract.getDuration !== "function" || !Number.isFinite(contract.duration) || contract.duration <= 0) {
     fail("HTML must define window.renderAt(seconds) and window.getDuration() returning a positive duration.");
   }
-  if (contract.duration > 600) fail("Scene duration must not exceed 600 seconds.");
+  if (contract.duration > 1800) fail("Scene duration must not exceed 1800 seconds.");
   duration = forcedDuration ?? Math.max(contract.duration, audioPath ? audioDuration + audioOffset : 0);
-  if (duration > 600) fail("Final duration must not exceed 600 seconds.");
+  if (duration > 1800) fail("Final duration must not exceed 1800 seconds.");
   frameCount = Math.ceil(duration * fps);
 
   await page.evaluate(() => window.renderAt(0));

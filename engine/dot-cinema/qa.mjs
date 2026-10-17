@@ -4,14 +4,16 @@
 // usage: node qa.mjs <video.mp4> <segments.json> <leadSeconds> <report.json>
 import { spawnSync } from "node:child_process"; import fs from "node:fs";
 const [video, segFile, leadS, out, cutsArg, silArg] = process.argv.slice(2); const DECLARED = silArg ? JSON.parse(silArg) : []; const CUTS = cutsArg ? JSON.parse(cutsArg) : []; const LEAD = Number(leadS || 0);
-const segs = JSON.parse(fs.readFileSync(segFile, "utf8")); const narrEnd = segs.duration_seconds, firstWord = segs.segments[0].words[0].start;
+const [EW, EH] = (process.env.QA_SIZE || "1080x1920").split("x").map(Number);   // expected output size; long-form landscape sets QA_SIZE=1920x1080
+const segs = JSON.parse(fs.readFileSync(segFile, "utf8")); segs.segments = segs.segments.filter(s => s.words && s.words.length);   // silent cards/breaths carry no words
+const narrEnd = segs.duration_seconds, firstWord = segs.segments[0].words[0].start;
 const run = (cmd, args, o = {}) => spawnSync(cmd, args, { encoding: o.buffer ? "buffer" : "utf8", maxBuffer: 1 << 30 });
 const checks = []; const add = (name, pass, detail) => { checks.push({ name, pass, detail }); console.log((pass ? "PASS " : "FAIL ") + name + " — " + detail); };
 
 const pr = JSON.parse(run("ffprobe", ["-v", "error", "-show_streams", "-show_format", "-of", "json", video]).stdout);
 const v = pr.streams.find(s => s.codec_type === "video"), a = pr.streams.find(s => s.codec_type === "audio"), dur = Number(pr.format.duration);
 const [fn, fd] = v.r_frame_rate.split("/").map(Number), fps = fn / fd;
-add("dimensions 1080x1920", v.width === 1080 && v.height === 1920, v.width + "x" + v.height);
+add("dimensions " + EW + "x" + EH, v.width === EW && v.height === EH, v.width + "x" + v.height);
 add("frame rate 24", Math.abs(fps - 24) < 0.01, fps.toFixed(2) + " fps");
 add("audio stream present", !!a, a ? a.codec_name + " " + a.sample_rate + "Hz" : "missing");
 add("duration covers narration + lead", dur >= narrEnd + LEAD - 0.05, dur.toFixed(2) + "s vs needed " + (narrEnd + LEAD).toFixed(2) + "s");
@@ -33,7 +35,7 @@ const expected = LEAD + firstWord;
 add("audio onset matches scene timeline (±0.25s)", onset >= 0 && Math.abs(onset - expected) < 0.25, "onset " + onset.toFixed(2) + "s vs expected " + expected.toFixed(2) + "s");
 
 // frames
-const W = 270, H = 480, raw = run("ffmpeg", ["-v", "error", "-i", video, "-vf", "fps=4,scale=" + W + ":" + H + ",format=gray", "-f", "rawvideo", "-"], { buffer: true }).stdout;
+const W = EW > EH ? 480 : 270, H = EW > EH ? 270 : 480, raw = run("ffmpeg", ["-v", "error", "-i", video, "-vf", "fps=4,scale=" + W + ":" + H + ",format=gray", "-f", "rawvideo", "-"], { buffer: true }).stdout;
 const n = Math.floor(raw.length / (W * H)), fr = i => raw.subarray(i * W * H, (i + 1) * W * H);
 const mean0 = i => { let s = 0; const b = fr(i); for (let k = 0; k < b.length; k += 7) s += b[k]; return s / (b.length / 7); };
 let blank = [], diffs = [], longestStatic = 0, run0 = 0;

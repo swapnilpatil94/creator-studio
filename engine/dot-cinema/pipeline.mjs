@@ -8,6 +8,7 @@ import { spawnSync, spawn } from "node:child_process"; import fs from "node:fs";
 const here = path.dirname(fileURLToPath(import.meta.url)), engine = path.resolve(here, ".."), dir = path.resolve(process.argv[2]);
 const force = process.argv.includes("--force"), fixN = process.argv.includes("--fix") ? process.argv[process.argv.indexOf("--fix") + 1] : "8";
 const cfg = JSON.parse(fs.readFileSync(path.join(dir, "story.json"), "utf8")), TYPE = cfg.type || "sdk", P = f => path.join(dir, f);
+if (cfg.format) process.env.QA_SIZE = cfg.format;
 const out = P("output"), build = P("build"); fs.mkdirSync(out, { recursive: true }); fs.mkdirSync(build, { recursive: true });
 const html = path.join(build, "index.html"), mp4 = path.join(out, cfg.name + ".mp4"), ovFile = P("overrides.json"), lead = Number(cfg.lead ?? 0.9);
 if (!fs.existsSync(ovFile)) fs.writeFileSync(ovFile, "{}");
@@ -30,10 +31,10 @@ if (TYPE === "html") {
   ev("validate", "ok", vj.warnings + " warnings auto-handled; scene " + (vj.stats.duration || "?") + "s vs film " + sceneDur.toFixed(1) + "s" + (Math.abs(TS - 1) > 0.05 ? " (timeline time-scaled x" + TS.toFixed(2) + ")" : ""));
 } else {
   const fp = sha(P(cfg.scene), P(cfg.segments), ...libFiles);
-  if (force || state.build !== fp || !fs.existsSync(html)) { const r = run("build", "node", [path.join(here, "build.mjs"), P(cfg.scene), html, P(cfg.segments)], here); if (r.status !== 0) fail("build", r); state.build = fp; ev("build", "ok"); } else ev("build", "cached");
+  if (force || state.build !== fp || !fs.existsSync(html)) { const r = run("build", "node", [path.join(here, "build.mjs"), P(cfg.scene), html, P(cfg.segments), ...(cfg.format ? [cfg.format] : [])], here); if (r.status !== 0) fail("build", r); state.build = fp; ev("build", "ok"); } else ev("build", "cached");
 }
 // ---- 2. visual QA with automatic repair ----
-{
+if (cfg.visualQa !== false) {
   const qaArgs = TYPE === "html" ? [path.join(here, "generic-qa.mjs"), html, ovFile, P(cfg.segments), String(lead), "--ts", String(TS), "--vdur", String(sceneDur), ...(cfg.captionsInScene ? ["--no-captions"] : []), "--fix", fixN, "--report", path.join(out, "visual-qa.json")] : [path.join(here, "visual-qa.mjs"), html, ovFile, "--fix", fixN, "--report", path.join(out, "visual-qa.json")];
   const r = run("visual-qa", "node", qaArgs, here);
   if (r.status !== 0) fail("visual-qa", { ...r, status: 2 }, (r.stdout || "").split("\n").slice(-14).join("\n") + "\nVisual standards not met after auto-repair; refusing to render.");
@@ -59,7 +60,7 @@ const fpR = sha(html, ovFile, audioForRender, path.join(engine, "scripts/render.
 if (force || state.render !== fpR || !fs.existsSync(mp4)) {
   const fdir = path.join(out, "frames"), fpFile = path.join(fdir, ".fingerprint"); const canResume = !force && fs.existsSync(fpFile) && fs.readFileSync(fpFile, "utf8") === fpR;
   if (!canResume) { fs.rmSync(fdir, { recursive: true, force: true }); fs.mkdirSync(fdir, { recursive: true }); fs.writeFileSync(fpFile, fpR); } ev("render", "running", canResume ? "resuming from existing frames" : "0");
-  const child = spawn("node", [path.join(engine, "scripts/render.mjs"), "--gpu", "--html", html, "--out", mp4, "--audio", audioForRender, "--audio-offset", String(audioOffset), "--fps", String(cfg.fps || 24), "--duration", String(sceneDur.toFixed(3)), ...(canResume ? ["--resume"] : []), ...injectArgs], { cwd: engine });
+  const child = spawn("node", [path.join(engine, "scripts/render.mjs"), "--gpu", "--html", html, "--out", mp4, "--audio", audioForRender, "--audio-offset", String(audioOffset), "--fps", String(cfg.fps || 24), "--duration", String(sceneDur.toFixed(3)), ...(cfg.format ? ["--size", cfg.format.split("x").map(v => v / 2).join("x")] : []), ...(canResume ? ["--resume"] : []), ...injectArgs], { cwd: engine });
   let log = ""; const onData = d => { const s = d.toString(); log += s; const m = [...s.matchAll(/Frames: (\d+)\/(\d+)/g)].pop(); if (m) ev("render", "progress", m[1] + "/" + m[2]); };
   child.stdout.on("data", onData); child.stderr.on("data", onData);
   const code = await new Promise(res => child.on("close", res)); fs.writeFileSync(path.join(out, "render.log"), log);

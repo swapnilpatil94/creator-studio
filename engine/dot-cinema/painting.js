@@ -1,13 +1,12 @@
 // Painting support for dot-cinema: baked images (see stories/*/assets/prep.py) drawn through the same camera, then dotified.
 import * as L from "./lib.js";
-const { W, H } = L;
 export function loadImages(map) { // { key: dataUrl } -> { key: HTMLImageElement }; window.__ready resolves when all decoded (render scripts await it)
   const out = {}, ps = [];
   for (const [k, url] of Object.entries(map)) { const im = new Image(); im.src = url; out[k] = im; ps.push(im.decode ? im.decode().catch(() => {}) : new Promise(r => { im.onload = r; im.onerror = r; })); }
   window.__ready = Promise.all(ps).then(() => true); return out;
 }
 // world rect of an image: fit = "cover" (fills the 1080x1920 world frame) or "height" (frame height, width follows; pan with cam.x)
-export function rectFor(img, fit) { const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height, s = fit === "height" ? H / ih : Math.max(W / iw, H / ih); const w = iw * s, h = ih * s; return { x: fit === "height" ? 0 : (W - w) / 2, y: (H - h) / 2, w, h, s, iw, ih }; }
+export function rectFor(img, fit) { const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height, s = fit === "height" ? L.H / ih : Math.max(L.W / iw, L.H / ih); const w = iw * s, h = ih * s; return { x: fit === "height" ? 0 : (L.W - w) / 2, y: (L.H - h) / 2, w, h, s, iw, ih }; }
 // draw into a half-res mask layer through the camera; opts.clip = [cx, cy, r] (world coords) for a spotlight; opts.alpha
 export function drawPainting(layer, img, cam, rect, opts = {}) {
   if (!img || !(img.complete && img.naturalWidth)) return; const g = layer.g; L.applyCam(g, cam, opts.p === undefined ? 1 : opts.p); g.save();
@@ -24,8 +23,8 @@ export function dotifyPalette(g, layer, pal, o = {}) {
   const cell = o.cell || 6, gain = o.gain === undefined ? 1 : o.gain, dis = o.dis || 0, seed = o.seed || 0, NB = 6, BB = 3, BA = [0.30, 0.62, 1], K = pal.length, LW_ = L.LW, LH_ = L.LH;
   const d = layer.g.getImageData(0, 0, LW_, LH_).data, buckets = []; for (let i = 0; i < K * NB * BB; i++) buckets.push(new Path2D());
   const rowH = cell * 0.866; let row = 0;
-  for (let y = cell / 2; y < H; y += rowH, row++) { let col = 0;
-    for (let x = (row & 1) * cell / 2 + cell / 2; x < W; x += cell, col++) {
+  for (let y = cell / 2; y < L.H; y += rowH, row++) { let col = 0;
+    for (let x = (row & 1) * cell / 2 + cell / 2; x < L.W; x += cell, col++) {
       const i = (((y / 2) | 0) * LW_ + ((x / 2) | 0)) * 4, a = d[i + 3]; if (a < 200) continue;
       const sz = Math.min(1, (d[i + 1] / 255) * gain); if (sz < 0.06) continue; const idx = Math.min(K - 1, d[i]); const sb = Math.min(NB - 1, (sz * NB) | 0), bb = d[i + 2] < 90 ? 0 : d[i + 2] < 170 ? 1 : 2;
       let px = x, py = y; if (dis > 0) { const hv = L.hash(row * 977 + col + seed), ang = hv * L.TAU, mag = Math.pow(dis, 1.4) * (60 + 220 * L.hash(hv * 91 + 3)); px += Math.cos(ang) * mag * 0.7; py += Math.sin(ang) * mag * 0.5 - dis * 90 * (0.3 + hv); }
