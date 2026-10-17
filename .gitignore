@@ -10,3 +10,4 @@ stories/*/output/
 stories/*/build/
 projects/
 audio/cache/
+.env.local
