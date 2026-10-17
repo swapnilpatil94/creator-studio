@@ -9,3 +9,4 @@ reference-analysis/sources/
 stories/*/output/
 stories/*/build/
 projects/
+audio/cache/

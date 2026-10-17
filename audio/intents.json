@@ -1,0 +1,58 @@
+{
+ "_note": "Derived from audio/experiments/sweep (n=1 per setting, seed-noise floor from 4 seeds). Only exaggeration moved delivery beyond noise (0.8+ doubled pitch range but lengthened speech ~25% and was unstable on the 2nd sentence), so intents differ by exaggeration (capped 0.75), plus post-hoc tempo (ffmpeg atempo, NOT a model control) and designed pauses. cfg_weight/temperature/min_p changes were within noise; repetition_penalty 1.2 truncated output to 1.6 s (never go below 2.0). v2: first directed render (v1) ran 2.55 words/s vs the existing 3.53 (too slow for short-form), so a global_tempo of 1.06 is applied (existing pipeline uses atempo 1.08) and pauses were shortened.",
+ "intents": {
+  "hook": {
+   "exaggeration": 0.7,
+   "tempo": 1.0,
+   "pause_after": 0.35
+  },
+  "narrate": {
+   "exaggeration": 0.6,
+   "tempo": 1.0,
+   "pause_after": 0.25
+  },
+  "calm": {
+   "exaggeration": 0.45,
+   "tempo": 0.97,
+   "pause_after": 0.3
+  },
+  "tense": {
+   "exaggeration": 0.68,
+   "tempo": 1.03,
+   "pause_after": 0.2
+  },
+  "awe": {
+   "exaggeration": 0.72,
+   "tempo": 0.96,
+   "pause_after": 0.45
+  },
+  "punch": {
+   "exaggeration": 0.75,
+   "tempo": 0.98,
+   "pause_after": 0.4
+  },
+  "question": {
+   "exaggeration": 0.62,
+   "tempo": 1.0,
+   "pause_after": 0.4
+  },
+  "reflective": {
+   "exaggeration": 0.5,
+   "tempo": 0.94,
+   "pause_after": 0.5
+  }
+ },
+ "limits": {
+  "exaggeration": [
+   0.3,
+   0.75
+  ],
+  "tempo": [
+   0.92,
+   1.1
+  ],
+  "repetition_penalty_min": 2.0,
+  "max_words_per_take": 28
+ },
+ "global_tempo": 1.06
+}

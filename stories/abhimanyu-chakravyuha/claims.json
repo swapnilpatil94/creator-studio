@@ -1,0 +1,101 @@
+{
+ "story": "stories/abhimanyu-chakravyuha",
+ "note": "Citations marked needs_check were written from memory of the tradition and have NOT been checked against the source text in this session; verify before publishing.",
+ "claims": [
+  {
+   "beat": "n01",
+   "claim": "On the 13th day Drona forms the chakravyuha",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "Drona Parva, chakravyuha-vadha sections (verify parva/section numbers)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n02",
+   "claim": "Seven rings with a maharathi on each; only Arjuna among the Pandavas knew how to break it",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "ring count and who guards each ring vary across tellings"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n03",
+   "claim": "Arjuna is drawn away to fight elsewhere (the Samshaptakas)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "Drona Parva (verify)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n04",
+   "claim": "Sixteen-year-old Abhimanyu knows how to enter but not how to leave",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "Abhimanyu tells Yudhishthira he knows entry, not exit (verify)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n05",
+   "claim": "He volunteers to go in",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "Drona Parva (verify)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n06",
+   "claim": "He breaks through ring after ring, fighting alone",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "Drona Parva (verify)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n07",
+   "claim": "Several maharathis surround and kill him; he fights to the end",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Mahabharata, Drona Parva (13th day of the Kurukshetra war)",
+     "locator": "number and names of attackers vary; narration says 'several' only"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "n08",
+   "claim": "Reflection that his defeat became an example",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "authored closing line, not a scriptural quotation"
+    }
+   ],
+   "narrated": false
+  }
+ ]
+}

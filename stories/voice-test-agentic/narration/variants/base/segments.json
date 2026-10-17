@@ -1,0 +1,59 @@
+{
+ "segments": [
+  {
+   "beat_id": "a01",
+   "text": "आपका AI एजेंट 42 टूल कॉल करता है… और फिर भी गलत जवाब देता है।",
+   "spoken": "आपका एआई एजेंट बयालीस टूल कॉल करता है… और फिर भी गलत जवाब देता है।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "start_seconds": 0.0,
+   "end_seconds": 5.506,
+   "gen_s": 16.4
+  },
+  {
+   "beat_id": "a02",
+   "text": "वजह? Retry logic नहीं है। एक API फेल हुई, और पूरा workflow बैठ गया।",
+   "spoken": "वजह? Retry logic नहीं है। एक एपीआई फेल हुई, और पूरा वर्कफ़्लो बैठ गया।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "start_seconds": 5.856,
+   "end_seconds": 11.601,
+   "gen_s": 14.6
+  },
+  {
+   "beat_id": "a03",
+   "text": "₹5000 का नुकसान, सिर्फ़ 3.5% error rate से।",
+   "spoken": "पाँच हज़ार रुपये का नुकसान, सिर्फ़ तीन दशमलव पाँच प्रतिशत error rate से।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "start_seconds": 11.951,
+   "end_seconds": 17.813,
+   "gen_s": 14.9
+  },
+  {
+   "beat_id": "a04",
+   "text": "तो fix क्या है? पहले rate limit लगाओ, फिर exponential backoff।",
+   "spoken": "तो fix क्या है? पहले rate limit लगाओ, फिर exponential backoff।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "start_seconds": 18.163,
+   "end_seconds": 22.271,
+   "gen_s": 12.5
+  },
+  {
+   "beat_id": "a05",
+   "text": "याद रखो — agent smart नहीं होता। उसका सिस्टम smart होता है।",
+   "spoken": "याद रखो — agent smart नहीं होता। उसका सिस्टम smart होता है।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "start_seconds": 22.621,
+   "end_seconds": 27.544,
+   "gen_s": 12.4
+  }
+ ]
+}

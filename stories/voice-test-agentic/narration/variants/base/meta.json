@@ -1,0 +1,60 @@
+{
+ "story": "voice-test-agentic",
+ "name": "base",
+ "mode": "baseline",
+ "post": "light",
+ "punct": "director",
+ "controls_used": [],
+ "plan": [
+  {
+   "id": "a01",
+   "text": "आपका AI एजेंट 42 टूल कॉल करता है… और फिर भी गलत जवाब देता है।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "pause_after": 0.35,
+   "seed": 42,
+   "words": 15
+  },
+  {
+   "id": "a02",
+   "text": "वजह? Retry logic नहीं है। एक API फेल हुई, और पूरा workflow बैठ गया।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "pause_after": 0.35,
+   "seed": 42,
+   "words": 14
+  },
+  {
+   "id": "a03",
+   "text": "₹5000 का नुकसान, सिर्फ़ 3.5% error rate से।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "pause_after": 0.35,
+   "seed": 42,
+   "words": 8
+  },
+  {
+   "id": "a04",
+   "text": "तो fix क्या है? पहले rate limit लगाओ, फिर exponential backoff।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "pause_after": 0.35,
+   "seed": 42,
+   "words": 11
+  },
+  {
+   "id": "a05",
+   "text": "याद रखो — agent smart नहीं होता। उसका सिस्टम smart होता है।",
+   "intent": "baseline",
+   "params": {},
+   "tempo": 1.0,
+   "pause_after": 0.35,
+   "seed": 42,
+   "words": 12
+  }
+ ]
+}

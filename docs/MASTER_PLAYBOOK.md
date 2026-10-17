@@ -59,3 +59,7 @@ node tests/studio-e2e.mjs /tmp                              # UI test (real Chro
 
 ## 8. Honesty rules
 Never claim a test, render, citation or quality improvement that was not verified. Measured proxies (F0 range, loudness, ASR accuracy) are not "emotional quality"; say what was measured. No guaranteed-views language. Credit third-party ideas; keep licences.
+
+
+## Audio (voice director) — added
+See `.claude/skills/chatterbox-voice-director/SKILL.md`. Code in `audio/`, UI at Studio `/voice`. Verified: only `exaggeration` is a reliable expressive control; director adds text prep, designed pauses, loudness consistency (-18 LUFS), A/B measurement. Not proven: emotional-quality gain. Open: directed pace is ~20% slower than legacy; tune `--tempo`/pauses by ear.
