@@ -1,0 +1,16 @@
+{
+ "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city",
+ "events": [
+  {"id": "ashtami", "name": "Durga Ashtami", "date": "2026-10-18", "tags": ["navratri", "durga"]},
+  {"id": "navami", "name": "Maha Navami", "date": "2026-10-19", "tags": ["navratri", "durga"]},
+  {"id": "dussehra", "name": "Dussehra / Vijayadashami", "date": "2026-10-20", "tags": ["dussehra", "ravana", "rama"]},
+  {"id": "sharad-purnima", "name": "Sharad Purnima", "date": "2026-10-25", "tags": ["sharad-purnima", "krishna"]},
+  {"id": "karwa-chauth", "name": "Karwa Chauth", "date": "2026-10-29", "tags": ["karwa-chauth", "savitri"]},
+  {"id": "dhanteras", "name": "Dhanteras", "date": "2026-11-06", "tags": ["dhanteras", "yama", "lakshmi"]},
+  {"id": "diwali", "name": "Diwali (Lakshmi Puja)", "date": "2026-11-09", "tags": ["diwali", "lakshmi", "rama"]}
+ ],
+ "queryTags": [
+  {"re": "दुर्गा|महिषासुर|नवरात्रि", "tag": "navratri"}, {"re": "रावण|दशहरा", "tag": "dussehra"}, {"re": "शरद पूर्णिमा", "tag": "sharad-purnima"},
+  {"re": "सावित्री", "tag": "karwa-chauth"}, {"re": "धनतेरस|यमराज", "tag": "dhanteras"}, {"re": "दिवाली|लक्ष्मी", "tag": "diwali"}
+ ]
+}

@@ -11,3 +11,5 @@ stories/*/build/
 projects/
 audio/cache/
 .env.local
+.yt-token.json
+stories/*/.thumb-scene.js

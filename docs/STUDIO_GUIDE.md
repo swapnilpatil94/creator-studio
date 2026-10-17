@@ -52,3 +52,10 @@ Demo data lives in `planner/fixtures/*FIXTURE*` and is synthetic. Use `PLANNER_D
 
 ## What the system cannot do
 It cannot guarantee views, judge whether a figure looks beautiful, or hear taste in the sound design. It can guarantee the film is reproducible, framed, readable, correctly timed and level-safe, and it stops when it is not.
+
+## Dashboard, SEO and upload (http://127.0.0.1:4180/dash)
+- **This week**: shorts/long board per channel; status comes from files in each story folder (claims, beats, voice, scene, render, publish pack, upload.json).
+- **Next topics**: `planner/next-topics.mjs` ranks saved searches + the festival calendar (heuristic, not a forecast).
+- **Searches**: log of every YouTube Data API search (queries, quota used, top outliers) and a form to run a new one (confirms quota first).
+- **Publish & upload**: 1) thumbnails (`tools/thumbnail.mjs`, from a real film frame, overlay <= 4 words), 2) SEO package (`planner/seo.mjs`: 5 titles, description, tags mined from winning videos, disclosure flags, checks), then upload.
+- **Upload needs OAuth**, not an API key: add `YT_OAUTH_CLIENT_ID` / `YT_OAUTH_CLIENT_SECRET` to `.env.local`, click Connect YouTube. Uploads are private/unlisted only; make public in YouTube Studio. "Dry run" shows the exact request without sending. Tokens live in `.yt-token.json` (gitignored).

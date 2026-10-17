@@ -1,0 +1,9 @@
+{
+ "channelId": null,
+ "note": "UNCONFIRMED. The authoritative answer is the account that completes OAuth (channels.list mine=true), shown in the dashboard. Candidates found by public search on 2026-10-17: ",
+ "candidates": [
+  {"id": "UCjnmYa2Vspe-lWk78rKerMQ", "title": "KATHAAYA | प्राचीन कथाएँ", "handle": "@kathaayastories", "created": "2023-01-22", "subs": 20800, "videos": 3, "views": 351, "recent": "Ganesh Chaturthi moon, Neelkanth, Ganesha broke tusk (Sep 2026)"},
+  {"id": "UCKiNLg4h7KoE1kyvQBaZNiQ", "title": "Kathaaya", "handle": "@kathaaya", "created": "2026-06-17", "subs": 0, "videos": 0, "views": 0},
+  {"id": "UCgZK_hgTJTmo89m2poFcI1g", "title": "KATHAAYA", "handle": "@kathaaya_000", "created": "2025-11-30", "subs": 6, "videos": 4, "views": 299, "recent": "vrat katha videos (Jun 2026)"}
+ ]
+}

@@ -65,6 +65,26 @@ function serveFile(req, res, file) {
   else { res.writeHead(200, { "content-type": type, "content-length": st.size, "accept-ranges": "bytes" }); fs.createReadStream(file).pipe(res); }
 }
 
+
+// ---------- dashboard helpers ----------
+import * as yt from "./yt.mjs";
+const storyDir = id => { if (!/^[a-z0-9-]+$/.test(id || "")) throw new Error("bad story id"); const d = path.join(root, "stories", id); if (!fs.existsSync(d)) throw new Error("no such story"); return d; };
+const tryJ = f => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; } };
+function stageState(item) {
+  const d = item.story ? path.join(root, "stories", item.story) : null, ex = f => !!d && fs.existsSync(path.join(d, f)), st = d ? tryJ(path.join(d, "story.json")) : null;
+  const stages = [["topic", true], ["research", ex("claims.json")], ["story", ex("beats.json")], ["voice", !!st && !!st.audio && ex(st.audio)], ["visuals", ex("scene.js")], ["render", !!st && ex("output/" + st.name + ".mp4")], ["publish pack", ex("publish.json") && ex("output/thumb-9x16.png")], ["uploaded", ex("upload.json")]];
+  const next = stages.find(x => !x[1]); const strict = !!st && !!st.requireGates;
+  return { stages: stages.map(([n, ok]) => ({ n, ok })), status: next ? (next[0] === "uploaded" ? "ready to upload" : "next: " + next[0]) : "uploaded", strictGates: strict, upload: ex("upload.json") ? tryJ(path.join(d, "upload.json")) : null };
+}
+function dashData() {
+  const D = path.join(root, "planner/data"), plan = tryJ(path.join(D, "week-plan.json")) || { items: [] }, nt = tryJ(path.join(D, "next-topics.json")) || { rows: [] };
+  const rowFor = t => nt.rows.find(r => r.topic === t) || null;
+  const items = plan.items.map(i => ({ ...i, ...stageState(i), data: rowFor(i.topic) }));
+  const searches = fs.existsSync(D) ? fs.readdirSync(D).filter(f => /^outliers-.*\.json$/.test(f)).sort().map(f => { const j = tryJ(path.join(D, f)); return { file: f, label: j.label, channel: j.channel, date: j.date, days: j.days, lang: j.lang, queries: j.queries, quotaUnits: j.quotaUnits, videos: j.videos.length, topOutliers: j.videos.filter(v => v.outlierRatio !== null && v.ageDays >= 3 && v.views >= 50000).sort((a, b) => b.viewsPerSub - a.viewsPerSub).slice(0, 5).map(v => ({ title: v.title, channel: v.channel, views: v.views, subs: v.subs, url: v.url, format: v.durationS <= 180 ? "short" : "long" })) }; }) : [];
+  const stories = fs.readdirSync(path.join(root, "stories")).filter(x => fs.existsSync(path.join(root, "stories", x, "story.json"))).map(x => { const pf = tryJ(path.join(root, "stories", x, "publish.json")); return { id: x, hasPublish: !!pf, publish: pf, upload: tryJ(path.join(root, "stories", x, "upload.json")), seed: tryJ(path.join(root, "stories", x, "publish.seed.json")) }; });
+  const yj = tryJ(path.join(root, "channels/kathaaya/youtube.json"));
+  return { week: plan.week, basis: plan.basis, items, nextTopics: nt, searches, stories, calendar: tryJ(path.join(D, "calendar-2026.json")), kathaayaCandidates: yj && yj.candidates, channelId: yj && yj.channelId, keysPresent: { read: /YOUTUBE_API_KEY=/.test(fs.existsSync(path.join(root, ".env.local")) ? fs.readFileSync(path.join(root, ".env.local"), "utf8") : "") } };
+}
 // ---------- routes ----------
 const server = http.createServer(async (req, res) => {
   try {
@@ -89,6 +109,28 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "POST" && p === "/api/voice/picks") { const b = JSON.parse((await readBody(req)).toString()); if (!/^[a-z0-9-]+$/.test(b.story || "") || !/^[a-zA-Z0-9_-]+$/.test(b.variant || "")) return send(res, 400, { error: "bad input" });
       const picks = {}; for (const [k, val] of Object.entries(b.picks || {})) if (/^[a-z0-9_-]+$/i.test(k) && Number.isInteger(val) && val >= 0 && val < 8) picks[k] = val;
       const d = path.join(root, "stories", b.story, "narration/variants", b.variant); if (!fs.existsSync(d)) return send(res, 404, { error: "no such variant" }); wj(path.join(d, "picks.json"), picks); return send(res, 200, { picks }); }
+    // ---------- dashboard / publish / YouTube ----------
+    if (req.method === "GET" && p === "/dash") return send(res, 200, fs.readFileSync(path.join(here, "dash.html")), "text/html; charset=utf-8");
+    if (req.method === "GET" && p === "/api/dash") return send(res, 200, dashData());
+    if (req.method === "POST" && p === "/api/dash/next-topics") { const r = spawnSync("node", [path.join(root, "planner/next-topics.mjs")], { encoding: "utf8" }); return send(res, r.status === 0 ? 200 : 500, r.status === 0 ? dashData() : { error: r.stderr }); }
+    if (req.method === "POST" && p === "/api/dash/research") { const b = JSON.parse((await readBody(req)).toString()); if (!b.confirm) return send(res, 400, { error: "confirm required: each query costs 100 YouTube API quota units (daily limit 10,000)" });
+      const qs = (b.queries || []).map(q => String(q).replace(/[|]/g, " ").trim()).filter(Boolean).slice(0, 12); if (!qs.length || !/^[a-z0-9-]+$/.test(b.label || "") || !["kathaaya", "agentic-ai"].includes(b.channel)) return send(res, 400, { error: "need channel, label (a-z0-9-) and queries" });
+      startJob("research", b.label, "node", [path.join(root, "planner/yt-outliers.mjs"), "--channel", b.channel, "--label", b.label, "--days", String(Math.min(365, Number(b.days) || 120)), "--per", "25", "--queries", qs.join("|")]); return send(res, 200, { started: true, estimatedQuota: qs.length * 100 + 40 }); }
+    if (req.method === "POST" && p === "/api/dash/seo") { const b = JSON.parse((await readBody(req)).toString()); const d = storyDir(b.story); const r = spawnSync("node", [path.join(root, "planner/seo.mjs"), d], { encoding: "utf8" }); return send(res, r.status === 0 ? 200 : 500, r.status === 0 ? { ok: true, log: r.stdout } : { error: (r.stderr || r.stdout).slice(-400) }); }
+    if (req.method === "POST" && p === "/api/dash/thumbnail") { const b = JSON.parse((await readBody(req)).toString()); const d = storyDir(b.story), a = [path.join(root, "tools/thumbnail.mjs"), d]; if (b.t) a.push("--t", String(Number(b.t))); if (b.text) a.push("--text", String(b.text)); const r = spawnSync("node", a, { encoding: "utf8" }); return send(res, r.status === 0 ? 200 : 500, r.status === 0 ? { ok: true } : { error: (r.stderr || r.stdout).slice(-300) }); }
+    if (req.method === "POST" && p === "/api/dash/title") { const b = JSON.parse((await readBody(req)).toString()); const d = storyDir(b.story), f = path.join(d, "publish.seed.json"), sd = rj(f); if (!Number.isInteger(b.index) || !sd.titles[b.index]) return send(res, 400, { error: "bad index" }); sd.chosenTitle = b.index; wj(f, sd); const r = spawnSync("node", [path.join(root, "planner/seo.mjs"), d], { encoding: "utf8" }); return send(res, 200, { ok: r.status === 0 }); }
+    if ((m = p.match(/^\/dash\/file\/([a-z0-9-]+)\/(.+)$/)) && req.method === "GET") { const base = path.join(root, "stories", m[1], "output"), f = path.resolve(base, m[2]); if (!f.startsWith(base + path.sep) || !/\.(png|jpg|mp4)$/.test(f)) return send(res, 403, { error: "forbidden" }); return serveFile(req, res, f); }
+    if (req.method === "GET" && p === "/api/yt/status") { let ch = null, err = null; if (yt.connected()) { try { ch = await yt.me(); } catch (e) { err = e.message; } } return send(res, 200, { oauthConfigured: yt.configured(), connected: yt.connected(), channels: ch, error: err, redirect: "http://127.0.0.1:" + cfg.port + "/oauth2callback" }); }
+    if (req.method === "POST" && p === "/api/yt/connect") { try { return send(res, 200, { url: yt.authUrl("http://127.0.0.1:" + cfg.port + "/oauth2callback") }); } catch (e) { return send(res, 400, { error: e.message }); } }
+    if (req.method === "GET" && p === "/oauth2callback") { try { if (u.searchParams.get("error")) throw new Error(u.searchParams.get("error")); await yt.exchange(u.searchParams.get("code"), u.searchParams.get("state")); return send(res, 200, "<meta charset=utf-8><body style='font:16px system-ui;padding:24px'>Connected to YouTube. You can close this tab and return to the dashboard.</body>", "text/html; charset=utf-8"); } catch (e) { return send(res, 400, "<meta charset=utf-8><body style='font:16px system-ui;padding:24px'>OAuth failed: " + String(e.message).replace(/[<>&]/g, "") + "</body>", "text/html; charset=utf-8"); } }
+    if (req.method === "POST" && p === "/api/yt/disconnect") { yt.disconnect(); return send(res, 200, { ok: true }); }
+    if (req.method === "POST" && p === "/api/yt/upload") { const b = JSON.parse((await readBody(req)).toString()); const d = storyDir(b.story), pf = path.join(d, "publish.json"); if (!fs.existsSync(pf)) return send(res, 400, { error: "generate the SEO package first" }); const pub = rj(pf);
+      const bad = pub.checks.filter(c => !c.ok && !/claims verified/.test(c.name)); if (bad.length) return send(res, 400, { error: "blocking checks failed: " + bad.map(c => c.name).join("; ") });
+      const warn = pub.checks.filter(c => !c.ok); if (warn.length && !b.ackClaims) return send(res, 400, { error: "you must tick: I have checked the claims warnings (" + warn.map(c => c.detail).join("; ") + ")" });
+      let pl; try { pl = yt.plan(pub, d, { privacy: b.privacy || "private" }); } catch (e) { return send(res, 400, { error: e.message }); }
+      if (b.dryRun) return send(res, 200, { dryRun: true, bytes: pl.bytes, quotaUnits: pl.quotaUnits, endpoints: pl.endpoints, body: pl.body });
+      if (!yt.connected()) return send(res, 400, { error: "connect YouTube first (OAuth)" }); if (!b.confirm) return send(res, 400, { error: "confirm required" });
+      startJob("upload", b.story, "node", ["-e", `import("${path.join(here, "yt.mjs")}").then(async m=>{const fs=await import("node:fs");const pub=JSON.parse(fs.readFileSync(${JSON.stringify(pf)},"utf8"));const r=await m.upload(pub,${JSON.stringify(d)},{privacy:${JSON.stringify(b.privacy || "private")},log:l=>console.log(l)});fs.writeFileSync(${JSON.stringify(path.join(d, "upload.json"))},JSON.stringify(r,null,1));console.log("DONE "+r.url+" ("+r.privacy+")")}).catch(e=>{console.error("UPLOAD FAILED: "+e.message);process.exit(1)})`]); return send(res, 200, { started: true }); }
     if (req.method === "GET" && p === "/shim.js") return send(res, 200, fs.readFileSync(path.join(dc, "studio-shim.js")), "text/javascript");
     if (req.method === "GET" && p === "/api/health") { const tts = fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py")), py = fs.existsSync(path.join(cfg.ttsRepo, ".venv/bin/python")); return send(res, 200, { ok: true, ttsRepo: cfg.ttsRepo, chatterbox: tts && py, ffmpeg: spawnSync("ffmpeg", ["-version"]).status === 0, job: job ? { kind: job.kind, id: job.id, status: job.status } : null }); }
     if (req.method === "GET" && p === "/api/projects") return send(res, 200, fs.readdirSync(PROJ).filter(x => fs.existsSync(path.join(PROJ, x, "story.json"))).map(x => ({ id: x, name: rj(path.join(PROJ, x, "story.json")).title || x, mtime: fs.statSync(path.join(PROJ, x, "story.json")).mtimeMs })).sort((a, b) => b.mtime - a.mtime));

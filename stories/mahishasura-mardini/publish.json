@@ -1,0 +1,187 @@
+{
+ "story": "mahishasura-mardini",
+ "channel": "kathaaya",
+ "format": "short",
+ "titleOptions": [
+  {
+   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… | Maa Durga Birth Story",
+   "formula": "question gap + roman keyword"
+  },
+  {
+   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा | Mahishasura Mardini",
+   "formula": "pattern break"
+  },
+  {
+   "t": "तीनों लोकों के देवता हार गए, फिर? | Durga Katha",
+   "formula": "stakes"
+  },
+  {
+   "t": "महिषासुर से देवता क्यों हारे? | Mahishasur Vadh Story",
+   "formula": "question gap 2"
+  },
+  {
+   "t": "बिना माँ की देवी: दुर्गा की कथा | Navratri Katha",
+   "formula": "contrast"
+  }
+ ],
+ "title": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… | Maa Durga Birth Story",
+ "description": "देवी दुर्गा का जन्म कैसे हुआ? कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं। 58 सेकंड में पूरी कथा।\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। चित्र प्रतीकात्मक हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n#Durga #Navratri #Mahishasura #Shorts",
+ "tags": [
+  "maa durga",
+  "mahishasur vadh",
+  "mahishasura mardini",
+  "goddess durga",
+  "mahishasura vadh",
+  "mahishasur vadh story",
+  "durga vs mahishasur",
+  "mahishasur story",
+  "navratri ki kahani",
+  "durga mata story",
+  "mahishasur vadh katha",
+  "mahishasur",
+  "mahishasur mardini",
+  "navratri story in hindi",
+  "mata rani",
+  "navratri special",
+  "durga puja",
+  "durga puja special",
+  "maa mahishasur mardini",
+  "mahishasur mardini hymn",
+  "mahishasur mardini strot",
+  "mahishasur mardini strotra",
+  "mahishasur mardini stotram",
+  "aigiri nandini mahishasura mardini",
+  "mahishasura"
+ ],
+ "hashtags": [
+  "#Durga",
+  "#Navratri",
+  "#Mahishasura",
+  "#Shorts"
+ ],
+ "categoryId": "24",
+ "defaultLanguage": "hi",
+ "defaultAudioLanguage": "hi",
+ "privacyStatus": "private",
+ "selfDeclaredMadeForKids": false,
+ "containsSyntheticMedia": true,
+ "video": "output/mahishasura-mardini.mp4",
+ "thumbnails": [
+  "output/thumb-9x16.png",
+  "output/thumb-16x9.png"
+ ],
+ "tagEvidence": [
+  {
+   "t": "maa durga",
+   "n": 16
+  },
+  {
+   "t": "mahishasur vadh",
+   "n": 14
+  },
+  {
+   "t": "mahishasura mardini",
+   "n": 10
+  },
+  {
+   "t": "goddess durga",
+   "n": 6
+  },
+  {
+   "t": "mahishasura vadh",
+   "n": 6
+  },
+  {
+   "t": "mahishasur vadh story",
+   "n": 5
+  },
+  {
+   "t": "durga vs mahishasur",
+   "n": 5
+  },
+  {
+   "t": "mahishasur story",
+   "n": 5
+  },
+  {
+   "t": "navratri ki kahani",
+   "n": 5
+  },
+  {
+   "t": "durga mata story",
+   "n": 4
+  },
+  {
+   "t": "mahishasur vadh katha",
+   "n": 4
+  },
+  {
+   "t": "mahishasur",
+   "n": 4
+  },
+  {
+   "t": "mahishasur mardini",
+   "n": 3
+  },
+  {
+   "t": "navratri story in hindi",
+   "n": 3
+  },
+  {
+   "t": "mata rani",
+   "n": 3
+  }
+ ],
+ "thumbnailSeed": {
+  "t": 29,
+  "overlay": "बिना माँ के?"
+ },
+ "checks": [
+  {
+   "name": "title <= 100 chars",
+   "ok": true,
+   "detail": 61
+  },
+  {
+   "name": "title <= ~60 chars shown on mobile before cut",
+   "ok": true,
+   "detail": 37
+  },
+  {
+   "name": "description <= 5000 bytes",
+   "ok": true,
+   "detail": 851
+  },
+  {
+   "name": "tags <= 500 chars",
+   "ok": true,
+   "detail": 478
+  },
+  {
+   "name": "format fits Shorts (<= 180 s)",
+   "ok": true,
+   "detail": "59 s"
+  },
+  {
+   "name": "rendered video exists",
+   "ok": true,
+   "detail": "mahishasura-mardini.mp4"
+  },
+  {
+   "name": "thumbnail generated",
+   "ok": true,
+   "detail": "thumb-9x16.png, thumb-16x9.png"
+  },
+  {
+   "name": "synthetic-media disclosure set",
+   "ok": true,
+   "detail": "containsSyntheticMedia=true"
+  },
+  {
+   "name": "claims verified at source",
+   "ok": false,
+   "detail": "10 claims still need_check (human must verify or keep the disclaimer)"
+  }
+ ],
+ "generated": "2026-10-17T11:34:49.715Z"
+}
