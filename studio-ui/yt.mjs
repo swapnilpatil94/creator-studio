@@ -30,21 +30,24 @@ export async function me() {
 }
 export const connected = () => !!loadTok();
 // Build the exact requests; dryRun returns them without any network call.
-export function plan(pub, dir, { privacy = "private" } = {}) {
-  if (!["private", "unlisted"].includes(privacy)) throw new Error("this tool uploads private or unlisted only; set public in YouTube Studio after review");
+// privacy: private | unlisted | public. publishAt (ISO time, 15 min..6 months ahead) schedules: the video is uploaded private and YouTube flips it to public at that time.
+// NOTE: YouTube forces videos uploaded through an API project that has not passed Google's compliance audit to stay PRIVATE whatever is requested; upload() reads the result back and reports it.
+export function plan(pub, dir, { privacy = "private", publishAt = null } = {}) {
+  if (!["private", "unlisted", "public"].includes(privacy)) throw new Error("privacy must be private, unlisted or public"); if (publishAt && !(new Date(publishAt) > new Date(Date.now() + 10 * 60000))) throw new Error("publishAt must be at least ~15 minutes in the future");
   if (!pub.video) throw new Error("no rendered video"); const file = path.join(dir, pub.video); if (!fs.existsSync(file)) throw new Error("video file missing: " + file);
-  const body = { snippet: { title: pub.title, description: pub.description, tags: pub.tags, categoryId: pub.categoryId, defaultLanguage: pub.defaultLanguage, defaultAudioLanguage: pub.defaultAudioLanguage }, status: { privacyStatus: privacy, selfDeclaredMadeForKids: !!pub.selfDeclaredMadeForKids, containsSyntheticMedia: !!pub.containsSyntheticMedia } };
+  const body = { snippet: { title: pub.title, description: pub.description, tags: pub.tags, categoryId: pub.categoryId, defaultLanguage: pub.defaultLanguage, defaultAudioLanguage: pub.defaultAudioLanguage }, status: { privacyStatus: publishAt ? "private" : privacy, ...(publishAt ? { publishAt: new Date(publishAt).toISOString() } : {}), selfDeclaredMadeForKids: !!pub.selfDeclaredMadeForKids, containsSyntheticMedia: !!pub.containsSyntheticMedia } };
   const thumb = (pub.thumbnails || [])[0] ? path.join(dir, pub.thumbnails[0]) : null;
   return { file, bytes: fs.statSync(file).size, body, thumb, quotaUnits: 1600 + (thumb ? 50 : 0), endpoints: ["POST https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", thumb ? "POST https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=<id>" : null].filter(Boolean) };
 }
-export async function upload(pub, dir, { privacy = "private", log = () => {} } = {}) {
-  const pl = plan(pub, dir, { privacy }), tok = await accessToken(); log("starting resumable upload (" + (pl.bytes / 1e6).toFixed(1) + " MB, " + privacy + ")");
+export async function upload(pub, dir, { privacy = "private", publishAt = null, log = () => {} } = {}) {
+  const pl = plan(pub, dir, { privacy, publishAt }), tok = await accessToken(); log("starting resumable upload (" + (pl.bytes / 1e6).toFixed(1) + " MB, " + privacy + ")");
   const init = await fetch("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", { method: "POST", headers: { authorization: "Bearer " + tok, "content-type": "application/json; charset=UTF-8", "x-upload-content-length": String(pl.bytes), "x-upload-content-type": "video/mp4" }, body: JSON.stringify(pl.body) });
   if (!init.ok) throw new Error("upload init failed: " + (await init.text()).slice(0, 400)); const loc = init.headers.get("location"); if (!loc) throw new Error("no upload location returned");
   const put = await fetch(loc, { method: "PUT", headers: { "content-length": String(pl.bytes), "content-type": "video/mp4" }, body: fs.createReadStream(pl.file), duplex: "half" }); const txt = await put.text(); if (!put.ok) throw new Error("upload failed: " + txt.slice(0, 400));
   const v = JSON.parse(txt); log("uploaded: video id " + v.id);
   let thumbOk = null; if (pl.thumb) { thumbOk = await setThumbnail(v.id, pl.thumb, dir); log("thumbnail: " + thumbOk); }
-  return { id: v.id, url: "https://youtu.be/" + v.id, privacy, thumbnail: thumbOk, uploaded: new Date().toISOString() };
+  let actual = null; try { const rr = await (await fetch("https://www.googleapis.com/youtube/v3/videos?part=status&id=" + v.id, { headers: { authorization: "Bearer " + tok } })).json(); actual = rr.items && rr.items[0] && rr.items[0].status.privacyStatus; } catch {} if (actual && actual !== (publishAt ? "private" : privacy)) log("WARNING: YouTube set the video to " + actual + " (an unaudited API project is forced to private; flip it in Studio or pass the compliance audit)");
+  return { id: v.id, url: "https://youtu.be/" + v.id, privacy: actual || privacy, requested: privacy, publishAt, thumbnail: thumbOk, uploaded: new Date().toISOString() };
 }
 
 // YouTube shows thumbnails 16:9 (search, channel page, Studio, suggested). A portrait (Shorts) image is composed onto a blurred fill of itself at 1280x720 so nothing is cropped; a 16:9 image is just scaled. JPEG under 2 MB.
