@@ -5,7 +5,7 @@
  "claims": [
   {
    "beat": "m01",
-   "claim": "The gods were defeated by Mahishasura",
+   "claim": "The gods (devas) were defeated by Mahishasura",
    "status": "traditional-account",
    "sources": [
     {
@@ -48,8 +48,8 @@
   },
   {
    "beat": "m04",
-   "claim": "The gods' combined energies (tejas) form a goddess",
-   "status": "traditional-account",
+   "claim": "A goddess arises from the gods' combined energies (tejas), not from a mother; other texts differ (e.g. Katyayani born at sage Katyayana's ashram)",
+   "status": "variant",
    "sources": [
     {
      "text": "Wikipedia: Devi Mahatmya",
@@ -65,7 +65,7 @@
   },
   {
    "beat": "m05",
-   "claim": "Vishnu gives the discus, Vayu bow and arrows, Himalaya the lion (other gods give other weapons; list not exhaustive)",
+   "claim": "Vishnu gives the discus, Vayu bow and arrows, Himalaya the lion; each god gives a share (list not exhaustive)",
    "status": "traditional-account",
    "sources": [
     {
@@ -107,8 +107,8 @@
    "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya"
   },
   {
-   "beat": "m08",
-   "claim": "Killed with the trident; the buffalo is beheaded and the demon emerges and is destroyed",
+   "beat": "m08a",
+   "claim": "Killed with the trident",
    "status": "traditional-account",
    "sources": [
     {
@@ -124,7 +124,24 @@
    "note": "agreed by secondary sources read this session; Wikipedia: Mahishasura; Wikipedia: Devi Mahatmya"
   },
   {
-   "beat": "m08",
+   "beat": "m08b",
+   "claim": "The buffalo is beheaded; the demon emerges and is destroyed",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Mahishasura; Wikipedia: Devi Mahatmya"
+  },
+  {
+   "beat": "m08b",
    "claim": "Epithet Mahishasuramardini",
    "status": "traditional-account",
    "sources": [
@@ -138,7 +155,7 @@
   },
   {
    "beat": "m09",
-   "claim": "Moral framing: united strength overcomes the demon",
+   "claim": "Moral framing: they lost alone, together they became the goddess",
    "status": "interpretation",
    "sources": [],
    "narrated": true

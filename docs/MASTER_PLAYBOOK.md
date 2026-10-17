@@ -63,3 +63,9 @@ Never claim a test, render, citation or quality improvement that was not verifie
 
 ## Audio (voice director) — added
 See `.claude/skills/chatterbox-voice-director/SKILL.md`. Code in `audio/`, UI at Studio `/voice`. Verified: only `exaggeration` is a reliable expressive control; director adds text prep, designed pauses, loudness consistency (-18 LUFS), A/B measurement. Not proven: emotional-quality gain. Open: directed pace is ~20% slower than legacy; tune `--tempo`/pauses by ear.
+
+## Update 2026-10-17: strict workflow + real data
+- Topic decisions come from the YouTube Data API (`planner/yt-outliers.mjs` + `yt-analyze.mjs`), recorded in `docs/PLAN_<date>.md`.
+- Every video follows `.claude/skills/workflow-gate`; `planner/gates.mjs` + `"requireGates": true` make the pipeline refuse to build without topic evidence, claims, TREATMENT, authored sound with >= 2 silences, hook lint and recorded skill reads.
+- A/V QA exempts silences declared in `sound.json` (they are measured, not hidden); `sound.mjs` honours `silences`.
+- First film through the strict path: `stories/mahishasura-mardini` (Durga's birth).

@@ -66,7 +66,7 @@ if (force || state.render !== fpR || !fs.existsSync(mp4)) {
   if (code !== 0) fail("render", { status: code, stdout: log, stderr: "" }); state.render = fpR; ev("render", "ok", ((Date.now() - t0) / 1000).toFixed(0) + "s");
 } else ev("render", "cached");
 // ---- 5. audio/video QA on the real file ----
-{ const r = run("qa", "node", [path.join(here, "qa.mjs"), mp4, P(cfg.segments), String(lead), path.join(out, "qa.json"), JSON.stringify((cfg.cuts || []).map(c => c + lead))], here); console.log((r.stdout || "").trim().split("\n").slice(-16).join("\n")); if (r.status !== 0) fail("qa", r); ev("qa", "ok", "all checks passed"); }
+{ const r = run("qa", "node", [path.join(here, "qa.mjs"), mp4, P(cfg.segments), String(lead), path.join(out, "qa.json"), JSON.stringify((cfg.cuts || []).map(c => c + lead)), JSON.stringify(((fs.existsSync(P("sound.json")) ? JSON.parse(fs.readFileSync(P("sound.json"), "utf8")).silences : []) || []).map(x => [x.t + lead, x.t + lead + x.dur]))], here); console.log((r.stdout || "").trim().split("\n").slice(-16).join("\n")); if (r.status !== 0) fail("qa", r); ev("qa", "ok", "all checks passed"); }
 // ---- 6. share copy ----
 const share = path.join(out, cfg.name + "-share.mp4");
 if (!fs.existsSync(share) || fs.statSync(share).mtimeMs < fs.statSync(mp4).mtimeMs) { const r = run("share", "ffmpeg", ["-y", "-loglevel", "error", "-i", mp4, "-vf", "scale=720:-2", "-c:v", "libx264", "-crf", "24", "-preset", "medium", "-c:a", "aac", "-b:a", "128k", share], here); if (r.status !== 0) fail("share", r); }

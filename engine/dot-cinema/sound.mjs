@@ -67,6 +67,9 @@ export function synth(spec, duration) {
     for (const d of aps) { const b = new Float32Array(d + off), g = 0.5; let p = 0; for (let i = 0; i < N; i++) { const y = b[p], v = out[i]; const o = -v + y; b[p] = v + y * g; out[i] = o; p = (p + 1) % b.length; } } return out; }
   const wl = reverb(SL, 0), wr = reverb(SR_, 23); const wet = db(-4);
   for (let i = 0; i < N; i++) { L[i] += wl[i] * wet; R[i] += wr[i] * wet; }
+  // ---------- authored silences: duck everything (bed, cues, reverb tails) to near zero so the next sound lands ----------
+  for (const sl of spec.silences || []) { const a0 = (sl.t + lead) * SR, b0 = a0 + sl.dur * SR, f = (sl.fade || 0.25) * SR;
+    for (let i = Math.max(0, Math.floor(a0 - f)); i < Math.min(N, Math.ceil(b0 + f)); i++) { const g = i < a0 ? 1 - (i - (a0 - f)) / f : i > b0 ? (i - b0) / f : 0, gg = Math.max(0.02, g); L[i] *= gg; R[i] *= gg; } }
   // ---------- master: soft clip, headroom ----------
   let pk = 0; for (let i = 0; i < N; i++) { L[i] = Math.tanh(L[i] * 1.1) / 1.1; R[i] = Math.tanh(R[i] * 1.1) / 1.1; pk = Math.max(pk, Math.abs(L[i]), Math.abs(R[i])); }
   const norm = pk > 0 ? db(-3) / pk : 1; for (let i = 0; i < N; i++) { L[i] *= norm; R[i] *= norm; }

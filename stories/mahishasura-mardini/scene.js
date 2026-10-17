@@ -7,8 +7,12 @@ const DATA = window.DATA, SEGS = DATA.segments, OV = window.OVERRIDES || {};
 const ov = (grp, key, def) => (OV[grp] && OV[grp][key] !== undefined) ? OV[grp][key] : def;
 const LEAD = 0.9, TAIL = 1.9, DURATION = DATA.duration_seconds + LEAD + TAIL;
 const beat = id => SEGS.find(s => s.beat_id === id);
-const SHOTS = [["defeat", "m01"], ["shape", "m02"], ["throne", "m03"], ["radiance", "m04"], ["gifts", "m05"], ["ride", "m06"], ["battle", "m07"], ["trident", "m08"], ["dawn", "m09"]]
+const SHOTS = [["defeat", "m01"], ["shape", "m02"], ["throne", "m03"], ["radiance", "m04"], ["gifts", "m05"], ["ride", "m06"], ["battle", "m07"], ["trident", "m08a"], ["dawn", "m09"]]
   .map(([k, id], i, a) => ({ k, t0: i === 0 ? -LEAD : beat(id).start_seconds - 0.3, t1: i === a.length - 1 ? DURATION : beat(a[i + 1][1]).start_seconds - 0.3 }));
+const clean = w => w.replace(/[।…—,.?!]/g, "");
+const wt = (id, pre, fb) => { const b = beat(id), w = b.words.find(q => clean(q.word).startsWith(pre)); return w ? w.start : (fb === undefined ? b.start_seconds : fb); };
+const T_A = beat("m08a").start_seconds, T_B = beat("m08b").start_seconds, T_CUT = wt("m08b", "कटा"), T_EM = wt("m08b", "निकला"), T_DIE = wt("m08b", "ख", T_B + 4), T_NAME = wt("m08b", "महिषासुर", T_B + 6);
+const rideX = u => mix(-200, 1250, u);
 const shotAt = n => { let s = SHOTS[0]; for (const q of SHOTS) if (n >= q.t0) s = q; return s; };
 const kf = (keys, u) => { if (u <= keys[0][0]) return keys[0][1]; for (let i = 0; i < keys.length - 1; i++) { const a = keys[i], b = keys[i + 1]; if (u <= b[0]) return mix(a[1], b[1], smoother((u - a[0]) / (b[0] - a[0]))); } return keys[keys.length - 1][1]; };
 
@@ -69,6 +73,13 @@ function drawGoddess(gc, x, y, S, t, o = {}) {
   }
   gc.restore();
 }
+function goddessAccent(gl, x, y, S, t, a = 1) {
+  const hx = x, hy = y - 1.3 * S, P = (u, v) => [x + u * S, y + v * S]; gl.save(); gl.fillStyle = "rgb(255,255,0)"; gl.strokeStyle = "rgb(255,255,0)"; gl.globalAlpha = 0.9 * a;
+  for (let i = 0; i < 48; i++) { const an = i / 48 * TAU + t * 0.12; gl.beginPath(); gl.arc(hx + Math.cos(an) * 0.66 * S, hy + Math.sin(an) * 0.66 * S, Math.max(2.4, 0.013 * S), 0, TAU); gl.fill(); }
+  gl.globalAlpha = 0.95 * a; gl.lineWidth = Math.max(2, 0.03 * S); gl.lineJoin = "round"; gl.beginPath();
+  [[-0.3, -1.45], [-0.22, -1.95], [-0.08, -1.6], [0, -2.1], [0.08, -1.6], [0.22, -1.95], [0.3, -1.45]].forEach((q, i) => { const p = P(q[0], q[1]); i ? gl.lineTo(p[0], p[1]) : gl.moveTo(p[0], p[1]); }); gl.closePath(); gl.stroke();
+  gl.globalAlpha = a; for (const k of [-1, 1]) { gl.beginPath(); gl.ellipse(hx + k * 0.1 * S, hy - 0.02 * S, 0.035 * S, 0.022 * S, 0, 0, TAU); gl.fill(); } gl.restore();
+}
 function drawLion(gc, x, y, S, t, run = 1) {
   const ph = t * 7 * run, P = (u, v) => [x + u * S, y + v * S]; gc.fillStyle = "#fff"; gc.strokeStyle = "#fff";
   gc.beginPath(); gc.ellipse(...P(-0.1, -0.05), 1.05 * S, 0.5 * S, 0, 0, TAU); gc.fill();
@@ -122,9 +133,9 @@ function camBase(n, sk) {
   else if (k === "throne") { x = 540; y = kf([[0, 1000], [1, 1130]], u); zoom = kf([[0, 1.05], [0.6, 0.95], [1, 0.8]], u); roll = kf([[0, 0], [0.7, 3], [1, 5]], u); shake = 10 * smooth(seg(u, 0.2, 0.45)) * (1 - smooth(seg(u, 0.5, 0.8))); }
   else if (k === "radiance") { x = 540; y = 900; zoom = kf([[0, 0.78], [0.6, 0.95], [1, 1.12]], u); shake = 8 * smooth(seg(u, 0.38, 0.5)) * (1 - smooth(seg(u, 0.5, 0.65))); }
   else if (k === "gifts") { x = 540; y = 900; zoom = kf([[0, 1.1], [1, 0.9]], u); }
-  else if (k === "ride") { x = kf([[0, 300], [1, 760]], u); y = 1050; zoom = kf([[0, 0.9], [1, 0.82]], u); }
+  else if (k === "ride") { x = rideX(u) + 180; y = 820; zoom = kf([[0, 1.0], [1, 0.9]], u); shake = 4 * Math.sin(n * 14); }
   else if (k === "battle") { x = kf([[0, 560], [1, 640]], u); y = 1000; zoom = kf([[0, 0.72], [1, 0.8]], u); shake = 7 * Math.sin(u * 50) * smooth(seg(u, 0.1, 0.4)); }
-  else if (k === "trident") { x = 540; y = kf([[0, 960], [0.45, 900], [0.8, 940], [1, 900]], u); zoom = kf([[0, 0.78], [0.45, 0.95], [0.5, 1.1], [0.62, 0.96], [1, 0.85]], u); shake = 22 * smooth(seg(u, 0.44, 0.5)) * (1 - smooth(seg(u, 0.5, 0.75))); }
+  else if (k === "trident") { x = 540; y = kf([[sk.t0, 960], [T_B, 900], [sk.t1, 930]], n); zoom = kf([[sk.t0, 0.8], [T_B - 0.35, 1.0], [T_B, 1.12], [T_B + 0.5, 0.98], [Math.max(T_DIE, T_B + 0.9), 0.92], [sk.t1, 0.85]], n); shake = 24 * smooth(seg(n, T_B - 0.03, T_B + 0.12)) * (1 - smooth(seg(n, T_B + 0.12, T_B + 0.8))); }
   else { x = 540; y = kf([[0, 980], [1, 900]], u); zoom = kf([[0, 0.9], [1, 0.8]], u); }
   const hv = Math.floor(n * 30), sh = shake * (hash(hv) - 0.5), sv = shake * (hash(hv + 99) - 0.5);
   return { x, y, zoom, roll, shx: sh * 2, shy: sv * 2 };
@@ -149,10 +160,10 @@ function renderShot(n, t, sk, cam, scene) {
   } else if (k === "shape") {
     const ph = u * 3, which = Math.floor(ph) % 3, fr = ph % 1, f = Math.sin(clamp((fr - 0.35) / 0.6) * Math.PI);
     const jit = (hash(Math.floor(t * 18)) - 0.5);
-    // buffalo head whose horns stretch and whose edge breaks into spikes between forms
-    drawBuffalo(gm, 540, 900, 255 * (1 + 0.06 * Math.sin(t * 4)), { rage: 0.5 + 0.5 * Math.sin(ph * 2), tilt: 0.05 * jit });
-    if (f > 0.05) { gm.fillStyle = "#fff"; for (let i = 0; i < 14; i++) { const a = i / 14 * TAU + ph, r = 380 + 150 * hash(i + which * 7); gm.beginPath(); gm.moveTo(540 + Math.cos(a - 0.08) * 200, 900 + Math.sin(a - 0.08) * 200); gm.lineTo(540 + Math.cos(a) * r * f, 900 + Math.sin(a) * r * f); gm.lineTo(540 + Math.cos(a + 0.08) * 200, 900 + Math.sin(a + 0.08) * 200); gm.closePath(); gm.fill(); } }
-    tintMain = 0.45; LT(() => { L.applyCam(subL.g, cam, 1); buffaloEyes(subL.g, 540, 900, 255, 1); });
+    // buffalo head cross-fades into a spiked burst and back: the enemy has no fixed shape
+    gm.save(); gm.globalAlpha = 1 - 0.9 * f; drawBuffalo(gm, 540, 900, 255 * (1 + 0.06 * Math.sin(t * 4)), { rage: 0.5 + 0.5 * Math.sin(ph * 2), tilt: 0.05 * jit }); gm.restore();
+    if (f > 0.02) { gm.save(); gm.globalAlpha = f; gm.fillStyle = "#fff"; for (let i = 0; i < 16; i++) { const a = i / 16 * TAU + ph * 0.8, r = 400 + 170 * hash(i + which * 7); gm.beginPath(); gm.moveTo(540 + Math.cos(a - 0.1) * 190, 900 + Math.sin(a - 0.1) * 190); gm.lineTo(540 + Math.cos(a) * r, 900 + Math.sin(a) * r); gm.lineTo(540 + Math.cos(a + 0.1) * 190, 900 + Math.sin(a + 0.1) * 190); gm.closePath(); gm.fill(); } disc(gm, 540, 900, 210); gm.restore(); }
+    tintMain = 0.45; LT(() => { L.applyCam(subL.g, cam, 1); buffaloEyes(subL.g, 540, 900, 255, 1 - f); });
     hero = "sub";
   } else if (k === "throne") {
     // Indra's throne: tall arch + stepped dais; it tilts, cracks and sinks as the lights fall away
@@ -169,38 +180,39 @@ function renderShot(n, t, sk, cam, scene) {
     GODS.forEach((q, i) => { for (let s = 0; s < 26; s++) { const tt = clamp(conv - s * 0.012), curve = Math.sin(tt * Math.PI) * 140 * (i % 2 ? 1 : -1); const x = mix(q[0], 540, tt * tt * (3 - 2 * tt)) + curve * 0.4, y = mix(q[1], 820, tt * tt * (3 - 2 * tt)) + curve; gl.fillStyle = "rgb(255,255,0)"; gl.globalAlpha = (1 - s / 26) * (1 - form * 0.7); gl.beginPath(); gl.arc(x, y, 7 - s * 0.22, 0, TAU); gl.fill(); } });
     gl.globalAlpha = 1; glowDisc(gl, 540, 820, 120 + 520 * flash + 160 * form, 0.25 + 0.7 * flash, "rgb(255,255,0)");
     if (form > 0) { for (let r = 0; r < 4; r++) { const R = (240 + r * 110) * form; for (let i = 0; i < 12 + r * 10; i++) { const a = i / (12 + r * 10) * TAU + t * 0.25 * (r % 2 ? 1 : -1); gl.fillStyle = "rgb(255,230,0)"; gl.globalAlpha = 0.5 * (1 - r * 0.15); gl.beginPath(); gl.arc(540 + Math.cos(a) * R, 820 + Math.sin(a) * R, 3.4, 0, TAU); gl.fill(); } } gl.globalAlpha = 1; } });
-    gm.globalAlpha = smooth(seg(u, 0.62, 0.92)); drawGoddess(gm, 540, 950, 300 * (0.7 + 0.3 * form), t, { noWeapons: false, spread: 1 }); gm.globalAlpha = 1;
+    gm.globalAlpha = smooth(seg(u, 0.62, 0.92)); drawGoddess(gm, 540, 950, 300 * (0.7 + 0.3 * form), t, { noWeapons: false, spread: 1 }); gm.globalAlpha = 1; LT(() => { L.applyCam(subL.g, cam, 1); goddessAccent(subL.g, 540, 950, 300 * (0.7 + 0.3 * form), t, smooth(seg(u, 0.7, 0.95))); });
     tintMain = 1; tintRim = 1; hero = u > 0.7 ? "sub" : null;
   } else if (k === "gifts") {
-    drawGoddess(gm, 540, 980, 300, t, { arms: 8, spread: 1, noWeapons: u < 0.7 });
+    drawGoddess(gm, 540, 980, 300, t, { arms: 8, spread: 1, noWeapons: u < 0.7 }); LT(() => { L.applyCam(subL.g, cam, 1); goddessAccent(subL.g, 540, 980, 300, t); });
     // chakra, bow and the lion arrive and dock at her hands
     const a1 = smoother(seg(u, 0.08, 0.38)), a2 = smoother(seg(u, 0.28, 0.58)), a3 = smoother(seg(u, 0.5, 0.85));
     const dock = (from, to, f) => [mix(from[0], to[0], f), mix(from[1], to[1], f) - Math.sin(f * Math.PI) * 120];
     if (u < 0.7) { const cp = dock([1050, 360], [760, 560], a1); L.applyCam(g2, cam, 1); weapon(g2, 1, cp, 0, 360, t); const bp = dock([30, 420], [340, 600], a2); weapon(g2, 2, bp, 0.2, 340, t); drawLion(g2, mix(1500, 790, a3), 1340, 150, t, 1 - a3 * 0.6); }
     tintMain = 1; tintRim = 1; hero = "sub";
   } else if (k === "ride") {
-    const lx = mix(-200, 1250, u), bob = Math.sin(t * 7) * 8;
-    drawLion(gm, lx, 1170 + bob, 200, t, 1); drawGoddess(gm, lx + 20, 960 + bob * 0.6, 150, t, { sit: true, arms: 8, spread: 0.9, reach: 0.9 });
-    L.embers(g, cam, t, { n: 90, seed: 41, x0: lx - 900, x1: lx + 200, y0: 1000, y1: 1280, speed: 0.55, alpha: 0.8, color: "rgba(255,200,120,", p: 1 });
+    const lx = rideX(u), bob = Math.sin(t * 7) * 8;
+    drawLion(g2, lx, 1030 + bob, 260, t, 1); drawGoddess(gm, lx + 30, 614 + bob * 0.6, 190, t, { sit: true, arms: 8, spread: 0.9, reach: 0.9 }); LT(() => { L.applyCam(subL.g, cam, 1); goddessAccent(subL.g, lx + 30, 614 + bob * 0.6, 190, t); });
+    L.embers(g, cam, t, { n: 90, seed: 41, x0: lx - 900, x1: lx + 200, y0: 1000, y1: 1290, speed: 0.55, alpha: 0.8, color: "rgba(255,200,120,", p: 1 });
     tintMain = 1; tintRim = 1; hero = "sub";
   } else if (k === "battle") {
     const approach = smooth(seg(u, 0, 0.35)), hit = Math.sin(t * 9) * 0.5 + 0.5;
     const bx = mix(1450, 930, approach) + (u > 0.35 ? Math.sin(t * 14) * 14 : 0), form = Math.floor(t * 2.2) % 3;
     drawBuffalo(g2, bx, 960, 235, { rage: 1, tilt: -0.1 + 0.08 * Math.sin(t * 6) });
     if (form === 1) { g2.fillStyle = "#fff"; for (let i = 0; i < 12; i++) { const a = i / 12 * TAU + t, r = 520 + 100 * hash(i); g2.beginPath(); g2.moveTo(bx + Math.cos(a - 0.1) * 260, 960 + Math.sin(a - 0.1) * 260); g2.lineTo(bx + Math.cos(a) * r, 960 + Math.sin(a) * r); g2.lineTo(bx + Math.cos(a + 0.1) * 260, 960 + Math.sin(a + 0.1) * 260); g2.closePath(); g2.fill(); } }
-    drawLion(gm, 330 + Math.sin(t * 3) * 10, 1170, 180, t, 0.5); drawGoddess(gm, 350 + Math.sin(t * 3) * 10, 980, 135, t, { sit: true, arms: 8, spread: 1, reach: 1.15 + 0.15 * hit });
+    drawLion(g2, 330 + Math.sin(t * 3) * 10, 1030, 200, t, 0.5); drawGoddess(gm, 350 + Math.sin(t * 3) * 10, 703, 150, t, { sit: true, arms: 8, spread: 1, reach: 1.15 + 0.15 * hit }); LT(() => { L.applyCam(subL.g, cam, 1); goddessAccent(subL.g, 350 + Math.sin(t * 3) * 10, 703, 150, t); });
     LT(() => { L.applyCam(subL.g, cam, 1); const gl = subL.g; for (let i = 0; i < 6; i++) { const ph = (t * 1.8 + i / 6) % 1; if (ph < 0.3) { gl.strokeStyle = "rgb(255,255,0)"; gl.globalAlpha = 1 - ph / 0.3; gl.lineWidth = 6; gl.beginPath(); gl.arc(mix(520, 820, ph / 0.3), 900 + (i - 3) * 50, 70 + ph * 120, -1.2, 1.2); gl.stroke(); } } gl.globalAlpha = 1; });
     tintMain = 1; tintRim = 1; hero = "sub"; LT(() => { L.applyCam(sub2L.g, cam, 1); buffaloEyes(sub2L.g, bx, 960, 235, 1, -0.1); });
   } else if (k === "trident") {
-    const thrust = smoother(seg(u, 0.18, 0.46)), cut = smooth(seg(u, 0.46, 0.62)), emerge = smoother(seg(u, 0.52, 0.8)), die = smooth(seg(u, 0.76, 0.92));
-    const bx = 540, by = 1150;
-    // buffalo head: split by a diagonal cut, the upper half falls away
+    const enter = smoother(seg(n, T_A - 0.1, T_A + 0.9)), strike = smoother(seg(n, T_B - 0.04, T_B + 0.16)), cut = smooth(seg(n, T_CUT - 0.1, T_CUT + 0.5)), emerge = smoother(seg(n, T_EM - 0.3, T_EM + 0.9)), die = smooth(seg(n, T_DIE, T_DIE + 0.9)), title = smooth(seg(n, T_NAME - 0.1, T_NAME + 0.7));
+    const bx = 540, by = 1150, flash = Math.exp(-Math.pow((n - T_B - 0.1) / 0.16, 2));
     g2.save(); drawBuffalo(g2, bx, by, 240, { rage: 1 }); g2.restore();
     if (cut > 0) { const cx0 = bx, cy0 = by - 40; g2.save(); g2.globalCompositeOperation = "destination-out"; g2.beginPath(); g2.moveTo(cx0 - 700, cy0 + 120); g2.lineTo(cx0 + 700, cy0 - 120); g2.lineTo(cx0 + 700, cy0 - 1200); g2.lineTo(cx0 - 700, cy0 - 1200); g2.closePath(); g2.fill(); g2.restore();
       g2.save(); g2.translate(cut * 160, -cut * 50 + cut * cut * 480); g2.rotate(cut * 0.4); g2.translate(bx, by); g2.translate(-bx, -by); drawBuffalo(g2, bx, by, 240, { rage: 1 }); g2.globalCompositeOperation = "destination-in"; g2.beginPath(); g2.moveTo(cx0 - 700, cy0 + 120); g2.lineTo(cx0 + 700, cy0 - 120); g2.lineTo(cx0 + 700, cy0 - 1400); g2.lineTo(cx0 - 700, cy0 - 1400); g2.closePath(); g2.fill(); g2.restore(); }
     if (emerge > 0) drawDemon(gm, bx - 10, by - 150, 260, emerge);
-    const ty = mix(-500, 640, thrust) + cut * 0, tx = bx + 40 - (1 - thrust) * 60; if (thrust > 0.01) drawTrident(gm, tx, ty - 20, 430, 0.08);
-    LT(() => { L.applyCam(subL.g, cam, 1); if (u > 0.44 && u < 0.62) glowDisc(subL.g, bx, by - 60, 420 * (1 - Math.abs(u - 0.5) / 0.12 * 0.5), 0.4 * (1 - smooth(seg(u, 0.5, 0.62))), "rgb(255,255,0)"); });
+    // trident points down: enters during "त्रिशूल", hovers through the silence, slams on the next word
+    const ty = enter < 1 ? mix(-520, -150, enter) : mix(-150, 350, strike); if (enter > 0.01) drawTrident(gm, bx + 20, ty, 430, Math.PI + 0.05);
+    if (title > 0.01) { g2.save(); g2.globalAlpha = title; g2.fillStyle = "#fff"; g2.textAlign = "center"; g2.textBaseline = "middle"; g2.font = "900 118px 'Kohinoor Devanagari','Devanagari Sangam MN','Noto Sans Devanagari',sans-serif"; g2.fillText("महिषासुरमर्दिनी", 540, 470); g2.restore(); }
+    LT(() => { L.applyCam(subL.g, cam, 1); if (flash > 0.02) glowDisc(subL.g, bx, by - 60, 300 + 260 * flash, 0.5 * flash, "rgb(255,255,0)"); });
     scene.subDis = die; tintMain = 0.7; tintRim = 0.8; scene.soft = true; hero = "sub";
   } else { // dawn
     const t2 = smooth(seg(u, 0, 0.3));
@@ -210,7 +222,7 @@ function renderShot(n, t, sk, cam, scene) {
     tintMain = 1; tintRim = 1; hero = "sub"; scene.moonGain = 0.75; scene.moon = { x: 900, y: 470 - 30 * u, r: 190 };
   }
   shadeSub(subM, subL, { tint: tintMain, tintRim: tintRim, rimGain: scene.soft ? 0.9 : 1.7, dif: scene.soft ? 0.22 : 0.35, amb: scene.soft ? 0.02 : 0.04 });
-  if (k === "battle" || k === "trident" || k === "gifts") shadeSub(sub2M, sub2L, { tint: k === "battle" ? 0.45 : 1, tintRim: k === "battle" ? 0.55 : 1 });
+  if (k === "battle" || k === "trident" || k === "gifts" || k === "ride") shadeSub(sub2M, sub2L, { tint: k === "battle" || k === "ride" ? 0.45 : 1, tintRim: k === "battle" || k === "ride" ? 0.55 : 1 });
   for (const f of LIGHTS) f();
   return hero;
 }

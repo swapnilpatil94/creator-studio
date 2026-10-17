@@ -3,7 +3,7 @@
 // blank / frozen / repeated frames, caption presence + margin clipping.
 // usage: node qa.mjs <video.mp4> <segments.json> <leadSeconds> <report.json>
 import { spawnSync } from "node:child_process"; import fs from "node:fs";
-const [video, segFile, leadS, out, cutsArg] = process.argv.slice(2); const CUTS = cutsArg ? JSON.parse(cutsArg) : []; const LEAD = Number(leadS || 0);
+const [video, segFile, leadS, out, cutsArg, silArg] = process.argv.slice(2); const DECLARED = silArg ? JSON.parse(silArg) : []; const CUTS = cutsArg ? JSON.parse(cutsArg) : []; const LEAD = Number(leadS || 0);
 const segs = JSON.parse(fs.readFileSync(segFile, "utf8")); const narrEnd = segs.duration_seconds, firstWord = segs.segments[0].words[0].start;
 const run = (cmd, args, o = {}) => spawnSync(cmd, args, { encoding: o.buffer ? "buffer" : "utf8", maxBuffer: 1 << 30 });
 const checks = []; const add = (name, pass, detail) => { checks.push({ name, pass, detail }); console.log((pass ? "PASS " : "FAIL ") + name + " — " + detail); };
@@ -22,8 +22,8 @@ const mean = Number((vd.match(/mean_volume: (-?[\d.]+)/) || [])[1]), peak = Numb
 add("audio loudness sane (-30..-12 dB mean)", mean > -30 && mean < -12, "mean " + mean + " dB");
 add("no clipping (peak < -0.5 dB)", peak < -0.5, "peak " + peak + " dB");
 const sd = run("ffmpeg", ["-i", video, "-vn", "-af", "silencedetect=noise=-38dB:d=0.9", "-f", "null", "-"]).stderr;
-const sil = [...sd.matchAll(/silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+)/g)].map(m => [Number(m[1]), Number(m[2])]).filter(([s, e]) => s > LEAD + 0.5 && e < LEAD + narrEnd - 0.2);
-add("no unintended silence >0.9s inside narration", sil.length === 0, sil.length ? JSON.stringify(sil) : "none");
+const sil = [...sd.matchAll(/silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+)/g)].map(m => [Number(m[1]), Number(m[2])]).filter(([s, e]) => s > LEAD + 0.5 && e < LEAD + narrEnd - 0.2).filter(([s, e]) => !DECLARED.some(([a, b]) => s >= a - 0.35 && e <= b + 0.35));
+add("no unintended silence >0.9s inside narration" + (DECLARED.length ? " (" + DECLARED.length + " declared silences exempt)" : ""), sil.length === 0, sil.length ? JSON.stringify(sil) : "none");
 
 // sync: first audible onset vs expected first word
 const pcm = run("ffmpeg", ["-v", "error", "-i", video, "-vn", "-ac", "1", "-ar", "16000", "-af", "highpass=f=250,lowpass=f=2400", "-f", "f32le", "-"], { buffer: true }).stdout;

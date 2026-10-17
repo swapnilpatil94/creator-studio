@@ -4,5 +4,8 @@
  "segments": "narration/variants/kathaaya_cands/segments.json",
  "audio": "narration/variants/kathaaya_cands/narration.wav",
  "lead": 0.9,
- "fps": 24
+ "fps": 24,
+ "requireGates": true,
+ "topic_evidence": "docs/PLAN_2026-10-17.md",
+ "title": "Durga's birth"
 }
