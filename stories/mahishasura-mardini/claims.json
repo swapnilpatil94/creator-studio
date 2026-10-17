@@ -1,0 +1,147 @@
+{
+ "story": "stories/mahishasura-mardini",
+ "verification_state": "PARTIAL. The primary text (Devi Mahatmya = Markandeya Purana cantos 81-93) could not be fetched in this session (wikisource 404, sacred-texts/wisdomlib 403). Facts below are agreed by the secondary sources actually read (Wikipedia 'Devi Mahatmya' and 'Mahishasura'; Open magazine column) and are NOT verified against a verse. Check Coburn's translation or GRETIL before publishing.",
+ "deliberately_not_claimed": "The 'no man can kill him' boon. Secondary sources conflict: Wikipedia 'Devi Mahatmya' says a boon is mentioned; an Open magazine column says the 'only a woman can kill him' boon is from other texts, not the Markandeya Purana; the Devi Bhagavata Purana is cited for a related loophole. The script therefore does not mention any boon.",
+ "claims": [
+  {
+   "beat": "m01",
+   "claim": "The gods were defeated by Mahishasura",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    },
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya; Wikipedia: Mahishasura"
+  },
+  {
+   "beat": "m02",
+   "claim": "Mahishasura is a shape-shifter who takes the buffalo form",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya"
+  },
+  {
+   "beat": "m03",
+   "claim": "Indra displaced from heaven; gods driven out",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmya ch.2 (verse not checked)",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Devi Mahatmya ch.2 (verse not checked)"
+  },
+  {
+   "beat": "m04",
+   "claim": "The gods' combined energies (tejas) form a goddess",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    },
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya; Wikipedia: Mahishasura"
+  },
+  {
+   "beat": "m05",
+   "claim": "Vishnu gives the discus, Vayu bow and arrows, Himalaya the lion (other gods give other weapons; list not exhaustive)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya"
+  },
+  {
+   "beat": "m06",
+   "claim": "She rides the lion into battle",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    },
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya; Wikipedia: Mahishasura"
+  },
+  {
+   "beat": "m07",
+   "claim": "Mahishasura keeps changing forms in the fight",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Devi Mahatmya"
+  },
+  {
+   "beat": "m08",
+   "claim": "Killed with the trident; the buffalo is beheaded and the demon emerges and is destroyed",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Mahishasura; Wikipedia: Devi Mahatmya"
+  },
+  {
+   "beat": "m08",
+   "claim": "Epithet Mahishasuramardini",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Wikipedia: Mahishasura",
+     "locator": "not checked at verse level"
+    }
+   ],
+   "needs_check": true,
+   "note": "agreed by secondary sources read this session; Wikipedia: Mahishasura"
+  },
+  {
+   "beat": "m09",
+   "claim": "Moral framing: united strength overcomes the demon",
+   "status": "interpretation",
+   "sources": [],
+   "narrated": true
+  }
+ ]
+}
