@@ -36,12 +36,12 @@ def take(voice, spoken, p):
     f = CACHE / f"{key}.npy"; CACHE.mkdir(parents=True, exist_ok=True)
     if f.exists(): return np.load(f), 0.0
     y, gen = voice.generate(spoken, seed=p["seed"], **p["params"]); y = trim(y, SR); np.save(f, y); return y, gen
-def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None):
+def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None, pause_scale=1.0):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8"))
     out = sd / "narration" / "variants" / name; out.mkdir(parents=True, exist_ok=True)
     voice = voice or Voice()
     gt = global_tempo
-    plans = director.plan(beats, global_tempo=gt) if mode == "director" else [dict(id=b["id"], text=b["text"], intent="baseline", params={}, tempo=1.0, pause_after=0.35, seed=42, words=len(b["text"].split())) for b in beats]
+    plans = director.plan(beats, global_tempo=gt, pause_scale=pause_scale) if mode == "director" else [dict(id=b["id"], text=b["text"], intent="baseline", params={}, tempo=1.0, pause_after=0.35, seed=42, words=len(b["text"].split())) for b in beats]
     chunks, segs, t, lead = [], [], 0.0, 0.0
     for p in plans:
         spoken = textprep.prepare(p["text"], punct=punct if mode == "director" else "asis")
@@ -61,5 +61,5 @@ def run(story, name, mode="director", post="light", punct="director", target_db=
     (out / "meta.json").write_text(json.dumps(dict(story=story, name=name, mode=mode, post=post, punct=punct, controls_used=sorted({k for p in plans for k in p["params"]}), plan=plans), ensure_ascii=False, indent=1), encoding="utf-8")
     return out
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("name"); ap.add_argument("--mode", default="director"); ap.add_argument("--post", default="light"); ap.add_argument("--punct", default="director"); ap.add_argument("--no-align", action="store_true"); ap.add_argument("--tempo", type=float, default=None)
-    a = ap.parse_args(); print(run(a.story, a.name, a.mode, a.post, a.punct, do_align=not a.no_align, global_tempo=a.tempo))
+    ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("name"); ap.add_argument("--mode", default="director"); ap.add_argument("--post", default="light"); ap.add_argument("--punct", default="director"); ap.add_argument("--no-align", action="store_true"); ap.add_argument("--tempo", type=float, default=None); ap.add_argument("--pause-scale", type=float, default=1.0)
+    a = ap.parse_args(); print(run(a.story, a.name, a.mode, a.post, a.punct, do_align=not a.no_align, global_tempo=a.tempo, pause_scale=a.pause_scale))

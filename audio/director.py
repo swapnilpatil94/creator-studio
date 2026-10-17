@@ -15,16 +15,16 @@ def pick_intent(beat, idx, n):
     if any(k in t for k in TENSE): return "tense"
     return "narrate"
 def clamp(v, lo, hi): return max(lo, min(hi, v))
-def plan(beats, overrides=None, global_tempo=None):
+def plan(beats, overrides=None, global_tempo=None, pause_scale=1.0):
     """Returns list of dicts: id, text, intent, params(supported only), tempo, pause_after, seed."""
     n = len(beats); out = []
     for i, b in enumerate(beats):
         intent = pick_intent(b, i, n); spec = INTENTS[intent]
         ex = clamp(float(b.get("exaggeration", spec["exaggeration"])), *LIMITS["exaggeration"])
-        tempo = clamp(float(b.get("tempo", spec["tempo"] * (global_tempo or CFG.get("global_tempo", 1.0)))), *LIMITS["tempo"])
-        pause = float(b.get("pause_after", spec["pause_after"])) if i < n - 1 else 0.4
+        tempo = clamp(float(b.get("tempo", (global_tempo if global_tempo else spec["tempo"] * CFG.get("global_tempo", 1.0)))), *LIMITS["tempo"])
+        pause = float(b.get("pause_after", spec["pause_after"] * pause_scale)) if i < n - 1 else 0.3
         t = b["text"]
-        if "…" in t or "..." in t: pause = max(pause, 0.4)
+        if "…" in t or "..." in t: pause = max(pause, 0.4 * pause_scale)
         seed = int(hashlib.sha1(b["id"].encode()).hexdigest()[:6], 16) % 100000
         out.append(dict(id=b["id"], text=t, intent=intent, params=dict(exaggeration=ex), tempo=tempo, pause_after=round(pause, 2), seed=seed,
                         words=words(t), warn=("long take" if words(t) > LIMITS["max_words_per_take"] else None)))
