@@ -36,20 +36,29 @@ def take(voice, spoken, p):
     f = CACHE / f"{key}.npy"; CACHE.mkdir(parents=True, exist_ok=True)
     if f.exists(): return np.load(f), 0.0
     y, gen = voice.generate(spoken, seed=p["seed"], **p["params"]); y = trim(y, SR); np.save(f, y); return y, gen
-def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None, pause_scale=1.0, room_tone=True):
+def run(story, name, mode="director", post="light", punct="director", target_db=-23.0, do_align=True, voice=None, global_tempo=None, pause_scale=1.0, room_tone=True, candidates=1):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8"))
     out = sd / "narration" / "variants" / name; out.mkdir(parents=True, exist_ok=True)
     voice = voice or Voice()
     gt = global_tempo
     plans = director.plan(beats, global_tempo=gt, pause_scale=pause_scale) if mode == "director" else [dict(id=b["id"], text=b["text"], intent="baseline", params={}, tempo=1.0, pause_after=0.35, seed=42, words=len(b["text"].split())) for b in beats]
     chunks, segs, t, lead = [], [], 0.0, 0.0
-    for p in plans:
-        spoken = textprep.prepare(p["text"], punct=punct if mode == "director" else "asis")
-        y, gen = take(voice, spoken, p)
+    picks = json.loads((out / "picks.json").read_text()) if (out / "picks.json").exists() else {}
+    cand_meta = {}
+    def process(y, p):
         y = atempo(y, p["tempo"])
         if mode == "director":
-            y = y * 10 ** ((target_db - rms_db(y)) / 20) if abs(target_db - rms_db(y)) < 6 else y * 10 ** (np.clip(target_db - rms_db(y), -6, 6) / 20)
-            y = fade(y * 10 ** (p.get('gain_db', 0.0) / 20))
+            d = target_db - rms_db(y); y = y * 10 ** (np.clip(d, -6, 6) / 20); y = fade(y * 10 ** (p.get('gain_db', 0.0) / 20))
+        return y
+    for p in plans:
+        spoken = textprep.prepare(p["text"], punct=punct if mode == "director" else "asis")
+        ys = []
+        for k in range(max(1, candidates)):
+            pk = {**p, "seed": p["seed"] + k}; yk, gen = take(voice, spoken, pk); yk = process(yk, p); ys.append((yk, gen))
+            if candidates > 1:
+                cd = out / "candidates"; cd.mkdir(exist_ok=True); tmp = cd / f"{p['id']}_{k}.raw.wav"; sf.write(tmp, yk, SR); postprocess.process(tmp, cd / f"{p['id']}_{k}.wav", post if mode == "director" else "off"); tmp.unlink()
+        cand_meta[p["id"]] = [dict(k=k, seed=p["seed"] + k, dur_s=round(len(yk) / SR, 2)) for k, (yk, _) in enumerate(ys)]
+        pick = min(int(picks.get(p["id"], 0)), len(ys) - 1); y, gen = ys[pick]
         gap = np.zeros(int(SR * p["pause_after"]), dtype=np.float32)
         segs.append(dict(beat_id=p["id"], text=p["text"], spoken=spoken, intent=p["intent"], params=p["params"], tempo=p["tempo"], start_seconds=round(t, 3), end_seconds=round(t + len(y) / SR, 3), gen_s=round(gen, 1)))
         chunks += [y, gap]; t += (len(y) + len(gap)) / SR; log(f"{p['id']} {p['intent']} {p['params']} dur={len(y)/SR:.2f}s gen={gen:.1f}s")
@@ -62,8 +71,8 @@ def run(story, name, mode="director", post="light", punct="director", target_db=
     final = out / "narration.wav"; postprocess.process(raw, final, post if mode == "director" else "off")
     if do_align: segs = align(final, segs)
     (out / "segments.json").write_text(json.dumps(dict(segments=segs), ensure_ascii=False, indent=1), encoding="utf-8")
-    (out / "meta.json").write_text(json.dumps(dict(story=story, name=name, mode=mode, post=post, punct=punct, controls_used=sorted({k for p in plans for k in p["params"]}), plan=plans), ensure_ascii=False, indent=1), encoding="utf-8")
+    (out / "meta.json").write_text(json.dumps(dict(story=story, name=name, mode=mode, post=post, punct=punct, controls_used=sorted({k for p in plans for k in p["params"]}), plan=plans, candidates=candidates, picks=picks, candidate_info=cand_meta), ensure_ascii=False, indent=1), encoding="utf-8")
     return out
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("name"); ap.add_argument("--mode", default="director"); ap.add_argument("--post", default="light"); ap.add_argument("--punct", default="director"); ap.add_argument("--no-align", action="store_true"); ap.add_argument("--tempo", type=float, default=None); ap.add_argument("--pause-scale", type=float, default=1.0)
-    a = ap.parse_args(); print(run(a.story, a.name, a.mode, a.post, a.punct, do_align=not a.no_align, global_tempo=a.tempo, pause_scale=a.pause_scale))
+    ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("name"); ap.add_argument("--mode", default="director"); ap.add_argument("--post", default="light"); ap.add_argument("--punct", default="director"); ap.add_argument("--no-align", action="store_true"); ap.add_argument("--tempo", type=float, default=None); ap.add_argument("--pause-scale", type=float, default=1.0); ap.add_argument("--candidates", type=int, default=1)
+    a = ap.parse_args(); print(run(a.story, a.name, a.mode, a.post, a.punct, do_align=not a.no_align, global_tempo=a.tempo, pause_scale=a.pause_scale, candidates=a.candidates))

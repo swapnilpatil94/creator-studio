@@ -19,4 +19,5 @@ Code: `audio/` (textprep, director, synth, postprocess, analyze, ab, model, swee
 ## Measured (this repo)
 - Hanuman: original −25.5 LUFS / worst beat 1.5 dB off median / 3.53 w/s; directed_v3 −18.7 LUFS / 0.9 dB / 2.8 w/s (≈20% slower, longer pauses). Pitch spread per beat ≈ equal (2.7 vs 2.9 st): no proven expressive gain; the clear wins are loudness, consistency, and designed pauses.
 - Hinglish test: Whisper transcripts show Devanagari spoken forms (रीट्राई, एरर रेट, रेट लिमिट) recognised where the baseline gave garbled forms. Text-similarity score was unreliable for mixed-script, so not used.
+- Candidates: `synth.py --candidates 3` makes N seeds per beat (candidates/<beat>_<k>.wav); pick in /voice, then Assemble (uses picks.json, cached takes, no regeneration).
 - Pace trade-off is open: directed output is slower than the legacy pipeline; raise `--tempo` (max 1.10) or shorten `pause_after`.

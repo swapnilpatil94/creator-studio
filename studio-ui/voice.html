@@ -16,6 +16,7 @@ pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:
 <div class="card"><div class="row"><label>Story<select id="story"></select></label>
 <label>Variant name<input id="name" value="directed_v1" size="14"></label>
 <label>Tempo (model has no speed control; ffmpeg atempo ×)<input id="tempo" type="number" step="0.01" min="0.92" max="1.10" value="1.08" style="width:90px"></label>
+<label>Candidates per beat<input id="cands" type="number" min="1" max="5" value="1" style="width:70px"></label>
 <label>Post-processing<select id="post"><option>warm</option><option>light</option><option>medium</option><option>off</option></select></label>
 <label>Punctuation<select id="punct"><option>director</option><option>asis</option></select></label>
 <button id="gen">Generate variant</button><button class="sec" id="meas">Measure A/B</button></div>
@@ -23,6 +24,7 @@ pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:
 <div class="card"><div class="ab"><div><b>A · Original</b> <span class="pill" id="aTag"></span><audio id="a" controls preload="none"></audio></div>
 <div><b>B · Variant</b> <select id="vsel"></select><audio id="b" controls preload="none"></audio></div></div>
 <div class="row" style="margin-top:10px"><button class="sec" id="swap">Play A ⇄ B at same position</button><button class="sec" id="act">Use B in the film</button><button class="sec" id="rest">Restore original</button><span class="mut" id="actNote"></span></div></div>
+<div class="card" id="candCard" style="display:none"><b>Pick the best take per beat</b> <span class="mut">(each candidate = same text, different seed; listen, choose, then Assemble picks — takes are cached, so it is quick)</span><div id="cands2"></div><div class="row" style="margin-top:10px"><button id="asm">Assemble picks</button><span class="mut" id="asmNote"></span></div></div>
 <div class="card"><b>Measured</b><div id="tbl" class="mut">Run “Measure A/B”.</div></div>
 <div class="card"><b>Job log</b><pre id="log">idle</pre></div>
 <script>
@@ -33,14 +35,18 @@ async function load(keep){S=await j('/api/voice/stories');const cur=keep||$('sto
 function cur(){return S.find(s=>s.id===$('story').value)}
 function pick(){const s=cur();if(!s)return;$('a').src=s.original?`/voice/file/${s.id}/raw.wav`:'';$('aTag').textContent=s.active&&!/raw\.wav$/.test(s.active)?'not active':'active in film';
  $('vsel').innerHTML=s.variants.map(v=>`<option>${v.name}</option>`).join('')||'<option value="">(none yet)</option>';setB();table(s);$('actNote').textContent='film uses: '+(s.active||'raw.wav (default)')}
-function setB(){const s=cur(),v=$('vsel').value;$('b').src=v?`/voice/file/${s.id}/variants/${v}/narration.wav`:''}
+let PK={};
+async function setB(){const s=cur(),v=$('vsel').value;$('b').src=v?`/voice/file/${s.id}/variants/${v}/narration.wav`:'';$('candCard').style.display='none';if(!v)return;
+ try{const c=await j(`/api/voice/candidates?story=${s.id}&variant=${v}`);if(c.candidates<2)return;PK={...c.picks};$('candCard').style.display='';
+  $('cands2').innerHTML=c.beats.map(b=>`<div style="margin:10px 0;border-top:1px solid var(--line);padding-top:8px"><div class="mut">${b.id} · ${b.intent}</div><div style="margin-bottom:4px">${b.text}</div><div class="row">`+(c.info[b.id]||[]).map(x=>`<label style="flex:1;min-width:200px"><span><input type="radio" name="p_${b.id}" value="${x.k}" ${(PK[b.id]||0)===x.k?'checked':''} onchange="PK['${b.id}']=${x.k}"> take ${x.k+1} · ${x.dur_s}s</span><audio controls preload="none" src="/voice/file/${s.id}/variants/${v}/candidates/${b.id}_${x.k}.wav"></audio></label>`).join('')+'</div></div>').join('')}catch(e){}}
 const KEYS=[['lufs_integrated','LUFS (loudness)'],['true_peak_dbfs','true peak dBFS'],['lra_lu','loudness range LU'],['beat_loudness.max_dev_from_median_db','worst beat vs median dB'],['rate.mean_words_per_s','words/s'],['rate.fastest','fastest beat w/s'],['longest_pause_s','longest pause s'],['pitch_dynamics.mean_f0_std_st','pitch spread / beat (semitones)'],['click_events','click events'],['duration_s','duration s']];
 const g=(o,k)=>k.split('.').reduce((a,p)=>a==null?a:a[p],o);
 function table(s){const r=s.abReport;if(!r){$('tbl').textContent='No measurement yet — click Measure A/B.';return}const c=Object.keys(r);
  $('tbl').innerHTML='<table><tr><th>metric</th>'+c.map(x=>`<th>${x}</th>`).join('')+'</tr>'+KEYS.map(([k,l])=>`<tr><td>${l}</td>${c.map(x=>`<td>${g(r[x],k)??'–'}</td>`).join('')}</tr>`).join('')+'</table>'}
+$('asm').onclick=async()=>{const s=cur(),v=$('vsel').value;try{await post('/api/voice/picks',{story:s.id,variant:v,picks:PK});const m=(await j(`/api/voice/candidates?story=${s.id}&variant=${v}`));await post('/api/voice/synth',{story:s.id,name:v,tempo:+$('tempo').value,candidates:m.candidates,post:$('post').value,punct:$('punct').value});$('asmNote').textContent='assembling…';poll()}catch(e){alert(e.message)}};
 $('story').onchange=pick;$('vsel').onchange=setB;
 $('swap').onclick=()=>{const a=$('a'),b=$('b');const [from,to]=!a.paused?[a,b]:[b,a];const t=from.currentTime;from.pause();to.currentTime=t;to.play()};
-$('gen').onclick=async()=>{try{await post('/api/voice/synth',{story:$('story').value,name:$('name').value,tempo:+$('tempo').value,post:$('post').value,punct:$('punct').value});poll()}catch(e){alert(e.message)}};
+$('gen').onclick=async()=>{try{await post('/api/voice/synth',{story:$('story').value,name:$('name').value,tempo:+$('tempo').value,candidates:+$('cands').value,post:$('post').value,punct:$('punct').value});poll()}catch(e){alert(e.message)}};
 $('meas').onclick=async()=>{try{await post('/api/voice/measure',{story:$('story').value,variants:cur().variants.map(v=>v.name)});poll()}catch(e){alert(e.message)}};
 $('act').onclick=async()=>{const v=$('vsel').value;if(!v)return;await post('/api/voice/activate',{story:$('story').value,variant:v});load($('story').value)};
 $('rest').onclick=async()=>{await post('/api/voice/activate',{story:$('story').value,variant:''});load($('story').value)};
