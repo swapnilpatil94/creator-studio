@@ -70,7 +70,7 @@ def run(story, name, mode="director", post="light", punct="director", target_db=
     raw = out / "pre_post.wav"; sf.write(raw, y, SR)
     final = out / "narration.wav"; postprocess.process(raw, final, post if mode == "director" else "off")
     if do_align: segs = align(final, segs)
-    (out / "segments.json").write_text(json.dumps(dict(segments=segs), ensure_ascii=False, indent=1), encoding="utf-8")
+    (out / "segments.json").write_text(json.dumps(dict(duration_seconds=round(len(y) / SR, 3), segments=segs), ensure_ascii=False, indent=1), encoding="utf-8")
     (out / "meta.json").write_text(json.dumps(dict(story=story, name=name, mode=mode, post=post, punct=punct, controls_used=sorted({k for p in plans for k in p["params"]}), plan=plans, candidates=candidates, picks=picks, candidate_info=cand_meta), ensure_ascii=False, indent=1), encoding="utf-8")
     return out
 if __name__ == "__main__":
