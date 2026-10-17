@@ -1,0 +1,31 @@
+{
+ "_note": "ref -> how the shot gets its picture. source: have (already downloaded) | candidate (public-domain/CC0 id from candidates_all.json, needs approval) | code (drawn by engine/stipple/synth.mjs or procedural) | owner (no usable public-domain art found: owner generates it from the prompt). Edit freely.",
+ "painting": {
+  "durga-battle": {"source": "candidate", "ids": ["B007", "A010", "B031"], "have": ["01", "02"]},
+  "durga-calm": {"source": "have", "have": ["01", "06"]},
+  "durga-many-arms": {"source": "candidate", "ids": ["A010"], "have": ["01"]},
+  "durga-armed": {"source": "have", "have": ["06", "01"]},
+  "durga-lion": {"source": "candidate", "ids": ["B031"], "have": ["01"]},
+  "durga-leap": {"source": "candidate", "ids": ["B060", "B007"]},
+  "mahisha-bull": {"source": "have", "have": ["02", "03"], "ids": ["B060"]},
+  "mahisha-emerge": {"source": "have", "have": ["01", "03"]},
+  "mahisha-throne": {"source": "candidate", "ids": ["A015"], "note": "approximate: Indra's court stands in for the usurped heaven"},
+  "gods-asuras-war": {"source": "candidate", "ids": ["B045"]},
+  "asura-army": {"source": "candidate", "ids": ["B045", "B007"]},
+  "gods-flee": {"source": "candidate", "ids": ["A017", "A016"]},
+  "gods-court": {"source": "candidate", "ids": ["A017", "A016"]},
+  "gods-angry": {"source": "candidate", "ids": ["A018", "A020"], "have": ["04"]},
+  "gods-praise": {"source": "candidate", "ids": ["A018", "A020", "A021"], "have": ["04"]},
+  "goddess-emerges": {"source": "have", "have": ["04"], "ids": ["A010"], "note": "plus the light-mountain stream effect"},
+  "vishnu-sleep": {"source": "candidate", "ids": ["B057", "A007", "A001"]},
+  "brahma-lotus": {"source": "candidate", "ids": ["A005", "B057"]},
+  "vishnu-fight": {"source": "candidate", "ids": ["A002", "B054", "A004", "A001"]},
+  "raktabija": {"source": "candidate", "ids": ["B052", "B033", "B008"]},
+  "king-forest": {"source": "owner", "prompt": "The exiled King Suratha, crown removed, alone at the edge of a dark forest at dusk, looking back toward a distant palace"},
+  "two-men": {"source": "owner", "prompt": "The dispossessed king and a merchant (vaishya) meeting on a forest path, both weary, parchment ink style"},
+  "sage-ashram": {"source": "owner", "prompt": "Sage Medhas's hermitage: thatched huts, sacred fire, deer, the sage seated teaching two visitors"},
+  "mahisha-lion": {"source": "owner", "prompt": "The demon Mahishasura transformed into a roaring lion, ink black with crimson eyes, on a battlefield"},
+  "mahisha-man": {"source": "owner", "prompt": "Mahishasura as a muscular demon man with sword and shield, horned crown, mid-stride"},
+  "mahisha-elephant": {"source": "owner", "prompt": "Mahishasura transformed into a colossal war elephant charging, ink and gold, battlefield dust"}
+ }
+}

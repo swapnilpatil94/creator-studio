@@ -2,7 +2,7 @@
 // Measurable retention + storytelling checks for a script (Devanagari and English). usage: node planner/hook-lint.mjs stories/<name>
 // Heuristics: a low score is a reason to look again, a high score is not a promise.
 import path from "node:path"; import { rj, words } from "./lib.mjs";
-const dir = path.resolve(process.argv[2] || "."), beats = rj(path.join(dir, "beats.json"), null), seg = rj(path.join(dir, "narration/raw.wav.segments.json"), null); if (!beats) { console.error("no beats.json"); process.exit(2); }
+const dir = path.resolve(process.argv[2] || "."), beats0 = rj(path.join(dir, "beats.json"), null), beats = beats0 ? beats0.filter(b => b.text) : null, seg = rj(path.join(dir, "narration/raw.wav.segments.json"), null); if (!beats) { console.error("no beats.json"); process.exit(2); }
 const R = []; const add = (lvl, name, msg) => R.push([lvl, name, msg]); const clean = s => s.replace(/[।…—,.?!"'“”]/g, "").trim(); const wc = s => words(s).length;
 const first = beats[0].text, w1 = wc(first);
 // ---- hook: weakest-link score over five properties ----

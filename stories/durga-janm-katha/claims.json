@@ -1,0 +1,1557 @@
+{
+ "story": "stories/durga-janm-katha",
+ "verification_state": "PARTIAL. The Devi Mahatmya was read through a summarising fetch of an English prose translation (chapter-level), not verse by verse. Pargiter's 1904 scan does not contain the text. Every claim keeps needs_check until a human checks the verses (suggested: Coburn's translation or GRETIL).",
+ "claims": [
+  {
+   "beat": "d003",
+   "claim": "Before the final blow the goddess drinks repeatedly and tells Mahisha to roar a moment until she has drunk (ch.3). The narration paraphrases and says 'पेय', the text says wine",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d097",
+   "claim": "Before the final blow the goddess drinks repeatedly and tells Mahisha to roar a moment until she has drunk (ch.3). The narration paraphrases and says 'पेय', the text says wine",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d004",
+   "claim": "The gods-asuras war lasted a full hundred years; Mahisha defeated the gods",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "same item, commentary sections",
+     "locator": "chapter 1-2 commentary"
+    }
+   ],
+   "needs_check": true,
+   "note": "stated in the commentary, not verified in the verses"
+  },
+  {
+   "beat": "d009",
+   "claim": "Devi Mahatmya = Markandeya Purana chapters 81-93, 700 verses",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya (700 verses, 13 chapters)",
+     "locator": "secondary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d010",
+   "claim": "Three episodes with 1, 3 and 9 chapters",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d013",
+   "claim": "King Suratha is dispossessed and meets the merchant and the sage Medhas (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d126",
+   "claim": "King Suratha is dispossessed and meets the merchant and the sage Medhas (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d016",
+   "claim": "Both go to the sage Medhas's hermitage (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d017",
+   "claim": "They ask why they still care for those who rejected them (ch.1 frame)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "note": "paraphrase from summary; check verses 1.1-1.40"
+  },
+  {
+   "beat": "d018",
+   "claim": "The sage attributes this to Mahamaya (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "note": "the line about binding even the wise is from general knowledge of verse 1.55: check"
+  },
+  {
+   "beat": "d019",
+   "claim": "Vishnu himself is held in yoganidra (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d020",
+   "claim": "At the end of a cycle Vishnu is in yogic sleep (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d021",
+   "claim": "Madhu and Kaitabha arise from Vishnu's ear-wax (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d022",
+   "claim": "They try to kill Brahma (ch.1); Brahma on Vishnu's lotus is standard iconography",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d024",
+   "claim": "Brahma praises Yoga Nidra (Mahamaya), who wakes Vishnu (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d025",
+   "claim": "Vishnu wakes (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d026",
+   "claim": "Vishnu fights the two demons for five thousand years (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "same item, commentary sections",
+     "locator": "chapter 1-2 commentary"
+    }
+   ],
+   "needs_check": true,
+   "note": "five thousand years from the commentary; a first summary said 'a thousand', so verify the verse"
+  },
+  {
+   "beat": "d027",
+   "claim": "The asuras offer Vishnu a boon (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d028",
+   "claim": "He asks for their death by his hands (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d029",
+   "claim": "He kills them with his discus (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d030",
+   "claim": "Interpretation: even Vishnu woke only through the goddess's power",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d031",
+   "claim": "Transition into the second story (ch.2)",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d034",
+   "claim": "100-year war (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "same item, commentary sections",
+     "locator": "chapter 1-2 commentary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d035",
+   "claim": "Indra leads the gods, Mahisha the asuras (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d036",
+   "claim": "The gods lose (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d038",
+   "claim": "Mahisha becomes lord of heaven (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "same item, commentary sections",
+     "locator": "chapter 1-2 commentary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d039",
+   "claim": "He assumes the jurisdictions of Surya, Indra, Agni, Vayu, Chandra, Yama, Varuna (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "same item, commentary sections",
+     "locator": "chapter 1-2 commentary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d042",
+   "claim": "The defeated gods seek shelter (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d043",
+   "claim": "Led by Brahma they go to Vishnu and Shiva (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d045",
+   "claim": "They ask Vishnu and Shiva to devise his destruction (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d040",
+   "claim": "Interpretive framing of the gods' loss",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d041",
+   "claim": "Interpretive framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d033",
+   "claim": "Narrator framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d047",
+   "claim": "Vishnu and Shiva become furiously angry (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d048",
+   "claim": "Their faces grow fierce with frowns (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d049",
+   "claim": "Light pours from Vishnu's face (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d050",
+   "claim": "Also from Brahma, Shiva, Indra and the other gods (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d051",
+   "claim": "The lights merge into a mountain-like blaze (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d052",
+   "claim": "A female form arises from the blaze (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d053",
+   "claim": "She is not born of a mother: she arises from the gods' combined light (ch.2). Other texts differ (e.g. Katyayani)",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya (700 verses, 13 chapters)",
+     "locator": "secondary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d055",
+   "claim": "This translation gives her a thousand arms (ch.2); popular iconography shows 8-18",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d056",
+   "claim": "Narrator bridge",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d057",
+   "claim": "Shiva gives a trident, Vishnu a discus (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d058",
+   "claim": "Varuna a conch, Agni a spear, Vayu a bow and two quivers (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d059",
+   "claim": "Indra a thunderbolt and a bell from Airavata (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d060",
+   "claim": "Yama a staff, Varuna a noose, Brahma beads and a water-pot (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d061",
+   "claim": "Surya places his rays on her skin's pores (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d062",
+   "claim": "Kala a sword and a spotless shield; Vishvakarma an axe, missiles and unbreakable armour (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d063",
+   "claim": "The milky ocean gives ornaments; the ocean unfading lotus garlands (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d064",
+   "claim": "Himavan gives gems and a lion (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d065",
+   "claim": "Kubera gives a drinking cup of celestial wine (ch.2); the narration says 'दिव्य मधु'",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d066",
+   "claim": "Interpretation of the combined gifts and light",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d067",
+   "claim": "Narrator framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d068",
+   "claim": "Interpretation: shared power belongs to none alone",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d069",
+   "claim": "Rhetorical question to the viewer",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d070",
+   "claim": "Rhetorical question (interpretive)",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d071",
+   "claim": "She roars with loud laughter that fills the sky (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d074",
+   "claim": "She roars with loud laughter that fills the sky (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d072",
+   "claim": "The gods cry victory and the sages praise her (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d074",
+   "claim": "Mahisha hears the roar (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d075",
+   "claim": "He rushes toward the sound himself with countless asuras (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d076",
+   "claim": "The text counts chariots in millions to billions; figures vary by translation, so only the scale is stated",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "note": "exact numbers deliberately not narrated"
+  },
+  {
+   "beat": "d077",
+   "claim": "Chiksura the general and Chamara lead the fourfold asura army (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d082",
+   "claim": "She faces them with her lion (ch.2-3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d083",
+   "claim": "The goddess destroys the army (ch.2-3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d084",
+   "claim": "The commanders are killed (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d085",
+   "claim": "Narrator inference: only Mahisha remains",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d086",
+   "claim": "Narrator framing before the shapeshifting",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d087",
+   "claim": "Mahisha shifts forms (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d078",
+   "claim": "Narrator introduction to the roll-call",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d079",
+   "claim": "Named commanders: Chiksura, Chamara, Udagra, Mahahanu (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d080",
+   "claim": "Named commanders: Asiloman, Baskala, Parivarita, Bidala (ch.2)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d089",
+   "claim": "Forms in order: buffalo, lion, man with sword and shield, elephant, buffalo again (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d090",
+   "claim": "Second form: lion (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d091",
+   "claim": "Third form: a man with sword and shield (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d092",
+   "claim": "Fourth form: a huge elephant (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d093",
+   "claim": "Fifth: buffalo again (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d094",
+   "claim": "Each form is cut down in turn (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d095",
+   "claim": "She takes the cup (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d096",
+   "claim": "She drinks repeatedly and her eyes redden (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d098",
+   "claim": "Callback to the opening",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d099",
+   "claim": "She leaps onto him (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d100",
+   "claim": "She presses his neck under her foot and strikes with her spear (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d101",
+   "claim": "He partly emerges from the buffalo's mouth (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d102",
+   "claim": "She beheads him with her sword (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d103",
+   "claim": "Beheaded (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d105",
+   "claim": "His army perishes (ch.3)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d107",
+   "claim": "The gods acclaim her (ch.3-4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d108",
+   "claim": "The gods praise her and say the enemy is slain (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d109",
+   "claim": "They ask her for a promise (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d110",
+   "claim": "Whenever they think of her she should destroy their calamities (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d111",
+   "claim": "She should bless any mortal who praises her with these hymns (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d112",
+   "claim": "She answers 'Be it so' (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d113",
+   "claim": "She vanishes (ch.4)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d114",
+   "claim": "Phala-shruti chapter: reciting or hearing on the 8th, 9th or 14th lunar day brings protection and prosperity (ch.12)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d115",
+   "claim": "Devotional practice, stated as belief",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d117",
+   "claim": "Narrator question",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d118",
+   "claim": "Interpretation of the origin account",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d119",
+   "claim": "Narrator framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d120",
+   "claim": "In ch.4 the goddess is called Bhadrakali; the Mahishasura-slaying goddess is popularly called Durga",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d121",
+   "claim": "In ch.11 she foretells future forms including Durga (Raktadantika, Shakambhari, Durga, Bhima, Bhramari)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d122",
+   "claim": "Iconography commonly shows eight, ten or eighteen arms; this translation says a thousand",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d123",
+   "claim": "In the translation read no boon to Mahisha is mentioned; popular retellings add one (secondary sources conflict on where)",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya (700 verses, 13 chapters)",
+     "locator": "secondary"
+    }
+   ],
+   "needs_check": true,
+   "note": "absence claim limited to the text read through a summariser: a human should check chapter 2"
+  },
+  {
+   "beat": "d124",
+   "claim": "The boon appears in other tellings",
+   "status": "variant",
+   "sources": [
+    {
+     "text": "Wikipedia: Devi Mahatmya (700 verses, 13 chapters)",
+     "locator": "secondary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d125",
+   "claim": "Interpretation (the film's lens)",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d128",
+   "claim": "Transition",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d129",
+   "claim": "Shumbha and Nishumbha take over the gods' roles (ch.5)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d130",
+   "claim": "Shumbha, Nishumbha; Raktabija: each drop of his blood spawns a duplicate (ch.8)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d131",
+   "claim": "Tease for the next film",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d126",
+   "claim": "Frame-story callback",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d127",
+   "claim": "Suratha's boons are granted at the end of the whole text (ch.13)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d009",
+   "claim": "700 verses",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    },
+    {
+     "text": "Wikipedia: Devi Mahatmya (700 verses, 13 chapters)",
+     "locator": "secondary"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d011",
+   "claim": "Narrator framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d015",
+   "claim": "Frame story summary (ch.1): the king dispossessed, the merchant rejected by his family",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d006",
+   "claim": "Promise of the film's contents",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d005",
+   "claim": "Narrator question",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d007",
+   "claim": "Promise: the vow (ch.4); 'crores of people trust it' is devotional belief",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d014",
+   "claim": "The merchant was driven out by his own family (ch.1)",
+   "status": "traditional-account",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true
+  },
+  {
+   "beat": "d001",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d002",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d012",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d023",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d044",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  },
+  {
+   "beat": "d081",
+   "claim": "Narrative connective or framing",
+   "status": "interpretation",
+   "sources": [
+    {
+     "text": "Devi Mahatmyam (English prose translation + transliteration, credited Thirugnanam), archive.org item DeviMahatmyamEnglishTransiteration; chapters 1-13 = Markandeya Purana 81-93",
+     "locator": "chapter-level only (read 2026-10-17 through a summarising fetch, NOT verse-by-verse)"
+    }
+   ],
+   "needs_check": true,
+   "narrated": true
+  }
+ ]
+}

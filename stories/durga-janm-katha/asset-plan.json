@@ -1,0 +1,391 @@
+{
+ "runtime_min": 9.3,
+ "shots": 131,
+ "types": {
+  "painting": {
+   "shots": 65,
+   "sec": 285.76428571428573
+  },
+  "symbol": {
+   "shots": 14,
+   "sec": 65.25714285714284
+  },
+  "atmosphere": {
+   "shots": 23,
+   "sec": 84.57857142857142
+  },
+  "typography": {
+   "shots": 23,
+   "sec": 83.47142857142856
+  },
+  "diagram": {
+   "shots": 6,
+   "sec": 36.74285714285714
+  }
+ },
+ "paintingRows": [
+  {
+   "ref": "durga-calm",
+   "shots": 8,
+   "sec": 42,
+   "source": "have",
+   "covered": "have",
+   "have": [
+    "01",
+    "06"
+   ],
+   "candidates": [],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "durga-battle",
+   "shots": 7,
+   "sec": 32,
+   "source": "candidate",
+   "covered": "have",
+   "have": [
+    "01",
+    "02"
+   ],
+   "candidates": [
+    "B007",
+    "A010",
+    "B031"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "mahisha-bull",
+   "shots": 7,
+   "sec": 29,
+   "source": "have",
+   "covered": "have",
+   "have": [
+    "02",
+    "03"
+   ],
+   "candidates": [
+    "B060"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "king-forest",
+   "shots": 4,
+   "sec": 15,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "The exiled King Suratha, crown removed, alone at the edge of a dark forest at dusk, looking back toward a distant palace",
+   "note": null
+  },
+  {
+   "ref": "gods-praise",
+   "shots": 4,
+   "sec": 17,
+   "source": "candidate",
+   "covered": "have",
+   "have": [
+    "04"
+   ],
+   "candidates": [
+    "A018",
+    "A020",
+    "A021"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "goddess-emerges",
+   "shots": 3,
+   "sec": 12,
+   "source": "have",
+   "covered": "have",
+   "have": [
+    "04"
+   ],
+   "candidates": [
+    "A010"
+   ],
+   "prompt": null,
+   "note": "plus the light-mountain stream effect"
+  },
+  {
+   "ref": "asura-army",
+   "shots": 3,
+   "sec": 9,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "B045",
+    "B007"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "two-men",
+   "shots": 2,
+   "sec": 13,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "The dispossessed king and a merchant (vaishya) meeting on a forest path, both weary, parchment ink style",
+   "note": null
+  },
+  {
+   "ref": "vishnu-sleep",
+   "shots": 2,
+   "sec": 7,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "B057",
+    "A007",
+    "A001"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "brahma-lotus",
+   "shots": 2,
+   "sec": 10,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "A005",
+    "B057"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "vishnu-fight",
+   "shots": 2,
+   "sec": 10,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "A002",
+    "B054",
+    "A004",
+    "A001"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "gods-court",
+   "shots": 2,
+   "sec": 12,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "A017",
+    "A016"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "gods-angry",
+   "shots": 2,
+   "sec": 7,
+   "source": "candidate",
+   "covered": "have",
+   "have": [
+    "04"
+   ],
+   "candidates": [
+    "A018",
+    "A020"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "durga-many-arms",
+   "shots": 2,
+   "sec": 14,
+   "source": "candidate",
+   "covered": "have",
+   "have": [
+    "01"
+   ],
+   "candidates": [
+    "A010"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "durga-lion",
+   "shots": 2,
+   "sec": 8,
+   "source": "candidate",
+   "covered": "have",
+   "have": [
+    "01"
+   ],
+   "candidates": [
+    "B031"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "durga-leap",
+   "shots": 2,
+   "sec": 5,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "B060",
+    "B007"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "mahisha-emerge",
+   "shots": 2,
+   "sec": 6,
+   "source": "have",
+   "covered": "have",
+   "have": [
+    "01",
+    "03"
+   ],
+   "candidates": [],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "sage-ashram",
+   "shots": 1,
+   "sec": 5,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "Sage Medhas's hermitage: thatched huts, sacred fire, deer, the sage seated teaching two visitors",
+   "note": null
+  },
+  {
+   "ref": "gods-asuras-war",
+   "shots": 1,
+   "sec": 5,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "B045"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "mahisha-throne",
+   "shots": 1,
+   "sec": 3,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "A015"
+   ],
+   "prompt": null,
+   "note": "approximate: Indra's court stands in for the usurped heaven"
+  },
+  {
+   "ref": "gods-flee",
+   "shots": 1,
+   "sec": 2,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "A017",
+    "A016"
+   ],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "durga-armed",
+   "shots": 1,
+   "sec": 6,
+   "source": "have",
+   "covered": "have",
+   "have": [
+    "06",
+    "01"
+   ],
+   "candidates": [],
+   "prompt": null,
+   "note": null
+  },
+  {
+   "ref": "mahisha-lion",
+   "shots": 1,
+   "sec": 2,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "The demon Mahishasura transformed into a roaring lion, ink black with crimson eyes, on a battlefield",
+   "note": null
+  },
+  {
+   "ref": "mahisha-man",
+   "shots": 1,
+   "sec": 3,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "Mahishasura as a muscular demon man with sword and shield, horned crown, mid-stride",
+   "note": null
+  },
+  {
+   "ref": "mahisha-elephant",
+   "shots": 1,
+   "sec": 2,
+   "source": "owner",
+   "covered": "owner",
+   "have": [],
+   "candidates": [],
+   "prompt": "Mahishasura transformed into a colossal war elephant charging, ink and gold, battlefield dust",
+   "note": null
+  },
+  {
+   "ref": "raktabija",
+   "shots": 1,
+   "sec": 8,
+   "source": "candidate",
+   "covered": "candidate",
+   "have": [],
+   "candidates": [
+    "B052",
+    "B033",
+    "B008"
+   ],
+   "prompt": null,
+   "note": null
+  }
+ ],
+ "distinctArt": 26
+}

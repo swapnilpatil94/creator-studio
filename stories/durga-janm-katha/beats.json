@@ -1,0 +1,1464 @@
+[
+ {
+  "id": "d001",
+  "text": "तुम जानते हो, सौ साल की हार के बाद दुर्गा का जन्म कैसे हुआ?",
+  "intent": "hook",
+  "chapter": "ch0",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d002",
+  "text": "रणभूमि के बीच एक देवी रुकती हैं… और हाथ में पात्र उठाकर कहती हैं —",
+  "intent": "tense",
+  "chapter": "ch0",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d003",
+  "text": "गरज ले, मूर्ख। बस कुछ पल और।",
+  "intent": "punch",
+  "chapter": "ch0",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d004",
+  "text": "सामने खड़ा था महिषासुर — जिसने देवताओं को सौ साल की लड़ाई में हरा दिया था।",
+  "intent": "tense",
+  "chapter": "ch0",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d005",
+  "text": "तो ये देवी कौन थीं? और उन्हें जन्म किसने दिया?",
+  "intent": "curious",
+  "chapter": "ch0",
+  "visual": {
+   "type": "symbol",
+   "ref": "yantra",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d006",
+  "text": "आज तुम सुनोगे दुर्गा के जन्म की पूरी कथा — हर देवता ने उन्हें क्या दिया, और महिषासुर ने कितने रूप बदले।",
+  "intent": "narrate",
+  "chapter": "ch0",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "energy-stream",
+   "mode": "path"
+  }
+ },
+ {
+  "id": "d007",
+  "text": "और अंत में — देवी ने देवताओं से कौन-सा वचन दिया, जिस पर करोड़ों लोग आज भी भरोसा करते हैं।",
+  "intent": "reveal",
+  "chapter": "ch0",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d008",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग १  ·  वो राजा जिसने सब खो दिया",
+  "intent": "calm",
+  "chapter": "ch1",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d009",
+  "text": "यह कथा देवी महात्म्य की है — मार्कण्डेय पुराण का वो हिस्सा, जो सात सौ श्लोकों में गाया जाता है।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "typography",
+   "ref": "devi-mahatmya",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d010",
+  "text": "यह ग्रंथ तीन कथाओं में बँटा है — पहली में एक अध्याय, दूसरी में तीन, और तीसरी में पूरे नौ।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "diagram",
+   "ref": "three-parts",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d011",
+  "text": "आज हम बीच की कथा सुनेंगे। लेकिन पहली को समझे बिना, ये अधूरी रहेगी।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "diagram",
+   "ref": "three-parts",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d012",
+  "text": "और इसकी शुरुआत किसी देवता से नहीं होती। एक राजा से होती है।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "king-forest",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d013",
+  "text": "राजा सुरथ। जिसका राज्य छिन चुका था।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "king-forest",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d014",
+  "text": "वो जंगल में भटकता हुआ एक वैश्य से मिला, जिसे उसके अपने परिवार ने घर से निकाल दिया था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "two-men",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d015",
+  "text": "एक राजा, जिसने सब कुछ खो दिया। और एक व्यापारी, जिसे अपनों ने ठुकरा दिया।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "two-men",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d016",
+  "text": "दोनों ऋषि मेधा के आश्रम पहुँचे — और एक अजीब सवाल लेकर।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "sage-ashram",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d017",
+  "text": "जिन्होंने हमें धोखा दिया, हम आज भी उन्हीं के बारे में क्यों सोचते हैं?",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "typography",
+   "ref": "question",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d018",
+  "text": "ऋषि बोले — यह महामाया की शक्ति है। वो ज्ञानियों को भी मोह में बाँध देती हैं।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "symbol",
+   "ref": "lotus",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d019",
+  "text": "और इसका सबसे बड़ा उदाहरण? स्वयं भगवान विष्णु।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "vishnu-sleep",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d020",
+  "text": "सृष्टि के अंत का समय था। विष्णु योगनिद्रा में लेटे थे।",
+  "intent": "calm",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "vishnu-sleep",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d021",
+  "text": "तभी उनके कान के मैल से दो असुर पैदा हुए — मधु और कैटभ।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "dark-water",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d022",
+  "text": "और वो सीधे ब्रह्मा को मारने दौड़े, जो विष्णु के कमल पर बैठे थे।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "brahma-lotus",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d023",
+  "text": "ब्रह्मा के पास कोई हथियार नहीं था। उनके पास सिर्फ़ एक रास्ता था।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "brahma-lotus",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d024",
+  "text": "उन्होंने योगनिद्रा की स्तुति की — उसी शक्ति की, जिसने विष्णु को सुला रखा था।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "symbol",
+   "ref": "rings",
+   "mode": "orbit"
+  }
+ },
+ {
+  "id": "d025",
+  "text": "तभी विष्णु जाग गए।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "light-burst",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d026",
+  "text": "पर लड़ाई आसान नहीं थी। पाँच हज़ार साल तक विष्णु उन असुरों से लड़ते रहे।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "vishnu-fight",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d027",
+  "text": "आख़िर में असुरों ने ही कहा — माँगो, क्या वर चाहिए?",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "vishnu-fight",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d028",
+  "text": "विष्णु ने बस इतना कहा — तुम दोनों मेरे हाथों मारे जाओ।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "typography",
+   "ref": "boon",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d029",
+  "text": "और उन्होंने अपने चक्र से उनके सिर काट दिए।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "symbol",
+   "ref": "chakra",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d030",
+  "text": "इसलिए पहली कहानी में भी, देवता अकेले नहीं जीते थे। देवी की शक्ति के बिना विष्णु जागे ही नहीं।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "symbol",
+   "ref": "rings",
+   "mode": "orbit"
+  }
+ },
+ {
+  "id": "d031",
+  "text": "अब दूसरी कहानी — और इस बार दाँव कहीं बड़ा था।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "symbol",
+   "ref": "trident",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d032",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग २  ·  सौ साल की हार",
+  "intent": "calm",
+  "chapter": "ch2",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d033",
+  "text": "पहले ये समझो — ये किसी एक दिन की लड़ाई नहीं थी।",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "dark-water",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d034",
+  "text": "एक सौ साल। पूरे एक सौ साल देवता और असुर लड़ते रहे।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-asuras-war",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d035",
+  "text": "देवताओं के सेनापति थे इंद्र। असुरों का नेता — महिषासुर।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d036",
+  "text": "लेकिन उस युद्ध में देवता हार गए।",
+  "intent": "punch",
+  "chapter": "ch2",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d037",
+  "text": "",
+  "silent": 3.0,
+  "breath": true,
+  "intent": "calm",
+  "chapter": "ch2",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "slow"
+  }
+ },
+ {
+  "id": "d038",
+  "text": "नतीजा — महिषासुर स्वर्ग का स्वामी बन बैठा।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-throne",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d039",
+  "text": "सूर्य, इंद्र, अग्नि, वायु, चंद्रमा, यम, वरुण — सबके अधिकार उसने अपने हाथ में ले लिए।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "diagram",
+   "ref": "powers-list",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d040",
+  "text": "जो देवता सारा संसार चलाते थे, वही अपने घर से निकाल दिए गए।",
+  "intent": "reflective",
+  "chapter": "ch2",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d041",
+  "text": "सोचो — जिनसे संसार चलता है, उन्हीं के हाथ से संसार छिन गया।",
+  "intent": "reflective",
+  "chapter": "ch2",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d042",
+  "text": "इसलिए वो शरण ढूँढने निकले।",
+  "intent": "reflective",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-flee",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d043",
+  "text": "ब्रह्मा सबसे आगे चल रहे थे। वो उस दरबार में पहुँचे जहाँ विष्णु और शिव बैठे थे।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-court",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d044",
+  "text": "तब उन्होंने सब कुछ सुना दिया — कि उस दुष्ट महिषासुर ने उनके साथ क्या किया।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-court",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d045",
+  "text": "बस इतना कहा — इसलिए अब आप ही उसके विनाश का उपाय सोचिए।",
+  "intent": "reflective",
+  "chapter": "ch2",
+  "visual": {
+   "type": "typography",
+   "ref": "request",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d046",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग ३  ·  क्रोध से जन्मी देवी",
+  "intent": "calm",
+  "chapter": "ch3",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d047",
+  "text": "यह सुनते ही विष्णु और शिव का क्रोध भड़क उठा।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-angry",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d048",
+  "text": "भौंहें तन गईं। चेहरे भयंकर हो गए।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-angry",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d049",
+  "text": "तभी… विष्णु के मुख से एक तेज निकला।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "energy-stream",
+   "mode": "path"
+  }
+ },
+ {
+  "id": "d050",
+  "text": "फिर ब्रह्मा से… शिव से… इंद्र और बाकी देवताओं के शरीर से।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "energy-stream",
+   "mode": "path"
+  }
+ },
+ {
+  "id": "d051",
+  "text": "वो सारे तेज मिलकर एक पर्वत जैसी ज्वाला बन गए।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "light-mountain",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d052",
+  "text": "और उस ज्वाला से प्रकट हुईं — एक देवी।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "goddess-emerges",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d053",
+  "text": "किसी माँ की कोख से नहीं। देवताओं के क्रोध से।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "goddess-emerges",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d054",
+  "text": "",
+  "silent": 3.4,
+  "breath": true,
+  "intent": "calm",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "light-mountain",
+   "mode": "slow"
+  }
+ },
+ {
+  "id": "d055",
+  "text": "कथा के एक पाठ में उनकी हज़ार भुजाओं का वर्णन है।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-many-arms",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d056",
+  "text": "लेकिन देवी के पास हथियार कहाँ थे?",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "weapons-ring",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d057",
+  "text": "देवताओं ने अपने-अपने हथियार दे दिए। शिव ने त्रिशूल दिया। विष्णु ने चक्र।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "trident",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d058",
+  "text": "वरुण ने शंख। अग्नि ने भाला। वायु ने धनुष और दो तरकश।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "callout"
+  }
+ },
+ {
+  "id": "d059",
+  "text": "इंद्र ने वज्र दिया — और अपने हाथी ऐरावत का घंटा।",
+  "intent": "punch",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "bell",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d060",
+  "text": "यम ने दंड। वरुण ने पाश। ब्रह्मा ने माला और कमंडल।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "weapons-ring",
+   "mode": "orbit"
+  }
+ },
+ {
+  "id": "d061",
+  "text": "सूर्य ने अपनी किरणें उनके रोम-रोम में भर दीं।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "rays",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d062",
+  "text": "काल ने तलवार और बेदाग़ ढाल दी। विश्वकर्मा ने कुल्हाड़ी और ऐसा कवच, जो टूट नहीं सकता।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-armed",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d063",
+  "text": "क्षीरसागर ने गहने दिए। समुद्र ने कभी न मुरझाने वाली कमल की माला।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "lotus",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d064",
+  "text": "हिमालय ने रत्न दिए — और सवारी के लिए एक सिंह।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-lion",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d065",
+  "text": "कुबेर ने दिव्य मधु का पात्र दिया। याद रखना इस पात्र को।",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "symbol",
+   "ref": "cup",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d066",
+  "text": "हर देवता का थोड़ा-थोड़ा हिस्सा… और सबका जोड़ — वो देवी।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d067",
+  "text": "कथा के जानकार इसे इस तरह समझाते हैं।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "typography",
+   "ref": "interpretation",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d068",
+  "text": "जब सब अपनी-अपनी शक्ति एक जगह रख देते हैं, तो वो शक्ति किसी एक की नहीं रहती।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d069",
+  "text": "रुको। एक पल सोचो।",
+  "intent": "punch",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "rays",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d070",
+  "text": "अगर इनमें से एक भी देवता अपना तेज न देता — तो क्या देवी पूरी होतीं?",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d071",
+  "text": "फिर देवी ने ऐसा अट्टहास किया कि पूरा आकाश भर गया।",
+  "intent": "punch",
+  "chapter": "ch3",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "shockwave",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d072",
+  "text": "लोक काँप उठे। देवताओं ने पुकारा — जय हो! और ऋषियों ने स्तुति की।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-praise",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d073",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग ४  ·  सेनापति और सेना",
+  "intent": "calm",
+  "chapter": "ch4",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d074",
+  "text": "पर वो अट्टहास महिषासुर के कानों तक पहुँचा।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d075",
+  "text": "और क्रोध में, वो अपनी पूरी सेना लेकर खुद दौड़ पड़ा।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "asura-army",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d076",
+  "text": "सेना ऐसी, कि कथा में रथों की गिनती करोड़ों-अरबों में बताई गई है।",
+  "intent": "narrate",
+  "chapter": "ch4",
+  "visual": {
+   "type": "diagram",
+   "ref": "army-count",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d077",
+  "text": "सेनापति थे चिक्षुर और चामर।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "asura-army",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d078",
+  "text": "अब सेनापतियों के नाम सुनो।",
+  "intent": "curious",
+  "chapter": "ch4",
+  "visual": {
+   "type": "typography",
+   "ref": "roll-call",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d079",
+  "text": "चिक्षुर। चामर। उदग्र। महाहनु।",
+  "intent": "punch",
+  "chapter": "ch4",
+  "visual": {
+   "type": "typography",
+   "ref": "roll-call",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d080",
+  "text": "असिलोमा। बाष्कल। परिवारित। बिडाल।",
+  "intent": "punch",
+  "chapter": "ch4",
+  "visual": {
+   "type": "typography",
+   "ref": "roll-call",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d081",
+  "text": "कथा के अनुसार, हर एक के साथ रथों की गिनती करोड़ों में थी।",
+  "intent": "narrate",
+  "chapter": "ch4",
+  "visual": {
+   "type": "diagram",
+   "ref": "army-count",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d082",
+  "text": "और सामने? सिर्फ़ एक देवी — और उनका सिंह।",
+  "intent": "curious",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-lion",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d083",
+  "text": "फिर भी युद्ध शुरू हुआ… और असुरों की पंक्तियाँ टूटती गईं।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d084",
+  "text": "एक-एक करके असुर सेनापति मारे गए।",
+  "intent": "punch",
+  "chapter": "ch4",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d085",
+  "text": "इसलिए अब महिषासुर के पास सेना नहीं थी।",
+  "intent": "reflective",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d086",
+  "text": "लेकिन उसकी असली शक्ति सेना थी ही नहीं।",
+  "intent": "reveal",
+  "chapter": "ch4",
+  "visual": {
+   "type": "typography",
+   "ref": "twist",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d087",
+  "text": "उसकी असली शक्ति थी — रूप बदलना।",
+  "intent": "punch",
+  "chapter": "ch4",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "morph",
+   "mode": "morph"
+  }
+ },
+ {
+  "id": "d088",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग ५  ·  पाँच रूप",
+  "intent": "calm",
+  "chapter": "ch5",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d089",
+  "text": "पहले वो भैंसा बना।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d090",
+  "text": "फिर सिंह।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-lion",
+   "mode": "morph"
+  }
+ },
+ {
+  "id": "d091",
+  "text": "फिर तलवार और ढाल लिए एक आदमी।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-man",
+   "mode": "morph"
+  }
+ },
+ {
+  "id": "d092",
+  "text": "फिर एक विशाल हाथी।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-elephant",
+   "mode": "morph"
+  }
+ },
+ {
+  "id": "d093",
+  "text": "और फिर… वो वापस भैंसा बन गया।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "morph"
+  }
+ },
+ {
+  "id": "d094",
+  "text": "पर देवी हर रूप को काटती गईं। और उसने हर बार नया रूप ले लिया।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d095",
+  "text": "यहीं देवी ने वो पात्र उठाया।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "symbol",
+   "ref": "cup",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d096",
+  "text": "बार-बार दिव्य पेय पिया — और उनकी आँखें लाल हो गईं।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d097",
+  "text": "और हँसकर बोलीं — गरज ले, मूर्ख। बस कुछ पल और।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-battle",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d098",
+  "text": "यही वो क्षण है, जहाँ से हमने कथा शुरू की थी।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "typography",
+   "ref": "callback",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d099",
+  "text": "तभी वो उछलीं।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-leap",
+   "mode": "shake"
+  }
+ },
+ {
+  "id": "d100",
+  "text": "पैर से उसकी गर्दन दबाई। और भाले से वार किया।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-leap",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d101",
+  "text": "महिषासुर उस भैंसे के मुँह से आधा बाहर निकल आया…",
+  "intent": "awe",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-emerge",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d102",
+  "text": "…और तभी देवी की तलवार चली।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-emerge",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d103",
+  "text": "सिर कट गया।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "shockwave",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d104",
+  "text": "",
+  "silent": 3.6,
+  "breath": true,
+  "intent": "calm",
+  "chapter": "ch5",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "shockwave",
+   "mode": "slow"
+  }
+ },
+ {
+  "id": "d105",
+  "text": "और उसकी सेना भी नहीं बची।",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "asura-army",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d106",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग ६  ·  तथास्तु",
+  "intent": "calm",
+  "chapter": "ch6",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d107",
+  "text": "आसमान में जयकार गूँज उठी।",
+  "intent": "awe",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-praise",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d108",
+  "text": "देवताओं ने सिर झुकाकर देवी की स्तुति की — और कहा, शत्रु मारा गया।",
+  "intent": "awe",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-praise",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d109",
+  "text": "फिर उन्होंने देवी से एक वचन माँगा।",
+  "intent": "curious",
+  "chapter": "ch6",
+  "visual": {
+   "type": "typography",
+   "ref": "vow",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d110",
+  "text": "कि जब भी हम आपको याद करें — हमारे संकट मिटा देना।",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "gods-praise",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d111",
+  "text": "और जो भी मनुष्य इन स्तुतियों से आपका गुणगान करे — उसे भी आशीर्वाद देना।",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "symbol",
+   "ref": "lotus",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d112",
+  "text": "देवी ने बस एक शब्द कहा — तथास्तु।",
+  "intent": "punch",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d113",
+  "text": "और वो अंतर्धान हो गईं।",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "light-burst",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d114",
+  "text": "इसी ग्रंथ का अंतिम अध्याय कहता है — अष्टमी, नवमी और चतुर्दशी को इसका पाठ सुनना रक्षा और समृद्धि देता है।",
+  "intent": "narrate",
+  "chapter": "ch6",
+  "visual": {
+   "type": "diagram",
+   "ref": "lunar-days",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d115",
+  "text": "माना जाता है, नवरात्रि में लोग इसी वचन को याद करते हैं।",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "diyas",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d116",
+  "text": "",
+  "silent": 2.4,
+  "card": "भाग ७  ·  सवाल का जवाब",
+  "intent": "calm",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "chapter-card",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d117",
+  "text": "तो अब वही सवाल — देवी किसकी बेटी थीं?",
+  "intent": "curious",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d118",
+  "text": "किसी की नहीं। वो उन सबकी शक्ति थीं, जो अकेले हार चुके थे।",
+  "intent": "reveal",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "goddess-emerges",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d119",
+  "text": "लेकिन तीन बातें हैं जो इस कथा में अक्सर छूट जाती हैं।",
+  "intent": "curious",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "three-notes",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d120",
+  "text": "पहली — जिन्हें हम दुर्गा कहते हैं, इस प्रसंग में उन्हें भद्रकाली कहकर पुकारा गया है।",
+  "intent": "narrate",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-calm",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d121",
+  "text": "'दुर्गा' नाम ग्यारहवें अध्याय में आता है, जहाँ देवी खुद अपने भविष्य के रूप गिनाती हैं।",
+  "intent": "narrate",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "durga-name",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d122",
+  "text": "दूसरी — मूर्तियों में तुमने उन्हें आठ या दस भुजाओं के साथ देखा होगा। इस पाठ में हज़ार भुजाएँ हैं। दोनों परंपराएँ साथ चलती हैं।",
+  "intent": "narrate",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "durga-many-arms",
+   "mode": "pan"
+  }
+ },
+ {
+  "id": "d123",
+  "text": "तीसरी — कई जगह सुना जाता है कि महिषासुर को वरदान था। जो पाठ हमने पढ़ा, उसमें ऐसा कोई वरदान नहीं मिलता।",
+  "intent": "narrate",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "mahisha-bull",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d124",
+  "text": "वो वरदान दूसरी कथाओं में सुनाया जाता है। इसीलिए कथा सुनाते समय, स्रोत बताना ज़रूरी है।",
+  "intent": "reflective",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "sources",
+   "mode": "dissolve"
+  }
+ },
+ {
+  "id": "d125",
+  "text": "देवता अकेले हारे थे। साथ मिले, तो देवी बन गए।",
+  "intent": "reflective",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "last-dab",
+   "mode": "form"
+  }
+ },
+ {
+  "id": "d126",
+  "text": "और राजा सुरथ? जिसने सबसे पहले सवाल पूछा था?",
+  "intent": "curious",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "king-forest",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d127",
+  "text": "उसका जवाब इस पूरी कथा के आख़िर में मिलता है।",
+  "intent": "reveal",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "king-forest",
+   "mode": "close"
+  }
+ },
+ {
+  "id": "d128",
+  "text": "लेकिन कथा यहाँ ख़त्म नहीं होती।",
+  "intent": "tense",
+  "chapter": "ch7",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "dark-water",
+   "mode": "flow"
+  }
+ },
+ {
+  "id": "d129",
+  "text": "फिर संकट आया — दो नए असुर भाइयों के रूप में।",
+  "intent": "tense",
+  "chapter": "ch7",
+  "visual": {
+   "type": "atmosphere",
+   "ref": "falling-lights",
+   "mode": "scatter"
+  }
+ },
+ {
+  "id": "d130",
+  "text": "शुंभ और निशुंभ। और उनके साथ एक ऐसा असुर, जिसके खून की हर बूँद से एक नया असुर जन्म लेता था।",
+  "intent": "tense",
+  "chapter": "ch7",
+  "visual": {
+   "type": "painting",
+   "ref": "raktabija",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "d131",
+  "text": "उसे कौन रोकेगा? वो कथा अगले भाग में। देखना मत भूलना।",
+  "intent": "reveal",
+  "chapter": "ch7",
+  "visual": {
+   "type": "typography",
+   "ref": "next-part",
+   "mode": "form"
+  },
+  "pause_after": 0.5
+ }
+]
