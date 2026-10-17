@@ -1,0 +1,4678 @@
+{
+ "story": "durga-janm-katha",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 1361,
+ "duration_s": 494.44,
+ "speech_words_per_s": 2.98,
+ "phrases": [
+  {
+   "id": "d001.1",
+   "text": "तुम जानते हो, सौ साल की हार के बाद दुर्गा का जन्म कैसे हुआ?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 3.724,
+   "tries": 1,
+   "words_per_s": 3.76,
+   "beat": "d001",
+   "pause_after": 0.24,
+   "spoken": "तुम जानते हो, सौ साल की हार के बाद दुर्गा का जन्म कैसे हुआ?",
+   "raw_dur_s": 4.64,
+   "checks": [
+    {
+     "seed": 79349,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d002.1",
+   "text": "रणभूमि के बीच एक देवी रुकती हैं…",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 3.964,
+   "end": 5.999,
+   "tries": 1,
+   "words_per_s": 3.44,
+   "beat": "d002",
+   "pause_after": 0.11,
+   "spoken": "रणभूमि के बीच एक देवी रुकती हैं,",
+   "raw_dur_s": 2.53,
+   "checks": [
+    {
+     "seed": 5739,
+     "rate": 2.76,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d002.2",
+   "text": "और हाथ में पात्र उठाकर कहती हैं —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 6.109,
+   "end": 8.185,
+   "tries": 2,
+   "words_per_s": 3.85,
+   "beat": "d002",
+   "pause_after": 0.22,
+   "spoken": "और हाथ में पात्र उठाकर कहती हैं,",
+   "raw_dur_s": 2.59,
+   "checks": [
+    {
+     "seed": 79931,
+     "rate": 2.28,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 87850,
+     "rate": 3.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d003.1",
+   "text": "गरज ले, मूर्ख।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 8.405,
+   "end": 9.718,
+   "tries": 2,
+   "words_per_s": 2.28,
+   "beat": "d003",
+   "pause_after": 0.11,
+   "spoken": "गरज ले, मूर्ख.",
+   "raw_dur_s": 1.64,
+   "checks": [
+    {
+     "seed": 55930,
+     "rate": 1.43,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 63849,
+     "rate": 1.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d003.2",
+   "text": "बस कुछ पल और।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 9.828,
+   "end": 11.165,
+   "tries": 3,
+   "words_per_s": 2.99,
+   "beat": "d003",
+   "pause_after": 0.28,
+   "spoken": "बस कुछ पल और.",
+   "raw_dur_s": 1.67,
+   "checks": [
+    {
+     "seed": 31737,
+     "rate": 1.42,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 39656,
+     "rate": 0.96,
+     "problems": [
+      "raw pace 1.0 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 47575,
+     "rate": 2.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d004.1",
+   "text": "सामने खड़ा था महिषासुर —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 11.445,
+   "end": 13.313,
+   "tries": 2,
+   "words_per_s": 2.68,
+   "beat": "d004",
+   "pause_after": 0.11,
+   "spoken": "सामने खड़ा था महिषासुर,",
+   "raw_dur_s": 2.33,
+   "checks": [
+    {
+     "seed": 63926,
+     "rate": 1.85,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 71845,
+     "rate": 2.14,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d004.2",
+   "text": "जिसने देवताओं को सौ साल की लड़ाई में हरा दिया था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 13.423,
+   "end": 16.21,
+   "tries": 1,
+   "words_per_s": 3.95,
+   "beat": "d004",
+   "pause_after": 0.22,
+   "spoken": "जिसने देवताओं को सौ साल की लड़ाई में हरा दिया था.",
+   "raw_dur_s": 3.48,
+   "checks": [
+    {
+     "seed": 63404,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d005.1",
+   "text": "तो ये देवी कौन थीं?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 16.43,
+   "end": 17.621,
+   "tries": 1,
+   "words_per_s": 4.2,
+   "beat": "d005",
+   "pause_after": 0.12,
+   "spoken": "तो ये देवी कौन थीं?",
+   "raw_dur_s": 1.48,
+   "checks": [
+    {
+     "seed": 74392,
+     "rate": 3.38,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d005.2",
+   "text": "और उन्हें जन्म किसने दिया?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 17.741,
+   "end": 19.499,
+   "tries": 2,
+   "words_per_s": 2.84,
+   "beat": "d005",
+   "pause_after": 0.3,
+   "spoken": "और उन्हें जन्म किसने दिया?",
+   "raw_dur_s": 2.2,
+   "checks": [
+    {
+     "seed": 89169,
+     "rate": 1.41,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 97088,
+     "rate": 2.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d006.1",
+   "text": "आज तुम सुनोगे दुर्गा के जन्म की पूरी कथा —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 19.799,
+   "end": 22.571,
+   "tries": 1,
+   "words_per_s": 3.61,
+   "beat": "d006",
+   "pause_after": 0.11,
+   "spoken": "आज तुम सुनोगे दुर्गा के जन्म की पूरी कथा,",
+   "raw_dur_s": 3.45,
+   "checks": [
+    {
+     "seed": 32515,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d006.2",
+   "text": "हर देवता ने उन्हें क्या दिया, और महिषासुर ने कितने रूप बदले।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 22.681,
+   "end": 25.872,
+   "tries": 1,
+   "words_per_s": 3.76,
+   "beat": "d006",
+   "pause_after": 0.22,
+   "spoken": "हर देवता ने उन्हें क्या दिया, और महिषासुर ने कितने रूप बदले.",
+   "raw_dur_s": 3.98,
+   "checks": [
+    {
+     "seed": 15432,
+     "rate": 3.01,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d007.1",
+   "text": "और अंत में —",
+   "emotion": "reveal",
+   "exaggeration": 0.7,
+   "tempo": 1.091,
+   "start": 26.092,
+   "end": 27.034,
+   "tries": 1,
+   "words_per_s": 4.25,
+   "beat": "d007",
+   "pause_after": 0.34,
+   "spoken": "और अंत में,",
+   "raw_dur_s": 1.04,
+   "checks": [
+    {
+     "seed": 97866,
+     "rate": 3.84,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d007.2",
+   "text": "देवी ने देवताओं से कौन-सा वचन दिया, जिस पर करोड़ों लोग आज भी भरोसा करते हैं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 27.374,
+   "end": 32.437,
+   "tries": 1,
+   "words_per_s": 3.16,
+   "beat": "d007",
+   "pause_after": 0.48,
+   "spoken": "देवी ने देवताओं से कौन-सा वचन दिया, जिस पर करोड़ों लोग आज भी भरोसा करते हैं.",
+   "raw_dur_s": 5.65,
+   "checks": [
+    {
+     "seed": 51475,
+     "rate": 2.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d009.1",
+   "text": "यह कथा देवी महात्म्य की है —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 35.317,
+   "end": 37.004,
+   "tries": 1,
+   "words_per_s": 4.15,
+   "beat": "d009",
+   "pause_after": 0.11,
+   "spoken": "यह कथा देवी महात्म्य की है,",
+   "raw_dur_s": 2.12,
+   "checks": [
+    {
+     "seed": 21353,
+     "rate": 3.3,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d009.2",
+   "text": "मार्कण्डेय पुराण का वो हिस्सा, जो सात सौ श्लोकों में गाया जाता है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 37.114,
+   "end": 41.129,
+   "tries": 1,
+   "words_per_s": 3.24,
+   "beat": "d009",
+   "pause_after": 0.22,
+   "spoken": "मार्कण्डेय पुराण का वो हिस्सा, जो सात सौ श्लोकों में गाया जाता है.",
+   "raw_dur_s": 5.01,
+   "checks": [
+    {
+     "seed": 37210,
+     "rate": 2.59,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d010.1",
+   "text": "यह ग्रंथ तीन कथाओं में बँटा है —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 41.349,
+   "end": 43.013,
+   "tries": 1,
+   "words_per_s": 4.81,
+   "beat": "d010",
+   "pause_after": 0.11,
+   "spoken": "यह ग्रंथ तीन कथाओं में बँटा है,",
+   "raw_dur_s": 2.07,
+   "checks": [
+    {
+     "seed": 74912,
+     "rate": 3.86,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d010.2",
+   "text": "पहली में एक अध्याय, दूसरी में तीन, और तीसरी में पूरे नौ।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 43.123,
+   "end": 47.229,
+   "tries": 1,
+   "words_per_s": 2.92,
+   "beat": "d010",
+   "pause_after": 0.22,
+   "spoken": "पहली में एक अध्याय, दूसरी में तीन, और तीसरी में पूरे नौ.",
+   "raw_dur_s": 5.12,
+   "checks": [
+    {
+     "seed": 97937,
+     "rate": 2.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d011.1",
+   "text": "आज हम बीच की कथा सुनेंगे।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 47.449,
+   "end": 49.09,
+   "tries": 1,
+   "words_per_s": 3.66,
+   "beat": "d011",
+   "pause_after": 0.12,
+   "spoken": "आज हम बीच की कथा सुनेंगे.",
+   "raw_dur_s": 2.04,
+   "checks": [
+    {
+     "seed": 41945,
+     "rate": 2.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d011.2",
+   "text": "लेकिन पहली को समझे बिना, ये अधूरी रहेगी।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 49.21,
+   "end": 51.822,
+   "tries": 1,
+   "words_per_s": 3.06,
+   "beat": "d011",
+   "pause_after": 0.3,
+   "spoken": "लेकिन पहली को समझे बिना, ये अधूरी रहेगी.",
+   "raw_dur_s": 3.28,
+   "checks": [
+    {
+     "seed": 92020,
+     "rate": 2.44,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d012.1",
+   "text": "और इसकी शुरुआत किसी देवता से नहीं होती।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 52.122,
+   "end": 54.659,
+   "tries": 1,
+   "words_per_s": 3.15,
+   "beat": "d012",
+   "pause_after": 0.12,
+   "spoken": "और इसकी शुरुआत किसी देवता से नहीं होती.",
+   "raw_dur_s": 3.15,
+   "checks": [
+    {
+     "seed": 70055,
+     "rate": 2.54,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d012.2",
+   "text": "एक राजा से होती है।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 54.779,
+   "end": 55.979,
+   "tries": 1,
+   "words_per_s": 4.17,
+   "beat": "d012",
+   "pause_after": 0.3,
+   "spoken": "एक राजा से होती है.",
+   "raw_dur_s": 1.49,
+   "checks": [
+    {
+     "seed": 96732,
+     "rate": 3.36,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d013.1",
+   "text": "राजा सुरथ। जिसका राज्य छिन चुका था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 56.279,
+   "end": 58.213,
+   "tries": 1,
+   "words_per_s": 3.62,
+   "beat": "d013",
+   "pause_after": 0.22,
+   "spoken": "राजा सुरथ. जिसका राज्य छिन चुका था.",
+   "raw_dur_s": 2.41,
+   "checks": [
+    {
+     "seed": 93620,
+     "rate": 2.91,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d014.1",
+   "text": "वो जंगल में भटकता हुआ एक वैश्य से मिला, जिसे उसके अपने परिवार ने घर से निकाल दिया था।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 58.433,
+   "end": 62.989,
+   "tries": 1,
+   "words_per_s": 4.17,
+   "beat": "d014",
+   "pause_after": 0.22,
+   "spoken": "वो जंगल में भटकता हुआ एक वैश्य से मिला, जिसे उसके अपने परिवार ने घर से निकाल दिया था.",
+   "raw_dur_s": 5.69,
+   "checks": [
+    {
+     "seed": 60335,
+     "rate": 3.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d015.1",
+   "text": "एक राजा, जिसने सब कुछ खो दिया।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 63.209,
+   "end": 66.179,
+   "tries": 1,
+   "words_per_s": 2.36,
+   "beat": "d015",
+   "pause_after": 0.17,
+   "spoken": "एक राजा, जिसने सब कुछ खो दिया.",
+   "raw_dur_s": 3.34,
+   "checks": [
+    {
+     "seed": 65861,
+     "rate": 2.1,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d015.2",
+   "text": "और एक व्यापारी, जिसे अपनों ने ठुकरा दिया।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 66.349,
+   "end": 68.762,
+   "tries": 1,
+   "words_per_s": 3.32,
+   "beat": "d015",
+   "pause_after": 0.38,
+   "spoken": "और एक व्यापारी, जिसे अपनों ने ठुकरा दिया.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 82775,
+     "rate": 2.95,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d016.1",
+   "text": "दोनों ऋषि मेधा के आश्रम पहुँचे —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 69.142,
+   "end": 70.975,
+   "tries": 1,
+   "words_per_s": 3.82,
+   "beat": "d016",
+   "pause_after": 0.18,
+   "spoken": "दोनों ऋषि मेधा के आश्रम पहुँचे,",
+   "raw_dur_s": 2.29,
+   "checks": [
+    {
+     "seed": 94963,
+     "rate": 3.06,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d016.2",
+   "text": "और एक अजीब सवाल लेकर।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 71.155,
+   "end": 73.036,
+   "tries": 1,
+   "words_per_s": 2.66,
+   "beat": "d016",
+   "pause_after": 0.3,
+   "spoken": "और एक अजीब सवाल लेकर.",
+   "raw_dur_s": 2.35,
+   "checks": [
+    {
+     "seed": 25480,
+     "rate": 2.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d017.1",
+   "text": "जिन्होंने हमें धोखा दिया, हम आज भी उन्हीं के बारे में क्यों सोचते हैं?",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 73.336,
+   "end": 77.048,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "d017",
+   "pause_after": 0.38,
+   "spoken": "जिन्होंने हमें धोखा दिया, हम आज भी उन्हीं के बारे में क्यों सोचते हैं?",
+   "raw_dur_s": 4.16,
+   "checks": [
+    {
+     "seed": 22335,
+     "rate": 3.36,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d018.1",
+   "text": "ऋषि बोले —",
+   "emotion": "punch",
+   "exaggeration": 0.75,
+   "tempo": 1.226,
+   "start": 77.428,
+   "end": 78.547,
+   "tries": 1,
+   "words_per_s": 2.68,
+   "beat": "d018",
+   "pause_after": 0.16,
+   "spoken": "ऋषि बोले,",
+   "raw_dur_s": 1.38,
+   "checks": [
+    {
+     "seed": 48454,
+     "rate": 2.17,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d018.2",
+   "text": "यह महामाया की शक्ति है।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 78.707,
+   "end": 80.482,
+   "tries": 1,
+   "words_per_s": 2.82,
+   "beat": "d018",
+   "pause_after": 0.17,
+   "spoken": "यह महामाया की शक्ति है.",
+   "raw_dur_s": 2.06,
+   "checks": [
+    {
+     "seed": 79527,
+     "rate": 2.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d018.3",
+   "text": "वो ज्ञानियों को भी मोह में बाँध देती हैं।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 80.652,
+   "end": 82.571,
+   "tries": 1,
+   "words_per_s": 4.69,
+   "beat": "d018",
+   "pause_after": 0.38,
+   "spoken": "वो ज्ञानियों को भी मोह में बाँध देती हैं.",
+   "raw_dur_s": 2.23,
+   "checks": [
+    {
+     "seed": 18365,
+     "rate": 4.04,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d019.1",
+   "text": "और इसका सबसे बड़ा उदाहरण?",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 82.951,
+   "end": 85.213,
+   "tries": 1,
+   "words_per_s": 2.21,
+   "beat": "d019",
+   "pause_after": 0.23,
+   "spoken": "और इसका सबसे बड़ा उदाहरण?",
+   "raw_dur_s": 2.52,
+   "checks": [
+    {
+     "seed": 43729,
+     "rate": 1.99,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d019.2",
+   "text": "स्वयं भगवान विष्णु।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 85.443,
+   "end": 86.745,
+   "tries": 2,
+   "words_per_s": 2.31,
+   "beat": "d019",
+   "pause_after": 0.48,
+   "spoken": "स्वयं भगवान विष्णु.",
+   "raw_dur_s": 1.44,
+   "checks": [
+    {
+     "seed": 81814,
+     "rate": 1.12,
+     "problems": [
+      "raw pace 1.1 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 89733,
+     "rate": 2.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d020.1",
+   "text": "सृष्टि के अंत का समय था।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 87.225,
+   "end": 89.001,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "d020",
+   "pause_after": 0.17,
+   "spoken": "सृष्टि के अंत का समय था.",
+   "raw_dur_s": 1.99,
+   "checks": [
+    {
+     "seed": 19430,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d020.2",
+   "text": "विष्णु योगनिद्रा में लेटे थे।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 89.171,
+   "end": 90.744,
+   "tries": 1,
+   "words_per_s": 3.18,
+   "beat": "d020",
+   "pause_after": 0.38,
+   "spoken": "विष्णु योगनिद्रा में लेटे थे.",
+   "raw_dur_s": 1.75,
+   "checks": [
+    {
+     "seed": 51950,
+     "rate": 2.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d021.1",
+   "text": "तभी उनके कान के मैल से दो असुर पैदा हुए —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 91.124,
+   "end": 93.427,
+   "tries": 1,
+   "words_per_s": 4.78,
+   "beat": "d021",
+   "pause_after": 0.11,
+   "spoken": "तभी उनके कान के मैल से दो असुर पैदा हुए,",
+   "raw_dur_s": 2.87,
+   "checks": [
+    {
+     "seed": 49370,
+     "rate": 3.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d021.2",
+   "text": "मधु और कैटभ।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 93.537,
+   "end": 94.658,
+   "tries": 1,
+   "words_per_s": 2.68,
+   "beat": "d021",
+   "pause_after": 0.28,
+   "spoken": "मधु और कैटभ.",
+   "raw_dur_s": 1.4,
+   "checks": [
+    {
+     "seed": 8740,
+     "rate": 2.15,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d022.1",
+   "text": "और वो सीधे ब्रह्मा को मारने दौड़े, जो विष्णु के कमल पर बैठे थे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 94.938,
+   "end": 98.655,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "d022",
+   "pause_after": 0.22,
+   "spoken": "और वो सीधे ब्रह्मा को मारने दौड़े, जो विष्णु के कमल पर बैठे थे.",
+   "raw_dur_s": 4.65,
+   "checks": [
+    {
+     "seed": 585,
+     "rate": 3.01,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d023.1",
+   "text": "ब्रह्मा के पास कोई हथियार नहीं था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 98.875,
+   "end": 100.713,
+   "tries": 1,
+   "words_per_s": 3.81,
+   "beat": "d023",
+   "pause_after": 0.07,
+   "spoken": "ब्रह्मा के पास कोई हथियार नहीं था.",
+   "raw_dur_s": 2.32,
+   "checks": [
+    {
+     "seed": 80651,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d023.2",
+   "text": "उनके पास सिर्फ़ एक रास्ता था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 100.783,
+   "end": 102.799,
+   "tries": 1,
+   "words_per_s": 2.98,
+   "beat": "d023",
+   "pause_after": 0.22,
+   "spoken": "उनके पास सिर्फ़ एक रास्ता था.",
+   "raw_dur_s": 2.51,
+   "checks": [
+    {
+     "seed": 69745,
+     "rate": 2.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d024.1",
+   "text": "उन्होंने योगनिद्रा की स्तुति की —",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 103.019,
+   "end": 105.031,
+   "tries": 1,
+   "words_per_s": 2.98,
+   "beat": "d024",
+   "pause_after": 0.25,
+   "spoken": "उन्होंने योगनिद्रा की स्तुति की,",
+   "raw_dur_s": 2.28,
+   "checks": [
+    {
+     "seed": 54955,
+     "rate": 2.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d024.2",
+   "text": "उसी शक्ति की, जिसने विष्णु को सुला रखा था।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 105.281,
+   "end": 107.878,
+   "tries": 1,
+   "words_per_s": 3.47,
+   "beat": "d024",
+   "pause_after": 0.38,
+   "spoken": "उसी शक्ति की, जिसने विष्णु को सुला रखा था.",
+   "raw_dur_s": 3.02,
+   "checks": [
+    {
+     "seed": 71686,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d025.1",
+   "text": "तभी विष्णु जाग गए।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 108.258,
+   "end": 109.512,
+   "tries": 1,
+   "words_per_s": 3.19,
+   "beat": "d025",
+   "pause_after": 0.28,
+   "spoken": "तभी विष्णु जाग गए.",
+   "raw_dur_s": 1.55,
+   "checks": [
+    {
+     "seed": 95073,
+     "rate": 2.58,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d026.1",
+   "text": "पर लड़ाई आसान नहीं थी।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 109.792,
+   "end": 111.421,
+   "tries": 1,
+   "words_per_s": 3.07,
+   "beat": "d026",
+   "pause_after": 0.07,
+   "spoken": "पर लड़ाई आसान नहीं थी.",
+   "raw_dur_s": 2.04,
+   "checks": [
+    {
+     "seed": 69898,
+     "rate": 2.45,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d026.2",
+   "text": "पाँच हज़ार साल तक विष्णु उन असुरों से लड़ते रहे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 111.491,
+   "end": 114.269,
+   "tries": 1,
+   "words_per_s": 3.6,
+   "beat": "d026",
+   "pause_after": 0.22,
+   "spoken": "पाँच हज़ार साल तक विष्णु उन असुरों से लड़ते रहे.",
+   "raw_dur_s": 3.47,
+   "checks": [
+    {
+     "seed": 12624,
+     "rate": 2.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d027.1",
+   "text": "आख़िर में असुरों ने ही कहा —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 114.489,
+   "end": 116.762,
+   "tries": 1,
+   "words_per_s": 3.08,
+   "beat": "d027",
+   "pause_after": 0.18,
+   "spoken": "आख़िर में असुरों ने ही कहा,",
+   "raw_dur_s": 2.83,
+   "checks": [
+    {
+     "seed": 43574,
+     "rate": 2.47,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d027.2",
+   "text": "माँगो, क्या वर चाहिए?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 116.942,
+   "end": 118.196,
+   "tries": 1,
+   "words_per_s": 3.19,
+   "beat": "d027",
+   "pause_after": 0.3,
+   "spoken": "माँगो, क्या वर चाहिए?",
+   "raw_dur_s": 1.56,
+   "checks": [
+    {
+     "seed": 62002,
+     "rate": 2.57,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d028.1",
+   "text": "विष्णु ने बस इतना कहा —",
+   "emotion": "punch",
+   "exaggeration": 0.75,
+   "tempo": 1.226,
+   "start": 118.496,
+   "end": 119.897,
+   "tries": 2,
+   "words_per_s": 4.28,
+   "beat": "d028",
+   "pause_after": 0.16,
+   "spoken": "विष्णु ने बस इतना कहा,",
+   "raw_dur_s": 1.71,
+   "checks": [
+    {
+     "seed": 88402,
+     "rate": 2.06,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 96321,
+     "rate": 3.51,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d028.2",
+   "text": "तुम दोनों मेरे हाथों मारे जाओ।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 120.057,
+   "end": 122.659,
+   "tries": 1,
+   "words_per_s": 2.31,
+   "beat": "d028",
+   "pause_after": 0.28,
+   "spoken": "तुम दोनों मेरे हाथों मारे जाओ.",
+   "raw_dur_s": 3.24,
+   "checks": [
+    {
+     "seed": 12947,
+     "rate": 1.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d029.1",
+   "text": "और उन्होंने अपने चक्र से उनके सिर काट दिए।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 122.939,
+   "end": 125.325,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "d029",
+   "pause_after": 0.28,
+   "spoken": "और उन्होंने अपने चक्र से उनके सिर काट दिए.",
+   "raw_dur_s": 2.97,
+   "checks": [
+    {
+     "seed": 4210,
+     "rate": 3.03,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d030.1",
+   "text": "इसलिए पहली कहानी में भी, देवता अकेले नहीं जीते थे।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 125.605,
+   "end": 129.124,
+   "tries": 1,
+   "words_per_s": 2.84,
+   "beat": "d030",
+   "pause_after": 0.23,
+   "spoken": "इसलिए पहली कहानी में भी, देवता अकेले नहीं जीते थे.",
+   "raw_dur_s": 3.91,
+   "checks": [
+    {
+     "seed": 44977,
+     "rate": 2.56,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d030.2",
+   "text": "देवी की शक्ति के बिना विष्णु जागे ही नहीं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 129.354,
+   "end": 132.081,
+   "tries": 1,
+   "words_per_s": 3.3,
+   "beat": "d030",
+   "pause_after": 0.48,
+   "spoken": "देवी की शक्ति के बिना विष्णु जागे ही नहीं.",
+   "raw_dur_s": 3.03,
+   "checks": [
+    {
+     "seed": 77456,
+     "rate": 2.97,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d031.1",
+   "text": "अब दूसरी कहानी —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 132.561,
+   "end": 133.759,
+   "tries": 1,
+   "words_per_s": 3.34,
+   "beat": "d031",
+   "pause_after": 0.18,
+   "spoken": "अब दूसरी कहानी,",
+   "raw_dur_s": 1.49,
+   "checks": [
+    {
+     "seed": 91370,
+     "rate": 2.69,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d031.2",
+   "text": "और इस बार दाँव कहीं बड़ा था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 133.939,
+   "end": 136.013,
+   "tries": 1,
+   "words_per_s": 3.37,
+   "beat": "d031",
+   "pause_after": 0.3,
+   "spoken": "और इस बार दाँव कहीं बड़ा था.",
+   "raw_dur_s": 2.59,
+   "checks": [
+    {
+     "seed": 12290,
+     "rate": 2.71,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d033.1",
+   "text": "पहले ये समझो —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 138.713,
+   "end": 139.853,
+   "tries": 1,
+   "words_per_s": 3.51,
+   "beat": "d033",
+   "pause_after": 0.18,
+   "spoken": "पहले ये समझो,",
+   "raw_dur_s": 1.41,
+   "checks": [
+    {
+     "seed": 92841,
+     "rate": 2.84,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d033.2",
+   "text": "ये किसी एक दिन की लड़ाई नहीं थी।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 140.033,
+   "end": 141.975,
+   "tries": 1,
+   "words_per_s": 4.12,
+   "beat": "d033",
+   "pause_after": 0.3,
+   "spoken": "ये किसी एक दिन की लड़ाई नहीं थी.",
+   "raw_dur_s": 2.43,
+   "checks": [
+    {
+     "seed": 81202,
+     "rate": 3.29,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d034.1",
+   "text": "एक सौ साल।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 142.275,
+   "end": 143.084,
+   "tries": 1,
+   "words_per_s": 3.71,
+   "beat": "d034",
+   "pause_after": 0.11,
+   "spoken": "एक सौ साल.",
+   "raw_dur_s": 1.03,
+   "checks": [
+    {
+     "seed": 76965,
+     "rate": 2.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d034.2",
+   "text": "पूरे एक सौ साल देवता और असुर लड़ते रहे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 143.194,
+   "end": 145.942,
+   "tries": 1,
+   "words_per_s": 3.28,
+   "beat": "d034",
+   "pause_after": 0.22,
+   "spoken": "पूरे एक सौ साल देवता और असुर लड़ते रहे.",
+   "raw_dur_s": 3.42,
+   "checks": [
+    {
+     "seed": 83912,
+     "rate": 2.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d035.1",
+   "text": "देवताओं के सेनापति थे इंद्र।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 146.162,
+   "end": 148.229,
+   "tries": 1,
+   "words_per_s": 2.42,
+   "beat": "d035",
+   "pause_after": 0.07,
+   "spoken": "देवताओं के सेनापति थे इंद्र.",
+   "raw_dur_s": 2.58,
+   "checks": [
+    {
+     "seed": 87087,
+     "rate": 1.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d035.2",
+   "text": "असुरों का नेता — महिषासुर।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 148.299,
+   "end": 150.169,
+   "tries": 2,
+   "words_per_s": 2.67,
+   "beat": "d035",
+   "pause_after": 0.22,
+   "spoken": "असुरों का नेता, महिषासुर.",
+   "raw_dur_s": 2.32,
+   "checks": [
+    {
+     "seed": 15126,
+     "rate": 1.52,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 23045,
+     "rate": 2.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d036.1",
+   "text": "लेकिन उस युद्ध में देवता हार गए।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 150.389,
+   "end": 152.438,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "d036",
+   "pause_after": 0.28,
+   "spoken": "लेकिन उस युद्ध में देवता हार गए.",
+   "raw_dur_s": 2.55,
+   "checks": [
+    {
+     "seed": 30869,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d038.1",
+   "text": "नतीजा — महिषासुर स्वर्ग का स्वामी बन बैठा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 155.718,
+   "end": 158.474,
+   "tries": 1,
+   "words_per_s": 2.9,
+   "beat": "d038",
+   "pause_after": 0.22,
+   "spoken": "नतीजा, महिषासुर स्वर्ग का स्वामी बन बैठा.",
+   "raw_dur_s": 3.44,
+   "checks": [
+    {
+     "seed": 58357,
+     "rate": 2.33,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d039.1",
+   "text": "सूर्य, इंद्र, अग्नि, वायु, चंद्रमा, यम, वरुण —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 158.694,
+   "end": 162.109,
+   "tries": 1,
+   "words_per_s": 2.34,
+   "beat": "d039",
+   "pause_after": 0.11,
+   "spoken": "सूर्य, इंद्र, अग्नि, वायु, चंद्रमा, यम, वरुण,",
+   "raw_dur_s": 4.26,
+   "checks": [
+    {
+     "seed": 52731,
+     "rate": 1.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d039.2",
+   "text": "सबके अधिकार उसने अपने हाथ में ले लिए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 162.219,
+   "end": 164.13,
+   "tries": 1,
+   "words_per_s": 4.19,
+   "beat": "d039",
+   "pause_after": 0.22,
+   "spoken": "सबके अधिकार उसने अपने हाथ में ले लिए.",
+   "raw_dur_s": 2.39,
+   "checks": [
+    {
+     "seed": 60429,
+     "rate": 3.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d040.1",
+   "text": "जो देवता सारा संसार चलाते थे, वही अपने घर से निकाल दिए गए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 164.35,
+   "end": 168.381,
+   "tries": 1,
+   "words_per_s": 3.23,
+   "beat": "d040",
+   "pause_after": 0.38,
+   "spoken": "जो देवता सारा संसार चलाते थे, वही अपने घर से निकाल दिए गए.",
+   "raw_dur_s": 4.53,
+   "checks": [
+    {
+     "seed": 44260,
+     "rate": 2.87,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d041.1",
+   "text": "सोचो — जिनसे संसार चलता है, उन्हीं के हाथ से संसार छिन गया।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 168.761,
+   "end": 172.516,
+   "tries": 1,
+   "words_per_s": 3.46,
+   "beat": "d041",
+   "pause_after": 0.38,
+   "spoken": "सोचो, जिनसे संसार चलता है, उन्हीं के हाथ से संसार छिन गया.",
+   "raw_dur_s": 4.22,
+   "checks": [
+    {
+     "seed": 74969,
+     "rate": 3.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d042.1",
+   "text": "इसलिए वो शरण ढूँढने निकले।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 172.896,
+   "end": 174.676,
+   "tries": 1,
+   "words_per_s": 2.81,
+   "beat": "d042",
+   "pause_after": 0.38,
+   "spoken": "इसलिए वो शरण ढूँढने निकले.",
+   "raw_dur_s": 2.01,
+   "checks": [
+    {
+     "seed": 14696,
+     "rate": 2.49,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d043.1",
+   "text": "ब्रह्मा सबसे आगे चल रहे थे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 175.056,
+   "end": 176.78,
+   "tries": 1,
+   "words_per_s": 3.48,
+   "beat": "d043",
+   "pause_after": 0.07,
+   "spoken": "ब्रह्मा सबसे आगे चल रहे थे.",
+   "raw_dur_s": 2.14,
+   "checks": [
+    {
+     "seed": 90494,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d043.2",
+   "text": "वो उस दरबार में पहुँचे जहाँ विष्णु और शिव बैठे थे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 176.85,
+   "end": 179.809,
+   "tries": 2,
+   "words_per_s": 3.72,
+   "beat": "d043",
+   "pause_after": 0.22,
+   "spoken": "वो उस दरबार में पहुँचे जहाँ विष्णु और शिव बैठे थे.",
+   "raw_dur_s": 3.69,
+   "checks": [
+    {
+     "seed": 18164,
+     "rate": 2.39,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 26083,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d044.1",
+   "text": "तब उन्होंने सब कुछ सुना दिया —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 180.029,
+   "end": 181.812,
+   "tries": 1,
+   "words_per_s": 3.93,
+   "beat": "d044",
+   "pause_after": 0.11,
+   "spoken": "तब उन्होंने सब कुछ सुना दिया,",
+   "raw_dur_s": 2.23,
+   "checks": [
+    {
+     "seed": 90702,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d044.2",
+   "text": "कि उस दुष्ट महिषासुर ने उनके साथ क्या किया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 181.922,
+   "end": 184.37,
+   "tries": 1,
+   "words_per_s": 3.68,
+   "beat": "d044",
+   "pause_after": 0.22,
+   "spoken": "कि उस दुष्ट महिषासुर ने उनके साथ क्या किया.",
+   "raw_dur_s": 3.06,
+   "checks": [
+    {
+     "seed": 2688,
+     "rate": 2.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d045.1",
+   "text": "बस इतना कहा —",
+   "emotion": "reflective",
+   "exaggeration": 0.54,
+   "tempo": 1.101,
+   "start": 184.59,
+   "end": 185.767,
+   "tries": 1,
+   "words_per_s": 3.4,
+   "beat": "d045",
+   "pause_after": 0.25,
+   "spoken": "बस इतना कहा,",
+   "raw_dur_s": 1.29,
+   "checks": [
+    {
+     "seed": 79708,
+     "rate": 3.1,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d045.2",
+   "text": "इसलिए अब आप ही उसके विनाश का उपाय सोचिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 186.017,
+   "end": 189.608,
+   "tries": 1,
+   "words_per_s": 2.51,
+   "beat": "d045",
+   "pause_after": 0.38,
+   "spoken": "इसलिए अब आप ही उसके विनाश का उपाय सोचिए.",
+   "raw_dur_s": 4.02,
+   "checks": [
+    {
+     "seed": 72166,
+     "rate": 2.24,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d047.1",
+   "text": "यह सुनते ही विष्णु और शिव का क्रोध भड़क उठा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 192.388,
+   "end": 195.373,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "d047",
+   "pause_after": 0.22,
+   "spoken": "यह सुनते ही विष्णु और शिव का क्रोध भड़क उठा.",
+   "raw_dur_s": 3.73,
+   "checks": [
+    {
+     "seed": 86271,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d048.1",
+   "text": "भौंहें तन गईं।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 195.593,
+   "end": 196.709,
+   "tries": 3,
+   "words_per_s": 2.69,
+   "beat": "d048",
+   "pause_after": 0.11,
+   "spoken": "भौंहें तन गईं.",
+   "raw_dur_s": 1.39,
+   "checks": [
+    {
+     "seed": 96910,
+     "rate": 1.0,
+     "problems": [
+      "raw pace 1.0 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 104829,
+     "rate": 1.34,
+     "problems": [
+      "raw pace 1.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 112748,
+     "rate": 2.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d048.2",
+   "text": "चेहरे भयंकर हो गए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 196.819,
+   "end": 198.197,
+   "tries": 2,
+   "words_per_s": 2.9,
+   "beat": "d048",
+   "pause_after": 0.22,
+   "spoken": "चेहरे भयंकर हो गए.",
+   "raw_dur_s": 1.7,
+   "checks": [
+    {
+     "seed": 79373,
+     "rate": 1.18,
+     "problems": [
+      "raw pace 1.2 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 87292,
+     "rate": 2.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d049.1",
+   "text": "तभी… विष्णु के मुख से एक तेज निकला।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 198.417,
+   "end": 200.787,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "d049",
+   "pause_after": 0.38,
+   "spoken": "तभी, विष्णु के मुख से एक तेज निकला.",
+   "raw_dur_s": 2.76,
+   "checks": [
+    {
+     "seed": 77493,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d050.1",
+   "text": "फिर ब्रह्मा से… शिव से…",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 201.167,
+   "end": 202.841,
+   "tries": 1,
+   "words_per_s": 2.99,
+   "beat": "d050",
+   "pause_after": 0.25,
+   "spoken": "फिर ब्रह्मा से, शिव से,",
+   "raw_dur_s": 1.91,
+   "checks": [
+    {
+     "seed": 20680,
+     "rate": 2.61,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d050.2",
+   "text": "इंद्र और बाकी देवताओं के शरीर से।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 203.091,
+   "end": 205.834,
+   "tries": 1,
+   "words_per_s": 2.55,
+   "beat": "d050",
+   "pause_after": 0.38,
+   "spoken": "इंद्र और बाकी देवताओं के शरीर से.",
+   "raw_dur_s": 3.2,
+   "checks": [
+    {
+     "seed": 15573,
+     "rate": 2.19,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d051.1",
+   "text": "वो सारे तेज मिलकर एक पर्वत जैसी ज्वाला बन गए।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 206.214,
+   "end": 209.323,
+   "tries": 1,
+   "words_per_s": 3.22,
+   "beat": "d051",
+   "pause_after": 0.38,
+   "spoken": "वो सारे तेज मिलकर एक पर्वत जैसी ज्वाला बन गए.",
+   "raw_dur_s": 3.61,
+   "checks": [
+    {
+     "seed": 64355,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d052.1",
+   "text": "और उस ज्वाला से प्रकट हुईं — एक देवी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 209.703,
+   "end": 212.845,
+   "tries": 1,
+   "words_per_s": 2.86,
+   "beat": "d052",
+   "pause_after": 0.48,
+   "spoken": "और उस ज्वाला से प्रकट हुईं, एक देवी.",
+   "raw_dur_s": 3.49,
+   "checks": [
+    {
+     "seed": 71321,
+     "rate": 2.58,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d053.1",
+   "text": "किसी माँ की कोख से नहीं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 213.325,
+   "end": 214.961,
+   "tries": 1,
+   "words_per_s": 3.67,
+   "beat": "d053",
+   "pause_after": 0.23,
+   "spoken": "किसी माँ की कोख से नहीं.",
+   "raw_dur_s": 1.81,
+   "checks": [
+    {
+     "seed": 92527,
+     "rate": 3.32,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d053.2",
+   "text": "देवताओं के क्रोध से।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 215.191,
+   "end": 216.697,
+   "tries": 2,
+   "words_per_s": 2.66,
+   "beat": "d053",
+   "pause_after": 0.48,
+   "spoken": "देवताओं के क्रोध से.",
+   "raw_dur_s": 1.67,
+   "checks": [
+    {
+     "seed": 96231,
+     "rate": 1.29,
+     "problems": [
+      "raw pace 1.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 104150,
+     "rate": 2.4,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d055.1",
+   "text": "कथा के एक पाठ में उनकी हज़ार भुजाओं का वर्णन है।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 220.577,
+   "end": 224.689,
+   "tries": 2,
+   "words_per_s": 2.67,
+   "beat": "d055",
+   "pause_after": 0.38,
+   "spoken": "कथा के एक पाठ में उनकी हज़ार भुजाओं का वर्णन है.",
+   "raw_dur_s": 4.78,
+   "checks": [
+    {
+     "seed": 90848,
+     "rate": 2.11,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 98767,
+     "rate": 2.3,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d056.1",
+   "text": "लेकिन देवी के पास हथियार कहाँ थे?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 225.069,
+   "end": 227.093,
+   "tries": 1,
+   "words_per_s": 3.46,
+   "beat": "d056",
+   "pause_after": 0.3,
+   "spoken": "लेकिन देवी के पास हथियार कहाँ थे?",
+   "raw_dur_s": 2.52,
+   "checks": [
+    {
+     "seed": 40062,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d057.1",
+   "text": "देवताओं ने अपने-अपने हथियार दे दिए।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 227.393,
+   "end": 229.51,
+   "tries": 1,
+   "words_per_s": 2.83,
+   "beat": "d057",
+   "pause_after": 0.07,
+   "spoken": "देवताओं ने अपने-अपने हथियार दे दिए.",
+   "raw_dur_s": 2.65,
+   "checks": [
+    {
+     "seed": 69727,
+     "rate": 2.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d057.2",
+   "text": "शिव ने त्रिशूल दिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 229.58,
+   "end": 230.852,
+   "tries": 1,
+   "words_per_s": 3.14,
+   "beat": "d057",
+   "pause_after": 0.07,
+   "spoken": "शिव ने त्रिशूल दिया.",
+   "raw_dur_s": 1.59,
+   "checks": [
+    {
+     "seed": 77178,
+     "rate": 2.52,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d057.3",
+   "text": "विष्णु ने चक्र।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 230.922,
+   "end": 231.916,
+   "tries": 3,
+   "words_per_s": 3.02,
+   "beat": "d057",
+   "pause_after": 0.28,
+   "spoken": "विष्णु ने चक्र.",
+   "raw_dur_s": 1.24,
+   "checks": [
+    {
+     "seed": 2894,
+     "rate": 1.43,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 10813,
+     "rate": 1.17,
+     "problems": [
+      "raw pace 1.2 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 18732,
+     "rate": 2.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d058.1",
+   "text": "वरुण ने शंख।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 232.196,
+   "end": 233.234,
+   "tries": 3,
+   "words_per_s": 2.89,
+   "beat": "d058",
+   "pause_after": 0.07,
+   "spoken": "वरुण ने शंख.",
+   "raw_dur_s": 1.28,
+   "checks": [
+    {
+     "seed": 10251,
+     "rate": 1.32,
+     "problems": [
+      "raw pace 1.3 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 18170,
+     "rate": 1.78,
+     "problems": [
+      "raw pace 1.8 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 26089,
+     "rate": 2.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d058.2",
+   "text": "अग्नि ने भाला।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 233.304,
+   "end": 234.409,
+   "tries": 1,
+   "words_per_s": 2.72,
+   "beat": "d058",
+   "pause_after": 0.11,
+   "spoken": "अग्नि ने भाला.",
+   "raw_dur_s": 1.36,
+   "checks": [
+    {
+     "seed": 54960,
+     "rate": 2.2,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d058.3",
+   "text": "वायु ने धनुष और दो तरकश।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 234.519,
+   "end": 236.545,
+   "tries": 1,
+   "words_per_s": 2.96,
+   "beat": "d058",
+   "pause_after": 0.22,
+   "spoken": "वायु ने धनुष और दो तरकश.",
+   "raw_dur_s": 2.52,
+   "checks": [
+    {
+     "seed": 69246,
+     "rate": 2.38,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d059.1",
+   "text": "इंद्र ने वज्र दिया —",
+   "emotion": "punch",
+   "exaggeration": 0.75,
+   "tempo": 1.226,
+   "start": 236.765,
+   "end": 237.995,
+   "tries": 1,
+   "words_per_s": 4.07,
+   "beat": "d059",
+   "pause_after": 0.16,
+   "spoken": "इंद्र ने वज्र दिया,",
+   "raw_dur_s": 1.5,
+   "checks": [
+    {
+     "seed": 99470,
+     "rate": 3.32,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d059.2",
+   "text": "और अपने हाथी ऐरावत का घंटा।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 238.155,
+   "end": 240.311,
+   "tries": 1,
+   "words_per_s": 2.78,
+   "beat": "d059",
+   "pause_after": 0.28,
+   "spoken": "और अपने हाथी ऐरावत का घंटा.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 27880,
+     "rate": 2.21,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d060.1",
+   "text": "यम ने दंड।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 240.591,
+   "end": 241.258,
+   "tries": 1,
+   "words_per_s": 4.5,
+   "beat": "d060",
+   "pause_after": 0.07,
+   "spoken": "यम ने दंड.",
+   "raw_dur_s": 0.82,
+   "checks": [
+    {
+     "seed": 768,
+     "rate": 3.65,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d060.2",
+   "text": "वरुण ने पाश।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 241.328,
+   "end": 242.549,
+   "tries": 1,
+   "words_per_s": 2.46,
+   "beat": "d060",
+   "pause_after": 0.11,
+   "spoken": "वरुण ने पाश.",
+   "raw_dur_s": 1.54,
+   "checks": [
+    {
+     "seed": 24486,
+     "rate": 1.95,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d060.3",
+   "text": "ब्रह्मा ने माला और कमंडल।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 242.659,
+   "end": 244.5,
+   "tries": 3,
+   "words_per_s": 2.72,
+   "beat": "d060",
+   "pause_after": 0.22,
+   "spoken": "ब्रह्मा ने माला और कमंडल.",
+   "raw_dur_s": 2.29,
+   "checks": [
+    {
+     "seed": 96420,
+     "rate": 1.31,
+     "problems": [
+      "raw pace 1.3 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 104339,
+     "rate": 1.39,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 112258,
+     "rate": 2.18,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d061.1",
+   "text": "सूर्य ने अपनी किरणें उनके रोम-रोम में भर दीं।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 244.72,
+   "end": 247.467,
+   "tries": 1,
+   "words_per_s": 3.28,
+   "beat": "d061",
+   "pause_after": 0.38,
+   "spoken": "सूर्य ने अपनी किरणें उनके रोम-रोम में भर दीं.",
+   "raw_dur_s": 3.2,
+   "checks": [
+    {
+     "seed": 98981,
+     "rate": 2.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d062.1",
+   "text": "काल ने तलवार और बेदाग़ ढाल दी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 247.847,
+   "end": 249.762,
+   "tries": 1,
+   "words_per_s": 3.66,
+   "beat": "d062",
+   "pause_after": 0.07,
+   "spoken": "काल ने तलवार और बेदाग़ ढाल दी.",
+   "raw_dur_s": 2.39,
+   "checks": [
+    {
+     "seed": 20180,
+     "rate": 2.93,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d062.2",
+   "text": "विश्वकर्मा ने कुल्हाड़ी और ऐसा कवच, जो टूट नहीं सकता।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 249.832,
+   "end": 252.933,
+   "tries": 1,
+   "words_per_s": 3.23,
+   "beat": "d062",
+   "pause_after": 0.22,
+   "spoken": "विश्वकर्मा ने कुल्हाड़ी और ऐसा कवच, जो टूट नहीं सकता.",
+   "raw_dur_s": 3.89,
+   "checks": [
+    {
+     "seed": 27667,
+     "rate": 2.57,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d063.1",
+   "text": "क्षीरसागर ने गहने दिए।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 253.153,
+   "end": 254.796,
+   "tries": 1,
+   "words_per_s": 2.43,
+   "beat": "d063",
+   "pause_after": 0.17,
+   "spoken": "क्षीरसागर ने गहने दिए.",
+   "raw_dur_s": 1.92,
+   "checks": [
+    {
+     "seed": 28091,
+     "rate": 2.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d063.2",
+   "text": "समुद्र ने कभी न मुरझाने वाली कमल की माला।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 254.966,
+   "end": 257.819,
+   "tries": 3,
+   "words_per_s": 3.15,
+   "beat": "d063",
+   "pause_after": 0.38,
+   "spoken": "समुद्र ने कभी न मुरझाने वाली कमल की माला.",
+   "raw_dur_s": 3.31,
+   "checks": [
+    {
+     "seed": 6618,
+     "rate": 1.91,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 14537,
+     "rate": 2.35,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 22456,
+     "rate": 2.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d064.1",
+   "text": "हिमालय ने रत्न दिए —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 258.199,
+   "end": 260.0,
+   "tries": 1,
+   "words_per_s": 2.78,
+   "beat": "d064",
+   "pause_after": 0.11,
+   "spoken": "हिमालय ने रत्न दिए,",
+   "raw_dur_s": 2.24,
+   "checks": [
+    {
+     "seed": 52272,
+     "rate": 2.23,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d064.2",
+   "text": "और सवारी के लिए एक सिंह।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 260.11,
+   "end": 262.478,
+   "tries": 1,
+   "words_per_s": 2.53,
+   "beat": "d064",
+   "pause_after": 0.22,
+   "spoken": "और सवारी के लिए एक सिंह.",
+   "raw_dur_s": 2.98,
+   "checks": [
+    {
+     "seed": 25443,
+     "rate": 2.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d065.1",
+   "text": "कुबेर ने दिव्य मधु का पात्र दिया।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 262.698,
+   "end": 264.427,
+   "tries": 1,
+   "words_per_s": 4.05,
+   "beat": "d065",
+   "pause_after": 0.12,
+   "spoken": "कुबेर ने दिव्य मधु का पात्र दिया.",
+   "raw_dur_s": 2.15,
+   "checks": [
+    {
+     "seed": 40336,
+     "rate": 3.25,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d065.2",
+   "text": "याद रखना इस पात्र को।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 264.547,
+   "end": 266.039,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "d065",
+   "pause_after": 0.3,
+   "spoken": "याद रखना इस पात्र को.",
+   "raw_dur_s": 1.85,
+   "checks": [
+    {
+     "seed": 91438,
+     "rate": 2.7,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d066.1",
+   "text": "हर देवता का थोड़ा-थोड़ा हिस्सा…",
+   "emotion": "reveal",
+   "exaggeration": 0.7,
+   "tempo": 1.091,
+   "start": 266.339,
+   "end": 268.448,
+   "tries": 1,
+   "words_per_s": 2.37,
+   "beat": "d066",
+   "pause_after": 0.34,
+   "spoken": "हर देवता का थोड़ा-थोड़ा हिस्सा,",
+   "raw_dur_s": 2.3,
+   "checks": [
+    {
+     "seed": 34466,
+     "rate": 2.17,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d066.2",
+   "text": "और सबका जोड़ — वो देवी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 268.788,
+   "end": 270.896,
+   "tries": 1,
+   "words_per_s": 2.85,
+   "beat": "d066",
+   "pause_after": 0.48,
+   "spoken": "और सबका जोड़, वो देवी.",
+   "raw_dur_s": 2.35,
+   "checks": [
+    {
+     "seed": 205,
+     "rate": 2.55,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d067.1",
+   "text": "कथा के जानकार इसे इस तरह समझाते हैं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 271.376,
+   "end": 273.684,
+   "tries": 1,
+   "words_per_s": 3.47,
+   "beat": "d067",
+   "pause_after": 0.22,
+   "spoken": "कथा के जानकार इसे इस तरह समझाते हैं.",
+   "raw_dur_s": 2.89,
+   "checks": [
+    {
+     "seed": 37224,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d068.1",
+   "text": "जब सब अपनी-अपनी शक्ति एक जगह रख देते हैं, तो वो शक्ति किसी एक की नहीं रहती।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 273.904,
+   "end": 278.513,
+   "tries": 1,
+   "words_per_s": 3.69,
+   "beat": "d068",
+   "pause_after": 0.48,
+   "spoken": "जब सब अपनी-अपनी शक्ति एक जगह रख देते हैं, तो वो शक्ति किसी एक की नहीं रहती.",
+   "raw_dur_s": 5.13,
+   "checks": [
+    {
+     "seed": 31627,
+     "rate": 3.31,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d069.1",
+   "text": "रुको। एक पल सोचो।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 278.993,
+   "end": 280.444,
+   "tries": 1,
+   "words_per_s": 2.76,
+   "beat": "d069",
+   "pause_after": 0.28,
+   "spoken": "रुको. एक पल सोचो.",
+   "raw_dur_s": 1.8,
+   "checks": [
+    {
+     "seed": 94471,
+     "rate": 2.22,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d070.1",
+   "text": "अगर इनमें से एक भी देवता अपना तेज न देता —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 280.724,
+   "end": 283.755,
+   "tries": 1,
+   "words_per_s": 3.63,
+   "beat": "d070",
+   "pause_after": 0.18,
+   "spoken": "अगर इनमें से एक भी देवता अपना तेज न देता,",
+   "raw_dur_s": 3.79,
+   "checks": [
+    {
+     "seed": 54929,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d070.2",
+   "text": "तो क्या देवी पूरी होतीं?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 283.935,
+   "end": 285.291,
+   "tries": 1,
+   "words_per_s": 3.69,
+   "beat": "d070",
+   "pause_after": 0.3,
+   "spoken": "तो क्या देवी पूरी होतीं?",
+   "raw_dur_s": 1.69,
+   "checks": [
+    {
+     "seed": 73736,
+     "rate": 2.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d071.1",
+   "text": "फिर देवी ने ऐसा अट्टहास किया कि पूरा आकाश भर गया।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 285.591,
+   "end": 288.908,
+   "tries": 1,
+   "words_per_s": 3.32,
+   "beat": "d071",
+   "pause_after": 0.28,
+   "spoken": "फिर देवी ने ऐसा अट्टहास किया कि पूरा आकाश भर गया.",
+   "raw_dur_s": 4.14,
+   "checks": [
+    {
+     "seed": 94536,
+     "rate": 2.66,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d072.1",
+   "text": "लोक काँप उठे।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 289.188,
+   "end": 290.234,
+   "tries": 1,
+   "words_per_s": 2.87,
+   "beat": "d072",
+   "pause_after": 0.11,
+   "spoken": "लोक काँप उठे.",
+   "raw_dur_s": 1.3,
+   "checks": [
+    {
+     "seed": 29918,
+     "rate": 2.31,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d072.2",
+   "text": "देवताओं ने पुकारा — जय हो!",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 290.344,
+   "end": 292.12,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "d072",
+   "pause_after": 0.17,
+   "spoken": "देवताओं ने पुकारा, जय हो!",
+   "raw_dur_s": 2.07,
+   "checks": [
+    {
+     "seed": 23363,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d072.3",
+   "text": "और ऋषियों ने स्तुति की।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 292.29,
+   "end": 293.679,
+   "tries": 3,
+   "words_per_s": 3.6,
+   "beat": "d072",
+   "pause_after": 0.38,
+   "spoken": "और ऋषियों ने स्तुति की.",
+   "raw_dur_s": 1.62,
+   "checks": [
+    {
+     "seed": 48106,
+     "rate": 1.6,
+     "problems": [
+      "raw pace 1.6 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 56025,
+     "rate": 1.55,
+     "problems": [
+      "raw pace 1.6 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 63944,
+     "rate": 3.09,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d074.1",
+   "text": "पर वो अट्टहास महिषासुर के कानों तक पहुँचा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 296.459,
+   "end": 298.824,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "d074",
+   "pause_after": 0.22,
+   "spoken": "पर वो अट्टहास महिषासुर के कानों तक पहुँचा.",
+   "raw_dur_s": 2.95,
+   "checks": [
+    {
+     "seed": 56191,
+     "rate": 2.71,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d075.1",
+   "text": "और क्रोध में, वो अपनी पूरी सेना लेकर खुद दौड़ पड़ा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 299.044,
+   "end": 301.918,
+   "tries": 2,
+   "words_per_s": 3.83,
+   "beat": "d075",
+   "pause_after": 0.22,
+   "spoken": "और क्रोध में, वो अपनी पूरी सेना लेकर खुद दौड़ पड़ा.",
+   "raw_dur_s": 3.58,
+   "checks": [
+    {
+     "seed": 85036,
+     "rate": 2.14,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 92955,
+     "rate": 3.07,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d076.1",
+   "text": "सेना ऐसी, कि कथा में रथों की गिनती करोड़ों-अरबों में बताई गई है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 302.138,
+   "end": 305.767,
+   "tries": 3,
+   "words_per_s": 3.58,
+   "beat": "d076",
+   "pause_after": 0.22,
+   "spoken": "सेना ऐसी, कि कथा में रथों की गिनती करोड़ों-अरबों में बताई गई है.",
+   "raw_dur_s": 4.53,
+   "checks": [
+    {
+     "seed": 55858,
+     "rate": 2.19,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 63777,
+     "rate": 2.44,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 71696,
+     "rate": 2.87,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d077.1",
+   "text": "सेनापति थे चिक्षुर और चामर।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 305.987,
+   "end": 308.046,
+   "tries": 1,
+   "words_per_s": 2.43,
+   "beat": "d077",
+   "pause_after": 0.22,
+   "spoken": "सेनापति थे चिक्षुर और चामर.",
+   "raw_dur_s": 2.57,
+   "checks": [
+    {
+     "seed": 47490,
+     "rate": 1.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d078.1",
+   "text": "अब सेनापतियों के नाम सुनो।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 308.266,
+   "end": 309.73,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "d078",
+   "pause_after": 0.3,
+   "spoken": "अब सेनापतियों के नाम सुनो.",
+   "raw_dur_s": 1.82,
+   "checks": [
+    {
+     "seed": 67567,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d079.1",
+   "text": "चिक्षुर। चामर। उदग्र। महाहनु।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 310.03,
+   "end": 312.213,
+   "tries": 3,
+   "words_per_s": 1.83,
+   "beat": "d079",
+   "pause_after": 0.28,
+   "spoken": "चिक्षुर. चामर. उदग्र. महाहनु.",
+   "raw_dur_s": 2.73,
+   "checks": [
+    {
+     "seed": 73531,
+     "rate": 1.39,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 81450,
+     "rate": 1.4,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 89369,
+     "rate": 1.46,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d080.1",
+   "text": "असिलोमा। बाष्कल। परिवारित। बिडाल।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 312.493,
+   "end": 314.805,
+   "tries": 3,
+   "words_per_s": 1.73,
+   "beat": "d080",
+   "pause_after": 0.28,
+   "spoken": "असिलोमा. बाष्कल. परिवारित. बिडाल.",
+   "raw_dur_s": 2.87,
+   "checks": [
+    {
+     "seed": 43444,
+     "rate": 1.37,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 51363,
+     "rate": 0.96,
+     "problems": [
+      "raw pace 1.0 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 59282,
+     "rate": 1.39,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d081.1",
+   "text": "कथा के अनुसार, हर एक के साथ रथों की गिनती करोड़ों में थी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 315.085,
+   "end": 318.253,
+   "tries": 1,
+   "words_per_s": 4.1,
+   "beat": "d081",
+   "pause_after": 0.22,
+   "spoken": "कथा के अनुसार, हर एक के साथ रथों की गिनती करोड़ों में थी.",
+   "raw_dur_s": 3.95,
+   "checks": [
+    {
+     "seed": 4263,
+     "rate": 3.29,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d082.1",
+   "text": "और सामने? सिर्फ़ एक देवी —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 318.473,
+   "end": 320.789,
+   "tries": 1,
+   "words_per_s": 2.59,
+   "beat": "d082",
+   "pause_after": 0.18,
+   "spoken": "और सामने? सिर्फ़ एक देवी,",
+   "raw_dur_s": 2.88,
+   "checks": [
+    {
+     "seed": 46082,
+     "rate": 2.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d082.2",
+   "text": "और उनका सिंह।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 320.969,
+   "end": 321.941,
+   "tries": 2,
+   "words_per_s": 3.09,
+   "beat": "d082",
+   "pause_after": 0.28,
+   "spoken": "और उनका सिंह.",
+   "raw_dur_s": 1.22,
+   "checks": [
+    {
+     "seed": 30974,
+     "rate": 1.48,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 38893,
+     "rate": 2.47,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d083.1",
+   "text": "फिर भी युद्ध शुरू हुआ…",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 322.221,
+   "end": 323.429,
+   "tries": 2,
+   "words_per_s": 4.14,
+   "beat": "d083",
+   "pause_after": 0.11,
+   "spoken": "फिर भी युद्ध शुरू हुआ,",
+   "raw_dur_s": 1.49,
+   "checks": [
+    {
+     "seed": 1935,
+     "rate": 1.69,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 9854,
+     "rate": 3.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d083.2",
+   "text": "और असुरों की पंक्तियाँ टूटती गईं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 323.539,
+   "end": 325.599,
+   "tries": 1,
+   "words_per_s": 2.91,
+   "beat": "d083",
+   "pause_after": 0.22,
+   "spoken": "और असुरों की पंक्तियाँ टूटती गईं.",
+   "raw_dur_s": 2.57,
+   "checks": [
+    {
+     "seed": 87674,
+     "rate": 2.33,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d084.1",
+   "text": "एक-एक करके असुर सेनापति मारे गए।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 325.819,
+   "end": 327.909,
+   "tries": 1,
+   "words_per_s": 2.87,
+   "beat": "d084",
+   "pause_after": 0.28,
+   "spoken": "एक-एक करके असुर सेनापति मारे गए.",
+   "raw_dur_s": 2.61,
+   "checks": [
+    {
+     "seed": 12253,
+     "rate": 2.3,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d085.1",
+   "text": "इसलिए अब महिषासुर के पास सेना नहीं थी।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 328.189,
+   "end": 330.879,
+   "tries": 1,
+   "words_per_s": 2.97,
+   "beat": "d085",
+   "pause_after": 0.38,
+   "spoken": "इसलिए अब महिषासुर के पास सेना नहीं थी.",
+   "raw_dur_s": 3.03,
+   "checks": [
+    {
+     "seed": 90464,
+     "rate": 2.64,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d086.1",
+   "text": "लेकिन उसकी असली शक्ति सेना थी ही नहीं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 331.259,
+   "end": 333.799,
+   "tries": 1,
+   "words_per_s": 3.15,
+   "beat": "d086",
+   "pause_after": 0.48,
+   "spoken": "लेकिन उसकी असली शक्ति सेना थी ही नहीं.",
+   "raw_dur_s": 2.83,
+   "checks": [
+    {
+     "seed": 96189,
+     "rate": 2.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d087.1",
+   "text": "उसकी असली शक्ति थी — रूप बदलना।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 334.279,
+   "end": 336.245,
+   "tries": 1,
+   "words_per_s": 3.56,
+   "beat": "d087",
+   "pause_after": 0.28,
+   "spoken": "उसकी असली शक्ति थी, रूप बदलना.",
+   "raw_dur_s": 2.45,
+   "checks": [
+    {
+     "seed": 18372,
+     "rate": 2.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d089.1",
+   "text": "पहले वो भैंसा बना।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 338.925,
+   "end": 340.09,
+   "tries": 1,
+   "words_per_s": 3.43,
+   "beat": "d089",
+   "pause_after": 0.22,
+   "spoken": "पहले वो भैंसा बना.",
+   "raw_dur_s": 1.44,
+   "checks": [
+    {
+     "seed": 65194,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d090.1",
+   "text": "फिर सिंह।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 340.31,
+   "end": 340.925,
+   "tries": 1,
+   "words_per_s": 3.25,
+   "beat": "d090",
+   "pause_after": 0.28,
+   "spoken": "फिर सिंह.",
+   "raw_dur_s": 0.75,
+   "checks": [
+    {
+     "seed": 4318,
+     "rate": 2.67,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d091.1",
+   "text": "फिर तलवार और ढाल लिए एक आदमी।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 341.205,
+   "end": 343.277,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "d091",
+   "pause_after": 0.28,
+   "spoken": "फिर तलवार और ढाल लिए एक आदमी.",
+   "raw_dur_s": 2.61,
+   "checks": [
+    {
+     "seed": 84530,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d092.1",
+   "text": "फिर एक विशाल हाथी।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 343.558,
+   "end": 344.886,
+   "tries": 1,
+   "words_per_s": 3.01,
+   "beat": "d092",
+   "pause_after": 0.28,
+   "spoken": "फिर एक विशाल हाथी.",
+   "raw_dur_s": 1.66,
+   "checks": [
+    {
+     "seed": 62880,
+     "rate": 2.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d093.1",
+   "text": "और फिर… वो वापस भैंसा बन गया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 345.166,
+   "end": 347.149,
+   "tries": 1,
+   "words_per_s": 3.53,
+   "beat": "d093",
+   "pause_after": 0.22,
+   "spoken": "और फिर, वो वापस भैंसा बन गया.",
+   "raw_dur_s": 2.47,
+   "checks": [
+    {
+     "seed": 20368,
+     "rate": 2.84,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d094.1",
+   "text": "पर देवी हर रूप को काटती गईं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 347.369,
+   "end": 349.117,
+   "tries": 1,
+   "words_per_s": 4.01,
+   "beat": "d094",
+   "pause_after": 0.07,
+   "spoken": "पर देवी हर रूप को काटती गईं.",
+   "raw_dur_s": 2.18,
+   "checks": [
+    {
+     "seed": 18158,
+     "rate": 3.21,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d094.2",
+   "text": "और उसने हर बार नया रूप ले लिया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 349.187,
+   "end": 351.149,
+   "tries": 1,
+   "words_per_s": 4.08,
+   "beat": "d094",
+   "pause_after": 0.22,
+   "spoken": "और उसने हर बार नया रूप ले लिया.",
+   "raw_dur_s": 2.45,
+   "checks": [
+    {
+     "seed": 72762,
+     "rate": 3.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d095.1",
+   "text": "यहीं देवी ने वो पात्र उठाया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 351.369,
+   "end": 353.202,
+   "tries": 1,
+   "words_per_s": 3.27,
+   "beat": "d095",
+   "pause_after": 0.48,
+   "spoken": "यहीं देवी ने वो पात्र उठाया.",
+   "raw_dur_s": 2.05,
+   "checks": [
+    {
+     "seed": 90522,
+     "rate": 2.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d096.1",
+   "text": "बार-बार दिव्य पेय पिया —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 353.682,
+   "end": 355.236,
+   "tries": 1,
+   "words_per_s": 3.22,
+   "beat": "d096",
+   "pause_after": 0.11,
+   "spoken": "बार-बार दिव्य पेय पिया,",
+   "raw_dur_s": 1.95,
+   "checks": [
+    {
+     "seed": 24833,
+     "rate": 2.56,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d096.2",
+   "text": "और उनकी आँखें लाल हो गईं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 355.346,
+   "end": 357.05,
+   "tries": 3,
+   "words_per_s": 3.52,
+   "beat": "d096",
+   "pause_after": 0.22,
+   "spoken": "और उनकी आँखें लाल हो गईं.",
+   "raw_dur_s": 2.13,
+   "checks": [
+    {
+     "seed": 13110,
+     "rate": 1.74,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 21029,
+     "rate": 1.12,
+     "problems": [
+      "raw pace 1.1 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 28948,
+     "rate": 2.82,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d097.1",
+   "text": "और हँसकर बोलीं —",
+   "emotion": "punch",
+   "exaggeration": 0.75,
+   "tempo": 1.226,
+   "start": 357.27,
+   "end": 358.981,
+   "tries": 1,
+   "words_per_s": 2.34,
+   "beat": "d097",
+   "pause_after": 0.16,
+   "spoken": "और हँसकर बोलीं,",
+   "raw_dur_s": 2.1,
+   "checks": [
+    {
+     "seed": 50414,
+     "rate": 1.91,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d097.2",
+   "text": "गरज ले, मूर्ख।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 359.141,
+   "end": 360.507,
+   "tries": 3,
+   "words_per_s": 2.2,
+   "beat": "d097",
+   "pause_after": 0.11,
+   "spoken": "गरज ले, मूर्ख.",
+   "raw_dur_s": 1.71,
+   "checks": [
+    {
+     "seed": 32209,
+     "rate": 1.66,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 40128,
+     "rate": 1.75,
+     "problems": [
+      "raw pace 1.8 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 48047,
+     "rate": 1.67,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d097.3",
+   "text": "बस कुछ पल और।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 360.616,
+   "end": 361.623,
+   "tries": 1,
+   "words_per_s": 3.97,
+   "beat": "d097",
+   "pause_after": 0.28,
+   "spoken": "बस कुछ पल और.",
+   "raw_dur_s": 1.27,
+   "checks": [
+    {
+     "seed": 23348,
+     "rate": 3.15,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d098.1",
+   "text": "यही वो क्षण है, जहाँ से हमने कथा शुरू की थी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 361.903,
+   "end": 365.063,
+   "tries": 1,
+   "words_per_s": 3.48,
+   "beat": "d098",
+   "pause_after": 0.48,
+   "spoken": "यही वो क्षण है, जहाँ से हमने कथा शुरू की थी.",
+   "raw_dur_s": 3.52,
+   "checks": [
+    {
+     "seed": 94761,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d099.1",
+   "text": "तभी वो उछलीं।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 365.543,
+   "end": 366.682,
+   "tries": 1,
+   "words_per_s": 2.63,
+   "beat": "d099",
+   "pause_after": 0.28,
+   "spoken": "तभी वो उछलीं.",
+   "raw_dur_s": 1.41,
+   "checks": [
+    {
+     "seed": 49406,
+     "rate": 2.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d100.1",
+   "text": "पैर से उसकी गर्दन दबाई।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 366.962,
+   "end": 368.407,
+   "tries": 1,
+   "words_per_s": 3.46,
+   "beat": "d100",
+   "pause_after": 0.11,
+   "spoken": "पैर से उसकी गर्दन दबाई.",
+   "raw_dur_s": 1.8,
+   "checks": [
+    {
+     "seed": 62674,
+     "rate": 2.78,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d100.2",
+   "text": "और भाले से वार किया।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 368.517,
+   "end": 370.375,
+   "tries": 2,
+   "words_per_s": 2.69,
+   "beat": "d100",
+   "pause_after": 0.28,
+   "spoken": "और भाले से वार किया.",
+   "raw_dur_s": 2.34,
+   "checks": [
+    {
+     "seed": 76096,
+     "rate": 1.61,
+     "problems": [
+      "raw pace 1.6 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 84015,
+     "rate": 2.14,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d101.1",
+   "text": "महिषासुर उस भैंसे के मुँह से आधा बाहर निकल आया…",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 370.655,
+   "end": 373.717,
+   "tries": 1,
+   "words_per_s": 3.27,
+   "beat": "d101",
+   "pause_after": 0.38,
+   "spoken": "महिषासुर उस भैंसे के मुँह से आधा बाहर निकल आया,",
+   "raw_dur_s": 3.5,
+   "checks": [
+    {
+     "seed": 35728,
+     "rate": 2.86,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d102.1",
+   "text": "… और तभी देवी की तलवार चली।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 374.097,
+   "end": 375.88,
+   "tries": 1,
+   "words_per_s": 3.93,
+   "beat": "d102",
+   "pause_after": 0.48,
+   "spoken": ", और तभी देवी की तलवार चली.",
+   "raw_dur_s": 1.98,
+   "checks": [
+    {
+     "seed": 46298,
+     "rate": 3.54,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d103.1",
+   "text": "सिर कट गया।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 376.36,
+   "end": 377.219,
+   "tries": 1,
+   "words_per_s": 3.49,
+   "beat": "d103",
+   "pause_after": 0.28,
+   "spoken": "सिर कट गया.",
+   "raw_dur_s": 1.07,
+   "checks": [
+    {
+     "seed": 15984,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d105.1",
+   "text": "और उसकी सेना भी नहीं बची।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 381.099,
+   "end": 383.001,
+   "tries": 1,
+   "words_per_s": 3.15,
+   "beat": "d105",
+   "pause_after": 0.38,
+   "spoken": "और उसकी सेना भी नहीं बची.",
+   "raw_dur_s": 2.14,
+   "checks": [
+    {
+     "seed": 68963,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d107.1",
+   "text": "आसमान में जयकार गूँज उठी।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 385.781,
+   "end": 387.592,
+   "tries": 2,
+   "words_per_s": 2.76,
+   "beat": "d107",
+   "pause_after": 0.38,
+   "spoken": "आसमान में जयकार गूँज उठी.",
+   "raw_dur_s": 2.11,
+   "checks": [
+    {
+     "seed": 75853,
+     "rate": 1.78,
+     "problems": [
+      "raw pace 1.8 w/s outside 1.8-4.2",
+      "clipping"
+     ]
+    },
+    {
+     "seed": 83772,
+     "rate": 2.37,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d108.1",
+   "text": "देवताओं ने सिर झुकाकर देवी की स्तुति की —",
+   "emotion": "awe",
+   "exaggeration": 0.72,
+   "tempo": 1.143,
+   "start": 387.972,
+   "end": 390.602,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "d108",
+   "pause_after": 0.25,
+   "spoken": "देवताओं ने सिर झुकाकर देवी की स्तुति की,",
+   "raw_dur_s": 3.01,
+   "checks": [
+    {
+     "seed": 44035,
+     "rate": 2.99,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d108.2",
+   "text": "और कहा, शत्रु मारा गया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 390.852,
+   "end": 393.129,
+   "tries": 2,
+   "words_per_s": 2.2,
+   "beat": "d108",
+   "pause_after": 0.38,
+   "spoken": "और कहा, शत्रु मारा गया.",
+   "raw_dur_s": 2.65,
+   "checks": [
+    {
+     "seed": 24521,
+     "rate": 1.49,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 32440,
+     "rate": 1.89,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d109.1",
+   "text": "फिर उन्होंने देवी से एक वचन माँगा।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 393.509,
+   "end": 395.317,
+   "tries": 1,
+   "words_per_s": 3.87,
+   "beat": "d109",
+   "pause_after": 0.3,
+   "spoken": "फिर उन्होंने देवी से एक वचन माँगा.",
+   "raw_dur_s": 2.26,
+   "checks": [
+    {
+     "seed": 26120,
+     "rate": 3.09,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d110.1",
+   "text": "कि जब भी हम आपको याद करें —",
+   "emotion": "reveal",
+   "exaggeration": 0.7,
+   "tempo": 1.091,
+   "start": 395.617,
+   "end": 397.399,
+   "tries": 1,
+   "words_per_s": 4.49,
+   "beat": "d110",
+   "pause_after": 0.34,
+   "spoken": "कि जब भी हम आपको याद करें,",
+   "raw_dur_s": 1.95,
+   "checks": [
+    {
+     "seed": 4883,
+     "rate": 4.1,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d110.2",
+   "text": "हमारे संकट मिटा देना।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 397.739,
+   "end": 399.257,
+   "tries": 1,
+   "words_per_s": 2.64,
+   "beat": "d110",
+   "pause_after": 0.48,
+   "spoken": "हमारे संकट मिटा देना.",
+   "raw_dur_s": 1.71,
+   "checks": [
+    {
+     "seed": 88596,
+     "rate": 2.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d111.1",
+   "text": "और जो भी मनुष्य इन स्तुतियों से आपका गुणगान करे —",
+   "emotion": "reveal",
+   "exaggeration": 0.7,
+   "tempo": 1.091,
+   "start": 399.737,
+   "end": 403.361,
+   "tries": 1,
+   "words_per_s": 3.03,
+   "beat": "d111",
+   "pause_after": 0.34,
+   "spoken": "और जो भी मनुष्य इन स्तुतियों से आपका गुणगान करे,",
+   "raw_dur_s": 3.94,
+   "checks": [
+    {
+     "seed": 883,
+     "rate": 2.79,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d111.2",
+   "text": "उसे भी आशीर्वाद देना।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 403.701,
+   "end": 405.218,
+   "tries": 1,
+   "words_per_s": 2.64,
+   "beat": "d111",
+   "pause_after": 0.48,
+   "spoken": "उसे भी आशीर्वाद देना.",
+   "raw_dur_s": 1.68,
+   "checks": [
+    {
+     "seed": 60792,
+     "rate": 2.38,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d112.1",
+   "text": "देवी ने बस एक शब्द कहा — तथास्तु।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 405.698,
+   "end": 408.557,
+   "tries": 2,
+   "words_per_s": 2.8,
+   "beat": "d112",
+   "pause_after": 0.28,
+   "spoken": "देवी ने बस एक शब्द कहा, तथास्तु.",
+   "raw_dur_s": 3.57,
+   "checks": [
+    {
+     "seed": 36964,
+     "rate": 2.04,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 44883,
+     "rate": 2.24,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d113.1",
+   "text": "और वो अंतर्धान हो गईं।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 408.837,
+   "end": 410.791,
+   "tries": 1,
+   "words_per_s": 2.56,
+   "beat": "d113",
+   "pause_after": 0.38,
+   "spoken": "और वो अंतर्धान हो गईं.",
+   "raw_dur_s": 2.2,
+   "checks": [
+    {
+     "seed": 46741,
+     "rate": 2.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d114.1",
+   "text": "इसी ग्रंथ का अंतिम अध्याय कहता है —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 411.171,
+   "end": 413.422,
+   "tries": 1,
+   "words_per_s": 3.55,
+   "beat": "d114",
+   "pause_after": 0.11,
+   "spoken": "इसी ग्रंथ का अंतिम अध्याय कहता है,",
+   "raw_dur_s": 2.8,
+   "checks": [
+    {
+     "seed": 96843,
+     "rate": 2.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d114.2",
+   "text": "अष्टमी, नवमी और चतुर्दशी को इसका पाठ सुनना रक्षा और समृद्धि देता है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 413.532,
+   "end": 417.522,
+   "tries": 2,
+   "words_per_s": 3.26,
+   "beat": "d114",
+   "pause_after": 0.22,
+   "spoken": "अष्टमी, नवमी और चतुर्दशी को इसका पाठ सुनना रक्षा और समृद्धि देता है.",
+   "raw_dur_s": 4.98,
+   "checks": [
+    {
+     "seed": 93302,
+     "rate": 2.21,
+     "problems": [
+      "clipping"
+     ]
+    },
+    {
+     "seed": 101221,
+     "rate": 2.61,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d115.1",
+   "text": "माना जाता है, नवरात्रि में लोग इसी वचन को याद करते हैं।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 417.742,
+   "end": 421.271,
+   "tries": 1,
+   "words_per_s": 3.4,
+   "beat": "d115",
+   "pause_after": 0.38,
+   "spoken": "माना जाता है, नवरात्रि में लोग इसी वचन को याद करते हैं.",
+   "raw_dur_s": 3.96,
+   "checks": [
+    {
+     "seed": 71454,
+     "rate": 3.03,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d117.1",
+   "text": "तो अब वही सवाल —",
+   "emotion": "curious",
+   "exaggeration": 0.64,
+   "tempo": 1.247,
+   "start": 424.051,
+   "end": 425.592,
+   "tries": 1,
+   "words_per_s": 3.24,
+   "beat": "d117",
+   "pause_after": 0.18,
+   "spoken": "तो अब वही सवाल,",
+   "raw_dur_s": 1.92,
+   "checks": [
+    {
+     "seed": 13692,
+     "rate": 2.6,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d117.2",
+   "text": "देवी किसकी बेटी थीं?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 425.772,
+   "end": 427.181,
+   "tries": 1,
+   "words_per_s": 2.84,
+   "beat": "d117",
+   "pause_after": 0.3,
+   "spoken": "देवी किसकी बेटी थीं?",
+   "raw_dur_s": 1.76,
+   "checks": [
+    {
+     "seed": 7185,
+     "rate": 2.28,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d118.1",
+   "text": "किसी की नहीं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 427.481,
+   "end": 428.913,
+   "tries": 2,
+   "words_per_s": 2.09,
+   "beat": "d118",
+   "pause_after": 0.23,
+   "spoken": "किसी की नहीं.",
+   "raw_dur_s": 1.61,
+   "checks": [
+    {
+     "seed": 11131,
+     "rate": 1.8,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 19050,
+     "rate": 1.86,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d118.2",
+   "text": "वो उन सबकी शक्ति थीं, जो अकेले हार चुके थे।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 429.143,
+   "end": 432.685,
+   "tries": 1,
+   "words_per_s": 2.82,
+   "beat": "d118",
+   "pause_after": 0.48,
+   "spoken": "वो उन सबकी शक्ति थीं, जो अकेले हार चुके थे.",
+   "raw_dur_s": 3.93,
+   "checks": [
+    {
+     "seed": 34565,
+     "rate": 2.54,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d119.1",
+   "text": "लेकिन तीन बातें हैं जो इस कथा में अक्सर छूट जाती हैं।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 433.165,
+   "end": 436.603,
+   "tries": 1,
+   "words_per_s": 3.49,
+   "beat": "d119",
+   "pause_after": 0.3,
+   "spoken": "लेकिन तीन बातें हैं जो इस कथा में अक्सर छूट जाती हैं.",
+   "raw_dur_s": 4.28,
+   "checks": [
+    {
+     "seed": 34641,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d120.1",
+   "text": "पहली — जिन्हें हम दुर्गा कहते हैं, इस प्रसंग में उन्हें भद्रकाली कहकर पुकारा गया है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 436.903,
+   "end": 441.17,
+   "tries": 2,
+   "words_per_s": 3.75,
+   "beat": "d120",
+   "pause_after": 0.22,
+   "spoken": "पहली, जिन्हें हम दुर्गा कहते हैं, इस प्रसंग में उन्हें भद्रकाली कहकर पुकारा गया है.",
+   "raw_dur_s": 5.32,
+   "checks": [
+    {
+     "seed": 41480,
+     "rate": 2.41,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 49399,
+     "rate": 3.01,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d121.1",
+   "text": "'दुर्गा' नाम ग्यारहवें अध्याय में आता है, जहाँ देवी खुद अपने भविष्य के रूप गिनाती हैं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 441.39,
+   "end": 445.587,
+   "tries": 1,
+   "words_per_s": 3.81,
+   "beat": "d121",
+   "pause_after": 0.22,
+   "spoken": "'दुर्गा' नाम ग्यारहवें अध्याय में आता है, जहाँ देवी खुद अपने भविष्य के रूप गिनाती हैं.",
+   "raw_dur_s": 5.25,
+   "checks": [
+    {
+     "seed": 52430,
+     "rate": 3.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d122.1",
+   "text": "दूसरी — मूर्तियों में तुमने उन्हें आठ या दस भुजाओं के साथ देखा होगा।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 445.807,
+   "end": 449.573,
+   "tries": 2,
+   "words_per_s": 3.72,
+   "beat": "d122",
+   "pause_after": 0.07,
+   "spoken": "दूसरी, मूर्तियों में तुमने उन्हें आठ या दस भुजाओं के साथ देखा होगा.",
+   "raw_dur_s": 4.7,
+   "checks": [
+    {
+     "seed": 47967,
+     "rate": 2.53,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 55886,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d122.2",
+   "text": "इस पाठ में हज़ार भुजाएँ हैं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 449.643,
+   "end": 451.259,
+   "tries": 1,
+   "words_per_s": 3.71,
+   "beat": "d122",
+   "pause_after": 0.07,
+   "spoken": "इस पाठ में हज़ार भुजाएँ हैं.",
+   "raw_dur_s": 2.02,
+   "checks": [
+    {
+     "seed": 2882,
+     "rate": 2.97,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d122.3",
+   "text": "दोनों परंपराएँ साथ चलती हैं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 451.329,
+   "end": 453.046,
+   "tries": 1,
+   "words_per_s": 2.91,
+   "beat": "d122",
+   "pause_after": 0.22,
+   "spoken": "दोनों परंपराएँ साथ चलती हैं.",
+   "raw_dur_s": 2.14,
+   "checks": [
+    {
+     "seed": 77274,
+     "rate": 2.33,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d123.1",
+   "text": "तीसरी — कई जगह सुना जाता है कि महिषासुर को वरदान था।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 453.266,
+   "end": 456.346,
+   "tries": 1,
+   "words_per_s": 3.9,
+   "beat": "d123",
+   "pause_after": 0.07,
+   "spoken": "तीसरी, कई जगह सुना जाता है कि महिषासुर को वरदान था.",
+   "raw_dur_s": 3.85,
+   "checks": [
+    {
+     "seed": 13265,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d123.2",
+   "text": "जो पाठ हमने पढ़ा, उसमें ऐसा कोई वरदान नहीं मिलता।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 456.416,
+   "end": 460.077,
+   "tries": 1,
+   "words_per_s": 2.73,
+   "beat": "d123",
+   "pause_after": 0.22,
+   "spoken": "जो पाठ हमने पढ़ा, उसमें ऐसा कोई वरदान नहीं मिलता.",
+   "raw_dur_s": 4.56,
+   "checks": [
+    {
+     "seed": 78113,
+     "rate": 2.19,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d124.1",
+   "text": "वो वरदान दूसरी कथाओं में सुनाया जाता है।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 460.297,
+   "end": 462.846,
+   "tries": 1,
+   "words_per_s": 3.14,
+   "beat": "d124",
+   "pause_after": 0.17,
+   "spoken": "वो वरदान दूसरी कथाओं में सुनाया जाता है.",
+   "raw_dur_s": 2.88,
+   "checks": [
+    {
+     "seed": 70837,
+     "rate": 2.78,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d124.2",
+   "text": "इसीलिए कथा सुनाते समय, स्रोत बताना ज़रूरी है।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 463.016,
+   "end": 466.308,
+   "tries": 2,
+   "words_per_s": 2.43,
+   "beat": "d124",
+   "pause_after": 0.38,
+   "spoken": "इसीलिए कथा सुनाते समय, स्रोत बताना ज़रूरी है.",
+   "raw_dur_s": 3.7,
+   "checks": [
+    {
+     "seed": 3476,
+     "rate": 1.68,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 11395,
+     "rate": 2.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d125.1",
+   "text": "देवता अकेले हारे थे।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 466.688,
+   "end": 468.339,
+   "tries": 1,
+   "words_per_s": 2.42,
+   "beat": "d125",
+   "pause_after": 0.17,
+   "spoken": "देवता अकेले हारे थे.",
+   "raw_dur_s": 1.85,
+   "checks": [
+    {
+     "seed": 8382,
+     "rate": 2.17,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d125.2",
+   "text": "साथ मिले, तो देवी बन गए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 468.509,
+   "end": 470.713,
+   "tries": 1,
+   "words_per_s": 2.72,
+   "beat": "d125",
+   "pause_after": 0.38,
+   "spoken": "साथ मिले, तो देवी बन गए.",
+   "raw_dur_s": 2.47,
+   "checks": [
+    {
+     "seed": 24102,
+     "rate": 2.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d126.1",
+   "text": "और राजा सुरथ?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 471.093,
+   "end": 472.472,
+   "tries": 3,
+   "words_per_s": 2.18,
+   "beat": "d126",
+   "pause_after": 0.12,
+   "spoken": "और राजा सुरथ?",
+   "raw_dur_s": 1.72,
+   "checks": [
+    {
+     "seed": 61886,
+     "rate": 1.69,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 69805,
+     "rate": 1.37,
+     "problems": [
+      "raw pace 1.4 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 77724,
+     "rate": 1.75,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d126.2",
+   "text": "जिसने सबसे पहले सवाल पूछा था?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 472.592,
+   "end": 474.411,
+   "tries": 1,
+   "words_per_s": 3.3,
+   "beat": "d126",
+   "pause_after": 0.3,
+   "spoken": "जिसने सबसे पहले सवाल पूछा था?",
+   "raw_dur_s": 2.28,
+   "checks": [
+    {
+     "seed": 56266,
+     "rate": 2.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d127.1",
+   "text": "उसका जवाब इस पूरी कथा के आख़िर में मिलता है।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 474.711,
+   "end": 477.45,
+   "tries": 1,
+   "words_per_s": 3.65,
+   "beat": "d127",
+   "pause_after": 0.48,
+   "spoken": "उसका जवाब इस पूरी कथा के आख़िर में मिलता है.",
+   "raw_dur_s": 3.06,
+   "checks": [
+    {
+     "seed": 6563,
+     "rate": 3.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d128.1",
+   "text": "लेकिन कथा यहाँ ख़त्म नहीं होती।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 477.93,
+   "end": 479.922,
+   "tries": 1,
+   "words_per_s": 3.01,
+   "beat": "d128",
+   "pause_after": 0.22,
+   "spoken": "लेकिन कथा यहाँ ख़त्म नहीं होती.",
+   "raw_dur_s": 2.49,
+   "checks": [
+    {
+     "seed": 38184,
+     "rate": 2.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d129.1",
+   "text": "फिर संकट आया —",
+   "emotion": "tense",
+   "exaggeration": 0.7,
+   "tempo": 1.25,
+   "start": 480.142,
+   "end": 481.074,
+   "tries": 3,
+   "words_per_s": 4.29,
+   "beat": "d129",
+   "pause_after": 0.11,
+   "spoken": "फिर संकट आया,",
+   "raw_dur_s": 1.17,
+   "checks": [
+    {
+     "seed": 91198,
+     "rate": 1.03,
+     "problems": [
+      "raw pace 1.0 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 99117,
+     "rate": 1.54,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 107036,
+     "rate": 3.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d129.2",
+   "text": "दो नए असुर भाइयों के रूप में।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 481.184,
+   "end": 482.889,
+   "tries": 1,
+   "words_per_s": 4.11,
+   "beat": "d129",
+   "pause_after": 0.22,
+   "spoken": "दो नए असुर भाइयों के रूप में.",
+   "raw_dur_s": 2.14,
+   "checks": [
+    {
+     "seed": 8897,
+     "rate": 3.28,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d130.1",
+   "text": "शुंभ और निशुंभ।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 483.109,
+   "end": 484.644,
+   "tries": 3,
+   "words_per_s": 1.96,
+   "beat": "d130",
+   "pause_after": 0.11,
+   "spoken": "शुंभ और निशुंभ.",
+   "raw_dur_s": 1.9,
+   "checks": [
+    {
+     "seed": 99953,
+     "rate": 1.2,
+     "problems": [
+      "raw pace 1.2 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 107872,
+     "rate": 1.3,
+     "problems": [
+      "raw pace 1.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 115791,
+     "rate": 1.58,
+     "problems": [
+      "raw pace 1.6 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d130.2",
+   "text": "और उनके साथ एक ऐसा असुर, जिसके खून की हर बूँद से एक नया असुर जन्म लेता था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 484.754,
+   "end": 489.327,
+   "tries": 2,
+   "words_per_s": 3.94,
+   "beat": "d130",
+   "pause_after": 0.22,
+   "spoken": "और उनके साथ एक ऐसा असुर, जिसके खून की हर बूँद से एक नया असुर जन्म लेता था.",
+   "raw_dur_s": 5.72,
+   "checks": [
+    {
+     "seed": 39789,
+     "rate": 2.8,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 47708,
+     "rate": 3.15,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d131.1",
+   "text": "उसे कौन रोकेगा?",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 489.547,
+   "end": 490.837,
+   "tries": 3,
+   "words_per_s": 2.33,
+   "beat": "d131",
+   "pause_after": 0.23,
+   "spoken": "उसे कौन रोकेगा?",
+   "raw_dur_s": 1.44,
+   "checks": [
+    {
+     "seed": 8833,
+     "rate": 1.67,
+     "problems": [
+      "raw pace 1.7 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 16752,
+     "rate": 0.68,
+     "problems": [
+      "raw pace 0.7 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 24671,
+     "rate": 2.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d131.2",
+   "text": "वो कथा अगले भाग में।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 491.067,
+   "end": 492.562,
+   "tries": 1,
+   "words_per_s": 3.34,
+   "beat": "d131",
+   "pause_after": 0.23,
+   "spoken": "वो कथा अगले भाग में.",
+   "raw_dur_s": 1.65,
+   "checks": [
+    {
+     "seed": 61966,
+     "rate": 3.03,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "d131.3",
+   "text": "देखना मत भूलना।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 492.792,
+   "end": 494.144,
+   "tries": 1,
+   "words_per_s": 2.22,
+   "beat": "d131",
+   "pause_after": 0.3,
+   "spoken": "देखना मत भूलना.",
+   "raw_dur_s": 1.51,
+   "checks": [
+    {
+     "seed": 43213,
+     "rate": 1.99,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

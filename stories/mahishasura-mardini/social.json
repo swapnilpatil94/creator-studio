@@ -1,11 +1,11 @@
 {
  "story": "mahishasura-mardini",
  "format": "short",
- "generated": "2026-10-17T15:39:30.772Z",
+ "generated": "2026-10-17T17:48:56.065Z",
  "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
  "instagram": {
   "type": "REELS",
-  "caption": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nसेव करें, शेयर करें, और बताइए — अगली कथा कौन सी सुनें? 🙏\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura #Kathaaya",
+  "caption": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura #Kathaaya",
   "hashtags": [
    "#Durga",
    "#Navratri",
@@ -13,17 +13,16 @@
    "#Kathaaya"
   ],
   "firstLine": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?",
-  "altText": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱. देवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (M…",
+  "isAiGenerated": true,
   "cover": "output/thumb-9x16.png",
   "shareToFeed": true,
   "shareToFacebook": false,
-  "aiLabel": true,
   "checks": [
    {
     "platform": "instagram",
     "name": "caption <= 2200 chars",
     "ok": true,
-    "detail": "515"
+    "detail": "508"
    },
    {
     "platform": "instagram",
@@ -57,27 +56,27 @@
    },
    {
     "platform": "instagram",
-    "name": "length <= 90 s (reel sweet spot)",
+    "name": "length 3-90 s (Meta Reels API)",
     "ok": true,
     "detail": "51 s"
    },
    {
     "platform": "instagram",
-    "name": "AI disclosure in caption and label on",
+    "name": "AI disclosure in caption + is_ai_generated flag",
     "ok": true,
-    "detail": "set the 'AI label' toggle when publishing"
+    "detail": "API sets is_ai_generated=true"
    },
    {
     "platform": "instagram",
     "name": "handle for follow CTA",
-    "ok": false,
-    "detail": "not provided yet: generic CTA used"
+    "ok": true,
+    "detail": "@kathaaya.stories"
    }
   ]
  },
  "facebook": {
   "type": "REELS",
-  "description": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n▶️ YouTube पर देखें: https://youtu.be/Su1fr-b4Z-8\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura",
+  "description": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura",
   "hashtags": [
    "#Durga",
    "#Navratri",
@@ -87,9 +86,21 @@
   "checks": [
    {
     "platform": "facebook",
+    "name": "reel specs (Meta): 9:16, >= 540x960, 24-60 fps",
+    "ok": true,
+    "detail": "1080x1920 @ 24 fps"
+   },
+   {
+    "platform": "facebook",
+    "name": "audio AAC, 48 kHz, stereo or mono ok (Meta: AAC LC 48 kHz)",
+    "ok": true,
+    "detail": "aac 48000 Hz 2ch"
+   },
+   {
+    "platform": "facebook",
     "name": "description present, <= 2200 chars",
     "ok": true,
-    "detail": "427"
+    "detail": "447"
    },
    {
     "platform": "facebook",
@@ -99,7 +110,7 @@
    },
    {
     "platform": "facebook",
-    "name": "reel length <= 90 s",
+    "name": "reel length 3-90 s (Meta Reels API)",
     "ok": true,
     "detail": "51 s"
    },
@@ -111,10 +122,16 @@
    },
    {
     "platform": "facebook",
-    "name": "link back to YouTube",
+    "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
     "ok": true,
-    "detail": "https://youtu.be/Su1fr-b4Z-8"
+    "detail": "none"
    }
   ]
- }
+ },
+ "monetizationNotes": [
+  "Original content only: no reposts, no other creators' clips, no third-party watermarks (Meta deprioritises duplicative content; reported in secondary sources, verify in Monetization Manager).",
+  "Eligibility figures vary by source (5k-10k followers, watch-minute thresholds): check your Page in Meta Business Suite > Monetization before relying on any number.",
+  "A copyright check runs on every Reel upload (API: GET /{video-id}?fields=copyright_check_information). Our audio is procedural and our voice is synthetic; the paintings are public domain/CC0.",
+  "Long videos (Page videos) and Reels are separate surfaces: post the 16:9 film as a Page video and cut vertical Reels from it; in-stream ads are reported (secondary source) to need >= 3 minutes."
+ ]
 }

@@ -1,0 +1,1029 @@
+{
+ "lead": 0.9,
+ "root": 98,
+ "moods": [
+  {
+   "t": -1,
+   "mood": "dread"
+  },
+  {
+   "t": 32.82,
+   "mood": "calm"
+  },
+  {
+   "t": 136.21,
+   "mood": "dread"
+  },
+  {
+   "t": 189.89,
+   "mood": "wonder"
+  },
+  {
+   "t": 293.96,
+   "mood": "siege"
+  },
+  {
+   "t": 336.42,
+   "mood": "siege"
+  },
+  {
+   "t": 383.28,
+   "mood": "release"
+  },
+  {
+   "t": 421.55,
+   "mood": "wonder"
+  }
+ ],
+ "silences": [
+  {
+   "t": 375.96,
+   "dur": 0.36,
+   "fade": 0.12,
+   "why": "before the kill"
+  },
+  {
+   "t": 466.36,
+   "dur": 0.3,
+   "fade": 0.15,
+   "why": "before the thesis line"
+  }
+ ],
+ "cues": [
+  {
+   "t": -0.9,
+   "type": "heartbeat",
+   "dur": 11.76,
+   "bpm0": 56,
+   "bpm1": 84,
+   "level": -26
+  },
+  {
+   "t": 3.66,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 8.46,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 11.14,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 19.8,
+   "type": "riser",
+   "dur": 4.41,
+   "level": -27
+  },
+  {
+   "t": 24.2,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 25.79,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 32.97,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 33.02,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 51.82,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 58.13,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 68.84,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 82.65,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 91.12,
+   "type": "rumble",
+   "dur": 3.81,
+   "level": -27
+  },
+  {
+   "t": 94.64,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 108.26,
+   "type": "riser",
+   "dur": 1.07,
+   "level": -27
+  },
+  {
+   "t": 109.33,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 109.49,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 118.55,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 122.94,
+   "type": "whoosh",
+   "dur": 2.67,
+   "f0": 400,
+   "f1": 2800,
+   "level": -26
+  },
+  {
+   "t": 133.12,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 134.44,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 135.56,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 136.36,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 136.41,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 138.71,
+   "type": "rumble",
+   "dur": 3.56,
+   "level": -27
+  },
+  {
+   "t": 141.97,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 145.86,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 150.39,
+   "type": "sparkle",
+   "dur": 2.33,
+   "rate": 6,
+   "level": -29
+  },
+  {
+   "t": 150.39,
+   "type": "rumble",
+   "dur": 2.33,
+   "level": -28
+  },
+  {
+   "t": 155.42,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 164.35,
+   "type": "sparkle",
+   "dur": 4.41,
+   "rate": 6,
+   "level": -29
+  },
+  {
+   "t": 164.35,
+   "type": "rumble",
+   "dur": 3,
+   "level": -28
+  },
+  {
+   "t": 172.6,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 174.76,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 190.04,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 190.09,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 192.09,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 198.42,
+   "type": "riser",
+   "dur": 1.92,
+   "level": -27
+  },
+  {
+   "t": 200.34,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 206.21,
+   "type": "riser",
+   "dur": 2.79,
+   "level": -26
+  },
+  {
+   "t": 208.13,
+   "type": "sparkle",
+   "dur": 1.57,
+   "rate": 18,
+   "ramp": true,
+   "level": -25
+  },
+  {
+   "t": 209.4,
+   "type": "bell",
+   "freq": 660,
+   "level": -22,
+   "tail": 3.5
+  },
+  {
+   "t": 209.4,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 217.18,
+   "type": "riser",
+   "dur": 2.72,
+   "level": -26
+  },
+  {
+   "t": 219.05,
+   "type": "sparkle",
+   "dur": 1.53,
+   "rate": 18,
+   "ramp": true,
+   "level": -25
+  },
+  {
+   "t": 220.28,
+   "type": "bell",
+   "freq": 660,
+   "level": -22,
+   "tail": 3.5
+  },
+  {
+   "t": 220.28,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 225.42,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 226.23,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 226.93,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 228.11,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 229.79,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 231.24,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 231.9,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 237.34,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 238.68,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 239.83,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 241.21,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 242.66,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 243.89,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 244.72,
+   "type": "riser",
+   "dur": 2.19,
+   "level": -27
+  },
+  {
+   "t": 246.91,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 247.55,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 257.9,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 263.24,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 264.52,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 265.61,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 266.04,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 273.6,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 278.99,
+   "type": "riser",
+   "dur": 1.21,
+   "level": -27
+  },
+  {
+   "t": 280.2,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 280.42,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 285.61,
+   "type": "impact",
+   "level": -12,
+   "tail": 3
+  },
+  {
+   "t": 285.61,
+   "type": "crack",
+   "level": -17
+  },
+  {
+   "t": 286.49,
+   "type": "sparkle",
+   "dur": 1.6,
+   "rate": 14,
+   "ramp": true,
+   "level": -26
+  },
+  {
+   "t": 288.89,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 294.11,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 294.16,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 296.16,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 298.74,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 302.14,
+   "type": "rumble",
+   "dur": 3.85,
+   "level": -27
+  },
+  {
+   "t": 305.69,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 315.08,
+   "type": "rumble",
+   "dur": 3.39,
+   "level": -27
+  },
+  {
+   "t": 318.17,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 321.92,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 325.82,
+   "type": "sparkle",
+   "dur": 2.37,
+   "rate": 6,
+   "level": -29
+  },
+  {
+   "t": 325.82,
+   "type": "rumble",
+   "dur": 2.37,
+   "level": -28
+  },
+  {
+   "t": 327.89,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 331.26,
+   "type": "riser",
+   "dur": 2.72,
+   "level": -26
+  },
+  {
+   "t": 334.33,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 336.57,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 336.63,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 338.63,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 340.01,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 340.36,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 340.9,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 341.25,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 343.26,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 343.61,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 344.87,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 347.07,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 351.72,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 352.53,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 353.22,
+   "type": "bell",
+   "freq": 587,
+   "level": -25,
+   "tail": 2.4
+  },
+  {
+   "t": 353.38,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 357.32,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 365.24,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 365.59,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 367.01,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 370.35,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 376.38,
+   "type": "impact",
+   "level": -12,
+   "tail": 3
+  },
+  {
+   "t": 376.38,
+   "type": "crack",
+   "level": -17
+  },
+  {
+   "t": 377.26,
+   "type": "sparkle",
+   "dur": 1.6,
+   "rate": 14,
+   "ramp": true,
+   "level": -26
+  },
+  {
+   "t": 380.8,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 383.43,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 383.48,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 385.48,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 395.32,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 405.4,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 405.75,
+   "type": "crack",
+   "level": -26
+  },
+  {
+   "t": 408.84,
+   "type": "riser",
+   "dur": 1.63,
+   "level": -27
+  },
+  {
+   "t": 410.47,
+   "type": "bell",
+   "freq": 523,
+   "level": -24,
+   "tail": 3
+  },
+  {
+   "t": 421.7,
+   "type": "impact",
+   "level": -21,
+   "tail": 2.4
+  },
+  {
+   "t": 421.75,
+   "type": "bell",
+   "freq": 392,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 423.75,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 427.18,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 436.6,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 445.51,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 452.97,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 466.39,
+   "type": "wind",
+   "dur": 7,
+   "level": -30,
+   "cf": 650
+  },
+  {
+   "t": 466.74,
+   "type": "bell",
+   "freq": 528,
+   "level": -22,
+   "tail": 5
+  },
+  {
+   "t": 470.79,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 477.93,
+   "type": "rumble",
+   "dur": 2.21,
+   "level": -27
+  },
+  {
+   "t": 480.14,
+   "type": "sparkle",
+   "dur": 2.97,
+   "rate": 6,
+   "level": -29
+  },
+  {
+   "t": 480.14,
+   "type": "rumble",
+   "dur": 2.97,
+   "level": -28
+  },
+  {
+   "t": 482.81,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 300,
+   "f1": 1800,
+   "level": -29
+  },
+  {
+   "t": 489.55,
+   "type": "riser",
+   "dur": 3,
+   "level": -28
+  },
+  {
+   "t": 492.55,
+   "type": "crack",
+   "level": -24
+  }
+ ]
+}
