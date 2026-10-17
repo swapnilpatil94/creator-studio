@@ -5,6 +5,8 @@ description: Evidence-graded attention, retention and sharing principles (psycho
 
 # Retention psychology (honest version)
 
+Craft skills that apply these principles: `narration-craft` (start there), `storytelling-hooks`, `viral-hooks`, `storytelling`, `hook-formulas`.
+
 **No technique guarantees millions of views.** Reach is heavy-tailed: a few videos get most views, and you cannot predict which. What you can control is *retention, shares, topic-audience fit and packaging*, and you improve them by shipping many videos and measuring. Everything below is a hypothesis to test with `planner/` data, not a promise.
 
 ## Principles, graded by evidence

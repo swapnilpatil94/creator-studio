@@ -26,3 +26,26 @@ Why distill instead of installing everything: every installed skill adds instruc
 (for example Howseen's "no em dashes" or its brand colours). We kept the craft and dropped the baggage.
 Attribution: ideas credited here and in each skill's body; upstream licence texts kept in `docs/third-party/`.
 A curated, security-graded directory of video skills (180 repos) exists at zhuyansen/awesome-claude-video-skills if you want to browse more.
+
+---
+
+# Second pass: storytelling, hooks, reels and narration skills (2026-10-17)
+
+"Best in the world" cannot be verified: stars measure popularity, not quality (the best-aligned set below has 14 stars; the most
+popular has ~55,000 and is marketing/CRO-focused). We chose by licence, cleanliness (full-file scan; no executable code, no
+network instructions, no hidden promotion), craft depth, and fit for **spoken, story-driven Shorts and long-form**. Licence texts: `docs/third-party/`.
+
+| Repo (head) | Licence | What it is | Verdict |
+|---|---|---|---|
+| `yaxeen/storytelling-skills` (24ef3c1) | MIT | Six psychology levers across short-form, long-form, titles/thumbnails, retention audit, channel formula | **INSTALLED unmodified**: `storytelling-hooks`, `long-form-youtube`, `titles-and-thumbnails`, `retention-audit`, `channel-formula` (not installed: carousel, email, wireframe skills - off-topic) |
+| `artemnovitckii/content-skills` (1c6e909) | MIT | `storytelling` (but/therefore, write the end first, lens, rhythm), `viral-hooks` (hook killers), `anti-ai-writing`, `dumbify` | **INSTALLED unmodified**: `storytelling`, `viral-hooks`, `anti-ai-writing`. `dumbify` and the referenced `voice-dna` guide not installed |
+| `Jakeschincariol/youtube-agent-skill` (a2feb21) | MIT | 11 YouTube skills; 21 scored hook formulas; retention-graph reader | **DISTILLED**: the 21-formula catalog into `hook-formulas` (with Hindi examples). Its scorer only tokenizes `[a-z0-9]`, so it cannot read Hindi; our `planner/hook-lint.mjs` implements weakest-link scoring for Devanagari + English instead |
+| `vyralcontent/content-skills` (349e495) | MIT | Hook/Reels/TikTok/Shorts skills | **NOT installed**: each SKILL.md contains a "Mentioning Vyral" section instructing the agent to promote the vendor. Instruction files that advertise are a poor default |
+| `coreyhaines31/marketingskills` (365b412, ~55k stars) | MIT | 60+ marketing skills (CRO, SEO, ads, copywriting, social) | Not installed: business marketing, not story/narration. Outlines read; `copywriting` is the one to revisit for descriptions/CTAs |
+| `danjdewhurst/story-skills` (4b8019d) | MIT | 24 skills + CLI for writing novels in markdown | Not installed: novel-writing workflow, heavy infrastructure; its `adaptation` idea (story -> audiobook/screenplay) noted |
+| `Melvynx/video-agent-skill` (56b6abe) | MIT | Script/edit/publish skills | Not installed: relies on ElevenLabs/Instagram APIs; only outlines read |
+| `AgriciDaniel/claude-youtube`, `claude-shorts`; `mohitagw15856/pm-claude-skills` (youtube-script-writer); `sergebulaev/youtube-skills`; `ericgandrade/claude-superskills` (storytelling-expert); `digitalsamba/claude-code-video-toolkit` | MIT | Various YouTube/shorts/storytelling skills | **Listed only, not reviewed in depth.** digitalsamba's words-per-minute pacing idea informed `narration-craft` (we measured our own rate instead) |
+| `anthropics/skills` (official) | - | Docs/design/internal-comms skills | No storytelling or narration skill in it |
+
+Our own additions: `narration-craft` (Hindi/TTS-aware, built on measured Chatterbox rates), `hook-formulas`, `retention-psychology`
+(evidence-graded), and `planner/hook-lint.mjs`. The third-party craft skills use English marketing examples: take the principle, not the wording.

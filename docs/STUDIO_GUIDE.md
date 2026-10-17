@@ -25,6 +25,10 @@ node studio-ui/server.mjs        # http://127.0.0.1:4180  (local only)
 | `motion-continuity-doctrine` | "Plan the camera path and shot handoffs" | vector law, carriers, no idle wobble, anti-AI-look rules |
 | `seekable-libs-and-render-quality` | "Add GSAP kinetic type to this scene" / "make it look less digital" | how to seek GSAP/anime/WAAPI/Lottie, motion blur, flags, caption and loudness rules |
 | `gsap-core`, `gsap-timeline`, `gsap-plugins` | "Use GSAP SplitText for the title" | official GSAP guidance |
+| `narration-craft` | "Write the narration for X" / "audit this script" | but/therefore beats, last-line-first, Hindi/TTS pacing from measured data, hook layers; routes to the skills below |
+| `storytelling-hooks`, `viral-hooks`, `storytelling`, `anti-ai-writing` (third-party, MIT) | "Write 5 hooks" / "why is this opener flat?" | six attention levers, hook killers, but/therefore engine, anti-hollow-prose filter |
+| `hook-formulas` | "Give me hooks from different formulas" | 21 named formulas with Hindi mythology + AI examples |
+| `long-form-youtube`, `titles-and-thumbnails`, `retention-audit`, `channel-formula` (third-party, MIT) | "Script a 12-minute video" / "diagnose this flop from its retention graph" | long-form levers, title+thumbnail pairs, retention diagnosis, channel formula from winners vs flops |
 | `retention-psychology` | "Write a hook" / "Why would this lose viewers?" | evidence-graded principles, checklist, experiment protocol |
 | `long-form-playbook` | "Plan a 10-minute deep dive" | structure, re-hooks, packaging, production plan |
 | `content-planning-research` | "Plan this week" / "Research topic X with a claims ledger" | planner workflow + research standards |
@@ -36,7 +40,7 @@ node planner/import-analytics.mjs yourexport.csv   # normalise YouTube/Instagram
 node planner/report.mjs                            # medians by channel/format/topic/hook, correlations with n and caveats
 node planner/plan.mjs --date 2026-10-18            # scored plan, 1 exploration slot, blocks unresearched topics
 node planner/claims-check.mjs stories/<name>       # every beat needs a sourced claim
-node planner/hook-lint.mjs stories/<name>          # measurable retention checks on the script
+node planner/hook-lint.mjs stories/<name>          # hook strength (weakest-link), but/therefore, rhythm, last line, speaking rate
 ```
 Demo data lives in `planner/fixtures/*FIXTURE*` and is synthetic. Use `PLANNER_DATA=/tmp/x` to keep tests out of your real data.
 
