@@ -57,3 +57,15 @@ Our own additions: `narration-craft` (Hindi/TTS-aware, built on measured Chatter
 | `kostja94/marketing-skills` `skills/platforms/youtube` | MIT (LICENSE file) | **DISTILLED** mechanical rules only (title < 60, keyword early, first 160 chars, tags minor, contrast). Unsourced percentage claims NOT adopted |
 | `inferen-sh/skills` `youtube-thumbnail-design` | README MIT badge, no LICENSE file | **IDEAS ONLY** (120 px test, safe zones, <= 3 colours, face rules, checklist) in `youtube-thumbnail-design`. NOT installed: needs the third-party `belt` CLI and paid image generation (`allowed-tools: Bash(belt *)`) |
 | claudskills.com `youtube-publisher` / `youtube-optimizer` | repo and license not found | **NOT USED** (cannot verify source) |
+
+## Stipple engine research (2026-10-17)
+| Source | Licence | Use |
+|---|---|---|
+| Secord 2002, "Weighted Voronoi Stippling" (NPAR) | paper | **IMPLEMENTED** from the paper's description (discrete weighted Lloyd relaxation); no code copied |
+| Bridson 2007, "Fast Poisson Disk Sampling in Arbitrary Dimensions" + variable-density extensions | paper | **IMPLEMENTED** (variable-radius dart-throwing with a grid) |
+| Bridson/Hourihan/Nordenstam 2007, "Curl-Noise for Procedural Fluid Flow" | paper | **IMPLEMENTED**: curl of a 2-octave value-noise potential in the shader (own noise function) |
+| d3-delaunay / Observable "Voronoi stippling" (Bostock), Coding Train challenge 181 | ISC / site | **REFERENCE ONLY**: the same algorithm; not installed (own grid-based Lloyd avoids a dependency) |
+| three (r180, already in engine/node_modules) | MIT | **USED**: Points, BufferGeometry, ShaderMaterial |
+| MediaPipe pose | Apache-2.0 | **NOT USED**: optional landmark detection; cannot invent occluded limbs, so rigs are authored |
+| `0xDarkMatter/claude-mods` `genart-ops` | MIT (LICENSE file) | recommended optional reference, not installed |
+| `CloudAI-X/threejs-skills` | MIT (README) | recommended optional reference, not installed |
