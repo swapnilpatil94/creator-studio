@@ -1,0 +1,187 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Dot cinema concept</title>
+<style>html,body{margin:0;background:#000;width:540px;height:960px;overflow:hidden}canvas{width:540px;height:960px;display:block}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script>
+(function(){
+"use strict";
+const W=1080,H=1920,CELL=7;
+const c=document.getElementById("c"),ctx=c.getContext("2d");
+const frame=Number(new URLSearchParams(location.search).get("frame")||0);
+const WHITE=[232,240,255],AMBER=[255,176,64];
+function hash(i){const s=Math.sin(i*12.9898)*43758.5453;return s-Math.floor(s);}
+function off(w,h){const o=document.createElement("canvas");o.width=w;o.height=h;return o;}
+
+// ---- halftone: luminance canvas -> dot matrix (hex-offset grid, radius by brightness, colour by tint map)
+function halftone(lum,tint,gain){
+  const w=lum.width,h=lum.height,d=lum.getContext("2d").getImageData(0,0,w,h).data;
+  const t=tint?tint.getContext("2d").getImageData(0,0,w,h).data:null;
+  for(let row=0,y=CELL/2;y<h;row++,y+=CELL*0.866){
+    for(let x=(row%2)*CELL/2+CELL/2;x<w;x+=CELL){
+      const i=((Math.floor(y))*w+Math.floor(x))*4,L=d[i]/255*(gain||1);
+      if(L<0.06)continue;
+      const r=Math.min(CELL*0.62,L*CELL*0.62);
+      let col=WHITE;
+      if(t){const a=t[i]/255;col=[WHITE[0]+(AMBER[0]-WHITE[0])*a,WHITE[1]+(AMBER[1]-WHITE[1])*a,WHITE[2]+(AMBER[2]-WHITE[2])*a];}
+      ctx.fillStyle="rgb("+col[0]+","+col[1]+","+col[2]+")";
+      ctx.beginPath();ctx.arc(x,y,r,0,6.2832);ctx.fill();
+    }
+  }
+}
+function glow(blur,alpha){
+  const o=off(W,H),g=o.getContext("2d");g.drawImage(c,0,0);
+  ctx.save();ctx.globalCompositeOperation="lighter";ctx.globalAlpha=alpha;ctx.filter="blur("+blur+"px)";ctx.drawImage(o,0,0);ctx.restore();
+}
+function radial(g,x,y,r0,r1,stops){const gr=g.createRadialGradient(x,y,r0,x,y,r1);stops.forEach(s=>gr.addColorStop(s[0],s[1]));return gr;}
+
+// ---- figure built from thick rounded limbs, lit from a light direction
+function limb(g,pts,widths,col){
+  g.strokeStyle=col;g.lineCap="round";g.lineJoin="round";
+  for(let i=0;i<pts.length-1;i++){g.lineWidth=widths[i];g.beginPath();g.moveTo(pts[i][0],pts[i][1]);g.lineTo(pts[i+1][0],pts[i+1][1]);g.stroke();}
+}
+function drawFigure(g,s,pose){
+  // pose: array of named joint lists in figure units (1 unit ~ s px)
+  const P=(a)=>a.map(p=>[p[0]*s,p[1]*s]);
+  const body="#fff";
+  limb(g,P(pose.tail),pose.tail.map((_,i)=>Math.max(2,(0.09-i*0.012)*s)),"#cfd8e6");
+  limb(g,P(pose.legB),[0.2*s,0.15*s,0.1*s],"#aab6c6");
+  limb(g,P(pose.armB),[0.15*s,0.12*s,0.09*s],"#aab6c6");
+  limb(g,P(pose.torso),[0.46*s,0.36*s],body);
+  limb(g,P(pose.legF),[0.21*s,0.16*s,0.1*s],body);
+  limb(g,P(pose.armF),[0.17*s,0.13*s,0.1*s],body);
+  g.fillStyle=body;g.beginPath();g.arc(pose.head[0]*s,pose.head[1]*s,0.19*s,0,6.2832);g.fill();
+  // crown
+  g.beginPath();g.moveTo((pose.head[0]-0.17)*s,(pose.head[1]-0.08)*s);g.lineTo(pose.head[0]*s,(pose.head[1]-0.42)*s);g.lineTo((pose.head[0]+0.17)*s,(pose.head[1]-0.08)*s);g.fill();
+  if(pose.mace){limb(g,P(pose.mace),[0.05*s,0.05*s],"#e6edf7");g.beginPath();g.arc(pose.mace[1][0]*s,pose.mace[1][1]*s,0.2*s,0,6.2832);g.fillStyle="#fff";g.fill();}
+}
+const POSES={
+  crouch:{head:[0.1,-1.15],torso:[[0.05,-0.9],[-0.05,-0.2]],legF:[[-0.05,-0.2],[0.45,-0.35],[0.3,0.2]],legB:[[-0.05,-0.2],[-0.5,-0.15],[-0.65,0.25]],armF:[[0.05,-0.85],[0.35,-0.5],[0.45,-0.2]],armB:[[0,-0.85],[-0.3,-0.5],[-0.35,-0.15]],tail:[[-0.1,-0.25],[-0.7,-0.3],[-1.1,-0.7],[-1.2,-1.2],[-0.95,-1.55]],mace:[[0.5,-0.2],[0.55,0.1]]},
+  stand:{head:[0,-2.05],torso:[[0,-1.75],[0,-0.7]],legF:[[0.12,-0.7],[0.22,0.0],[0.22,0.75]],legB:[[-0.12,-0.7],[-0.25,0.0],[-0.28,0.75]],armF:[[0.2,-1.65],[0.62,-1.25],[0.9,-1.55]],armB:[[-0.2,-1.65],[-0.6,-1.2],[-0.55,-0.75]],tail:[[-0.05,-0.75],[-0.7,-0.6],[-1.1,-1.1],[-0.9,-1.7]],mace:[[0.9,-1.55],[0.95,-2.6]]},
+  leap:{head:[1.55,-0.25],torso:[[1.1,-0.05],[0.0,0.35]],legF:[[0.0,0.35],[-0.8,0.55],[-1.55,0.5]],legB:[[0.0,0.35],[-0.7,0.9],[-1.4,1.0]],armF:[[1.1,-0.1],[1.9,-0.4],[2.5,-0.55]],armB:[[1.0,0.05],[1.6,0.35],[1.9,0.15]],tail:[[-0.05,0.3],[-0.9,0.0],[-1.7,-0.3],[-2.5,-0.2],[-3.1,-0.5]],mace:[[1.9,0.15],[1.5,-0.7]]}
+};
+
+// ---- shared scene pieces
+function stars(g,n,seed){for(let i=0;i<n;i++){const x=hash(i*3+seed)*W,y=hash(i*7+seed)*H*0.6,b=0.25+hash(i*5+seed)*0.75;g.fillStyle="rgba(255,255,255,"+b+")";g.beginPath();g.arc(x,y,hash(i*11+seed)*2.2+0.6,0,6.2832);g.fill();}}
+function moonLum(g,x,y,r){g.fillStyle=radial(g,x-r*0.2,y-r*0.2,r*0.1,r,[[0,"#fff"],[0.7,"#bbb"],[1,"#555"]]);g.beginPath();g.arc(x,y,r,0,6.2832);g.fill();}
+function ocean(time,horizonY,moonX,amp,disturbX){
+  ctx.save();
+  const rows=64;
+  for(let r=0;r<rows;r++){
+    const k=r/rows,depth=Math.pow(k,2.1),y=horizonY+depth*(H-horizonY)*0.95;
+    const spacing=5+depth*30,size=0.9+depth*3.8;
+    for(let x=-20;x<W+20;x+=spacing){
+      const wave=Math.sin(x*0.012+r*0.7+time)*amp*depth+Math.sin(x*0.031-r*0.4+time*1.3)*amp*0.5*depth;
+      let dy=wave;
+      if(disturbX!==undefined){const dx=(x-disturbX)/(120+depth*260);dy+=Math.exp(-dx*dx)*-60*depth*Math.sin(r*0.9-time*3);}
+      const refl=Math.exp(-Math.pow((x-moonX)/(60+depth*220),2))*(0.55+0.45*Math.sin(r*1.7+x*0.05+time));
+      const a=Math.min(1,0.10+depth*0.2+refl*0.85);
+      ctx.fillStyle="rgba("+(220+refl*35)+","+(232+refl*10)+",255,"+a+")";
+      ctx.beginPath();ctx.arc(x,y+dy,size*(0.6+refl*0.7),0,6.2832);ctx.fill();
+    }
+  }
+  ctx.restore();
+}
+function embers(n,seed,x0,x1,y0,y1,t){
+  for(let i=0;i<n;i++){const x=x0+hash(i*3+seed)*(x1-x0),y=y1-((hash(i*5+seed)+t*0.12)%1)*(y1-y0);
+    const a=0.35+hash(i*7+seed)*0.65;ctx.fillStyle="rgba(255,"+(150+hash(i)*60)+",70,"+a+")";ctx.beginPath();ctx.arc(x+Math.sin(y*0.02+i)*14,y,1.4+hash(i*9+seed)*2.6,0,6.2832);ctx.fill();}
+}
+function caption(a,accent,b,y){
+  ctx.save();ctx.textAlign="center";ctx.textBaseline="middle";
+  ctx.font="800 78px Inter, ui-sans-serif, system-ui, sans-serif";
+  const full=a+accent+b,wA=ctx.measureText(a).width,wC=ctx.measureText(accent).width,wB=ctx.measureText(b).width,total=wA+wC+wB;
+  let x=W/2-total/2;ctx.textAlign="left";
+  ctx.shadowColor="rgba(0,0,0,0.9)";ctx.shadowBlur=24;
+  ctx.fillStyle="#f4f7ff";ctx.fillText(a,x,y);x+=wA;
+  ctx.fillStyle="rgb(255,176,64)";ctx.fillText(accent,x,y);x+=wC;
+  ctx.fillStyle="#f4f7ff";ctx.fillText(b,x,y);
+  ctx.restore();
+}
+function vignette(){ctx.fillStyle=radial(ctx,W/2,H*0.45,H*0.35,H*0.85,[[0,"rgba(0,0,0,0)"],[1,"rgba(0,0,0,0.85)"]]);ctx.fillRect(0,0,W,H);}
+function grain(){for(let i=0;i<2200;i++){ctx.fillStyle="rgba(255,255,255,"+(hash(i*13)*0.06)+")";ctx.fillRect(hash(i*3)*W,hash(i*5)*H,2,2);}}
+function lightCone(x,y,spread,len,alpha){
+  ctx.save();ctx.globalCompositeOperation="lighter";
+  const g=ctx.createLinearGradient(x,y,x,y+len);g.addColorStop(0,"rgba(190,215,255,"+alpha+")");g.addColorStop(1,"rgba(190,215,255,0)");
+  ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(x-12,y);ctx.lineTo(x+12,y);ctx.lineTo(x+spread,y+len);ctx.lineTo(x-spread,y+len);ctx.fill();ctx.restore();
+}
+
+function litFigure(pose,scale,cx,cy,rot,lightFrom,amberEyes){
+  const lum=off(W,H),g=lum.getContext("2d");g.fillStyle="#000";g.fillRect(0,0,W,H);
+  g.save();g.translate(cx,cy);g.rotate(rot);drawFigure(g,scale,pose);g.restore();
+  // directional lighting: darken the side facing away from the light
+  g.globalCompositeOperation="source-atop";
+  const gr=g.createLinearGradient(lightFrom[0],lightFrom[1],lightFrom[2],lightFrom[3]);
+  gr.addColorStop(0,"rgba(0,0,0,0)");gr.addColorStop(1,"rgba(0,0,0,0.72)");
+  g.fillStyle=gr;g.fillRect(0,0,W,H);
+  const tint=off(W,H),tg=tint.getContext("2d");tg.fillStyle="#000";tg.fillRect(0,0,W,H);
+  if(amberEyes){tg.fillStyle=radial(tg,amberEyes[0],amberEyes[1],0,amberEyes[2],[[0,"#fff"],[1,"#000"]]);tg.fillRect(0,0,W,H);}
+  return {lum,tint};
+}
+
+// ================= FRAMES =================
+function frame1(){ // the hook: tiny figure, huge moon, endless dot ocean
+  ctx.fillStyle="#020204";ctx.fillRect(0,0,W,H);
+  const sky=off(W,H),sg=sky.getContext("2d");sg.fillStyle="#000";sg.fillRect(0,0,W,H);moonLum(sg,W*0.62,H*0.3,230);halftone(sky,null,1);
+  stars(ctx,120,3);glow(30,0.8);
+  ocean(0.7,H*0.52,W*0.62,10);
+  // cliff silhouette (dots) bottom-left
+  const cl=off(W,H),cg=cl.getContext("2d");cg.fillStyle="#000";cg.fillRect(0,0,W,H);
+  cg.fillStyle="#9aa6b8";cg.beginPath();cg.moveTo(0,H*0.66);cg.bezierCurveTo(200,H*0.64,330,H*0.7,460,H*0.78);cg.lineTo(520,H);cg.lineTo(0,H);cg.fill();
+  const f=litFigure(POSES.crouch,150,330,H*0.665,0,[W*0.9,H*0.3,W*0.1,H*0.7],[ -1,-1,1]);
+  halftone(cl,null,0.9);halftone(f.lum,f.tint,1);
+  lightCone(W*0.62,H*0.3,300,H*0.5,0.10);
+  glow(14,0.5);embers(26,4,0,W,H*0.55,H*0.9,0.3);
+  caption("He forgot ","what"," he was.",H*0.86);
+  vignette();grain();
+}
+function frame2(){ // the awakening: figure rises, shockwave rings, amber chest glow
+  ctx.fillStyle="#020204";ctx.fillRect(0,0,W,H);
+  for(let r=1;r<=9;r++){ // shockwave rings of dots
+    const R=r*95,n=Math.floor(R*0.9);
+    for(let i=0;i<n;i++){const a=i/n*6.2832,x=W/2+Math.cos(a)*R,y=H*0.52+Math.sin(a)*R*0.62;
+      const fade=Math.max(0,1-r/9);ctx.fillStyle="rgba("+(255)+","+(200-r*10)+","+(120-r*8)+","+(fade*0.9)+")";ctx.beginPath();ctx.arc(x,y,2+fade*3,0,6.2832);ctx.fill();}
+  }
+  const f=litFigure(POSES.stand,330,W/2,H*0.66,0,[W*0.5,H*0.2,W*0.5,H*0.9],[W/2+16,H*0.66-330*1.55,260]);
+  halftone(f.lum,f.tint,1);
+  const core=off(W,H),k=core.getContext("2d");k.fillStyle="#000";k.fillRect(0,0,W,H);
+  ctx.save();ctx.globalCompositeOperation="lighter";ctx.fillStyle=radial(ctx,W/2,H*0.66-330*1.2,0,420,[[0,"rgba(255,170,60,0.55)"],[0.4,"rgba(255,120,30,0.18)"],[1,"rgba(255,100,20,0)"]]);ctx.fillRect(0,0,W,H);ctx.restore();
+  glow(22,0.7);embers(70,9,W*0.15,W*0.85,H*0.2,H*0.82,0.5);
+  caption("Then he ","remembered",".",H*0.88);
+  vignette();grain();
+}
+function frame3(){ // the leap: diagonal flight, speed trails, ocean erupts beneath, moon behind
+  ctx.fillStyle="#020204";ctx.fillRect(0,0,W,H);
+  const sky=off(W,H),sg=sky.getContext("2d");sg.fillStyle="#000";sg.fillRect(0,0,W,H);moonLum(sg,W*0.5,H*0.34,300);halftone(sky,null,0.85);
+  stars(ctx,70,8);glow(34,0.8);
+  ocean(1.9,H*0.56,W*0.5,22,W*0.45);
+  // speed streaks: dot lines trailing behind the figure
+  for(let s=0;s<34;s++){const y=H*0.34+hash(s*3)*H*0.3,len=220+hash(s*5)*420,x0=W*0.35+hash(s*7)*W*0.1;
+    for(let i=0;i<len/9;i++){const x=x0-i*9-hash(s)*40,a=(1-i/(len/9))*0.8;ctx.fillStyle="rgba(255,"+(190+hash(s)*50)+",120,"+a+")";ctx.beginPath();ctx.arc(x,y+i*0.35,1.2+a*1.8,0,6.2832);ctx.fill();}}
+  const f=litFigure(POSES.leap,175,W*0.5,H*0.42,-0.22,[W*0.5,H*0.2,W*0.5,H*0.7],[W*0.5+1.55*175*0.95,H*0.42-0.5*175,90]);
+  halftone(f.lum,f.tint,1.05);
+  lightCone(W*0.5,H*0.34,420,H*0.4,0.12);
+  glow(18,0.7);embers(60,12,0,W,H*0.25,H*0.75,0.8);
+  caption("One ","leap",".",H*0.86);
+  vignette();grain();
+}
+function frame4(){ // arrival: golden Lanka skyline of dots, small figure, rising embers
+  ctx.fillStyle="#020204";ctx.fillRect(0,0,W,H);
+  const sk=off(W,H),g=sk.getContext("2d"),tint=off(W,H),tg=tint.getContext("2d");
+  g.fillStyle="#000";g.fillRect(0,0,W,H);tg.fillStyle="#000";tg.fillRect(0,0,W,H);
+  const base=H*0.58;
+  function dome(x,w,h,spire){const gr=g.createLinearGradient(0,base-h,0,base);gr.addColorStop(0,"#fff");gr.addColorStop(1,"#555");g.fillStyle=gr;
+    g.fillRect(x-w/2,base-h*0.55,w,h*0.55);g.beginPath();g.ellipse(x,base-h*0.55,w/2,h*0.45,0,Math.PI,0);g.fill();
+    g.fillRect(x-3,base-h-spire,6,spire);tg.fillStyle="#fff";tg.fillRect(x-w/2-4,base-h-spire-4,w+8,h+spire+8);}
+  [[160,110,220,70],[330,150,330,110],[540,90,200,60],[700,170,380,130],[880,120,260,80],[1010,80,170,40]].forEach(d=>dome(...d));
+  halftone(sk,tint,1);
+  ctx.save();ctx.globalCompositeOperation="lighter";ctx.fillStyle=radial(ctx,W/2,base-120,0,700,[[0,"rgba(255,160,50,0.35)"],[1,"rgba(255,100,20,0)"]]);ctx.fillRect(0,0,W,H);ctx.restore();
+  ocean(0.4,base,W*0.5,6,undefined);
+  const f=litFigure(POSES.crouch,120,230,H*0.9,0,[W*0.5,H*0.5,W*0.1,H],[ -1,-1,1]);
+  halftone(f.lum,null,0.8);
+  glow(26,0.9);embers(90,21,0,W,H*0.2,H*0.85,0.2);
+  caption("Lanka","."," Ahead.",H*0.86);
+  vignette();grain();
+}
+[frame1,frame2,frame3,frame4][frame]();
+window.renderAt=function(){};window.getDuration=function(){return 1;};
+})();
+</script></body></html>

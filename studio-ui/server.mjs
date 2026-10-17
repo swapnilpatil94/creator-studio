@@ -1,0 +1,111 @@
+#!/usr/bin/env node
+// Creator Studio: paste a script + an HTML scene, click buttons, get a finished film.
+// Local only (127.0.0.1). One heavy job at a time (24 GB friendly). No dependencies.
+// usage: node studio-ui/server.mjs [--port 4180]
+import http from "node:http"; import fs from "node:fs"; import path from "node:path"; import { spawn, spawnSync } from "node:child_process"; import { fileURLToPath } from "node:url";
+const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, ".."), dc = path.join(root, "engine/dot-cinema");
+const cfg = { ttsRepo: path.join(process.env.HOME, "infographics animations"), port: 4180, lead: 0.9, ...(fs.existsSync(path.join(here, "config.json")) ? JSON.parse(fs.readFileSync(path.join(here, "config.json"), "utf8")) : {}) };
+if (process.argv.includes("--port")) cfg.port = Number(process.argv[process.argv.indexOf("--port") + 1]);
+const PROJ = path.join(root, "projects"); fs.mkdirSync(PROJ, { recursive: true });
+const pdir = id => { if (!/^[a-z0-9][a-z0-9-]{0,60}$/.test(id)) throw new Error("bad project id"); return path.join(PROJ, id); };
+const rj = f => JSON.parse(fs.readFileSync(f, "utf8")), wj = (f, o) => fs.writeFileSync(f, JSON.stringify(o, null, 1));
+const send = (res, code, body, type = "application/json") => { res.writeHead(code, { "content-type": type, "cache-control": "no-store" }); res.end(typeof body === "string" || Buffer.isBuffer(body) ? body : JSON.stringify(body)); };
+const readBody = (req, max = 40e6) => new Promise((ok, no) => { const c = []; let n = 0; req.on("data", d => { n += d.length; if (n > max) { no(new Error("body too large")); req.destroy(); } else c.push(d); }); req.on("end", () => ok(Buffer.concat(c))); });
+const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 36) || "film";
+
+// ---------- jobs: one at a time, log lines streamed over SSE ----------
+let job = null;
+function startJob(kind, id, cmd, args, opts = {}) {
+  if (job && job.status === "running") throw new Error("another job is running (" + job.kind + " on " + job.id + "); wait or cancel it");
+  job = { kind, id, status: "running", lines: [], started: Date.now(), child: null, listeners: new Set() };
+  const push = l => { job.lines.push(l); for (const r of job.listeners) r.write("data: " + JSON.stringify({ line: l }) + "\n\n"); };
+  push("$ " + kind + " started");
+  const child = spawn(cmd, args, { cwd: opts.cwd || root, env: { ...process.env, ...(opts.env || {}) } }); job.child = child; let buf = "";
+  const onData = d => { buf += d.toString().replace(/\r/g, "\n"); const parts = buf.split("\n"); buf = parts.pop(); parts.filter(Boolean).forEach(push); };
+  child.stdout.on("data", onData); child.stderr.on("data", onData);
+  child.on("close", code => { if (buf.trim()) push(buf.trim()); job.status = job.cancelled ? "cancelled" : code === 0 ? "done" : "failed"; job.code = code; push("@@job " + job.status + " " + code); for (const r of job.listeners) { r.write("data: " + JSON.stringify({ end: job.status }) + "\n\n"); } if (opts.after) try { opts.after(code); } catch (e) { push("after-hook error: " + e.message); } });
+  return job;
+}
+
+// ---------- helpers ----------
+function beatsFromScript(text) { return text.split(/\r?\n/).map(l => l.trim()).filter(Boolean).map(l => l.replace(/^\[[A-Z]+\]\s*/, "").replace(/\[PAUSE\]/g, "…").replace(/\[END\]/g, "").trim()).filter(Boolean).map((t, i) => ({ id: "n" + String(i + 1).padStart(2, "0"), text: t })); }
+function projectInfo(id) {
+  const d = pdir(id), s = rj(path.join(d, "story.json")), segF = path.join(d, "narration/raw.wav.segments.json"), out = path.join(d, "output");
+  const info = { id, story: s, script: fs.existsSync(path.join(d, "script.txt")) ? fs.readFileSync(path.join(d, "script.txt"), "utf8") : "", sceneBytes: fs.existsSync(path.join(d, "scene.html")) ? fs.statSync(path.join(d, "scene.html")).size : 0, narration: null, outputs: {}, qa: null, validate: null, mix: null };
+  if (fs.existsSync(segF)) { const g = rj(segF); info.narration = { duration: g.duration_seconds, estimated: !!g.estimated, beats: g.segments.map(b => ({ id: b.beat_id, text: b.text, start: b.start_seconds, end: b.end_seconds })), audio: fs.existsSync(path.join(d, "narration/raw.wav")) }; }
+  for (const k of ["share", "master"]) { const f = path.join(out, s.name + (k === "share" ? "-share.mp4" : ".mp4")); if (fs.existsSync(f)) info.outputs[k] = { url: "/files/" + id + "/output/" + path.basename(f), bytes: fs.statSync(f).size, mtime: fs.statSync(f).mtimeMs }; }
+  for (const [k, f] of [["qa", "qa.json"], ["validate", "validate.json"], ["mix", "mix-report.json"], ["visualQa", "visual-qa.json"]]) if (fs.existsSync(path.join(out, f))) info[k] = rj(path.join(out, f)); return info;
+}
+function fillPrompt(id) {
+  const info = projectInfo(id), n = info.narration, lead = info.story.lead ?? cfg.lead, dur = n ? +(n.duration + lead + 1.9).toFixed(2) : 36;
+  let tl = "(narration not generated yet — generate it first so the visuals can be timed to the real voice; until then assume ~3 s per beat)";
+  if (n) { const d = fs.existsSync(path.join(pdir(id), "narration/raw.wav.segments.json")) ? rj(path.join(pdir(id), "narration/raw.wav.segments.json")) : null; tl = d.segments.map(b => `- ${b.beat_id}  ${b.start_seconds.toFixed(2)}–${b.end_seconds.toFixed(2)} s: "${b.text}"\n    words: ` + b.words.map(w => w.word + "@" + w.start.toFixed(2)).join("  ")).join("\n"); }
+  const tpl = fs.readFileSync(path.join(root, "docs/SCENE_PROMPT.md"), "utf8");
+  return tpl.replace(/{{DURATION}}/g, String(dur)).replace(/{{LEAD}}/g, String(lead)).replace("{{TIMELINE}}", tl).replace("{{SCRIPT}}", info.script || "(paste your script in step 1)");
+}
+function estimateSegments(id) {
+  const d = pdir(id), beats = beatsFromScript(fs.readFileSync(path.join(d, "script.txt"), "utf8")), wav = path.join(d, "narration/raw.wav");
+  const dur = Number(spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", wav], { encoding: "utf8" }).stdout); if (!(dur > 0)) throw new Error("could not read the WAV duration");
+  const total = beats.reduce((a, b) => a + b.text.length, 0), pause = 0.35, speech = dur - 0.3 - pause * (beats.length - 1); let t = 0.15; const segs = [];
+  for (const b of beats) { const bd = speech * b.text.length / total, ws = b.text.split(/\s+/).filter(Boolean), tl = ws.reduce((a, w) => a + w.length + 1, 0); let wt = t; const words = ws.map(w => { const wd = bd * (w.length + 1) / tl; const o = { word: w, start: +wt.toFixed(3), end: +(wt + wd * 0.92).toFixed(3) }; wt += wd; return o; }); segs.push({ beat_id: b.id, text: b.text, start_seconds: +t.toFixed(3), end_seconds: +(t + bd).toFixed(3), words }); t += bd + pause; }
+  wj(path.join(d, "narration/raw.wav.segments.json"), { segments: segs, duration_seconds: +dur.toFixed(3), estimated: true });
+}
+function previewHtml(id, q) {
+  const d = pdir(id), s = rj(path.join(d, "story.json")); let html = fs.readFileSync(path.join(d, "scene.html"), "utf8"), cfgObj = { compat: true, fit: true, captions: null };
+  const segF = path.join(d, "narration/raw.wav.segments.json");
+  if (q.get("captions") === "1" && fs.existsSync(segF) && !s.captionsInScene) { const g = rj(segF), vj = fs.existsSync(path.join(d, "output/validate.json")) ? rj(path.join(d, "output/validate.json")) : null, sceneDur = g.duration_seconds + (s.lead ?? cfg.lead) + 1.9; cfgObj.captions = { segments: g.segments, lead: s.lead ?? cfg.lead, dim: 0.6, timeScale: ((vj && vj.stats.duration) || sceneDur) / sceneDur }; }
+  const bridge = `<script>window.__STUDIO=${JSON.stringify(cfgObj)};</script><script src="/shim.js"></script><script>addEventListener("message",e=>{const m=e.data;if(!m||!m.__studio)return;try{if(m.__studio==="render"){window.renderAt(m.t);parent.postMessage({__studio:"rendered",t:m.t},"*")}}catch(err){parent.postMessage({__studio:"error",message:String(err&&err.message||err)},"*")}});addEventListener("load",()=>{try{parent.postMessage({__studio:"ready",duration:window.getDuration(),hasRender:typeof window.renderAt==="function"},"*")}catch(e){parent.postMessage({__studio:"error",message:"getDuration/renderAt missing"},"*")}});</script>`;
+  return /<head[^>]*>/i.test(html) ? html.replace(/<head[^>]*>/i, m => m + bridge) : bridge + html;
+}
+const MIME = { ".mp4": "video/mp4", ".wav": "audio/wav", ".json": "application/json", ".html": "text/html", ".js": "text/javascript", ".png": "image/png", ".log": "text/plain" };
+function serveFile(req, res, file) {
+  if (!fs.existsSync(file) || !fs.statSync(file).isFile()) return send(res, 404, { error: "not found" });
+  const st = fs.statSync(file), type = MIME[path.extname(file)] || "application/octet-stream", range = req.headers.range;
+  if (range) { const m = /bytes=(\d*)-(\d*)/.exec(range), a = m[1] ? Number(m[1]) : 0, b = m[2] ? Number(m[2]) : st.size - 1; res.writeHead(206, { "content-type": type, "content-range": `bytes ${a}-${b}/${st.size}`, "accept-ranges": "bytes", "content-length": b - a + 1 }); fs.createReadStream(file, { start: a, end: b }).pipe(res); }
+  else { res.writeHead(200, { "content-type": type, "content-length": st.size, "accept-ranges": "bytes" }); fs.createReadStream(file).pipe(res); }
+}
+
+// ---------- routes ----------
+const server = http.createServer(async (req, res) => {
+  try {
+    const u = new URL(req.url, "http://x"), p = u.pathname; let m;
+    if (req.method === "GET" && p === "/") return send(res, 200, fs.readFileSync(path.join(here, "index.html")), "text/html; charset=utf-8");
+    if (req.method === "GET" && p === "/shim.js") return send(res, 200, fs.readFileSync(path.join(dc, "studio-shim.js")), "text/javascript");
+    if (req.method === "GET" && p === "/api/health") { const tts = fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py")), py = fs.existsSync(path.join(cfg.ttsRepo, ".venv/bin/python")); return send(res, 200, { ok: true, ttsRepo: cfg.ttsRepo, chatterbox: tts && py, ffmpeg: spawnSync("ffmpeg", ["-version"]).status === 0, job: job ? { kind: job.kind, id: job.id, status: job.status } : null }); }
+    if (req.method === "GET" && p === "/api/projects") return send(res, 200, fs.readdirSync(PROJ).filter(x => fs.existsSync(path.join(PROJ, x, "story.json"))).map(x => ({ id: x, name: rj(path.join(PROJ, x, "story.json")).title || x, mtime: fs.statSync(path.join(PROJ, x, "story.json")).mtimeMs })).sort((a, b) => b.mtime - a.mtime));
+    if (req.method === "POST" && p === "/api/projects") { const b = JSON.parse((await readBody(req)).toString() || "{}"), id = slug(b.name || "film") + "-" + Date.now().toString(36).slice(-4), d = pdir(id); fs.mkdirSync(path.join(d, "narration"), { recursive: true }); fs.mkdirSync(path.join(d, "output"), { recursive: true });
+      wj(path.join(d, "story.json"), { name: id, title: b.name || id, type: "html", scene: "scene.html", segments: "narration/raw.wav.segments.json", audio: "narration/raw.wav", lead: cfg.lead, fps: 24, sound: true, captionsInScene: false, channel: b.channel || "kathaaya" }); wj(path.join(d, "overrides.json"), {}); return send(res, 200, projectInfo(id)); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)$/)) && req.method === "GET") return send(res, 200, projectInfo(m[1]));
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/(script|scene|settings)$/)) && req.method === "PUT") { const d = pdir(m[1]), body = JSON.parse((await readBody(req)).toString());
+      if (m[2] === "script") { fs.writeFileSync(path.join(d, "script.txt"), body.text); wj(path.join(d, "beats.json"), beatsFromScript(body.text)); }
+      if (m[2] === "scene") { fs.writeFileSync(path.join(d, "scene.html"), body.html); for (const f of ["validate.json", "visual-qa.json", "pipeline-state.json"]) fs.rmSync(path.join(d, "output", f), { force: true }); }
+      if (m[2] === "settings") { const s = rj(path.join(d, "story.json")); for (const k of ["sound", "captionsInScene", "title", "channel"]) if (body[k] !== undefined) s[k] = body[k]; wj(path.join(d, "story.json"), s); }
+      return send(res, 200, projectInfo(m[1])); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/example$/)) && req.method === "POST") { const d = pdir(m[1]), b = JSON.parse((await readBody(req)).toString()), ex = path.join(root, "stories", slug(b.name));
+      for (const f of ["build/index.html", "narration/raw.wav", "narration/raw.wav.segments.json", "beats.json"]) if (!fs.existsSync(path.join(ex, f))) return send(res, 400, { error: "example not built yet: missing " + f + " (run: node engine/dot-cinema/pipeline.mjs stories/" + b.name + ")" });
+      fs.mkdirSync(path.join(d, "narration"), { recursive: true }); fs.copyFileSync(path.join(ex, "build/index.html"), path.join(d, "scene.html")); fs.copyFileSync(path.join(ex, "narration/raw.wav"), path.join(d, "narration/raw.wav")); fs.copyFileSync(path.join(ex, "narration/raw.wav.segments.json"), path.join(d, "narration/raw.wav.segments.json"));
+      const beats = rj(path.join(ex, "beats.json")); fs.writeFileSync(path.join(d, "script.txt"), beats.map(x => x.text).join("\n")); wj(path.join(d, "beats.json"), beats); const s = rj(path.join(d, "story.json")); s.captionsInScene = true; s.sound = true; wj(path.join(d, "story.json"), s);
+      for (const f of ["validate.json", "visual-qa.json", "pipeline-state.json"]) fs.rmSync(path.join(d, "output", f), { force: true }); return send(res, 200, projectInfo(m[1])); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/prompt$/)) && req.method === "GET") return send(res, 200, { prompt: fillPrompt(m[1]) });
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/validate$/)) && req.method === "POST") { const d = pdir(m[1]); if (!fs.existsSync(path.join(d, "scene.html"))) return send(res, 400, { error: "paste a scene first" });
+      const r = spawnSync("node", [path.join(dc, "validate-scene.mjs"), path.join(d, "scene.html"), "--json", path.join(d, "output/validate.json")], { encoding: "utf8", timeout: 120000 }); return send(res, 200, rj(path.join(d, "output/validate.json"))); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/narration$/)) && req.method === "POST") { const d = pdir(m[1]), b = JSON.parse((await readBody(req)).toString() || "{}");
+      if (!fs.existsSync(path.join(d, "beats.json"))) return send(res, 400, { error: "save a script first" });
+      if (b.mode === "estimate") { if (!fs.existsSync(path.join(d, "narration/raw.wav"))) return send(res, 400, { error: "upload a WAV first" }); estimateSegments(m[1]); return send(res, 200, projectInfo(m[1])); }
+      const py = path.join(cfg.ttsRepo, ".venv/bin/python"); if (!fs.existsSync(py) || !fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py"))) return send(res, 400, { error: "Chatterbox not found at " + cfg.ttsRepo + " (set ttsRepo in studio-ui/config.json)" });
+      fs.rmSync(path.join(d, "narration/raw.wav"), { force: true }); fs.rmSync(path.join(d, "narration/raw.wav.segments.json"), { force: true });
+      startJob("narration", m[1], py, ["-u", "tools/tts_beats.py", path.join(d, "beats.json"), path.join(d, "narration/raw")], { cwd: cfg.ttsRepo, env: { PYTHONPATH: path.join(cfg.ttsRepo, ".vendor_py"), CHATTERBOX_MODEL_VARIANT: "dedicated_hindi", NARRATION_STYLE: b.style || "storytelling", HINDI_PRONUNCIATION: b.pronunciation || "hindi_mixed" } }); return send(res, 200, { started: true }); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/narration\/upload$/)) && req.method === "POST") { const d = pdir(m[1]); fs.writeFileSync(path.join(d, "narration/raw.wav"), await readBody(req, 120e6)); fs.rmSync(path.join(d, "narration/raw.wav.segments.json"), { force: true }); return send(res, 200, projectInfo(m[1])); }
+    if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/render$/)) && req.method === "POST") { const d = pdir(m[1]), b = JSON.parse((await readBody(req)).toString() || "{}");
+      for (const f of ["scene.html", "narration/raw.wav", "narration/raw.wav.segments.json"]) if (!fs.existsSync(path.join(d, f))) return send(res, 400, { error: "missing " + f + " (" + (f.startsWith("narration") ? "generate narration" : "paste a scene") + " first)" });
+      const s = rj(path.join(d, "story.json")); if (b.sound !== undefined) { s.sound = !!b.sound; wj(path.join(d, "story.json"), s); }
+      startJob("render", m[1], "node", [path.join(dc, "pipeline.mjs"), d, ...(b.force ? ["--force"] : []), "--fix", String(b.fix ?? 8)]); return send(res, 200, { started: true }); }
+    if (req.method === "POST" && p === "/api/cancel") { if (job && job.status === "running") { job.cancelled = true; job.child.kill("SIGTERM"); spawnSync("pkill", ["-f", "scripts/render.mjs"]); return send(res, 200, { cancelled: true }); } return send(res, 200, { cancelled: false }); }
+    if (req.method === "GET" && p === "/api/job") return send(res, 200, job ? { kind: job.kind, id: job.id, status: job.status, lines: job.lines.slice(-400) } : null);
+    if (req.method === "GET" && p === "/api/events") { res.writeHead(200, { "content-type": "text/event-stream", "cache-control": "no-store", connection: "keep-alive" }); if (job) { for (const l of job.lines) res.write("data: " + JSON.stringify({ line: l }) + "\n\n"); if (job.status !== "running") res.write("data: " + JSON.stringify({ end: job.status }) + "\n\n"); else job.listeners.add(res); } req.on("close", () => job && job.listeners.delete(res)); return; }
+    if ((m = p.match(/^\/preview\/([a-z0-9-]+)$/))) { const d = pdir(m[1]); if (!fs.existsSync(path.join(d, "scene.html"))) return send(res, 404, "no scene", "text/plain"); return send(res, 200, previewHtml(m[1], u.searchParams), "text/html; charset=utf-8"); }
+    if ((m = p.match(/^\/files\/([a-z0-9-]+)\/(.+)$/)) && req.method === "GET") { const d = pdir(m[1]), f = path.resolve(d, m[2]); if (!f.startsWith(d + path.sep)) return send(res, 403, { error: "forbidden" }); return serveFile(req, res, f); }
+    send(res, 404, { error: "not found" });
+  } catch (e) { send(res, 500, { error: e.message }); }
+});
+server.listen(cfg.port, "127.0.0.1", () => console.log("Creator Studio  http://127.0.0.1:" + cfg.port + "   (projects in " + PROJ + ")"));

@@ -26,9 +26,9 @@ const sil = [...sd.matchAll(/silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+
 add("no unintended silence >0.9s inside narration", sil.length === 0, sil.length ? JSON.stringify(sil) : "none");
 
 // sync: first audible onset vs expected first word
-const pcm = run("ffmpeg", ["-v", "error", "-i", video, "-vn", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], { buffer: true }).stdout;
-const f = new Float32Array(pcm.buffer, pcm.byteOffset, Math.floor(pcm.length / 4)); let onset = -1; const win = 800;
-for (let i = 0; i + win < f.length; i += win) { let e = 0; for (let k = 0; k < win; k++) e += f[i + k] * f[i + k]; if (Math.sqrt(e / win) > 0.02) { onset = i / 16000; break; } }
+const pcm = run("ffmpeg", ["-v", "error", "-i", video, "-vn", "-ac", "1", "-ar", "16000", "-af", "highpass=f=250,lowpass=f=2400", "-f", "f32le", "-"], { buffer: true }).stdout;
+const f = new Float32Array(pcm.buffer, pcm.byteOffset, Math.floor(pcm.length / 4)); let onset = -1; const win = 800, rmsArr = []; for (let i = 0; i + win < f.length; i += win) { let e = 0; for (let k = 0; k < win; k++) e += f[i + k] * f[i + k]; rmsArr.push(Math.sqrt(e / win)); }
+{ const sorted = [...rmsArr].sort((x, y) => x - y), p90 = sorted[Math.floor(sorted.length * 0.9)] || 0; const idx = rmsArr.findIndex(v => v > Math.max(0.01, 0.25 * p90)); onset = idx >= 0 ? idx * win / 16000 : -1; }
 const expected = LEAD + firstWord;
 add("audio onset matches scene timeline (±0.25s)", onset >= 0 && Math.abs(onset - expected) < 0.25, "onset " + onset.toFixed(2) + "s vs expected " + expected.toFixed(2) + "s");
 

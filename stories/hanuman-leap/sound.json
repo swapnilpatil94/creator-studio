@@ -1,0 +1,240 @@
+{
+ "lead": 0.9,
+ "root": 98,
+ "moods": [
+  {
+   "t": -1,
+   "mood": "calm"
+  },
+  {
+   "t": 7.6,
+   "mood": "dread"
+  },
+  {
+   "t": 14.1,
+   "mood": "wonder"
+  },
+  {
+   "t": 17.5,
+   "mood": "siege"
+  },
+  {
+   "t": 22.5,
+   "mood": "rush"
+  },
+  {
+   "t": 27.5,
+   "mood": "wonder"
+  },
+  {
+   "t": 30.5,
+   "mood": "release"
+  },
+  {
+   "t": 34.2,
+   "mood": "wonder"
+  }
+ ],
+ "cues": [
+  {
+   "t": -0.9,
+   "type": "waves",
+   "dur": 13,
+   "level": -30
+  },
+  {
+   "t": 12.8,
+   "type": "wind",
+   "dur": 5,
+   "level": -28,
+   "cf": 700
+  },
+  {
+   "t": 7.35,
+   "type": "whoosh",
+   "dur": 0.5,
+   "f0": 300,
+   "f1": 2000,
+   "level": -26
+  },
+  {
+   "t": 11.65,
+   "type": "whoosh",
+   "dur": 0.5,
+   "f0": 300,
+   "f1": 2000,
+   "level": -26
+  },
+  {
+   "t": 17.15,
+   "type": "whoosh",
+   "dur": 0.5,
+   "f0": 300,
+   "f1": 2000,
+   "level": -26
+  },
+  {
+   "t": 13.4,
+   "type": "riser",
+   "dur": 0.8,
+   "level": -26
+  },
+  {
+   "t": 14.2,
+   "type": "bell",
+   "freq": 880,
+   "level": -22,
+   "tail": 3.5
+  },
+  {
+   "t": 18.45,
+   "type": "impact",
+   "level": -8,
+   "tail": 3.0
+  },
+  {
+   "t": 18.9,
+   "type": "impact",
+   "level": -16,
+   "tail": 1.6
+  },
+  {
+   "t": 19.35,
+   "type": "impact",
+   "level": -16,
+   "tail": 1.6
+  },
+  {
+   "t": 20.0,
+   "type": "heartbeat",
+   "dur": 2.4,
+   "bpm0": 60,
+   "bpm1": 110,
+   "level": -17
+  },
+  {
+   "t": 20.4,
+   "type": "riser",
+   "dur": 2.0,
+   "level": -22
+  },
+  {
+   "t": 22.5,
+   "type": "whoosh",
+   "dur": 2.0,
+   "f0": 180,
+   "f1": 2800,
+   "level": -16
+  },
+  {
+   "t": 22.55,
+   "type": "impact",
+   "level": -4,
+   "tail": 3.0
+  },
+  {
+   "t": 22.55,
+   "type": "crack",
+   "level": -14
+  },
+  {
+   "t": 23.0,
+   "type": "wind",
+   "dur": 5,
+   "level": -26,
+   "cf": 900
+  },
+  {
+   "t": 24.4,
+   "type": "whoosh",
+   "dur": 3.0,
+   "f0": 250,
+   "f1": 1500,
+   "level": -25
+  },
+  {
+   "t": 24.5,
+   "type": "rumble",
+   "dur": 2.4,
+   "level": -14
+  },
+  {
+   "t": 26.0,
+   "type": "sparkle",
+   "dur": 2.0,
+   "rate": 12,
+   "level": -28
+  },
+  {
+   "t": 27.9,
+   "type": "bell",
+   "freq": 523,
+   "level": -20,
+   "tail": 4
+  },
+  {
+   "t": 28.96,
+   "type": "bell",
+   "freq": 392,
+   "level": -22,
+   "tail": 4
+  },
+  {
+   "t": 30.0,
+   "type": "whoosh",
+   "dur": 1.2,
+   "f0": 300,
+   "f1": 2200,
+   "level": -21
+  },
+  {
+   "t": 30.8,
+   "type": "wind",
+   "dur": 3.5,
+   "level": -30,
+   "cf": 600
+  },
+  {
+   "t": 33.8,
+   "type": "riser",
+   "dur": 0.8,
+   "level": -24
+  },
+  {
+   "t": 34.2,
+   "type": "sparkle",
+   "dur": 2.4,
+   "rate": 18,
+   "ramp": true,
+   "level": -24
+  },
+  {
+   "t": 34.6,
+   "type": "bell",
+   "freq": 784,
+   "level": -22,
+   "tail": 4
+  },
+  {
+   "t": 35.0,
+   "type": "bell",
+   "freq": 988,
+   "level": -22,
+   "tail": 4
+  },
+  {
+   "t": 35.4,
+   "type": "bell",
+   "freq": 1175,
+   "level": -22,
+   "tail": 4
+  },
+  {
+   "t": 36.4,
+   "type": "bell",
+   "freq": 1568,
+   "level": -22,
+   "tail": 4
+  }
+ ]
+}

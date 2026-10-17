@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kathaaya demo — the leap</title>
+<style>
+:root{color-scheme:light;--paper:#f2ead9;--ink:#1a1512;--muted:#8a7d64;--red:#a53a2f;--gold:#c79a3f}
+*{box-sizing:border-box}html,body{margin:0;width:540px;height:960px;background:var(--paper);font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;color:var(--ink)}
+.frame{position:relative;width:540px;height:960px;overflow:hidden;background:var(--paper);isolation:isolate}
+.frame:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#8d806b30 .7px,transparent .7px);background-size:8px 8px;opacity:.55;pointer-events:none}
+svg{width:100%;height:100%;display:block;position:relative}
+.kicker{font-size:14px;letter-spacing:3px;font-weight:750;fill:var(--red)}
+.headline{font-size:32px;font-weight:800;letter-spacing:-.8px;fill:var(--ink)}
+.headline .accent{fill:var(--red)}
+.foot-kicker{font-size:11px;letter-spacing:2.2px;font-weight:700;fill:var(--muted)}
+.foot-note{font-size:14px;fill:#55503f}
+.disclaimer{font-size:11px;fill:var(--muted);font-style:italic}
+.ink{fill:none;stroke:var(--ink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.accent{fill:none;stroke:var(--red);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.gold{fill:none;stroke:var(--gold);stroke-width:2.6;stroke-linecap:round}
+.fine{fill:none;stroke:var(--muted);stroke-width:1.3;stroke-linecap:round}
+.dot{fill:var(--ink)}
+.golddot{fill:var(--gold)}
+.reddot{fill:var(--red)}
+.label{font-size:16px;font-weight:700;letter-spacing:.5px;fill:var(--ink)}
+.label-muted{font-size:13px;fill:var(--muted)}
+</style>
+</head>
+<body>
+<main class="frame">
+<svg id="scene" viewBox="0 0 540 960" role="img" aria-label="An illustrative, stylised retelling of Hanuman's leap across the ocean to Lanka">
+<defs><clipPath id="clip"><rect width="540" height="960"/></clipPath></defs>
+<g clip-path="url(#clip)">
+
+  <text x="40" y="54" class="kicker" id="kicker">KATHAAYA / ITIHASA</text>
+  <text x="40" y="104" class="headline" id="title-l1">He had the strength</text>
+  <text x="40" y="142" class="headline" id="title-l2">all along.</text>
+
+  <!-- seated figure: small, calm, before the reminder -->
+  <g id="seated" transform="translate(190 420)">
+    <path id="s-head" class="ink" d="M58 10 C78 10 92 26 92 46 C92 64 80 78 62 80 C42 82 26 70 22 50 C18 30 34 12 58 10 Z"/>
+    <path id="s-ear" class="fine" d="M30 34 C22 28 14 32 14 42 C14 50 22 54 30 50"/>
+    <path id="s-body" class="ink" d="M30 82 C14 96 8 118 12 146 L18 196 L108 196 L112 148 C114 120 104 98 86 84 C72 96 46 96 30 82 Z"/>
+    <path id="s-armL" class="fine" d="M22 110 C6 118 0 136 8 152"/>
+    <path id="s-armR" class="fine" d="M98 108 C116 114 122 132 114 150"/>
+    <path id="s-legs" class="ink" d="M24 196 C20 210 26 222 40 224 L50 206 M100 196 C106 210 100 222 86 224 L76 206"/>
+    <path id="s-tail" class="accent" d="M108 170 C140 176 158 156 150 128 C144 108 120 100 108 112"/>
+  </g>
+
+  <!-- rising-strength ink chart: the reminder (jāmbavān's words) -->
+  <g id="rise" transform="translate(70 560)" opacity="0">
+    <path class="fine" d="M0 300 L0 0 M0 300 L400 300"/>
+    <path id="rise-line" class="accent" d="M0 280 C40 276 70 270 95 266 C160 256 190 120 230 70 C280 10 340 6 400 4"/>
+    <circle cx="400" cy="4" r="5" class="reddot"/>
+    <text x="300" y="-14" class="label-muted">शक्ति · remembered strength</text>
+    <text x="0" y="322" class="label-muted">before</text>
+    <text x="330" y="322" class="label-muted">स्मरण · the reminder</text>
+  </g>
+
+  <!-- ocean wave dots (procedurally placed, deterministic) -->
+  <g id="ocean" transform="translate(0 700)"></g>
+
+  <!-- the leap: large dynamic silhouette -->
+  <g id="leap" transform="translate(70 360)">
+    <path id="l-tail" class="accent" d="M60 150 C20 120 10 70 40 36 C62 12 98 6 122 22"/>
+    <path id="l-body" class="ink" d="M58 148 C42 170 44 200 70 214 C110 234 168 222 206 196 C232 178 240 150 224 128 C200 96 148 96 110 112 C86 122 70 132 58 148 Z"/>
+    <path id="l-head" class="ink" d="M196 112 C212 96 236 94 252 108 C266 120 266 140 254 152 C240 164 218 162 206 150 C196 140 192 124 196 112 Z"/>
+    <path id="l-ear" class="fine" d="M214 102 C210 90 220 82 230 88"/>
+    <path id="l-armF" class="ink" d="M250 128 C286 118 318 96 340 66 C348 54 346 40 334 34"/>
+    <path id="l-handF" class="fine" d="M334 34 L352 24 M334 34 L350 40"/>
+    <path id="l-legs" class="ink" d="M78 206 C56 224 30 232 6 226 M118 220 C100 244 76 258 50 258"/>
+  </g>
+
+  <!-- scale comparison: same character, two sizes. Static duplicates (not <use>
+       against the live-animated #seated/#leap groups) so this beat never
+       inherits their in-progress reveal/travel animation state. -->
+  <g id="scale" opacity="0">
+    <path class="fine" d="M70 840 H470"/>
+    <g transform="translate(150 760) scale(.6)" class="ink" fill="none">
+      <path d="M58 10 C78 10 92 26 92 46 C92 64 80 78 62 80 C42 82 26 70 22 50 C18 30 34 12 58 10 Z"/>
+      <path d="M30 82 C14 96 8 118 12 146 L18 196 L108 196 L112 148 C114 120 104 98 86 84 C72 96 46 96 30 82 Z"/>
+      <path d="M24 196 C20 210 26 222 40 224 L50 206 M100 196 C106 210 100 222 86 224 L76 206"/>
+      <path class="accent" d="M108 170 C140 176 158 156 150 128 C144 108 120 100 108 112"/>
+    </g>
+    <g transform="translate(300 700) scale(.46)" class="ink" fill="none">
+      <path d="M58 148 C42 170 44 200 70 214 C110 234 168 222 206 196 C232 178 240 150 224 128 C200 96 148 96 110 112 C86 122 70 132 58 148 Z"/>
+      <path d="M196 112 C212 96 236 94 252 108 C266 120 266 140 254 152 C240 164 218 162 206 150 C196 140 192 124 196 112 Z"/>
+      <path d="M250 128 C286 118 318 96 340 66 C348 54 346 40 334 34"/>
+      <path d="M78 206 C56 224 30 232 6 226 M118 220 C100 244 76 258 50 258"/>
+      <path class="accent" d="M60 150 C20 120 10 70 40 36 C62 12 98 6 122 22"/>
+    </g>
+    <text x="110" y="866" class="label-muted">अणिमा · to shrink</text>
+    <text x="300" y="866" class="label-muted">महिमा · to grow vast</text>
+  </g>
+
+  <path id="rule" class="gold" d="M40 170 H500"/>
+
+  <text x="40" y="872" class="foot-kicker" id="foot-kicker">TRADITIONAL ACCOUNT</text>
+  <text x="40" y="896" class="foot-note" id="foot-note">Regional tellings vary in detail.</text>
+  <text x="40" y="922" class="disclaimer">Illustrative visual model — not a claim of historically certain appearance.</text>
+
+</g>
+</svg>
+</main>
+<script>
+(function(){
+"use strict";
+const DURATION = 26;
+const NS = "http://www.w3.org/2000/svg";
+function clamp(v, a, b) { a = a === undefined ? 0 : a; b = b === undefined ? 1 : b; return Math.max(a, Math.min(b, v)); }
+function smooth(v) { v = clamp(v); return v * v * (3 - 2 * v); }
+function windowed(t, start, len) { return smooth((t - start) / len); }
+function hash(i) { const s = Math.sin(i * 12.9898) * 43758.5453; return s - Math.floor(s); }
+
+const titleL1 = document.getElementById("title-l1");
+const titleL2 = document.getElementById("title-l2");
+const kicker = document.getElementById("kicker");
+const footKicker = document.getElementById("foot-kicker");
+const footNote = document.getElementById("foot-note");
+
+// Reusable dot-reveal: sample points along every <path> inside a group, draw
+// them as small circles, and drive stroke + dot reveal from a single 0..1
+// progress value per group. Mirrors the technique already proven in
+// dotted-character-reveal.html.
+function buildReveal(groupId, dotRadius, dotClass) {
+  const group = document.getElementById(groupId);
+  const paths = [...group.querySelectorAll("path")];
+  const dotLayer = document.createElementNS(NS, "g");
+  group.appendChild(dotLayer);
+  const specs = paths.map(path => {
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = String(length);
+    path.style.strokeDashoffset = String(length);
+    path.style.opacity = "0";
+    const count = Math.max(6, Math.floor(length / 9));
+    const points = [];
+    for (let i = 0; i <= count; i++) {
+      const p = path.getPointAtLength(length * i / count);
+      points.push({ x: p.x, y: p.y, at: i / count });
+    }
+    return { path, length, points };
+  });
+  const dots = [];
+  for (const spec of specs) {
+    for (const p of spec.points) {
+      const c = document.createElementNS(NS, "circle");
+      c.setAttribute("cx", p.x); c.setAttribute("cy", p.y);
+      c.setAttribute("r", String(dotRadius));
+      c.setAttribute("class", dotClass || "dot");
+      dotLayer.appendChild(c);
+      dots.push({ el: c, at: p.at });
+    }
+  }
+  return function setProgress(p) {
+    p = clamp(p);
+    for (const spec of specs) {
+      spec.path.style.opacity = String(p);
+      spec.path.style.strokeDashoffset = String(spec.length * (1 - p));
+    }
+    for (const d of dots) d.el.style.opacity = String(clamp((p - d.at * 0.8) * 10));
+  };
+}
+const setSeated = buildReveal("seated", 1.8, "dot");
+const setLeap = buildReveal("leap", 2.1, "dot");
+
+// Ocean wave dots: deterministic scatter, warm ink tone, density implies motion.
+const oceanGroup = document.getElementById("ocean");
+const OCEAN_COUNT = 260;
+const oceanDots = [];
+for (let i = 0; i < OCEAN_COUNT; i++) {
+  const c = document.createElementNS(NS, "circle");
+  const x = hash(i * 3.1) * 540;
+  const rowBias = hash(i * 7.7);
+  const y = rowBias * rowBias * 220;
+  c.setAttribute("cx", String(x));
+  c.setAttribute("cy", String(y));
+  c.setAttribute("r", String(1.1 + hash(i * 5.3) * 1.6));
+  c.setAttribute("class", i % 9 === 0 ? "golddot" : "dot");
+  c.style.opacity = "0";
+  oceanGroup.appendChild(c);
+  oceanDots.push({ el: c, phase: hash(i * 9.9), baseY: y });
+}
+
+const riseLine = document.getElementById("rise-line");
+const riseLen = riseLine.getTotalLength();
+riseLine.style.strokeDasharray = String(riseLen);
+
+const rule = document.getElementById("rule");
+const ruleLen = rule.getTotalLength();
+rule.style.strokeDasharray = String(ruleLen);
+
+function renderAt(seconds) {
+  const t = clamp(Number(seconds) || 0, 0, DURATION);
+
+  if (t < 4.5) {
+    kicker.textContent = "KATHAAYA / ITIHASA";
+    titleL1.textContent = "He had the strength";
+    titleL2.innerHTML = 'all <tspan class="accent">along</tspan>.';
+    footKicker.textContent = "TRADITIONAL ACCOUNT";
+    footNote.textContent = "A moment before the crossing.";
+  } else if (t < 9) {
+    kicker.textContent = "KATHAAYA / ITIHASA";
+    titleL1.textContent = "Then one word";
+    titleL2.innerHTML = '<tspan class="accent">changed</tspan> everything.';
+    footKicker.textContent = "TRADITIONAL ACCOUNT";
+    footNote.textContent = "Remembered, not gained.";
+  } else if (t < 16) {
+    kicker.textContent = "KATHAAYA / ITIHASA";
+    titleL1.textContent = "Across the water,";
+    titleL2.innerHTML = 'toward <tspan class="accent">Lanka</tspan>.';
+    footKicker.textContent = "TRADITIONAL ACCOUNT";
+    footNote.textContent = "The leap across the ocean.";
+  } else if (t < 22.5) {
+    kicker.textContent = "KATHAAYA / ITIHASA";
+    titleL1.textContent = "Not size.";
+    titleL2.innerHTML = '<tspan class="accent">Will</tspan>, given form.';
+    footKicker.textContent = "TRADITIONAL ACCOUNT";
+    footNote.textContent = "Regional tellings vary in detail.";
+  } else {
+    kicker.textContent = "KATHAAYA / ITIHASA";
+    titleL1.textContent = "The crossing";
+    titleL2.innerHTML = 'was <tspan class="accent">made</tspan>.';
+    footKicker.textContent = "TRADITIONAL ACCOUNT";
+    footNote.textContent = "Lanka, ahead.";
+  }
+
+  const p0 = windowed(t, 0.2, 2.6);
+  setSeated(t < 16 ? p0 : 0);
+  document.getElementById("seated").style.opacity = t < 9 ? "1" : "0";
+
+  document.getElementById("rise").setAttribute("opacity", String(windowed(t, 4.6, 0.6) * (t < 9 ? 1 : 0)));
+  const riseP = windowed(t, 5.2, 2.6);
+  riseLine.style.strokeDashoffset = String(riseLen * (1 - riseP));
+
+  const leapGroup = document.getElementById("leap");
+  const leapVisible = t >= 9 && t < 22.5;
+  leapGroup.style.opacity = leapVisible ? "1" : "0";
+  const leapP = t < 16 ? windowed(t, 9, 2.4) : 1;
+  setLeap(leapVisible ? leapP : 0);
+  if (leapVisible) {
+    const travel = smooth((t - 9) / 6.5);
+    leapGroup.setAttribute("transform", "translate(" + (70 + travel * 90) + " " + (360 - Math.sin(travel * Math.PI) * 70) + ")");
+  }
+
+  document.getElementById("ocean").setAttribute("opacity", String(t >= 9 && t < 22.5 ? 1 : 0));
+  const oceanReveal = windowed(t, 9.5, 2);
+  for (const d of oceanDots) {
+    d.el.style.opacity = String(clamp(oceanReveal - d.phase * 0.5) * (0.35 + 0.5 * hash(d.phase * 13)));
+    d.el.setAttribute("cy", String(d.baseY + Math.sin(t * 1.4 + d.phase * 8) * 3));
+  }
+
+  document.getElementById("scale").setAttribute("opacity", String(windowed(t, 16.2, 1.4) * (t < 22.5 ? 1 : 0)));
+
+  const ruleP = smooth(t / DURATION);
+  rule.style.strokeDashoffset = String(ruleLen * (1 - ruleP));
+}
+
+window.getDuration = function () { return DURATION; };
+window.renderAt = renderAt;
+if (new URLSearchParams(location.search).get("render") === "1") {
+  document.body.style.margin = "0";
+}
+renderAt(0);
+})();
+</script>
+</body>
+</html>

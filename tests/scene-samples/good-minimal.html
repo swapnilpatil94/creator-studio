@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#05070c}canvas{display:block}</style></head><body><canvas id="c" width="540" height="960"></canvas><script>
+const c=document.getElementById("c"),g=c.getContext("2d");function hash(i){const s=Math.sin(i*12.9898)*43758.5453;return s-Math.floor(s)}
+window.getDuration=()=>20;
+window.renderAt=t=>{g.fillStyle="#05070c";g.fillRect(0,0,540,960);for(let i=0;i<200;i++){const a=hash(i)*6.28+t*0.3,r=60+hash(i*3)*200;g.fillStyle="rgba(255,190,90,"+(0.3+0.7*hash(i*5))+")";g.beginPath();g.arc(270+Math.cos(a)*r,480+Math.sin(a)*r*1.4,2,0,6.28);g.fill()}}
+window.renderAt(0);
+</script></body></html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Creator Studio</title>
+<style>
+:root{--bg:#07090d;--panel:#0e121a;--line:#1d2533;--ink:#e8edf6;--mut:#8593a8;--amber:#ffb24a;--ok:#5fd39a;--bad:#ff6b6b;--warn:#ffc857}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+header{display:flex;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+h1{font-size:16px;margin:0;letter-spacing:.04em}h1 b{color:var(--amber)}
+select,input[type=text],textarea,button{font:inherit;color:var(--ink);background:#0a0e15;border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+button{cursor:pointer;background:#141b27}button:hover{border-color:#34445f}button.pri{background:var(--amber);color:#1b1100;border-color:var(--amber);font-weight:700}button.pri:hover{filter:brightness(1.08)}button:disabled{opacity:.45;cursor:not-allowed}
+main{display:grid;grid-template-columns:minmax(380px,1fr) 380px;gap:16px;padding:16px 20px;max-width:1280px;margin:0 auto}@media(max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.card h2{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}.card h2 span{color:var(--amber);margin-right:6px}
+textarea{width:100%;min-height:150px;resize:vertical;font-family:"Kohinoor Devanagari","Devanagari Sangam MN",ui-sans-serif,sans-serif;font-size:15px}textarea.code{font-family:ui-monospace,Menlo,monospace;font-size:12px;min-height:220px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}.mut{color:var(--mut)}.small{font-size:12px}
+.pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:11px;border:1px solid var(--line)}.ok{color:var(--ok);border-color:#1f5a41}.bad{color:var(--bad);border-color:#6a2a2a}.warn{color:var(--warn);border-color:#6a5420}
+.issues div{padding:6px 8px;border-left:3px solid var(--line);margin:5px 0;background:#0a0e15;border-radius:0 6px 6px 0}.issues .error{border-color:var(--bad)}.issues .warn{border-color:var(--warn)}.issues .info{border-color:#4a7bd0}.issues i{display:block;color:var(--mut);font-style:normal;font-size:12px}
+.phone{width:290px;margin:0 auto;border:8px solid #1a2230;border-radius:34px;background:#000;overflow:hidden;position:relative}.vp{width:270px;height:480px;overflow:hidden;position:relative}.phone iframe{width:540px;height:960px;border:0;display:block;background:#000;transform:scale(.5);transform-origin:0 0;position:absolute;left:0;top:0}
+.bar{height:8px;border-radius:99px;background:#141b27;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;width:0;background:var(--amber);transition:width .2s}
+.stages{display:flex;gap:6px;flex-wrap:wrap}.stage{font-size:11px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}.stage.running{color:var(--amber);border-color:var(--amber)}.stage.ok{color:var(--ok);border-color:#1f5a41}.stage.failed{color:var(--bad);border-color:var(--bad)}
+pre#log{background:#05070a;border:1px solid var(--line);border-radius:8px;padding:8px;height:170px;overflow:auto;font-size:11px;margin:8px 0 0;white-space:pre-wrap}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}td,th{padding:4px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+video{width:100%;max-height:520px;border-radius:10px;background:#000;margin-top:8px}.chk{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut)}
+</style></head><body>
+<header><h1>CREATOR <b>STUDIO</b></h1>
+  <select id="proj" style="min-width:220px"></select><button id="newBtn">+ New film</button><select id="channel"><option value="kathaaya">KATHAAYA</option><option value="agentic-ai">Agentic AI</option></select>
+  <span id="health" class="small mut" style="margin-left:auto"></span></header>
+<main>
+<div>
+  <section class="card"><h2><span>1</span>Narration script</h2>
+    <textarea id="script" placeholder="One line = one beat. Hindi (Devanagari) or English. Optional markers: [PAUSE]"></textarea>
+    <div class="row"><button id="saveScript">Save script</button>
+      <select id="style"><option>storytelling</option><option>conversational</option><option>dramatic</option></select>
+      <select id="pron"><option value="hindi_mixed">Hindi-first pronunciation</option><option value="original">Original text</option></select>
+      <button class="pri" id="genNarr">Generate narration (Chatterbox)</button></div>
+    <div class="row small mut">or use your own recording: <input type="file" id="wavFile" accept="audio/wav,.wav"><button id="estimate">Estimate timing from my WAV</button></div>
+    <div id="narrInfo" class="small" style="margin-top:8px"></div><audio id="narrAudio" controls style="width:100%;margin-top:6px;display:none"></audio><div id="beatTable"></div>
+  </section>
+  <section class="card"><h2><span>2</span>Visuals (HTML scene from any AI model)</h2>
+    <div class="row" style="margin-top:0"><button id="copyPrompt">Copy AI prompt (with my script + timeline)</button><span id="promptNote" class="small mut"></span></div>
+    <textarea id="scene" class="code" spellcheck="false" placeholder="Paste the complete HTML file the AI model returned"></textarea>
+    <div class="row"><button class="pri" id="validate">Save &amp; validate</button><input type="file" id="htmlFile" accept=".html,text/html"><span class="chk"><input type="checkbox" id="capInScene"> scene draws its own captions</span>
+      <select id="exLoad"><option value="">Load an example…</option><option value="abhimanyu-chakravyuha">Abhimanyu (Mahabharata)</option><option value="hanuman-leap">Hanuman's leap (Ramayana)</option></select></div>
+    <div id="valOut" class="issues" style="margin-top:8px"></div>
+  </section>
+</div>
+<div>
+  <section class="card"><h2><span>3</span>Preview</h2>
+    <div class="phone"><div class="vp"><iframe id="pv" sandbox="allow-scripts"></iframe></div></div>
+    <input type="range" id="scrub" min="0" max="100" step="0.01" value="0" style="width:100%;margin-top:8px">
+    <div class="row" style="justify-content:space-between"><button id="play">▶ Play</button><span id="tlabel" class="small mut">0.0 / 0.0 s</span>
+      <label class="chk"><input type="checkbox" id="pAudio" checked>narration</label><label class="chk"><input type="checkbox" id="pCaps" checked>captions</label></div>
+    <div id="pvErr" class="small" style="color:var(--bad)"></div>
+  </section>
+  <section class="card"><h2><span>4</span>Render</h2>
+    <div class="row" style="margin-top:0"><label class="chk"><input type="checkbox" id="optSound" checked>sound design</label>
+      <label class="chk">auto-repair passes <select id="optFix"><option>0</option><option>4</option><option selected>8</option></select></label><label class="chk"><input type="checkbox" id="optForce">force re-render</label></div>
+    <div class="row"><button class="pri" id="render">Render video</button><button id="cancel" disabled>Cancel</button><span id="jobState" class="small mut"></span></div>
+    <div class="stages" id="stages" style="margin-top:8px"></div><div class="bar"><i id="prog"></i></div>
+    <pre id="log"></pre>
+    <div id="result"></div>
+  </section>
+</div></main>
+<script>
+const $=id=>document.getElementById(id);let P=null,INFO=null,TS=1,SD=36,ready=false,playing=false,tv=0,clock0=0;
+const api=async(m,u,b)=>{const r=await fetch(u,{method:m,headers:{'content-type':'application/json'},body:b===undefined?undefined:JSON.stringify(b)});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||r.statusText);return j};
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+async function loadProjects(sel){const l=await api('GET','/api/projects');$('proj').innerHTML=l.map(p=>`<option value="${p.id}">${esc(p.name)}</option>`).join('')||'<option value="">(no films yet)</option>';if(sel)$('proj').value=sel;if($('proj').value)await select($('proj').value);else{P=null;}}
+async function select(id){P=id;INFO=await api('GET','/api/projects/'+id);fill();loadPreview()}
+function fill(){const s=INFO.story;$('script').value=INFO.script;$('channel').value=s.channel||'kathaaya';$('optSound').checked=s.sound!==false;$('capInScene').checked=!!s.captionsInScene;
+  if(INFO.sceneBytes&&!$('scene').dataset.dirty){fetch('/files/'+P+'/scene.html').then(r=>r.text()).then(t=>{$('scene').value=t})}
+  const n=INFO.narration;SD=n?n.duration+(s.lead??0.9)+1.9:36;const vj=INFO.validate;TS=vj&&vj.stats&&vj.stats.duration?vj.stats.duration/SD:1;$('scrub').max=SD;
+  $('narrInfo').innerHTML=n?`<span class="pill ${n.estimated?'warn':'ok'}">${n.estimated?'estimated timing':'aligned timing'}</span> ${n.duration.toFixed(1)} s, ${n.beats.length} beats${n.estimated?' — captions are approximate; use Chatterbox for exact word sync':''}`:'<span class="pill">no narration yet</span>';
+  const a=$('narrAudio');if(n&&n.audio){a.src='/files/'+P+'/narration/raw.wav?'+Date.now();a.style.display='block'}else a.style.display='none';
+  $('beatTable').innerHTML=n?'<table><tr><th>beat</th><th>time</th><th>text</th></tr>'+n.beats.map(b=>`<tr><td>${b.id}</td><td>${b.start.toFixed(1)}–${b.end.toFixed(1)}</td><td>${esc(b.text)}</td></tr>`).join('')+'</table>':'';
+  showValidate(vj);showResult()}
+function showValidate(v){if(!v){$('valOut').innerHTML='';return}$('valOut').innerHTML=`<div class="${v.ok?'info':'error'}"><b>${v.ok?'Usable':'Not usable'}</b> — ${v.errors} error(s), ${v.warnings} warning(s)${v.stats&&v.stats.msPerFrame?`, ~${v.stats.msPerFrame} ms/frame, scene ${v.stats.duration}s`:''}</div>`+v.issues.map(i=>`<div class="${i.level}">${esc(i.message)}${i.fix?`<i>fix: ${esc(i.fix)}</i>`:''}</div>`).join('')}
+function showResult(){const o=INFO.outputs;let h='';if(o.share){h+=`<video controls src="${o.share.url}?${o.share.mtime}"></video><div class="row"><a href="${o.master?o.master.url:o.share.url}" download><button>Download master (1080×1920)</button></a><a href="${o.share.url}" download><button>Download 720p</button></a></div>`}
+  if(INFO.qa){h+='<div class="issues" style="margin-top:8px">'+INFO.qa.checks.map(c=>`<div class="${c.pass?'info':'error'}">${c.pass?'✓':'✗'} ${esc(c.name)} <i>${esc(c.detail)}</i></div>`).join('')+'</div>'}
+  if(INFO.mix){h+='<div class="issues">'+INFO.mix.checks.map(c=>`<div class="${c.pass?'info':'error'}">${c.pass?'✓':'✗'} sound: ${esc(c.name)} <i>${esc(c.detail)}</i></div>`).join('')+'</div>'}$('result').innerHTML=h}
+// ----- actions -----
+const guard=f=>async(...a)=>{try{await f(...a)}catch(e){alert(e.message)}};
+$('newBtn').onclick=guard(async()=>{const n=prompt('Film name?');if(!n)return;const p=await api('POST','/api/projects',{name:n,channel:$('channel').value});await loadProjects(p.id)});
+$('proj').onchange=guard(()=>select($('proj').value));
+$('channel').onchange=guard(()=>P&&api('PUT','/api/projects/'+P+'/settings',{channel:$('channel').value}));
+$('saveScript').onclick=guard(async()=>{need();INFO=await api('PUT','/api/projects/'+P+'/script',{text:$('script').value});fill()});
+$('genNarr').onclick=guard(async()=>{need();await api('PUT','/api/projects/'+P+'/script',{text:$('script').value});await api('POST','/api/projects/'+P+'/narration',{style:$('style').value,pronunciation:$('pron').value});watch('narration')});
+$('wavFile').onchange=guard(async()=>{need();const f=$('wavFile').files[0];if(!f)return;const r=await fetch('/api/projects/'+P+'/narration/upload',{method:'POST',body:f});if(!r.ok)throw new Error('upload failed');INFO=await r.json();fill();alert('WAV uploaded. Click "Estimate timing from my WAV".')});
+$('estimate').onclick=guard(async()=>{need();await api('PUT','/api/projects/'+P+'/script',{text:$('script').value});INFO=await api('POST','/api/projects/'+P+'/narration',{mode:'estimate'});fill()});
+$('copyPrompt').onclick=guard(async()=>{need();await api('PUT','/api/projects/'+P+'/script',{text:$('script').value});const r=await api('GET','/api/projects/'+P+'/prompt');await navigator.clipboard.writeText(r.prompt);$('promptNote').textContent='Copied ('+r.prompt.length+' chars) — paste into your AI model, then paste its HTML below.'});
+$('htmlFile').onchange=async()=>{const f=$('htmlFile').files[0];if(f){$('scene').value=await f.text();$('scene').dataset.dirty=1}};
+$('scene').oninput=()=>{$('scene').dataset.dirty=1};
+$('validate').onclick=guard(async()=>{need();$('valOut').innerHTML='<div class="info">validating (loads the scene, renders 8 frames, checks determinism)…</div>';await api('PUT','/api/projects/'+P+'/settings',{captionsInScene:$('capInScene').checked});await api('PUT','/api/projects/'+P+'/scene',{html:$('scene').value});delete $('scene').dataset.dirty;const v=await api('POST','/api/projects/'+P+'/validate');INFO=await api('GET','/api/projects/'+P);showValidate(v);fill();loadPreview()});
+$('exLoad').onchange=guard(async()=>{const n=$('exLoad').value;if(!n)return;need();INFO=await api('POST','/api/projects/'+P+'/example',{name:n});delete $('scene').dataset.dirty;$('scene').value='';fill();loadPreview();$('exLoad').value=''});
+$('render').onclick=guard(async()=>{need();await api('PUT','/api/projects/'+P+'/settings',{captionsInScene:$('capInScene').checked});if($('scene').dataset.dirty){await api('PUT','/api/projects/'+P+'/scene',{html:$('scene').value});delete $('scene').dataset.dirty}await api('POST','/api/projects/'+P+'/render',{sound:$('optSound').checked,fix:Number($('optFix').value),force:$('optForce').checked});watch('render')});
+$('cancel').onclick=guard(()=>api('POST','/api/cancel'));
+function need(){if(!P)throw new Error('create or select a film first')}
+// ----- job log / stages -----
+let es=null;function watch(kind){$('log').textContent='';$('stages').innerHTML='';$('prog').style.width='0';$('render').disabled=true;$('genNarr').disabled=true;$('cancel').disabled=false;$('jobState').textContent=kind+' running…';if(es)es.close();es=new EventSource('/api/events');const st={};
+  es.onmessage=e=>{const m=JSON.parse(e.data);if(m.line){const l=m.line;const g=/^@@stage (\S+) (\S+) ?(.*)$/.exec(l);if(g){st[g[1]]=g[2]==='progress'?'running':g[2];if(g[2]==='progress'&&g[1]==='render'){const [a,b]=g[3].split('/');$('prog').style.width=(100*a/b)+'%'}$('stages').innerHTML=Object.entries(st).map(([k,v])=>`<span class="stage ${v}">${k}</span>`).join('')}
+    if(!/^@@stage .* progress/.test(l)){$('log').textContent+=l+'\n';$('log').scrollTop=1e9}}
+    if(m.end){es.close();$('render').disabled=false;$('genNarr').disabled=false;$('cancel').disabled=true;$('jobState').textContent=kind+' '+m.end;if(m.end==='done'){$('prog').style.width='100%'}select(P)}}}
+async function init(){const h=await api('GET','/api/health');$('health').innerHTML=`<span class="pill ${h.chatterbox?'ok':'bad'}">Chatterbox ${h.chatterbox?'ready':'not found'}</span> <span class="pill ${h.ffmpeg?'ok':'bad'}">ffmpeg</span>`;await loadProjects();const j=await api('GET','/api/job');if(j&&j.status==='running')watch(j.kind)}
+// ----- preview (sandboxed iframe, postMessage) -----
+function loadPreview(){ready=false;$('pvErr').textContent='';const f=$('pv');if(!P||!INFO||!INFO.sceneBytes){f.removeAttribute('src');return}f.src='/preview/'+P+'?captions='+($('pCaps').checked?1:0)+'&v='+Date.now()}
+addEventListener('message',e=>{const m=e.data;if(!m||!m.__studio)return;if(m.__studio==='ready'){ready=true;seek(tv)}if(m.__studio==='error')$('pvErr').textContent='Scene error: '+m.message})
+function seek(t){tv=Math.max(0,Math.min(SD,t));$('scrub').value=tv;$('tlabel').textContent=tv.toFixed(1)+' / '+SD.toFixed(1)+' s';if(ready)$('pv').contentWindow.postMessage({__studio:'render',t:tv*TS},'*')}
+$('scrub').oninput=()=>{pause();seek(Number($('scrub').value))};$('pCaps').onchange=loadPreview;
+function pause(){playing=false;$('play').textContent='▶ Play';$('narrAudio').pause()}
+$('play').onclick=()=>{if(playing){pause();return}if(!ready)return;if(tv>=SD-0.05)tv=0;playing=true;$('play').textContent='❚❚ Pause';clock0=performance.now()-tv*1000;requestAnimationFrame(tick)};
+function tick(){if(!playing)return;tv=(performance.now()-clock0)/1000;const lead=INFO?.story.lead??0.9,a=$('narrAudio');if($('pAudio').checked&&INFO?.narration?.audio){if(tv>=lead&&a.paused){a.currentTime=tv-lead;a.play().catch(()=>{})}}else a.pause();if(tv>=SD){pause();seek(SD);return}seek(tv);requestAnimationFrame(tick)}
+init().catch(e=>alert(e.message));
+</script></body></html>
