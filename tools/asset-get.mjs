@@ -11,7 +11,8 @@ for (const i of ids) { const c = by[i]; console.log(`${i}\t${c.license}\t${c.w}x
 if (!approve) process.exit(0);
 fs.mkdirSync(P("assets/original"), { recursive: true });
 const credits = [];
-for (const i of ids) { const c = by[i], out = P(`assets/original/${i}.jpg`); if (fs.existsSync(out)) continue; const url = width && c.thumb ? c.thumb.replace(/\/\d+px-/, `/${width}px-`) : c.original;
-  for (let t = 0; t < 4; t++) { const r = await fetch(url, { headers: { "User-Agent": "KathaayaStudio/1.0 (swapnilp576p@gmail.com)" } }); if (r.ok) { fs.writeFileSync(out, Buffer.from(await r.arrayBuffer())); break; } await new Promise(s => setTimeout(s, 3000 * (t + 1))); if (t == 3) console.log("FAILED", i, r.status); }
-  credits.push(`- ${i}: ${c.title} | ${c.license} | ${c.artist || ""} ${c.date || ""} | ${c.page}`); await new Promise(s => setTimeout(s, 1500)); }
+for (const i of ids) { const c = by[i], out = P(`assets/original/${i}.jpg`); if (fs.existsSync(out)) continue; const url = width && c.thumb && c.w > width ? c.thumb.replace(/\/\d+px-/, `/${width}px-`) : c.original;
+  let ok = false;
+  for (let t = 0; t < 4 && !ok; t++) { const r = await fetch(url, { headers: { "User-Agent": "KathaayaStudio/1.0 (swapnilp576p@gmail.com)" } }); if (r.ok) { fs.writeFileSync(out, Buffer.from(await r.arrayBuffer())); ok = true; } else { await new Promise(s => setTimeout(s, 4000 * (t + 1))); if (t == 3) console.log("FAILED", i, r.status, url); } }
+  if (ok) credits.push(`- ${i}: ${c.title} | ${c.license} | ${c.artist || ""} ${c.date || ""} | ${c.page}`); await new Promise(s => setTimeout(s, 1500)); }
 if (credits.length) fs.appendFileSync(P("assets/CREDITS.md"), "\n" + credits.join("\n") + "\n"); console.log("done", credits.length);

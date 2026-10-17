@@ -1,0 +1,20 @@
+
+- B007: The Great Goddess Battles the Demons, Folio from a dispersed manuscript of the "Devi Mahatmya".jpg | Public domain | Unknown 1703date QS:P571,+1703-0 | https://commons.wikimedia.org/wiki/File:The_Great_Goddess_Battles_the_Demons,_Folio_from_a_dispersed_manuscript_of_the_%22Devi_Mahatmya%22.jpg
+- A015: Unknown (Indian) - Illustrations to Life of Dhurva Maharaj, ^14 Indra, King of Heaven is very anxious and afraid that D - 71.350 - Detroit Institute of Arts.jpg | Public domain | anonymous 1800 | https://commons.wikimedia.org/wiki/File:Unknown_(Indian)_-_Illustrations_to_Life_of_Dhurva_Maharaj,_%5E14_Indra,_King_of_Heaven_is_very_anxious_and_afraid_that_D_-_71.350_-_Detroit_Institute_of_Arts.jpg
+- A016: Indian School, late 18th century - Vishnu, Brahma and Shiva - RCIN 1005113.u - Royal Collection.jpg | Public domain | anonymous 1790 | https://commons.wikimedia.org/wiki/File:Indian_School,_late_18th_century_-_Vishnu,_Brahma_and_Shiva_-_RCIN_1005113.u_-_Royal_Collection.jpg
+- A007: Hindoo Gods; Wallpaper.jpg | Public domain | Unknown (maker)
+
+Allan, Cockshut & Co. (manufacturer) 1880-1890 (made) | https://commons.wikimedia.org/wiki/File:Hindoo_Gods;_Wallpaper.jpg
+- A001: Unknown (Indian) - Vishnu on Serpent Shesha and Vishnu Battling Demons Madhu and Kaitabha - 69.424 - Detroit Institute of Arts.jpg | Public domain | anonymous 1800 | https://commons.wikimedia.org/wiki/File:Unknown_(Indian)_-_Vishnu_on_Serpent_Shesha_and_Vishnu_Battling_Demons_Madhu_and_Kaitabha_-_69.424_-_Detroit_Institute_of_Arts.jpg
+- A005: The birth of Brahma, springing from a lotus issuing from Vishnu.jpg | Public domain | Unknown authorUnknown author 1913 | https://commons.wikimedia.org/wiki/File:The_birth_of_Brahma,_springing_from_a_lotus_issuing_from_Vishnu.jpg
+- A002: Vishnu Vanquishing the Demons Madhu and Kaitabha (recto), Text (verso), Folio from a Devimahatmya (Glory of the Goddess) LACMA M.84.229.5.jpg | Public domain |  circa 1775date QS:P571,+ | https://commons.wikimedia.org/wiki/File:Vishnu_Vanquishing_the_Demons_Madhu_and_Kaitabha_(recto),_Text_(verso),_Folio_from_a_Devimahatmya_(Glory_of_the_Goddess)_LACMA_M.84.229.5.jpg
+- A004: Vishnu killing danavas Madhu and Kaitabha.jpg | Public domain | Unknown authorUnknown author Unknown date | https://commons.wikimedia.org/wiki/File:Vishnu_killing_danavas_Madhu_and_Kaitabha.jpg
+- B033: Indian - Battle with Raktavija - Walters W864.jpg | Public domain |  between 1775 and 1800dat | https://commons.wikimedia.org/wiki/File:Indian_-_Battle_with_Raktavija_-_Walters_W864.jpg
+
+- B045: Battle at Lanka, Ramayana, Udaipur, 1649-53.jpg | Public domain | Sahibdin from 1649 until 1653date | https://commons.wikimedia.org/wiki/File:Battle_at_Lanka,_Ramayana,_Udaipur,_1649-53.jpg
+- A017: Brahma, Vishnu and Shiva seated on lotuses with their consorts, ca1770.jpg | Public domain | Unknown authorUnknown author circa 1770date QS:P571,+ | https://commons.wikimedia.org/wiki/File:Brahma,_Vishnu_and_Shiva_seated_on_lotuses_with_their_consorts,_ca1770.jpg
+- B008: Devi Mahatmya - Goddess Kali and Saptamatrikas in Battle (recto); Goddess Fights a Titan and Text (verso) - c. 1825.jpg | Public domain | Unknown authorUnknown author circa 1825date QS:P,+182 | https://commons.wikimedia.org/wiki/File:Devi_Mahatmya_-_Goddess_Kali_and_Saptamatrikas_in_Battle_(recto);_Goddess_Fights_a_Titan_and_Text_(verso)_-_c._1825.jpg
+- B052: The Goddess Annihilates the Demon Raktabija, from a Devi-Mahatmya (c. 1640) | CC0 (Cleveland Open Access) | Central India, Madhya Pradesh, Malwa c. 1640 | https://clevelandart.org/art/2018.128
+- B054: Vishnu Battles Madhu and Kaitabha, from a Markandeya Purana (c. 1760) | CC0 (Cleveland Open Access) | Northern India, Pahari kingdoms c. 1760 | https://clevelandart.org/art/1974.46
+- B057: Vishnu on Ananta, the Endless Serpent (c. 1700) | CC0 (Cleveland Open Access) | Northern India, Himachal Pradesh, Pahari Region, Rajput King c. 1700 | https://clevelandart.org/art/2018.155
+- B060: Durga Slaying Mahisha (c. 1830) | CC0 (Cleveland Open Access) | Northern India, Pahari kingdoms c. 1830 | https://clevelandart.org/art/1955.667
