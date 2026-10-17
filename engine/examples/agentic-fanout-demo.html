@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agentic AI demo — one call, many tool calls</title>
+<style>
+:root{color-scheme:dark;--bg:#05070c;--ink:#f2eee5;--ice:#9fb6c9;--amber:#f4b65e;--red:#e5544a;--dim:#5c6f80}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#101722 0%,#070a10 55%,#05070c 100%)}
+canvas{position:absolute;inset:0;width:540px;height:960px;display:block}
+#head{position:absolute;left:0;right:0;top:118px;text-align:center;z-index:2;padding:0 40px}
+#head h1{font-size:32px;line-height:1.08;letter-spacing:-.03em;color:var(--ink);font-weight:760;margin:0}
+#head h1 .accent{color:var(--amber)}
+#foot{position:absolute;left:0;right:0;bottom:64px;text-align:center;z-index:2;padding:0 48px}
+#kicker-label{font-size:11px;letter-spacing:.22em;color:var(--dim);font-weight:700;text-transform:uppercase}
+#desc-label{color:#c7d2da;font-size:14px;line-height:1.35;margin-top:8px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="c" width="1080" height="1920"></canvas>
+  <div id="head"><h1 id="title">One agent call.<br><span class="accent">Many</span> tool calls.</h1></div>
+  <div id="foot"><div id="kicker-label">AGENTIC AI / SYSTEM DESIGN</div><div id="desc-label">A single user request can fan out fast.</div></div>
+</div>
+<script>
+(function(){
+"use strict";
+const W = 1080, H = 1920, DURATION = 26;
+const canvas = document.getElementById("c");
+const ctx = canvas.getContext("2d");
+const titleEl = document.getElementById("title");
+const kickerEl = document.getElementById("kicker-label");
+const descEl = document.getElementById("desc-label");
+
+function clamp(v, a, b) { a = a === undefined ? 0 : a; b = b === undefined ? 1 : b; return Math.max(a, Math.min(b, v)); }
+function smooth(v) { v = clamp(v); return v * v * (3 - 2 * v); }
+function mix(a, b, t) { return a + (b - a) * t; }
+function windowed(t, start, len) { return smooth((t - start) / len); }
+
+// Deterministic pseudo-random in [0,1) from an integer seed — no Math.random anywhere.
+function hash(i) {
+  const s = Math.sin(i * 12.9898) * 43758.5453;
+  return s - Math.floor(s);
+}
+
+function dashedRoundRect(x, y, w, h, r, dash) {
+  ctx.save();
+  ctx.setLineDash(dash || [6, 7]);
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.restore();
+}
+
+function dottedRing(cx, cy, r, count, dotR) {
+  ctx.save();
+  for (let i = 0; i < count; i++) {
+    const a = (i / count) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.arc(cx + Math.cos(a) * r, cy + Math.sin(a) * r, dotR, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+function dashedCurve(x0, y0, x1, y1, x2, y2, color, alpha, dash) {
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.globalAlpha = alpha;
+  ctx.lineWidth = 2.4;
+  ctx.setLineDash(dash || [5, 6]);
+  ctx.beginPath();
+  ctx.moveTo(x0, y0);
+  ctx.quadraticCurveTo(x1, y1, x2, y2);
+  ctx.stroke();
+  ctx.restore();
+}
+
+function pillLabel(cx, cy, text, color, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.font = "600 21px Inter, ui-sans-serif, system-ui, sans-serif";
+  const padX = 14, padY = 9;
+  const tw = ctx.measureText(text).width;
+  const w = tw + padX * 2, h = 34;
+  dashedRoundRect(cx - w / 2, cy - h / 2, w, h, h / 2, [3, 4]);
+  ctx.strokeStyle = color;
+  ctx.stroke();
+  ctx.fillStyle = color;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, cx, cy + 1);
+  ctx.restore();
+}
+
+function label(cx, cy, text, size, color, alpha, spacing) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.font = (size || 20) + "px ui-monospace, SFMono-Regular, Menlo, monospace";
+  ctx.fillStyle = color;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  if (spacing) {
+    // manual letter-spacing for the monospace technical-label look
+    let totalW = 0;
+    for (const ch of text) totalW += ctx.measureText(ch).width + spacing;
+    let x = cx - totalW / 2;
+    for (const ch of text) {
+      ctx.fillText(ch, x + ctx.measureText(ch).width / 2, cy);
+      x += ctx.measureText(ch).width + spacing;
+    }
+  } else {
+    ctx.fillText(text, cx, cy);
+  }
+  ctx.restore();
+}
+
+// ---- particle "cost" field: small rect sprites, density rises with load ----
+const PARTICLE_COUNT = 420;
+const particles = [];
+for (let i = 0; i < PARTICLE_COUNT; i++) {
+  particles.push({
+    x: hash(i * 3.1) * W,
+    y0: 1550 + hash(i * 7.7) * 320,
+    drift: hash(i * 5.3) * 40 - 20,
+    size: 2 + hash(i * 2.2) * 4,
+    phase: hash(i * 9.9)
+  });
+}
+function drawParticleField(t, density, color) {
+  ctx.save();
+  ctx.fillStyle = color;
+  for (let i = 0; i < particles.length; i++) {
+    const p = particles[i];
+    if (hash(i * 1.37) > density) continue;
+    const bob = Math.sin(t * 0.6 + p.phase * 10) * 6;
+    ctx.globalAlpha = 0.25 + 0.5 * hash(i * 4.4);
+    ctx.fillRect(p.x + p.drift * Math.sin(t * 0.1 + i), p.y0 + bob, p.size, p.size * 2.4);
+  }
+  ctx.restore();
+}
+
+// ---- node graph: one orchestrator, five tool nodes, dashed boxes + dashed connectors ----
+const orchestrator = { x: W / 2, y: 560, w: 260, h: 86 };
+const toolNodes = [
+  { label: "search", x: W / 2 - 360, y: 860 },
+  { label: "calculator", x: W / 2 - 180, y: 920 },
+  { label: "memory", x: W / 2, y: 950 },
+  { label: "browser", x: W / 2 + 180, y: 920 },
+  { label: "code_exec", x: W / 2 + 360, y: 860 }
+];
+
+function drawOrchestrator(alpha, pulse) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = "#f4b65e";
+  ctx.lineWidth = 2.6;
+  dashedRoundRect(orchestrator.x - orchestrator.w / 2 - pulse, orchestrator.y - orchestrator.h / 2 - pulse / 2,
+    orchestrator.w + pulse * 2, orchestrator.h + pulse, 20, [7, 8]);
+  label(orchestrator.x, orchestrator.y - 6, "ORCHESTRATOR", 23, "#f2eee5", 1, 3);
+  label(orchestrator.x, orchestrator.y + 24, "one agent run", 17, "#9fb6c9", 0.85, 1);
+  ctx.restore();
+}
+
+function drawToolNodes(revealFrom, t, perNodeAlpha) {
+  for (let i = 0; i < toolNodes.length; i++) {
+    const n = toolNodes[i];
+    const a = clamp((t - (revealFrom + i * 0.18)) / 0.5) * perNodeAlpha;
+    if (a <= 0.001) continue;
+    ctx.save();
+    ctx.globalAlpha = a;
+    ctx.strokeStyle = "#9fb6c9";
+    ctx.lineWidth = 2;
+    dashedRoundRect(n.x - 72, n.y - 34, 144, 68, 14, [5, 6]);
+    label(n.x, n.y, n.label, 18, "#d9e2e8", 1, 1.5);
+    ctx.restore();
+    dashedCurve(orchestrator.x, orchestrator.y + orchestrator.h / 2, (orchestrator.x + n.x) / 2, (orchestrator.y + n.y) / 2 - 30, n.x, n.y - 34, "#f4b65e", a * 0.7);
+  }
+}
+
+// ---- phone mockup ----
+function drawPhone(cx, cy, w, h, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = "#f2eee5";
+  ctx.lineWidth = 2.2;
+  dashedRoundRect(cx - w / 2, cy - h / 2, w, h, 36, [4, 6]);
+  // notch / camera dot
+  ctx.beginPath(); ctx.arc(cx, cy - h / 2 + 34, 7, 0, Math.PI * 2); ctx.stroke();
+  // header bar
+  dashedRoundRect(cx - w / 2 + 28, cy - h / 2 + 64, w - 56, 110, 16, [3, 5]);
+  // 2x3 card grid
+  const gw = (w - 56 - 2 * 14) / 3, gh = 76;
+  let idx = 0;
+  for (let row = 0; row < 2; row++) {
+    for (let col = 0; col < 3; col++) {
+      const gx = cx - w / 2 + 28 + col * (gw + 14);
+      const gy = cy - h / 2 + 198 + row * (gh + 14);
+      ctx.strokeStyle = idx % 2 === 0 ? "#f4b65e" : "#9fb6c9";
+      dashedRoundRect(gx, gy, gw, gh, 10, [3, 4]);
+      idx++;
+    }
+  }
+  ctx.restore();
+}
+
+// ---- chart beat: retry storm vs backoff+jitter ----
+function drawChart(cx, topY, w, h, mode, reveal) {
+  // mode: "storm" (red, uncapped spikes) or "backoff" (amber, capped smooth)
+  const x0 = cx - w / 2, y0 = topY + h, color = mode === "storm" ? "#e5544a" : "#f4b65e";
+  ctx.save();
+  ctx.globalAlpha = reveal;
+  // axes
+  ctx.strokeStyle = "#2a3744"; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(x0, topY); ctx.lineTo(x0, y0); ctx.lineTo(x0 + w, y0); ctx.stroke();
+
+  const points = 24;
+  ctx.beginPath();
+  ctx.moveTo(x0, y0);
+  const capY = topY + h * 0.32;
+  for (let i = 0; i <= points; i++) {
+    const px = x0 + (i / points) * w;
+    const n = hash(i * (mode === "storm" ? 11.3 : 3.7) + (mode === "storm" ? 100 : 0));
+    let val;
+    if (i < points * 0.3) {
+      val = y0 - h * 0.08 * n - 6;
+    } else if (mode === "storm") {
+      val = Math.max(topY + 10, y0 - h * (0.55 + 0.4 * n));
+    } else {
+      const climb = clamp((i - points * 0.3) / (points * 0.22));
+      val = mix(y0 - h * 0.08, capY, smooth(climb)) - h * 0.04 * n;
+    }
+    ctx.lineTo(px, val * reveal + y0 * (1 - reveal));
+  }
+  ctx.lineTo(x0 + w, y0);
+  ctx.closePath();
+  ctx.fillStyle = color; ctx.globalAlpha = reveal * 0.28; ctx.fill();
+  ctx.globalAlpha = reveal; ctx.strokeStyle = color; ctx.lineWidth = 2.6; ctx.stroke();
+
+  if (mode === "backoff") {
+    ctx.setLineDash([4, 5]);
+    ctx.strokeStyle = "#9fb6c9";
+    ctx.beginPath(); ctx.moveTo(x0, capY); ctx.lineTo(x0 + w, capY); ctx.stroke();
+    ctx.setLineDash([]);
+    label(x0 + w - 64, capY - 22, "capped", 16, "#9fb6c9", reveal, 1);
+  } else {
+    label(x0 + w - 70, topY + 26, "no cap", 16, "#e5544a", reveal, 1);
+  }
+  label(cx, y0 + 34, mode === "storm" ? "retry storm" : "backoff + jitter", 19, color, reveal, 1.5);
+  ctx.restore();
+}
+
+function renderAt(seconds) {
+  const t = clamp(Number(seconds) || 0, 0, DURATION);
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = "#05070c";
+  ctx.fillRect(0, 0, W, H);
+
+  // faint grain-free vignette via radial gradient
+  const grad = ctx.createRadialGradient(W / 2, H * 0.3, 80, W / 2, H * 0.3, 1100);
+  grad.addColorStop(0, "#121a24"); grad.addColorStop(1, "#05070c");
+  ctx.fillStyle = grad; ctx.fillRect(0, 0, W, H);
+
+  const p0 = windowed(t, 0, 3.2);
+  const p1 = windowed(t, 4.5, 2.2);
+  const p2 = windowed(t, 9, 2.2);
+  const p3 = windowed(t, 16, 2.2);
+  const p4 = windowed(t, 22.5, 2.2);
+
+  if (t < 4.5) {
+    // Phase 0: orchestrator + fanning tool nodes
+    titleEl.innerHTML = 'One agent call.<br><span class="accent">Many</span> tool calls.';
+    kickerEl.textContent = "AGENTIC AI / SYSTEM DESIGN";
+    descEl.textContent = "A single user request can fan out fast.";
+    drawParticleField(t, 0.12 * p0, "#2a3744");
+    drawOrchestrator(0.3 + 0.7 * p0, 2 + Math.sin(t * 1.6) * 2);
+    drawToolNodes(1.0, t, p0 * 0.9);
+  } else if (t < 9) {
+    // Phase 1: stat reveal
+    titleEl.innerHTML = 'Cost scales with <span class="accent">fan-out</span>,<br>not with users.';
+    kickerEl.textContent = "AGENTIC AI / SYSTEM DESIGN";
+    descEl.textContent = "One user turn, many model + tool calls underneath.";
+    drawParticleField(t, 0.22, "#2a3744");
+    ctx.save();
+    ctx.fillStyle = "#3a4a58";
+    ctx.globalAlpha = 0.6 * p1;
+    dottedRing(W / 2, 1020, 260 * (0.6 + 0.4 * p1), 64, 2.4);
+    ctx.restore();
+    ctx.save();
+    ctx.globalAlpha = p1;
+    ctx.fillStyle = "#f2eee5";
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.font = "800 150px Inter, ui-sans-serif, system-ui, sans-serif";
+    ctx.fillText("1 → 42", W / 2, 980);
+    ctx.restore();
+    label(W / 2, 1090, "tool calls, one user turn", 22, "#9fb6c9", p1, 1.5);
+  } else if (t < 16) {
+    // Phase 2: phone mockup + API labels
+    titleEl.innerHTML = 'Every tool call is a <span class="accent">request</span>,<br>a cost, a failure point.';
+    kickerEl.textContent = "AGENTIC AI / SYSTEM DESIGN";
+    descEl.textContent = "The orchestrator fans out to real endpoints.";
+    drawParticleField(t, 0.16, "#2a3744");
+    drawOrchestrator(0.9, 0);
+    const names = ["search", "calc", "memory", "browser", "exec"];
+    const phoneCx = W / 2, phoneCy = 1180, pw = 480, ph = 560;
+    drawPhone(phoneCx, phoneCy, pw, ph, 0.25 + 0.6 * p2);
+    // Card centers mirror drawPhone's own grid math exactly (gw/gh/gx/gy below
+    // must stay in sync with drawPhone), so each connector + label lands inside
+    // the card it describes instead of floating at an interpolated midpoint
+    // where several labels used to collide.
+    const gw = (pw - 56 - 2 * 14) / 3, gh = 76;
+    for (let i = 0; i < names.length; i++) {
+      const a = clamp((t - (9.6 + i * 0.5)) / 0.6);
+      if (a <= 0.001) continue;
+      const col = i % 3, row = Math.floor(i / 3);
+      const gx = phoneCx - pw / 2 + 28 + col * (gw + 14);
+      const gy = phoneCy - ph / 2 + 198 + row * (gh + 14);
+      const targetX = gx + gw / 2, targetY = gy + gh / 2;
+      dashedCurve(orchestrator.x, orchestrator.y + orchestrator.h / 2, (orchestrator.x + targetX) / 2, (orchestrator.y + targetY) / 2, targetX, gy, "#f4b65e", a * 0.8);
+      ctx.save();
+      ctx.globalAlpha = a;
+      ctx.fillStyle = "rgba(244,182,94,0.14)";
+      ctx.fillRect(gx + 2, gy + 2, gw - 4, gh - 4);
+      ctx.restore();
+      label(targetX, targetY, "/" + names[i], 16, "#f4b65e", a, 0.5);
+    }
+  } else if (t < 22.5) {
+    // Phase 3: chart beat — two small charts, storm vs backoff
+    titleEl.innerHTML = 'Unbounded retries <span class="accent">compound</span>.<br>Backoff + jitter contain it.';
+    kickerEl.textContent = "AGENTIC AI / SYSTEM DESIGN";
+    descEl.textContent = "The shape of the curve is the explanation.";
+    const revealA = windowed(t, 16, 1.4);
+    const revealB = windowed(t, 18.8, 1.4);
+    drawChart(W / 2, 760, 430, 300, "storm", revealA);
+    drawChart(W / 2, 1180, 430, 300, "backoff", revealB);
+  } else {
+    // Phase 4: resolution
+    titleEl.innerHTML = 'Design the fan-out,<br>not just the <span class="accent">model</span>.';
+    kickerEl.textContent = "AGENTIC AI / SYSTEM DESIGN";
+    descEl.textContent = "Every tool call is infrastructure, not magic.";
+    drawParticleField(t, 0.1 * (1 - p4 * 0.5), "#2a3744");
+    drawOrchestrator(1, 0);
+    drawToolNodes(1.0, 100, 1 - p4 * 0.4);
+  }
+}
+
+window.getDuration = function () { return DURATION; };
+window.renderAt = renderAt;
+if (new URLSearchParams(location.search).get("render") === "1") {
+  document.body.style.margin = "0";
+  document.body.style.width = W / 2 + "px";
+  document.body.style.height = H / 2 + "px";
+}
+renderAt(0);
+})();
+</script>
+</body>
+</html>

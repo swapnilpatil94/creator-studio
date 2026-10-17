@@ -1,0 +1,42 @@
+{
+  "channel": "agentic-ai",
+  "topic_focus": "Practical AI agents, tools, startups, and system-design explanations — how agentic systems actually work under the hood.",
+  "status": "Grounded in a verified technique analysis this session (see ../../reference-analysis/REFERENCE_PROFILE.md) and proven against one real original rendered demo (../../engine/output/agentic-fanout-demo.mp4, ../../engine/examples/agentic-fanout-demo.html). Not yet wired to the LLM scene planner/generator or to Chatterbox narration.",
+  "palette": {
+    "background": "#05070c",
+    "background_vignette_inner": "#121a24",
+    "ink": "#f2eee5",
+    "ice": "#9fb6c9",
+    "amber_accent": "#f4b65e",
+    "red_alert": "#e5544a",
+    "dim_label": "#5c6f80",
+    "rule": "Near-black base with a radial vignette, never flat black. Exactly one accent color (amber) does the explanatory work per beat — it marks the single word or element the audience should focus on. Red is reserved for failure/overload states, ice-blue for calm/normal states."
+  },
+  "typography": {
+    "headline": "Bold sans (system ui-sans-serif/Inter fallback), centered, two lines max, -0.03em tracking, one accent word per headline — never more than one.",
+    "technical_label": "Monospace, small, uppercase or lowercase with wide letter-spacing (manual spacing ~1.5-3px), used only on diagram elements (node names, axis labels) — never for the headline.",
+    "stat_number": "Extra-bold sans, very large (120-160px at 1080px canvas width), used only for the dedicated stat-reveal beat, not mixed with diagram beats."
+  },
+  "motion_language": {
+    "camera": "Mostly static vertical framing with slow push/pan; avoid wild 3D rotation. A near-continuous single scene with phase transitions reads better than hard cuts between separate HTML files (reference had only 2 hard cuts in 55s).",
+    "node_style": "Dashed/dotted outlines (CSS-dash-style), not solid fills or solid wireframes — this is the single most distinctive, must-not-skip visual signature of this channel.",
+    "particle_field": "Low-density falling/rising dot-sprite field in the lower third represents volume/crowd/load; density should rise visually when the narration describes increasing load.",
+    "color_shift": "Cool (ice) -> warm (amber) -> alert (red) -> resolved (ice/amber) is the default emotional arc for a 'problem -> escalation -> fix' structured explainer; do not use this arc for a neutral walkthrough with no tension."
+  },
+  "beat_types": [
+    {"id": "title_card", "use": "Open or close a sequence; headline + one calm diagram element."},
+    {"id": "node_fanout", "use": "Show one thing triggering many things (an API, an orchestrator, a trigger). Dashed boxes, dashed connector lines, short monospace labels."},
+    {"id": "stat_reveal", "use": "A single large number is the whole point of the beat. Minimal diagram, maximum typographic weight."},
+    {"id": "device_mockup_fanout", "use": "Show calls landing on real, named endpoints inside a device mockup — connects an abstract backend to a concrete surface the viewer recognizes."},
+    {"id": "chart_beat", "use": "Contrast two shapes (not just two numbers) to make the explanation visual — e.g. uncapped vs. capped, reactive vs. proactive. The curve's shape must carry the point without relying on the reader parsing axis values."}
+  ],
+  "research_workflow": "Verify current product capabilities, pricing, and technical claims against reliable sources before narrating them (see .claude/skills/ai-tech-research-verification.md). Never fabricate benchmark figures or product functionality.",
+  "narration_presets": {
+    "status": "not yet defined — depends on narration/chatterbox vendoring (see MIGRATION_INVENTORY.md). English/Hinglish technical narration likely needs different Chatterbox settings than the Hindi mythology presets; do not assume the Kathaaya presets transfer."
+  },
+  "do_not": [
+    "Do not reuse the specific script, title, data points, or branding observed in the analyzed reference video — see REFERENCE_PROFILE.md.",
+    "Do not use solid-filled or solid-wireframe nodes as the default node style for this channel; dashed/dotted is the identity marker.",
+    "Do not stack more than one accent-colored word per headline."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "channel": "kathaaya",
+  "topic_focus": "Cinematic Indian mythology storytelling — character-led, emotionally driven, narration-synchronized.",
+  "status": "Palette/motion tokens below are seeded from a real existing output decoded this session (infographics-motion/modes/technical-data-cinema/output/draupadi-question11/final.mp4) — not newly invented. Not yet re-extracted into this repo's engine/ or re-rendered here.",
+  "palette": {
+    "background_parchment": "#f2ead9",
+    "ink_black": "#1a1512",
+    "accent_red": "#a53a2f",
+    "accent_gold": "#c79a3f",
+    "rule": "Warm parchment background, not pure white. Linework is black ink, never full-color illustration. Exactly one warm accent (red or gold) per beat, used for emphasis strokes, dividers, or key labels — same 'one accent color does the explanatory work' discipline as Agentic AI, different palette family."
+  },
+  "typography": {
+    "kicker": "Small caps, wide letter-spacing, accent-red, e.g. 'VISUAL EXPLAINER / STORY MODE'.",
+    "beat_counter": "e.g. 'BEAT 03 / 08' — gives the viewer a sense of structured progression through the story.",
+    "body_caption": "Regular weight, ink-black, used for Devanagari + transliteration pairs (e.g. a concept word in Hindi with an English gloss beneath).",
+    "disclaimer_line": "A small, honest caption such as 'illustrative visual model - not a data source' belongs on any beat that depicts a disputed or interpretive detail — matches the brief's requirement to distinguish traditional accounts from interpretation, not just a research-doc rule but a visible on-screen convention."
+  },
+  "motion_language": {
+    "reveal": "Progressive dotted/ink line reveal — a character or symbol is drawn on, stroke by stroke, not faded in as a flat image.",
+    "silhouette": "Characters are built as meaningful silhouettes/contours that can morph into explanatory diagrams (seen in the Draupadi example: a figure's silhouette morphs into a question mark/logic shape) — this is the mythology-channel equivalent of Agentic AI's node diagrams: abstraction through line art, not illustration realism.",
+    "divider": "A thin gold rule, often partially drawn-in (progress-style), separates sections of a beat.",
+    "camera": "Minimal camera movement; the reveal animation itself carries the motion, not a moving camera over static art."
+  },
+  "research_workflow": "Distinguish traditional accounts, regional variants, and uncertain interpretations (see .claude/skills/mythology-research-verification.md). Never invent scriptural quotations or present a disputed interpretation as settled fact — use the on-screen disclaimer_line convention above when a depicted detail is interpretive.",
+  "narration_presets": {
+    "status": "Reuse the existing dedicated-Hindi Chatterbox checkpoint and voice-cloned reference WAV once narration/ is vendored (see MIGRATION_INVENTORY.md) — this is the one already proven in production (output/draupadi-question11/final.narration.wav), not a new choice."
+  },
+  "do_not": [
+    "Do not switch to full-color illustration or photorealism — ink-on-parchment linework is the identity marker.",
+    "Do not present a regional variant or disputed interpretation without the disclaimer_line convention.",
+    "Do not reuse the Agentic AI dark/dashed node-diagram language here — the two channels must stay visually distinct even though they share the same rendering engine."
+  ]
+}

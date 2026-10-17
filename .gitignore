@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+
+# Raw reference videos are kept locally for analysis only (see
+# reference-analysis/REFERENCE_PROFILE.md "Important finding about the source file") and must
+# not be committed or distributed.
+reference-analysis/sources/
