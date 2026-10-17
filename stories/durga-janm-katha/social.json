@@ -1,0 +1,48 @@
+{
+ "story": "durga-janm-katha",
+ "format": "long",
+ "generated": "2026-10-17T15:56:51.828Z",
+ "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
+ "instagram": {
+  "type": "NONE",
+  "note": "A 16:9 film is not an Instagram Reel. Cut 3-5 vertical Shorts from it (long-form-playbook: one idea each, new hook line) and publish those with this tool."
+ },
+ "facebook": {
+  "type": "VIDEO",
+  "title": "देवता सब हार गए, तब क्या हुआ? दुर्गा के जन्म की पूरी कथा | देवी महात्म्य",
+  "description": "देवता सब हार गए, तब क्या हुआ? दुर्गा के जन्म की पूरी कथा | देवी महात्म्य\n\nदेवताओं के सौ साल की हार के बाद देवी दुर्गा का जन्म कैसे हुआ? देवी महात्म्य (मार्कण्डेय पुराण) के अनुसार पूरी कथा — राजा सुरथ का सवाल, मधु-कैटभ, महिषासुर, देवताओं का तेज, हथियारों के उपहार, देवी और असुर सेना का युद्ध, और अंत में वो वचन जिसपर आज भी लोग भरोसा करते हैं।\n\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों और परंपराओं में विवरण भिन्न हैं (जैसे भुजाओं की संख्… आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #DeviMahatmya #Mythology",
+  "hashtags": [
+   "#Durga",
+   "#Navratri",
+   "#DeviMahatmya",
+   "#Mythology"
+  ],
+  "cover": "output/thumb-16x9.png",
+  "checks": [
+   {
+    "platform": "facebook",
+    "name": "title <= 100 chars",
+    "ok": true,
+    "detail": "72"
+   },
+   {
+    "platform": "facebook",
+    "name": "description <= 5000 chars",
+    "ok": true,
+    "detail": "554"
+   },
+   {
+    "platform": "facebook",
+    "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
+    "ok": true,
+    "detail": "none"
+   }
+  ]
+ },
+ "monetizationNotes": [
+  "Original content only: no reposts, no other creators' clips, no third-party watermarks (Meta deprioritises duplicative content; reported in secondary sources, verify in Monetization Manager).",
+  "Eligibility figures vary by source (5k-10k followers, watch-minute thresholds): check your Page in Meta Business Suite > Monetization before relying on any number.",
+  "A copyright check runs on every Reel upload (API: GET /{video-id}?fields=copyright_check_information). Our audio is procedural and our voice is synthetic; the paintings are public domain/CC0.",
+  "Long videos (Page videos) and Reels are separate surfaces: post the 16:9 film as a Page video and cut vertical Reels from it; in-stream ads are reported (secondary source) to need >= 3 minutes."
+ ]
+}
