@@ -32,7 +32,7 @@ if (force || state.render !== fpRender || !fs.existsSync(mp4)) {
   gate("render", r); state.render = fpRender; log("render", "ok (" + ((Date.now() - t0) / 1000).toFixed(0) + "s so far)");
 } else log("render", "cached");
 // 4 audio/video QA on the real file
-const qr = run("qa", "node", [path.join(here, "qa.mjs"), mp4, P(cfg.segments), String(cfg.lead), path.join(out, "qa.json")], here);
+const qr = run("qa", "node", [path.join(here, "qa.mjs"), mp4, P(cfg.segments), String(cfg.lead), path.join(out, "qa.json"), JSON.stringify((cfg.cuts || []).map(c => c + cfg.lead))], here);
 console.log((qr.stdout || "").trim().split("\n").slice(-16).join("\n")); gate("qa", qr);
 // 5 share copy
 const share = path.join(out, cfg.name + "-share.mp4");

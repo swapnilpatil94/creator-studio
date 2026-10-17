@@ -59,6 +59,34 @@
     "caption_clear_of_face": {
       "maxOverlap": 0.03,
       "why": "a caption over the face destroys the emotional beat of a close-up"
+    },
+    "subject_in_frame": {
+      "minMargin": 0.04,
+      "why": "the protagonist (even if only a point of light) must be on screen and not hugging the edge"
+    },
+    "formation_visible": {
+      "min": 0.25,
+      "why": "when the formation is the story, at least a quarter of its dots must be in frame or the audience cannot see it"
+    },
+    "frame_not_dark": {
+      "min": 0.02,
+      "why": "a near-black frame mid-film reads as a render failure"
+    },
+    "frame_not_blown": {
+      "max": 0.06,
+      "why": "bloom or glow washing out more than 10% of the frame loses all dot structure"
+    },
+    "story_subjects_visible": {
+      "minMargin": 0.03,
+      "why": "anything the narration is talking about at that moment must be on screen; otherwise the visual contradicts the words"
+    },
+    "caption_in_margins": {
+      "minMargin": 0.06,
+      "why": "Reels UI and phone bezels crop the edges; captions need a safe side margin"
+    },
+    "caption_legible": {
+      "maxBrightFraction": 0.05,
+      "why": "bright dots, rings or glow under caption text make it unreadable on a phone even when the average backdrop is dark"
     }
   }
 }

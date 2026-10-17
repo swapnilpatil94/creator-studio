@@ -29,6 +29,10 @@ effect triggers use those timestamps (`word(beatId, "छलाँग")`), never 
 - hero_size / hero_not_cropped: readable on a phone, not clipped by the edge outside intentional close-ups.
 - caption_clear_of_face: captions never cover the face (lower body is fine).
 - camera_zoom_rate / camera_pan_rate: no jolts, no smeared dots.
+- subject_in_frame / formation_visible: the protagonist (even a point of light) is on screen; at least 25% of a formation is in frame when it is the story.
+- story_subjects_visible: anything the narration names right now (e.g. Arjuna) must be on screen — scenes list these in `mustSee`.
+- frame_not_dark / frame_not_blown (<6% of the frame above 0.9 luminance): dark frames read as failures, washed-out frames lose all dot structure.
+- caption_in_margins (6% each side, measured from real text widths) and caption_legible (<5% bright pixels under caption text): bright dots under text make it unreadable even when the average backdrop is dark.
 Audio/video: 1080x1920, 24 fps, level −30..−12 dB mean, no clipping, no silence >0.9 s inside narration, audio onset within 0.25 s of plan, no blank/frozen/repeated frames, captions visible and inside margins.
 
 ## Craft rules learned the hard way
@@ -39,6 +43,12 @@ Audio/video: 1080x1920, 24 fps, level −30..−12 dB mean, no clipping, no sile
 5. Big flat fills always read as mistakes; give mountains/cities structure (ridges, tiers, windows) and light them through the same emboss pass.
 6. Direct-drawn elements (ocean, embers) must be batched (Path2D); per-dot fills made renders 10x slower.
 7. Use `--gpu` for 2D-canvas scenes; SwiftShader is for WebGL scenes only.
+
+## Lessons from the Abhimanyu film
+- Formation/point-of-light stories (3D rings + one spark, orbiting camera) came out far stronger than the figure work. Prefer them when the story allows.
+- Exposure fixes must be per shot (`glow[shot]`, `dotGain[shot]`); a global dim punished every shot for one bad one.
+- A QA rule can itself be wrong: the first pixel-based caption-clipping check flagged formation dots as clipped text, and the blank-frame check flagged a deliberate dip-to-black. Fix the check (use scene geometry; declare cuts in story.json `cuts`), never silence it.
+- The repair loop stops when fixes are exhausted and reports that the scene needs an authored change.
 
 ## Known limits (QA does not catch these — look at the frames yourself)
 Hero-vs-background contrast other than the moon, anatomical beauty, whether a cut feels earned, sound design (none yet).

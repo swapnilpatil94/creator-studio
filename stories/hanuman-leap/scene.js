@@ -170,7 +170,7 @@ function caption(n, t) {
   const lines = [[]]; let wsum = 0; const spaceW = g.measureText(" ").width + 6;
   tokens.forEach((tk, i) => { const w = g.measureText(tk).width; if (wsum + w > 880 && lines[lines.length - 1].length) { lines.push([]); wsum = 0; } lines[lines.length - 1].push({ tk, w, i }); wsum += w + spaceW; });
   const fadeIn = smooth((n - (b.start_seconds - 0.12)) / 0.2), fadeOut = 1 - smooth((n - (b.end_seconds + 0.25)) / 0.25);
-  const total = lines.length, y0 = 1560 - (total - 1) * 44; lastCap = { x0: W / 2 - 440, x1: W / 2 + 440, y0: y0 - 46, y1: y0 + (total - 1) * 88 + 46 };
+  const total = lines.length, y0 = 1560 - (total - 1) * 44; const maxLw = Math.max(...lines.map(ln => ln.reduce((a, q) => a + q.w + spaceW, -spaceW))); lastCap = { x0: W / 2 - maxLw / 2, x1: W / 2 + maxLw / 2, y0: y0 - 46, y1: y0 + (total - 1) * 88 + 46 };
   const gr = g.createLinearGradient(0, 1380, 0, H); gr.addColorStop(0, "rgba(0,0,0,0)"); gr.addColorStop(1, "rgba(0,0,0,0.6)"); g.globalAlpha = fadeIn * fadeOut; g.fillStyle = gr; g.fillRect(0, 1380, W, H - 1380);
   lines.forEach((ln, li) => {
     const lw = ln.reduce((a, q) => a + q.w + spaceW, -spaceW); let x = W / 2 - lw / 2;
