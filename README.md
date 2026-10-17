@@ -11,8 +11,7 @@ This repository is a fresh extraction target, not a copy of either source projec
 - [`MIGRATION_INVENTORY.md`](MIGRATION_INVENTORY.md) — exactly which existing components are
   reused, adapted, left behind, or net-new, and why.
 
-**Status:** repository scaffold + architecture/migration docs only. No code has been extracted
-yet — see "Deferred to later sessions" in `ARCHITECTURE.md`.
+**Start here:** [`docs/MASTER_PLAYBOOK.md`](docs/MASTER_PLAYBOOK.md) (pipeline, skills per stage, gates, measured facts, roadmap) and [`docs/STUDIO_GUIDE.md`](docs/STUDIO_GUIDE.md) (how to run it). Original architecture notes below are historical.
 
 Source projects (preserved, untouched):
 - `swapnilpatil94/infographics-motion` — Kathaaya Blender engine + the `technical-data-cinema`
