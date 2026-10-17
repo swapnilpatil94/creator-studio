@@ -1,0 +1,62 @@
+[
+ {
+  "id": "t1",
+  "channel": "kathaaya",
+  "title": "Karna gives his armour",
+  "tags": [
+   "mahabharata",
+   "karna"
+  ],
+  "status": "researched"
+ },
+ {
+  "id": "t2",
+  "channel": "kathaaya",
+  "title": "Hanuman's leap",
+  "tags": [
+   "ramayana",
+   "hanuman"
+  ],
+  "story": "hanuman-leap"
+ },
+ {
+  "id": "t3",
+  "channel": "kathaaya",
+  "title": "Eklavya's thumb",
+  "tags": [
+   "mahabharata",
+   "eklavya"
+  ],
+  "status": "idea"
+ },
+ {
+  "id": "t4",
+  "channel": "agentic-ai",
+  "title": "Why agents loop forever",
+  "tags": [
+   "agents",
+   "tool-use"
+  ],
+  "status": "researched"
+ },
+ {
+  "id": "t5",
+  "channel": "agentic-ai",
+  "title": "MCP in 60 seconds",
+  "tags": [
+   "mcp",
+   "protocols"
+  ],
+  "status": "researched"
+ },
+ {
+  "id": "t6",
+  "channel": "agentic-ai",
+  "title": "Queues vs retries for agents",
+  "tags": [
+   "system-design",
+   "queues"
+  ],
+  "status": "researched"
+ }
+]

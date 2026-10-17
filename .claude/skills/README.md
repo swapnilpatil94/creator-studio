@@ -1,15 +1,8 @@
 # .claude/skills
+Project-level skills, loaded on demand by description. Third-party provenance: `docs/THIRD_PARTY.md`; usage: `docs/STUDIO_GUIDE.md`.
 
-Project-level Claude Code skills. See `ARCHITECTURE.md` §8 for the full planned list.
+**Craft:** film-direction-method - motion-continuity-doctrine - seekable-libs-and-render-quality - gsap-core / gsap-timeline / gsap-plugins (official GSAP, MIT)
+**Audience:** retention-psychology - long-form-playbook - content-planning-research
+**Engine/ops:** dot-cinema-visual-qa - visual-direction-scene-generation - reference-reel-analysis - creator-studio-operator
 
-**Implemented this session** (written from real, verified work — see `REFERENCE_PROFILE.md` and
-the rendered `engine/output/agentic-fanout-demo.mp4`):
-- `reference-reel-analysis/` — how to analyze a reference video for transferable technique without
-  copying the source creator's content; includes the copyright-boundary check.
-- `visual-direction-scene-generation/` — the scene contract, what already exists in `engine/examples/`,
-  how to pick channel visual language from `identity.json`, and a real bug pattern to check for.
-
-**Still planned, not yet written:** channel strategy/topic planning, mythology research &
-verification, AI/tech research & verification, hook/story architecture, narration & Chatterbox
-production, animation-engine development (broader than scene generation), audio/video sync &
-rendering, production QA & recovery, publishing prep, analytics review.
+Not yet written: mythology-research-verification and ai-tech-research-verification as separate skills (their standards currently live in `content-planning-research`), publishing-prep, animation-engine-development.

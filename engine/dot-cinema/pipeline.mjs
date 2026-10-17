@@ -55,8 +55,9 @@ const injectArgs = [];
 if (TYPE === "html") { const ov = readOv(); const cfgFile = path.join(out, "studio-config.json"); fs.writeFileSync(cfgFile, JSON.stringify({ compat: true, fit: true, captions: cfg.captionsInScene ? null : { segments: segs.segments, lead, dim: ov.capDim?.scene ?? 0.6, timeScale: TS }, exposure: ov.exposure?.scene ?? 1 })); injectArgs.push("--studio-config", cfgFile, "--inject", path.join(here, "studio-shim.js")); }
 const fpR = sha(html, ovFile, audioForRender, path.join(engine, "scripts/render.mjs"), path.join(here, "studio-shim.js")) + TYPE + audioOffset + TS.toFixed(3) + (cfg.captionsInScene ? "c" : "");
 if (force || state.render !== fpR || !fs.existsSync(mp4)) {
-  fs.rmSync(path.join(out, "frames"), { recursive: true, force: true }); ev("render", "running", "0");
-  const child = spawn("node", [path.join(engine, "scripts/render.mjs"), "--gpu", "--html", html, "--out", mp4, "--audio", audioForRender, "--audio-offset", String(audioOffset), "--fps", String(cfg.fps || 24), "--duration", String(sceneDur.toFixed(3)), ...injectArgs], { cwd: engine });
+  const fdir = path.join(out, "frames"), fpFile = path.join(fdir, ".fingerprint"); const canResume = !force && fs.existsSync(fpFile) && fs.readFileSync(fpFile, "utf8") === fpR;
+  if (!canResume) { fs.rmSync(fdir, { recursive: true, force: true }); fs.mkdirSync(fdir, { recursive: true }); fs.writeFileSync(fpFile, fpR); } ev("render", "running", canResume ? "resuming from existing frames" : "0");
+  const child = spawn("node", [path.join(engine, "scripts/render.mjs"), "--gpu", "--html", html, "--out", mp4, "--audio", audioForRender, "--audio-offset", String(audioOffset), "--fps", String(cfg.fps || 24), "--duration", String(sceneDur.toFixed(3)), ...(canResume ? ["--resume"] : []), ...injectArgs], { cwd: engine });
   let log = ""; const onData = d => { const s = d.toString(); log += s; const m = [...s.matchAll(/Frames: (\d+)\/(\d+)/g)].pop(); if (m) ev("render", "progress", m[1] + "/" + m[2]); };
   child.stdout.on("data", onData); child.stderr.on("data", onData);
   const code = await new Promise(res => child.on("close", res)); fs.writeFileSync(path.join(out, "render.log"), log);

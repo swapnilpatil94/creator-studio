@@ -179,13 +179,16 @@ try {
   }
   console.log(`Rendering ${frameCount} frames at ${fps} fps (1080×1920), ${duration.toFixed(2)} seconds`);
 
+  const resume = args.includes("--resume"); let skipped = 0;
   for (let i = 0; i < frameCount; i++) {
+    const framePath = path.join(frameDir, `frame-${String(i).padStart(6, "0")}.png`);
+    if (resume) { const st = await fs.stat(framePath).catch(() => null); if (st && st.size > 1000) { skipped++; continue; } }
     const sceneTime = Math.min(contract.duration, (i / fps) * sceneTimeScale);
     await page.evaluate(time => window.renderAt(time), sceneTime);
-    await page.screenshot({ path: path.join(frameDir, `frame-${String(i).padStart(6, "0")}.png`), type: "png", animations: "disabled" });
+    await page.screenshot({ path: framePath, type: "png", animations: "disabled" });
     if (i % Math.max(1, Math.floor(fps * 5)) === 0 || i === frameCount - 1) process.stdout.write(`\rFrames: ${i + 1}/${frameCount}`);
   }
-  process.stdout.write("\n");
+  process.stdout.write("\n"); if (resume) console.log("Resumed: reused " + skipped + " existing frames");
   if (externalRequests.length) throw new Error(`Offline policy failed; external network requests detected: ${[...new Set(externalRequests)].join(", ")}`);
   if (browserErrors.length) throw new Error(`Browser errors detected:\n- ${[...new Set(browserErrors)].join("\n- ")}`);
 } finally {
