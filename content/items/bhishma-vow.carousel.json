@@ -1,0 +1,76 @@
+{
+ "pillar": "family-moral",
+ "topic": "bhishma-vow",
+ "language": "hi",
+ "sources": [
+  {
+   "label": "महाभारत, आदि पर्व (संभव पर्व), खंड १०० — के. एम. गांगुली का अंग्रेज़ी अनुवाद (सार्वजनिक डोमेन)",
+   "ref": "mahabharata-adi:100"
+  }
+ ],
+ "claims": [
+  {
+   "text": "निषादराज को आपत्ति थी कि सत्यवती की संतान के सामने देवव्रत जैसा प्रतिद्वंद्वी होगा।",
+   "en": "only one great objection rival existing in a co-wife's son he hath no security who hath a rival in thee",
+   "status": "verified",
+   "source": "mahabharata-adi:100"
+  },
+  {
+   "text": "देवव्रत ने कहा कि वे राज्य का अधिकार छोड़ चुके हैं और सत्यवती का पुत्र ही राजा बनेगा।",
+   "en": "son that may be born of this maiden shall be our king I have before long relinquished my right to the throne",
+   "status": "verified",
+   "source": "mahabharata-adi:100"
+  },
+  {
+   "text": "निषादराज को अपने वचन पर भरोसा था पर देवव्रत की भावी संतानों पर संदेह था।",
+   "en": "I have my doubts in respect of the children thou mayst beget",
+   "status": "verified",
+   "source": "mahabharata-adi:100"
+  },
+  {
+   "text": "तब देवव्रत ने आजीवन ब्रह्मचर्य की प्रतिज्ञा ली।",
+   "en": "from this day I adopt the vow of Brahmacharya study and meditation in celebacy",
+   "status": "verified",
+   "source": "mahabharata-adi:100"
+  },
+  {
+   "text": "देवताओं और ऋषियों ने कहा: 'यह भीष्म (भयंकर) है।'",
+   "en": "This one is Bhisma the terrible Apsaras and the gods rain flowers",
+   "status": "verified",
+   "source": "mahabharata-adi:100"
+  },
+  {
+   "text": "प्रतिज्ञा ने उनके अपने जीवन को बाँध दिया (यह कथा की व्याख्या है, ग्रंथ का वाक्य नहीं)।",
+   "status": "interpretation"
+  }
+ ],
+ "ai_assisted": true,
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "status": "draft",
+ "created": "2026-10-18",
+ "slug": "bhishma-vow",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १०० (गांगुली अनुवाद)",
+ "hashtags": [
+  "#kathaaya",
+  "#भीष्मकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "id": "bhishma-vow.carousel",
+ "format": "carousel",
+ "hook": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?",
+ "slides": [
+  "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?",
+  "राजा शांतनु सत्यवती से विवाह करना चाहते थे",
+  "निषादराज को एक ही चिंता थी",
+  "सत्यवती के पुत्र के सामने देवव्रत प्रतिद्वंद्वी होंगे",
+  "देवव्रत ने कहा: मैंने राज्य का अधिकार छोड़ दिया",
+  "निषादराज बोले: पर तुम्हारी संतानें दावा कर सकती हैं",
+  "तब देवव्रत ने आजीवन ब्रह्मचर्य का व्रत लिया",
+  "देवताओं ने फूल बरसाए: यह भीष्म है, भयंकर प्रतिज्ञा वाला",
+  "व्याख्या: पिता को सुख मिला, पर उनका अपना जीवन बँध गया",
+  "कथा सेव करें · फ़ॉलो करें @kathaaya.stories"
+ ],
+ "cta_slide_last": true,
+ "cta": "सेव करें · फ़ॉलो करें"
+}

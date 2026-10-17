@@ -139,7 +139,7 @@
     "reel"
    ],
    "corpus": "mahabharata-adi:111",
-   "status": "idea",
+   "status": "qa_passed",
    "sensitivity": "normal",
    "query": "Kunti Surya Karna born armour cast into river"
   },
@@ -168,7 +168,7 @@
     "reel"
    ],
    "corpus": "mahabharata-adi:100",
-   "status": "idea",
+   "status": "qa_passed",
    "sensitivity": "normal",
    "query": "Devavrata vow celibacy fisherman Satyavati"
   }

@@ -1,0 +1,69 @@
+{
+ "pillar": "unsaid-relations",
+ "topic": "karna-birth-kunti",
+ "language": "hi",
+ "sources": [
+  {
+   "label": "महाभारत, आदि पर्व (संभव पर्व), खंड १११ — के. एम. गांगुली का अंग्रेज़ी अनुवाद (सार्वजनिक डोमेन)",
+   "ref": "mahabharata-adi:111"
+  }
+ ],
+ "claims": [
+  {
+   "text": "दुर्वासा ने कुंती (पृथा) को ऐसा मंत्र दिया जिससे वे किसी भी देवता को बुलाकर संतान पा सकती थीं।",
+   "en": "Durvasa imparted to her a formula of invocation for summoning any of the celestials she liked for giving her children",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "कुंती ने कन्या-अवस्था में जिज्ञासावश सूर्य को बुला लिया।",
+   "en": "Kunti became curious and in her maiden-hood summoned the god Arka Sun",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "सूर्य से कवच और कुंडलों के साथ जन्मे पुत्र का नाम कर्ण था।",
+   "en": "a son known all over the world as Karna encased in natural armour and with face brightened by ear-rings",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "रिश्तेदारों के भय से कुंती ने शिशु को जल में डाल दिया।",
+   "en": "from fear of her relatives she resolved to conceal she cast her offspring into the water",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "राधा के सूत जाति वाले पति ने बच्चे को उठाया और पत्नी के साथ पुत्र की तरह पाला।",
+   "en": "husband of Radha of the Suta caste took up the child thus cast into the water and brought him up as their own son",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "राधा और उनके पति ने उसका नाम वसुसेन रखा, क्योंकि वह जन्म से कवच और कुंडल के साथ था।",
+   "en": "bestowed on him the name of Vasu-sena born with wealth because he was born with a natural armour and ear-rings",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  }
+ ],
+ "ai_assisted": true,
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "status": "draft",
+ "created": "2026-10-18",
+ "slug": "karna-birth-kunti",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १११ (गांगुली अनुवाद)",
+ "hashtags": [
+  "#kathaaya",
+  "#कर्णकथा",
+  "#महाभारत"
+ ],
+ "id": "karna-birth-kunti.fb_text",
+ "format": "fb_text",
+ "hook": "कुंती ने अपने पहले पुत्र को नदी में क्यों बहाया?",
+ "body_lines": [
+  "दुर्वासा ने कुंती को एक मंत्र दिया — किसी भी देवता को बुलाने का।",
+  "जिज्ञासा में उन्होंने सूर्य को बुला लिया, और कवच-कुंडल वाले एक बालक का जन्म हुआ।",
+  "लोक-लाज के भय से उन्होंने उसे जल में छोड़ दिया — और एक सूत दंपति ने उसे अपना लिया…"
+ ],
+ "cta": "आपके हिसाब से उस घड़ी कुंती के सामने क्या रास्ता था? नीचे अपनी राय लिखिए, और कथा सेव कर लीजिए।"
+}
