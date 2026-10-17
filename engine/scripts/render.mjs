@@ -56,7 +56,7 @@ try {
   for (let ai = 0; ai < args.length; ai++) if (args[ai] === "--inject") await page.addInitScript({ path: path.resolve(process.cwd(), args[ai + 1]) });
   const sceneUrl = pathToFileURL(htmlPath);
   sceneUrl.searchParams.set("render", "1");
-  await page.goto(sceneUrl.href, { waitUntil: "load" });
+  await page.goto(sceneUrl.href, { waitUntil: "load" }); await page.evaluate(() => window.__ready || true);
   await page.evaluate(() => document.fonts.ready.then(() => true));
   const contract = await page.evaluate(() => ({
     renderAt: typeof window.renderAt,

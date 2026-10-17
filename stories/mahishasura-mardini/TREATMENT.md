@@ -29,18 +29,21 @@ Candidates: single journey (Mahishasura's rise), before/after (gods then goddess
 ## Signature shot / native move
 The eight sigils converge into one point and burst into the goddess (dots reforming). Peak at ~75%: the trident strike, preceded by silence.
 
-## Shot list (camera moves: push, pull, pan/track, roll, shake — 5)
-| Shot | Beat | Framing | Move | Why |
+## Visual method (revised 2026-10-17): real paintings as a coloured dot matrix
+The dot-silhouette goddess was dropped (unreadable). Public-domain paintings of Durga (credits in `assets/CREDITS.md`) are baked into a 16-colour palette and drawn as coloured dots through the shared camera: the viewer sees the actual god, in the channel's dot-cinema style, with dot-dissolve cuts between paintings. Callouts (dotted ring + Devanagari label) name the painted parts on the narration word. Thumbnails use the painting in full colour (the real god, as the channel's Ganesh thumbnails do).
+
+## Shot list (camera moves: push, pull, pan/track, roll, shake)
+| Shot | Beat | Painting | Move | Why |
 |---|---|---|---|---|
-| defeat | m01 | wide -> medium on horns | slow push | event first; menace grows |
-| shape | m02 | medium close, horned head | push + roll | unstable enemy |
-| throne | m03 | wide throne | pull + roll + shake on fall | the order collapses |
-| radiance | m04 | wide -> medium | convergence, push | signature: lights become her |
-| gifts | m05 | medium | slow pull | each gift docks at a hand |
-| ride | m06 | wide track | pan right with lion | arrival, momentum |
-| battle | m07 | medium two-shot | shake | clash |
-| trident | m08 | wide -> close -> wide | thrust, slam, release | peak |
-| dawn | m09 | medium | slow pull | resolution; sigils return |
+| hook | m01 | 06 Guler Durga | slow push to the face | the god is the first frame |
+| enemy | m02 | 02 DIA Durga vs bull | pan from Durga to the bull, spotlight + label "महिषासुर" | names the enemy |
+| defeat | m03 | 04 gods (dimmed) | drift, roll, dim | the gods stand diminished |
+| radiance | m04 | 04 gods -> goddess | pan to the goddess; the gods' lights stream into her | signature: lights become her |
+| gifts | m05 | 01 Ravi Varma Durga | callouts: धनुष-बाण, सिंह, अनेक भुजाएँ | explains the painted god |
+| ride | m06 | 02 DIA (lion) | track | arrival |
+| battle | m07 | 02 DIA (bull) | shake, flashing spotlight | clash |
+| trident | m08a/b | 03 DIA decapitated bull | silence, hover spotlight on the weapon, strike flash, spotlight on the demon, dissolve to dots, dotted title | peak |
+| dawn | m09 | 01 Ravi Varma Durga | pull back, gods' dots return | echo of the hook |
 
 ## Cue map (all times from narration word starts, not fixed seconds)
 Cuts at beat starts minus 0.3 s (dot-dissolve). Silence 1 before m04's "लेकिन तभी" (gap after m03); silence 2 before the trident (inside m08, after "और अंत में —").

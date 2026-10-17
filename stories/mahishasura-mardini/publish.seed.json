@@ -45,9 +45,10 @@
   "indian mythology stories"
  ],
  "thumbnail": {
-  "t": 29.0,
+  "image": "01",
   "line1": "देवताओं की",
-  "line2": "हार से?"
+  "line2": "हार से?",
+  "note": "देवी दुर्गा के जन्म की कथा"
  },
  "categoryId": "24",
  "language": "hi",

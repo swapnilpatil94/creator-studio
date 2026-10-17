@@ -35,13 +35,13 @@ export function project(cam, p, x, y) {
 
 // ---------- dotify: luminance(R) + tint(G) layer -> hex dot matrix ----------
 const COOL = [226, 236, 255], WARM = [255, 178, 70], GOLD = [255, 206, 110];
-const TINTS = [COOL, [240, 222, 200], WARM, GOLD];
+const CRIMSON = [226, 62, 48], TINTS = [COOL, [240, 222, 200], WARM, GOLD, CRIMSON];   // tint index 4 (crimson) is selected by the B channel > 128
 export function dotify(g, L, o) {
   const cell = o.cell || 7, gain = o.gain === undefined ? 1 : o.gain, alpha = o.alpha === undefined ? 1 : o.alpha;
   const dis = o.dis || 0, seed = o.seed || 0, maxR = o.maxR || 0.52;
   const d = L.g.getImageData(0, 0, LW, LH).data;
   const NB = 8, buckets = [];
-  for (let i = 0; i < NB * 4; i++) buckets.push(new Path2D());
+  for (let i = 0; i < NB * 5; i++) buckets.push(new Path2D());
   const rowH = cell * 0.866;
   let row = 0;
   for (let y = cell / 2; y < H; y += rowH, row++) {
@@ -53,7 +53,7 @@ export function dotify(g, L, o) {
       const Lm = Math.pow(d[i] * a / 65025 * gain, 1.3);
       if (Lm < 0.045) continue;
       const gt = d[i + 1];
-      const tb = gt < 40 ? 0 : gt < 110 ? 1 : gt < 190 ? 2 : 3;
+      const tb = d[i + 2] > 128 ? 4 : gt < 40 ? 0 : gt < 110 ? 1 : gt < 190 ? 2 : 3;
       const rb = Math.min(NB - 1, (Math.min(1, Lm) * NB) | 0);
       let px = x, py = y;
       if (dis > 0) {
@@ -67,7 +67,7 @@ export function dotify(g, L, o) {
   }
   g.save();
   g.globalAlpha = alpha * (1 - dis);
-  for (let tb = 0; tb < 4; tb++) {
+  for (let tb = 0; tb < 5; tb++) {
     const c = TINTS[tb]; g.fillStyle = "rgb(" + c[0] + "," + c[1] + "," + c[2] + ")";
     for (let rb = 0; rb < NB; rb++) g.fill(buckets[tb * NB + rb]);
   }

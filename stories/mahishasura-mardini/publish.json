@@ -123,9 +123,10 @@
   }
  ],
  "thumbnailSeed": {
-  "t": 29,
+  "image": "01",
   "line1": "देवताओं की",
-  "line2": "हार से?"
+  "line2": "हार से?",
+  "note": "देवी दुर्गा के जन्म की कथा"
  },
  "checks": [
   {
@@ -231,17 +232,17 @@
   {
    "name": "thumbnail: JPG upload size < 2 MB",
    "ok": true,
-   "detail": "16:9 195 KB, 9:16 485 KB"
+   "detail": "16:9 304 KB, 9:16 546 KB"
   },
   {
    "name": "thumbnail: safe zone: no text bottom-right",
    "ok": true,
-   "detail": "title box ends at y=444/720"
+   "detail": "title box ends at y=557/720"
   },
   {
    "name": "thumbnail: safe zone: no text bottom-left",
    "ok": true,
-   "detail": "title box x0=44"
+   "detail": "title box x0=43"
   },
   {
    "name": "thumbnail: 120 px previews generated",
@@ -276,5 +277,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-17T11:48:43.534Z"
+ "generated": "2026-10-17T12:20:51.329Z"
 }

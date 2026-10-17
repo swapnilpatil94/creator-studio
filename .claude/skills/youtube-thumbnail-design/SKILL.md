@@ -8,10 +8,13 @@ Rules distilled (ideas only, no code) from `inferen-sh/skills` `youtube-thumbnai
 ## Brand (from the channel logo, banner and past thumbnails)
 Logo: black circle, antique-gold ink-brush Devanagari "क" with ONE crimson brush stroke, ornate thin gold ring with four small diamonds, serif "KATHAAYA". Palette tokens live in `channels/kathaaya/youtube.json` (`brand.palette`): ink black, antique gold, crimson accent, warm white. Rule: **gold + ink black, crimson only as the single accent** (matches `channels/kathaaya/identity.json`). Past thumbnails: figure on one side, 2-line bold Devanagari title on the other (line 1 white, line 2 gold), thin rule, small wordmark top-left.
 
+## The actual god (decided with the owner, 2026-10-17)
+CTR comes from seeing the real deity: the thumbnail uses a **public-domain painting of the god in full colour** (see `stories/<name>/assets/CREDITS.md`), exactly like the channel's Ganesh covers (large painted figure, thick-outlined 2-line Devanagari title, red brush stroke, small parchment note, tiny "ANCIENT STORIES REIMAGINED" header and "STORIES THAT STAY" footer, round logo). The film itself shows the same painting as a coloured dot matrix. Never use an image whose licence you have not checked: dotting a copyrighted image does not remove the copyright.
+
 ## Rules (checked in `output/thumb-check.json` and shown in the dashboard)
 - Sizes: 1280x720 minimum for 16:9 (we render 1280x720), upload JPG/PNG under 2 MB (the uploader converts to JPG). Shorts: 9:16 frame 1080x1920.
 - **120 px test**: a 120-px-wide preview is generated (`thumb-120-*.png`); mood, subject and text must read there.
-- Text <= 4 words (our limit), bold sans, >= 60 pt equivalent, shadow/stroke for contrast, never duplicates the title.
+- Main title text <= 4 words (our limit; a separate small parchment note of <= 5 words is allowed), bold sans, >= 60 pt equivalent, shadow/stroke for contrast, never duplicates the title.
 - <= 3 colours (ink black, gold, warm white; crimson only as the accent). Contrast ratio of text vs background >= 4.5:1 (computed).
 - Safe zones: nothing important bottom-right (duration stamp) or bottom-left (progress/chapter marker) on 16:9.
 - One focal point; the subject occupies 30-50% of the frame; eyes/gaze point toward the text.

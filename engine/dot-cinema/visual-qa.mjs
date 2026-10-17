@@ -11,7 +11,7 @@ async function measure(ov) {
   const b = await chromium.launch({ headless: true }), p = await b.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 1 });
   await p.addInitScript(o => { window.OVERRIDES = o; }, ov);
   const errs = []; p.on("pageerror", e => errs.push(e.message));
-  await p.goto(pathToFileURL(html).href);
+  await p.goto(pathToFileURL(html).href); await p.evaluate(() => window.__ready || true);
   const dur = await p.evaluate(() => window.getDuration()), out = [];
   for (let t = 0.4; t < dur - 0.4; t += std.sampleStep) out.push(await p.evaluate(t => window.__debug(t), t));
   await b.close(); if (errs.length) throw new Error("page errors: " + errs.join("; "));

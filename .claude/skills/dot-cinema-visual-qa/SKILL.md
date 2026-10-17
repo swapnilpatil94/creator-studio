@@ -53,3 +53,8 @@ Audio/video: 1080x1920, 24 fps, level −30..−12 dB mean, no clipping, no sile
 ## Known limits (QA does not catch these — look at the frames yourself)
 Hero-vs-background contrast other than the moon, anatomical beauty, whether a cut feels earned, sound design (none yet).
 After auto-repair always read a contact sheet (`ffmpeg -ss … -frames:v 1`) before sending a film.
+
+## Painting mode (added 2026-10-17: real paintings as a coloured dot matrix)
+- Use public-domain/CC0 paintings only (`assets/CREDITS.md`). `assets/prep.py` crops museum mats, quantises each painting to a 16-colour palette, and bakes dot size + a detail channel; `engine/dot-cinema/painting.js` (`loadImages`, `drawPainting`, `dotifyPalette`) draws them through the shared camera. Scenes `await window.__ready` (render, QA and thumbnail scripts do).
+- What failed first: luminance-only gold dots (muddy, figures unreadable) and pale-sky paintings (white blobs). What works: palette colour kept per dot, flat sky/paper dimmed by the detail channel, portraits (Ravi Varma, Basholi, Guler) read well; wide landscape paintings read worst in a 9:16 frame, so pan and zoom on the figures and add callouts.
+- Callouts name painted parts on the narration word (`callout()` in the Durga scene); only label what is visible and identifiable (never label a shield as a chakra).

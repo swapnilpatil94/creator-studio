@@ -13,3 +13,4 @@ audio/cache/
 .env.local
 .yt-token.json
 stories/*/.thumb-scene.js
+stories/*/assets/original/
