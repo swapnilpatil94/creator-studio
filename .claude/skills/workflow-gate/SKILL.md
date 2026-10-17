@@ -14,7 +14,7 @@ Before each stage **Read the listed SKILL.md files in this session** (not from m
 | 4 Voice | `chatterbox-voice-director`, `narration-craft` | `narration/voice/` (one narration: narration.wav, segments.json, meta.json with the emotion per phrase) |
 | 5 Visuals | `film-direction-method`, `motion-continuity-doctrine`, `visual-direction-scene-generation`, `dot-cinema-visual-qa`, `seekable-libs-and-render-quality` | `TREATMENT.md` shot list + cue map + sound table; authored `sound.json` (>= 2 silences) |
 | 6 Render | `dot-cinema-visual-qa` | pipeline gates (visual QA 0 violations, A/V QA) |
-| 7 Publish prep | `titles-and-thumbnails`, `youtube-packaging`, `youtube-seo-description`, `youtube-thumbnail-design` (+ `retention-audit` after publishing) | `publish.json` from `planner/seo.mjs` (5 titles, description, <= 15 tags, query test, brand line, disclosure), thumbnails + `thumb-check.json` from `tools/thumbnail.mjs`, and a human-approved checklist in the dashboard (`publish.review.json`); the upload route refuses without it |
+| 7 Publish prep | `titles-and-thumbnails`, `youtube-packaging`, `youtube-seo-description`, `youtube-thumbnail-design`, `kathaaya-thumbnail-director` (+ `retention-audit` after publishing) | `publish.json` from `planner/seo.mjs` (5 titles, description, <= 15 tags, query test, brand line, disclosure), thumbnails + `thumb-check.json` from `tools/thumbnail.mjs`, and a human-approved checklist in the dashboard (`publish.review.json`); the upload route refuses without it |
 
 ## After publishing
 Import analytics (`planner/import-analytics.mjs`), run `planner/report.mjs`, re-run `planner/yt-outliers.mjs` weekly. Log what was learned in `docs/PLAN_*.md`.

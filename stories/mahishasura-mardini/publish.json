@@ -4,27 +4,27 @@
  "format": "short",
  "titleOptions": [
   {
-   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
-   "formula": "question gap (channel style: question + emoji + brand)"
+   "t": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱 | KATHAAYA",
+   "formula": "transformation: answers the thumbnail's question without repeating it"
   },
   {
-   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा 🔱 | KATHAAYA",
-   "formula": "pattern break"
+   "t": "हार चुके देवताओं का तेज — और जन्म हुआ दुर्गा का | KATHAAYA",
+   "formula": "consequence"
   },
   {
-   "t": "तीनों लोकों के देवता हार गए, फिर? 🔱 | KATHAAYA",
-   "formula": "stakes"
+   "t": "देवताओं के पास कोई रास्ता नहीं बचा, फिर क्या हुआ? | KATHAAYA",
+   "formula": "stakes / curiosity"
   },
   {
-   "t": "महिषासुर से देवता क्यों हारे? | KATHAAYA",
-   "formula": "question gap 2"
+   "t": "महिषासुर से देवता क्यों हारे? दुर्गा की कथा | KATHAAYA",
+   "formula": "question gap"
   },
   {
-   "t": "बिना माँ की देवी: दुर्गा की कथा | KATHAAYA",
-   "formula": "contrast"
+   "t": "किसी माँ ने नहीं, देवताओं के तेज ने रची दुर्गा | KATHAAYA",
+   "formula": "contrast (traditional account; variants noted in description)"
   }
  ],
- "title": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
+ "title": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱 | KATHAAYA",
  "description": "देवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। चित्र प्रतीकात्मक हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n🕉️ कथा सुनिए। अर्थ खोजिए। परंपरा को नए रूप में देखिए।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n#Durga #Navratri #Mahishasura #Shorts",
  "tags": [
   "maa durga",
@@ -57,8 +57,7 @@
  "containsSyntheticMedia": true,
  "video": "output/mahishasura-mardini.mp4",
  "thumbnails": [
-  "output/thumb-9x16.png",
-  "output/thumb-16x9.png"
+  "output/thumb-9x16.png"
  ],
  "tagEvidence": [
   {
@@ -123,21 +122,29 @@
   }
  ],
  "thumbnailSeed": {
-  "image": "01",
-  "line1": "देवताओं की",
-  "line2": "हार से?",
-  "note": "देवी दुर्गा के जन्म की कथा"
+  "external": "assets/thumbnail/durga-owner-art.webp",
+  "artSource": "owner-generated artwork (external image tool), supplied 2026-10-17",
+  "textOnArt": {
+   "headline": [
+    "माँ दुर्गा",
+    "का जन्म?"
+   ],
+   "support": [
+    "देवताओं के तेज से कैसे प्रकट हुई",
+    "महिषासुर वध की कथा"
+   ]
+  }
  },
  "checks": [
   {
    "name": "title <= 100 chars",
    "ok": true,
-   "detail": 50
+   "detail": 60
   },
   {
    "name": "title before | <= 60 chars (desktop truncation)",
    "ok": true,
-   "detail": 39
+   "detail": 49
   },
   {
    "name": "primary keyword in first 55 chars of title",
@@ -200,59 +207,39 @@
    "detail": "mahishasura-mardini.mp4"
   },
   {
-   "name": "thumbnail: text <= 4 words",
+   "name": "thumbnail: source art is 9:16 (+/-1%)",
    "ok": true,
-   "detail": "4 words"
+   "detail": "941x1672 (0.5628)"
   },
   {
-   "name": "thumbnail: does not repeat the title",
+   "name": "thumbnail: source resolution >= 720x1280",
    "ok": true,
-   "detail": "different words"
-  },
-  {
-   "name": "thumbnail: text contrast >= 4.5:1 (gold on ink)",
-   "ok": true,
-   "detail": "9.2:1"
-  },
-  {
-   "name": "thumbnail: white line contrast >= 4.5:1",
-   "ok": true,
-   "detail": "17.6:1"
-  },
-  {
-   "name": "thumbnail: colours <= 3 + one accent (ink, gold, warm white; crimson accent)",
-   "ok": true,
-   "detail": "palette from channel brand"
-  },
-  {
-   "name": "thumbnail: 16:9 is 1280x720",
-   "ok": true,
-   "detail": "1280x720"
+   "detail": "941x1672 (upscaled to 1080x1920; slightly soft)"
   },
   {
    "name": "thumbnail: JPG upload size < 2 MB",
    "ok": true,
-   "detail": "16:9 304 KB, 9:16 546 KB"
+   "detail": "960 KB"
   },
   {
-   "name": "thumbnail: safe zone: no text bottom-right",
+   "name": "thumbnail: headline 3-7 words (owner brief)",
    "ok": true,
-   "detail": "title box ends at y=557/720"
+   "detail": "4 words: माँ दुर्गा / का जन्म?"
   },
   {
-   "name": "thumbnail: safe zone: no text bottom-left",
-   "ok": true,
-   "detail": "title box x0=43"
+   "name": "thumbnail: at most ONE short supporting line (owner brief)",
+   "ok": false,
+   "detail": "2 supporting line(s): देवताओं के तेज से कैसे प्रकट हुई / महिषासुर वध की कथा"
   },
   {
-   "name": "thumbnail: 120 px previews generated",
+   "name": "thumbnail: 120 px preview generated",
    "ok": true,
-   "detail": "thumb-120-*.png"
+   "detail": "thumb-120-9x16.png"
   },
   {
-   "name": "thumbnail: logo loaded from the channel",
+   "name": "thumbnail: artwork source recorded",
    "ok": true,
-   "detail": "channel profile image"
+   "detail": "owner-generated artwork (external image tool), supplied 2026-10-17"
   },
   {
    "name": "claims verified at source",
@@ -277,5 +264,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-17T13:10:06.962Z"
+ "generated": "2026-10-17T13:12:03.708Z"
 }

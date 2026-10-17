@@ -3,6 +3,7 @@ name: youtube-thumbnail-design
 description: Design KATHAAYA thumbnails (9:16 Shorts frame and 16:9) from the channel's real logo and palette: brand template, 120 px test, safe zones, contrast, text limits, upload limits. Use whenever tools/thumbnail.mjs is run or a thumbnail is reviewed.
 ---
 # YouTube thumbnail design
+> **Shorts covers now follow `kathaaya-thumbnail-director` (owner brief): owner-generated ink/parchment art ingested with `tools/thumbnail.mjs --external`. The painting/dot-frame templates below remain as fallbacks and for 16:9.**
 Rules distilled (ideas only, no code) from `inferen-sh/skills` `youtube-thumbnail-design` (README MIT badge, no LICENSE file in the repo; we did not install its `belt` CLI or its paid image-generation workflow) and `kostja94/marketing-skills` (MIT). Brand facts come from the live channel (observed 2026-10-17).
 
 ## Brand (from the channel logo, banner and past thumbnails)
@@ -14,7 +15,7 @@ CTR comes from seeing the real deity: the thumbnail uses a **public-domain paint
 ## Rules (checked in `output/thumb-check.json` and shown in the dashboard)
 - Sizes: 1280x720 minimum for 16:9 (we render 1280x720), upload JPG/PNG under 2 MB (the uploader converts to JPG). Shorts: 9:16 frame 1080x1920.
 - **120 px test**: a 120-px-wide preview is generated (`thumb-120-*.png`); mood, subject and text must read there.
-- Main title text <= 4 words (our limit; a separate small parchment note of <= 5 words is allowed), bold sans, >= 60 pt equivalent, shadow/stroke for contrast, never duplicates the title.
+- Headline 3-7 words and at most ONE short supporting line (owner brief; our older 4-word limit applied only to the fallback templates), bold sans, >= 60 pt equivalent, shadow/stroke for contrast, never duplicates the title.
 - <= 3 colours (ink black, gold, warm white; crimson only as the accent). Contrast ratio of text vs background >= 4.5:1 (computed).
 - Safe zones: nothing important bottom-right (duration stamp) or bottom-left (progress/chapter marker) on 16:9.
 - One focal point; the subject occupies 30-50% of the frame; eyes/gaze point toward the text.

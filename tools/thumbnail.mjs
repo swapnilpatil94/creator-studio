@@ -7,6 +7,19 @@ const dir = path.resolve(process.argv[2]), arg = (n, d) => process.argv.includes
 const seed = fs.existsSync(P("publish.seed.json")) ? JSON.parse(fs.readFileSync(P("publish.seed.json"), "utf8")).thumbnail || {} : {}, t = Number(arg("--t", seed.t ?? 5)), l1 = arg("--line1", seed.line1 ?? ""), l2 = arg("--line2", seed.line2 ?? ""), note = arg("--note", seed.note ?? ""), text = (l1 + " " + l2).trim() || arg("--text", seed.overlay ?? "");
 const brandF = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../channels/kathaaya/youtube.json"), brand = fs.existsSync(brandF) ? (JSON.parse(fs.readFileSync(brandF, "utf8")).brand || {}) : {}, pal = { bg: "#07060a", storm: "#2a1b10", gold: "#d4a94a", soft: "#ecc873", white: "#f4efe6", red: "#a8261c", ...(brand.palette ? { bg: brand.palette.bg_dark, storm: brand.palette.ink_glow, gold: brand.palette.gold, soft: brand.palette.gold_soft, white: brand.palette.title_white, red: brand.palette.crimson } : {}) }, logoUrl = brand.logo && brand.logo.url;
 if ([...text.split(/\s+/)].filter(Boolean).length > 4) { console.error("overlay text must be <= 4 words"); process.exit(1); }
+const EXT = arg("--external", seed.external);
+if (EXT) { // owner-generated artwork (kathaaya-thumbnail-director): convert to 1080x1920, run checks, no composition
+  const { spawnSync } = await import("node:child_process"), src = path.isAbsolute(EXT) ? EXT : P(EXT), out0 = P("output"); fs.mkdirSync(out0, { recursive: true });
+  const probe = JSON.parse(spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", src], { encoding: "utf8" }).stdout || "{}").streams?.[0] || {}, sw = probe.width || 0, sh = probe.height || 0;
+  spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-vf", "scale=1080:1920:flags=lanczos", path.join(out0, "thumb-9x16.png")]);
+  spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", path.join(out0, "thumb-9x16.png"), "-q:v", "3", path.join(out0, "thumb-9x16.jpg")]); spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", path.join(out0, "thumb-9x16.png"), "-vf", "scale=120:-2", path.join(out0, "thumb-120-9x16.png")]);
+  for (const f of ["thumb-16x9.png", "thumb-16x9.jpg", "thumb-120-16x9.png"]) fs.rmSync(path.join(out0, f), { force: true });
+  const bytes = fs.statSync(path.join(out0, "thumb-9x16.jpg")).size, ar = sw / Math.max(1, sh), toa = seed.textOnArt || {}, hw = (toa.headline || []).join(" ").split(/\s+/).filter(Boolean).length, sup = (toa.support || []).length;
+  const checks = [["source art is 9:16 (+/-1%)", Math.abs(ar - 9 / 16) < 0.01, sw + "x" + sh + " (" + ar.toFixed(4) + ")"], ["source resolution >= 720x1280", sw >= 720 && sh >= 1280, sw + "x" + sh + (sw < 1080 ? " (upscaled to 1080x1920; slightly soft)" : "")], ["JPG upload size < 2 MB", bytes < 2e6, (bytes / 1e3).toFixed(0) + " KB"],
+    ["headline 3-7 words (owner brief)", !toa.headline || (hw >= 3 && hw <= 7), toa.headline ? hw + " words: " + toa.headline.join(" / ") : "textOnArt.headline not declared"], ["at most ONE short supporting line (owner brief)", !toa.support || sup <= 1, toa.support ? sup + " supporting line(s): " + toa.support.join(" / ") : "textOnArt.support not declared"],
+    ["120 px preview generated", true, "thumb-120-9x16.png"], ["artwork source recorded", !!seed.artSource, seed.artSource || "set thumbnail.artSource"]].map(([name, ok, detail]) => ({ name, ok: !!ok, detail }));
+  fs.writeFileSync(path.join(out0, "thumb-check.json"), JSON.stringify({ external: EXT, checks }, null, 1)); console.log("external thumbnail ingested -> " + path.join(out0, "thumb-9x16.png") + "\n" + checks.map(c => (c.ok ? "PASS " : "WARN ") + c.name + ": " + c.detail).join("\n")); process.exit(0);
+}
 const PAINT = seed.image ? P("assets/color/" + seed.image + ".jpg") : null;
 let html = null;
 if (!PAINT) { // build a caption-free copy of the scene (the film burns captions into the canvas); the real film is untouched

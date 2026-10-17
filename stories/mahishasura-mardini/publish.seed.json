@@ -3,24 +3,24 @@
  "format": "short",
  "titles": [
   {
-   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
-   "formula": "question gap (channel style: question + emoji + brand)"
+   "t": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱 | KATHAAYA",
+   "formula": "transformation: answers the thumbnail's question without repeating it"
   },
   {
-   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा 🔱 | KATHAAYA",
-   "formula": "pattern break"
+   "t": "हार चुके देवताओं का तेज — और जन्म हुआ दुर्गा का | KATHAAYA",
+   "formula": "consequence"
   },
   {
-   "t": "तीनों लोकों के देवता हार गए, फिर? 🔱 | KATHAAYA",
-   "formula": "stakes"
+   "t": "देवताओं के पास कोई रास्ता नहीं बचा, फिर क्या हुआ? | KATHAAYA",
+   "formula": "stakes / curiosity"
   },
   {
-   "t": "महिषासुर से देवता क्यों हारे? | KATHAAYA",
-   "formula": "question gap 2"
+   "t": "महिषासुर से देवता क्यों हारे? दुर्गा की कथा | KATHAAYA",
+   "formula": "question gap"
   },
   {
-   "t": "बिना माँ की देवी: दुर्गा की कथा | KATHAAYA",
-   "formula": "contrast"
+   "t": "किसी माँ ने नहीं, देवताओं के तेज ने रची दुर्गा | KATHAAYA",
+   "formula": "contrast (traditional account; variants noted in description)"
   }
  ],
  "chosenTitle": 0,
@@ -45,10 +45,18 @@
   "indian mythology stories"
  ],
  "thumbnail": {
-  "image": "01",
-  "line1": "देवताओं की",
-  "line2": "हार से?",
-  "note": "देवी दुर्गा के जन्म की कथा"
+  "external": "assets/thumbnail/durga-owner-art.webp",
+  "artSource": "owner-generated artwork (external image tool), supplied 2026-10-17",
+  "textOnArt": {
+   "headline": [
+    "माँ दुर्गा",
+    "का जन्म?"
+   ],
+   "support": [
+    "देवताओं के तेज से कैसे प्रकट हुई",
+    "महिषासुर वध की कथा"
+   ]
+  }
  },
  "categoryId": "24",
  "language": "hi",
