@@ -1,0 +1,120 @@
+{
+ "story": "mahishasura-mardini",
+ "format": "short",
+ "generated": "2026-10-17T15:39:30.772Z",
+ "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
+ "instagram": {
+  "type": "REELS",
+  "caption": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nसेव करें, शेयर करें, और बताइए — अगली कथा कौन सी सुनें? 🙏\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura #Kathaaya",
+  "hashtags": [
+   "#Durga",
+   "#Navratri",
+   "#Mahishasura",
+   "#Kathaaya"
+  ],
+  "firstLine": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?",
+  "altText": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱. देवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (M…",
+  "cover": "output/thumb-9x16.png",
+  "shareToFeed": true,
+  "shareToFacebook": false,
+  "aiLabel": true,
+  "checks": [
+   {
+    "platform": "instagram",
+    "name": "caption <= 2200 chars",
+    "ok": true,
+    "detail": "515"
+   },
+   {
+    "platform": "instagram",
+    "name": "first line <= 125 chars (visible before 'more')",
+    "ok": true,
+    "detail": "60"
+   },
+   {
+    "platform": "instagram",
+    "name": "hashtags <= 5 (few, relevant)",
+    "ok": true,
+    "detail": "4"
+   },
+   {
+    "platform": "instagram",
+    "name": "keyword in first line",
+    "ok": true,
+    "detail": "तुम जानते हो, तीनों लोकों के देवता हारे तो दुर्गा बनीं कैसे?"
+   },
+   {
+    "platform": "instagram",
+    "name": "cover image exists",
+    "ok": true,
+    "detail": "output/thumb-9x16.png"
+   },
+   {
+    "platform": "instagram",
+    "name": "9:16 video",
+    "ok": true,
+    "detail": "1080x1920"
+   },
+   {
+    "platform": "instagram",
+    "name": "length <= 90 s (reel sweet spot)",
+    "ok": true,
+    "detail": "51 s"
+   },
+   {
+    "platform": "instagram",
+    "name": "AI disclosure in caption and label on",
+    "ok": true,
+    "detail": "set the 'AI label' toggle when publishing"
+   },
+   {
+    "platform": "instagram",
+    "name": "handle for follow CTA",
+    "ok": false,
+    "detail": "not provided yet: generic CTA used"
+   }
+  ]
+ },
+ "facebook": {
+  "type": "REELS",
+  "description": "जब देवता हारे, तब दुर्गा बनीं… बिना किसी माँ के 🔱\n\nदेवी दुर्गा का जन्म कैसे हुआ? महिषासुर वध कथा (Maa Durga birth story): कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\n▶️ YouTube पर देखें: https://youtu.be/Su1fr-b4Z-8\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#Durga #Navratri #Mahishasura",
+  "hashtags": [
+   "#Durga",
+   "#Navratri",
+   "#Mahishasura"
+  ],
+  "cover": "output/thumb-9x16.png",
+  "checks": [
+   {
+    "platform": "facebook",
+    "name": "description present, <= 2200 chars",
+    "ok": true,
+    "detail": "427"
+   },
+   {
+    "platform": "facebook",
+    "name": "hashtags <= 5",
+    "ok": true,
+    "detail": "3"
+   },
+   {
+    "platform": "facebook",
+    "name": "reel length <= 90 s",
+    "ok": true,
+    "detail": "51 s"
+   },
+   {
+    "platform": "facebook",
+    "name": "file size <= 1000 MB",
+    "ok": true,
+    "detail": "275 MB"
+   },
+   {
+    "platform": "facebook",
+    "name": "link back to YouTube",
+    "ok": true,
+    "detail": "https://youtu.be/Su1fr-b4Z-8"
+   }
+  ]
+ }
+}

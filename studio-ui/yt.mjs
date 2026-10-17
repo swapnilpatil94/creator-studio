@@ -43,7 +43,19 @@ export async function upload(pub, dir, { privacy = "private", log = () => {} } =
   if (!init.ok) throw new Error("upload init failed: " + (await init.text()).slice(0, 400)); const loc = init.headers.get("location"); if (!loc) throw new Error("no upload location returned");
   const put = await fetch(loc, { method: "PUT", headers: { "content-length": String(pl.bytes), "content-type": "video/mp4" }, body: fs.createReadStream(pl.file), duplex: "half" }); const txt = await put.text(); if (!put.ok) throw new Error("upload failed: " + txt.slice(0, 400));
   const v = JSON.parse(txt); log("uploaded: video id " + v.id);
-  let thumbOk = null; if (pl.thumb) { try { const jpg = path.join(dir, "output/thumb-upload.jpg"); const c = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", pl.thumb, "-q:v", "3", jpg]); if (c.status !== 0) throw new Error("jpg convert failed");
-      const tr = await fetch("https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + v.id, { method: "POST", headers: { authorization: "Bearer " + tok, "content-type": "image/jpeg" }, body: fs.readFileSync(jpg) }); thumbOk = tr.ok ? "set" : "failed: " + (await tr.text()).slice(0, 200); } catch (e) { thumbOk = "failed: " + e.message; } log("thumbnail: " + thumbOk); }
+  let thumbOk = null; if (pl.thumb) { thumbOk = await setThumbnail(v.id, pl.thumb, dir); log("thumbnail: " + thumbOk); }
   return { id: v.id, url: "https://youtu.be/" + v.id, privacy, thumbnail: thumbOk, uploaded: new Date().toISOString() };
+}
+
+// YouTube shows thumbnails 16:9 (search, channel page, Studio, suggested). A portrait (Shorts) image is composed onto a blurred fill of itself at 1280x720 so nothing is cropped; a 16:9 image is just scaled. JPEG under 2 MB.
+export function composeThumb(src, jpg) {
+  const probe = spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", src], { encoding: "utf8" }), [w, h] = probe.stdout.trim().split(",").map(Number);
+  const fc = w / h > 1.5 ? "[0:v]scale=1280:720[o]" : "[0:v]split[a][b];[a]scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,gblur=sigma=30,eq=brightness=-0.15[bg];[b]scale=-2:720[fg];[bg][fg]overlay=(W-w)/2:0[o]";
+  for (const q of [3, 6, 10]) { const c = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-filter_complex", fc, "-map", "[o]", "-frames:v", "1", "-q:v", String(q), jpg], { encoding: "utf8" }); if (c.status !== 0) throw new Error("thumbnail convert failed: " + c.stderr.slice(0, 200)); if (fs.statSync(jpg).size < 1.9e6) return jpg; }
+  return jpg;
+}
+export async function setThumbnail(videoId, src, dir) {
+  try { const jpg = composeThumb(src, path.join(dir, "output/thumb-upload.jpg")), tok = await accessToken();
+    const tr = await fetch("https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + videoId, { method: "POST", headers: { authorization: "Bearer " + tok, "content-type": "image/jpeg" }, body: fs.readFileSync(jpg) });
+    return tr.ok ? "set" : "failed: " + (await tr.text()).slice(0, 300); } catch (e) { return "failed: " + e.message; }
 }
