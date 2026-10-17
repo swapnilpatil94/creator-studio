@@ -1,15 +1,176 @@
 {
  "_note": "Topic bank. status: idea -> researching -> drafted -> qa_passed -> approved -> scheduled -> posted. sensitivity 'hold' = never auto-drafted: the manager decides the frame first. 'belief' = must be written as मान्यता, not fact. corpus = which research corpus can verify it today.",
  "topics": [
-  {"slug": "ganga-seven-sons", "pillar": "unsaid-relations", "title": "गंगा ने अपने सात पुत्रों को क्यों बहाया?", "formats": ["fb_text", "carousel", "blog", "reel"], "corpus": "mahabharata-adi:96-99", "status": "qa_passed", "sensitivity": "normal"},
-  {"slug": "karna-knew-pandava", "pillar": "family-moral", "title": "कर्ण को पता चला कि वो पांडव है, फिर भी वो क्यों नहीं बदला?", "formats": ["fb_text", "carousel", "blog"], "corpus": "mahabharata-udyoga (to fetch)", "status": "idea", "sensitivity": "normal"},
-  {"slug": "nine-durgas", "pillar": "saveable-lists", "title": "नवरात्रि के नौ रूप: कौन सा रूप क्या दर्शाता है", "formats": ["carousel", "fb_text", "blog"], "corpus": "devi-mahatmya (to fetch)", "status": "idea", "sensitivity": "normal", "note": "the 'what to ask for' framing promises boons: write as परंपरा में माना जाता है, never as a guarantee"},
-  {"slug": "valmiki-no-lakshman-rekha", "pillar": "banned-facts", "title": "क्या वाल्मीकि रामायण में लक्ष्मण रेखा है?", "formats": ["fb_text", "carousel", "blog"], "corpus": "ramayana-aranya (to fetch, Griffith)", "status": "idea", "sensitivity": "normal", "note": "claim must be verified against the text itself before it is posted; the doc states it as fact without a citation"},
-  {"slug": "hanuman-still-alive", "pillar": "still-alive", "title": "हनुमान जी आज भी कहाँ माने जाते हैं?", "formats": ["fb_text", "carousel"], "corpus": "none", "status": "idea", "sensitivity": "belief", "note": "frame: लोक-मान्यता. No claim that anyone has seen him. Name the places as places of belief"},
-  {"slug": "108-shiva-names", "pillar": "saveable-lists", "title": "शिव के 108 नाम और उनके अर्थ", "formats": ["carousel", "blog"], "corpus": "shiva-ashtottara (to fetch)", "status": "idea", "sensitivity": "normal"},
-  {"slug": "draupadi-five-husbands", "pillar": "unsaid-relations", "title": "द्रौपदी के पाँच पति क्यों?", "formats": ["blog", "reel"], "corpus": "mahabharata-adi (fetching)", "status": "idea", "sensitivity": "normal"},
-  {"slug": "draupadi-modern-parallel", "pillar": "modern-parallel", "title": "(held) द्रौपदी चीरहरण का आज से संबंध", "formats": [], "corpus": "n/a", "status": "idea", "sensitivity": "hold", "note": "REJECTED as a hook or meme in the policy: comparing a sacred figure's humiliation with a workplace case trivialises both. A sourced, respectful long-form may be considered by the manager"},
-  {"slug": "ravana-ten-heads-linkedin", "pillar": "modern-parallel", "title": "(held) रावण के 10 सिर = 10 डिग्रियाँ", "formats": [], "corpus": "n/a", "status": "idea", "sensitivity": "hold", "note": "REJECTED: a joke about a sacred figure needs an explicit humour label; not part of the core brand"},
-  {"slug": "what-if-sita-stayed", "pillar": "what-if", "title": "अगर सीता रेखा पार न करतीं तो?", "formats": ["fb_text", "carousel"], "corpus": "ramayana-aranya (to fetch)", "status": "idea", "sensitivity": "normal", "note": "depends on valmiki-no-lakshman-rekha being verified first"}
+  {
+   "slug": "ganga-seven-sons",
+   "pillar": "unsaid-relations",
+   "title": "गंगा ने अपने सात पुत्रों को क्यों बहाया?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "mahabharata-adi:96-99",
+   "status": "qa_passed",
+   "sensitivity": "normal",
+   "query": "Ganga Shantanu eight children Vasus curse Vashishta"
+  },
+  {
+   "slug": "karna-knew-pandava",
+   "pillar": "family-moral",
+   "title": "कर्ण को पता चला कि वो पांडव है, फिर भी वो क्यों नहीं बदला?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog"
+   ],
+   "corpus": "BLOCKED: the Karna-Kunti and Krishna-Karna conversations are in the Udyoga Parva, which Wikisource does not hold section by section; need another public-domain Ganguli source",
+   "status": "blocked",
+   "sensitivity": "normal"
+  },
+  {
+   "slug": "nine-durgas",
+   "pillar": "saveable-lists",
+   "title": "नवरात्रि के नौ रूप: कौन सा रूप क्या दर्शाता है",
+   "formats": [
+    "carousel",
+    "fb_text",
+    "blog"
+   ],
+   "corpus": "devi-mahatmya (to fetch)",
+   "status": "idea",
+   "sensitivity": "normal",
+   "note": "the 'what to ask for' framing promises boons: write as परंपरा में माना जाता है, never as a guarantee"
+  },
+  {
+   "slug": "valmiki-no-lakshman-rekha",
+   "pillar": "banned-facts",
+   "title": "क्या वाल्मीकि रामायण में लक्ष्मण रेखा है?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog"
+   ],
+   "corpus": "BLOCKED: Wikisource Griffith Book III has only 24 of 75 cantos with text (the Lakshman Rekha cantos XLIII-XLVI are empty); need another public-domain Valmiki text (archive.org scan) before this topic can be verified",
+   "status": "blocked",
+   "sensitivity": "normal",
+   "note": "claim must be verified against the text itself before it is posted; the doc states it as fact without a citation"
+  },
+  {
+   "slug": "hanuman-still-alive",
+   "pillar": "still-alive",
+   "title": "हनुमान जी आज भी कहाँ माने जाते हैं?",
+   "formats": [
+    "fb_text",
+    "carousel"
+   ],
+   "corpus": "none",
+   "status": "idea",
+   "sensitivity": "belief",
+   "note": "frame: लोक-मान्यता. No claim that anyone has seen him. Name the places as places of belief"
+  },
+  {
+   "slug": "108-shiva-names",
+   "pillar": "saveable-lists",
+   "title": "शिव के 108 नाम और उनके अर्थ",
+   "formats": [
+    "carousel",
+    "blog"
+   ],
+   "corpus": "shiva-ashtottara (to fetch)",
+   "status": "idea",
+   "sensitivity": "normal"
+  },
+  {
+   "slug": "draupadi-five-husbands",
+   "pillar": "unsaid-relations",
+   "title": "द्रौपदी के पाँच पति क्यों?",
+   "formats": [
+    "blog",
+    "reel"
+   ],
+   "corpus": "mahabharata-adi: Sections ~185-199 (retrieval surfaced 199; read the swayamvara and vaivahika sections before drafting)",
+   "status": "idea",
+   "sensitivity": "normal",
+   "query": "Draupadi five husbands Vyasa previous birth boon swayamvara"
+  },
+  {
+   "slug": "draupadi-modern-parallel",
+   "pillar": "modern-parallel",
+   "title": "(held) द्रौपदी चीरहरण का आज से संबंध",
+   "formats": [],
+   "corpus": "n/a",
+   "status": "idea",
+   "sensitivity": "hold",
+   "note": "REJECTED as a hook or meme in the policy: comparing a sacred figure's humiliation with a workplace case trivialises both. A sourced, respectful long-form may be considered by the manager"
+  },
+  {
+   "slug": "ravana-ten-heads-linkedin",
+   "pillar": "modern-parallel",
+   "title": "(held) रावण के 10 सिर = 10 डिग्रियाँ",
+   "formats": [],
+   "corpus": "n/a",
+   "status": "idea",
+   "sensitivity": "hold",
+   "note": "REJECTED: a joke about a sacred figure needs an explicit humour label; not part of the core brand"
+  },
+  {
+   "slug": "what-if-sita-stayed",
+   "pillar": "what-if",
+   "title": "अगर सीता रेखा पार न करतीं तो?",
+   "formats": [
+    "fb_text",
+    "carousel"
+   ],
+   "corpus": "BLOCKED: Wikisource Griffith Book III has only 24 of 75 cantos with text (the Lakshman Rekha cantos XLIII-XLVI are empty); need another public-domain Valmiki text (archive.org scan) before this topic can be verified",
+   "status": "blocked",
+   "sensitivity": "normal",
+   "note": "depends on valmiki-no-lakshman-rekha being verified first"
+  },
+  {
+   "slug": "karna-birth-kunti",
+   "pillar": "unsaid-relations",
+   "title": "कर्ण का जन्म: कुंती ने उसे नदी में क्यों बहाया?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "mahabharata-adi:111",
+   "status": "idea",
+   "sensitivity": "normal",
+   "query": "Kunti Surya Karna born armour cast into river"
+  },
+  {
+   "slug": "pandu-kindama-curse",
+   "pillar": "unsaid-relations",
+   "title": "पांडु को शाप किसने दिया, और कुंती के पुत्र कैसे हुए?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog"
+   ],
+   "corpus": "mahabharata-adi:118",
+   "status": "idea",
+   "sensitivity": "normal",
+   "query": "Pandu Kindama deer curse Kunti Madri sons"
+  },
+  {
+   "slug": "bhishma-vow",
+   "pillar": "family-moral",
+   "title": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली जो उन्हें ही बाँध गई?",
+   "formats": [
+    "fb_text",
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "mahabharata-adi:100",
+   "status": "idea",
+   "sensitivity": "normal",
+   "query": "Devavrata vow celibacy fisherman Satyavati"
+  }
  ]
 }

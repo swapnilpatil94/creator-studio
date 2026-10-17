@@ -42,7 +42,7 @@ function run(it) {
   const clms = it.claims || []; if (!clms.length) add("FAIL", "claims", "no claims listed: every factual line must map to a claim");
   for (const c of clms) {
     if (!c.text || !c.status) { add("FAIL", "claim-schema", "claim needs text and status"); continue; }
-    if (c.status === "verified") { if (!c.source) { add("FAIL", "claim-source", `verified claim without source: ${c.text.slice(0, 40)}`); continue; } const m = /^([a-z-]+):(\d+)$/.exec(c.source); if (!m) { add("WARN", "claim-source-format", `source '${c.source}' is not corpus-resolvable (use <corpus>:<section>); verify by hand`); continue; }
+    if (c.status === "verified") { if (!c.source) { add("FAIL", "claim-source", `verified claim without source: ${c.text.slice(0, 40)}`); continue; } const m = /^([a-z-]+):([0-9IVXLC]+)$/.exec(c.source); if (!m) { add("WARN", "claim-source-format", `source '${c.source}' is not corpus-resolvable (use <corpus>:<section>); verify by hand`); continue; }
       const hits = search(c.en || c.text, 8); if (!fs.existsSync(path.join(root, "research/index.json"))) { add("WARN", "corpus-missing", "research index not built: claims not machine-verified (run tools/content/corpus.mjs)"); break; }
       const ok = hits.some(h => h.src === m[1] && String(h.n) === m[2]); if (!ok) add("FAIL", "claim-unverified", `claim not found in ${c.source} by retrieval: "${(c.en || c.text).slice(0, 60)}"`); }
     else if (c.status === "tradition" || c.status === "variant" || c.status === "interpretation") { if (!BELIEF_OK.test(all) && !/व्याख्या|कुछ (ग्रंथ|परंपरा)|अन्य|अलग/.test(all)) add("WARN", "label", `${c.status} claim should be labelled in the text`); }

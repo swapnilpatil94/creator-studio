@@ -9,6 +9,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SOURCES = {
   "mahabharata-adi": { title: n => `The_Mahabharata/Book_1:_Adi_Parva/Section_${n}`, label: n => `Mahabharata, Adi Parva, Section ${n} (Ganguli tr.)`, strip: /^[\s\S]*?Section [LXVI]+\s*\.?\s*(\([^)]*\))?/ },
 };
+// prefix sources: every subpage under a Wikisource title prefix (Griffith's Ramayana, one canto per page)
+const PREFIX = { "ramayana-aranya": { prefix: "The_Ramayana/Book_III/", book: "Ramayana (Griffith tr.), Book III Aranya" }, "ramayana-sundara": { prefix: "The_Ramayana/Book_V/", book: "Ramayana (Griffith tr.), Book V Sundara" } };
+async function fetchPrefix(src) { const P0 = PREFIX[src], titles = []; let cont = ""; do { const j = await (await fetch(`https://en.wikisource.org/w/api.php?action=query&list=allpages&apprefix=${encodeURIComponent(P0.prefix)}&aplimit=500&format=json${cont}`, { headers: { "User-Agent": "KathaayaStudio/1.0 (swapnilp576p@gmail.com)" } })).json(); titles.push(...j.query.allpages.map(x => x.title)); cont = j.continue ? "&apcontinue=" + encodeURIComponent(j.continue.apcontinue) : ""; } while (cont);
+  let ok = 0; for (const t of titles) { const m = /Canto ([IVXLC]+)/.exec(t); if (!m) continue; const f = path.join(dir, `${src}-${m[1]}.json`); if (fs.existsSync(f)) { ok++; continue; } const r = await (await fetch(`https://en.wikisource.org/w/api.php?action=parse&page=${encodeURIComponent(t)}&prop=text&format=json&formatversion=2&redirects=1`, { headers: { "User-Agent": "KathaayaStudio/1.0 (swapnilp576p@gmail.com)" } })).json(); if (!r.parse) continue; let text = clean(r.parse.text); const i = text.search(/Canto [IVXLC]+\./); if (i > -1) text = text.slice(i); fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(f, JSON.stringify({ src, n: m[1], label: `${P0.book}, ${t.split("/").pop()}`, source: "wikisource.org " + t, text })); ok++; await sleep(1000); } return ok; }
 const sleep = ms => new Promise(r => setTimeout(r, ms)), clean = t => t.replace(/<style[\s\S]*?<\/style>/g, "").replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&#160;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, " ").trim();
 async function fetchSection(src, n) {
   const f = path.join(dir, `${src}-${n}.json`); if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, "utf8"));
@@ -23,7 +27,8 @@ export function build() { const chunks = []; for (const f of fs.existsSync(dir) 
 export function search(q, k = 5) { if (!fs.existsSync(idxFile)) return []; const I = JSON.parse(fs.readFileSync(idxFile, "utf8")), qs = tok(q), k1 = 1.4, b = 0.75; return I.docs.map((d, i) => { let s = 0; for (const w of qs) { const f = d.tf[w] || 0; if (!f) continue; const idf = Math.log(1 + (I.N - (I.df[w] || 0) + 0.5) / ((I.df[w] || 0) + 0.5)); s += idf * f * (k1 + 1) / (f + k1 * (1 - b + b * d.len / I.avg)); } return { score: s, ...I.chunks[i] }; }).filter(x => x.score > 0).sort((a, b2) => b2.score - a.score).slice(0, k); }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const [cmd, a, b, c] = process.argv.slice(2);
-  if (cmd === "fetch") { let ok = 0; for (let n = +b; n <= +c; n++) { const d = await fetchSection(a, n); if (d) ok++; if (n % 20 === 0) console.log(`fetched through ${n} (${ok} ok)`); await sleep(1000); } console.log(`done: ${ok} sections`); console.log(build()); }
+  if (cmd === "fetch-prefix") { console.log("fetched", await fetchPrefix(a), "cantos"); console.log(build()); }
+  else if (cmd === "fetch") { let ok = 0; for (let n = +b; n <= +c; n++) { const d = await fetchSection(a, n); if (d) ok++; if (n % 20 === 0) console.log(`fetched through ${n} (${ok} ok)`); await sleep(1000); } console.log(`done: ${ok} sections`); console.log(build()); }
   else if (cmd === "build") console.log(build());
   else if (cmd === "search") for (const r of search(a, +b || 5)) console.log(`[${r.score.toFixed(1)}] ${r.label}\n   ${r.text.slice(0, 260)}…`);
   else console.log("usage: fetch <source> <from> <to> | build | search <query> [k]");
