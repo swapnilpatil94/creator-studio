@@ -10,7 +10,7 @@ for (const f of fs.readdirSync(D).filter(x => /^outliers-.*\.json$/.test(x))) { 
 const mined = Object.entries(cnt).filter(([, n]) => n >= 2).sort((a, b) => b[1] - a[1]).map(([t, n]) => ({ t, n }));
 const tags = []; let chars = 0; for (const t of [...mined.map(x => x.t), ...seed.extraTags]) { if (tags.includes(t) || chars + t.length + 1 > 480) continue; tags.push(t); chars += t.length + 1; }
 const title = seed.titles[seed.chosenTitle].t, dur = Math.round(segs.duration_seconds + (story.lead ?? 0.9) + 1.9);
-const description = [seed.summary, "", ...(seed.format === "long" ? ["अध्याय:", ...segs.segments.map(s => `${Math.floor(s.start_seconds / 60)}:${String(Math.floor(s.start_seconds % 60)).padStart(2, "0")} ${s.text.slice(0, 40)}`), ""] : []), seed.disclaimer, "", "आवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).", "", seed.hashtags.join(" ")].join("\n");
+const description = [seed.summary, "", ...(seed.format === "long" ? ["अध्याय:", ...segs.segments.map(s => `${Math.floor(s.start_seconds / 60)}:${String(Math.floor(s.start_seconds % 60)).padStart(2, "0")} ${s.text.slice(0, 40)}`), ""] : []), seed.disclaimer, "", ...(seed.brandLine ? [seed.brandLine, ""] : []), "आवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).", "", seed.hashtags.join(" ")].join("\n");
 const claims = fs.existsSync(P("claims.json")) ? JSON.parse(fs.readFileSync(P("claims.json"), "utf8")) : null, unchecked = claims ? claims.claims.filter(c => c.needs_check).length : null;
 const thumbs = ["thumb-9x16.png", "thumb-16x9.png"].filter(f => fs.existsSync(P("output/" + f)));
 const out = path.join(dir, "output"), videoFile = fs.readdirSync(out).find(f => f === story.name + ".mp4");

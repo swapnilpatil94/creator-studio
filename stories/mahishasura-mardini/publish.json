@@ -4,28 +4,28 @@
  "format": "short",
  "titleOptions": [
   {
-   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… | Maa Durga Birth Story",
-   "formula": "question gap + roman keyword"
+   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
+   "formula": "question gap (channel style: question + emoji + brand)"
   },
   {
-   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा | Mahishasura Mardini",
+   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा 🔱 | KATHAAYA",
    "formula": "pattern break"
   },
   {
-   "t": "तीनों लोकों के देवता हार गए, फिर? | Durga Katha",
+   "t": "तीनों लोकों के देवता हार गए, फिर? 🔱 | KATHAAYA",
    "formula": "stakes"
   },
   {
-   "t": "महिषासुर से देवता क्यों हारे? | Mahishasur Vadh Story",
+   "t": "महिषासुर से देवता क्यों हारे? | KATHAAYA",
    "formula": "question gap 2"
   },
   {
-   "t": "बिना माँ की देवी: दुर्गा की कथा | Navratri Katha",
+   "t": "बिना माँ की देवी: दुर्गा की कथा | KATHAAYA",
    "formula": "contrast"
   }
  ],
- "title": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… | Maa Durga Birth Story",
- "description": "देवी दुर्गा का जन्म कैसे हुआ? कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं। 58 सेकंड में पूरी कथा।\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। चित्र प्रतीकात्मक हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n#Durga #Navratri #Mahishasura #Shorts",
+ "title": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
+ "description": "देवी दुर्गा का जन्म कैसे हुआ? (Maa Durga birth story, Mahishasura Mardini) कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।\n\nकथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। चित्र प्रतीकात्मक हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n🕉️ कथा सुनिए। अर्थ खोजिए। परंपरा को नए रूप में देखिए।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n#Durga #Navratri #Mahishasura #Shorts",
  "tags": [
   "maa durga",
   "mahishasur vadh",
@@ -134,23 +134,24 @@
  ],
  "thumbnailSeed": {
   "t": 29,
-  "overlay": "बिना माँ के?"
+  "line1": "बिना माँ",
+  "line2": "की देवी?"
  },
  "checks": [
   {
    "name": "title <= 100 chars",
    "ok": true,
-   "detail": 61
+   "detail": 50
   },
   {
    "name": "title <= ~60 chars shown on mobile before cut",
    "ok": true,
-   "detail": 37
+   "detail": 39
   },
   {
    "name": "description <= 5000 bytes",
    "ok": true,
-   "detail": 851
+   "detail": 1237
   },
   {
    "name": "tags <= 500 chars",
@@ -183,5 +184,5 @@
    "detail": "10 claims still need_check (human must verify or keep the disclaimer)"
   }
  ],
- "generated": "2026-10-17T11:34:49.715Z"
+ "generated": "2026-10-17T11:39:03.517Z"
 }

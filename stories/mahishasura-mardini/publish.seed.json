@@ -2,20 +2,54 @@
  "channel": "kathaaya",
  "format": "short",
  "titles": [
-  {"t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… | Maa Durga Birth Story", "formula": "question gap + roman keyword"},
-  {"t": "देवताओं की हार से बनीं थीं देवी दुर्गा | Mahishasura Mardini", "formula": "pattern break"},
-  {"t": "तीनों लोकों के देवता हार गए, फिर? | Durga Katha", "formula": "stakes"},
-  {"t": "महिषासुर से देवता क्यों हारे? | Mahishasur Vadh Story", "formula": "question gap 2"},
-  {"t": "बिना माँ की देवी: दुर्गा की कथा | Navratri Katha", "formula": "contrast"}
+  {
+   "t": "दुर्गा का जन्म कैसे हुआ? माँ से नहीं… 🔱 | KATHAAYA",
+   "formula": "question gap (channel style: question + emoji + brand)"
+  },
+  {
+   "t": "देवताओं की हार से बनीं थीं देवी दुर्गा 🔱 | KATHAAYA",
+   "formula": "pattern break"
+  },
+  {
+   "t": "तीनों लोकों के देवता हार गए, फिर? 🔱 | KATHAAYA",
+   "formula": "stakes"
+  },
+  {
+   "t": "महिषासुर से देवता क्यों हारे? | KATHAAYA",
+   "formula": "question gap 2"
+  },
+  {
+   "t": "बिना माँ की देवी: दुर्गा की कथा | KATHAAYA",
+   "formula": "contrast"
+  }
  ],
  "chosenTitle": 0,
- "summary": "देवी दुर्गा का जन्म कैसे हुआ? कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं। 58 सेकंड में पूरी कथा।",
+ "summary": "देवी दुर्गा का जन्म कैसे हुआ? (Maa Durga birth story, Mahishasura Mardini) कथा के अनुसार तीनों लोकों के देवता महिषासुर से हारे, तब उनके तेज से एक देवी प्रकट हुईं।",
  "disclaimer": "कथा देवी महात्म्य (मार्कण्डेय पुराण) की परंपरा पर आधारित है; अलग-अलग ग्रंथों में विवरण भिन्न हैं। चित्र प्रतीकात्मक हैं।",
- "hashtags": ["#Durga", "#Navratri", "#Mahishasura", "#Shorts"],
+ "hashtags": [
+  "#Durga",
+  "#Navratri",
+  "#Mahishasura",
+  "#Shorts"
+ ],
  "tagRe": "durga|mahishasur|navratri|devi|mata|katha|story|नवरात्रि|दुर्गा|महिषासुर|माँ",
  "topicQueries": "महिषासुर|दुर्गा",
- "extraTags": ["दुर्गा की कथा", "महिषासुर मर्दिनी", "नवरात्रि कथा", "देवी दुर्गा का जन्म", "maa durga birth story", "durga katha hindi", "hindu mythology shorts", "indian mythology stories"],
- "thumbnail": {"t": 29.0, "overlay": "बिना माँ के?"},
+ "extraTags": [
+  "दुर्गा की कथा",
+  "महिषासुर मर्दिनी",
+  "नवरात्रि कथा",
+  "देवी दुर्गा का जन्म",
+  "maa durga birth story",
+  "durga katha hindi",
+  "hindu mythology shorts",
+  "indian mythology stories"
+ ],
+ "thumbnail": {
+  "t": 29.0,
+  "line1": "बिना माँ",
+  "line2": "की देवी?"
+ },
  "categoryId": "24",
- "language": "hi"
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n🕉️ कथा सुनिए। अर्थ खोजिए। परंपरा को नए रूप में देखिए।"
 }
