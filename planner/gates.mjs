@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+// Enforces .claude/skills/workflow-gate for a story. usage: node planner/gates.mjs stories/<name> [--stage render]
+// Checks evidence files and the recorded skills_read in gates.json. Exit 1 on any FAIL.
+import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process"; import { fileURLToPath } from "node:url";
+const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, ".."), dir = path.resolve(process.argv[2] || "."), P = f => path.join(dir, f);
+const REQ = { topic: ["outlier-topic-engine", "content-planning-research", "retention-psychology"], research: ["mythology-research-verification"], story: ["storytelling", "storytelling-hooks", "viral-hooks", "hook-formulas", "narration-craft", "anti-ai-writing"], voice: ["chatterbox-voice-director", "narration-craft"], visuals: ["film-direction-method", "motion-continuity-doctrine", "visual-direction-scene-generation", "dot-cinema-visual-qa", "seekable-libs-and-render-quality"] };
+let fail = 0; const out = (l, m) => { console.log(l + " " + m); if (l === "FAIL") fail++; };
+const g = fs.existsSync(P("gates.json")) ? JSON.parse(fs.readFileSync(P("gates.json"), "utf8")) : null, story = fs.existsSync(P("story.json")) ? JSON.parse(fs.readFileSync(P("story.json"), "utf8")) : {};
+if (!g) { out("FAIL", "gates.json missing (record skills_read per stage and topic_evidence)"); process.exit(1); }
+const ev = story.topic_evidence || g.topic_evidence; if (!ev || !fs.existsSync(path.join(root, ev))) out("FAIL", "topic_evidence missing or file not found: " + ev); else out("PASS", "topic evidence " + ev);
+if (!fs.readdirSync(path.join(here, "data")).some(f => /^outliers-.*\.json$/.test(f))) out("FAIL", "no outlier data in planner/data (run planner/yt-outliers.mjs)");
+for (const [stage, skills] of Object.entries(REQ)) { const rec = (g.skills_read || {})[stage] || []; const miss = skills.filter(s => !rec.includes(s)); const nofile = skills.filter(s => !fs.existsSync(path.join(root, ".claude/skills", s, "SKILL.md"))); if (nofile.length) out("FAIL", stage + ": skill file missing " + nofile.join(", ")); else if (miss.length) out("FAIL", stage + ": skills not recorded as read: " + miss.join(", ")); else out("PASS", stage + ": all " + skills.length + " skills recorded"); }
+for (const f of ["TREATMENT.md", "claims.json", "sound.json", "beats.json"]) out(fs.existsSync(P(f)) ? "PASS" : "FAIL", f);
+const cc = spawnSync("node", [path.join(here, "claims-check.mjs"), dir], { encoding: "utf8" }); out(cc.status === 0 ? "PASS" : "FAIL", "claims ledger: " + (cc.stdout || "").trim().split("\n").pop());
+const hl = spawnSync("node", [path.join(here, "hook-lint.mjs"), dir], { encoding: "utf8" }); const hf = (hl.stdout || "").split("\n").filter(l => l.includes("FAIL")); out(hf.length ? "FAIL" : "PASS", "hook lint" + (hf.length ? ": " + hf.join(" | ") : ""));
+const sj = fs.existsSync(P("sound.json")) ? JSON.parse(fs.readFileSync(P("sound.json"), "utf8")) : null; if (sj && !(sj.silences || []).length) out("FAIL", "sound.json declares no `silences` (>= 2 required by film-direction-method)"); else if (sj) out((sj.silences || []).length >= 2 ? "PASS" : "FAIL", "silences declared: " + (sj.silences || []).length);
+console.log(fail ? "\nGATES FAILED (" + fail + ")" : "\nALL GATES PASSED"); process.exit(fail ? 1 : 0);

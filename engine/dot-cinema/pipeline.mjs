@@ -20,6 +20,8 @@ function run(stage, cmd, args, cwd) { ev(stage, "running"); const r = spawnSync(
 function fail(stage, r, extra) { ev(stage, "failed", "see " + path.join(out, stage + ".log")); console.error("[" + stage + "] FAILED (exit " + r.status + ")\n" + (extra || ((r.stdout || "") + (r.stderr || "")).split("\n").slice(-25).join("\n"))); fs.writeFileSync(stateFile, JSON.stringify(state, null, 1)); process.exit(r.status === 2 ? 2 : 1); }
 let TS = 1; const t0 = Date.now(); const readOv = () => JSON.parse(fs.readFileSync(ovFile, "utf8"));
 
+// ---- 0. workflow gates (strict mode) ----
+if (cfg.requireGates) { const r = spawnSync("node", [path.resolve(here, "../../planner/gates.mjs"), dir], { encoding: "utf8" }); fs.writeFileSync(path.join(out, "gates.log"), (r.stdout || "") + (r.stderr || "")); if (r.status !== 0) fail("gates", r, (r.stdout || "").split("\n").filter(l => l.startsWith("FAIL")).join("\n") + "\nWorkflow gates not met (see .claude/skills/workflow-gate); refusing to build."); ev("gates", "ok"); }
 // ---- 1. build / validate ----
 if (TYPE === "html") {
   const src = P(cfg.scene); const r = run("validate", "node", [path.join(here, "validate-scene.mjs"), src, "--json", path.join(out, "validate.json")], here);

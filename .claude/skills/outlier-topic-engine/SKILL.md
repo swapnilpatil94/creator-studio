@@ -6,6 +6,9 @@ description: Use when choosing the next KATHAAYA (mythology) or Agentic AI video
 
 Adapted from the pasted "Outlier Topic Engine" prompt. Keeps its useful core (research parsing → scoring → multi-format output); fixes what would have produced bad or unverifiable output. See also `content-planning-research` (data sources), `hook-formulas`, `titles-and-thumbnails`, `narration-craft`.
 
+## Tools (real data, this repo)
+`node planner/yt-outliers.mjs --channel <kathaaya|agentic-ai> --label <name> --days 120 --queries "q1|q2|…"` (YouTube Data API v3; key in gitignored `.env.local`; ~100 quota units per query, 10,000/day) then `node planner/yt-analyze.mjs --file planner/data/outliers-<label>-<date>.json --must "<relevance regex>" --out analysis-<name>`. The relevance regex is mandatory: search returns noise (songs for "क्या है"). Outputs: topic demand (>=100k, >=1M, median views/day, views per subscriber, shorts share), top outliers, title-pattern stats. Record the decision in `docs/PLAN_<date>.md`.
+
 ## Phase 1 — Parse real inputs only
 - Input must be what the user supplies or what you fetched this session: 3–5 competitor transcripts/metadata with **their real view counts and channel median** (outlier ratio = views ÷ channel median; compute it, never estimate or invent it). No inputs → say so and ask; do not make up competitors.
 - Strip catchphrases, sponsor reads, intro/outro padding. State the **core curiosity gap** of each video in one sentence, quoting the transcript line it came from.
