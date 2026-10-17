@@ -1,0 +1,11 @@
+{
+ "name": "कथाया (KATHAAYA)",
+ "tagline": "भारतीय कथाएँ, स्रोत के साथ",
+ "domain": "https://kathaaya.getbyterush.com",
+ "language": "hi",
+ "author": "KATHAAYA संपादकीय टीम",
+ "contact_email": "CONTACT_EMAIL_TO_BE_SET",
+ "social": {"instagram": "https://www.instagram.com/kathaaya.stories/", "facebook": "https://www.facebook.com/profile.php?id=1354404841091894", "youtube": "https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ"},
+ "sections": {"itihasa": "इतिहास (महाभारत और रामायण)", "puranas": "पुराण", "vrat-tyohar": "व्रत और त्योहार"},
+ "adsense_client": null
+}

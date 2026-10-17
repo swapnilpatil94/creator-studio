@@ -17,7 +17,7 @@ function mixOnce(gainDb) {
 const stat = (file, a, b) => { const x = spawnSync("ffmpeg", ["-hide_banner", "-i", file, "-af", `atrim=${a}:${b},astats=metadata=1:reset=0`, "-f", "null", "-"], { encoding: "utf8" }).stderr; const m = [...x.matchAll(/RMS level dB: (-?[\d.inf]+)/g)]; return m.length ? Number(m[m.length - 1][1]) : -120; };
 const segs = JSON.parse(fs.readFileSync(segFile, "utf8")).segments;
 function measureRatios() { const ratios = [];
-for (const s of segs) { const a = s.start_seconds + lead + 0.1, b = s.end_seconds + lead - 0.1; if (b - a < 0.4) continue; ratios.push({ beat: s.beat_id, voice: stat(path.join(tmp, "voice.wav"), a, b), bed: stat(path.join(tmp, "duck.wav"), a, b) }); }
+for (const s of segs) { if (!(s.words && s.words.length)) continue;   /* silent cards/breaths have no voice to measure */ const a = s.start_seconds + lead + 0.1, b = s.end_seconds + lead - 0.1; if (b - a < 0.4) continue; ratios.push({ beat: s.beat_id, voice: stat(path.join(tmp, "voice.wav"), a, b), bed: stat(path.join(tmp, "duck.wav"), a, b) }); }
 return ratios; }
 let gainDb = 0, ratios, worst, tries = 0;
 for (;;) { mixOnce(gainDb); ratios = measureRatios(); worst = Math.min(...ratios.map(x => x.voice - x.bed)); if (worst >= 12.5 || tries >= 4) break; gainDb -= (13 - worst); tries++; console.log("auto-gain: voice margin " + worst.toFixed(1) + " dB too low, lowering sound by " + (13 - worst).toFixed(1) + " dB (total " + gainDb.toFixed(1) + " dB)"); }

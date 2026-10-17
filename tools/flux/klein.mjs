@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+// Local image generation with FLUX.2 Klein 4B (distilled, 4 steps) through a running ComfyUI server (default http://127.0.0.1:8188; override with COMFY_URL).
+// Models found on this Mac: ~/Documents/ComfyUI/models/{diffusion_models/flux-2-klein-4b.safetensors, text_encoders/qwen_3_4b.safetensors, vae/flux2-vae.safetensors}; server code ~/Documents/ComfyUI-server, venv ~/Documents/ComfyUI/.venv.
+// usage: node tools/flux/klein.mjs --prompt "..." --out flux-out/name.jpg [--ratio 4:5|16:9|9:16|1:1] [--seed N] [--steps 4] [--batch file.json]
+//   batch file: [{ "slug": "x", "prompt": "...", "ratio": "4:5" }, ...] -> flux-out/<slug>.jpg one by one (resumable: existing files are skipped)
+// Output is the model size resized to the platform size (4:5 -> 1080x1350, 16:9 -> 1920x1080, 9:16 -> 1080x1920). No watermark. Images of deities must carry the AI-art disclosure in the post (content QA enforces it).
+import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process";
+const a = process.argv.slice(2), arg = (k, d) => { const i = a.indexOf(k); return i > -1 ? a[i + 1] : d; }, URL0 = process.env.COMFY_URL || "http://127.0.0.1:8188";
+const SIZES = { "4:5": [1024, 1280, 1080, 1350], "16:9": [1344, 768, 1920, 1080], "9:16": [768, 1344, 1080, 1920], "1:1": [1024, 1024, 1080, 1080] };
+export const graph = (prompt, w, h, seed, steps = 4) => ({
+  1: { class_type: "UNETLoader", inputs: { unet_name: "flux-2-klein-4b.safetensors", weight_dtype: "default" } }, 2: { class_type: "CLIPLoader", inputs: { clip_name: "qwen_3_4b.safetensors", type: "flux2", device: "default" } }, 3: { class_type: "VAELoader", inputs: { vae_name: "flux2-vae.safetensors" } },
+  4: { class_type: "CLIPTextEncode", inputs: { text: prompt, clip: ["2", 0] } }, 5: { class_type: "ConditioningZeroOut", inputs: { conditioning: ["4", 0] } }, 6: { class_type: "CFGGuider", inputs: { model: ["1", 0], positive: ["4", 0], negative: ["5", 0], cfg: 1 } },
+  7: { class_type: "KSamplerSelect", inputs: { sampler_name: "euler" } }, 8: { class_type: "Flux2Scheduler", inputs: { steps, width: w, height: h } }, 9: { class_type: "RandomNoise", inputs: { noise_seed: seed } }, 10: { class_type: "EmptyFlux2LatentImage", inputs: { width: w, height: h, batch_size: 1 } },
+  11: { class_type: "SamplerCustomAdvanced", inputs: { noise: ["9", 0], guider: ["6", 0], sampler: ["7", 0], sigmas: ["8", 0], latent_image: ["10", 0] } }, 12: { class_type: "VAEDecode", inputs: { samples: ["11", 0], vae: ["3", 0] } }, 13: { class_type: "SaveImage", inputs: { images: ["12", 0], filename_prefix: "kathaaya" } } });
+export async function alive() { try { return (await fetch(URL0 + "/system_stats")).ok; } catch { return false; } }
+export async function generate(prompt, out, { ratio = "4:5", seed = Math.floor(Math.random() * 2 ** 31), steps = 4 } = {}) {
+  const [w, h, W, H] = SIZES[ratio] || SIZES["4:5"]; const r = await fetch(URL0 + "/prompt", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ prompt: graph(prompt, w, h, seed, steps) }) }); if (!r.ok) throw new Error("comfy rejected the graph: " + (await r.text()).slice(0, 400)); const { prompt_id } = await r.json();
+  for (let i = 0; i < 600; i++) { await new Promise(s => setTimeout(s, 2000)); const hst = await (await fetch(`${URL0}/history/${prompt_id}`)).json(), e = hst[prompt_id]; if (!e) continue; if (e.status && e.status.status_str === "error") throw new Error("comfy error: " + JSON.stringify(e.status.messages).slice(0, 300)); const img = Object.values(e.outputs || {}).flatMap(o => o.images || [])[0]; if (!img) continue;
+    const png = Buffer.from(await (await fetch(`${URL0}/view?filename=${encodeURIComponent(img.filename)}&subfolder=${encodeURIComponent(img.subfolder)}&type=${img.type}`)).arrayBuffer()); fs.mkdirSync(path.dirname(out), { recursive: true }); const tmp = out + ".png"; fs.writeFileSync(tmp, png);
+    const c = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", tmp, "-vf", `scale=${W}:${H}:flags=lanczos`, "-q:v", "2", out]); fs.rmSync(tmp); if (c.status !== 0) throw new Error("resize failed"); return { out, seed, size: [W, H] }; }
+  throw new Error("timed out waiting for ComfyUI");
+}
+if (process.argv[1] && process.argv[1].endsWith("klein.mjs")) {
+  if (!(await alive())) { console.error(`ComfyUI is not running at ${URL0}. Start it: bash tools/flux/start-comfy.sh`); process.exit(2); }
+  const batch = arg("--batch", null); const jobs = batch ? JSON.parse(fs.readFileSync(batch, "utf8")).map(j => ({ prompt: j.prompt, out: path.join("flux-out", j.slug + ".jpg"), ratio: j.ratio || "4:5", seed: j.seed })) : [{ prompt: arg("--prompt"), out: arg("--out", "flux-out/test.jpg"), ratio: arg("--ratio", "4:5"), seed: arg("--seed") ? +arg("--seed") : undefined }];
+  for (const j of jobs) { if (!j.prompt) throw new Error("--prompt required"); if (fs.existsSync(j.out)) { console.log("skip (exists)", j.out); continue; } const t = Date.now(); const r = await generate(j.prompt, j.out, { ratio: j.ratio, seed: j.seed, steps: +arg("--steps", 4) }); console.log("made", r.out, r.size.join("x"), ((Date.now() - t) / 1000).toFixed(0) + "s"); }
+}

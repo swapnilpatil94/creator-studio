@@ -1,0 +1,33 @@
+# Builds the blog (approved posts only) plus the carousel images Instagram fetches, and deploys to Cloudflare Pages.
+# Needs repo secrets CLOUDFLARE_API_TOKEN (Pages edit) and CLOUDFLARE_ACCOUNT_ID, and the variable CF_PAGES_PROJECT.
+name: blog-deploy
+on:
+  push: { branches: [main], paths: ["blog/**", "content/items/**", "tools/content/**"] }
+  workflow_dispatch:
+permissions: { contents: read }
+concurrency: { group: blog-deploy, cancel-in-progress: true }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
+      - run: npm ci --prefix engine
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
+      - run: npx --prefix engine playwright install --with-deps chromium
+      - uses: actions/cache@v4
+        with:
+          path: research/corpus
+          key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
+      - run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+      - run: node tools/content/qa-content.mjs --all
+      - run: node blog/build.mjs && node tools/content/render-all-carousels.mjs blog/dist/c
+      - name: Deploy to Cloudflare Pages
+        if: ${{ vars.CF_PAGES_PROJECT != '' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy blog/dist --project-name=${{ vars.CF_PAGES_PROJECT }}

@@ -1,0 +1,14 @@
+{
+ "_note": "Weekly slots in IST. Starting hypothesis from the owner's planning doc (2026-10-18), NOT proven: we measure Meta Insights and YouTube Analytics for 4 weeks (A/B the 11:00 vs 19:00 text slots) and then keep what wins. kind -> what is posted. One approved item per slot; an empty slot is reported, never filled with filler.",
+ "timezone": "Asia/Kolkata",
+ "slots": {
+  "mon": [{"time": "11:00", "kind": "fb_text"}, {"time": "11:00", "kind": "carousel"}, {"time": "19:00", "kind": "reel"}, {"time": "20:00", "kind": "fb_long"}],
+  "tue": [{"time": "11:00", "kind": "carousel"}, {"time": "19:00", "kind": "reel"}],
+  "wed": [{"time": "11:00", "kind": "fb_text"}, {"time": "19:00", "kind": "reel"}, {"time": "20:00", "kind": "fb_long"}],
+  "thu": [{"time": "11:00", "kind": "carousel"}, {"time": "19:00", "kind": "reel"}],
+  "fri": [{"time": "11:00", "kind": "fb_text"}, {"time": "19:00", "kind": "reel"}, {"time": "20:00", "kind": "fb_long"}],
+  "sat": [{"time": "11:00", "kind": "carousel"}, {"time": "19:00", "kind": "reel"}],
+  "sun": [{"time": "11:00", "kind": "fb_text"}, {"time": "19:00", "kind": "reel"}, {"time": "20:00", "kind": "yt_long"}]
+ },
+ "limits": {"fb_reels_per_day": 30, "ig_posts_per_day": 100, "min_gap_minutes_same_platform": 20}
+}

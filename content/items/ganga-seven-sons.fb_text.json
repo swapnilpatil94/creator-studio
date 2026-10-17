@@ -1,0 +1,69 @@
+{
+ "pillar": "unsaid-relations",
+ "topic": "ganga-seven-sons",
+ "language": "hi",
+ "sources": [
+  {
+   "label": "महाभारत, आदि पर्व (संभव पर्व), खंड ९६–९९ — के. एम. गांगुली का अंग्रेज़ी अनुवाद (सार्वजनिक डोमेन)",
+   "ref": "mahabharata-adi:96-99"
+  }
+ ],
+ "claims": [
+  {
+   "text": "शांतनु से विवाह की शर्त थी कि वे गंगा के किसी काम में दख़ल नहीं देंगे और कभी कटु शब्द नहीं कहेंगे।",
+   "en": "thou must not interfere with me in anything I do be it agreeable or disagreeable nor address me unkindly",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "आठ संतानें हुईं; पहली सात को गंगा ने जन्म लेते ही नदी में डाल दिया।",
+   "en": "eight children born thrown into the river by Ganga as soon as they were born",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "आठवें बच्चे के समय शांतनु ने उसे रोका और गंगा से पूछा कि वह कौन है।",
+   "en": "when the eighth child was born king said Slay it not Who art thou and whose",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "वे आठ वसु थे, जिन्हें वशिष्ठ (अपव) के शाप से मनुष्य-रूप में जन्म लेना पड़ा।",
+   "en": "eight illustrious Vasus from Vashishta curse to assume human forms Apava",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "वसुओं ने गंगा से माँगा कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए; ऋषि ने कहा था कि वे जन्म के एक वर्ष के भीतर शाप-मुक्त होंगे।",
+   "en": "Vasus begged boon as soon as they would be born I should throw them into the water freed within a year of your birth among men",
+   "status": "verified",
+   "source": "mahabharata-adi:99"
+  },
+  {
+   "text": "द्यौ को, जिसके कारण गाय चुराई गई, लंबे समय तक पृथ्वी पर रहना पड़ा; वही बालक देवव्रत (गंगेय) हुआ।",
+   "en": "Dyau shall dwell on earth for length of time child named Gangeya and Deva-brata",
+   "status": "verified",
+   "source": "mahabharata-adi:99"
+  }
+ ],
+ "ai_assisted": true,
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।",
+ "status": "draft",
+ "created": "2026-10-18",
+ "id": "ganga-seven-sons.fb_text",
+ "slug": "ganga-seven-sons",
+ "format": "fb_text",
+ "hook": "गंगा ने अपने सात पुत्रों को क्यों बहाया?",
+ "body_lines": [
+  "शांतनु से विवाह की शर्त थी — कभी दख़ल मत देना।",
+  "आठ संतानें हुईं, और सात को गंगा ने जन्म लेते ही नदी में डाल दिया।",
+  "आठवें पर शांतनु ने रोका — तब गंगा ने वो सच बताया, जो महाभारत में दर्ज है…"
+ ],
+ "cta": "आपके हिसाब से शांतनु का इतने समय चुप रहना सही था? नीचे अपनी राय लिखिए, और कथा सेव कर लीजिए।",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड ९६–९९ (गांगुली अनुवाद)",
+ "hashtags": [
+  "#kathaaya",
+  "#गंगाकथा",
+  "#महाभारत"
+ ]
+}

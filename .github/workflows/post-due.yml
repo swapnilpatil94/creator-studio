@@ -1,0 +1,40 @@
+# Posts what is due. Slots (IST): 11:00, 19:00, 20:00. GitHub cron can run several minutes late, so each run looks 20 minutes ahead and 6 hours back; entries are marked before sending (no double posts).
+# Minutes budget: 3 runs/day x ~3 min = ~270 min/month (private repos get 2,000 free minutes; check Settings > Billing).
+name: post-due
+on:
+  schedule:
+    - cron: "25 5 * * *"    # 10:55 IST
+    - cron: "25 13 * * *"   # 18:55 IST
+    - cron: "25 14 * * *"   # 19:55 IST
+  workflow_dispatch:
+    inputs: { dry_run: { description: "dry run (send nothing)", type: boolean, default: true } }
+permissions: { contents: write }
+concurrency: { group: post-due, cancel-in-progress: false }
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      META_APP_ID: ${{ secrets.META_APP_ID }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
+      - run: npm ci --prefix engine
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
+      - run: npx --prefix engine playwright install --with-deps chromium
+      - uses: actions/cache@v4
+        with:
+          path: research/corpus
+          key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
+      - run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+      - name: Post due items
+        run: node tools/content/post-due.mjs --window 20 ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '--dry-run' || '' }}
+      - name: Record results
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          git add content/schedule.json && (git diff --cached --quiet || git commit -m "post-due: update schedule results" && git push)

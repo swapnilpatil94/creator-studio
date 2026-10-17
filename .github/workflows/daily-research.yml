@@ -1,0 +1,25 @@
+# 06:00 IST: snapshot Facebook/Instagram performance (for the slot A/B test) and refresh the topic outlier data; commits to the `data` branch so main stays clean.
+name: daily-research
+on:
+  schedule: [{ cron: "30 0 * * *" }]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node tools/content/insights.mjs
+      - name: Commit snapshot to the data branch
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          git fetch origin data || true; git checkout -B data $(git rev-parse --verify -q origin/data || echo HEAD)
+          git add analytics && (git diff --cached --quiet || git commit -m "analytics $(date -u +%F)") && git push origin data

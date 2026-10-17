@@ -1,0 +1,41 @@
+{
+ "pillar": "unsaid-relations",
+ "topic": "ganga-seven-sons",
+ "language": "hi",
+ "sources": [
+  {
+   "label": "महाभारत आदि पर्व 91",
+   "ref": "mahabharata-adi:91"
+  }
+ ],
+ "claims": [
+  {
+   "text": "आठ संतानें हुईं; पहली सात को गंगा ने जन्म लेते ही नदी में डाल दिया।",
+   "en": "eight children born thrown into the river by Ganga as soon as they were born",
+   "status": "verified",
+   "source": "mahabharata-adi:91"
+  }
+ ],
+ "ai_assisted": true,
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।",
+ "status": "draft",
+ "created": "2026-10-18",
+ "id": "pdf-ganga-original",
+ "slug": "pdf-ganga",
+ "format": "fb_text",
+ "hook": "गंगा ने अपने 7 पुत्रों को क्यों मारा? 99% हिंदू नहीं जानते",
+ "body_lines": [
+  "शांतनु से शादी की शर्त थी - कभी सवाल मत पूछना।",
+  "7 बेटे पैदा हुए, गंगा ने सबको नदी में बहा दिया।",
+  "8वें पर शांतनु ने पूछा तो गंगा ने बताया..."
+ ],
+ "cta": "पूरा रहस्य जानने के लिए Comment करो GANGA\nSave कर लो - परिवार को भेजो",
+ "source_line": "स्रोत: महाभारत आदि पर्व 91, भागवत पुराण 9.20.30",
+ "hashtags": [
+  "#kathaaya",
+  "#गंगाकथा",
+  "#महाभारत",
+  "#hindu",
+  "#story"
+ ]
+}

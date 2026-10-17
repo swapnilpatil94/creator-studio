@@ -1,0 +1,10 @@
+name = "kathaaya-comments"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+PAGE_ID = "1354404841091894"
+IG_USER_ID = "17841466674893791"
+DRY_RUN = "1"          # set to "0" only after you have watched the logs for a day
+
+# kv_namespaces = [{ binding = "STATE", id = "FILL_AFTER: wrangler kv namespace create STATE" }]

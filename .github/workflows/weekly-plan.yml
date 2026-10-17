@@ -1,0 +1,24 @@
+# Sunday 08:00 IST: fills next week's slots with APPROVED items and opens a pull request. The manager reviews the gap list and merges: nothing is posted from an unreviewed plan.
+name: weekly-plan
+on:
+  schedule: [{ cron: "30 2 * * 0" }]
+  workflow_dispatch:
+permissions: { contents: write, pull-requests: write }
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Plan the week
+        run: node tools/content/plan-week.mjs --from "$(date -u -d 'tomorrow' +%F)" | tee /tmp/plan.txt
+      - name: Open the review PR
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          git diff --quiet content/schedule.json && { echo "no changes"; exit 0; }
+          B="plan/$(date -u +%F)"; git checkout -b "$B"; git add content/schedule.json; git commit -m "Weekly plan $(date -u +%F)"; git push -u origin "$B"
+          gh pr create --title "Weekly plan $(date -u +%F)" --body-file /tmp/plan.txt

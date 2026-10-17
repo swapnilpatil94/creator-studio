@@ -70,7 +70,8 @@ function camFor(n, sk) {
 
 // ---- dotted drawing primitives (mask layer: R = brightness, G = tint, B>128 = crimson) ----
 const GOLD = (a = 1) => `rgb(${255 * a | 0},235,0)`, WARM = (a = 1) => `rgb(${255 * a | 0},150,0)`, CRIM = (a = 1) => `rgb(${255 * a | 0},200,200)`, PALE = (a = 1) => `rgb(${255 * a | 0},70,0)`;
-function begin() { L.clearLayer(fxL); const f = fxL.g; f.setTransform(0.5, 0, 0, 0.5, 0, 0); f.lineCap = "round"; f.lineJoin = "round"; return f; }
+let CURU = 0;   // progress through the current shot: every non-painting shot slowly pushes in so stills never freeze
+function begin() { L.clearLayer(fxL); const f = fxL.g; f.setTransform(0.5, 0, 0, 0.5, 0, 0); const z = 1 + 0.12 * CURU; f.translate(W / 2, H / 2); f.scale(z, z); f.translate(-W / 2, -H / 2); f.lineCap = "round"; f.lineJoin = "round"; return f; }
 function text(f, lines, o = {}) { const size = o.size || 150, gap = size * 1.18, y0 = (o.y || H / 2) - (lines.length - 1) * gap / 2; f.font = FONT(size); f.textAlign = "center"; f.textBaseline = "middle"; lines.forEach((ln, i) => { if (ln.a <= 0.01) return; f.globalAlpha = ln.a; f.fillStyle = o.fill || GOLD(); f.fillText(ln.t, W / 2 + (ln.dx || 0), y0 + i * gap + (ln.dy || 0)); }); f.globalAlpha = 1; }
 const circle = (f, x, y, r, w, fill) => { f.lineWidth = w; f.strokeStyle = fill; f.beginPath(); f.arc(x, y, r, 0, TAU); f.stroke(); };
 const poly = (f, pts, w, fill, close) => { f.lineWidth = w; f.strokeStyle = fill; f.beginPath(); pts.forEach((p, i) => i ? f.lineTo(p[0], p[1]) : f.moveTo(p[0], p[1])); if (close) f.closePath(); f.stroke(); };
@@ -100,8 +101,9 @@ const SYM = {
 
 function lineReveal(sk, n, texts, from = 0) { const bs = sk.beats, tot = sk.t1 - sk.t0; return texts.map((t, i) => ({ t, a: smooth((n - (sk.t0 + 0.15 + i * Math.min(1.4, tot * 0.35))) / 0.4) })); }
 function drawNonPainting(sk, n) {
-  const u = clamp((n - sk.t0) / (sk.t1 - sk.t0)), f = begin(), b0 = sk.beats[0], ref = sk.ref;
+  const u = CURU = clamp((n - sk.t0) / (sk.t1 - sk.t0)), f = begin(), b0 = sk.beats[0], ref = sk.ref;
   if (b0.card) { const k = smooth(seg(n, sk.t0, sk.t0 + 0.5)) * (1 - smooth(seg(n, sk.t1 - 0.5, sk.t1))); const parts = b0.card.split(/\s*·\s*/); const dr = Math.sin(n * 0.8) * 10; text(f, [{ t: parts[0], a: k, dy: -90 + dr }, { t: parts.slice(1).join(" · "), a: k, dy: dr }], { size: 118, y: H / 2 }); for (let i = 0; i < 28; i++) { const a = i / 28 * TAU + n * 0.35; f.fillStyle = WARM(0.8 * k); f.beginPath(); f.arc(CX + Math.cos(a) * 760, H / 2 + Math.sin(a) * 300, 7 + 3 * Math.sin(n * 2 + i), 0, TAU); f.fill(); } const w = 760 * k; poly(f, [[W / 2 - w / 2, H / 2 - 190], [W / 2 + w / 2, H / 2 - 190]], 8, WARM(k)); return; }
+  if (!SYM[ref] && !TEXT[ref]) for (let i = 0; i < 22; i++) { const a = i / 22 * TAU + n * 0.3; f.fillStyle = WARM(0.4); f.beginPath(); f.arc(CX + Math.cos(a) * 820, CY + Math.sin(a) * 340, 6 + 2 * Math.sin(n * 2 + i), 0, TAU); f.fill(); }   // diagrams and word shots always carry a little motion
   if (SYM[ref]) { SYM[ref](f, u, n); return; }
   if (ref === "three-parts") { const hl = sk.beats.length > 1 || b0.id === "d011" ? 1 : 0, labels = ["१", "३", "९"]; for (let i = 0; i < 3; i++) { const k = smooth((n - sk.t0 - i * 0.5) / 0.5), dim = hl && i !== 1 ? 0.35 : 1, x = CX + (i - 1) * 520; circle(f, x, CY, 190 * k, 14, GOLD(k * dim)); f.font = FONT(210); f.textAlign = "center"; f.textBaseline = "middle"; f.globalAlpha = k * dim; f.fillStyle = GOLD(); f.fillText(labels[i], x, CY + 10); f.font = FONT(64); f.fillStyle = WARM(); f.fillText("अध्याय", x, CY + 270); f.globalAlpha = 1; } return; }
   if (ref === "powers-list") { const b = sk.beats[0], items = POWERS.map((t, i) => ({ t, a: smooth((n - ((b.words[i] && b.words[i].start) || sk.t0 + i * 0.5) + 0.05) / 0.3) })); f.font = FONT(120); f.textAlign = "center"; f.textBaseline = "middle"; items.forEach((q, i) => { const col = i < 4 ? 0 : 1, row = i < 4 ? i : i - 4; f.globalAlpha = q.a; f.fillStyle = GOLD(); f.fillText(q.t, CX - 330 + col * 660, 190 + row * 190 + (1 - q.a) * 30); }); f.globalAlpha = 1; return; }
@@ -109,13 +111,13 @@ function drawNonPainting(sk, n) {
   if (ref === "roll-call") { const nm = NAMES[sk.beats[0].id]; if (nm) { const lines = nm.map((t, i) => ({ t, a: smooth((n - ((sk.beats[0].words[i] && sk.beats[0].words[i].start) || sk.t0 + i * 0.6) + 0.05) / 0.25) })); text(f, lines.map(q => ({ ...q })), { size: 118, y: H / 2 }); } else text(f, [{ t: "सेनापति", a: smooth((n - sk.t0) / 0.5) }], { size: 200 }); return; }
   if (ref === "lunar-days") { const lab = ["अष्टमी", "नवमी", "चतुर्दशी"], ph = [0.5, 0.75, 0.97]; for (let i = 0; i < 3; i++) { const k = smooth((n - sk.t0 - 0.8 - i * 1.0) / 0.5), x = CX + (i - 1) * 520, R = 150; f.globalAlpha = k; f.fillStyle = PALE(0.5); f.beginPath(); f.arc(x, CY - 40, R, 0, TAU); f.fill(); f.fillStyle = GOLD(); f.beginPath(); f.arc(x, CY - 40, R, -Math.PI / 2, Math.PI / 2); f.bezierCurveTo(x + R * (1 - 2 * ph[i]) * 1.33, CY - 40 + R, x + R * (1 - 2 * ph[i]) * 1.33, CY - 40 - R, x, CY - 40 - R); f.fill(); f.font = FONT(86); f.textAlign = "center"; f.fillStyle = GOLD(); f.fillText(lab[i], x, CY + 220); f.globalAlpha = 1; } return; }
   if (WORD_LABEL[ref]) return;
-  const tx = TEXT[ref]; if (tx) { const big = tx.length === 1 ? 210 : tx.some(s => s.length > 16) ? 112 : 150; text(f, lineReveal(sk, n, tx), { size: big, y: H / 2 - 20 }); if (ref === "last-dab") circle(f, CX, CY, 560 * smooth(seg(u, 0.4, 1)), 6, GOLD(0.5 * smooth(seg(u, 0.4, 1)))); return; }
+  const tx = TEXT[ref]; if (tx) { for (let i = 0; i < 22; i++) { const a = i / 22 * TAU + n * 0.3; f.fillStyle = WARM(0.45); f.beginPath(); f.arc(CX + Math.cos(a) * 800, CY + Math.sin(a) * 330, 6 + 2 * Math.sin(n * 2 + i), 0, TAU); f.fill(); } const big = tx.length === 1 ? 210 : tx.some(s => s.length > 16) ? 112 : 150; text(f, lineReveal(sk, n, tx), { size: big, y: H / 2 - 20 }); if (ref === "last-dab") circle(f, CX, CY, 560 * smooth(seg(u, 0.4, 1)), 6, GOLD(0.5 * smooth(seg(u, 0.4, 1)))); return; }
   SYM.rings(f, u, n);
 }
 
 // ---- dotted scenes where no painting exists: forest, hermitage, figures ----
 function drawScene(sk, n) {
-  const u = clamp((n - sk.t0) / (sk.t1 - sk.t0)), f = begin(), pan = (u - 0.5) * 140;
+  const u = CURU = clamp((n - sk.t0) / (sk.t1 - sk.t0)), f = begin(), pan = (u - 0.5) * 140;
   const moon = smooth(seg(u, 0, 0.4)); f.fillStyle = PALE(0.9 * moon); f.beginPath(); f.arc(W * 0.78 - pan * 0.3, 230, 90, 0, TAU); f.fill();
   for (let layer = 0; layer < 3; layer++) for (let i = 0; i < 9 - layer * 2; i++) { const x = ((hash(i * 7 + layer * 31) * (W + 400) - 200) - pan * (0.3 + layer * 0.5)), h2 = 560 + 300 * layer + 140 * hash(i + layer), a = 0.18 + layer * 0.22, w = 12 + layer * 12; f.fillStyle = (layer === 2 ? WARM : PALE)(a); f.fillRect(x - w / 2, H - h2, w, h2); for (let k = 0; k < 6; k++) { f.beginPath(); f.ellipse(x + (hash(i * 3 + k) - 0.5) * 220, H - h2 + 20 + k * 22, 120 + 40 * layer, 34, 0, 0, TAU); f.fill(); } }
   const man = (x, y, s, a) => { f.fillStyle = GOLD(a); f.beginPath(); f.arc(x, y - 150 * s, 26 * s, 0, TAU); f.fill(); f.beginPath(); f.moveTo(x - 20 * s, y - 120 * s); f.lineTo(x + 20 * s, y - 120 * s); f.lineTo(x + 60 * s, y + 90 * s); f.lineTo(x - 60 * s, y + 90 * s); f.closePath(); f.fill(); poly(f, [[x + 85 * s, y - 130 * s], [x + 85 * s, y + 90 * s]], 8 * s, WARM(a)); };

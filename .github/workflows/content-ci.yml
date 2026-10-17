@@ -1,0 +1,35 @@
+# Quality gate for every change to content, tools or the blog: policy tests, QA on every item, blog build, carousel render smoke test.
+name: content-ci
+on:
+  push: { paths: ["content/**", "tools/content/**", "blog/**", "tests/**", ".github/workflows/**"] }
+  pull_request: { paths: ["content/**", "tools/content/**", "blog/**", "tests/**"] }
+permissions: { contents: read }
+concurrency:
+  group: content-ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
+      - run: npm ci --prefix engine
+      - uses: actions/cache@v4
+        with:
+          path: research/corpus
+          key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
+      - name: Build research corpus (Wikisource, public-domain translations)
+        run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+      - name: Policy regression tests
+        run: node tests/content-qa.test.mjs
+      - name: QA every content item (fails on any FAIL)
+        run: node tools/content/qa-content.mjs --all
+      - name: Fonts for Devanagari rendering
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
+      - run: npx --prefix engine playwright install --with-deps chromium
+      - name: Blog build (approved items only) and carousel render smoke test
+        run: |
+          node blog/build.mjs --drafts
+          node tools/content/carousel.mjs content/items/ganga-seven-sons.carousel.json --out /tmp/car

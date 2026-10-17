@@ -1,0 +1,40 @@
+{
+ "facebook": {
+  "id": "3447390945446860",
+  "state": "public",
+  "result": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/video-api/guides/reels-publishing#get-the-upload-status.",
+   "post_id": "122093902977522482"
+  },
+  "copyright": {
+   "copyright_check_information": {
+    "status": {
+     "status": "in_progress"
+    }
+   },
+   "status": {
+    "video_status": "processing",
+    "processing_progress": 0,
+    "uploading_phase": {
+     "status": "complete",
+     "bytes_transferred": 274589610
+    },
+    "processing_phase": {
+     "status": "in_progress"
+    },
+    "publishing_phase": {
+     "status": "not_started"
+    },
+    "copyright_check_status": {
+     "status": "in_progress"
+    }
+   },
+   "id": "3447390945446860"
+  }
+ },
+ "when": "2026-10-17T18:24:10.585Z",
+ "instagram": {
+  "id": "18128030131828776"
+ }
+}

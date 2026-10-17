@@ -14,3 +14,8 @@ audio/cache/
 .yt-token.json
 stories/*/.thumb-scene.js
 stories/*/assets/original/
+research/corpus/
+research/index.json
+flux-out/
+blog/dist/
+content/out/
