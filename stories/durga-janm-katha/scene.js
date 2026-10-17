@@ -42,7 +42,7 @@ for (const s of SHOTS) { const a = ART[s.ref]; s.img = a ? a[s.run % a.length] :
 const shotAt = n => { let s = SHOTS[0]; for (const q of SHOTS) if (n >= q.t0) s = q; return s; };
 
 // ---- layers ----
-const c = document.getElementById("c"), g = c.getContext("2d"), bloomTmp = L.makeLayer(W, H), mainM = L.makeLayer(), fxL = L.makeLayer(), frameTmp = document.createElement("canvas"); frameTmp.width = 96; frameTmp.height = 54; const fg = frameTmp.getContext("2d", { willReadFrequently: true });
+const c = document.getElementById("c"), g = c.getContext("2d"), bloomTmp = L.makeLayer(W, H), mainM = L.makeLayer(), bgM = L.makeLayer(), fxL = L.makeLayer(), frameTmp = document.createElement("canvas"); frameTmp.width = 96; frameTmp.height = 54; const fg = frameTmp.getContext("2d", { willReadFrequently: true });
 let lastCap = null, lastStats = { mean: 0.2, blown: 0 }, lastCam = { x: W / 2, y: H / 2, zoom: 1 };
 
 // ---- painting camera: auto-focus on the most detailed parts of each picture, move between them beat by beat ----
@@ -149,6 +149,8 @@ function renderFrame(t) {
   let cam = { x: W / 2, y: H / 2, zoom: 1, roll: 0 }; L.drawStars(g, cam, t, 110, 3);
   if (sk.img && !(sk.type === "painting" && SCENE_FALLBACK.has(sk.ref))) {
     cam = camFor(n, sk); const r = rectOf(sk.img), gain = ov("dotGain", sk.ref, 1);
+    if (fitOf(sk.img) === "height") {   // portrait picture in a landscape frame: a dim, coarse, slowly drifting dotted copy fills the side bars so the frame never reads as a phone video
+      const rc = rectFor(IM[sk.img], "cover"), vh = H / 2.2, by = rc.y + vh + (rc.h - 2 * vh) * clamp((n - sk.t0) / (sk.t1 - sk.t0)); L.clearLayer(bgM); drawPainting(bgM, IM[sk.img], { x: W / 2, y: clamp(by, rc.y + vh, rc.y + rc.h - vh), zoom: 1.1, roll: 0 }, rc, { alpha: 1 }); dotifyPalette(g, bgM, PALS[sk.img], { cell: 11, gain: 0.55 * gain, dis, seed: 11, alpha: 0.38 }); }
     L.clearLayer(mainM); drawPainting(mainM, IM[sk.img], cam, r, { alpha: 1 }); dotifyPalette(g, mainM, PALS[sk.img], { cell: 7, gain, dis, seed: 3, alpha: 1 });
     if (WORD_LABEL[sk.ref]) { const b = sk.beats[0], tw = (b.words[0] && b.words[0].start) || sk.t0, a = smooth((n - tw) / 0.3); const f = begin(); text(f, [{ t: WORD_LABEL[sk.ref], a }], { size: 230, y: H * 0.42 }); L.dotify(g, fxL, { cell: 6, gain: 1, seed: 5, alpha: 1 - dis }); }
   } else { if (sk.type === "painting") drawScene(sk, n); else drawNonPainting(sk, n); L.dotify(g, fxL, { cell: 7, gain: ov("dotGain", sk.ref, 1), dis, seed: 9 }); }
