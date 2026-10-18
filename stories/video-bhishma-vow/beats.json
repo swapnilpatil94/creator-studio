@@ -1,0 +1,233 @@
+[
+ {
+  "id": "v001",
+  "text": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "उन्हें डर था कि सत्यवती की संतान के सामने देवव्रत जैसा शक्तिशाली प्रतिद्वंद्वी खड़ा होगा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "देवव्रत ने स्पष्ट कहा कि उन्होंने सिंहासन का अधिकार छोड़ दिया है और केवल सत्यवती का पुत्र ही राजा बनेगा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "निषादराज को उनके वचन पर तो भरोसा था, लेकिन देवव्रत की भावी संतानों पर संदेह था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "तब देवव्रत ने एक ऐसी कठिन प्रतिज्ञा ली जिसने उनके पूरे जीवन की दिशा बदल दी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "उन्होंने आजीवन ब्रह्मचर्य का पालन करने का निर्णय लिया ताकि वंश की परंपरा में कोई बाधा न आए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "परंपरा में माना जाता है कि इस कठिन संकल्प ने उन्हें महानता और त्याग की पहचान दी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "यह व्याख्या है कि उनकी प्रतिज्ञा ने उनके अपने जीवन को एक ऐसी मर्यादा से बांध दिया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "उन्होंने डर जताया कि देवव्रत का प्रताप किसी भी नए राजा से कहीं अधिक शक्तिशाली होगा।",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "इस संदेह को दूर करने के लिए देवव्रत ने आजीवन ब्रह्मचर्य की कठिन प्रतिज्ञा ली।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "लेकिन क्या यह केवल एक समझौता था या किसी बड़े उद्देश्य की शुरुआत?",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "इस निर्णय के पीछे का असली कारण था सत्ता और सिंहासन की सुरक्षा।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "निषादराज को डर था कि देवव्रत जैसा शक्तिशाली योद्धा किसी भी राजा को चुनौती देगा।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "उन्होंने स्पष्ट किया कि केवल सत्यवती की संतान ही राज्य का असली उत्तराधिकारी होगी।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "देवव्रत ने अपनी शक्ति के कारण भविष्य में आने वाली बाधाओं को रोकने का फैसला किया।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "परंपरा में माना जाता है कि उन्होंने आजीवन ब्रह्मचर्य की कठोर प्रतिज्ञा लेकर खुद को बांध लिया।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "यह व्याख्या है कि इस त्याग ने उन्हें एक ऐसी मर्यादा दी जिसने इतिहास बदल दिया।",
+  "intent": "reveal",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "देवव्रत के इस निर्णय ने एक नए युग और उत्तराधिकार की नींव रखी।",
+  "intent": "reveal",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "इस महान त्याग ने उन्हें भारतीय इतिहास में अमर और पूजनीय बना दिया।",
+  "intent": "reflective",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "सेव करें · फ़ॉलो करें।",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ }
+]

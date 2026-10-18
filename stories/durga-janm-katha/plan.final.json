@@ -1,0 +1,1509 @@
+[
+ {
+  "id": "d001",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "push"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "panL",
+   "label": "रणभूमि के बीच एक देवी रुकती हैं…"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d003",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "गरज ले, मूर्ख।",
+    "बस कुछ पल और।"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d004",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "pull",
+   "label": "महिषासुर देवताओं को हरा दिया था"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d005",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "तो ये देवी कौन थीं? उन्हें जन्म"
+   ],
+   "style": "stack"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d006",
+  "comp": "timeline",
+  "params": {
+   "steps": [
+    {
+     "title": "दुर्गा के जन्म की कथा",
+     "text": "हर देवता ने उन्हें क्या दिया"
+    },
+    {
+     "title": "महिषासुर के रूप",
+     "text": "महिषासुर ने कितने रूप बदले"
+    },
+    {
+     "title": "देवी का वचन",
+     "text": "देवी ने देवताओं से कौन-सा वचन दिया"
+    }
+   ]
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d007",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "देवी ने देवताओं से वचन दिया"
+  },
+  "chapter": "ch0"
+ },
+ {
+  "id": "d008",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch1"
+ },
+ {
+  "id": "d009",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "मार्कण्डेय पुराण का हिस्सा"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d010",
+  "comp": "bars",
+  "params": {
+   "title": "कथाओं के वितरण",
+   "items": [
+    {
+     "label": "पहली कथा",
+     "value": 1
+    },
+    {
+     "label": "दूसरी कथा",
+     "value": 3
+    },
+    {
+     "label": "तीसरी कथा",
+     "value": 9
+    }
+   ]
+  },
+  "unit": "अध्याय",
+  "chapter": "ch1"
+ },
+ {
+  "id": "d011",
+  "comp": "chapter",
+  "params": {
+   "kicker": "कथा के बीच में",
+   "title": "एक राजा और एक वैश्य"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d012",
+  "comp": "cinema",
+  "params": {
+   "img": "scene4",
+   "move": "panL",
+   "label": "एक राजा की कहानी"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d013",
+  "comp": "cinema",
+  "params": {
+   "img": "scene5",
+   "move": "pull",
+   "label": "राजा सुरथ"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d014",
+  "comp": "cinema",
+  "params": {
+   "img": "scene6",
+   "move": "panR",
+   "label": "वैश्य के साथ मिलना"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d015",
+  "comp": "versus",
+  "params": {
+   "left": {
+    "title": "राजा",
+    "points": [
+     "सब कुछ खो चुका",
+     "जंगल में भटक रहा"
+    ]
+   },
+   "right": {
+    "title": "वैश्य",
+    "points": [
+     "अपनों द्वारा ठुकराया",
+     "घर से निकाल दिया गया"
+    ]
+   }
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d016",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "label": "ऋषि मेधा के आश्रम"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d017",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d018",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "panL",
+   "label": "ऋषि के शब्द"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d019",
+  "comp": "quote",
+  "params": {
+   "text": "महामाया की शक्ति ज्ञानियों को भी मोह में बाँध देती हैं।",
+   "by": "ऋषि"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d020",
+  "comp": "cinema",
+  "params": {
+   "img": "scene10",
+   "move": "pull",
+   "label": "विष्णु योगनिद्रा में"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d021",
+  "comp": "cinema",
+  "params": {
+   "img": "scene11",
+   "move": "panL",
+   "label": "मधु और कैटभ की उत्पत्ति"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d022",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "pull",
+   "label": "ब्रह्मा के खतरे"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d023",
+  "comp": "cinema",
+  "params": {
+   "img": "scene13",
+   "move": "push",
+   "label": "ब्रह्मा की आहत अवस्था"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d024",
+  "comp": "cinema",
+  "params": {
+   "img": "scene14",
+   "move": "panR",
+   "label": "योगनिद्रा की स्तुति"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d025",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "तभी *विष्णु* जाग गए।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d026",
+  "comp": "stat",
+  "params": {
+   "value": 5000,
+   "suffix": "साल",
+   "label": "लड़ाई की अवधि"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d027",
+  "comp": "cinema",
+  "params": {
+   "img": "scene15",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d028",
+  "comp": "cinema",
+  "params": {
+   "img": "scene15",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d029",
+  "comp": "cinema",
+  "params": {
+   "img": "scene16",
+   "move": "panL",
+   "label": "विष्णु का अंतिम हमला"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d030",
+  "comp": "cinema",
+  "params": {
+   "img": "scene17",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d031",
+  "comp": "cinema",
+  "params": {
+   "img": "scene17",
+   "move": "panR",
+   "label": "अब दूसरी कहानी"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "d032",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch2"
+ },
+ {
+  "id": "d033",
+  "comp": "cinema",
+  "params": {
+   "img": "scene18",
+   "move": "pull",
+   "label": "ये किसी एक दिन की लड़ाई नहीं थी"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d034",
+  "comp": "stat",
+  "params": {
+   "value": 100,
+   "suffix": "वर्ष",
+   "label": "एक सौ साल की लड़ाई"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d035",
+  "comp": "cinema",
+  "params": {
+   "img": "scene19",
+   "move": "panL",
+   "label": "इंद्र और महिषासुर"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d036",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "लेकिन उस युद्ध में *देवता* हार गए।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d037",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch2"
+ },
+ {
+  "id": "d038",
+  "comp": "cinema",
+  "params": {
+   "img": "scene20",
+   "move": "push",
+   "label": "महिषासुर स्वर्ग का स्वामी"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d039",
+  "comp": "bars",
+  "params": {
+   "title": "महिषासुर द्वारा अधिकार ले लिए गए",
+   "unit": "अधिकार",
+   "items": [
+    {
+     "label": "सूर्य",
+     "value": 1
+    },
+    {
+     "label": "इंद्र",
+     "value": 1
+    },
+    {
+     "label": "अग्नि",
+     "value": 1
+    },
+    {
+     "label": "वायु",
+     "value": 1
+    },
+    {
+     "label": "चंद्रमा",
+     "value": 1
+    },
+    {
+     "label": "यम",
+     "value": 1
+    },
+    {
+     "label": "वरुण",
+     "value": 1
+    }
+   ]
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d040",
+  "comp": "cinema",
+  "params": {
+   "img": "scene21",
+   "move": "panR",
+   "label": "देवता अपने घर से निकाल दिए गए"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "d041",
+  "chapter": "ch2",
+  "comp": "cinema",
+  "params": {
+   "img": "scene22",
+   "move": "push"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d042",
+  "chapter": "ch2",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "इसलिए वो शरण ढूँढने निकले"
+   ],
+   "style": "slam"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d043",
+  "chapter": "ch2",
+  "comp": "cinema",
+  "params": {
+   "img": "scene23",
+   "move": "panL"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d044",
+  "chapter": "ch2",
+  "comp": "cinema",
+  "params": {
+   "img": "scene23",
+   "move": "panR"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d045",
+  "chapter": "ch2",
+  "comp": "cinema",
+  "params": {
+   "img": "scene24",
+   "move": "push"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d046",
+  "chapter": "ch3",
+  "comp": "chapter",
+  "params": {
+   "kicker": "ch3",
+   "title": ""
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d047",
+  "chapter": "ch3",
+  "comp": "cinema",
+  "params": {
+   "img": "scene25",
+   "move": "panL"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d048",
+  "chapter": "ch3",
+  "comp": "cinema",
+  "params": {
+   "img": "scene26",
+   "move": "panR"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d049",
+  "chapter": "ch3",
+  "comp": "cinema",
+  "params": {
+   "img": "scene26",
+   "move": "push"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d050",
+  "chapter": "ch3",
+  "comp": "cinema",
+  "params": {
+   "img": "scene27",
+   "move": "pull"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "d051",
+  "comp": "cinema",
+  "params": {
+   "img": "scene28",
+   "move": "panR",
+   "label": "ज्वाला के उदय"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d052",
+  "comp": "cinema",
+  "params": {
+   "img": "scene29",
+   "move": "pull",
+   "label": "देवी का उदय"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d053",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "क्रोध से देवताओं के ज्वाला से प्रकट"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d054",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch3"
+ },
+ {
+  "id": "d055",
+  "comp": "stat",
+  "params": {
+   "value": 1000,
+   "suffix": "भुजाएँ",
+   "label": "देवी के वर्णन में"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d056",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "हथियार कहाँ",
+    "देवी के पास",
+    "*थे*?"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d057",
+  "comp": "bars",
+  "params": {
+   "title": "देवताओं द्वारा दिए गए हथियार",
+   "items": [
+    {
+     "label": "शिव",
+     "value": 1
+    },
+    {
+     "label": "विष्णु",
+     "value": 1
+    },
+    {
+     "label": "अग्नि",
+     "value": 1
+    },
+    {
+     "label": "वायु",
+     "value": 2
+    }
+   ]
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d058",
+  "comp": "cinema",
+  "params": {
+   "img": "scene30",
+   "move": "pull"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d059",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "इंद्र ने",
+    "वज्र दिया",
+    "*और* घंटा"
+   ],
+   "style": "stack"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d060",
+  "comp": "bars",
+  "params": {
+   "title": "देवताओं द्वारा दिए गए हथियार",
+   "items": [
+    {
+     "label": "वरुण",
+     "value": 2
+    },
+    {
+     "label": "यम",
+     "value": 1
+    },
+    {
+     "label": "ब्रह्मा",
+     "value": 2
+    }
+   ]
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d061",
+  "comp": "cinema",
+  "params": {
+   "img": "scene31",
+   "move": "panR",
+   "label": "सूर्य की किरणें"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d062",
+  "comp": "cinema",
+  "params": {
+   "img": "scene32",
+   "move": "pull",
+   "label": "काल और विश्वकर्मा के उपहार"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d063",
+  "comp": "cinema",
+  "params": {
+   "img": "scene33",
+   "move": "push",
+   "label": "क्षीरसागर और समुद्र के उपहार"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d064",
+  "comp": "cinema",
+  "params": {
+   "img": "scene34",
+   "move": "panL",
+   "label": "हिमालय के उपहार"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d065",
+  "comp": "cinema",
+  "params": {
+   "img": "scene35",
+   "move": "pull",
+   "label": "कुबेर का दिव्य मधु पात्र"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d066",
+  "comp": "graph",
+  "params": {
+   "nodes": [
+    {
+     "id": "dev1",
+     "label": "देवता 1",
+     "x": 0.2,
+     "y": 0.5
+    },
+    {
+     "id": "dev2",
+     "label": "देवता 2",
+     "x": 0.5,
+     "y": 0.2
+    },
+    {
+     "id": "dev3",
+     "label": "देवता 3",
+     "x": 0.8,
+     "y": 0.5
+    },
+    {
+     "id": "dev4",
+     "label": "देवता 4",
+     "x": 0.5,
+     "y": 0.8
+    },
+    {
+     "id": "dev5",
+     "label": "देवता 5",
+     "x": 0.2,
+     "y": 0.8
+    }
+   ],
+   "edges": [
+    [
+     "dev1",
+     "dev2",
+     "शक्ति"
+    ],
+    [
+     "dev2",
+     "dev3",
+     "शक्ति"
+    ],
+    [
+     "dev3",
+     "dev4",
+     "शक्ति"
+    ],
+    [
+     "dev4",
+     "dev5",
+     "शक्ति"
+    ],
+    [
+     "dev5",
+     "dev1",
+     "शक्ति"
+    ]
+   ],
+   "focus": [
+    "dev1",
+    "dev2",
+    "dev3",
+    "dev4",
+    "dev5"
+   ]
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d067",
+  "comp": "cinema",
+  "params": {
+   "img": "scene36",
+   "move": "panR",
+   "label": "कथा के जानकार की व्याख्या"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d068",
+  "comp": "bars",
+  "params": {
+   "title": "शक्ति का जोड़",
+   "items": [
+    {
+     "label": "देवता 1",
+     "value": 20
+    },
+    {
+     "label": "देवता 2",
+     "value": 25
+    },
+    {
+     "label": "देवता 3",
+     "value": 30
+    },
+    {
+     "label": "देवता 4",
+     "value": 25
+    },
+    {
+     "label": "देवता 5",
+     "value": 30
+    }
+   ]
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d069",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "रुको।",
+    "एक पल सोचो।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d070",
+  "comp": "cinema",
+  "params": {
+   "img": "scene37",
+   "move": "push"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d071",
+  "comp": "cinema",
+  "params": {
+   "img": "scene37",
+   "move": "panR",
+   "label": "देवी का अट्टहास"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d072",
+  "comp": "cinema",
+  "params": {
+   "img": "scene38",
+   "move": "pull",
+   "label": "देवताओं की पुकार"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "d073",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch4"
+ },
+ {
+  "id": "d074",
+  "comp": "cinema",
+  "params": {
+   "img": "scene39",
+   "move": "panL",
+   "label": "अट्टहास महिषासुर के कानों तक"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d075",
+  "comp": "cinema",
+  "params": {
+   "img": "scene40",
+   "move": "push",
+   "label": "क्रोध में दौड़ती सेना"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d076",
+  "comp": "cinema",
+  "params": {
+   "img": "scene41",
+   "move": "push"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d077",
+  "comp": "cinema",
+  "params": {
+   "img": "scene42",
+   "move": "panR",
+   "label": "सेनापति चिक्षुर और चामर"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d078",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "अब सेनापतियों के नाम सुनो।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d079",
+  "comp": "cinema",
+  "params": {
+   "img": "scene43",
+   "move": "pull"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d080",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "असिलोमा। बाष्कल। परिवारित। बिडाल।"
+   ],
+   "style": "stack"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d081",
+  "comp": "stat",
+  "params": {
+   "value": 10000000,
+   "suffix": "रथ",
+   "label": "रथों की संख्या"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d082",
+  "comp": "cinema",
+  "params": {
+   "img": "scene44",
+   "move": "push",
+   "label": "देवी और उनका सिंह"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d083",
+  "comp": "cinema",
+  "params": {
+   "img": "scene45",
+   "move": "panR",
+   "label": "युद्ध के शुरुआती दृश्य"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d084",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "एक-एक करके",
+    "असुर सेनापति",
+    "मारे गए"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d085",
+  "comp": "cinema",
+  "params": {
+   "img": "scene46",
+   "move": "pull",
+   "label": "महिषासुर के बिना सेना"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d086",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "लेकिन उसकी असली शक्ति सेना थी ही"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d087",
+  "comp": "cinema",
+  "params": {
+   "img": "scene47",
+   "move": "pull"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "d088",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch5"
+ },
+ {
+  "id": "d089",
+  "comp": "cinema",
+  "params": {
+   "img": "scene48",
+   "move": "panL",
+   "label": "भैंसा के रूप में"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d090",
+  "comp": "cinema",
+  "params": {
+   "img": "scene49",
+   "move": "push",
+   "label": "सिंह के रूप में"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d091",
+  "comp": "cinema",
+  "params": {
+   "img": "scene50",
+   "move": "panR",
+   "label": "एक आदमी तलवार और ढाल लिए"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d092",
+  "comp": "cinema",
+  "params": {
+   "img": "scene51",
+   "move": "pull",
+   "label": "एक विशाल हाथी"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d093",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "और फिर…",
+    "*वो वापस भैंसा बन गया*"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d094",
+  "comp": "cinema",
+  "params": {
+   "img": "scene52",
+   "move": "panL",
+   "label": "देवी हर रूप को काटती गईं"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d095",
+  "comp": "cinema",
+  "params": {
+   "img": "scene53",
+   "move": "push",
+   "label": "देवी ने पात्र उठाया"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d096",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "बार-बार दिव्य पेय पिया *उनकी आँखें लाल"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d097",
+  "comp": "cinema",
+  "params": {
+   "img": "scene54",
+   "move": "push"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d098",
+  "comp": "cinema",
+  "params": {
+   "img": "scene55",
+   "move": "panR",
+   "label": "कथा के शुरुआती क्षण"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d099",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*तभी वो उछलीं*"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d100",
+  "comp": "cinema",
+  "params": {
+   "img": "scene56",
+   "move": "pull",
+   "label": "पैर से गर्दन दबाई और भाले से वार किया"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d101",
+  "comp": "cinema",
+  "params": {
+   "img": "scene57",
+   "move": "panR",
+   "label": "महिषासुर के भैंसे के मुँह से आधा बाहर निकल आया"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d102",
+  "comp": "cinema",
+  "params": {
+   "img": "scene57",
+   "move": "pull",
+   "label": "देवी की तलवार चली"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d103",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*सिर कट गया*"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d104",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch5"
+ },
+ {
+  "id": "d105",
+  "comp": "cinema",
+  "params": {
+   "img": "scene58",
+   "move": "panL",
+   "label": "सेना नहीं बची"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "d106",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch6"
+ },
+ {
+  "id": "d107",
+  "comp": "cinema",
+  "params": {
+   "img": "scene59",
+   "move": "push",
+   "label": "आसमान में जयकार गूँज उठी"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d108",
+  "comp": "cinema",
+  "params": {
+   "img": "scene59",
+   "move": "panR",
+   "label": "देवताओं ने देवी की स्तुति की"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d109",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*एक वचन माँगा*"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d110",
+  "comp": "cinema",
+  "params": {
+   "img": "scene60",
+   "move": "push"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d111",
+  "comp": "cinema",
+  "params": {
+   "img": "scene60",
+   "move": "panR",
+   "label": "गुणगान के आशीर्वाद"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d112",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "देवी ने *एक* शब्द कहा — तथास्तु।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d113",
+  "comp": "cinema",
+  "params": {
+   "img": "scene61",
+   "move": "pull",
+   "label": "अंतर्धान"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d114",
+  "comp": "bars",
+  "params": {
+   "title": "तिथियाँ",
+   "unit": "तिथि",
+   "items": [
+    {
+     "label": "अष्टमी",
+     "value": 1
+    },
+    {
+     "label": "नवमी",
+     "value": 1
+    },
+    {
+     "label": "चतुर्दशी",
+     "value": 1
+    }
+   ]
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d115",
+  "comp": "cinema",
+  "params": {
+   "img": "scene62",
+   "move": "panL",
+   "label": "नवरात्रि में याद करते हैं"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "d116",
+  "comp": "mandala",
+  "params": {},
+  "chapter": "ch7"
+ },
+ {
+  "id": "d117",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "तो अब वही सवाल — *देवी* किसकी"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d118",
+  "comp": "cinema",
+  "params": {
+   "img": "scene63",
+   "move": "push",
+   "label": "शक्ति के रूप में"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d119",
+  "comp": "cinema",
+  "params": {
+   "img": "scene64",
+   "move": "push"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d120",
+  "comp": "cinema",
+  "params": {
+   "img": "scene65",
+   "move": "panR",
+   "label": "भद्रकाली के नाम से पुकारा गया"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d121",
+  "comp": "cinema",
+  "params": {
+   "img": "scene66",
+   "move": "panL",
+   "label": "दुर्गा के नाम की उत्पत्ति"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d122",
+  "comp": "bars",
+  "params": {
+   "title": "भुजाओं की संख्या",
+   "unit": "भुजाएँ",
+   "items": [
+    {
+     "label": "मूर्तियों में",
+     "value": 8
+    },
+    {
+     "label": "पाठ में",
+     "value": 1000
+    }
+   ]
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d123",
+  "comp": "versus",
+  "params": {
+   "left": {
+    "title": "कथा में",
+    "points": [
+     "महिषासुर को वरदान नहीं मिलता"
+    ]
+   },
+   "right": {
+    "title": "परंपरा में",
+    "points": [
+     "महिषासुर को वरदान मिलता"
+    ]
+   }
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d124",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "कथा सुनाते समय",
+    "स्रोत *बताना* ज़रूरी है।"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d125",
+  "comp": "quote",
+  "params": {
+   "text": "देवता अकेले हारे थे। साथ मिले, तो देवी बन गए।",
+   "by": "पाठ"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d126",
+  "comp": "cinema",
+  "params": {
+   "img": "scene67",
+   "move": "pull",
+   "label": "राजा सुरथ के सवाल"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d127",
+  "comp": "stat",
+  "params": {
+   "value": 1,
+   "suffix": "कथा के अंत में",
+   "label": "जवाब का स्थान"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d128",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "लेकिन कथा यहाँ *ख़त्म* नहीं होती।"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d129",
+  "comp": "cinema",
+  "params": {
+   "img": "scene68",
+   "move": "panR",
+   "label": "नए असुर भाइयों का आगमन"
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d130",
+  "comp": "timeline",
+  "params": {
+   "steps": [
+    {
+     "title": "शुंभ",
+     "text": "एक असुर"
+    },
+    {
+     "title": "निशुंभ",
+     "text": "एक असुर"
+    },
+    {
+     "title": "असुर जन्म",
+     "text": "खून की हर बूँद से एक नया असुर"
+    }
+   ]
+  },
+  "chapter": "ch7"
+ },
+ {
+  "id": "d131",
+  "comp": "cinema",
+  "params": {
+   "img": "scene69",
+   "move": "push"
+  },
+  "chapter": "ch7"
+ }
+]

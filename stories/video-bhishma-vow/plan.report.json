@@ -1,0 +1,32 @@
+{
+ "fixed": [],
+ "warnings": [
+  "only 7 different effects used for 13 painting beats",
+  "no re-hook (question or turn) near 75% of the film",
+  "4 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "2.5d_parallax": 3,
+   "kinetography_cinemagraph": 2,
+   "crane_up_reveal": 1,
+   "parallax_occlusion_3d": 2,
+   "puppet_warp_breathing": 1,
+   "drone_orbit_180": 2,
+   "matte_painting_extension": 2
+  },
+  "fx_distinct": 7,
+  "scenes": 2,
+  "assets_used": 9,
+  "comps": {
+   "kinetic": 3,
+   "cinema": 13,
+   "dotword": 2,
+   "iconlist": 1,
+   "quote": 1,
+   "orb": 1
+  },
+  "beats": 21,
+  "windows_low_variety": 4
+ }
+}

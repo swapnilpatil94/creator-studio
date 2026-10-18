@@ -53,5 +53,5 @@ export function createCinema({ DATA, images, layers = [], look = {}, item, beatI
     chrome(n); if (!(LK.textBehind && ai === 0)) { headline(n, ai); } if (ai > 0 && n < T0[ai] + 0.5) headline(n, ai - 1); captions(n);
     if (ai === N - 1 && item.source_line) { g.save(); g.globalAlpha = smooth(seg(n, T0[ai] + 0.6, T0[ai] + 1.2)) * fade; g.font = FONT(30); g.fillStyle = "rgba(255,246,224,.9)"; g.textAlign = "center"; g.shadowColor = "rgba(0,0,0,.9)"; g.shadowBlur = 10; g.fillText(item.source_line, W / 2, 1650); g.restore(); }
     g.save(); g.globalAlpha = 1 - Math.min(fade, inK); g.fillStyle = "#08050a"; g.fillRect(0, 0, W, H); g.restore(); }
-  window.getDuration = () => DURATION; window.renderAt = t => frame(clamp(Number(t) || 0, 0, DURATION)); window.__shots = { DURATION, T0, T1 }; frame(0);
+  window.__canvasOnly = true; window.getDuration = () => DURATION; window.renderAt = t => frame(clamp(Number(t) || 0, 0, DURATION)); window.__shots = { DURATION, T0, T1 }; frame(0);
 }

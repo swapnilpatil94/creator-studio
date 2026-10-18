@@ -18,6 +18,8 @@ const audioPath = arg("--audio") ? path.resolve(process.cwd(), arg("--audio")) :
 const audioOffset = Number(arg("--audio-offset", "0"));
 if (!Number.isFinite(audioOffset) || audioOffset < -5 || audioOffset > 5) fail("--audio-offset must be between -5 and 5 seconds.");
 const fps = Number(arg("--fps", "30"));
+// speed: --fast captures the scene canvas as JPEG directly (5x faster than PNG screenshots; only for scenes that draw everything on one canvas and set window.__canvasOnly); --workers N renders frames in N parallel browsers (shards); children run with --shard k/N --frames-only
+const workers = Math.max(1, Math.floor(Number(arg("--workers", "1")))), shardArg = arg("--shard"), framesOnly = args.includes("--frames-only"), fastReq = args.includes("--fast"); let fast = false;
 // CSS viewport (DSF 2): default 540x960 (9:16 short); long-form landscape uses --size 960x540 -> 1920x1080
 const [VW, VH] = arg("--size", "540x960").split("x").map(Number);
 const forcedDuration = arg("--duration") ? Number(arg("--duration")) : null;
@@ -87,7 +89,7 @@ try {
   // Audit the actual canvas content at representative points. This catches a
   // technically valid but visually empty scene (tiny labels/lines on a blank
   // frame), which syntax and determinism checks cannot detect.
-  if (!args.includes("--allow-low-visual-density")) {
+  if (!framesOnly && !args.includes("--allow-low-visual-density")) {
     const auditTimes = [0.03, 0.2, 0.4, 0.6, 0.8, 0.95].map(f => Math.min(contract.duration - 0.001, contract.duration * f));
     const audit = await page.evaluate(times => {
       const canvas = [...document.querySelectorAll("canvas")].sort((a, b) => (b.width * b.height) - (a.width * a.height))[0];
@@ -157,7 +159,7 @@ try {
 
   // With narration, reject a dead visual ending instead of exporting a long frozen
   // takeaway card. Sample the final 3.5 seconds at half-second intervals.
-  if (audioPath && duration >= 3.5) {
+  if (!framesOnly && audioPath && duration >= 3.5) {
     const tailHashes = [];
     for (let sample = 0; sample <= 7; sample++) {
       const t = duration - 3.5 + sample * 0.5;
@@ -182,22 +184,29 @@ try {
   console.log(`Rendering ${frameCount} frames at ${fps} fps (1080×1920), ${duration.toFixed(2)} seconds`);
 
   const resume = args.includes("--resume"); let skipped = 0;
+  fast = fastReq && await page.evaluate(() => !!window.__canvasOnly && !!document.getElementById("o")); const ext = fast ? "jpg" : "png";
+  const [sIdx, sN] = shardArg ? shardArg.split("/").map(Number) : [0, 1], children = [];
+  if (fast && workers > 1 && !framesOnly) { const skip = new Set(["--workers"]); const base = []; for (let k = 0; k < args.length; k++) { if (skip.has(args[k])) { k++; continue; } base.push(args[k]); } for (let k = 1; k < workers; k++) { const { spawn } = await import("node:child_process"); const c = spawn("node", [process.argv[1], ...base, "--shard", `${k}/${workers}`, "--frames-only", "--resume"], { stdio: ["ignore", "inherit", "inherit"] }); children.push(new Promise(res => c.on("close", code => res(code)))); } console.log(`Fast render: ${workers} parallel workers, JPEG canvas capture`); }
+  const mainShard = fast && workers > 1 && !framesOnly ? [0, workers] : [sIdx, sN];
   for (let i = 0; i < frameCount; i++) {
-    const framePath = path.join(frameDir, `frame-${String(i).padStart(6, "0")}.png`);
+    if (i % mainShard[1] !== mainShard[0]) continue;
+    const framePath = path.join(frameDir, `frame-${String(i).padStart(6, "0")}.${ext}`);
     if (resume) { const st = await fs.stat(framePath).catch(() => null); if (st && st.size > 1000) { skipped++; continue; } }
     const sceneTime = Math.min(contract.duration, (i / fps) * sceneTimeScale);
-    await page.evaluate(time => window.renderAt(time), sceneTime);
-    await page.screenshot({ path: framePath, type: "png", animations: "disabled" });
+    if (fast) { const d = await page.evaluate(time => { window.renderAt(time); return document.getElementById("o").toDataURL("image/jpeg", 0.93); }, sceneTime); await fs.writeFile(framePath, Buffer.from(d.slice(d.indexOf(",") + 1), "base64")); }
+    else { await page.evaluate(time => window.renderAt(time), sceneTime); await page.screenshot({ path: framePath, type: "png", animations: "disabled" }); }
     if (i % Math.max(1, Math.floor(fps * 5)) === 0 || i === frameCount - 1) process.stdout.write(`\rFrames: ${i + 1}/${frameCount}`);
   }
+  if (children.length) { const codes = await Promise.all(children); if (codes.some(c => c !== 0)) throw new Error("a render worker failed (exit codes " + codes.join(",") + ")"); const missing = []; for (let i = 0; i < frameCount; i++) if (!(await fs.stat(path.join(frameDir, `frame-${String(i).padStart(6, "0")}.${ext}`)).catch(() => null))) missing.push(i); if (missing.length) throw new Error(`${missing.length} frames missing after the parallel render (first: ${missing[0]})`); process.stdout.write(`\rFrames: ${frameCount}/${frameCount}`); }
   process.stdout.write("\n"); if (resume) console.log("Resumed: reused " + skipped + " existing frames");
   if (externalRequests.length) throw new Error(`Offline policy failed; external network requests detected: ${[...new Set(externalRequests)].join(", ")}`);
   if (browserErrors.length) throw new Error(`Browser errors detected:\n- ${[...new Set(browserErrors)].join("\n- ")}`);
 } finally {
   await browser.close();
 }
+if (framesOnly) process.exit(0);
 
-const ffmpegArgs = ["-y", "-hide_banner", "-loglevel", "warning", "-framerate", String(fps), "-i", path.join(frameDir, "frame-%06d.png")];
+const ffmpegArgs = ["-y", "-hide_banner", "-loglevel", "warning", "-framerate", String(fps), "-i", path.join(frameDir, `frame-%06d.${fast ? "jpg" : "png"}`)];
 if (audioPath) ffmpegArgs.push("-i", audioPath);
 // Output options must follow every input; placing -frames:v before the audio input
 // makes FFmpeg incorrectly treat it as an input option.
@@ -209,7 +218,7 @@ if (audioPath) {
   audioFilters.push("apad", "loudnorm=I=-16:TP=-1.5:LRA=7");
   ffmpegArgs.push("-af", audioFilters.join(","));
 }
-ffmpegArgs.push("-c:v", "libx264", "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p", "-movflags", "+faststart");
+ffmpegArgs.push("-c:v", "libx264", "-preset", fast ? "medium" : "slow", "-crf", fast ? "17" : "16", "-pix_fmt", "yuv420p", "-movflags", "+faststart");
 if (audioPath) ffmpegArgs.push("-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2");
 ffmpegArgs.push(outPath);
 const result = spawnSync("ffmpeg", ffmpegArgs, { stdio: "inherit" });

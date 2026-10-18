@@ -10,5 +10,6 @@
  "requireGates": false,
  "visualQa": false,
  "title": "गंगा ने सात पुत्रों को क्यों बहाया?",
- "from_item": "ganga-seven-sons.carousel"
+ "from_item": "ganga-seven-sons.carousel",
+ "fast": true
 }

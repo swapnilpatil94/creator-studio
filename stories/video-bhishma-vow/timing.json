@@ -1,0 +1,38 @@
+{
+ "item": "bhishma-vow.carousel",
+ "started": "2026-10-18T12:15:02.932Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792325702936,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792325702938,
+   "detail": "21 beats, 9 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792325702956,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792325702957,
+   "detail": "21 beats, 6 visual types, 7 new scenes, 1 carousel paintings reused, 10 by rules",
+   "seconds": 115
+  }
+ ],
+ "total_seconds": 115,
+ "ended": "2026-10-18T12:16:57.525Z",
+ "stopped_after": "director"
+}

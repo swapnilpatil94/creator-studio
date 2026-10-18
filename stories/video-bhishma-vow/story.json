@@ -1,0 +1,16 @@
+{
+ "name": "video-bhishma-vow",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1080x1920",
+ "title": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?",
+ "from_item": "bhishma-vow.carousel",
+ "engine": "longform"
+}

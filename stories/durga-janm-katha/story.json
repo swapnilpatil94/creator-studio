@@ -10,5 +10,7 @@
  "requireGates": true,
  "visualQa": false,
  "topic_evidence": "docs/PLAN_2026-10-17.md",
- "title": "Durga's birth: the full Devi Mahatmya account"
+ "title": "Durga's birth: the full Devi Mahatmya account",
+ "overlay": true,
+ "engine": "longform"
 }
