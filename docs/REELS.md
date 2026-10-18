@@ -1,5 +1,8 @@
 # Carousel to Reel: content plan and tech plan (2026-10-18)
 
+> **Look changed (2026-10-18): default style is now "cinema", the old stipple look is an option** (`REEL_STYLE=stipple` or `style: "stipple"` on /api/hub/reel/make). Why: the owner found the stipple look poor, and when a web search was made for evidence on which visual style retains viewers, no reliable data comparing styles turned up (only vendor blogs; first-3-seconds and captions guidance is the best supported point). So the choice rests on principles, not stats: a clear whole image the eye can read (stipple hid detail and faces), visible motion in the first second (hook punch-in), high-contrast kinetic captions, warm grade, light rays, embers, grain and a golden dot-burst between pictures (the dots survive as brand accent). `engine/reels/scene-cinema.js` draws it in 2D canvas only (no WebGL, no stipple sampling: a faster prepare step). Test it: compare both styles on retention with `insights.mjs` for two weeks before standardising.
+
+
 ## 1. Decision and why
 **Yes, but not as a slideshow.** Same research, claims and pictures; a different experience: stippled paintings that form out of dots, kinetic Devanagari headlines on the beat, an emotional Hindi voice, designed sound, 75-90 seconds.
 - Meta's originality rules (April 2026 extension to photos and carousels) target reposting other people's work; our art and research are our own. We found no reliable data comparing slideshow-style reels with original video, so the reach claims on vendor blogs are not used.
