@@ -67,7 +67,7 @@ function serveFile(req, res, file) {
 
 
 // ---------- dashboard helpers ----------
-import * as yt from "./yt.mjs"; import * as meta from "./meta.mjs";
+import * as yt from "./yt.mjs"; import * as meta from "./meta.mjs"; import * as hub from "./hub.mjs";
 // local queue for Instagram scheduled posts (the API cannot schedule): checked every 30 s while the server runs
 setInterval(async () => { try { const f = path.join(root, "schedule.json"); if (!fs.existsSync(f)) return; const q = JSON.parse(fs.readFileSync(f, "utf8")); let ch = false; for (const e of q) { if (e.status !== "queued" || new Date(e.at) > new Date()) continue; e.status = "running"; fs.writeFileSync(f, JSON.stringify(q, null, 1)); try { const d = path.join(root, "stories", e.story), sj = JSON.parse(fs.readFileSync(path.join(d, "social.json"), "utf8")), pf = JSON.parse(fs.readFileSync(path.join(d, "publish.json"), "utf8")); const r = await meta.uploadInstagram(sj.instagram, path.join(d, pf.video)); e.status = "done"; e.result = r; } catch (er) { e.status = "failed"; e.error = er.message; } ch = true; fs.writeFileSync(f, JSON.stringify(q, null, 1)); } } catch {} }, 30000);
 const storyDir = id => { if (!/^[a-z0-9-]+$/.test(id || "")) throw new Error("bad story id"); const d = path.join(root, "stories", id); if (!fs.existsSync(d)) throw new Error("no such story"); return d; };
@@ -93,6 +93,7 @@ function dashData() {
 const server = http.createServer(async (req, res) => {
   try {
     const u = new URL(req.url, "http://x"), p = u.pathname; let m;
+    if (await hub.handle(req, res, p, { send, readBody, serveFile })) return;
     if (req.method === "GET" && p === "/") return send(res, 200, fs.readFileSync(path.join(here, "index.html")), "text/html; charset=utf-8");
     if (req.method === "GET" && p === "/voice") return send(res, 200, fs.readFileSync(path.join(here, "voice.html")), "text/html; charset=utf-8");
     if (req.method === "GET" && p === "/api/voice/stories") { const sd = path.join(root, "stories"); return send(res, 200, fs.readdirSync(sd).filter(x => fs.existsSync(path.join(sd, x, "beats.json"))).map(x => { const n = path.join(sd, x, "narration"), v = path.join(n, "voice"); const st = fs.existsSync(path.join(sd, x, "story.json")) ? rj(path.join(sd, x, "story.json")) : {};

@@ -7,6 +7,7 @@ export const MEDIUM = {
 };
 const COMPOSITION = { carousel: "subject in the upper two thirds of a vertical frame, calm darker lower third", hero: "wide horizontal composition with the subject left of centre and open space on the right", thumbnail: "bold single focal point, simple background, large readable shapes" };
 export function build(shot, use = "carousel") {
+  if (shot.prompt) { const p = shot.prompt.trim(); return shot.raw ? p : p.replace(/[.,;]+$/, "") + ", " + MEDIUM[shot.medium || "ravi-varma"] + ", " + COMPOSITION[use] + "."; }   // pasted prose prompt from a frontier model: we append our style and composition unless raw
   const parts = [shot.subject, shot.action, MEDIUM[shot.medium || "ravi-varma"], shot.setting, shot.lighting, shot.mood, ...(shot.colors || []).map(c => `${c.object} in color ${c.hex}`), shot.composition || COMPOSITION[use]].filter(Boolean);
   return parts.map(p => p.trim().replace(/[.,;]+$/, "")).join(", ") + ".";
 }

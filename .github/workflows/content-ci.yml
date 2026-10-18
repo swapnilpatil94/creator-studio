@@ -31,6 +31,8 @@ jobs:
         run: node tools/content/corpus.mjs fetch-all
       - name: Policy regression tests
         run: node tests/content-qa.test.mjs
+      - name: Studio Hub backend smoke test
+        run: node tests/hub.test.mjs
       - name: QA every content item (fails on any FAIL)
         run: node tools/content/qa-content.mjs --all
       - name: Fonts for Devanagari rendering
