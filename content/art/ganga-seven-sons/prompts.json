@@ -1,0 +1,8 @@
+{
+ "1": {
+  "prompt": "Ganga, the river goddess, in a white and gold sari and gold crown, standing at the river's edge at dusk, fingertips touching the water, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, mist over the water, soft low golden light from the left, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1001,
+  "secs": 96,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ }
+}

@@ -8,7 +8,9 @@ on:
     - cron: "25 14 * * *"   # 19:55 IST
   workflow_dispatch:
     inputs: { dry_run: { description: "dry run (send nothing)", type: boolean, default: true } }
-permissions: { contents: write }
+permissions:
+  contents: write
+  issues: write
 concurrency: { group: post-due, cancel-in-progress: false }
 jobs:
   post:
@@ -21,13 +23,13 @@ jobs:
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       GH_TOKEN: ${{ github.token }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
       - run: npm ci --prefix engine
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
       - run: npx --prefix engine playwright install --with-deps chromium
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: research/corpus
           key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
@@ -38,3 +40,14 @@ jobs:
         run: |
           git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
           git add content/schedule.json && (git diff --cached --quiet || git commit -m "post-due: update schedule results" && git push)
+      - name: Keep the run record
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: post-due-record
+          path: content/schedule.json
+          retention-days: 30
+      - name: Open an issue when something failed
+        if: failure()
+        run: |
+          gh issue create --title "post-due failed $(date -u +%F)" --body "Run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . Failed entries keep their error in content/schedule.json."

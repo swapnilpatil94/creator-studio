@@ -74,5 +74,82 @@
   "#गंगाकथा",
   "#महाभारत",
   "#kathaayastories"
- ]
+ ],
+ "art": [
+  {
+   "slide": 1,
+   "subject": "Ganga, the river goddess, in a white and gold sari and gold crown",
+   "action": "standing at the river's edge at dusk, fingertips touching the water",
+   "setting": "mist over the water",
+   "lighting": "soft low golden light from the left",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 2,
+   "subject": "A king in royal Kuru attire with a gold crown meets a graceful woman beside a river",
+   "action": "the two stand facing each other on the bank, he with folded hands, she calm and dignified",
+   "setting": "a riverbank with tall trees and a few lotus flowers",
+   "lighting": "warm late-afternoon light filtering through leaves",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 3,
+   "subject": "A queen in a white and gold sari raises one open palm toward a king who listens attentively",
+   "action": "setting a firm condition, the king nodding in solemn agreement",
+   "setting": "a palace garden beside a river with marble pillars",
+   "lighting": "soft dawn light with long gentle shadows",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 4,
+   "subject": "Eight small oil lamps glowing on the surface of a calm river",
+   "action": "drifting side by side in a line, their flames reflected in the water",
+   "setting": "twilight on the river with a silhouette of a sleeping palace in the distance",
+   "lighting": "warm lamp-glow against deep blue dusk",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 5,
+   "subject": "Seven lit lamps floating away down a dark river while one lamp stays near the bank",
+   "action": "the seven drift into mist, the last flame flickering alone",
+   "setting": "a quiet river bend under a starry sky",
+   "lighting": "gold lamp-light on black water with a faint moon glow",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 6,
+   "subject": "A king in simple royal dress sits alone on a stone step by the river with his head bowed",
+   "action": "silent and troubled, hands clasped, a crown resting beside him",
+   "setting": "an empty riverbank at night with a lone lamp",
+   "lighting": "cool moonlight from above with a small warm lamp glow on his face",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 7,
+   "subject": "A king raises one hand in protest while a woman in a white and gold sari turns toward him on a riverbank",
+   "action": "a moment of decision, her expression calm and knowing",
+   "setting": "the river behind them catching the first light of morning",
+   "lighting": "dramatic golden dawn light behind the figures",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 8,
+   "subject": "Eight radiant celestial beings, the Vasus, in gold and saffron robes descend in a column of light",
+   "action": "drifting down gently with folded hands, glowing with soft divine radiance",
+   "setting": "a sky of swirling clouds above a quiet forest hermitage",
+   "lighting": "luminous golden light from above with warm glowing rays",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 9,
+   "subject": "A young prince with a bow stands beside a dignified river goddess in a white and gold sari who rests a hand on his shoulder",
+   "action": "the boy looks up, the goddess guides him toward the river mist",
+   "setting": "a misty river valley at sunrise",
+   "lighting": "soft golden sunrise light with long gentle shadows",
+   "medium": "ravi-varma"
+  }
+ ],
+ "ai_art_disclosed": true,
+ "art_style": "full-bleed",
+ "disclosure_text": "चित्र: AI-निर्मित"
 }

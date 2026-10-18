@@ -19,3 +19,5 @@ research/index.json
 flux-out/
 blog/dist/
 content/out/
+stories/*/narration/voice/pre_post.wav
+content/art/*/prompts.json.bak

@@ -14,12 +14,13 @@ jobs:
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: 22 }
       - run: node tools/content/insights.mjs
       - name: Commit snapshot to the data branch
         run: |
           git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
-          git fetch origin data || true; git checkout -B data $(git rev-parse --verify -q origin/data || echo HEAD)
+          git fetch origin data || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout -B data origin/data; else git checkout -B data; fi
           git add analytics && (git diff --cached --quiet || git commit -m "analytics $(date -u +%F)") && git push origin data

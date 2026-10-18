@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+// Generates the art for a carousel item with local FLUX.2 Klein: item.art = [{slide, subject, action, setting, lighting, mood?, medium?, colors?}] -> content/art/<slug>/NN.jpg (1080x1350) + prompts.json (prompt, seed, time, for reproducibility). Resumable; one image at a time.
+// usage: node tools/flux/carousel-art.mjs content/items/<id>.json [--seed 1000] [--only 3,4] [--dry-run]   (needs ComfyUI: bash tools/flux/start-comfy.sh)
+import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { build, lint } from "./prompt-director.mjs"; import { generate, alive } from "./klein.mjs";
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), a = process.argv.slice(2), arg = (k, d) => { const i = a.indexOf(k); return i > -1 ? a[i + 1] : d; }, dry = a.includes("--dry-run");
+const file = a.find(x => x.endsWith(".json")), item = JSON.parse(fs.readFileSync(path.resolve(file), "utf8")), out = path.join(root, "content/art", item.slug), only = arg("--only", "") ? arg("--only").split(",").map(Number) : null, seed0 = +arg("--seed", 1000);
+if (!item.art || !item.art.length) { console.error("item has no `art` shots"); process.exit(1); }
+fs.mkdirSync(out, { recursive: true }); const logf = path.join(out, "prompts.json"), log = fs.existsSync(logf) ? JSON.parse(fs.readFileSync(logf, "utf8")) : {}; let bad = 0;
+for (const shot of item.art) { const prompt = build(shot, "carousel"), problems = lint(prompt); console.log(`slide ${shot.slide}: ${prompt.split(/\s+/).length} words${problems.length ? "  LINT: " + problems.join("; ") : ""}`); if (problems.length) bad++; if (dry) console.log("   " + prompt); }
+if (bad) { console.error(`${bad} prompt(s) failed the lint: fix the shot specs`); process.exit(1); } if (dry) process.exit(0);
+if (!(await alive())) { console.error("ComfyUI is not running: bash tools/flux/start-comfy.sh"); process.exit(2); }
+for (const shot of item.art) { if (only && !only.includes(shot.slide)) continue; const f = path.join(out, String(shot.slide).padStart(2, "0") + ".jpg"); if (fs.existsSync(f)) { console.log("skip", path.basename(f)); continue; } const prompt = build(shot, "carousel"), seed = seed0 + shot.slide, t = Date.now(); const r = await generate(prompt, f, { ratio: "4:5", seed }); log[shot.slide] = { prompt, seed, secs: Math.round((Date.now() - t) / 1000), model: "flux-2-klein-4b distilled, 4 steps" }; fs.writeFileSync(logf, JSON.stringify(log, null, 1)); console.log("made", path.basename(f), log[shot.slide].secs + "s"); }

@@ -6,7 +6,7 @@ import fs from "node:fs"; import path from "node:path"; import { fileURLToPath }
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), a = process.argv.slice(2), dry = a.includes("--dry-run"), windowMin = +(a[a.indexOf("--window") + 1] || 20), only = a.includes("--only") ? a[a.indexOf("--only") + 1] : null;
 const J = f => JSON.parse(fs.readFileSync(path.join(root, f), "utf8")), W = (f, o) => fs.writeFileSync(path.join(root, f), JSON.stringify(o, null, 1)), site = J("blog/site.json"), log = (...x) => console.log(...x);
 const sched = fs.existsSync(path.join(root, "content/schedule.json")) ? J("content/schedule.json") : []; let changed = false; const now = Date.now();
-const itemOf = id => J(`content/items/${id}.json`), caption = it => [it.hook, "", ...(it.body_lines || []), "", it.cta, "", it.source_line, "", it.hashtags.join(" ")].filter(x => x !== undefined).join("\n").replace(/\n{3,}/g, "\n\n");
+const itemOf = id => J(`content/items/${id}.json`), caption = it => [it.hook, "", ...(it.body_lines || []), "", it.cta, "", it.source_line, ...(it.disclosure_text ? [it.disclosure_text] : []), "", it.hashtags.join(" ")].filter(x => x !== undefined).join("\n").replace(/\n{3,}/g, "\n\n");
 // covers: stories/<s>/output/thumb-9x16.png (Reels) or thumb-16x9.png (long) converted to JPEG; Instagram can use cover_url only from a public address (the blog site: /covers/<story>.jpg once deployed), otherwise it falls back to a frame offset
 function coverJpg(d, r) { const src = path.join(d, `output/thumb-${r}.png`), jpg = path.join(root, ".cache", `cover-${path.basename(d)}-${r}.jpg`); if (!fs.existsSync(src)) return null; fs.mkdirSync(path.dirname(jpg), { recursive: true }); spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-q:v", "3", jpg]); return fs.existsSync(jpg) ? jpg : null; }
 const coverUrlFor = story => fs.existsSync(path.join(root, "blog/public/covers", story + ".jpg")) ? `${site.domain}/covers/${story}.jpg` : null;
@@ -29,4 +29,5 @@ for (const e of sched) {
   } catch (err) { e.status = dry ? "queued" : "failed"; e.error = err.message; log("FAILED", err.message); }
   changed = true;
 }
-if (changed && !dry) W("content/schedule.json", sched); log(dry ? "\n(dry run: nothing sent)" : "\ndone");
+if (changed && !dry) W("content/schedule.json", sched);
+if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `### post-due ${dry ? "(dry run)" : ""}\n\n| entry | kind | status |\n|---|---|---|\n${sched.filter(e => e.status !== "queued" || new Date(e.at) <= new Date(now + windowMin * 60000)).map(e => `| ${e.id} | ${e.kind} | ${e.status}${e.error ? ": " + e.error : ""} |`).join("\n")}\n`); log(dry ? "\n(dry run: nothing sent)" : "\ndone");

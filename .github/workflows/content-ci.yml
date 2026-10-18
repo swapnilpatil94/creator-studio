@@ -8,15 +8,22 @@ concurrency:
   group: content-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  lint-workflows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: actionlint (workflow syntax and expression checks)
+        run: docker run --rm -v "$PWD:/repo" -w /repo rhysd/actionlint:1.7.7 -color
   qa:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
       - run: npm ci --prefix engine
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: research/corpus
           key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
@@ -29,7 +36,16 @@ jobs:
       - name: Fonts for Devanagari rendering
         run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
       - run: npx --prefix engine playwright install --with-deps chromium
+      - name: Content QA summary
+        run: |
+          { echo "### Content QA"; node tools/content/qa-content.mjs --all | sed 's/^/    /'; } >> "$GITHUB_STEP_SUMMARY"
       - name: Blog build (approved items only) and carousel render smoke test
         run: |
           node blog/build.mjs --drafts
           node tools/content/carousel.mjs content/items/ganga-seven-sons.carousel.json --out /tmp/car
+      - name: Keep the rendered slides for download
+        uses: actions/upload-artifact@v7
+        with:
+          name: carousel-smoke-test
+          path: /tmp/car
+          retention-days: 7
