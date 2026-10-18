@@ -1,0 +1,23 @@
+---
+// Privacy-friendly video: a poster + play button; the YouTube iframe (youtube-nocookie) loads only on click. Or pass src for a self-hosted mp4. The video must be public to play.
+interface Props { videoId?: string; src?: string; poster?: string; title?: string; vertical?: boolean }
+const { videoId, src, poster, title = "वीडियो", vertical = false } = Astro.props;
+const thumb = poster ?? (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : undefined);
+---
+<figure class:list={["video-embed my-10", vertical ? "mx-auto max-w-[22rem]" : ""]}>
+  <div class:list={["relative overflow-hidden rounded-2xl border border-[var(--line)] bg-black shadow-[var(--shadow)]", vertical ? "aspect-[9/16]" : "aspect-video"]} data-video data-id={videoId ?? ""}>
+    {src ? <video src={src} poster={thumb} controls playsinline preload="none" class="h-full w-full object-cover"></video> : (
+      <button type="button" class="group absolute inset-0 grid place-items-center" aria-label={`चलाइए: ${title}`}>
+        {thumb && <img src={thumb} alt="" class="absolute inset-0 h-full w-full object-cover opacity-80 transition group-hover:opacity-100" loading="lazy" />}
+        <span class="relative grid h-16 w-16 place-items-center rounded-full bg-[var(--gold)] text-black shadow-[0_0_40px_var(--glow)] transition group-hover:scale-110"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      </button>
+    )}
+  </div>
+  <figcaption class="mt-2 text-center text-sm text-[var(--muted)]">{title}</figcaption>
+</figure>
+<script>
+  document.querySelectorAll<HTMLElement>("[data-video]").forEach((box) => {
+    const btn = box.querySelector("button"); if (!btn || !box.dataset.id) return;
+    btn.addEventListener("click", () => { const f = document.createElement("iframe"); f.src = `https://www.youtube-nocookie.com/embed/${box.dataset.id}?autoplay=1&rel=0`; f.allow = "autoplay; encrypted-media; picture-in-picture"; f.allowFullscreen = true; f.className = "absolute inset-0 h-full w-full"; box.replaceChildren(f); });
+  });
+</script>

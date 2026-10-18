@@ -1,0 +1,18 @@
+---
+// Vertical story timeline. <Timeline steps={[{ title: "...", text: "..." }]} />
+interface Step { title: string; text?: string }
+interface Props { steps: Step[]; title?: string }
+const { steps, title = "कथा का क्रम · THE SEQUENCE" } = Astro.props;
+---
+<section class="my-10" aria-label={title}>
+  <div class="chip mb-4">{title}</div>
+  <ol class="relative ml-3 border-l border-[var(--line)] pl-7">
+    {steps.map((s, i) => (
+      <li class="relative mb-6 last:mb-0">
+        <span class="absolute -left-[2.62rem] top-1 grid h-8 w-8 place-items-center rounded-full border border-[var(--gold)] bg-[var(--card-solid)] font-latin text-xs text-[var(--gold)] shadow-[0_0_18px_var(--glow)]">{i + 1}</span>
+        <h3 class="h-hi !m-0 !text-[1.15rem]">{s.title}</h3>
+        {s.text && <p class="!mt-1 text-[var(--muted)]">{s.text}</p>}
+      </li>
+    ))}
+  </ol>
+</section>

@@ -1,0 +1,30 @@
+{
+  "name": "kathaaya-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync": "node ../tools/content/to-mdx.mjs",
+    "deploy": "astro build && wrangler deploy"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^8.1.0",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/noto-sans-devanagari": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "@fontsource/rozha-one": "^5.3.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  }
+}

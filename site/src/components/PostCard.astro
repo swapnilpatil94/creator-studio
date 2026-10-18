@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { SECTIONS, readingMinutes, fmtDate } from "../lib/posts";
+interface Props { post: CollectionEntry<"blog">; big?: boolean }
+const { post, big = false } = Astro.props, d = post.data;
+---
+<a href={`/blog/${post.id}/`} class:list={["glass glass-lift group block overflow-hidden", big ? "md:grid md:grid-cols-[1.15fr_1fr]" : ""]}>
+  <div class:list={["relative overflow-hidden", big ? "aspect-[4/3] md:aspect-auto md:min-h-[22rem]" : "aspect-[16/10]"]}>
+    {d.heroImage ? <img src={d.heroImage} alt={d.heroAlt ?? d.title} class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" /> : <div class="h-full w-full bg-gradient-to-br from-[var(--gold-soft)] to-transparent"></div>}
+    <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+    <span class="chip absolute left-3 top-3 !bg-black/55 !text-[#f3d27a] backdrop-blur">{SECTIONS[d.section]?.hi}</span>
+    {d.aiArt && <span class="chip absolute right-3 top-3 !bg-black/55 !text-white backdrop-blur">AI art</span>}
+  </div>
+  <div class="p-5 sm:p-6">
+    <h3 class:list={["h-hi !m-0", big ? "text-[clamp(1.5rem,1.1rem+1.6vw,2.2rem)]" : "text-[1.3rem]"]}>{d.title}</h3>
+    <p class="mt-2 line-clamp-3 text-[var(--muted)]">{d.description}</p>
+    <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 font-latin text-xs text-[var(--muted)]"><span>{fmtDate(d.publishDate)}</span><span>·</span><span>{readingMinutes(post.body)} मिनट</span>{d.trendingEventConnection && <span class="chip">{d.trendingEventConnection}</span>}</div>
+  </div>
+</a>

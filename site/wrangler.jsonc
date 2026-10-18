@@ -1,0 +1,8 @@
+{
+  // Static site served by Cloudflare Workers static assets (Pages is part of Workers now). Custom domain is attached on first deploy.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "kathaaya",
+  "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "kathaaya.getbyterush.com", "custom_domain": true }],
+  "assets": { "directory": "./dist", "not_found_handling": "404-page" }
+}

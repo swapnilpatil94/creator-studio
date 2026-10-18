@@ -1,0 +1,24 @@
+---
+// Component showcase (noindex): every building block an article can use.
+import Base from "../layouts/Base.astro";
+import KeyFacts from "../components/KeyFacts.astro";
+import Timeline from "../components/Timeline.astro";
+import MythologyQuiz from "../components/MythologyQuiz.astro";
+import MapSlider from "../components/MapSlider.astro";
+import VideoEmbed from "../components/VideoEmbed.astro";
+import Callout from "../components/Callout.astro";
+import PullQuote from "../components/PullQuote.astro";
+const grad = (a: string, b: string) => "data:image/svg+xml;utf8," + encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1000'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='${a}'/><stop offset='1' stop-color='${b}'/></linearGradient></defs><rect width='1600' height='1000' fill='url(#g)'/><g stroke='#fff' stroke-opacity='.25' fill='none'><circle cx='800' cy='500' r='300'/><circle cx='800' cy='500' r='200'/><path d='M0 500h1600M800 0v1000'/></g></svg>`);
+---
+<Base title="Component lab" description="घटकों का प्रदर्शन: क्विज़, स्लाइडर, टाइमलाइन, वीडियो।" noindex>
+  <div class="mx-auto max-w-3xl px-4 pt-14"><h1 class="dual"><span class="hi gold-text">घटक प्रयोगशाला</span><span class="en">COMPONENT LAB · Hindi | Hinglish heading</span></h1>
+    <div class="prose-hi !max-w-none mt-6"><p>यह पृष्ठ केवल जाँच के लिए है। नीचे वे सभी घटक हैं जिन्हें किसी लेख में MDX के भीतर इस्तेमाल किया जा सकता है।</p></div>
+    <KeyFacts items={[{ label: "स्रोत", value: "महाभारत", icon: "📜" }, { label: "संतानें", value: "८" }, { label: "वसु", value: "८" }, { label: "समय", value: "५ मिनट" }]} />
+    <Timeline steps={[{ title: "प्रतीप और गंगा", text: "दाहिनी जाँघ बेटी या बहू की जगह है।" }, { title: "शांतनु की शर्त", text: "कभी दख़ल नहीं देना।" }, { title: "आठवाँ पुत्र", text: "शांतनु ने रोका, गंगा ने सच बताया।" }]} />
+    <MythologyQuiz question="गंगा की कथा में कुल कितने वसु शापित हुए?" options={[{ text: "चार" }, { text: "आठ", correct: true, why: "आठ वसुओं को वशिष्ठ के शाप से मनुष्य बनना पड़ा।" }, { text: "बारह" }]} />
+    <MapSlider beforeImage={grad("#6b4a1d", "#2b1b08")} afterImage={grad("#0f3d4a", "#0a1a2a")} caption="प्राचीन मानचित्र बनाम आधुनिक उपग्रह-दृश्य (उदाहरण)" />
+    <VideoEmbed videoId="dQw4w9WgXcQ" title="वीडियो प्लेयर (उदाहरण)" />
+    <Callout kind="variant">भुजाओं की संख्या अलग-अलग परंपराओं में अलग मिलती है।</Callout>
+    <PullQuote>देवता अकेले हारे थे। साथ मिले, तो देवी बन गए।</PullQuote>
+  </div>
+</Base>

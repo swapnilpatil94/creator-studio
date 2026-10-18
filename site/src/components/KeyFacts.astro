@@ -1,0 +1,18 @@
+---
+// Infographic strip: "at a glance" cards. <KeyFacts items={[{ label: "स्रोत", value: "महाभारत, आदि पर्व" }, ...]} />
+interface Item { label: string; value: string; icon?: string }
+interface Props { items: Item[]; title?: string }
+const { items, title = "एक नज़र में · AT A GLANCE" } = Astro.props;
+---
+<aside class="my-9" aria-label={title}>
+  <div class="chip mb-3">{title}</div>
+  <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {items.map((it) => (
+      <div class="glass p-4 text-center">
+        {it.icon && <div class="mb-1 text-2xl" aria-hidden="true">{it.icon}</div>}
+        <div class="font-display text-[clamp(1.15rem,1rem+1vw,1.7rem)] leading-snug gold-text">{it.value}</div>
+        <div class="mt-1 text-xs uppercase tracking-widest text-[var(--muted)]">{it.label}</div>
+      </div>
+    ))}
+  </div>
+</aside>

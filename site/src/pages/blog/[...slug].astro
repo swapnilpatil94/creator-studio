@@ -1,0 +1,35 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import NewsSchema from "../../components/NewsSchema.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getPublished, SECTIONS, readingMinutes, fmtDate } from "../../lib/posts";
+export async function getStaticPaths() { const posts = await getPublished(); return posts.map((post) => ({ params: { slug: post.id }, props: { post, related: posts.filter((p) => p.id !== post.id && p.data.section === post.data.section).slice(0, 2) } })); }
+const { post, related } = Astro.props, d = post.data, { Content } = await render(post), img = d.heroImage;
+const share = encodeURIComponent(Astro.url.href), shareText = encodeURIComponent(d.title);
+---
+<Base title={d.title} description={d.description} image={img} type="article">
+  <NewsSchema slot="head" post={d} url={Astro.url.href} image={img ? new URL(img, Astro.site).href : undefined} />
+  <article>
+    <header class="mx-auto max-w-4xl px-4 pt-12 text-center">
+      <nav class="font-latin text-xs tracking-[.2em] text-[var(--muted)]" aria-label="breadcrumb"><a href="/" class="hover:text-[var(--gold)]">HOME</a> / <a href={`/category/${d.section}/`} class="hover:text-[var(--gold)]">{SECTIONS[d.section].en}</a></nav>
+      <h1 class="dual mt-5 text-center"><span class="hi gold-text">{d.title}</span>{d.hinglishKeywords[0] && <span class="en">{d.hinglishKeywords[0]}</span>}</h1>
+      <p class="p-hi mx-auto mt-4 max-w-2xl text-[var(--muted)]">{d.description}</p>
+      <div class="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-latin text-xs text-[var(--muted)]">
+        <span>{d.author}</span><span>·</span><time datetime={d.publishDate.toISOString()}>{fmtDate(d.publishDate)}</time><span>·</span><span>{readingMinutes(post.body)} मिनट पढ़ें</span>
+        {d.updatedDate && <><span>·</span><span>अद्यतन {fmtDate(d.updatedDate)}</span></>}
+        {d.trendingEventConnection && <span class="chip">{d.trendingEventConnection}</span>}
+      </div>
+    </header>
+    {img && <figure class="mx-auto mt-8 max-w-5xl px-4"><div class="overflow-hidden rounded-3xl border border-[var(--line)] shadow-[var(--shadow)]"><img src={img} alt={d.heroAlt ?? d.title} class="max-h-[34rem] w-full object-cover" fetchpriority="high" /></div>{d.aiArt && <figcaption class="mt-2 text-center text-xs text-[var(--muted)]">चित्र: AI-निर्मित</figcaption>}</figure>}
+    <div class="mx-auto mt-10 px-4"><div class="prose-hi"><Content /></div></div>
+    <div class="mx-auto mt-12 max-w-3xl px-4">
+      {(d.sources.length > 0 || d.traditionNote) && <aside class="glass p-6"><div class="chip mb-3">स्रोत और विधि · SOURCES</div>{d.sources.length > 0 && <ul class="list-disc space-y-1 pl-5">{d.sources.map((s) => <li>{s}</li>)}</ul>}{d.traditionNote && <p class="mt-3 text-[var(--muted)]">{d.traditionNote}</p>}<p class="mt-3 text-sm text-[var(--muted)]">यह लेख AI की सहायता से लिखा गया और प्रकाशन से पहले स्रोत-पाठ से मिलाया गया। गलती दिखे तो <a class="underline" href="/contact/">हमें बताइए</a>।</p></aside>}
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3"><span class="text-sm text-[var(--muted)]">साझा कीजिए:</span>
+        <a class="btn btn-ghost !py-2" href={`https://wa.me/?text=${shareText}%20${share}`} rel="noopener" target="_blank">WhatsApp</a>
+        <a class="btn btn-ghost !py-2" href={`https://www.facebook.com/sharer/sharer.php?u=${share}`} rel="noopener" target="_blank">Facebook</a>
+        <a class="btn btn-ghost !py-2" href={`https://twitter.com/intent/tweet?url=${share}&text=${shareText}`} rel="noopener" target="_blank">X</a></div>
+    </div>
+  </article>
+  {related.length > 0 && <section class="mx-auto mt-16 max-w-6xl px-4"><h2 class="h2-hi">और पढ़िए</h2><div class="mt-5 grid gap-6 sm:grid-cols-2">{related.map((p) => <PostCard post={p} />)}</div></section>}
+</Base>

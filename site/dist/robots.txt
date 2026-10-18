@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kathaaya.getbyterush.com/sitemap-index.xml
+Sitemap: https://kathaaya.getbyterush.com/news-sitemap.xml

@@ -1,0 +1,6 @@
+---
+import Base from "./Base.astro";
+interface Props { title: string; description: string; en?: string }
+const { title, description, en } = Astro.props;
+---
+<Base title={title} description={description}><div class="mx-auto max-w-3xl px-4 pt-14"><h1 class="dual"><span class="hi gold-text">{title}</span>{en && <span class="en">{en}</span>}</h1><div class="prose-hi mt-8 !max-w-none"><slot /></div></div></Base>

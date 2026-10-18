@@ -1,8 +1,10 @@
-# Builds the blog (approved posts only) plus the carousel images Instagram fetches, and deploys to Cloudflare Pages.
-# Needs repo secrets CLOUDFLARE_API_TOKEN (Pages edit) and CLOUDFLARE_ACCOUNT_ID, and the variable CF_PAGES_PROJECT.
+# Builds the Astro blog (approved posts; future-dated ones are left out until their time) plus the carousel JPEGs Instagram fetches,
+# and deploys to Cloudflare (Workers static assets) at kathaaya.getbyterush.com. The cron rebuild is what publishes scheduled posts.
+# Needs repo secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
 name: blog-deploy
 on:
-  push: { branches: [main], paths: ["blog/**", "content/items/**", "tools/content/**"] }
+  push: { branches: [main, "e2e/**"], paths: ["site/**", "content/items/**", "content/art/**", "tools/content/**", ".github/workflows/blog-deploy.yml"] }
+  schedule: [{ cron: "5 */3 * * *" }]
   workflow_dispatch:
 permissions: { contents: read }
 concurrency: { group: blog-deploy, cancel-in-progress: true }
@@ -13,21 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
-        with: { node-version: 22, cache: npm, cache-dependency-path: engine/package-lock.json }
-      - run: npm ci --prefix engine
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core
-      - run: npx --prefix engine playwright install --with-deps chromium
-      - uses: actions/cache@v6
-        with:
-          path: research/corpus
-          key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
-      - run: node tools/content/corpus.mjs fetch-all
-      - run: node tools/content/qa-content.mjs --all
-      - run: node blog/build.mjs && node tools/content/render-all-carousels.mjs blog/dist/c
-      - name: Deploy to Cloudflare Pages
-        if: ${{ vars.CF_PAGES_PROJECT != '' }}
+        with: { node-version: 22, cache: npm, cache-dependency-path: "site/package-lock.json" }
+      - run: npm ci --prefix site
+      - run: node tools/content/to-mdx.mjs
+      - run: npm run build --prefix site
+      - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy blog/dist --project-name=${{ vars.CF_PAGES_PROJECT }}
+          workingDirectory: site
+          command: deploy

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 110
+    },
+    "description": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 160
+    },
+    "publishDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "author": {
+      "default": "KATHAAYA संपादकीय टीम",
+      "type": "string"
+    },
+    "hinglishKeywords": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trendingEventConnection": {
+      "type": "string"
+    },
+    "section": {
+      "default": "itihasa",
+      "type": "string",
+      "enum": [
+        "itihasa",
+        "puranas",
+        "vrat-tyohar"
+      ]
+    },
+    "heroImage": {
+      "type": "string"
+    },
+    "heroAlt": {
+      "type": "string"
+    },
+    "aiArt": {
+      "default": false,
+      "type": "boolean"
+    },
+    "traditionNote": {
+      "type": "string"
+    },
+    "sources": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "publishDate"
+  ]
+}

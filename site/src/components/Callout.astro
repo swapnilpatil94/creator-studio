@@ -1,0 +1,7 @@
+---
+// Note box for variants / traditions / interpretation. <Callout kind="variant">...</Callout>
+interface Props { kind?: "tradition" | "variant" | "interpretation" | "note"; }
+const { kind = "note" } = Astro.props;
+const label = { tradition: "परंपरा · TRADITION", variant: "भिन्न मत · VARIANT", interpretation: "व्याख्या · INTERPRETATION", note: "ध्यान दीजिए · NOTE" }[kind];
+---
+<div class="glass my-8 border-l-4 !border-l-[var(--gold)] p-5"><div class="chip mb-2">{label}</div><div class="p-hi !m-0"><slot /></div></div>
