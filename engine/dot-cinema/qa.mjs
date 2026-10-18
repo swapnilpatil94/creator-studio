@@ -51,10 +51,11 @@ const mo = diffs.reduce((x, y) => x + y, 0) / diffs.length; add("motion present 
 // captions: bright text in band during speech; nothing bright hugging the side margins
 let capMiss = [], clip = [];
 let TEXTLED = new Set(); try { const pf = path.join(path.dirname(segFile), "../../plan.final.json"), pl = JSON.parse(fs.readFileSync(pf, "utf8")); TEXTLED = new Set((pl.plan || pl).filter(b => ["kinetic", "quote", "dotword", "chapter"].includes(b.comp)).map(b => b.id)); } catch {}   // text-led beats animate the words themselves, the subtitle is hidden there
-for (const s of segs.segments.filter(s => !TEXTLED.has(s.beat_id))) for (const tt of [s.start_seconds + (s.end_seconds - s.start_seconds) * 0.5]) {
-  const i = Math.round((tt + LEAD) * 4); if (i >= n) continue; const b = fr(i); let band = 0, side = 0;
-  for (let y = Math.floor(H * 0.7); y < Math.floor(H * 0.9); y++) for (let x = 0; x < W; x++) { const val = b[y * W + x]; if (val > 215) { band++; if (x < W * 0.04 || x > W * 0.96) side++; } }
-  if (band < 120) capMiss.push(s.beat_id); if (side > 6) clip.push(s.beat_id);
+for (const s of segs.segments.filter(s => !TEXTLED.has(s.beat_id))) { let best = 0, sideMax = 0;   // words pop in one by one, so a single sample can land on one short word: a beat passes when ANY of three samples (35%, 50%, 65% of the beat) shows a caption
+  for (const k of [0.35, 0.5, 0.65]) { const tt = s.start_seconds + (s.end_seconds - s.start_seconds) * k, i = Math.round((tt + LEAD) * 4); if (i >= n) continue; const b = fr(i); let band = 0, side = 0;
+    for (let y = Math.floor(H * 0.7); y < Math.floor(H * 0.9); y++) for (let x = 0; x < W; x++) { const val = b[y * W + x]; if (val > 215) { band++; if (x < W * 0.04 || x > W * 0.96) side++; } }
+    best = Math.max(best, band); sideMax = Math.max(sideMax, side); }
+  if (best < 120) capMiss.push(s.beat_id); if (sideMax > 6) clip.push(s.beat_id);
 }
 add("captions visible for every beat", capMiss.length === 0, capMiss.length ? "missing " + capMiss.join(",") : "all beats");
 // side-margin safety is checked on the scene's measured caption geometry by visual-qa (caption_in_margins), not by pixels
