@@ -1,0 +1,40 @@
+{
+ "fixed": [
+  "d001: kinetic lines invalid or too long -> cinema",
+  "d017: kinetic lines invalid or too long -> cinema",
+  "d027: kinetic lines invalid or too long -> cinema",
+  "d028: kinetic lines invalid or too long -> cinema",
+  "d030: kinetic lines invalid or too long -> cinema",
+  "d070: kinetic lines invalid or too long -> cinema",
+  "d076: bars need 2+ numeric items -> cinema",
+  "d097: kinetic lines invalid or too long -> cinema",
+  "d110: kinetic lines invalid or too long -> cinema",
+  "d119: kinetic lines invalid or too long -> cinema",
+  "d131: kinetic lines invalid or too long -> cinema",
+  "d058: repeated bars -> cinema",
+  "d079: repeated kinetic -> cinema",
+  "d087: repeated kinetic -> cinema"
+ ],
+ "warnings": [
+  "no re-hook (question or turn) near 50% of the film",
+  "50 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "comps": {
+   "cinema": 79,
+   "kinetic": 22,
+   "timeline": 2,
+   "mandala": 9,
+   "bars": 7,
+   "chapter": 2,
+   "versus": 2,
+   "quote": 2,
+   "stat": 5,
+   "graph": 1
+  },
+  "beats": 131,
+  "windows_low_variety": 50
+ },
+ "writer": "ollama:qwen3:14b",
+ "from_rules": 10
+}
