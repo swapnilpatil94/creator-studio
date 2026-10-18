@@ -16,5 +16,68 @@
     "by": "GitHub Actions run 39096614318 on branch e2e/first-live-run"
    }
   }
+ },
+ {
+  "id": "karna-birth-kunti.carousel.carousel.2026-10-18T19",
+  "item": "karna-birth-kunti.carousel",
+  "kind": "carousel",
+  "platforms": [
+   "facebook",
+   "instagram"
+  ],
+  "at": "2026-10-18T19:57:16.330Z",
+  "status": "posted",
+  "mode": "post-due",
+  "result": {
+   "facebook": {
+    "id": "1354404841091894_122094466251522482",
+    "post_supports_client_mutation_id": true
+   },
+   "instagram": {
+    "id": "18113468117117295"
+   }
+  },
+  "posted_at": "2026-10-18T19:58:49.950Z"
+ },
+ {
+  "id": "karna-birth-kunti.fb_text.fb_text.2026-10-18T20",
+  "item": "karna-birth-kunti.fb_text",
+  "kind": "fb_text",
+  "platforms": [
+   "facebook"
+  ],
+  "at": "2026-10-18T20:16:32.278Z",
+  "status": "posted",
+  "mode": "post-due",
+  "result": {
+   "facebook": {
+    "id": "1354404841091894_122094473061522482"
+   }
+  },
+  "posted_at": "2026-10-18T20:15:35.225Z"
+ },
+ {
+  "id": "video-ganga-seven-sons.reel.2026-10-19T13",
+  "item": "story:video-ganga-seven-sons:reel",
+  "kind": "reel",
+  "platforms": [
+   "facebook",
+   "instagram",
+   "youtube"
+  ],
+  "at": "2026-10-18T20:20:55.939Z",
+  "status": "posted",
+  "mode": "post-due",
+  "posted_at": "2026-10-18T20:23:04.137Z",
+  "result": {
+   "facebook": {
+    "id": "4049398125353970",
+    "note": "Reel public, cover set"
+   },
+   "instagram": {
+    "id": "18103669250023490",
+    "note": "posted by retry after one upload error"
+   }
+  }
  }
 ]
