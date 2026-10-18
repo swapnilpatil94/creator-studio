@@ -165,30 +165,23 @@
  },
  {
   "id": "v014",
-  "comp": "stat",
+  "comp": "kinetic",
   "params": {
-   "value": 1,
-   "suffix": "जन्म",
-   "label": "युधिष्ठिर का जन्म",
-   "ring": 0.25
+   "lines": [
+    "युधिष्ठिर का जन्म"
+   ],
+   "style": "mask"
   },
   "chapter": "ch1"
  },
  {
   "id": "v015",
-  "comp": "bars",
+  "comp": "kinetic",
   "params": {
-   "title": "पुत्रों का जन्म",
-   "items": [
-    {
-     "label": "भीम",
-     "value": 2
-    },
-    {
-     "label": "अर्जुन",
-     "value": 3
-    }
-   ]
+   "lines": [
+    "युधिष्ठिर का जन्म"
+   ],
+   "style": "mask"
   },
   "chapter": "ch1"
  },
@@ -237,12 +230,12 @@
  },
  {
   "id": "v019",
-  "comp": "stat",
+  "comp": "kinetic",
   "params": {
-   "value": 5,
-   "suffix": "पुत्र",
-   "label": "कुरु वंश के विस्तार के लिए",
-   "ring": 0.75
+   "lines": [
+    "युधिष्ठिर का जन्म"
+   ],
+   "style": "mask"
   },
   "chapter": "ch1"
  },
