@@ -1,0 +1,2146 @@
+{
+ "month": "2026-11",
+ "generated": "2026-10-18T18:11:25.491Z",
+ "source": {
+  "youtube": "outliers-monthly-2026-11-2026-10-18.json",
+  "quotaUnits": 2874,
+  "instagramHandles": [
+   {
+    "handle": "epicstories",
+    "followers": 451078,
+    "posts": 30,
+    "medianEngagement": 4851.5
+   },
+   {
+    "handle": "amarchitrakatha",
+    "followers": 324177,
+    "posts": 30,
+    "medianEngagement": 607
+   },
+   {
+    "handle": "storieswithvishal",
+    "followers": 134689,
+    "posts": 30,
+    "medianEngagement": 1087
+   },
+   {
+    "handle": "bharatkatha",
+    "followers": 13646,
+    "posts": 30,
+    "medianEngagement": 12
+   },
+   {
+    "handle": "hindustoriesofficial",
+    "followers": 3359,
+    "posts": 30,
+    "medianEngagement": 4
+   },
+   {
+    "handle": "hindu_gods_official",
+    "followers": 5028,
+    "posts": 30,
+    "medianEngagement": 237
+   }
+  ],
+  "queries": [
+   "शरद पूर्णिमा कृष्ण रास",
+   "सावित्री सत्यवान",
+   "करवा चौथ कथा",
+   "धनतेरस यमराज",
+   "दिवाली लक्ष्मी समुद्र मंथन",
+   "राम अयोध्या वापसी दिवाली कथा",
+   "कृष्ण गोवर्धन पर्वत कथा",
+   "तुलसी विवाह कथा",
+   "देवउठनी एकादशी कथा",
+   "कार्तिक पूर्णिमा कथा",
+   "त्रिपुरासुर वध",
+   "कर्ण कथा महाभारत",
+   "अभिमन्यु चक्रव्यूह",
+   "शिव कथा",
+   "विष्णु अवतार कथा",
+   "द्रौपदी कथा",
+   "भीष्म प्रतिज्ञा",
+   "हनुमान कथा रामायण",
+   "सीता कथा रामायण",
+   "mythology shorts hindi",
+   "महाभारत shorts",
+   "रामायण shorts"
+  ]
+ },
+ "events": [
+  {
+   "id": "sharad-purnima",
+   "name": "Sharad Purnima",
+   "date": "2026-10-25",
+   "uncertain_days": 1
+  },
+  {
+   "id": "karwa-chauth",
+   "name": "Karwa Chauth",
+   "date": "2026-10-29",
+   "uncertain_days": 1
+  },
+  {
+   "id": "dhanteras",
+   "name": "Dhanteras",
+   "date": "2026-11-06",
+   "uncertain_days": 0
+  },
+  {
+   "id": "diwali",
+   "name": "Diwali (Lakshmi Puja)",
+   "date": "2026-11-09",
+   "uncertain_days": 2
+  },
+  {
+   "id": "govardhan",
+   "name": "Govardhan Puja",
+   "date": "2026-11-10",
+   "uncertain_days": 1
+  },
+  {
+   "id": "dev-uthani",
+   "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+   "date": "2026-11-20",
+   "uncertain_days": 1
+  },
+  {
+   "id": "kartik-purnima",
+   "name": "Kartik Purnima",
+   "date": "2026-11-24",
+   "uncertain_days": 1
+  }
+ ],
+ "platforms": {
+  "youtube_long": [
+   {
+    "topic": "कृष्ण गोवर्धन पर्वत कथा",
+    "n": 6,
+    "medViewsPerDay": 4184,
+    "medViewsPerSub": 129.53,
+    "share100k": 1,
+    "share1M": 0.17,
+    "baseScore": 2.284,
+    "boost": 1.3,
+    "score": 2.969,
+    "event": {
+     "id": "govardhan",
+     "name": "Govardhan Puja",
+     "date": "2026-11-10",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-29"
+    },
+    "publishBy": "2026-10-29",
+    "examples": [
+     {
+      "title": "When Shri Krishna Lifts Govardhan Parvat to Save Gokul | FULL STORY",
+      "url": "https://youtu.be/E4QhenSrFTQ",
+      "views": 801403,
+      "subs": 2590,
+      "viewsPerSub": 309.4,
+      "channel": "Hidden Sanatan"
+     },
+     {
+      "title": "जेल में क्यों हुआ था श्री कृष्ण का जन्म? | पूरी कृष्ण कथा | Janmashtami Special",
+      "url": "https://youtu.be/bHzeWdkz6Hs",
+      "views": 115840,
+      "subs": 421,
+      "viewsPerSub": 275.1,
+      "channel": "SAAZ Beyond Time"
+     },
+     {
+      "title": "गोकुल वासियों का रक्षा करने के लिए जब बाल कृष्ण जी ने उठाया गोवर्धन पर्वत को |यशोमती मईया ",
+      "url": "https://youtu.be/Z9SAEAjk_fU",
+      "views": 2642381,
+      "subs": 10300,
+      "viewsPerSub": 256.5,
+      "channel": "Kanha Darshan TV"
+     }
+    ]
+   },
+   {
+    "topic": "करवा चौथ कथा",
+    "n": 6,
+    "medViewsPerDay": 9962,
+    "medViewsPerSub": 1.15,
+    "share100k": 1,
+    "share1M": 0.17,
+    "baseScore": 2.116,
+    "boost": 1.4,
+    "score": 2.962,
+    "event": {
+     "id": "karwa-chauth",
+     "name": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-17"
+    },
+    "publishBy": "2026-10-17",
+    "examples": [
+     {
+      "title": "Bhadwa Ki Chauth Ki Kahani | भादवा की चौथ की कहानी | Chauth Mata Ki Kahani | Chauth Ki Kah",
+      "url": "https://youtu.be/BnqQ61_qtQg",
+      "views": 523197,
+      "subs": 180000,
+      "viewsPerSub": 2.9,
+      "channel": "Fantastic Talks"
+     },
+     {
+      "title": "भादवा की चौथ की कहानी | Chauth Mata Ki Kahani | Bhadwa Ki Chauth Ki Kahani | Chauth Ki Kah",
+      "url": "https://youtu.be/RI6yHoTNC6o",
+      "views": 968848,
+      "subs": 669000,
+      "viewsPerSub": 1.4,
+      "channel": "Kesar Nani Maa"
+     },
+     {
+      "title": "तीज माता की बात | कजरी की तीज कथा | kajari teej ki baat | teej mata ki kahani | teej mata ",
+      "url": "https://youtu.be/47fMq3UuS4o",
+      "views": 335849,
+      "subs": 395000,
+      "viewsPerSub": 0.8,
+      "channel": "Bhabu Goswami"
+     }
+    ]
+   },
+   {
+    "topic": "हनुमान कथा रामायण",
+    "n": 6,
+    "medViewsPerDay": 55075,
+    "medViewsPerSub": 8.09,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.862,
+    "boost": 1,
+    "score": 2.862,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "एकादशी के दिन भगवान राम ने अढ़ैया के हाथों का भोजन क्यों खाया? अढ़ैया की सच्ची भक्ति की कह",
+      "url": "https://youtu.be/SwN_7gQnz2E",
+      "views": 8349082,
+      "subs": 32400,
+      "viewsPerSub": 257.7,
+      "channel": "धर्म ग्रंथ "
+     },
+     {
+      "title": "कौन लाएगा काल कुम्भ का ध्वज | Sankat Mochan Mahabali Hanuman | Jay Hanuman #hanumankatha",
+      "url": "https://youtu.be/GQT0Tmf9nDU",
+      "views": 2624041,
+      "subs": 22400,
+      "viewsPerSub": 117.1,
+      "channel": "Hanuman Katha"
+     },
+     {
+      "title": "किसने कहा था लंका जल दीजिए | Puchhte Hai Ram Hanumat Bata Dijiye | New Ram Hanuman Bhajan ",
+      "url": "https://youtu.be/uR5j36trrSc",
+      "views": 2056029,
+      "subs": 176000,
+      "viewsPerSub": 11.7,
+      "channel": "Gyanjyoti Bhakti "
+     }
+    ]
+   },
+   {
+    "topic": "शिव कथा",
+    "n": 8,
+    "medViewsPerDay": 19260,
+    "medViewsPerSub": 37.83,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.76,
+    "boost": 1,
+    "score": 2.76,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "गणेश जी के गजानन बनने की अद्भुत कथा | Shiv Ji & Ganesh Story | Untold Story Of Ganesha Ful",
+      "url": "https://youtu.be/m55XOXtscXU",
+      "views": 32199541,
+      "subs": 81400,
+      "viewsPerSub": 395.6,
+      "channel": "KATHA SAGAR"
+     },
+     {
+      "title": "भोले बाबा का सच्चा भक्त | महादेव की अद्भुत कृपा | Complete Story | Emotional Shiv Bhakt Ka",
+      "url": "https://youtu.be/bhTdgPedR1M",
+      "views": 1166025,
+      "subs": 6470,
+      "viewsPerSub": 180.2,
+      "channel": "Cartoonii Kahaniya Ai"
+     },
+     {
+      "title": "सावन में भोलेनाथ शिव की कथा सुनने मात्र से सब कष्ट दूर हो जाते हैं| शिव महिमा | शिव कथा| S",
+      "url": "https://youtu.be/urxTvUSwYcc",
+      "views": 1519616,
+      "subs": 32300,
+      "viewsPerSub": 47,
+      "channel": "Fakt Katha"
+     }
+    ]
+   },
+   {
+    "topic": "सीता कथा रामायण",
+    "n": 10,
+    "medViewsPerDay": 28153,
+    "medViewsPerSub": 4.56,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.674,
+    "boost": 1,
+    "score": 2.674,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "Sita Ram ❤️ | Krishna Das | सीता राम भजन | Ram Naam Jap | Sita Ram Sita Ram | Nonstop Loop",
+      "url": "https://youtu.be/Yv-RngTX5aQ",
+      "views": 1333210,
+      "subs": 2630,
+      "viewsPerSub": 506.9,
+      "channel": "HanumanAnsh"
+     },
+     {
+      "title": "शबरी की सम्पूर्ण कथा | माता शबरी और श्रीराम का दिव्य मिलन | Bhaktmala Episode 1 | Ask Sana",
+      "url": "https://youtu.be/89YEMRwakEk",
+      "views": 1338288,
+      "subs": 25700,
+      "viewsPerSub": 52.1,
+      "channel": "Ask Sanatan Dharma "
+     },
+     {
+      "title": "श्रीराम ने दिया माता सीता को अग्नि परीक्षा का आदेश देख माता सीता की रक्षा में जुटे हनुमान ",
+      "url": "https://youtu.be/9FBP3aYo8Rw",
+      "views": 4429954,
+      "subs": 96500,
+      "viewsPerSub": 45.9,
+      "channel": "Ramayan Returns"
+     }
+    ]
+   },
+   {
+    "topic": "द्रौपदी कथा",
+    "n": 6,
+    "medViewsPerDay": 15274,
+    "medViewsPerSub": 6.23,
+    "share100k": 1,
+    "share1M": 0.83,
+    "baseScore": 2.514,
+    "boost": 1,
+    "score": 2.514,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "\"मेरे चीरहरण का दोष किस जन्म का था?\" द्रौपदी के सवाल पर श्रीकृष्ण ने खोला सबसे बड़ा रहस्य!",
+      "url": "https://youtu.be/sqttyXbslhY",
+      "views": 3539292,
+      "subs": 426000,
+      "viewsPerSub": 8.3,
+      "channel": "BHAIRAM VISION "
+     },
+     {
+      "title": "जब द्रौपदी ने श्रीकृष्ण से पूछा – \"क्या चीरहरण मेरे पूर्व जन्म के कर्मों का दंड था?\" 😱 | ",
+      "url": "https://youtu.be/MgLspPeZTN0",
+      "views": 1001459,
+      "subs": 127000,
+      "viewsPerSub": 7.9,
+      "channel": "Anmol Mahabharat"
+     },
+     {
+      "title": "mahabharat। मरते समय द्रौपदी ने किसका नाम लिया था? जिसे सुनकर पांडव चौक गए! #ramayan | Fak",
+      "url": "https://youtu.be/jMOuZJ0cXYk",
+      "views": 1736742,
+      "subs": 274000,
+      "viewsPerSub": 6.3,
+      "channel": "FAKT SANATAN"
+     }
+    ]
+   },
+   {
+    "topic": "सावित्री सत्यवान",
+    "n": 6,
+    "medViewsPerDay": 707,
+    "medViewsPerSub": 13.57,
+    "share100k": 0.17,
+    "share1M": 0,
+    "baseScore": 1.658,
+    "boost": 1.4,
+    "score": 2.321,
+    "event": {
+     "id": "karwa-chauth",
+     "name": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-17"
+    },
+    "publishBy": "2026-10-17",
+    "examples": [
+     {
+      "title": "सावित्री ने यमराज से कैसे जीते अपने पति के प्राण?| सत्यवान सावित्री की सम्पूर्ण कथा| Mytho",
+      "url": "https://youtu.be/SSZTSTsRGOQ",
+      "views": 30293,
+      "subs": 139,
+      "viewsPerSub": 217.9,
+      "channel": "Dark truths "
+     },
+     {
+      "title": "सावित्री और हरीश की कहानी --🌸--सेठ ने सावित्री के सामने पाँच हज़ार रुपये रख दिए ❤️‍🩹 आंग",
+      "url": "https://youtu.be/qXwJmrHGXUI",
+      "views": 330555,
+      "subs": 8930,
+      "viewsPerSub": 37,
+      "channel": "Soch by Daksh"
+     },
+     {
+      "title": "“यमराज ने छीने सत्यवान के प्राण, सावित्री ने मृत्यु को ही चुनौती दे दी!” part 1",
+      "url": "https://youtu.be/QchcvcVOkhY",
+      "views": 73019,
+      "subs": 4550,
+      "viewsPerSub": 16.1,
+      "channel": "Royal Story  king"
+     }
+    ]
+   },
+   {
+    "topic": "कर्ण कथा महाभारत",
+    "n": 12,
+    "medViewsPerDay": 5740,
+    "medViewsPerSub": 2.54,
+    "share100k": 1,
+    "share1M": 0.08,
+    "baseScore": 2.014,
+    "boost": 1,
+    "score": 2.014,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "हे मुरलीधर! ये कैसा न्याय? | कर्ण की अंतिम आवाज़ | Emotional Mahabharat Rap Song",
+      "url": "https://youtu.be/zk0Qscqsyh0",
+      "views": 496475,
+      "subs": 13600,
+      "viewsPerSub": 36.5,
+      "channel": "Rapveda"
+     },
+     {
+      "title": "मृत्यु से पहले कर्ण युधिष्ठिर से मिलने क्यों गए थे। Mahabharat ",
+      "url": "https://youtu.be/BwU6-DDCy_U",
+      "views": 433706,
+      "subs": 50300,
+      "viewsPerSub": 8.6,
+      "channel": "Ramayan1 .8"
+     },
+     {
+      "title": "मरते समय कर्ण ने द्रौपदी से जो सच कहा, सुनकर अर्जुन भी रो पड़ा | महाभारत का रहस्य | Hindi ",
+      "url": "https://youtu.be/CZ41KkfRB4s",
+      "views": 440027,
+      "subs": 85100,
+      "viewsPerSub": 5.2,
+      "channel": "आचार्य साधना"
+     }
+    ]
+   },
+   {
+    "topic": "तुलसी विवाह कथा",
+    "n": 7,
+    "medViewsPerDay": 1894,
+    "medViewsPerSub": 0.22,
+    "share100k": 0.43,
+    "share1M": 0.14,
+    "baseScore": 1.699,
+    "boost": 1.15,
+    "score": 1.954,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-08"
+    },
+    "publishBy": "2026-11-08",
+    "examples": [
+     {
+      "title": "गोस्वामी तुलसीदास की सम्पूर्ण कथा | मोह से राम तक की यात्रा | भक्तमाला",
+      "url": "https://youtu.be/FbN0k_pp1Ek",
+      "views": 1249013,
+      "subs": 25700,
+      "viewsPerSub": 48.6,
+      "channel": "Ask Sanatan Dharma "
+     },
+     {
+      "title": "तुलसी के विवाह पर गुरु शुक्राचार्य का क्रोध, आखिर क्या थी वजह? | Maa Shakti | Jai Mata Di",
+      "url": "https://youtu.be/weOAzCikIIg",
+      "views": 162522,
+      "subs": 13900,
+      "viewsPerSub": 11.7,
+      "channel": "Ramayan 4k"
+     },
+     {
+      "title": "तुलसी विवाह गीत || सीता फूल लोढ़े चलली कौशल्या अँगना || Anshu Priya Bhojpuri Tulsi Puja Viv",
+      "url": "https://youtu.be/JFVNiQTOzuM",
+      "views": 136412,
+      "subs": 427000,
+      "viewsPerSub": 0.3,
+      "channel": "PAWAN BABU"
+     }
+    ]
+   },
+   {
+    "topic": "देवउठनी एकादशी कथा",
+    "n": 16,
+    "medViewsPerDay": 2053,
+    "medViewsPerSub": 0.21,
+    "share100k": 0.81,
+    "share1M": 0,
+    "baseScore": 1.673,
+    "boost": 1.15,
+    "score": 1.924,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-08"
+    },
+    "publishBy": "2026-11-08",
+    "examples": [
+     {
+      "title": "Jal Jhulni Ekadashi Vrat Katha 2026~ जल झुलनी एकादशी~परिवर्तिनी एकादशी कथा~ Parivartini Vr",
+      "url": "https://youtu.be/mlR1AbmOOGg",
+      "views": 588722,
+      "subs": 1470000,
+      "viewsPerSub": 0.4,
+      "channel": "Bhakti Gyan"
+     },
+     {
+      "title": "जल झुलनी एकादशी व्रत कथा~Jal Jhulni Ekadashi Vrat Katha~ Parivartini Ekadashi~परिवर्तिनी ए",
+      "url": "https://youtu.be/z8Ux4cSIJKY",
+      "views": 731737,
+      "subs": 1950000,
+      "viewsPerSub": 0.4,
+      "channel": "Vrat Parva Tyohar"
+     },
+     {
+      "title": "देवशयनी एकादशी व्रत कथा और आरती ~ Ekadashi vrat katha,Ekadashi ki aarti | Ekadashi ki kath",
+      "url": "https://youtu.be/hzKVD8o0J0w",
+      "views": 268459,
+      "subs": 755000,
+      "viewsPerSub": 0.4,
+      "channel": "VK MISHRA PRESENT"
+     }
+    ]
+   },
+   {
+    "topic": "भीष्म प्रतिज्ञा",
+    "n": 4,
+    "medViewsPerDay": 298,
+    "medViewsPerSub": 41.18,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 1.563,
+    "boost": 1,
+    "score": 1.563,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "Pitamah Bhishma⚔️: Birth to Death | The Untold Story of Mahabharata's Greatest Warrior | F",
+      "url": "https://youtu.be/WQ_Whk-4MzY",
+      "views": 95517,
+      "subs": 882,
+      "viewsPerSub": 108.3,
+      "channel": "Panch Tatva Studios "
+     }
+    ]
+   },
+   {
+    "topic": "राम अयोध्या वापसी दिवाली कथा",
+    "n": 5,
+    "medViewsPerDay": 240,
+    "medViewsPerSub": 0.05,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 1.195,
+    "boost": 1.3,
+    "score": 1.554,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-10-28"
+    },
+    "publishBy": "2026-10-28",
+    "examples": [
+     {
+      "title": "श्री राम अयोध्या वापसी | Ramayan Katha",
+      "url": "https://youtu.be/RRyoHj4u4xI",
+      "views": 52332,
+      "subs": 1120000,
+      "viewsPerSub": 0.1,
+      "channel": "Bharat Ki Amar Kahaniyan"
+     }
+    ]
+   },
+   {
+    "topic": "कार्तिक पूर्णिमा कथा",
+    "n": 5,
+    "medViewsPerDay": 346,
+    "medViewsPerSub": 0.06,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 1.275,
+    "boost": 1,
+    "score": 1.275,
+    "event": {
+     "id": "kartik-purnima",
+     "name": "Kartik Purnima",
+     "date": "2026-11-24",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-12"
+    },
+    "publishBy": "2026-11-12",
+    "examples": [
+     {
+      "title": "Purnima ki kahani | जेठ पूर्णिमा व्रत कथा | Purnima vrat katha | सत्यनारायण कथा | satyanar",
+      "url": "https://youtu.be/5eP1n9Ci0NU",
+      "views": 38656,
+      "subs": 669000,
+      "viewsPerSub": 0.1,
+      "channel": "Kesar Nani Maa"
+     },
+     {
+      "title": "सत्यनारायण कथा | Satyanarayan Katha | Satyanarayan bhagwan ki katha | Purnima Vrat Katha",
+      "url": "https://youtu.be/xalHMUC8jz4",
+      "views": 49063,
+      "subs": 1220000,
+      "viewsPerSub": 0,
+      "channel": "Dharma Ganga Bhakti "
+     }
+    ]
+   }
+  ],
+  "youtube_short": [
+   {
+    "topic": "हनुमान कथा रामायण",
+    "n": 12,
+    "medViewsPerDay": 88683,
+    "medViewsPerSub": 201.98,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 3.235,
+    "boost": 1,
+    "score": 3.235,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "जब आमने-सामने आए बाली और हनुमान | जब हनुमान जी ने तोड़ा बाली का घमंड | Hanuman VS Bali Ful",
+      "url": "https://youtu.be/Yvuxqa_zTU0",
+      "views": 3210032,
+      "subs": 8030,
+      "viewsPerSub": 399.8,
+      "channel": "Sanatan Cinematics"
+     },
+     {
+      "title": "हनुमान जी की पूँछ में आग लगाई… फिर पूरी लंका जल उठी! 🔥🐒🚩 #Hanuman #Ramayan #LankaDahan",
+      "url": "https://youtu.be/4rFc3mNc_qk",
+      "views": 6093516,
+      "subs": 16000,
+      "viewsPerSub": 380.8,
+      "channel": "Yatra Hub"
+     },
+     {
+      "title": "हनुमान जी vs अहिरावण ⚔️ | पाताल लोक का महायुद्ध | अहिरावण का अंत कैसे हुआ? 🚩",
+      "url": "https://youtu.be/aSH_Fl9IIqY",
+      "views": 7371814,
+      "subs": 20200,
+      "viewsPerSub": 364.9,
+      "channel": "bhakti sagar"
+     }
+    ]
+   },
+   {
+    "topic": "महाभारत shorts",
+    "n": 20,
+    "medViewsPerDay": 72817,
+    "medViewsPerSub": 75.53,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 3.108,
+    "boost": 1,
+    "score": 3.108,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "16 YEAR OLD WARRIOR. #mahabharat #sanatandharma #hinduism #kurukshetra #shrikrishna #arjun",
+      "url": "https://youtu.be/7DtsFL2yBTo",
+      "views": 5061386,
+      "subs": 7560,
+      "viewsPerSub": 669.5,
+      "channel": "Vedfx.01"
+     },
+     {
+      "title": "#viral #viralvideo #mahabharat #shorts",
+      "url": "https://youtu.be/ZEHKmPGKnIk",
+      "views": 3497760,
+      "subs": 6630,
+      "viewsPerSub": 527.6,
+      "channel": "Heal.thrust"
+     },
+     {
+      "title": "Bickering couple🫶🪷😜 #mahabharat #trending #subhadra #love #arsu #viral #explore #edit #",
+      "url": "https://youtu.be/DoVqHTw41CA",
+      "views": 6038745,
+      "subs": 17500,
+      "viewsPerSub": 345.1,
+      "channel": "Maha_lakshmi_bharat"
+     }
+    ]
+   },
+   {
+    "topic": "mythology shorts hindi",
+    "n": 16,
+    "medViewsPerDay": 64895,
+    "medViewsPerSub": 72.7,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 3.08,
+    "boost": 1,
+    "score": 3.08,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "Nag Panchami Ki Katha 🐍 | Chhoti Bahu Aur Naag Devta | Nag Panchami Story",
+      "url": "https://youtu.be/tIOgEuaSJD8",
+      "views": 6202840,
+      "subs": 16800,
+      "viewsPerSub": 369.2,
+      "channel": "Muffin"
+     },
+     {
+      "title": "कृष्ण ने पूछा—कौन-से ब्रह्मा? 😱 | असली रहस्य क्या था? #Shorts",
+      "url": "https://youtu.be/BYA-JIBEMss",
+      "views": 4630154,
+      "subs": 19000,
+      "viewsPerSub": 243.7,
+      "channel": "Sanatvra"
+     },
+     {
+      "title": "भीष्म पितामह को बाणों की सैया क्यों मिली? 😱 | कर्म का रहस्य #facts",
+      "url": "https://youtu.be/WNoHLJvjPtQ",
+      "views": 9186021,
+      "subs": 78300,
+      "viewsPerSub": 117.3,
+      "channel": "Panditflix "
+     }
+    ]
+   },
+   {
+    "topic": "द्रौपदी कथा",
+    "n": 14,
+    "medViewsPerDay": 62800,
+    "medViewsPerSub": 65.78,
+    "share100k": 1,
+    "share1M": 0.86,
+    "baseScore": 3.021,
+    "boost": 1,
+    "score": 3.021,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "अंधे का पुत्र अंधा—द्रौपदी के इस कथन से भड़क उठा दुर्योधन!",
+      "url": "https://youtu.be/uHxayqvOJ-U",
+      "views": 30149665,
+      "subs": 91500,
+      "viewsPerSub": 329.5,
+      "channel": "Mahabali Yodham"
+     },
+     {
+      "title": "Draupadi & Krishna's First Meeting ❤️ | The Beginning of a Divine Bond | Mahabharat #youtu",
+      "url": "https://youtu.be/odOgjBUH4l0",
+      "views": 5579295,
+      "subs": 36500,
+      "viewsPerSub": 152.9,
+      "channel": "Radha Krishna devotee"
+     },
+     {
+      "title": "रामायण गलत है या महाभारत? 😱 द्रौपदी के 5 विवाह का सबसे बड़ा रहस्य!",
+      "url": "https://youtu.be/EGXq02Fv-FM",
+      "views": 1954194,
+      "subs": 14900,
+      "viewsPerSub": 131.2,
+      "channel": "Vinod Dharm Gyan"
+     }
+    ]
+   },
+   {
+    "topic": "सीता कथा रामायण",
+    "n": 9,
+    "medViewsPerDay": 80750,
+    "medViewsPerSub": 11.16,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.971,
+    "boost": 1,
+    "score": 2.971,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "🚩 सीता हरण से अशोक वाटिका तक | सम्पूर्ण रामायण कथा | हनुमान जी का चमत्कार #trending #shor",
+      "url": "https://youtu.be/IqqssbTtw64",
+      "views": 2940593,
+      "subs": 6460,
+      "viewsPerSub": 455.2,
+      "channel": "Ram bhajan song up"
+     },
+     {
+      "title": "रावण ने किया माता सीता का हरण 😢 | जटायु का वीर बलिदान | श्रीराम की भावुक कथा | Ramayana S",
+      "url": "https://youtu.be/Ap0idbnX5Pc",
+      "views": 4271718,
+      "subs": 18100,
+      "viewsPerSub": 236,
+      "channel": "CHALTI GADDI"
+     },
+     {
+      "title": "सीता माता की नितनेम कथा 🙏 | रोज़ सुनने से घर में सुख-शांति और समृद्धि आती है | Sita Mata ",
+      "url": "https://youtu.be/o2YPGbTQKTM",
+      "views": 1409888,
+      "subs": 15400,
+      "viewsPerSub": 91.5,
+      "channel": "Premanand ki kahaniyan"
+     }
+    ]
+   },
+   {
+    "topic": "शिव कथा",
+    "n": 11,
+    "medViewsPerDay": 55211,
+    "medViewsPerSub": 20.58,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.938,
+    "boost": 1,
+    "score": 2.938,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "जब गणेश जी को माता पार्वती ने डाँटा 😢🙏 | Mahadev Ka Pyaar ❤️ | Shiv Parivar",
+      "url": "https://youtu.be/B0nreQfrUAA",
+      "views": 3969980,
+      "subs": 4440,
+      "viewsPerSub": 894.1,
+      "channel": "Gulshan King Official"
+     },
+     {
+      "title": "केदारनाथ को \"जागृत महादेव\" क्यों कहते हैं?  यह कहानी रोंगटे खड़े कर देगी! 🔥",
+      "url": "https://youtu.be/w6sitcnnl8g",
+      "views": 54583569,
+      "subs": 364000,
+      "viewsPerSub": 149.9,
+      "channel": "Aagami bharat"
+     },
+     {
+      "title": "जब भोलेनाथ ने किया माँ पार्वती का शृंगार | Shiv Parvati Katha  # #love #shivgurukesaavanke",
+      "url": "https://youtu.be/CnwJ_Zc5rCA",
+      "views": 5259744,
+      "subs": 113000,
+      "viewsPerSub": 46.5,
+      "channel": " 🙏 Bhakti Sagar by S&S 🙏"
+     }
+    ]
+   },
+   {
+    "topic": "रामायण shorts",
+    "n": 19,
+    "medViewsPerDay": 42620,
+    "medViewsPerSub": 14.46,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.853,
+    "boost": 1,
+    "score": 2.853,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "Hanumanji ne puri lanka me aag lagadi... #shorts #hanuman #ramayan",
+      "url": "https://youtu.be/aW0mvE0mQPs",
+      "views": 4943860,
+      "subs": 3900,
+      "viewsPerSub": 1267.7,
+      "channel": "SON OFF MAHADEV "
+     },
+     {
+      "title": "गोपी को रामायण का दोहा याद है! #gopibahu #saathnibhanasathiya #ytshorts #shorts",
+      "url": "https://youtu.be/WVCRvqyQDEY",
+      "views": 12760020,
+      "subs": 29500,
+      "viewsPerSub": 432.5,
+      "channel": "Pavan Rajput"
+     },
+     {
+      "title": "राम जी के नाम के पीछे \"चंद्र\" क्यों जुड़ा? 😱🏹|| Why Lord Ram is Called Ramachandra? #sho",
+      "url": "https://youtu.be/taC9BawA220",
+      "views": 2296391,
+      "subs": 9040,
+      "viewsPerSub": 254,
+      "channel": "Vidya khanda29"
+     }
+    ]
+   },
+   {
+    "topic": "कर्ण कथा महाभारत",
+    "n": 8,
+    "medViewsPerDay": 53190,
+    "medViewsPerSub": 9.64,
+    "share100k": 1,
+    "share1M": 0.88,
+    "baseScore": 2.831,
+    "boost": 1,
+    "score": 2.831,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "श्रीकृष्ण ने हनुमान जी को क्यों रोका? 😱.  #Shorts #YouTubeShorts #Hanuman #Mahabharat #Kr",
+      "url": "https://youtu.be/qpnDGaaz8dc",
+      "views": 3121004,
+      "subs": 28200,
+      "viewsPerSub": 110.7,
+      "channel": "Divya Rahashya Ai"
+     },
+     {
+      "title": "श्रीकृष्ण की सबसे बड़ी चाल! कैसे द्रौपदी को मिला भीष्म पितामह का आशीर्वाद? | Mahabharat St",
+      "url": "https://youtu.be/wSzHAXa6fpM",
+      "views": 6466500,
+      "subs": 71000,
+      "viewsPerSub": 91.1,
+      "channel": "Divya Jyotish Gyaan"
+     },
+     {
+      "title": "कहां गया कर्ण का कवच और कुंडल 🤔Akshat Gupta #akshatgupta #karna #mahabharat #arjun #krish",
+      "url": "https://youtu.be/2g8TEVTCUSw",
+      "views": 6514174,
+      "subs": 351000,
+      "viewsPerSub": 18.6,
+      "channel": "Hindu IQ"
+     }
+    ]
+   },
+   {
+    "topic": "विष्णु अवतार कथा",
+    "n": 12,
+    "medViewsPerDay": 29895,
+    "medViewsPerSub": 13.1,
+    "share100k": 1,
+    "share1M": 1,
+    "baseScore": 2.768,
+    "boost": 1,
+    "score": 2.768,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "आखिर क्यों भगवान विष्णु को मछली का रूप धारण करना पड़ा?🤔.                                #",
+      "url": "https://youtu.be/z0_Yhyh-7JY",
+      "views": 1581914,
+      "subs": 9780,
+      "viewsPerSub": 161.8,
+      "channel": "divine_Yug"
+     },
+     {
+      "title": "भगवान विष्णु के 10 दिव्य अवतार | Episode 1 – मत्स्य अवतार",
+      "url": "https://youtu.be/aJC2UD2iT_g",
+      "views": 1905469,
+      "subs": 21500,
+      "viewsPerSub": 88.6,
+      "channel": "DPX Media "
+     },
+     {
+      "title": "जब अधर्म बढ़ा, तब श्री हरि ने लिया नृसिंह अवतार! 🔥🙏 # narsimha #नारायण #Shorts",
+      "url": "https://youtu.be/9Ct-VxY3XEk",
+      "views": 13312687,
+      "subs": 157000,
+      "viewsPerSub": 84.8,
+      "channel": " CHiLL BABA "
+     }
+    ]
+   },
+   {
+    "topic": "तुलसी विवाह कथा",
+    "n": 9,
+    "medViewsPerDay": 13554,
+    "medViewsPerSub": 12.08,
+    "share100k": 0.89,
+    "share1M": 0.44,
+    "baseScore": 2.423,
+    "boost": 1,
+    "score": 2.423,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-15"
+    },
+    "publishBy": "2026-11-15",
+    "examples": [
+     {
+      "title": "तुलसी विवाह के दिन स्वयं माता तुलसी आईं…फिर जो हुआ। Tulsi Mata Ki katha#TulsiVivah​#sushma",
+      "url": "https://youtu.be/N4NgqmUVNL0",
+      "views": 792742,
+      "subs": 7700,
+      "viewsPerSub": 103,
+      "channel": "sanjaysingh"
+     },
+     {
+      "title": "🙏श्री रानी तुलसी को जल चढ़ाते समय बोले ये 3 शब्द #tulsi #tulshivivahkatha #tulsivivah #tu",
+      "url": "https://youtu.be/cTQaX2gDxO4",
+      "views": 3585354,
+      "subs": 129000,
+      "viewsPerSub": 27.8,
+      "channel": "Saanidhya Garden"
+     },
+     {
+      "title": "गणेश जी ने तुलसी का विवाह प्रस्ताव क्यों ठुकराया? 😳 | तुलसी और गणेश की कथा #shorts #youtu",
+      "url": "https://youtu.be/MJvTFIRmwsM",
+      "views": 3640376,
+      "subs": 160000,
+      "viewsPerSub": 22.8,
+      "channel": "Sanatan Katha"
+     }
+    ]
+   },
+   {
+    "topic": "अभिमन्यु चक्रव्यूह",
+    "n": 12,
+    "medViewsPerDay": 5717,
+    "medViewsPerSub": 31.26,
+    "share100k": 0.58,
+    "share1M": 0.25,
+    "baseScore": 2.255,
+    "boost": 1,
+    "score": 2.255,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "title": "🔥 “मैं अर्जुन का पुत्र हूँ!” | अभिमन्यु की वीरता की अमर कहानी ⚔️ | Mahabharat",
+      "url": "https://youtu.be/MuOufb9quJE",
+      "views": 106382,
+      "subs": 226,
+      "viewsPerSub": 470.7,
+      "channel": "Divine Tales"
+     },
+     {
+      "title": "अगर अभिमन्यु की जगह अर्जुन चक्रव्यूह में जाते तो? 😱 | महाभारत ने खुद दिया जवाब #mahabhara",
+      "url": "https://youtu.be/LtvlmjV90pU",
+      "views": 1022420,
+      "subs": 5810,
+      "viewsPerSub": 176,
+      "channel": "Lyrical Moksha"
+     },
+     {
+      "title": "अभिमन्यु चक्रव्यूह से बाहर क्यों नहीं निकल पाया? 😱 | महाभारत का सबसे बड़ा रहस्य",
+      "url": "https://youtu.be/QX9OtzhoQXM",
+      "views": 60422,
+      "subs": 1150,
+      "viewsPerSub": 52.5,
+      "channel": "Prabhu Shwaas"
+     }
+    ]
+   },
+   {
+    "topic": "सावित्री सत्यवान",
+    "n": 13,
+    "medViewsPerDay": 2684,
+    "medViewsPerSub": 4.25,
+    "share100k": 0.62,
+    "share1M": 0.08,
+    "baseScore": 1.882,
+    "boost": 1.15,
+    "score": 2.164,
+    "event": {
+     "id": "karwa-chauth",
+     "name": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-24"
+    },
+    "publishBy": "2026-10-24",
+    "examples": [
+     {
+      "title": "omg सावित्री ने ये क्या बोल दिया 😱 #trending #savitrikumariofficial New ganes Savitri Ki ",
+      "url": "https://youtu.be/O3x2zNGOYCg",
+      "views": 374290,
+      "subs": 5540,
+      "viewsPerSub": 67.6,
+      "channel": "MP vloger Baijanti mala"
+     },
+     {
+      "title": "सावित्री ने यमराज को कैसे हरा दिया? 😱 | सत्यवान-सावित्री की अमर कहानी | Mahabharat Story ",
+      "url": "https://youtu.be/n98FCqkhUUQ",
+      "views": 754554,
+      "subs": 19000,
+      "viewsPerSub": 39.7,
+      "channel": "Sagaofgod"
+     },
+     {
+      "title": "जब सती सावित्री ने यमराज से वापस छीने सत्यवान के प्राण! 😱 🙏 | Sati Savitri Katha #shorts",
+      "url": "https://youtu.be/9vUJG8vbOK8",
+      "views": 30201,
+      "subs": 1190,
+      "viewsPerSub": 25.4,
+      "channel": "Radhe Rani"
+     }
+    ]
+   },
+   {
+    "topic": "कृष्ण गोवर्धन पर्वत कथा",
+    "n": 11,
+    "medViewsPerDay": 4611,
+    "medViewsPerSub": 4.93,
+    "share100k": 0.91,
+    "share1M": 0.18,
+    "baseScore": 2.041,
+    "boost": 1,
+    "score": 2.041,
+    "event": {
+     "id": "govardhan",
+     "name": "Govardhan Puja",
+     "date": "2026-11-10",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-05"
+    },
+    "publishBy": "2026-11-05",
+    "examples": [
+     {
+      "title": "Bhagwan Shri Krishna Bal Leela - Part 4 | Shri Govardhan Leela",
+      "url": "https://youtu.be/jeKZ1xwbBxg",
+      "views": 366141,
+      "subs": 1360,
+      "viewsPerSub": 269.2,
+      "channel": "INVA ORIGINAL"
+     },
+     {
+      "title": "गोवर्धन पर्वत कैसे उठा? #shorts #mythology",
+      "url": "https://youtu.be/-PZwRtD7DJQ",
+      "views": 239684,
+      "subs": 1040,
+      "viewsPerSub": 230.5,
+      "channel": "Hindu Lengends"
+     },
+     {
+      "title": "🌧️ वृंदावन में आई भयंकर बाढ़ 😱 कृष्ण ने उठाया गोवर्धन पर्वत! 🦚🙏 | Govardhan Leela | Kr",
+      "url": "https://youtu.be/_XVHHg_KcSM",
+      "views": 139191,
+      "subs": 992,
+      "viewsPerSub": 140.3,
+      "channel": "AI Stories 2.0 •3.5 M views •2 month ago"
+     }
+    ]
+   },
+   {
+    "topic": "शरद पूर्णिमा कृष्ण रास",
+    "n": 7,
+    "medViewsPerDay": 272,
+    "medViewsPerSub": 1.15,
+    "share100k": 0.29,
+    "share1M": 0,
+    "baseScore": 1.285,
+    "boost": 1.3,
+    "score": 1.67,
+    "event": {
+     "id": "sharad-purnima",
+     "name": "Sharad Purnima",
+     "date": "2026-10-25",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-20"
+    },
+    "publishBy": "2026-10-20",
+    "examples": [
+     {
+      "title": "(Part 1)शरद पूर्णिमा की रात्रि श्रीकृष्ण ने निभाया अपना वचन 🥰 #trending #kathastoriesai #",
+      "url": "https://youtu.be/NZPlEuyzGT0",
+      "views": 271594,
+      "subs": 106000,
+      "viewsPerSub": 2.6,
+      "channel": "katha stories AI"
+     },
+     {
+      "title": "शरद पूर्णिमा की रात 🌕 जब श्रीकृष्ण ने गोपियों को दिया था प्रेम का निमंत्रण | रासलीला का र",
+      "url": "https://youtu.be/5BdLUEobmTQ",
+      "views": 53707,
+      "subs": 46500,
+      "viewsPerSub": 1.1,
+      "channel": "Mero Makhan Churaiyya🧿"
+     },
+     {
+      "title": "(Part 2)शरद पूर्णिमा की रात्रि श्रीकृष्ण ने निभाया अपना वचन 😲 #trending #kathastoriesai #",
+      "url": "https://youtu.be/dpLpdB4uFgQ",
+      "views": 116811,
+      "subs": 106000,
+      "viewsPerSub": 1.1,
+      "channel": "katha stories AI"
+     }
+    ]
+   },
+   {
+    "topic": "त्रिपुरासुर वध",
+    "n": 7,
+    "medViewsPerDay": 141,
+    "medViewsPerSub": 6.9,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 1.256,
+    "boost": 1,
+    "score": 1.256,
+    "event": {
+     "id": "kartik-purnima",
+     "name": "Kartik Purnima",
+     "date": "2026-11-24",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-19"
+    },
+    "publishBy": "2026-11-19",
+    "examples": []
+   },
+   {
+    "topic": "राम अयोध्या वापसी दिवाली कथा",
+    "n": 15,
+    "medViewsPerDay": 192,
+    "medViewsPerSub": 2.65,
+    "share100k": 0.07,
+    "share1M": 0,
+    "baseScore": 1.255,
+    "boost": 1,
+    "score": 1.255,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-04"
+    },
+    "publishBy": "2026-11-04",
+    "examples": [
+     {
+      "title": "🚩 “जब श्रीराम अयोध्या लौटे, तब क्या हुआ था? | डॉ. कुमार विश्वास” #drkumarvishwas #ramayan",
+      "url": "https://youtu.be/pbjW-CVGqZM",
+      "views": 208643,
+      "subs": 30800,
+      "viewsPerSub": 6.8,
+      "channel": "Viral Vlogger Shots Review "
+     }
+    ]
+   },
+   {
+    "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+    "n": 13,
+    "medViewsPerDay": 98,
+    "medViewsPerSub": 0.9,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 1.054,
+    "boost": 1,
+    "score": 1.054,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-04"
+    },
+    "publishBy": "2026-11-04",
+    "examples": [
+     {
+      "title": "कैसे हुआ समुद्र मंथन? सेट का असली सच देखकर हैरान रह जाओगे! 🔥#ramayan #shorts #bts",
+      "url": "https://youtu.be/gHaa5bHKico",
+      "views": 73468,
+      "subs": 13400,
+      "viewsPerSub": 5.5,
+      "channel": "Shubham Yadav AI"
+     }
+    ]
+   },
+   {
+    "topic": "धनतेरस यमराज",
+    "n": 7,
+    "medViewsPerDay": 44,
+    "medViewsPerSub": 0.6,
+    "share100k": 0,
+    "share1M": 0,
+    "baseScore": 0.867,
+    "boost": 1,
+    "score": 0.867,
+    "event": {
+     "id": "dhanteras",
+     "name": "Dhanteras",
+     "date": "2026-11-06",
+     "uncertainDays": 0,
+     "publishBy": "2026-11-01"
+    },
+    "publishBy": "2026-11-01",
+    "examples": [
+     {
+      "title": "धनतेरस की वो रात जब पत्नी ने यमदूत को रोक दिया! 😱 | रहस्यमयी प्राचीन कथा #hindumythology ",
+      "url": "https://youtu.be/E67pG3es3N0",
+      "views": 57400,
+      "subs": 1070,
+      "viewsPerSub": 53.6,
+      "channel": "KahaniAKarwaan"
+     }
+    ]
+   }
+  ],
+  "instagram": [
+   {
+    "topic": "हनुमान कथा रामायण",
+    "matchingPosts": 3,
+    "outlierPosts": 1,
+    "strength": 33.9,
+    "score": 1.543,
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "handle": "amarchitrakatha",
+      "ratio": 34.9,
+      "likes": 20930,
+      "caption": "Tag your gym bros 💪 #hanumanansh #hanumanji #amarchitrakatha #memes #funny",
+      "url": "https://www.instagram.com/p/DddbBlQNylb/"
+     },
+     {
+      "handle": "amarchitrakatha",
+      "ratio": 0.4,
+      "likes": 223,
+      "caption": "The song hits different with the story in hand 🥰 #AmarChitraKatha #Ramayana [Ra",
+      "url": "https://www.instagram.com/reel/DdWpmP2JpZ3/"
+     }
+    ]
+   },
+   {
+    "topic": "कर्ण कथा महाभारत",
+    "matchingPosts": 2,
+    "outlierPosts": 2,
+    "strength": 19.26,
+    "score": 1.307,
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 18.5,
+      "likes": 71,
+      "caption": "जब कुंभकर्ण जागा… 1000 सैनिक डर से कांपे 😨",
+      "url": "https://www.instagram.com/reel/DYbW4pFRyuq/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 2.76,
+      "likes": 634,
+      "caption": "Murudeshwar Temple🙏 A beautiful post by the_petite_rover Located in Karnataka, ",
+      "url": "https://www.instagram.com/reel/COQoHBgBeMe/"
+     }
+    ]
+   },
+   {
+    "topic": "शिव कथा",
+    "matchingPosts": 9,
+    "outlierPosts": 4,
+    "strength": 9.33,
+    "score": 1.014,
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "handle": "bharatkatha",
+      "ratio": 4.25,
+      "likes": 51,
+      "caption": "Witness the birth of new worlds—Shiva & Parvati unite, and the universe hums to ",
+      "url": "https://www.instagram.com/reel/DHvEdTuoTRn/"
+     },
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 3.5,
+      "likes": 11,
+      "caption": "यह मंदिर दिन में दो बार समुद्र में डूब जाता है — और शिवलिंग गायब हो जाता है! 😨 ",
+      "url": "https://www.instagram.com/reel/DXVqB3-j3YD/"
+     }
+    ]
+   },
+   {
+    "topic": "राम अयोध्या वापसी दिवाली कथा",
+    "matchingPosts": 10,
+    "outlierPosts": 4,
+    "strength": 4.93,
+    "score": 0.773,
+    "boost": 1,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-05"
+    },
+    "publishBy": "2026-11-05",
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 3,
+      "likes": 12,
+      "caption": "क्या सच में मौजूद है राम सेतु? Science vs Ramayan Explained",
+      "url": "https://www.instagram.com/reel/DXgsL4skrwW/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 2.28,
+      "likes": 529,
+      "caption": ". #reels #reelkarofeelkaro #reelkorbofeelkorbo #reelsinstagram #reelindia #reeli",
+      "url": "https://www.instagram.com/reel/COOIfNTB06o/"
+     }
+    ]
+   },
+   {
+    "topic": "देवउठनी एकादशी कथा",
+    "matchingPosts": 3,
+    "outlierPosts": 2,
+    "strength": 3.13,
+    "score": 0.616,
+    "boost": 1,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-16"
+    },
+    "publishBy": "2026-11-16",
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 2.75,
+      "likes": 11,
+      "caption": "निर्जला एकादशी (Nirjala Ekadashi) Vrat Date: 25 June 2026 (Thursday) निर्जला एका",
+      "url": "https://www.instagram.com/p/DZ6gk1SjSDD/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 2.38,
+      "likes": 554,
+      "caption": "Have a blessed Ekadashi🙏 Follow hindu_gods_official for more . . #radharani #ha",
+      "url": "https://www.instagram.com/p/CN_z1vBABdi/"
+     }
+    ]
+   },
+   {
+    "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+    "matchingPosts": 1,
+    "outlierPosts": 1,
+    "strength": 2.5,
+    "score": 0.544,
+    "boost": 1,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-05"
+    },
+    "publishBy": "2026-11-05",
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 3.5,
+      "likes": 11,
+      "caption": "यह मंदिर दिन में दो बार समुद्र में डूब जाता है — और शिवलिंग गायब हो जाता है! 😨 ",
+      "url": "https://www.instagram.com/reel/DXVqB3-j3YD/"
+     }
+    ]
+   },
+   {
+    "topic": "शरद पूर्णिमा कृष्ण रास",
+    "matchingPosts": 5,
+    "outlierPosts": 1,
+    "strength": 1.17,
+    "score": 0.437,
+    "boost": 1.3,
+    "event": {
+     "id": "sharad-purnima",
+     "name": "Sharad Purnima",
+     "date": "2026-10-25",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-21"
+    },
+    "publishBy": "2026-10-21",
+    "examples": [
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 2.06,
+      "likes": 461,
+      "caption": "YOU MAY ASK, Why did Bhagwan Krishna give utmost importance to THOUGHTS & MIND I",
+      "url": "https://www.instagram.com/p/CRZM9bAL77U/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 1.11,
+      "likes": 250,
+      "caption": "In the 15th chapter called \"Purushottama Yoga \"Lord Krishna describes about the ",
+      "url": "https://www.instagram.com/p/CRdVT_4LyQi/"
+     }
+    ]
+   },
+   {
+    "topic": "कृष्ण गोवर्धन पर्वत कथा",
+    "matchingPosts": 4,
+    "outlierPosts": 1,
+    "strength": 1.17,
+    "score": 0.336,
+    "boost": 1,
+    "event": {
+     "id": "govardhan",
+     "name": "Govardhan Puja",
+     "date": "2026-11-10",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-06"
+    },
+    "publishBy": "2026-11-06",
+    "examples": [
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 2.06,
+      "likes": 461,
+      "caption": "YOU MAY ASK, Why did Bhagwan Krishna give utmost importance to THOUGHTS & MIND I",
+      "url": "https://www.instagram.com/p/CRZM9bAL77U/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 1.11,
+      "likes": 250,
+      "caption": "In the 15th chapter called \"Purushottama Yoga \"Lord Krishna describes about the ",
+      "url": "https://www.instagram.com/p/CRdVT_4LyQi/"
+     }
+    ]
+   },
+   {
+    "topic": "तुलसी विवाह कथा",
+    "matchingPosts": 2,
+    "outlierPosts": 0,
+    "strength": 0,
+    "score": 0,
+    "boost": 1,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-16"
+    },
+    "publishBy": "2026-11-16",
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 0.5,
+      "likes": 2,
+      "caption": "क्या आपके घर में भी तुलसी का पौधा है? 🌿 तो ये पोस्ट आपके लिए बहुत जरूरी है… अधि",
+      "url": "https://www.instagram.com/p/DWiTTrtD1WQ/"
+     },
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 0.25,
+      "likes": 1,
+      "caption": "तुलसीदास को हनुमान जी कैसे मिले ?",
+      "url": "https://www.instagram.com/reel/DXGw8FLgrJr/"
+     }
+    ]
+   },
+   {
+    "topic": "कार्तिक पूर्णिमा कथा",
+    "matchingPosts": 2,
+    "outlierPosts": 0,
+    "strength": 0,
+    "score": 0,
+    "boost": 1,
+    "event": {
+     "id": "kartik-purnima",
+     "name": "Kartik Purnima",
+     "date": "2026-11-24",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-20"
+    },
+    "publishBy": "2026-11-20",
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 1,
+      "likes": 4,
+      "caption": "ज्येष्ठ पूर्णिमा / वट पूर्णिमा व्रत (Vat Purnima Vrat) Vrat Date: 29 June 2026 (",
+      "url": "https://www.instagram.com/p/DaEzx-7D14L/"
+     },
+     {
+      "handle": "hindu_gods_official",
+      "ratio": 0.28,
+      "likes": 67,
+      "caption": "🦚🦚🦚 LORD SUBRAHMANYA 🦚🦚🦚 In continuation to our post on 12 Se 2023 10 Inte",
+      "url": "https://www.instagram.com/p/Cx7U2XHrR6n/"
+     }
+    ]
+   },
+   {
+    "topic": "विष्णु अवतार कथा",
+    "matchingPosts": 1,
+    "outlierPosts": 0,
+    "strength": 0,
+    "score": 0,
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "handle": "hindustoriesofficial",
+      "ratio": 0,
+      "likes": 0,
+      "caption": "क्या आप जानते हैं भगवान विष्णु ने हर युग में अलग रूप क्यों लिया? हर अवतार एक सीख",
+      "url": "https://www.instagram.com/p/DWS0fDpjPjn/"
+     }
+    ]
+   },
+   {
+    "topic": "सीता कथा रामायण",
+    "matchingPosts": 1,
+    "outlierPosts": 0,
+    "strength": 0,
+    "score": 0,
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "examples": [
+     {
+      "handle": "amarchitrakatha",
+      "ratio": 0.4,
+      "likes": 223,
+      "caption": "The song hits different with the story in hand 🥰 #AmarChitraKatha #Ramayana [Ra",
+      "url": "https://www.instagram.com/reel/DdWpmP2JpZ3/"
+     }
+    ]
+   }
+  ],
+  "facebook": [
+   {
+    "topic": "हनुमान कथा रामायण",
+    "score": 0.88,
+    "basis": "proxy: YouTube long 0.96, Shorts 1.00, Instagram 1.00",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "शिव कथा",
+    "score": 0.779,
+    "basis": "proxy: YouTube long 0.93, Shorts 0.91, Instagram 0.66",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "कृष्ण गोवर्धन पर्वत कथा",
+    "score": 0.688,
+    "basis": "proxy: YouTube long 1.00, Shorts 0.63, Instagram 0.22",
+    "boost": 1,
+    "event": {
+     "id": "govardhan",
+     "name": "Govardhan Puja",
+     "date": "2026-11-10",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-05"
+    },
+    "publishBy": "2026-11-05",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "कर्ण कथा महाभारत",
+    "score": 0.674,
+    "basis": "proxy: YouTube long 0.68, Shorts 0.88, Instagram 0.85",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "सीता कथा रामायण",
+    "score": 0.633,
+    "basis": "proxy: YouTube long 0.90, Shorts 0.92, Instagram 0.00",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "करवा चौथ कथा",
+    "score": 0.631,
+    "basis": "proxy: YouTube long 1.00, Shorts 0.00, Instagram 0.00",
+    "boost": 1.15,
+    "event": {
+     "id": "karwa-chauth",
+     "name": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-24"
+    },
+    "publishBy": "2026-10-24",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "सावित्री सत्यवान",
+    "score": 0.61,
+    "basis": "proxy: YouTube long 0.78, Shorts 0.67, Instagram 0.00",
+    "boost": 1.15,
+    "event": {
+     "id": "karwa-chauth",
+     "name": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-24"
+    },
+    "publishBy": "2026-10-24",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "द्रौपदी कथा",
+    "score": 0.606,
+    "basis": "proxy: YouTube long 0.85, Shorts 0.93, Instagram 0.00",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "तुलसी विवाह कथा",
+    "score": 0.474,
+    "basis": "proxy: YouTube long 0.66, Shorts 0.75, Instagram 0.00",
+    "boost": 1,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-15"
+    },
+    "publishBy": "2026-11-15",
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "राम अयोध्या वापसी दिवाली कथा",
+    "score": 0.446,
+    "basis": "proxy: YouTube long 0.52, Shorts 0.39, Instagram 0.50",
+    "boost": 1,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-04"
+    },
+    "publishBy": "2026-11-04",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "देवउठनी एकादशी कथा",
+    "score": 0.436,
+    "basis": "proxy: YouTube long 0.65, Shorts 0.00, Instagram 0.40",
+    "boost": 1,
+    "event": {
+     "id": "dev-uthani",
+     "name": "Dev Uthani Ekadashi / Tulsi Vivah",
+     "date": "2026-11-20",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-15"
+    },
+    "publishBy": "2026-11-15",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "भीष्म प्रतिज्ञा",
+    "score": 0.382,
+    "basis": "proxy: YouTube long 0.53, Shorts 0.62, Instagram 0.00",
+    "boost": 1,
+    "event": null,
+    "publishBy": null,
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "कार्तिक पूर्णिमा कथा",
+    "score": 0.236,
+    "basis": "proxy: YouTube long 0.43, Shorts 0.00, Instagram 0.00",
+    "boost": 1,
+    "event": {
+     "id": "kartik-purnima",
+     "name": "Kartik Purnima",
+     "date": "2026-11-24",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-19"
+    },
+    "publishBy": "2026-11-19",
+    "suggestedFormat": "fb_long / reel"
+   },
+   {
+    "topic": "शरद पूर्णिमा कृष्ण रास",
+    "score": 0.174,
+    "basis": "proxy: YouTube long 0.00, Shorts 0.52, Instagram 0.28",
+    "boost": 1.3,
+    "event": {
+     "id": "sharad-purnima",
+     "name": "Sharad Purnima",
+     "date": "2026-10-25",
+     "uncertainDays": 1,
+     "publishBy": "2026-10-20"
+    },
+    "publishBy": "2026-10-20",
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+    "score": 0.119,
+    "basis": "proxy: YouTube long 0.00, Shorts 0.33, Instagram 0.35",
+    "boost": 1,
+    "event": {
+     "id": "diwali",
+     "name": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": "2026-11-04"
+    },
+    "publishBy": "2026-11-04",
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "त्रिपुरासुर वध",
+    "score": 0.058,
+    "basis": "proxy: YouTube long 0.00, Shorts 0.39, Instagram 0.00",
+    "boost": 1,
+    "event": {
+     "id": "kartik-purnima",
+     "name": "Kartik Purnima",
+     "date": "2026-11-24",
+     "uncertainDays": 1,
+     "publishBy": "2026-11-19"
+    },
+    "publishBy": "2026-11-19",
+    "suggestedFormat": "reel + carousel"
+   },
+   {
+    "topic": "धनतेरस यमराज",
+    "score": 0.04,
+    "basis": "proxy: YouTube long 0.00, Shorts 0.27, Instagram 0.00",
+    "boost": 1,
+    "event": {
+     "id": "dhanteras",
+     "name": "Dhanteras",
+     "date": "2026-11-06",
+     "uncertainDays": 0,
+     "publishBy": "2026-11-01"
+    },
+    "publishBy": "2026-11-01",
+    "suggestedFormat": "reel + carousel"
+   }
+  ]
+ },
+ "instagramTopPosts": [
+  {
+   "handle": "bharatkatha",
+   "followers": 13646,
+   "caption": "PARDON THE FRENCH (with My struck out 😉) A Frenchman trades wine for lassi, Catholicism for Sikhism, and croissants for chapatis. Now streaming on Amazon Prime",
+   "likes": 13475,
+   "comments": 1,
+   "ratio": 1123.17,
+   "type": "REELS",
+   "at": "2025-11-03T17:28:45+0000",
+   "url": "https://www.instagram.com/reel/DQmkS8ViB94/"
+  },
+  {
+   "handle": "bharatkatha",
+   "followers": 13646,
+   "caption": "PARDON THE FRENCH (with My struck out 😉) A Frenchman trades wine for lassi, Catholicism for Sikhism, and croissants for chapatis. Now streaming on Amazon Prime",
+   "likes": 1434,
+   "comments": 1,
+   "ratio": 119.75,
+   "type": "FEED",
+   "at": "2025-10-07T06:48:40+0000",
+   "url": "https://www.instagram.com/p/DPf5-fSCWeg/"
+  },
+  {
+   "handle": "amarchitrakatha",
+   "followers": 324177,
+   "caption": "Different era. Same energy. #AmarChitraKatha #genz [Reading, Comics]",
+   "likes": 39213,
+   "comments": 194,
+   "ratio": 65.56,
+   "type": "FEED",
+   "at": "2026-09-18T13:13:00+0000",
+   "url": "https://www.instagram.com/p/DdbhAOfI2r7/"
+  },
+  {
+   "handle": "storieswithvishal",
+   "followers": 134689,
+   "caption": "Why Has Chotu Singh Rawana Been Away From the Spotlight? For the past several days, renowned Rajasthani musician Chotu Singh Rawana has been away from the publi",
+   "likes": 69482,
+   "comments": 518,
+   "ratio": 65.35,
+   "type": "REELS",
+   "at": "2026-08-20T04:11:42+0000",
+   "url": "https://www.instagram.com/reel/DcP3thtsHop/"
+  },
+  {
+   "handle": "amarchitrakatha",
+   "followers": 324177,
+   "caption": "Tag your gym bros 💪 #hanumanansh #hanumanji #amarchitrakatha #memes #funny",
+   "likes": 20930,
+   "comments": 84,
+   "ratio": 34.9,
+   "type": "FEED",
+   "at": "2026-09-19T07:00:54+0000",
+   "url": "https://www.instagram.com/p/DddbBlQNylb/"
+  },
+  {
+   "handle": "storieswithvishal",
+   "followers": 134689,
+   "caption": "Chhatrapati Shahu Maharaj: The King Who Introduced 50% Reservation Before Independence | Indian History Did you know that Chhatrapati Shahu Maharaj, the ruler o",
+   "likes": 35300,
+   "comments": 452,
+   "ratio": 33.72,
+   "type": "REELS",
+   "at": "2026-10-10T03:56:07+0000",
+   "url": "https://www.instagram.com/reel/DeTKe8XTTVs/"
+  },
+  {
+   "handle": "storieswithvishal",
+   "followers": 134689,
+   "caption": "Ravindra Singh Bhati is raising the issue of EWS reservation simplification across Rajasthan — but what exactly is he demanding? The demand is not to remove the",
+   "likes": 26755,
+   "comments": 62,
+   "ratio": 24.78,
+   "type": "REELS",
+   "at": "2026-09-29T05:59:46+0000",
+   "url": "https://www.instagram.com/reel/Dd3D-9uxFB0/"
+  },
+  {
+   "handle": "amarchitrakatha",
+   "followers": 324177,
+   "caption": "Anant Pai didn’t just write stories for children. He listened to them, encouraged their curiosity, and personally answered the letters they sent him. Perhaps th",
+   "likes": 13597,
+   "comments": 158,
+   "ratio": 23.18,
+   "type": "FEED",
+   "at": "2026-09-17T06:15:51+0000",
+   "url": "https://www.instagram.com/p/DdYMeBwjPmu/"
+  },
+  {
+   "handle": "storieswithvishal",
+   "followers": 134689,
+   "caption": "सोचिए, 12वीं बोर्ड में गणित में 3 नंबर, फिजिक्स में 3 और केमिस्ट्री में 4। हाँ, बिल्कुल सही सुना। और आज यही बंदा DSP बन गया है। ये है बृजेश परमार की कहानी। बृजे",
+   "likes": 24801,
+   "comments": 119,
+   "ratio": 23.14,
+   "type": "REELS",
+   "at": "2026-10-14T04:44:05+0000",
+   "url": "https://www.instagram.com/reel/DedjKKYzjXh/"
+  },
+  {
+   "handle": "amarchitrakatha",
+   "followers": 324177,
+   "caption": "The OG slayer! You know it’s game over when she arrives🗡 #AmarChitraKatha #Navratri #Devi",
+   "likes": 12151,
+   "comments": 23,
+   "ratio": 20.13,
+   "type": "REELS",
+   "at": "2026-10-12T13:40:12+0000",
+   "url": "https://www.instagram.com/reel/DeZXHqbxvS8/"
+  }
+ ],
+ "festival_plan": [
+  {
+   "event": "Sharad Purnima",
+   "date": "2026-10-25",
+   "uncertainDays": 1,
+   "publishBy": {
+    "youtube_long": "2026-10-13",
+    "youtube_short": "2026-10-20",
+    "instagram": "2026-10-21",
+    "facebook": "2026-10-20"
+   },
+   "topics": [
+    {
+     "topic": "शरद पूर्णिमा कृष्ण रास",
+     "youtube_long": null,
+     "youtube_short": 1.67,
+     "instagram": 0.437,
+     "facebook": 0.174
+    }
+   ]
+  },
+  {
+   "event": "Karwa Chauth",
+   "date": "2026-10-29",
+   "uncertainDays": 1,
+   "publishBy": {
+    "youtube_long": "2026-10-17",
+    "youtube_short": "2026-10-24",
+    "instagram": "2026-10-25",
+    "facebook": "2026-10-24"
+   },
+   "topics": [
+    {
+     "topic": "सावित्री सत्यवान",
+     "youtube_long": 2.321,
+     "youtube_short": 2.164,
+     "instagram": null,
+     "facebook": 0.61
+    },
+    {
+     "topic": "करवा चौथ कथा",
+     "youtube_long": 2.962,
+     "youtube_short": null,
+     "instagram": null,
+     "facebook": 0.631
+    }
+   ]
+  },
+  {
+   "event": "Dhanteras",
+   "date": "2026-11-06",
+   "uncertainDays": 0,
+   "publishBy": {
+    "youtube_long": "2026-10-25",
+    "youtube_short": "2026-11-01",
+    "instagram": "2026-11-02",
+    "facebook": "2026-11-01"
+   },
+   "topics": [
+    {
+     "topic": "धनतेरस यमराज",
+     "youtube_long": null,
+     "youtube_short": 0.867,
+     "instagram": null,
+     "facebook": 0.04
+    }
+   ]
+  },
+  {
+   "event": "Diwali (Lakshmi Puja)",
+   "date": "2026-11-09",
+   "uncertainDays": 2,
+   "publishBy": {
+    "youtube_long": "2026-10-28",
+    "youtube_short": "2026-11-04",
+    "instagram": "2026-11-05",
+    "facebook": "2026-11-04"
+   },
+   "topics": [
+    {
+     "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+     "youtube_long": null,
+     "youtube_short": 1.054,
+     "instagram": 0.544,
+     "facebook": 0.119
+    },
+    {
+     "topic": "राम अयोध्या वापसी दिवाली कथा",
+     "youtube_long": 1.554,
+     "youtube_short": 1.255,
+     "instagram": 0.773,
+     "facebook": 0.446
+    }
+   ]
+  },
+  {
+   "event": "Govardhan Puja",
+   "date": "2026-11-10",
+   "uncertainDays": 1,
+   "publishBy": {
+    "youtube_long": "2026-10-29",
+    "youtube_short": "2026-11-05",
+    "instagram": "2026-11-06",
+    "facebook": "2026-11-05"
+   },
+   "topics": [
+    {
+     "topic": "कृष्ण गोवर्धन पर्वत कथा",
+     "youtube_long": 2.969,
+     "youtube_short": 2.041,
+     "instagram": 0.336,
+     "facebook": 0.688
+    }
+   ]
+  },
+  {
+   "event": "Dev Uthani Ekadashi / Tulsi Vivah",
+   "date": "2026-11-20",
+   "uncertainDays": 1,
+   "publishBy": {
+    "youtube_long": "2026-11-08",
+    "youtube_short": "2026-11-15",
+    "instagram": "2026-11-16",
+    "facebook": "2026-11-15"
+   },
+   "topics": [
+    {
+     "topic": "तुलसी विवाह कथा",
+     "youtube_long": 1.954,
+     "youtube_short": 2.423,
+     "instagram": 0,
+     "facebook": 0.474
+    },
+    {
+     "topic": "देवउठनी एकादशी कथा",
+     "youtube_long": 1.924,
+     "youtube_short": null,
+     "instagram": 0.616,
+     "facebook": 0.436
+    }
+   ]
+  },
+  {
+   "event": "Kartik Purnima",
+   "date": "2026-11-24",
+   "uncertainDays": 1,
+   "publishBy": {
+    "youtube_long": "2026-11-12",
+    "youtube_short": "2026-11-19",
+    "instagram": "2026-11-20",
+    "facebook": "2026-11-19"
+   },
+   "topics": [
+    {
+     "topic": "कार्तिक पूर्णिमा कथा",
+     "youtube_long": 1.275,
+     "youtube_short": null,
+     "instagram": 0,
+     "facebook": 0.236
+    },
+    {
+     "topic": "त्रिपुरासुर वध",
+     "youtube_long": null,
+     "youtube_short": 1.256,
+     "instagram": null,
+     "facebook": 0.058
+    }
+   ]
+  }
+ ],
+ "errors": [],
+ "method": "Heuristic ranking from public search results: survivorship bias, competition not measured. Facebook is a proxy (Meta offers no competitor data). Festival dates differ by 1-2 days between panchangs."
+}
