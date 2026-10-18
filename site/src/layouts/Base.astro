@@ -11,6 +11,8 @@ import LangSwitch from "../components/LangSwitch.astro";
 import { SECTION_KEYS, section } from "../lib/posts";
 import { LOCALES, DEFAULT_LANG, langPath } from "../i18n/config";
 import { useT } from "../i18n/ui";
+import ConsentBanner from "../components/ConsentBanner.astro";
+import { GA4_ID, GTM_ID, ADSENSE_CLIENT } from "../lib/site";
 interface Props { title: string; description: string; image?: string; type?: "website" | "article"; noindex?: boolean; lang?: string; alternates?: Record<string, string> }
 const { title, description, image, type = "website", noindex = false, lang = DEFAULT_LANG, alternates = {} } = Astro.props, t = useT(lang), L = (p: string) => langPath(lang, p), loc = LOCALES[lang];
 const hreflangs = Object.entries(alternates);
@@ -28,9 +30,22 @@ const full = title.includes("KATHAAYA") ? title : `${title} | KATHAAYA`;
   <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:type" content={type} /><meta property="og:url" content={canonical} /><meta property="og:image" content={og} /><meta property="og:locale" content={loc.og} /><meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="alternate" type="application/rss+xml" title="KATHAAYA" href={L("/rss.xml")} /><meta name="theme-color" content="#080710" />
   <script is:inline>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script is:inline define:vars={{ GA4_ID, GTM_ID, lang }}>
+    window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } window.gtag = gtag;
+    // Consent Mode v2: in the EEA, UK and Switzerland nothing is stored until the visitor accepts; elsewhere analytics start granted and ads stay denied until accepted.
+    gtag("consent", "default", { ad_storage: "denied", analytics_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", region: ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"], wait_for_update: 500 });
+    gtag("consent", "default", { analytics_storage: "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
+    try { var c = localStorage.getItem("consent-v1"); if (c) gtag("consent", "update", { ad_storage: c, analytics_storage: c, ad_user_data: c, ad_personalization: c }); } catch (e) {}
+    gtag("js", new Date()); gtag("config", GA4_ID, { site_language: lang, anonymize_ip: true });
+    (function(w,d,s,l,i){w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',GTM_ID);
+  </script>
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
+  <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+  {!noindex && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>}
   <slot name="head" />
 </head>
 <body>
+  <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="skip" href="#main">{t("skip")}</a>
   <header class="sticky top-0 z-40 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_72%,transparent)] backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
@@ -52,5 +67,7 @@ const full = title.includes("KATHAAYA") ? title : `${title} | KATHAAYA`;
     <div class="rule-gold"></div>
     <p class="mx-auto max-w-6xl px-4 py-5 text-center text-xs text-[var(--muted)]">{t("footerLegal")}</p>
   </footer>
+  <ConsentBanner />
+  <script is:inline src="/analytics.js" defer></script>
 </body>
 </html>

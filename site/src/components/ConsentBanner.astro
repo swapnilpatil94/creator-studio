@@ -1,0 +1,14 @@
+---
+import { useT, langOf } from "../i18n/ui";
+const t = useT(langOf(Astro.url.pathname));
+---
+<div id="consent" class="glass fixed inset-x-3 bottom-3 z-50 mx-auto hidden max-w-2xl p-4 text-sm sm:inset-x-6" role="dialog" aria-label={t("consentTitle")}>
+  <p class="text-[var(--muted)]">{t("consentText")} <a class="underline" href="/privacy/">{t("privacy")}</a></p>
+  <div class="mt-3 flex flex-wrap gap-2"><button class="btn !py-2" data-consent="granted">{t("consentAccept")}</button><button class="btn btn-ghost !py-2" data-consent="denied">{t("consentDecline")}</button></div>
+</div>
+<script is:inline>
+(function(){var KEY="consent-v1",el=document.getElementById("consent");if(!el)return;var saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+function apply(v){var s={ad_storage:v,analytics_storage:v,ad_user_data:v,ad_personalization:v};if(window.gtag)gtag("consent","update",s)}
+if(saved){apply(saved);return}el.classList.remove("hidden");
+el.addEventListener("click",function(e){var b=e.target.closest("[data-consent]");if(!b)return;var v=b.dataset.consent;try{localStorage.setItem(KEY,v)}catch(x){}apply(v);el.remove()})})();
+</script>
