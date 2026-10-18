@@ -45,7 +45,8 @@ await fs.mkdir(frameDir, { recursive: true });
 let duration, frameCount;
 const browserErrors = [];
 const externalRequests = [];
-const browser = await chromium.launch(args.includes("--gpu") ? { headless: true } : { headless: true, args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
+const browser = await chromium.launch(args.includes("--gpu") ? { headless: true, args: fastReq && process.env.RENDER_GL === "metal" ? ["--enable-webgl", "--use-gl=angle", "--use-angle=metal", "--ignore-gpu-blocklist"] : [] } :   // software canvas is the default (bit-exact, what the determinism check and sharded rendering rely on). RENDER_GL=metal opts in to GPU rasterisation, which on this Mac blanked the canvas mid-film, so it is not used
+ { headless: true, args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
 try {
   const page = await browser.newPage({ viewport: { width: VW, height: VH }, deviceScaleFactor: 2, reducedMotion: "reduce" });
   page.on("console", message => {
@@ -53,11 +54,12 @@ try {
   });
   page.on("pageerror", error => browserErrors.push(`page: ${error.message}`));
   page.on("request", request => {
-    if (/^https?:/i.test(request.url())) externalRequests.push(request.url());
+    if (/^https?:/i.test(request.url()) && !request.url().startsWith("https://clips.local/")) externalRequests.push(request.url());
   });
   // studio injection: config + shim run before the scene's own scripts
   const cfgPath = arg("--studio-config"); if (cfgPath) { const cfgObj = JSON.parse(await fs.readFile(path.resolve(process.cwd(), cfgPath), "utf8")); await page.addInitScript(c => { window.__STUDIO = c; }, cfgObj); }
   for (let ai = 0; ai < args.length; ai++) if (args[ai] === "--inject") await page.addInitScript({ path: path.resolve(process.cwd(), args[ai + 1]) });
+  const clipsDir = arg("--clips"); if (clipsDir) await page.route("https://clips.local/**", route => { const f = path.join(path.resolve(clipsDir), decodeURIComponent(new URL(route.request().url()).pathname)); route.fulfill({ path: f, headers: { "access-control-allow-origin": "*", "content-type": "image/jpeg" } }).catch(() => route.abort()); });
   const sceneUrl = pathToFileURL(htmlPath);
   sceneUrl.searchParams.set("render", "1");
   await page.goto(sceneUrl.href, { waitUntil: "load" }); await page.evaluate(() => window.__ready || true);
@@ -75,12 +77,17 @@ try {
   if (duration > 1800) fail("Final duration must not exceed 1800 seconds.");
   frameCount = Math.ceil(duration * fps);
 
-  await page.evaluate(() => window.renderAt(0));
-  const first = await page.screenshot({ type: "png", animations: "disabled" });
-  await page.evaluate(time => window.renderAt(time), Math.min(contract.duration * 0.63, contract.duration - 0.001));
-  await page.evaluate(() => window.renderAt(0));
+  const at = async time => { await page.evaluate(t => window.__prepare ? window.__prepare(t) : 0, time); await page.evaluate(t => window.renderAt(t), time); };   // scenes with camera clips load their frame first
+  const gpuCanvas = fastReq && process.env.RENDER_GL === "metal" && await page.evaluate(() => !!window.__canvasOnly && !!document.getElementById("o")), grab = () => page.evaluate(() => document.getElementById("o").toDataURL("image/png"));
+  // GPU canvases are compared through two PNG captures decoded into a scratch canvas (reading the live scene canvas with getImageData would blank it)
+  const pngDiff = (a, b) => page.evaluate(async ([a, b]) => { const load = u => new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = u; }), [ia, ib] = await Promise.all([load(a), load(b)]), c = document.createElement("canvas"); c.width = ia.width; c.height = ia.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(ia, 0, 0); const da = x.getImageData(0, 0, c.width, c.height).data; x.clearRect(0, 0, c.width, c.height); x.drawImage(ib, 0, 0); const db = x.getImageData(0, 0, c.width, c.height).data; let sum = 0, big = 0, n = 0; for (let i = 0; i < da.length; i += 97) { const d = Math.abs(da[i] - db[i]); sum += d; if (d > 12) big++; n++; } return { mean: sum / n, big: big / n }; }, [a, b]);
+  await at(0);
+  const first = gpuCanvas ? await grab() : await page.screenshot({ type: "png", animations: "disabled" });
+  await at(Math.min(contract.duration * 0.63, contract.duration - 0.001));
+  await at(0);
   const hash = buffer => crypto.createHash("sha256").update(buffer).digest("hex");
-  if (hash(first) !== hash(await page.screenshot({ type: "png", animations: "disabled" }))) {
+  if (gpuCanvas) { const d = await pngDiff(first, await grab()); if (d.mean > 1.0 || d.big > 0.002) fail(`Determinism check failed: renderAt(0) differs after seeking (mean diff ${d.mean.toFixed(2)}, ${(d.big * 100).toFixed(2)}% of samples differ by more than 12). Derive all scene state from absolute time.`); }   // GPU rasterisation may differ by +-1 level between identical frames: tolerated; a real state leak is not
+  else if (hash(first) !== hash(await page.screenshot({ type: "png", animations: "disabled" }))) {
     fail("Determinism check failed: renderAt(0) produced different pixels after seeking. Derive all scene state from absolute time.");
   }
 
@@ -193,6 +200,7 @@ try {
     const framePath = path.join(frameDir, `frame-${String(i).padStart(6, "0")}.${ext}`);
     if (resume) { const st = await fs.stat(framePath).catch(() => null); if (st && st.size > 1000) { skipped++; continue; } }
     const sceneTime = Math.min(contract.duration, (i / fps) * sceneTimeScale);
+    await page.evaluate(time => window.__prepare ? window.__prepare(time) : 0, sceneTime);
     if (fast) { const d = await page.evaluate(time => { window.renderAt(time); return document.getElementById("o").toDataURL("image/jpeg", 0.93); }, sceneTime); await fs.writeFile(framePath, Buffer.from(d.slice(d.indexOf(",") + 1), "base64")); }
     else { await page.evaluate(time => window.renderAt(time), sceneTime); await page.screenshot({ path: framePath, type: "png", animations: "disabled" }); }
     if (i % Math.max(1, Math.floor(fps * 5)) === 0 || i === frameCount - 1) process.stdout.write(`\rFrames: ${i + 1}/${frameCount}`);

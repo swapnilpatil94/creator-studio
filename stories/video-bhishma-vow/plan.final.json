@@ -1,0 +1,253 @@
+[
+ {
+  "id": "v001",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "भीष्म ने ऐसी प्रतिज्ञा क्यों ली"
+   ],
+   "style": "slam"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v002",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c1",
+   "move": "pull",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 112
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v003",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c2",
+   "move": "panL",
+   "fx": "kinetography_cinemagraph"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v004",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "panR",
+   "fx": "crane_up_reveal",
+   "clip": "v004",
+   "clip_n": 166
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v005",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "push",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v005",
+   "clip_n": 137
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v006",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "pull",
+   "fx": "puppet_warp_breathing"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v007",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "panL",
+   "fx": "drone_orbit_180",
+   "clip": "v007",
+   "clip_n": 153
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v008",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "panR",
+   "fx": "matte_painting_extension"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v009",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "push",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v009",
+   "clip_n": 139
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v010",
+  "chapter": "ch2",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "pull",
+   "fx": "2.5d_parallax",
+   "clip": "v010",
+   "clip_n": 141
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "push",
+   "label": "कठिन प्रतिज्ञा",
+   "reveal": "wipe",
+   "fx": "drone_orbit_180",
+   "clip": "v011",
+   "clip_n": 123
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v012",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "बड़े *उद्देश्य* की शुरुआत?"
+   ],
+   "style": "glitch"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v013",
+  "comp": "dotword",
+  "params": {
+   "lines": [
+    "सत्ता और सिंहासन"
+   ]
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v014",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "panR",
+   "label": "शक्तिशाली योद्धा",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v015",
+  "comp": "iconlist",
+  "params": {
+   "title": "उत्तराधिकारी",
+   "items": [
+    {
+     "icon": "👑",
+     "text": "सत्यवती की संतान"
+    },
+    {
+     "icon": "📜",
+     "text": "राज्य का अधिकार"
+    }
+   ]
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v016",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "push",
+   "label": "बाधाओं का अंत",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v017",
+  "comp": "quote",
+  "params": {
+   "text": "आजीवन ब्रह्मचर्य की कठोर प्रतिज्ञा",
+   "by": "परंपरा"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v018",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "pull",
+   "behind": "इतिहास बदला",
+   "fx": "2.5d_parallax",
+   "clip": "v018",
+   "clip_n": 145
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v019",
+  "comp": "orb",
+  "params": {
+   "kind": "galaxy",
+   "label": "नया युग"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v020",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "अमर और *पूजनीय*"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v021",
+  "comp": "dotword",
+  "params": {
+   "lines": [
+    "सेव करें",
+    "फ़ॉलो करें"
+   ]
+  },
+  "chapter": "ch5"
+ }
+]

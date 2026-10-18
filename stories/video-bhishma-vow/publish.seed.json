@@ -1,0 +1,46 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#भीष्मकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "महाभारत|कथा",
+ "extraTags": [
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "bhishma-vow"
+ ],
+ "primaryKeyword": "भीष्म",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?"
+ }
+}

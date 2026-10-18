@@ -18,5 +18,15 @@
   "transition": "dissolve",
   "captions": "pill",
   "seed": 231
+ },
+ {
+  "name": "video-bhishma-vow",
+  "mood": "devotion",
+  "hue": 5,
+  "sat": 1.04,
+  "motif": "flow",
+  "transition": "zoom",
+  "captions": "pill",
+  "seed": 690
  }
 ]

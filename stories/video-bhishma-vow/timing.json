@@ -1,38 +1,72 @@
 {
  "item": "bhishma-vow.carousel",
- "started": "2026-10-18T12:15:02.932Z",
+ "started": "2026-10-18T12:30:09.360Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
    "status": "cached",
-   "start": 1792325702936,
+   "start": 1792326609360,
    "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792325702938,
+   "start": 1792326609361,
    "detail": "21 beats, 9 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
    "status": "cached",
-   "start": 1792325702956,
+   "start": 1792326609371,
    "detail": "voice exists",
    "seconds": 0
   },
   {
    "name": "director",
+   "status": "cached",
+   "start": 1792326609371,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
    "status": "done",
-   "start": 1792325702957,
-   "detail": "21 beats, 6 visual types, 7 new scenes, 1 carousel paintings reused, 10 by rules",
-   "seconds": 115
+   "start": 1792326609372,
+   "detail": "2 new paintings of 11 scenes",
+   "seconds": 87
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792326696242,
+   "detail": "11 of 11 scenes layered, 0 picture beats fell back to type",
+   "seconds": 84
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792326780397,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792326780507,
+   "detail": "QA all passed",
+   "seconds": 729
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792327509351,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
   }
  ],
- "total_seconds": 115,
- "ended": "2026-10-18T12:16:57.525Z",
- "stopped_after": "director"
+ "total_seconds": 900,
+ "ended": "2026-10-18T12:45:09.747Z"
 }
