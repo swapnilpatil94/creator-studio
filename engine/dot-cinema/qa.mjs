@@ -2,7 +2,7 @@
 // QA on the ACTUAL rendered mp4: dimensions, fps, duration, audio level/clipping/silence, a/v sync onset,
 // blank / frozen / repeated frames, caption presence + margin clipping.
 // usage: node qa.mjs <video.mp4> <segments.json> <leadSeconds> <report.json>
-import { spawnSync } from "node:child_process"; import fs from "node:fs";
+import { spawnSync } from "node:child_process"; import fs from "node:fs"; import path from "node:path";
 const [video, segFile, leadS, out, cutsArg, silArg] = process.argv.slice(2); const DECLARED = silArg ? JSON.parse(silArg) : []; const CUTS = cutsArg ? JSON.parse(cutsArg) : []; const LEAD = Number(leadS || 0);
 const [EW, EH] = (process.env.QA_SIZE || "1080x1920").split("x").map(Number);   // expected output size; long-form landscape sets QA_SIZE=1920x1080
 const segs = JSON.parse(fs.readFileSync(segFile, "utf8")); segs.segments = segs.segments.filter(s => s.words && s.words.length);   // silent cards/breaths carry no words
@@ -50,7 +50,8 @@ const mo = diffs.reduce((x, y) => x + y, 0) / diffs.length; add("motion present 
 
 // captions: bright text in band during speech; nothing bright hugging the side margins
 let capMiss = [], clip = [];
-for (const s of segs.segments) for (const tt of [s.start_seconds + (s.end_seconds - s.start_seconds) * 0.5]) {
+let TEXTLED = new Set(); try { const pf = path.join(path.dirname(segFile), "../../plan.final.json"), pl = JSON.parse(fs.readFileSync(pf, "utf8")); TEXTLED = new Set((pl.plan || pl).filter(b => ["kinetic", "quote", "dotword", "chapter"].includes(b.comp)).map(b => b.id)); } catch {}   // text-led beats animate the words themselves, the subtitle is hidden there
+for (const s of segs.segments.filter(s => !TEXTLED.has(s.beat_id))) for (const tt of [s.start_seconds + (s.end_seconds - s.start_seconds) * 0.5]) {
   const i = Math.round((tt + LEAD) * 4); if (i >= n) continue; const b = fr(i); let band = 0, side = 0;
   for (let y = Math.floor(H * 0.7); y < Math.floor(H * 0.9); y++) for (let x = 0; x < W; x++) { const val = b[y * W + x]; if (val > 215) { band++; if (x < W * 0.04 || x > W * 0.96) side++; } }
   if (band < 120) capMiss.push(s.beat_id); if (side > 6) clip.push(s.beat_id);

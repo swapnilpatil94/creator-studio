@@ -43,7 +43,8 @@
  "containsSyntheticMedia": true,
  "video": "output/video-bhishma-vow.mp4",
  "thumbnails": [
-  "output/thumb-9x16.png"
+  "output/thumb-9x16.png",
+  "output/thumb-16x9.png"
  ],
  "tagEvidence": [
   {

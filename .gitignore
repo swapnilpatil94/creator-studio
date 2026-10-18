@@ -23,3 +23,7 @@ stories/*/narration/voice/pre_post.wav
 content/art/*/prompts.json.bak
 stories/reel-*/assets/*.stip
 stories/reel-*/narration/voice/*.wav
+
+# outlier engine output lives on the `data` branch, not main
+planner/data/monthly/
+planner/data/outliers-monthly-*

@@ -87,7 +87,10 @@
  "selfDeclaredMadeForKids": false,
  "containsSyntheticMedia": true,
  "video": "output/durga-janm-katha.mp4",
- "thumbnails": [],
+ "thumbnails": [
+  "output/thumb-9x16.png",
+  "output/thumb-16x9.png"
+ ],
  "tagEvidence": [
   {
    "t": "maa durga",

@@ -8,3 +8,10 @@ All 30 exist in `engine/longform/fx.js` as `EFFECTS`; the director may use **onl
 **Particles and transformation:** `particle_formation` (the subject assembles from its own coloured points), `disintegration_dispersal` (it breaks into those points and drifts away), `eye_glow_energy_pulse` (glow and shock rings; **eyes are found from the silhouette's head position unless given**), `morph_age_shift` (**crossfades to a second picture `key:age` if one exists, otherwise ages the subject by grade; a real morph needs an image-edit model**), `double_exposure_cosmos` (a moving galaxy inside the subject's silhouette), `infinite_zoom_droste` (the picture inside itself, endlessly), `kinetography_cinemagraph` (a still picture with only the lower region, such as water, moving).
 **Diagram and comparison:** `split_screen_vs` (two paintings, diagonal divider, needs `img2`), `map_loka_zoom` (the seven upper lokas as rings, a zoom to the chosen one), `sacred_geometry_carve` (a yantra drawn stroke by stroke and carved into the picture).
 Known weak spots: effects that need a face or scene understanding (eye glow, diya spots) use simple image analysis and can miss on busy paintings; the director chooses effects from the beat's mood, not by looking at the picture.
+
+## Reels look pack (captions, grade, Ken Burns, living layers)
+- Captions: 2-4 word chunks, each word springs in on its spoken time, active word lit; style per story look (`pop | box | karaoke`). Subtitles are hidden while a text-led beat (kinetic, quote, dotword, chapter) is on screen; `engine/dot-cinema/qa.mjs` skips those beats in the caption check.
+- Grade per story look (`film | teal | dream | leak`): tint, animated grain, flash on beat change.
+- Ken Burns: seeded per beat (zoom, drift, roll, punch-in) on top of the DepthFlow clip.
+- Living layers chosen from the beat's words (embers, leaves, petals, water shimmer, mist, god rays, dust).
+- Kinetic styles: slam, wave, mask, spring, flip, stack, glitch; accent words get a drawn underline.

@@ -1,0 +1,49 @@
+# OUTLIER TOPIC ENGINE: runs on the 25th (plans NEXT month) and every Monday (refreshes the month in progress), and can be started by hand.
+# Reads YouTube (official API) + Instagram competitor outliers + the festival calendar, writes planner/data/monthly/<YYYY-MM>/topics.{json,md}
+# and stores them on the `data` branch, so main stays clean and every month's data is kept. The Hub reads it (Topics > Outlier Topic Engine > Pull latest from GitHub).
+# Needs repo secrets: YOUTUBE_API_KEY, META_PAGE_TOKEN, META_IG_USER_ID. One run uses about 3,000 of the 10,000 daily YouTube quota units.
+name: outlier-engine
+on:
+  schedule:
+    - cron: "30 1 25 * *"   # 07:00 IST on the 25th: plan next month
+    - cron: "30 1 * * 1"    # 07:00 IST every Monday: refresh
+  push:
+    branches: ["e2e/**"]    # test hook: pushing a branch named e2e/<anything> runs this workflow from that branch
+  workflow_dispatch:
+    inputs: { month: { description: "YYYY-MM (empty = automatic)", type: string, default: "" } }
+permissions: { contents: write }
+concurrency: { group: outlier-engine, cancel-in-progress: false }
+jobs:
+  outliers:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 22 }
+      - name: Bring the previous data (other months) back
+        run: |
+          git fetch origin data || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout origin/data -- planner/data/monthly 2>/dev/null || true; git reset -q HEAD -- planner/data/monthly 2>/dev/null || true; fi
+      - name: Run the engine
+        run: node planner/outlier-engine.mjs --month "${{ inputs.month || 'auto' }}" | tee /tmp/outliers.txt
+      - name: Summary
+        run: |
+          M=$(node -e 'console.log(JSON.parse(require("fs").readFileSync("planner/data/monthly/latest.json","utf8")).month)')
+          { echo "### Outlier topics for $M"; echo; cat "planner/data/monthly/$M/topics.md"; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Store on the data branch
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          M=$(node -e 'console.log(JSON.parse(require("fs").readFileSync("planner/data/monthly/latest.json","utf8")).month)')
+          mkdir -p /tmp/keep && cp -r planner/data/monthly /tmp/keep/ && cp planner/data/outliers-monthly-* /tmp/keep/ 2>/dev/null || true
+          git stash -u -q || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout -B data origin/data; else git checkout --orphan data; git rm -rf -q . >/dev/null 2>&1 || true; fi
+          mkdir -p planner/data && cp -r /tmp/keep/monthly planner/data/ && (cp /tmp/keep/outliers-monthly-* planner/data/ 2>/dev/null || true)
+          git add -f planner/data/monthly planner/data/outliers-monthly-* && (git diff --cached --quiet || git commit -m "outliers $M ($(date -u +%F))") && git push origin data
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with: { name: outlier-topics, path: planner/data/monthly, if-no-files-found: ignore }

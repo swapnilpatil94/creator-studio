@@ -3,7 +3,7 @@
 // Everything after a paste is done by the studio. usage: node tests/ui.e2e.carousel-video.mjs <phase: carousel|video> <carousel text file> [script file]
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath, pathToFileURL } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), { chromium } = await import(pathToFileURL(path.join(root, "engine/node_modules/playwright/index.mjs")).href), BASE = "http://127.0.0.1:4180/hub", OUT = "/tmp/e2e";
-const [phase, carFile, scriptFile] = process.argv.slice(2), SLUG = "pandu-kindama-curse", ID = SLUG + ".carousel", T0 = Date.now(), el = () => Math.round((Date.now() - T0) / 1000) + "s";
+const [phase, carFile, scriptFile] = process.argv.slice(2), SLUG = process.env.E2E_SLUG || "pandu-kindama-curse", ID = SLUG + ".carousel", T0 = Date.now(), el = () => Math.round((Date.now() - T0) / 1000) + "s";
 const log = (...a) => console.log(`[${el()}]`, ...a), dialogs = [];
 const b = await chromium.launch({ headless: true }), page = await b.newPage({ viewport: { width: 1360, height: 1000 } }); page.on("dialog", d => { dialogs.push(d.message()); d.accept(); }); page.on("pageerror", e => log("PAGE ERROR", e.message));
 const tab = async label => { await page.locator("#nav button", { hasText: label }).first().click(); await page.waitForFunction(l => { const x = document.querySelector("#nav button.on"); return x && x.innerText.includes(l); }, label); await page.waitForLoadState("networkidle").catch(() => {}); await page.waitForTimeout(1000); };

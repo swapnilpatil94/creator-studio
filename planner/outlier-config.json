@@ -1,0 +1,91 @@
+{
+ "_note": "Edit freely (Hub > Topics > Outlier engine). Queries are what real viewers search; festival queries are added automatically from calendar-festivals.json for the target month.",
+ "relevance": "कथा|महाभारत|रामायण|पुराण|दुर्गा|शिव|कृष्ण|राम|हनुमान|कर्ण|अर्जुन|भीष्म|द्रौपदी|रावण|सीता|विष्णु|गणेश|लक्ष्मी|सावित्री|mythology|katha|mahabharat|ramayan|krishna|shiva|durga",
+ "youtube": {
+  "lang": "hi",
+  "days": 120,
+  "per": 20,
+  "maxQueries": 22,
+  "evergreen_long": [
+   "कर्ण कथा महाभारत",
+   "अभिमन्यु चक्रव्यूह",
+   "शिव कथा",
+   "विष्णु अवतार कथा",
+   "द्रौपदी कथा",
+   "भीष्म प्रतिज्ञा",
+   "हनुमान कथा रामायण",
+   "सीता कथा रामायण"
+  ],
+  "evergreen_short": [
+   "mythology shorts hindi",
+   "महाभारत shorts",
+   "रामायण shorts",
+   "पौराणिक कथा shorts"
+  ]
+ },
+ "instagram": {
+  "handles": [
+   "epicstories",
+   "amarchitrakatha",
+   "storieswithvishal",
+   "bharatkatha",
+   "hindustoriesofficial",
+   "hindu_gods_official"
+  ],
+  "posts": 30,
+  "aliases": {
+   "कर्ण": "karna",
+   "द्रौपदी": "draupadi",
+   "शिव": "shiva",
+   "हनुमान": "hanuman",
+   "सीता": "sita",
+   "कृष्ण": "krishna",
+   "दुर्गा": "durga",
+   "महिषासुर": "mahishasur",
+   "रावण": "ravana",
+   "दिवाली": "diwali|deepavali",
+   "लक्ष्मी": "lakshmi",
+   "भीष्म": "bhishma",
+   "अभिमन्यु": "abhimanyu",
+   "विष्णु": "vishnu",
+   "गोवर्धन": "govardhan",
+   "तुलसी": "tulsi",
+   "सावित्री": "savitri",
+   "यमराज": "yama",
+   "धनतेरस": "dhanteras",
+   "अर्जुन": "arjuna",
+   "गणेश": "ganesh",
+   "राम": "rama|ram ",
+   "होली": "holi|holika|prahlad",
+   "प्रह्लाद": "prahlad",
+   "शरद": "sharad",
+   "पूर्णिमा": "purnima",
+   "करवा": "karva|karwa",
+   "चौथ": "chauth",
+   "देवउठनी": "dev uthani|prabodhini",
+   "एकादशी": "ekadashi",
+   "त्रिपुरासुर": "tripurasura|tripura",
+   "कार्तिक": "kartik",
+   "समुद्र": "samudra|churning",
+   "मंथन": "manthan|churning",
+   "अयोध्या": "ayodhya",
+   "कुंती": "kunti",
+   "पांडु": "pandu",
+   "द्रोणाचार्य": "drona",
+   "एकलव्य": "ekalavya",
+   "परशुराम": "parashurama",
+   "गीता": "gita|geeta",
+   "दत्तात्रेय": "dattatreya",
+   "सरस्वती": "saraswati",
+   "कंस": "kansa",
+   "जन्म": "birth"
+  }
+ },
+ "lead_days": {
+  "youtube_long": 12,
+  "youtube_short": 5,
+  "instagram": 4,
+  "facebook": 5
+ },
+ "windowDaysBefore": 10
+}

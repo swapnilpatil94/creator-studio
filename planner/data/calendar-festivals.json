@@ -1,0 +1,31 @@
+{
+ "source": "web search 2026-10-18 (SAHMS, Dipika, HinduPad, Drik Panchang, SmartPuja, Calendarific); lunar dates differ by 1-2 days between sources and cities. `uncertain_days` is the spread we saw. The engine only uses these dates for planning windows (publish a few days BEFORE), never to state a date publicly: confirm with a panchang for your city before posting a date.",
+ "events": [
+  {"id":"ashtami","name":"Durga Ashtami","date":"2026-10-18","tags":["navratri","durga"],"uncertain_days":1,"queries":["दुर्गा महिषासुर कथा","महिषासुर वध"]},
+  {"id":"navami","name":"Maha Navami","date":"2026-10-19","tags":["navratri","durga"],"uncertain_days":1,"queries":["नवदुर्गा कथा"]},
+  {"id":"dussehra","name":"Dussehra / Vijayadashami","date":"2026-10-20","tags":["dussehra","ravana","rama"],"uncertain_days":1,"queries":["रावण दशहरा कथा","रावण अंतिम शिक्षा लक्ष्मण"]},
+  {"id":"sharad-purnima","name":"Sharad Purnima","date":"2026-10-25","tags":["sharad-purnima","krishna"],"uncertain_days":1,"queries":["शरद पूर्णिमा कृष्ण रास"]},
+  {"id":"karwa-chauth","name":"Karwa Chauth","date":"2026-10-29","tags":["karwa-chauth","savitri"],"uncertain_days":1,"queries":["सावित्री सत्यवान","करवा चौथ कथा"]},
+  {"id":"dhanteras","name":"Dhanteras","date":"2026-11-06","tags":["dhanteras","yama","lakshmi"],"uncertain_days":0,"queries":["धनतेरस यमराज"]},
+  {"id":"diwali","name":"Diwali (Lakshmi Puja)","date":"2026-11-09","tags":["diwali","lakshmi","rama"],"uncertain_days":2,"queries":["दिवाली लक्ष्मी समुद्र मंथन","राम अयोध्या वापसी दिवाली कथा"]},
+  {"id":"govardhan","name":"Govardhan Puja","date":"2026-11-10","tags":["krishna","govardhan"],"uncertain_days":1,"queries":["कृष्ण गोवर्धन पर्वत कथा"]},
+  {"id":"dev-uthani","name":"Dev Uthani Ekadashi / Tulsi Vivah","date":"2026-11-20","tags":["vishnu","tulsi"],"uncertain_days":1,"queries":["तुलसी विवाह कथा","देवउठनी एकादशी कथा"]},
+  {"id":"kartik-purnima","name":"Kartik Purnima","date":"2026-11-24","tags":["shiva","vishnu"],"uncertain_days":1,"queries":["कार्तिक पूर्णिमा कथा","त्रिपुरासुर वध"]},
+  {"id":"gita-jayanti","name":"Gita Jayanti / Mokshada Ekadashi","date":"2026-12-20","tags":["krishna","gita","arjuna"],"uncertain_days":1,"queries":["गीता उपदेश अर्जुन कृष्ण","कृष्ण अर्जुन कथा महाभारत"]},
+  {"id":"dattatreya","name":"Dattatreya Jayanti","date":"2026-12-23","tags":["vishnu"],"uncertain_days":1,"queries":["दत्तात्रेय कथा"]},
+  {"id":"makar-sankranti","name":"Makar Sankranti","date":"2027-01-14","tags":["surya","bhishma"],"uncertain_days":1,"queries":["भीष्म पितामह उत्तरायण","सूर्य कर्ण कथा"]},
+  {"id":"vasant-panchami","name":"Vasant Panchami","date":"2027-02-11","tags":["saraswati"],"uncertain_days":1,"queries":["सरस्वती उत्पत्ति कथा"]},
+  {"id":"maha-shivratri","name":"Maha Shivratri","date":"2027-03-05","tags":["shiva"],"uncertain_days":1,"queries":["शिव कथा","शिव पार्वती विवाह कथा"]},
+  {"id":"holi","name":"Holi","date":"2027-03-22","tags":["prahlad","krishna"],"uncertain_days":1,"queries":["प्रह्लाद होलिका कथा","राधा कृष्ण होली कथा"]},
+  {"id":"ram-navami","name":"Ram Navami","date":"2027-04-15","tags":["rama"],"uncertain_days":1,"queries":["राम जन्म कथा","रामायण कथा"]},
+  {"id":"hanuman-jayanti","name":"Hanuman Jayanti","date":"2027-04-20","tags":["hanuman"],"uncertain_days":2,"queries":["हनुमान समुद्र लंघन","हनुमान जन्म कथा"]},
+  {"id":"akshaya-tritiya","name":"Akshaya Tritiya","date":"2027-05-09","tags":["parashurama","vishnu"],"uncertain_days":2,"queries":["परशुराम कथा"]},
+  {"id":"guru-purnima","name":"Guru Purnima","date":"2027-07-18","tags":["vyasa","guru"],"uncertain_days":2,"queries":["वेद व्यास कथा","एकलव्य द्रोणाचार्य कथा"]},
+  {"id":"raksha-bandhan","name":"Raksha Bandhan","date":"2027-08-17","tags":["krishna","draupadi"],"uncertain_days":2,"queries":["कृष्ण द्रौपदी रक्षा कथा"]},
+  {"id":"janmashtami","name":"Krishna Janmashtami","date":"2027-08-25","tags":["krishna"],"uncertain_days":2,"queries":["कृष्ण जन्म कथा","कंस वध कथा"]},
+  {"id":"ganesh-chaturthi","name":"Ganesh Chaturthi","date":"2027-09-04","tags":["ganesha"],"uncertain_days":1,"queries":["गणेश जन्म कथा"]},
+  {"id":"navratri-2027","name":"Sharad Navratri begins","date":"2027-09-30","tags":["navratri","durga"],"uncertain_days":1,"queries":["दुर्गा महिषासुर कथा","नवदुर्गा कथा"]},
+  {"id":"dussehra-2027","name":"Dussehra","date":"2027-10-09","tags":["dussehra","ravana","rama"],"uncertain_days":1,"queries":["रावण दशहरा कथा"]},
+  {"id":"diwali-2027","name":"Diwali","date":"2027-10-29","tags":["diwali","lakshmi","rama"],"uncertain_days":2,"queries":["दिवाली लक्ष्मी समुद्र मंथन"]}
+ ]
+}

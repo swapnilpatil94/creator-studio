@@ -144,7 +144,7 @@
    "lines": [
     "निःसंतान के लिए परलोक के लोक नहीं"
    ],
-   "style": "slam"
+   "style": "mask"
   },
   "chapter": "ch1"
  },
@@ -321,7 +321,7 @@
     "माद्री ने पुकारा",
     "कुंती, अकेली आओ"
    ],
-   "style": "slam"
+   "style": "spring"
   },
   "chapter": "ch1"
  },
@@ -346,7 +346,7 @@
    "lines": [
     "माद्री ने उत्तर दिया राजा स्वयं को"
    ],
-   "style": "wave"
+   "style": "flip"
   },
   "chapter": "ch1"
  },
@@ -358,7 +358,8 @@
    "move": "panL",
    "label": "ऋषि के शाप के बारे में बात करते हुए",
    "reveal": "diamond",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "sticker": "burst"
   },
   "chapter": "ch1"
  },
@@ -384,7 +385,8 @@
    "reveal": "circle",
    "fx": "crane_up_reveal",
    "clip": "v030",
-   "clip_n": 144
+   "clip_n": 144,
+   "sticker": "sparkle"
   },
   "chapter": "ch1"
  },

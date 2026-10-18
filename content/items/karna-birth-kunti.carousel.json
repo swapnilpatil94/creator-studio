@@ -48,7 +48,7 @@
  ],
  "ai_assisted": true,
  "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।",
- "status": "draft",
+ "status": "approved",
  "created": "2026-10-18",
  "slug": "karna-birth-kunti",
  "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १११ (गांगुली अनुवाद)",
@@ -150,5 +150,7 @@
   }
  ],
  "ai_art_disclosed": true,
- "disclosure_text": "चित्र: AI-निर्मित"
+ "disclosure_text": "चित्र: AI-निर्मित",
+ "reviewed": "2026-10-18",
+ "reviewed_by": "owner (hub)"
 }
