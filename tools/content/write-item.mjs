@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Drafts a content item from a topic using retrieved source passages, then loops with the QA gate (max 2 repair rounds). The writer is a model: Anthropic API if ANTHROPIC_API_KEY is set (WRITER_MODEL, default claude-sonnet-5-5), else a local Ollama model (OLLAMA_MODEL, default qwen3:14b), else it prints the prompt (--dry-run).
 // A passing draft is saved with status "draft": a human approves it (docs/QA_POLICY.md). usage: node tools/content/write-item.mjs --slug ganga-seven-sons --format fb_text --query "Ganga Shantanu eight children Vasus curse" [--dry-run]
-import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { search } from "./corpus.mjs"; import { run as qa } from "./qa-content.mjs";
+import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { search } from "./corpus.mjs"; import { run as qa } from "./qa-content.mjs"; import { ollamaStream } from "./llm.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), a = process.argv.slice(2), arg = (k, d) => { const i = a.indexOf(k); return i > -1 ? a[i + 1] : d; }, dry = a.includes("--dry-run");
 const slug = arg("--slug"), format = arg("--format", "fb_text"), query = arg("--query"); if (!slug || !query) { console.error("need --slug and --query"); process.exit(1); }
 const topics = JSON.parse(fs.readFileSync(path.join(root, "content/queue/topics.json"), "utf8")).topics, topic = topics.find(t => t.slug === slug) || { slug, pillar: "unsaid-relations", title: slug, sensitivity: "normal" };
@@ -11,7 +11,7 @@ const system = fs.readFileSync(path.join(root, "content/prompts/writer_system.tx
 const user = (extra = "") => `TOPIC: ${topic.title}\nFORMAT: ${format}\nPILLAR: ${topic.pillar}${topic.sensitivity === "belief" ? "\nSENSITIVITY: belief (frame as मान्यता)" : ""}${topic.note ? "\nMANAGER NOTE: " + topic.note : ""}\nid must be "${slug}.${format}", slug "${slug}", created "${new Date().toISOString().slice(0, 10)}".\n\nSOURCES (the only facts you may use):\n${sources}\n${extra}`;
 async function model(prompt) {
   if (process.env.ANTHROPIC_API_KEY) { const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" }, body: JSON.stringify({ model: process.env.WRITER_MODEL || "claude-sonnet-5-5", max_tokens: 6000, system, messages: [{ role: "user", content: prompt }] }) }); if (!r.ok) throw new Error("anthropic " + r.status + " " + (await r.text()).slice(0, 200)); return (await r.json()).content[0].text; }
-  const r = await fetch((process.env.OLLAMA_URL || "http://127.0.0.1:11434") + "/api/chat", { method: "POST", body: JSON.stringify({ model: process.env.OLLAMA_MODEL || "qwen3:14b", stream: false, format: "json", options: { temperature: 0.4, num_ctx: 8192 }, messages: [{ role: "system", content: system }, { role: "user", content: prompt }] }) }); if (!r.ok) throw new Error("ollama " + r.status); return (await r.json()).message.content; }
+  return ollamaStream({ system, prompt, temperature: 0.4, json: true }); }
 if (dry) { console.log(system + "\n\n" + user()); process.exit(0); }
 let prompt = user(), item;
 for (let round = 0; round < 3; round++) { const raw = await model(prompt); try { item = JSON.parse(raw.replace(/^[\s\S]*?(\{[\s\S]*\})[\s\S]*$/, "$1")); } catch { prompt = user("\nYour last answer was not valid JSON. Return only the JSON object."); continue; }
