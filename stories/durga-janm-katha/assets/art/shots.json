@@ -1,0 +1,492 @@
+{
+ "scene0": {
+  "subject": "Devi Durga",
+  "action": "stands motionless in the battlefield, holding a sacred vessel in her hand",
+  "setting": "a vast, ancient battlefield surrounded by broken weapons and the remnants of war",
+  "lighting": "soft, golden light radiating from the vessel, illuminating her divine form",
+  "medium": "ravi-varma"
+ },
+ "scene1": {
+  "subject": "Mahishasura",
+  "action": "standing defiantly with a fierce expression",
+  "setting": "a dark and stormy battlefield surrounded by ancient ruins",
+  "lighting": "dramatic lightning illuminating his towering form and the surrounding battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene2": {
+  "subject": "Devi",
+  "action": "holding a lotus in her hand and making a solemn gesture of promise",
+  "setting": "a celestial throne surrounded by divine beings and glowing lotus flowers",
+  "lighting": "soft, golden radiance emanating from the Devi and the lotus, illuminating the faces of the deities around her",
+  "medium": "ravi-varma"
+ },
+ "scene3": {
+  "subject": "Devi Parvati",
+  "action": "sitting in meditative pose, arms folded in a gesture of calm power",
+  "setting": "a serene mountain peak surrounded by clouds and ancient temples",
+  "lighting": "soft golden light radiating from the top of the mountain, illuminating her divine form",
+  "medium": "ravi-varma"
+ },
+ "scene4": {
+  "subject": "A king wearing traditional royal attire",
+  "action": "standing solemnly with his hands folded in prayer",
+  "setting": "an ancient palace courtyard surrounded by towering pillars and intricate carvings",
+  "lighting": "soft golden light filtering through stained glass windows above",
+  "medium": "ravi-varma"
+ },
+ "scene5": {
+  "subject": "King Surath",
+  "action": "standing alone, gazing solemnly at the ruins of his kingdom",
+  "setting": "a desolate battlefield strewn with broken weapons and shattered palaces in the distance",
+  "lighting": "dull and somber, with a faint golden glow from the setting sun casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene6": {
+  "subject": "A wandering ascetic",
+  "action": "meets a Vaishya who has been cast out by his family",
+  "setting": "a dense forest under a canopy of ancient trees",
+  "lighting": "soft, diffused light filtering through the leaves",
+  "medium": "ravi-varma"
+ },
+ "scene7": {
+  "subject": "Two sages",
+  "action": "arrive at the hermitage of Medha with a strange question on their faces",
+  "setting": "a serene hermitage surrounded by dense forest and a calm river",
+  "lighting": "soft golden light filtering through the trees at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene8": {
+  "subject": "A woman with a serene expression and flowing sari",
+  "action": "gazing thoughtfully at a distant horizon",
+  "setting": "a quiet courtyard surrounded by ancient stone pillars and blooming lotus flowers",
+  "lighting": "soft golden light filtering through the leaves of a peepal tree at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene9": {
+  "subject": "A sage and a divine female figure",
+  "action": "The sage points toward the divine female figure, who is radiating a luminous aura",
+  "setting": "A serene forest clearing surrounded by ancient trees and a distant mountain",
+  "lighting": "Soft, golden light emanates from the divine figure, illuminating the sage and the surrounding area",
+  "medium": "ravi-varma"
+ },
+ "scene10": {
+  "subject": "Vishnu",
+  "action": "lying in yogic sleep",
+  "setting": "a cosmic void surrounded by swirling galaxies and celestial beings",
+  "lighting": "soft, golden light radiating from Vishnu's body, illuminating the surrounding space",
+  "medium": "ravi-varma"
+ },
+ "scene11": {
+  "subject": "Two asuras named Madhu and Kaitabha",
+  "action": "emerging from the earwax of a deity",
+  "setting": "a celestial realm surrounded by swirling clouds and divine symbols",
+  "lighting": "ethereal and golden, casting a soft glow around the newly born asuras",
+  "medium": "ravi-varma"
+ },
+ "scene12": {
+  "subject": "A warrior",
+  "action": "charging directly toward Brahma, who is seated on a lotus held by Vishnu",
+  "setting": "a celestial battlefield surrounded by divine beings and floating lotus flowers",
+  "lighting": "soft and golden, emanating from the lotus and the deities",
+  "medium": "ravi-varma"
+ },
+ "scene13": {
+  "subject": "Brahma",
+  "action": "raises his hands in a gesture of creation and prayer",
+  "setting": "a celestial realm with floating lotus flowers and divine symbols",
+  "lighting": "soft, golden light radiating from Brahma's hands and illuminating the surrounding space",
+  "medium": "ravi-varma"
+ },
+ "scene14": {
+  "subject": "A serene deity in meditative pose",
+  "action": "resting in a deep state of yogic sleep",
+  "setting": "a celestial lotus throne floating above a cosmic ocean",
+  "lighting": "soft, golden radiance emanating from the deity's form, illuminating the surrounding space",
+  "medium": "ravi-varma"
+ },
+ "scene15": {
+  "subject": "Vishnu and two Asuras",
+  "action": "Vishnu stands with arms raised, ready to strike, while two Asuras kneel before him in submission",
+  "setting": "A grand celestial battlefield surrounded by swirling clouds and divine symbols",
+  "lighting": "Golden light radiates from Vishnu's body, casting long shadows over the Asuras",
+  "medium": "ravi-varma"
+ },
+ "scene16": {
+  "subject": "A divine being",
+  "action": "severing the head of a fallen warrior with a celestial discus",
+  "setting": "a battlefield surrounded by ancient stone pillars and swirling storm clouds",
+  "lighting": "dramatic, with golden light radiating from the discus and deep shadows cast by the storm",
+  "medium": "ravi-varma"
+ },
+ "scene17": {
+  "subject": "Devi",
+  "action": "emerging from a lotus in a cosmic ocean",
+  "setting": "a vast celestial expanse with swirling clouds and divine symbols",
+  "lighting": "radiant and golden, emanating from the Devi's form",
+  "medium": "ravi-varma"
+ },
+ "scene18": {
+  "subject": "A celestial warrior",
+  "action": "raises a glowing mace high above their head, preparing to strike",
+  "setting": "a battlefield in the heavens, surrounded by swirling clouds and divine weapons",
+  "lighting": "radiant golden light from above, casting long shadows across the battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene19": {
+  "subject": "Indra and Mahishasur",
+  "action": "standing in a confrontation stance, Indra holding a vajra and Mahishasur holding a weapon",
+  "setting": "a grand celestial battlefield with clouds and mountains in the background",
+  "lighting": "dramatic golden and crimson hues illuminating their figures from above",
+  "medium": "ravi-varma"
+ },
+ "scene20": {
+  "subject": "Mahishasur",
+  "action": "standing triumphantly on a throne",
+  "setting": "heavenly palace with golden pillars and celestial beings bowing before him",
+  "lighting": "radiant and golden, illuminating his form with divine glow",
+  "medium": "ravi-varma"
+ },
+ "scene21": {
+  "subject": "A deity with multiple arms holding sacred objects",
+  "action": "being forcefully removed from a grand temple door by shadowy figures",
+  "setting": "an ancient temple courtyard with carved pillars and a towering gate",
+  "lighting": "dramatic with golden light from temple lamps casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene22": {
+  "subject": "Shiva",
+  "action": "holding the universe in his hands, then releasing it",
+  "setting": "a vast cosmic void with swirling galaxies and celestial bodies",
+  "lighting": "radiant beams of golden and silver light emanating from Shiva's hands, illuminating the cosmos",
+  "medium": "ravi-varma"
+ },
+ "scene23": {
+  "subject": "Brahma",
+  "action": "walking forward and approaching a throne where Vishnu and Shiva are seated",
+  "setting": "a grand celestial hall with intricate carvings and golden pillars",
+  "lighting": "soft, golden light emanating from celestial lamps above",
+  "medium": "ravi-varma"
+ },
+ "scene24": {
+  "subject": "A sage",
+  "action": "gesturing solemnly towards a distant horizon",
+  "setting": "a sacred mountain peak at dawn, surrounded by mist and ancient stone temples",
+  "lighting": "soft golden light breaking through the clouds, casting long shadows across the ground",
+  "medium": "ravi-varma"
+ },
+ "scene25": {
+  "subject": "Vishnu and Shiva",
+  "action": "standing with raised arms, their expressions filled with intense anger",
+  "setting": "a grand celestial battlefield surrounded by swirling clouds and divine symbols",
+  "lighting": "dramatic, with golden and crimson hues radiating from their bodies, casting long shadows on the ground",
+  "medium": "ravi-varma"
+ },
+ "scene26": {
+  "subject": "Vishnu",
+  "action": "emitting a radiant beam of light from his mouth",
+  "setting": "a celestial battlefield surrounded by divine warriors and celestial beings",
+  "lighting": "a brilliant, golden light radiating from Vishnu's mouth, illuminating the battlefield with divine brilliance",
+  "medium": "ravi-varma"
+ },
+ "scene27": {
+  "subject": "Shiva",
+  "action": "emerging from the body of Indra and other deities",
+  "setting": "a celestial battlefield surrounded by divine beings",
+  "lighting": "golden and ethereal light radiating from Shiva's form",
+  "medium": "ravi-varma"
+ },
+ "scene28": {
+  "subject": "A group of celestial beings",
+  "action": "converging to form a blazing flame as intense as a mountain",
+  "setting": "a vast, ethereal sky above a sacred mountain",
+  "lighting": "radiant, golden-orange light emanating from the flame, illuminating the surrounding clouds and peaks",
+  "medium": "ravi-varma"
+ },
+ "scene29": {
+  "subject": "A goddess",
+  "action": "emerging from a flame",
+  "setting": "a sacred mountain peak at dawn",
+  "lighting": "golden light radiating from her form and the flame",
+  "medium": "ravi-varma"
+ },
+ "scene30": {
+  "subject": "Varuna, Agni, Vayu",
+  "action": "Varuna holds a conch, Agni holds a spear, Vayu holds a bow and two arrows",
+  "setting": "A celestial battlefield with clouds and divine symbols in the background",
+  "lighting": "Golden and ethereal light illuminating the figures from above",
+  "medium": "ravi-varma"
+ },
+ "scene31": {
+  "subject": "A devotee",
+  "action": "standing in deep reverence with arms raised towards the sun",
+  "setting": "a serene hilltop at dawn, surrounded by ancient temples and sacred trees",
+  "lighting": "golden sunlight streaming through the trees, illuminating the devotee's face and hands",
+  "medium": "ravi-varma"
+ },
+ "scene32": {
+  "subject": "Kala and Vishwakarma",
+  "action": "Kala raises a sword and a spotless shield, while Vishwakarma holds an axe and a unbreakable armor",
+  "setting": "A grand celestial forge surrounded by glowing anvils and molten metal",
+  "lighting": "Ornate golden light radiating from the forge, casting warm shadows on the figures",
+  "medium": "ravi-varma"
+ },
+ "scene33": {
+  "subject": "A celestial woman with flowing hair and adorned in traditional jewelry",
+  "action": "extending her hands to offer a garland of lotuses",
+  "setting": "a vast, ethereal ocean beneath a golden sky with floating islands",
+  "lighting": "soft, radiant light emanating from the ocean surface and reflecting off the lotus garland",
+  "medium": "ravi-varma"
+ },
+ "scene34": {
+  "subject": "A celestial being",
+  "action": "receiving a gem and a lion as gifts",
+  "setting": "the snowy peaks of the Himalayas under a glowing sky",
+  "lighting": "soft, ethereal light illuminating the gem and casting gentle shadows on the lion's fur",
+  "medium": "ravi-varma"
+ },
+ "scene35": {
+  "subject": "Kubera",
+  "action": "holding a divine jar of nectar",
+  "setting": "a grand celestial hall adorned with gold and jewels",
+  "lighting": "soft, golden light radiating from the jar and illuminating Kubera's face",
+  "medium": "ravi-varma"
+ },
+ "scene36": {
+  "subject": "Lord Shiva",
+  "action": "dancing the Tandava, with a flaming hair and third eye glowing",
+  "setting": "a cosmic battlefield surrounded by celestial beings and mountains",
+  "lighting": "dramatic, with fiery orange and red hues radiating from Shiva's body and the surrounding flames",
+  "medium": "ravi-varma"
+ },
+ "scene37": {
+  "subject": "Devi",
+  "action": "laughing with radiant energy emanating from her form",
+  "setting": "a vast celestial expanse filled with divine beings and swirling cosmic elements",
+  "lighting": "golden and silver radiance illuminating the sky and surrounding figures",
+  "medium": "ravi-varma"
+ },
+ "scene38": {
+  "subject": "A divine figure with radiant skin and flowing robes",
+  "action": "raising their arms in triumph, surrounded by glowing halos and celestial beings",
+  "setting": "a grand celestial battlefield under a golden sky with divine symbols floating in the air",
+  "lighting": "soft, golden light radiating from the figure, illuminating the battlefield and the surrounding deities",
+  "medium": "ravi-varma"
+ },
+ "scene39": {
+  "subject": "A celestial being",
+  "action": "laughs loudly near the ears of Mahishasur",
+  "setting": "A dark and ominous battlefield under a stormy sky",
+  "lighting": "Dramatic flashes of lightning illuminate the scene, casting sharp shadows",
+  "medium": "ravi-varma"
+ },
+ "scene40": {
+  "subject": "A warrior king",
+  "action": "rushing forward with his entire army",
+  "setting": "a vast battlefield under a stormy sky",
+  "lighting": "dramatic and intense, with flashes of lightning illuminating the battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene41": {
+  "subject": "A mighty warrior king",
+  "action": "riding a grand chariot drawn by four white horses",
+  "setting": "a vast battlefield surrounded by towering mountains and ancient temples in the distance",
+  "lighting": "golden light from the rising sun casting long shadows across the battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene42": {
+  "subject": "Chikshur and Chamara",
+  "action": "standing in a solemn formation, holding their weapons with determination",
+  "setting": "a battlefield under a crimson sky, surrounded by ancient war chariots and fallen banners",
+  "lighting": "dramatic and golden, casting long shadows across the ground",
+  "medium": "ravi-varma"
+ },
+ "scene43": {
+  "subject": "A divine figure with large, radiant eyes and a flowing red cloak",
+  "action": "raises a celestial drum above their head, preparing to strike",
+  "setting": "a grand celestial battlefield surrounded by swirling clouds and divine symbols",
+  "lighting": "golden and crimson light radiating from the figure, casting long shadows across the battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene44": {
+  "subject": "A Devi and her lion",
+  "action": "standing majestically facing forward",
+  "setting": "a sacred mountain peak surrounded by clouds and ancient temples",
+  "lighting": "soft golden light radiating from the Devi, illuminating her divine form and the lion's fur",
+  "medium": "ravi-varma"
+ },
+ "scene45": {
+  "subject": "A warrior deity with a flaming sword",
+  "action": "leaping forward in battle, striking down a towering asura",
+  "setting": "a vast, ancient battlefield surrounded by crumbling stone pillars and smoke-filled air",
+  "lighting": "dramatic, with golden and red hues casting long shadows from the flames and the setting sun",
+  "medium": "ravi-varma"
+ },
+ "scene46": {
+  "subject": "Mahishasura",
+  "action": "standing alone, looking defeated and sorrowful",
+  "setting": "a desolate battlefield covered in ash and broken weapons",
+  "lighting": "dim, with faint golden light casting long shadows from the remains of destroyed structures",
+  "medium": "ravi-varma"
+ },
+ "scene47": {
+  "subject": "A divine female figure",
+  "action": "transforming her form, her body shifting into new shapes and appearances",
+  "setting": "a serene and mystical forest at twilight, surrounded by ancient trees and glowing flowers",
+  "lighting": "soft, golden light filtering through the canopy, with a faint aura radiating from the figure",
+  "medium": "ravi-varma"
+ },
+ "scene48": {
+  "subject": "A young boy",
+  "action": "transforming into a sacred cow",
+  "setting": "a serene village courtyard surrounded by ancient stone pillars",
+  "lighting": "soft golden light filtering through the trees at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene49": {
+  "subject": "A lion",
+  "action": "roaring majestically",
+  "setting": "a sacred forest at dawn",
+  "lighting": "soft golden light filtering through the trees",
+  "medium": "ravi-varma"
+ },
+ "scene50": {
+  "subject": "A warrior",
+  "action": "holding a sword and a shield",
+  "setting": "a battlefield under a vast open sky",
+  "lighting": "golden light from the setting sun casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene51": {
+  "subject": "A colossal elephant",
+  "action": "standing majestically with its trunk raised",
+  "setting": "in the midst of a dense, ancient forest surrounded by towering trees and mist",
+  "lighting": "soft, golden light filtering through the canopy, casting gentle shadows on the ground",
+  "medium": "ravi-varma"
+ },
+ "scene52": {
+  "subject": "Devi",
+  "action": "cutting through multiple forms with her divine weapons",
+  "setting": "a vast celestial battlefield surrounded by swirling cosmic energy and divine symbols",
+  "lighting": "radiant golden and ethereal white light emanating from Devi and her weapons",
+  "medium": "ravi-varma"
+ },
+ "scene53": {
+  "subject": "Devi",
+  "action": "raises a weapon",
+  "setting": "a sacred battlefield surrounded by ancient ruins and divine symbols",
+  "lighting": "golden light radiating from the weapon and illuminating her face and armor",
+  "medium": "ravi-varma"
+ },
+ "scene54": {
+  "subject": "A fierce female deity with glowing eyes and flowing robes",
+  "action": "laughs loudly, raising her arms triumphantly",
+  "setting": "a stormy battlefield with dark clouds and distant mountains",
+  "lighting": "dramatic lightning illuminating her face and the surrounding landscape",
+  "medium": "ravi-varma"
+ },
+ "scene55": {
+  "subject": "A young boy with a flower in his hand",
+  "action": "gazing upward with wide eyes and a reverent expression",
+  "setting": "a quiet village courtyard surrounded by ancient stone pillars and a small temple in the distance",
+  "lighting": "soft golden light from the rising sun casting long shadows across the ground",
+  "medium": "ravi-varma"
+ },
+ "scene56": {
+  "subject": "A warrior",
+  "action": "pressing down on another's throat with his foot and striking with a spear",
+  "setting": "a battlefield covered in dust and broken weapons",
+  "lighting": "dramatic shadows cast by the setting sun behind the warrior",
+  "medium": "ravi-varma"
+ },
+ "scene57": {
+  "subject": "Devi",
+  "action": "swinging her sword toward a half-emerged Mahishasur",
+  "setting": "a dark forest clearing with dense trees surrounding a small pond",
+  "lighting": "moonlight filtering through the canopy, casting long shadows on the ground",
+  "medium": "ravi-varma"
+ },
+ "scene58": {
+  "subject": "A warrior in traditional Hindu armor",
+  "action": "kneels in sorrow, holding a broken spear",
+  "setting": "a battlefield strewn with fallen soldiers and broken weapons",
+  "lighting": "dull and dim, with faint rays of sunset casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene59": {
+  "subject": "A celestial being with flowing hair and ornate garments",
+  "action": "raising their arms in triumph and chanting hymns",
+  "setting": "a vast, golden sky filled with divine figures and glowing clouds",
+  "lighting": "radiant and ethereal, with soft golden rays illuminating the scene",
+  "medium": "ravi-varma"
+ },
+ "scene60": {
+  "subject": "A devotee",
+  "action": "chanting hymns in reverence",
+  "setting": "a serene temple courtyard surrounded by ancient stone pillars and a sacred lotus pond",
+  "lighting": "soft, golden light filtering through the temple windows at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene61": {
+  "subject": "A goddess",
+  "action": "vanishing into a luminous mist",
+  "setting": "a serene temple courtyard surrounded by ancient trees and stone pillars",
+  "lighting": "soft, golden light filtering through the canopy, with a faint glow emanating from the goddess as she disappears",
+  "medium": "ravi-varma"
+ },
+ "scene62": {
+  "subject": "A devotee",
+  "action": "chanting a sacred mantra with closed eyes and raised hands",
+  "setting": "a quiet temple courtyard surrounded by ancient stone pillars and a small lotus pond",
+  "lighting": "soft, golden light filtering through the temple windows at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene63": {
+  "subject": "A female deity with radiant eyes and flowing robes",
+  "action": "standing calmly amidst a battlefield, her hands raised in a gesture of protection",
+  "setting": "a desolate war-torn plain surrounded by fallen warriors and broken weapons",
+  "lighting": "soft golden light emanating from her body, casting gentle shadows across the battlefield",
+  "medium": "ravi-varma"
+ },
+ "scene64": {
+  "subject": "A sage seated in deep meditation",
+  "action": "his eyes are closed, hands folded in prayer",
+  "setting": "a serene forest clearing surrounded by ancient banyan trees",
+  "lighting": "soft golden light filtering through the canopy at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene65": {
+  "subject": "A fierce female deity with multiple arms and a crown of skulls",
+  "action": "standing in a powerful pose, holding a sword and a severed head in her hands",
+  "setting": "a dark and misty battlefield surrounded by fallen enemies and broken weapons",
+  "lighting": "dramatic and glowing with an orange-red hue, casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene66": {
+  "subject": "Devi Durga",
+  "action": "sitting in meditative pose, enumerating her future forms with her fingers",
+  "setting": "a celestial lotus throne surrounded by swirling cosmic energy and divine symbols",
+  "lighting": "soft, golden radiance emanating from her form, illuminating the surrounding space with an ethereal glow",
+  "medium": "ravi-varma"
+ },
+ "scene67": {
+  "subject": "King Suratha",
+  "action": "standing in deep thought, his hand resting on his chin",
+  "setting": "a grand throne room adorned with intricate carvings and golden pillars",
+  "lighting": "soft, warm glow from oil lamps hanging above",
+  "medium": "ravi-varma"
+ },
+ "scene68": {
+  "subject": "Two asuras in the form of brothers",
+  "action": "emerging from a dark mist, their faces twisted in fury",
+  "setting": "a dense, ancient forest at the edge of a dark valley",
+  "lighting": "dim and eerie, with faint light filtering through the trees from a distant moon",
+  "medium": "ravi-varma"
+ },
+ "scene69": {
+  "subject": "A celestial being",
+  "action": "raises their arms in a gesture of warning",
+  "setting": "a grand celestial hall with golden pillars and flowing veils of light",
+  "lighting": "soft, golden light radiating from unseen sources above",
+  "medium": "ravi-varma"
+ }
+}

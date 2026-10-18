@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+// Per-film LOOK: palette hue, background motif, transition and caption style, chosen from the script's mood and a seeded hash, and never repeating the recent films' choices (content/look-history.json).
+// The goal is that no two videos share a template: the same engine, a different visual identity every time.
+// usage: node tools/longform/look.mjs stories/<name> [--force]   -> look.json
+import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), HIST = path.join(root, "content/look-history.json"), J = (f, d) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } };
+const MOODS = [["war", /युद्ध|शस्त्र|वध|रक्त|असुर|राक्षस|संहार|क्रोध|सिर कट|तलवार|war|battle/i, { hue: [-34, -12], motifs: ["rays", "flow"] }], ["cosmic", /सृष्टि|ब्रह्मांड|देवता|तेज|प्रलय|आकाश|ब्रह्मा|विष्णु|शिव|cosmic/i, { hue: [150, 190], motifs: ["flow", "mandala"] }], ["river", /गंगा|नदी|जल|समुद्र|सागर|river/i, { hue: [120, 160], motifs: ["ink", "flow"] }], ["sorrow", /शोक|विलाप|मृत्यु|वियोग|आँसू|दुख|श्राप|शाप/i, { hue: [190, 230], motifs: ["ink", "mandala"] }], ["devotion", /स्तुति|भक्ति|पूजा|नवरात्रि|आरती|व्रत|माँ|देवी/i, { hue: [-8, 14], motifs: ["rangoli", "mandala"] }]];
+const MOTIFS = ["mandala", "flow", "rangoli", "rays", "ink"], TRANS = ["dissolve", "wipe", "iris", "zoom"];
+const hash = s => { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; } return h; };
+export function makeLook(dir, { force = false } = {}) { const f = path.join(dir, "look.json"); if (!force && fs.existsSync(f)) return J(f); const name = path.basename(dir), beats = J(path.join(dir, "beats.json"), []), text = beats.map(b => b.text).join(" "), hist = J(HIST, []).filter(h => h.name !== name), recent = hist.slice(-3), h = hash(name);
+  const score = MOODS.map(([m, re, o]) => [m, (text.match(new RegExp(re.source, "gi")) || []).length, o]).sort((a, b) => b[1] - a[1]), top = score[0][1] > 0 ? score[0] : ["neutral", 0, { hue: [-10, 40], motifs: MOTIFS }];
+  const pick = (arr, used, seed) => { const free = arr.filter(x => !used.includes(x)), pool = free.length ? free : arr; return pool[seed % pool.length]; };
+  const [lo, hi] = top[2].hue; let hue = Math.round(lo + (h % 1000) / 1000 * (hi - lo)); for (let i = 0; i < 12 && recent.some(r => Math.abs(r.hue - hue) < 28); i++) hue = Math.round(hue + 37) > 340 ? hue - 300 : Math.round(hue + 37);
+  const motif = pick([...top[2].motifs, ...MOTIFS.filter(m => !top[2].motifs.includes(m))].slice(0, 5), recent.map(r => r.motif), h >>> 3), transition = pick(TRANS, recent.map(r => r.transition), h >>> 5), captions = (h >>> 7) % 2 ? "pill" : "plain";
+  const look = { name, mood: top[0], hue, sat: 1 + ((h >>> 9) % 20) / 100, motif, transition, captions, seed: h % 997 }; fs.writeFileSync(f, JSON.stringify(look, null, 1)); fs.mkdirSync(path.dirname(HIST), { recursive: true }); fs.writeFileSync(HIST, JSON.stringify([...hist, look], null, 1)); return look; }
+if (process.argv[1] === fileURLToPath(import.meta.url)) console.log(JSON.stringify(makeLook(path.resolve(process.argv[2]), { force: process.argv.includes("--force") })));
