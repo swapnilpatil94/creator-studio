@@ -5,7 +5,7 @@
 // usage: node tools/longform/director.mjs stories/<name> [--no-llm]    -> stories/<name>/plan.json, plan.report.json
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { ask, writerName } from "../content/llm.mjs";
 export const CATALOG = {
-  cinema: "a full-screen painting with a slow camera move. params: {img: <scene key>, move: push|pull|panL|panR, label?: short caption}. Use for story moments (people, places, action).",
+  cinema: "a full-screen painting with a slow camera move. params: {img: <scene key>, move: push|pull|panL|panR, label?: short caption, behind?: 2-4 word headline placed BEHIND the subject (use for the opening hook and big reveals, at most 3 per film)}. Use for story moments (people, places, action).",
   kinetic: "big animated words on the beat. params: {lines: [short strings], style: slam|wave|stack}. Mark ONE accent word with *asterisks*. Use for punchlines, shocks, a hook, rhetorical questions. Max 7 words total.",
   stat: "a counter with a progress ring. params: {value: number, suffix?: string, label: string, ring?: 0..1}. Use only when the narration states a number (100 years, 7 sons).",
   bars: "animated horizontal bars comparing quantities. params: {title, unit?, items: [{label, value}]} (2-5 items). Use only for real stated quantities.",

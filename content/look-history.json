@@ -8,5 +8,15 @@
   "transition": "iris",
   "captions": "plain",
   "seed": 729
+ },
+ {
+  "name": "reel-ganga-seven-sons",
+  "mood": "river",
+  "hue": 223,
+  "sat": 1.1,
+  "motif": "rangoli",
+  "transition": "dissolve",
+  "captions": "pill",
+  "seed": 231
  }
 ]

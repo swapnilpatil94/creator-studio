@@ -1,0 +1,9 @@
+# Multilayer parallax (2026-10-18)
+
+Every painting can be split into three layers and moved like a camera in a real scene: **BG** (the scene, subject repaired out), **MID** (nearer-than-median band, soft alpha) and **FG** (the subject, matte from rembg). Depth from Depth Anything V2 Small (Hugging Face, runs on the Apple GPU); subject cut-out from rembg `isnet-general-use` (about 180 MB). Both ran offline after the first download. Tools live in a separate virtual environment, `~/.venvs/kathaaya-layers` (borrows torch/transformers from the pyenv 3.12 install; the voice tools are untouched).
+
+- `tools/layers/extract.py <image> <out_dir>`: writes `bg.jpg`, `mid.webp`, `fg.webp`, `depth.png`, `layers.json` (about 1 minute for the first run, 12-25 s after). `tools/layers/layers.mjs` caches them next to the picture.
+- Long films: `tools/longform/make-scene.mjs` extracts layers for every scene painting; cinema beats then play as parallax (dolly, drift, embers between layers, rim light on the subject). A cinema beat may carry `behind: "2-4 word headline"`: the words sit between BG and the subject and move to the side of the picture where the subject is not standing.
+- Reels from carousels: `tools/reel/from-carousel.mjs` extracts layers for every art slide; per-film look decides if the hook headline goes behind the subject (one film in three).
+- Limits: the repaired area behind the subject is soft by design (blurred), so large camera moves are kept small; scenes with many people get one merged subject layer; the mid layer can show faint ghosting on strong moves. Pictures without layers fall back to the single-image camera move.
+- Not done: carousel stills with the "text between layers" effect (the carousel renderer `tools/content/carousel.mjs` has not been moved onto layers yet).
