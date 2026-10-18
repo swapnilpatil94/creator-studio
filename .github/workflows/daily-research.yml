@@ -6,7 +6,7 @@ on:
 permissions: { contents: write }
 jobs:
   snapshot:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}

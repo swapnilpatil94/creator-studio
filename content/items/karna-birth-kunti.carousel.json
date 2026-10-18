@@ -74,5 +74,81 @@
   "कथा सेव करें · फ़ॉलो करें @kathaaya.stories"
  ],
  "cta_slide_last": true,
- "cta": "सेव करें · फ़ॉलो करें"
+ "cta": "सेव करें · फ़ॉलो करें",
+ "art": [
+  {
+   "slide": 1,
+   "subject": "A young princess Kunti in simple royal attire kneeling at a river's edge at dusk",
+   "action": "gently releasing a small woven basket onto the water with both hands",
+   "setting": "a quiet riverbank with reeds and distant palace lights",
+   "lighting": "soft low golden light with a gentle rim glow on the water",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 2,
+   "subject": "The sage Durvasa, elderly with matted hair and saffron robes, seated in a palace guest hall",
+   "action": "receiving a bowl of water from a respectful young princess",
+   "setting": "carved pillars and brass lamps",
+   "lighting": "warm lamp-light with long soft shadows",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 3,
+   "subject": "The sage Durvasa raises one hand in blessing",
+   "action": "handing a small palm-leaf scroll to a young princess with folded hands",
+   "setting": "a hermitage courtyard with a sacred fire",
+   "lighting": "soft morning light through leaves",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 4,
+   "subject": "A young princess with folded hands looks up at a glowing sun",
+   "action": "her face curious and wondering",
+   "setting": "a palace terrace at sunrise with marble railings",
+   "lighting": "golden sunrise light spilling across her face",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 5,
+   "subject": "The Sun god Surya, a radiant golden figure with a luminous halo",
+   "action": "descending in beams of light before a young woman who watches in awe",
+   "setting": "a sky of golden clouds above a quiet garden",
+   "lighting": "brilliant warm golden rays from above",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 6,
+   "subject": "A newborn child wrapped in soft cloth with small gold earrings",
+   "action": "resting peacefully in a woven basket, a faint golden glow around his body",
+   "setting": "a riverbank with reeds at twilight",
+   "lighting": "gentle golden glow against deep blue dusk",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 7,
+   "subject": "A young woman in a plain sari lowers a woven basket into a river",
+   "action": "her head turned away in sorrow, one hand covering her eyes",
+   "setting": "a lonely riverbank under a pale moon",
+   "lighting": "cool moonlight with a single warm lamp reflected in the water",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 8,
+   "subject": "A humble charioteer and his wife in simple clothes lift a woven basket from the river shallows",
+   "action": "gazing at the child with wonder and tenderness",
+   "setting": "a river at dawn with a wooden cart on the bank",
+   "lighting": "soft pink and gold dawn light",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 9,
+   "subject": "A young boy with golden earrings and a faint radiant armour stands at a river's edge",
+   "action": "looking up toward the rising sun with calm confidence",
+   "setting": "a river at sunrise with a charioteer's cart behind him",
+   "lighting": "strong golden backlight with long soft shadows",
+   "medium": "ravi-varma"
+  }
+ ],
+ "ai_art_disclosed": true,
+ "disclosure_text": "चित्र: AI-निर्मित"
 }

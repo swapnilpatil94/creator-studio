@@ -1,0 +1,13 @@
+[
+ {
+  "id": "e2e-ganga-carousel",
+  "item": "ganga-seven-sons.carousel",
+  "kind": "carousel",
+  "platforms": [
+   "facebook"
+  ],
+  "at": "2026-10-18T04:25:00.000Z",
+  "status": "queued",
+  "note": "first end-to-end test: GitHub Actions posts the Facebook photo carousel; Instagram waits for the public image host (Cloudflare Pages)"
+ }
+]

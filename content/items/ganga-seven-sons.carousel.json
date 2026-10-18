@@ -48,7 +48,7 @@
  ],
  "ai_assisted": true,
  "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।",
- "status": "draft",
+ "status": "approved",
  "created": "2026-10-18",
  "id": "ganga-seven-sons.carousel",
  "slug": "ganga-seven-sons",
@@ -151,5 +151,7 @@
  ],
  "ai_art_disclosed": true,
  "art_style": "full-bleed",
- "disclosure_text": "चित्र: AI-निर्मित"
+ "disclosure_text": "चित्र: AI-निर्मित",
+ "reviewed": "2026-10-18",
+ "reviewed_by": "claude (e2e test run authorised by the owner on 2026-10-18; owner to re-check)"
 }

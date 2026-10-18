@@ -72,5 +72,81 @@
   "कथा सेव करें · फ़ॉलो करें @kathaaya.stories"
  ],
  "cta_slide_last": true,
- "cta": "सेव करें · फ़ॉलो करें"
+ "cta": "सेव करें · फ़ॉलो करें",
+ "art": [
+  {
+   "slide": 1,
+   "subject": "A young prince Devavrata in royal attire with a bow on his back and folded hands",
+   "action": "standing in front of assembled kings in a palace hall at dusk",
+   "setting": "carved pillars and brass lamps",
+   "lighting": "warm lamp-light with soft shadows",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 2,
+   "subject": "King Shantanu in royal attire gazes across a river at a boat-woman",
+   "action": "the river glowing at sunset, her small boat drifting",
+   "setting": "tall trees along the bank",
+   "lighting": "warm low sunset light",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 3,
+   "subject": "An elderly fisherman chief with a white beard sits in a riverside hut",
+   "action": "speaking gravely, one hand raised, a worried look",
+   "setting": "nets and wooden boats beside the river",
+   "lighting": "soft afternoon light through thatch",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 4,
+   "subject": "A young prince and an elderly fisherman chief face each other",
+   "action": "a quiet negotiation at a river boat landing",
+   "setting": "wooden boats and reeds",
+   "lighting": "golden evening light",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 5,
+   "subject": "A young prince places his gold crown on a flat stone",
+   "action": "renouncing the throne while kings watch in silence",
+   "setting": "a royal courtyard under a pale sky",
+   "lighting": "clear soft dawn light",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 6,
+   "subject": "A fisherman chief raises one finger with a worried expression",
+   "action": "the young prince listening calmly with arms folded",
+   "setting": "a boat landing at dusk",
+   "lighting": "warm lantern light",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 7,
+   "subject": "A young prince raises his right hand toward the sky",
+   "action": "taking a solemn vow, a sacred fire burning before him",
+   "setting": "an assembly of kings and sages",
+   "lighting": "dramatic firelight and golden dusk glow",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 8,
+   "subject": "Celestial beings in saffron and gold shower flowers from the clouds",
+   "action": "over a young prince standing with his hand raised",
+   "setting": "a sky of glowing clouds above a river bank",
+   "lighting": "luminous golden light from above",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 9,
+   "subject": "A solitary warrior prince sits at the foot of a great banyan tree at dusk",
+   "action": "a bow resting beside him, his gaze distant and thoughtful",
+   "setting": "a quiet riverbank under a darkening sky",
+   "lighting": "low amber light with a deep blue background",
+   "medium": "ravi-varma"
+  }
+ ],
+ "ai_art_disclosed": true,
+ "disclosure_text": "चित्र: AI-निर्मित"
 }

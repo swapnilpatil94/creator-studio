@@ -4,5 +4,53 @@
   "seed": 1001,
   "secs": 96,
   "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "2": {
+  "prompt": "A king in royal Kuru attire with a gold crown meets a graceful woman beside a river, the two stand facing each other on the bank, he with folded hands, she calm and dignified, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a riverbank with tall trees and a few lotus flowers, warm late-afternoon light filtering through leaves, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1002,
+  "secs": 72,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "3": {
+  "prompt": "A queen in a white and gold sari raises one open palm toward a king who listens attentively, setting a firm condition, the king nodding in solemn agreement, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a palace garden beside a river with marble pillars, soft dawn light with long gentle shadows, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1003,
+  "secs": 48,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "4": {
+  "prompt": "Eight small oil lamps glowing on the surface of a calm river, drifting side by side in a line, their flames reflected in the water, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, twilight on the river with a silhouette of a sleeping palace in the distance, warm lamp-glow against deep blue dusk, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1004,
+  "secs": 50,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "5": {
+  "prompt": "Seven lit lamps floating away down a dark river while one lamp stays near the bank, the seven drift into mist, the last flame flickering alone, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a quiet river bend under a starry sky, gold lamp-light on black water with a faint moon glow, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1005,
+  "secs": 52,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "6": {
+  "prompt": "A king in simple royal dress sits alone on a stone step by the river with his head bowed, silent and troubled, hands clasped, a crown resting beside him, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, an empty riverbank at night with a lone lamp, cool moonlight from above with a small warm lamp glow on his face, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1006,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "7": {
+  "prompt": "A king raises one hand in protest while a woman in a white and gold sari turns toward him on a riverbank, a moment of decision, her expression calm and knowing, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, the river behind them catching the first light of morning, dramatic golden dawn light behind the figures, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1007,
+  "secs": 58,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "8": {
+  "prompt": "Eight radiant celestial beings, the Vasus, in gold and saffron robes descend in a column of light, drifting down gently with folded hands, glowing with soft divine radiance, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a sky of swirling clouds above a quiet forest hermitage, luminous golden light from above with warm glowing rays, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1008,
+  "secs": 58,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "9": {
+  "prompt": "A young prince with a bow stands beside a dignified river goddess in a white and gold sari who rests a hand on his shoulder, the boy looks up, the goddess guides him toward the river mist, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a misty river valley at sunrise, soft golden sunrise light with long gentle shadows, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1009,
+  "secs": 58,
+  "model": "flux-2-klein-4b distilled, 4 steps"
  }
 }

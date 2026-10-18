@@ -14,7 +14,7 @@ permissions:
 concurrency: { group: post-due, cancel-in-progress: false }
 jobs:
   post:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     env:
       META_APP_ID: ${{ secrets.META_APP_ID }}
