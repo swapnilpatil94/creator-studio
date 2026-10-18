@@ -8,7 +8,22 @@ import numpy as np
 from PIL import Image, ImageFilter
 import cv2
 
+def subject_meta(out):
+    """Where the subject stands: mass of the cut-out left and right of centre (top 60% of the picture), centre x, coverage. Used to place text on the free side."""
+    a = np.array(Image.open(os.path.join(out, "fg.webp")).convert("RGBA"))[..., 3].astype(np.float32) / 255.0
+    h, w = a.shape
+    top = a[: int(h * 0.6)]
+    m = top > 0.5
+    left, right = float(m[:, : w // 2].sum()), float(m[:, w // 2:].sum())
+    xs = np.where(m)[1]
+    meta = json.load(open(os.path.join(out, "layers.json")))
+    meta.update({"subject_left": left, "subject_right": right, "subject_cx": round(float(xs.mean()) / w, 3) if len(xs) else 0.5, "free_side": "right" if left > right else "left"})
+    json.dump(meta, open(os.path.join(out, "layers.json"), "w"))
+    return meta
+
 def main():
+    if "--meta-only" in sys.argv:
+        print(json.dumps(subject_meta(sys.argv[1]))); return
     src, out = sys.argv[1], sys.argv[2]
     mx = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 1600
     os.makedirs(out, exist_ok=True)
@@ -51,6 +66,7 @@ def main():
     rgba(mid, "mid.webp"); rgba(fg, "fg.webp")
     Image.fromarray((d * 255).astype(np.uint8)).save(os.path.join(out, "depth.png"))
     json.dump({"w": W, "h": H, "fg_coverage": round(float(fg.mean()), 3), "mid_coverage": round(float(mid.mean()), 3), "depth_threshold": round(thr, 3)}, open(os.path.join(out, "layers.json"), "w"))
+    subject_meta(out)
     print(json.dumps({"out": out, "w": W, "h": H, "fg": round(float(fg.mean()), 3), "mid": round(float(mid.mean()), 3)}))
 
 main()

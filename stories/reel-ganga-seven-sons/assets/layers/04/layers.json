@@ -1,1 +1,1 @@
-{"w": 1080, "h": 1350, "fg_coverage": 0.02, "mid_coverage": 0.395, "depth_threshold": 0.177}
+{"w": 1080, "h": 1350, "fg_coverage": 0.02, "mid_coverage": 0.395, "depth_threshold": 0.177, "subject_left": 0.0, "subject_right": 72.0, "subject_cx": 0.686, "free_side": "left"}
