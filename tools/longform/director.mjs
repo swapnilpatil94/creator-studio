@@ -5,19 +5,22 @@
 // usage: node tools/longform/director.mjs stories/<name> [--no-llm]    -> stories/<name>/plan.json, plan.report.json
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { ask, writerName } from "../content/llm.mjs";
 export const CATALOG = {
-  cinema: "a full-screen painting with a slow camera move. params: {img: <scene key>, move: push|pull|panL|panR, label?: short caption, behind?: 2-4 word headline placed BEHIND the subject (use for the opening hook and big reveals, at most 3 per film)}. Use for story moments (people, places, action).",
-  kinetic: "big animated words on the beat. params: {lines: [short strings], style: slam|wave|stack}. Mark ONE accent word with *asterisks*. Use for punchlines, shocks, a hook, rhetorical questions. Max 7 words total.",
+  cinema: "a full-screen painting with a slow camera move. params: {img: <scene key>, move: push|pull|panL|panR, label?: short caption, behind?: 2-4 word headline placed BEHIND the subject (use for the opening hook and big reveals, at most 3 per film), reveal?: circle|diamond|wipe (the painting opens through a shape; use at chapter starts)}. Use for story moments (people, places, action).",
+  kinetic: "big animated words on the beat. params: {lines: [short strings], style: slam|wave|stack}. Mark ONE accent word with *asterisks*. Use for punchlines, shocks, a hook, rhetorical questions. Max 7 words total. Use style glitch for shocks and turning points.",
   stat: "a counter with a progress ring. params: {value: number, suffix?: string, label: string, ring?: 0..1}. Use only when the narration states a number (100 years, 7 sons).",
   bars: "animated horizontal bars comparing quantities. params: {title, unit?, items: [{label, value}]} (2-5 items). Use only for real stated quantities.",
   timeline: "a line that draws with nodes. params: {steps: [{title, text?}]} (3-5 steps). Use when the narration lists a sequence of events.",
   graph: "relationship graph (who is whose). params: {nodes: [{id,label,x,y}], edges: [[idA,idB,label?]], focus: [ids in order]} with x,y in 0.1..0.9. Use for family or alliance explanations (3-6 nodes).",
   versus: "two panels compared. params: {left:{title,points[]}, right:{title,points[]}} (2-4 points each, short). Use for 'text says X, tradition says Y' or two sides.",
   quote: "a spoken line or scripture quote typed out. params: {text, by?}. Use for a famous or key line.",
+  dotword: "a word or short phrase assembled from thousands of golden dots (the channel's signature). params: {lines: [1-2 short strings]}. Use for the title, the key concept, or the oath/name that the whole story turns on; at most 3 per film.",
+  iconlist: "items slide in one by one with an emoji medallion. params: {title?, items: [{icon: one emoji, text: 3-7 words}]} (3-4 items). Use for 'three things', rules, vows, consequences.",
+  linechart: "a line chart that draws itself. params: {title, unit?, points: [{label, value: number}]} (3-6 points). Use ONLY if the narration gives real numbers that change over time.",
   chapter: "a title card for a new chapter. params: {kicker, title}. Use at the start of a chapter, only when the beat is short.",
   orb: "a 3D Three.js layer. params: {kind: yantra|galaxy, label?: short}. Use for cosmic or divine moments (creation, the gods' combined light, a boon), at most once every 40 seconds.",
   mandala: "a quiet generative mandala breath. params: {} . Use rarely, for a silent pause beat.",
 };
-const TEXTY = new Set(["kinetic", "quote", "chapter", "mandala"]), MIN_TYPES_PER_60S = 5, MAX_SAME_RUN = 1;
+const TEXTY = new Set(["kinetic", "quote", "chapter", "mandala", "dotword"]), MIN_TYPES_PER_60S = 5, MAX_SAME_RUN = 1;
 const J = f => JSON.parse(fs.readFileSync(f, "utf8"));
 const digits = s => s.replace(/[०-९]/g, d => "०१२३४५६७८९".indexOf(d));
 const NUMW = { "सौ": 100, "हज़ार": 1000, "हजार": 1000, "सात": 7, "आठ": 8, "नौ": 9, "दस": 10, "पाँच": 5, "पांच": 5, "तीन": 3, "चार": 4, "बारह": 12, "सौ साल": 100 };
@@ -32,7 +35,7 @@ export function ruleBased(beats, segs) { // deterministic fallback: never fails,
     else { comp = "cinema"; run = run + 1; params = { img: "scene" + scene, move: ["push", "pull", "panL", "panR"][i % 4] }; if (run >= 2) { scene++; run = 0; } }
     lastChapter = b.chapter; plan.push({ id: b.id, chapter: b.chapter, comp, params }); });
   return plan; }
-export function validate(plan, segs) { // returns {plan (fixed), report}
+export function validate(plan, segs, ctx = {}) { // returns {plan (fixed), report}
   const rep = { fixed: [], warnings: [], stats: {} }, out = plan.map(p => ({ ...p }));
   out.forEach((p, i) => { if (!CATALOG[p.comp]) { rep.fixed.push(`${p.id}: unknown component ${p.comp} -> kinetic`); p.comp = "kinetic"; p.params = { lines: [segs[p.id]?.text?.slice(0, 40) || ""] }; }
     const q = p.params || (p.params = {}); const bad = (msg) => { rep.fixed.push(`${p.id}: ${msg} -> cinema`); p.comp = "cinema"; p.params = { img: "scene0", move: "push" }; };
@@ -42,12 +45,21 @@ export function validate(plan, segs) { // returns {plan (fixed), report}
     if (p.comp === "timeline" && !(Array.isArray(q.steps) && q.steps.length >= 2)) bad("timeline needs 2+ steps");
     if (p.comp === "graph" && !(Array.isArray(q.nodes) && q.nodes.length >= 2 && Array.isArray(q.edges) && q.nodes.every(n => n.id && n.label && n.x > 0 && n.x < 1 && n.y > 0 && n.y < 1))) bad("graph nodes/edges invalid");
     if (p.comp === "versus" && !(q.left?.points?.length && q.right?.points?.length)) bad("versus needs both sides");
-    if (p.comp === "quote" && !q.text) bad("quote needs text"); });
+    if (p.comp === "quote" && !q.text) bad("quote needs text");
+    if (p.comp === "dotword") { if (!Array.isArray(q.lines) && typeof q.text === "string") q.lines = [q.text]; if (!Array.isArray(q.lines) || !q.lines.length || q.lines.some(x => typeof x !== "string" || x.split(/\s+/).length > 4)) { rep.fixed.push(`${p.id}: dotword lines invalid -> kinetic`); p.comp = "kinetic"; q.lines = [String(q.lines?.[0] || segs[p.id]?.text || "").split(/\s+/).slice(0, 5).join(" ")]; } else q.lines = q.lines.slice(0, 2); }
+    if (p.comp === "iconlist" && !(Array.isArray(q.items) && q.items.length >= 2 && q.items.every(x => x && typeof x.text === "string"))) bad("iconlist needs 2+ items with text");
+    if (p.comp === "iconlist" && Array.isArray(q.items)) q.items = q.items.slice(0, 4).map(x => ({ icon: typeof x.icon === "string" ? x.icon.slice(0, 4) : "•", text: x.text }));
+    if (p.comp === "linechart" && !(Array.isArray(q.points) && q.points.length >= 3 && q.points.every(x => x && typeof x.value === "number" && x.label))) bad("linechart needs 3+ numeric points");
+    if (p.comp === "kinetic" && q.style && !["slam", "wave", "stack", "glitch"].includes(q.style)) q.style = "slam"; });
   // no immediate repeats of the same non-cinema component; no run of more than 2 text-only beats
   for (let i = 1; i < out.length; i++) { if (out[i].comp === out[i - 1].comp && out[i].comp !== "cinema") { rep.fixed.push(`${out[i].id}: repeated ${out[i].comp} -> cinema`); out[i].comp = "cinema"; out[i].params = { img: out[i - 1].params?.img || "scene0", move: "pull" }; }
     if (i >= 2 && TEXTY.has(out[i].comp) && TEXTY.has(out[i - 1].comp) && TEXTY.has(out[i - 2].comp)) { rep.fixed.push(`${out[i].id}: 3 text-only beats in a row -> cinema`); out[i].comp = "cinema"; out[i].params = { img: out[i - 1].params?.img || "scene0", move: "push" }; } }
-  // scene keys: a new key whenever the model changed it, a text beat intervened, or one painting would be used for more than 3 beats in a row
-  let key = -1, run = 0, last = null; out.forEach(p => { if (p.comp !== "cinema") return; const orig = p.params?.img; if (orig !== last || run >= 3) { key++; run = 0; } last = orig; run++; p.params.img = "scene" + key; if (!p.params.move) p.params.move = ["push", "pull", "panL", "panR"][key % 4]; }); rep.stats.scenes = key + 1;
+  // scene keys. Carousel paintings (c1, c2, ...) are kept and used at most twice each; every other cinema beat gets a generated scene: a new key whenever the model changed it or one painting would run for more than 3 beats in a row, capped at maxExtra new scenes (overflow reuses the previous scene with another camera move)
+  const assetKeys = new Set((ctx.assets || []).map(x => x.key)), uses = {}, maxExtra = ctx.maxExtra ?? 999; let key = -1, run = 0, last = null; const moves = ["push", "pull", "panL", "panR"]; let mi = 0;
+  out.forEach(p => { if (p.comp !== "cinema") return; const orig = p.params?.img, mv = () => moves[mi++ % 4]; if (!p.params.move) p.params.move = mv();
+    if (assetKeys.has(orig) && (uses[orig] || 0) < 2) { uses[orig] = (uses[orig] || 0) + 1; if (uses[orig] === 2) p.params.move = mv(); last = null; run = 0; return; }
+    if (orig !== last || run >= 3) { if (key + 1 >= maxExtra && key >= 0) { run = 0; } else { key++; run = 0; } } last = orig; run++; p.params.img = "scene" + Math.max(0, key); });
+  rep.stats.scenes = key + 1; rep.stats.assets_used = Object.keys(uses).length;
   // variety per 60 s window
   const T = out.map(p => segs[p.id]?.start_seconds ?? 0); let bad60 = 0; for (let i = 0; i < out.length; i++) { const w = out.filter((_, j) => T[j] >= T[i] && T[j] < T[i] + 60); if (w.length >= 8 && new Set(w.map(x => x.comp)).size < MIN_TYPES_PER_60S) bad60++; }
   rep.stats.comps = out.reduce((a, p) => (a[p.comp] = (a[p.comp] || 0) + 1, a), {}); rep.stats.beats = out.length; rep.stats.windows_low_variety = bad60;
@@ -56,14 +68,14 @@ export function validate(plan, segs) { // returns {plan (fixed), report}
   const total = T[T.length - 1] || 1; for (const f of [0.25, 0.5, 0.75]) { const i = T.findIndex(t => t >= total * f), near = out.slice(Math.max(0, i - 2), i + 3).map(p => segs[p.id]?.text || "").join(" "); if (!/[?]|क्यों|कैसे|लेकिन|पर |तभी|मगर/.test(near)) rep.warnings.push(`no re-hook (question or turn) near ${f * 100}% of the film`); }
   if (bad60) rep.warnings.push(`${bad60} one-minute windows have fewer than ${MIN_TYPES_PER_60S} visual types`);
   return { plan: out, report: rep }; }
-async function llmPlan(beats, segs, log) { const sys = `You are the visual director of a Hindi mythology documentary channel. For each narration beat choose ONE visual component from the catalog and fill its params from the beat's own words only (never invent facts, numbers or names). Return ONLY a JSON object {"beats":[{"id":"d001","comp":"...","params":{...}}]} with one entry per beat, same order and ids.\n\nCATALOG:\n${Object.entries(CATALOG).map(([k, v]) => `- ${k}: ${v}`).join("\n")}\n\nRULES: vary components (aim for 5+ different types per minute); never the same non-cinema component twice in a row; at most 2 text-only beats (kinetic, quote, chapter, mandala) in a row; open on a cinema or kinetic hook; for cinema beats use img keys "scene0","scene1",... where consecutive beats of the same story moment share a key (max 3 beats per key) and every new moment gets the next key; all text in Devanagari Hindi, short.`; const plan = [];
+async function llmPlan(beats, segs, log, ctx = {}) { const sys = `You are the visual director of a Hindi mythology documentary channel. For each narration beat choose ONE visual component from the catalog and fill its params from the beat's own words only (never invent facts, numbers or names). Return ONLY a JSON object {"beats":[{"id":"d001","comp":"...","params":{...}}]} with one entry per beat, same order and ids.\n\nCATALOG:\n${Object.entries(CATALOG).map(([k, v]) => `- ${k}: ${v}`).join("\n")}\n\n${ctx.assets?.length ? `\nPAINTINGS ALREADY AVAILABLE (use these img keys for cinema beats when they fit the moment, each key at most twice in the film; moves must differ when a key is reused):\n${ctx.assets.map(a => `- ${a.key}: ${a.caption}`).join("\n")}\nFor a moment none of them fits, use a NEW key "scene0","scene1",... (at most ${ctx.maxExtra ?? 12} new keys in the whole film).` : ""}\n${ctx.portrait ? "FORMAT: vertical 9:16 for phones: keep text short and big; prefer dotword, iconlist, kinetic, stat and cinema over wide charts." : ""}\nRULES: vary components (aim for 5+ different types per minute); never the same non-cinema component twice in a row; at most 2 text-only beats (kinetic, quote, chapter, mandala) in a row; open on a cinema or kinetic hook; for cinema beats use img keys "scene0","scene1",... where consecutive beats of the same story moment share a key (max 3 beats per key) and every new moment gets the next key; all text in Devanagari Hindi, short.`; const plan = [];
   for (let i = 0; i < beats.length; i += 10) { const chunk = beats.slice(i, i + 10), prompt = `Beats (id | chapter | intent | seconds | text):\n${chunk.map(b => `${b.id} | ${b.chapter} | ${b.intent} | ${((segs[b.id]?.end_seconds ?? 0) - (segs[b.id]?.start_seconds ?? 0)).toFixed(1)} | ${b.text}`).join("\n")}\n\nPrevious beat component: ${plan.at(-1)?.comp || "none"}. Return the JSON object now.`;
     log(`director: beats ${i + 1}-${i + chunk.length} of ${beats.length}`); let got = null; for (let r = 0; r < 2 && !got; r++) { try { const raw = await ask(sys, prompt, { temperature: 0.4, json: true }), o = JSON.parse(raw.match(/[\[{][\s\S]*[\]}]/)[0]), arr = Array.isArray(o) ? o : o.beats; if (Array.isArray(arr) && arr.length === chunk.length && arr.every((x, k) => x.id === chunk[k].id)) got = arr; else log("  director answer did not match the beats, retrying"); } catch (e) { log("  director answer unreadable: " + e.message.slice(0, 80)); } }
     chunk.forEach((b, k) => plan.push(got ? { ...got[k], chapter: b.chapter } : null)); }
   return plan; }
-export async function direct(dir, { llm = true, log = console.log } = {}) {
+export async function direct(dir, { llm = true, log = console.log, assets = [], portrait = false, maxExtra = 12 } = {}) {
   const beats = J(path.join(dir, "beats.json")), segsArr = J(path.join(dir, "narration/voice/segments.json")).segments, segs = Object.fromEntries(segsArr.map(s => [s.beat_id, s]));
-  const fallback = ruleBased(beats, segs); let proposed = llm ? await llmPlan(beats, segs, log).catch(e => { log("director model failed: " + e.message); return []; }) : [];
-  const merged = beats.map((b, i) => proposed[i] || { ...fallback[i], from: "rules" }), { plan, report } = validate(merged, segs); report.writer = llm ? writerName() : "rules"; report.from_rules = merged.filter(x => x.from === "rules").length;
+  const fallback = ruleBased(beats, segs); let proposed = llm ? await llmPlan(beats, segs, log, { assets, portrait, maxExtra }).catch(e => { log("director model failed: " + e.message); return []; }) : [];
+  const merged = beats.map((b, i) => proposed[i] || { ...fallback[i], from: "rules" }), { plan, report } = validate(merged, segs, { assets, maxExtra }); report.writer = llm ? writerName() : "rules"; report.from_rules = merged.filter(x => x.from === "rules").length;
   fs.writeFileSync(path.join(dir, "plan.json"), JSON.stringify(plan, null, 1)); fs.writeFileSync(path.join(dir, "plan.report.json"), JSON.stringify(report, null, 1)); return { plan, report }; }
 if (process.argv[1] === fileURLToPath(import.meta.url)) { const dir = path.resolve(process.argv[2] || ""); direct(dir, { llm: !process.argv.includes("--no-llm") }).then(({ report }) => console.log(JSON.stringify(report, null, 1)), e => { console.error("FAILED:", e.message); process.exit(1); }); }
