@@ -1,5 +1,13 @@
 # Why videos took hours, what was measured, what changed (2026-10-18)
 
+**Update, same day (the real causes, found by profiling a finished film beat by beat):**
+1. `ctx.filter` (the per-film colour shift) was applied to every single draw call. In software canvas that cost 16.9 s for 2,600 small fills (8 ms without the filter). Now each graphic beat is drawn once on a scratch canvas and the shift is applied in one pass. Per-frame cost across all beat types went from a mean of **1,031 ms to 31 ms**; the orb from 17 s to 33 ms.
+2. PNG screenshots (277 ms of a 323 ms frame): replaced by direct JPEG canvas capture.
+3. One browser at a time: now 6 parallel shard workers.
+4. Thousands of single arcs for particle text: now 6 batched fills.
+5. GPU canvas rasterisation was tried and **rejected**: on this Mac it blanked the canvas mid-film (found because the profile checked output size, not only time). WebGL was removed from the film engine for the same reason.
+Result: the 103 s Bhishma film, with 8 DepthFlow camera clips, renders in **45 s** (729 s before); the whole pipeline after voice and art is 55 s.
+
 ## Measured on this Mac (M4 Pro, 12 cores, 24 GB)
 | Step | Before | After | How |
 |---|---|---|---|

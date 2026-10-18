@@ -1,0 +1,58 @@
+{
+ "1": {
+  "prompt": "A king in royal hunting dress stands at the edge of a dusk forest with his bow lowered, thoughtful, while a calm deer with wise eyes looks at him from a glade, golden last light through tall trees, painterly and reverent, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1001,
+  "secs": 60,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "2": {
+  "prompt": "A deer with unusually calm, knowing eyes in a forest glade at dusk, a single arrow in flight crossing the frame toward it, the king's shadowed figure with a bow at the edge of the trees, warm amber light, solemn mood, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1002,
+  "secs": 46,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "3": {
+  "prompt": "A sage in the faint form of a deer-shaped glow raises a solemn hand to a king who stands pale in the forest clearing, dusk sky turning violet, long shadows, the king's bow resting on the ground, painterly, respectful, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual painting, every surface plain and unmarked.",
+  "seed": 1003,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 41,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "4": {
+  "prompt": "A king sitting alone under a great banyan tree at twilight, his face pale and heavy with thought, hands folded on his knees, his bow laid aside, soft blue and gold light, an oil lamp flickering beside him, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1004,
+  "secs": 48,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "5": {
+  "prompt": "A king and his wife Kunti in a forest hermitage at dawn, he speaks earnestly and she listens with a calm nod, thatched huts and a sacred fire behind them, warm sunrise light, gentle, dignified, in the manner of a classical oil painting, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1005,
+  "secs": 52,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "6": {
+  "prompt": "Kunti seated in a hermitage garden in prayer, three radiant celestial presences of light above her, one serene, one strong like wind, one bright like a king of the heavens, three infant boys glowing in her lap, golden devotional light, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1006,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "7": {
+  "prompt": "Madri receiving a sacred mantra from Kunti, the two women facing each other beside a lotus pond at sunrise, twin radiant horse-headed celestial twins of light above them, two infant twins held gently, soft rose and gold tones, reverent, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1007,
+  "secs": 52,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "8": {
+  "prompt": "A forest at dusk, a golden royal crown resting on the grass beside a still hand, a woman kneeling in grief, the setting sun low behind dark trees, long solemn shadows, symbolic and respectful, restrained oil painting, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1008,
+  "secs": 52,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "9": {
+  "prompt": "Kunti standing with five young boys of different ages before a funeral pyre glowing at dusk, a hand raised in blessing from the flames, ascetics approaching along a forest path, warm firelight and deep twilight, dignified and sorrowful, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1009,
+  "secs": 50,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "item": "pandu-kindama-curse.carousel",
+ "started": "2026-10-18T14:13:52.043Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792332832043,
+   "detail": "36 beats, 542 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792332832297,
+   "detail": "36 beats, 9 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "running",
+   "start": 1792332832300
+  }
+ ],
+ "total_seconds": 0
+}

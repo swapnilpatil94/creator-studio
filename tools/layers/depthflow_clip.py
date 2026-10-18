@@ -3,9 +3,27 @@
 true perspective parallax with proper occlusion, 70+ frames per second at 1080x1920. Run with ~/.venvs/depthflow/bin/python.
 usage: depthflow_clip.py <image> <depth.png> <out.mp4> <effect> <seconds> [width height fps]
 effects: the camera/depth subset of the strict list (see CAMERA below)."""
-import math, sys
+import math, sys, os, tempfile
+import numpy as np
+from PIL import Image, ImageFilter
 from attrs import define
 from depthflow.scene import DepthScene
+
+AMP = float(os.environ.get("MOTION_AMP", "0.55"))   # global motion scale: gentle by default, because faces, hands and deities must never look warped
+
+def rigid_depth(dep_path):
+    """Flattens the depth map inside the cut-out subject (the layers' fg.webp): each figure then moves as ONE rigid card, so noses, hands and hair strands cannot shear.
+    Only the scene behind the subject gets parallax. Returns the path of a temporary depth image (or the original if there is no cut-out)."""
+    fg = os.path.join(os.path.dirname(dep_path), "fg.webp")
+    if not os.path.exists(fg): return dep_path
+    d = Image.open(dep_path).convert("L"); a = Image.open(fg).convert("RGBA").split()[3].resize(d.size)
+    m = a.point(lambda v: 255 if v > 100 else 0)
+    core = np.array(m.filter(ImageFilter.MinFilter(9))) > 0
+    if core.sum() < 50: return dep_path
+    da = np.array(d).astype(np.float32); med = float(np.median(da[core]))
+    soft = np.array(m.filter(ImageFilter.MaxFilter(13)).filter(ImageFilter.GaussianBlur(5))).astype(np.float32) / 255.0   # a little beyond the outline, so hair edges move with the figure
+    out = da * (1 - soft) + med * soft
+    tmp = os.path.join(tempfile.gettempdir(), f"rigid_{os.getpid()}.png"); Image.fromarray(out.astype(np.uint8)).save(tmp); return tmp
 
 def sm(x): x = max(0.0, min(1.0, x)); return x * x * (3 - 2 * x)
 
@@ -32,9 +50,10 @@ class Cam(DepthScene):
     effect: str = "drone_push_in"
     def update(self):
         p = max(0.0, min(1.0, self.tau)); CAMERA[self.effect](self.state, sm(p), p, self.time)
+        st = self.state; st.offset = (st.offset[0] * AMP, st.offset[1] * AMP); st.height = min(0.45, st.height * (0.5 + AMP / 2))
         self.state.vignette.intensity = 0.0
 
 if __name__ == "__main__":
     img, dep, out, eff, secs = sys.argv[1:6]; w, h, fps = (int(sys.argv[6]), int(sys.argv[7]), float(sys.argv[8])) if len(sys.argv) > 8 else (1080, 1920, 24.0)
-    sc = Cam(effect=eff); sc.input(image=img, depth=dep)
+    sc = Cam(effect=eff); sc.input(image=img, depth=rigid_depth(dep))
     sc.main(output=out, width=w, height=h, fps=fps, time=float(secs), ssaa=1.0, quality=70)

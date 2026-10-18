@@ -1,0 +1,160 @@
+{
+ "language": "hi",
+ "ai_assisted": true,
+ "status": "approved",
+ "created": "2026-10-18",
+ "format": "carousel",
+ "slug": "pandu-kindama-curse",
+ "pillar": "unsaid-relations",
+ "topic": "pandu-kindama-curse",
+ "hook": "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?",
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड ९५, ११५, १२५ (गांगुली अनुवाद)",
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#महाभारत",
+  "#पांडव"
+ ],
+ "id": "pandu-kindama-curse.carousel",
+ "slides": [
+  "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?",
+  "शिकार में पांडु का बाण जिस मृग को लगा, वह असल में ऋषि था।",
+  "ऋषि ने शाप दिया: वैसी अवस्था में आते ही तुम्हारी मृत्यु होगी।",
+  "शाप सुनकर पांडु पीले पड़े; बोले, निःसंतान को परलोक नहीं मिलता।",
+  "पांडु ने कुंती से संतान पाने को कहा; कुंती ने 'ठीक है' कहा।",
+  "कुंती से धर्म द्वारा युधिष्ठिर, मरुत द्वारा भीम, शक्र द्वारा अर्जुन हुए।",
+  "कुंती ने माद्री को मंत्र दिया; अश्विनों से नकुल और सहदेव हुए।",
+  "माद्री को देखकर पांडु की इच्छा जागी; शाप सच हुआ, वे चल बसे।",
+  "माद्री पति के साथ चिता पर चढ़ीं; पुत्र कुंती को सौंप गईं।",
+  "कथा सेव करें · फ़ॉलो करें @kathaaya.stories"
+ ],
+ "art": [
+  {
+   "slide": 1,
+   "prompt": "A king in royal hunting dress stands at the edge of a dusk forest with his bow lowered, thoughtful, while a calm deer with wise eyes looks at him from a glade, golden last light through tall trees, painterly and reverent.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 2,
+   "prompt": "A deer with unusually calm, knowing eyes in a forest glade at dusk, a single arrow in flight crossing the frame toward it, the king's shadowed figure with a bow at the edge of the trees, warm amber light, solemn mood.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 3,
+   "prompt": "A sage in the faint form of a deer-shaped glow speaks a solemn warning to a king who stands pale in the forest clearing, dusk sky turning violet, long shadows, the king's bow resting on the ground, painterly, respectful.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 4,
+   "prompt": "A king sitting alone under a great banyan tree at twilight, his face pale and heavy with thought, hands folded on his knees, his bow laid aside, soft blue and gold light, an oil lamp flickering beside him.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 5,
+   "prompt": "A king and his wife Kunti in a forest hermitage at dawn, he speaks earnestly and she listens with a calm nod, thatched huts and a sacred fire behind them, warm sunrise light, gentle, dignified, in the manner of a classical oil painting.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 6,
+   "prompt": "Kunti seated in a hermitage garden in prayer, three radiant celestial presences of light above her, one serene, one strong like wind, one bright like a king of the heavens, three infant boys glowing in her lap, golden devotional light.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 7,
+   "prompt": "Madri receiving a sacred mantra from Kunti, the two women facing each other beside a lotus pond at sunrise, twin radiant horse-headed celestial twins of light above them, two infant twins held gently, soft rose and gold tones, reverent.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 8,
+   "prompt": "A forest at dusk, a golden royal crown resting on the grass beside a still hand, a woman kneeling in grief, the setting sun low behind dark trees, long solemn shadows, symbolic and respectful, restrained oil painting.",
+   "medium": "ravi-varma"
+  },
+  {
+   "slide": 9,
+   "prompt": "Kunti standing with five young boys of different ages before a funeral pyre glowing at dusk, a hand raised in blessing from the flames, ascetics approaching along a forest path, warm firelight and deep twilight, dignified and sorrowful.",
+   "medium": "ravi-varma"
+  }
+ ],
+ "ai_art_disclosed": true,
+ "disclosure_text": "चित्र: AI-निर्मित",
+ "claims": [
+  {
+   "text": "पांडु ने शिकार में जिस मृग को बाण मारा, वह मृग के रूप में एक ऋषि था।",
+   "en": "Pandu killed a deer with his arrows, which was really a Rishi in the form of a deer",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "ऋषि ने शाप दिया कि वैसी अवस्था में आते ही पांडु की मृत्यु होगी।",
+   "en": "the Rishi said unto Pandu thou also, when in such a state and before thou art gratified, shalt die",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "शाप सुनकर पांडु पीले पड़ गए और पत्नियों के पास जाना छोड़ दिया।",
+   "en": "Pandu hearing this curse became pale, and from that time would not go unto his wives",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "पांडु ने कहा कि निःसंतान के लिए परलोक के लोक नहीं होते, और कुंती से संतान पाने को कहा।",
+   "en": "for the childless there are no regions hereafter, therefore he solicited Kunti to raise offspring",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "कुंती से धर्म द्वारा युधिष्ठिर, मरुत द्वारा भीम और शक्र द्वारा अर्जुन हुए।",
+   "en": "By Dharma she had Yudhishthira; by Maruta, Bhima; and by Sakra, Arjuna",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "कुंती ने माद्री को आह्वान का मंत्र दिया; अश्विनों से नकुल और सहदेव हुए।",
+   "en": "Kunti imparted unto Madri the mantra of invocation and by the twin Aswinas were raised the twins Nakula and Sahadeva",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "एक दिन माद्री को सजी हुई देखकर पांडु की इच्छा जागी और छूते ही उनकी मृत्यु हो गई।",
+   "en": "Pandu beholding Madri decked in ornaments had his desire kindled and as soon as he touched her he died",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "माद्री पति के साथ चिता पर चढ़ीं और कुंती से कहा कि उनके जुड़वाँ पुत्र स्नेह से पाले जाएँ।",
+   "en": "Madri ascended the funeral pyre with her lord and said unto Kunti let these twins of mine be brought up by thee with affection",
+   "status": "verified",
+   "source": "mahabharata-adi:95"
+  },
+  {
+   "text": "माद्री ने कहा कि उन्होंने रोकने की कोशिश की, पर राजा स्वयं को न रोक सके, मानो ऋषि का शाप सच करना चाहते हों।",
+   "en": "Madri said with tears in my eyes I resisted the king but he could not control himself as if bent on making the Rishi's curse true",
+   "status": "verified",
+   "source": "mahabharata-adi:125"
+  },
+  {
+   "text": "पांडु के कुंती और माद्री से पाँच पुत्र हुए, जो देवताओं से कुरु वंश को चलाने के लिए जन्मे।",
+   "en": "Pandu had by his two wives Kunti and Madri five sons who were all begotten by the celestials for the perpetuation of the Kuru line",
+   "status": "verified",
+   "source": "mahabharata-adi:115"
+  }
+ ],
+ "sources": [
+  {
+   "label": "स्रोत: महाभारत, आदि पर्व, खंड ९५, ११५, १२५ (गांगुली अनुवाद)",
+   "ref": "mahabharata-adi:95"
+  },
+  {
+   "label": "स्रोत: महाभारत, आदि पर्व, खंड ९५, ११५, १२५ (गांगुली अनुवाद)",
+   "ref": "mahabharata-adi:125"
+  },
+  {
+   "label": "स्रोत: महाभारत, आदि पर्व, खंड ९५, ११५, १२५ (गांगुली अनुवाद)",
+   "ref": "mahabharata-adi:115"
+  }
+ ],
+ "cta_slide_last": true,
+ "reviewed": "2026-10-18",
+ "reviewed_by": "owner (hub)"
+}

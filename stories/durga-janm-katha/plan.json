@@ -4,7 +4,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene0",
-   "move": "push"
+   "move": "push",
+   "fx": "drone_push_in"
   },
   "chapter": "ch0"
  },
@@ -14,7 +15,8 @@
   "params": {
    "img": "scene0",
    "move": "panL",
-   "label": "रणभूमि के बीच एक देवी रुकती हैं…"
+   "label": "रणभूमि के बीच एक देवी रुकती हैं…",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch0"
  },
@@ -36,7 +38,8 @@
   "params": {
    "img": "scene1",
    "move": "pull",
-   "label": "महिषासुर देवताओं को हरा दिया था"
+   "label": "महिषासुर देवताओं को हरा दिया था",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch0"
  },
@@ -78,7 +81,8 @@
   "params": {
    "img": "scene2",
    "move": "push",
-   "label": "देवी ने देवताओं से वचन दिया"
+   "label": "देवी ने देवताओं से वचन दिया",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch0"
  },
@@ -94,7 +98,8 @@
   "params": {
    "img": "scene3",
    "move": "panR",
-   "label": "मार्कण्डेय पुराण का हिस्सा"
+   "label": "मार्कण्डेय पुराण का हिस्सा",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch1"
  },
@@ -136,7 +141,8 @@
   "params": {
    "img": "scene4",
    "move": "panL",
-   "label": "एक राजा की कहानी"
+   "label": "एक राजा की कहानी",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch1"
  },
@@ -146,7 +152,8 @@
   "params": {
    "img": "scene5",
    "move": "pull",
-   "label": "राजा सुरथ"
+   "label": "राजा सुरथ",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch1"
  },
@@ -156,7 +163,8 @@
   "params": {
    "img": "scene6",
    "move": "panR",
-   "label": "वैश्य के साथ मिलना"
+   "label": "वैश्य के साथ मिलना",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch1"
  },
@@ -187,7 +195,8 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "label": "ऋषि मेधा के आश्रम"
+   "label": "ऋषि मेधा के आश्रम",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch1"
  },
@@ -196,7 +205,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene8",
-   "move": "push"
+   "move": "push",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch1"
  },
@@ -206,7 +216,8 @@
   "params": {
    "img": "scene9",
    "move": "panL",
-   "label": "ऋषि के शब्द"
+   "label": "ऋषि के शब्द",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch1"
  },
@@ -225,7 +236,8 @@
   "params": {
    "img": "scene10",
    "move": "pull",
-   "label": "विष्णु योगनिद्रा में"
+   "label": "विष्णु योगनिद्रा में",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch1"
  },
@@ -235,7 +247,8 @@
   "params": {
    "img": "scene11",
    "move": "panL",
-   "label": "मधु और कैटभ की उत्पत्ति"
+   "label": "मधु और कैटभ की उत्पत्ति",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch1"
  },
@@ -245,7 +258,8 @@
   "params": {
    "img": "scene12",
    "move": "pull",
-   "label": "ब्रह्मा के खतरे"
+   "label": "ब्रह्मा के खतरे",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch1"
  },
@@ -255,7 +269,8 @@
   "params": {
    "img": "scene13",
    "move": "push",
-   "label": "ब्रह्मा की आहत अवस्था"
+   "label": "ब्रह्मा की आहत अवस्था",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch1"
  },
@@ -265,7 +280,8 @@
   "params": {
    "img": "scene14",
    "move": "panR",
-   "label": "योगनिद्रा की स्तुति"
+   "label": "योगनिद्रा की स्तुति",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch1"
  },
@@ -295,7 +311,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene15",
-   "move": "push"
+   "move": "push",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch1"
  },
@@ -304,7 +321,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene15",
-   "move": "push"
+   "move": "push",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch1"
  },
@@ -314,7 +332,8 @@
   "params": {
    "img": "scene16",
    "move": "panL",
-   "label": "विष्णु का अंतिम हमला"
+   "label": "विष्णु का अंतिम हमला",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch1"
  },
@@ -323,7 +342,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene17",
-   "move": "push"
+   "move": "push",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch1"
  },
@@ -333,7 +353,8 @@
   "params": {
    "img": "scene17",
    "move": "panR",
-   "label": "अब दूसरी कहानी"
+   "label": "अब दूसरी कहानी",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch1"
  },
@@ -349,7 +370,8 @@
   "params": {
    "img": "scene18",
    "move": "pull",
-   "label": "ये किसी एक दिन की लड़ाई नहीं थी"
+   "label": "ये किसी एक दिन की लड़ाई नहीं थी",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch2"
  },
@@ -369,7 +391,8 @@
   "params": {
    "img": "scene19",
    "move": "panL",
-   "label": "इंद्र और महिषासुर"
+   "label": "इंद्र और महिषासुर",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch2"
  },
@@ -396,7 +419,8 @@
   "params": {
    "img": "scene20",
    "move": "push",
-   "label": "महिषासुर स्वर्ग का स्वामी"
+   "label": "महिषासुर स्वर्ग का स्वामी",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch2"
  },
@@ -445,7 +469,8 @@
   "params": {
    "img": "scene21",
    "move": "panR",
-   "label": "देवता अपने घर से निकाल दिए गए"
+   "label": "देवता अपने घर से निकाल दिए गए",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch2"
  },
@@ -455,7 +480,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene22",
-   "move": "push"
+   "move": "push",
+   "fx": "parallax_occlusion_3d"
   },
   "from": "rules"
  },
@@ -477,7 +503,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene23",
-   "move": "panL"
+   "move": "panL",
+   "fx": "drone_orbit_180"
   },
   "from": "rules"
  },
@@ -487,7 +514,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene23",
-   "move": "panR"
+   "move": "panR",
+   "fx": "crane_up_reveal"
   },
   "from": "rules"
  },
@@ -497,7 +525,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene24",
-   "move": "push"
+   "move": "push",
+   "fx": "2.5d_parallax"
   },
   "from": "rules"
  },
@@ -517,7 +546,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene25",
-   "move": "panL"
+   "move": "panL",
+   "fx": "kinetography_cinemagraph"
   },
   "from": "rules"
  },
@@ -527,7 +557,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene26",
-   "move": "panR"
+   "move": "panR",
+   "fx": "matte_painting_extension"
   },
   "from": "rules"
  },
@@ -537,7 +568,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene26",
-   "move": "push"
+   "move": "push",
+   "fx": "parallax_occlusion_3d"
   },
   "from": "rules"
  },
@@ -547,7 +579,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene27",
-   "move": "pull"
+   "move": "pull",
+   "fx": "puppet_warp_breathing"
   },
   "from": "rules"
  },
@@ -557,7 +590,8 @@
   "params": {
    "img": "scene28",
    "move": "panR",
-   "label": "ज्वाला के उदय"
+   "label": "ज्वाला के उदय",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch3"
  },
@@ -567,7 +601,8 @@
   "params": {
    "img": "scene29",
    "move": "pull",
-   "label": "देवी का उदय"
+   "label": "देवी का उदय",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch3"
  },
@@ -642,7 +677,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene30",
-   "move": "pull"
+   "move": "pull",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch3"
  },
@@ -687,7 +723,8 @@
   "params": {
    "img": "scene31",
    "move": "panR",
-   "label": "सूर्य की किरणें"
+   "label": "सूर्य की किरणें",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch3"
  },
@@ -697,7 +734,8 @@
   "params": {
    "img": "scene32",
    "move": "pull",
-   "label": "काल और विश्वकर्मा के उपहार"
+   "label": "काल और विश्वकर्मा के उपहार",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch3"
  },
@@ -707,7 +745,8 @@
   "params": {
    "img": "scene33",
    "move": "push",
-   "label": "क्षीरसागर और समुद्र के उपहार"
+   "label": "क्षीरसागर और समुद्र के उपहार",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch3"
  },
@@ -717,7 +756,8 @@
   "params": {
    "img": "scene34",
    "move": "panL",
-   "label": "हिमालय के उपहार"
+   "label": "हिमालय के उपहार",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch3"
  },
@@ -727,7 +767,8 @@
   "params": {
    "img": "scene35",
    "move": "pull",
-   "label": "कुबेर का दिव्य मधु पात्र"
+   "label": "कुबेर का दिव्य मधु पात्र",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch3"
  },
@@ -810,7 +851,8 @@
   "params": {
    "img": "scene36",
    "move": "panR",
-   "label": "कथा के जानकार की व्याख्या"
+   "label": "कथा के जानकार की व्याख्या",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch3"
  },
@@ -861,7 +903,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene37",
-   "move": "push"
+   "move": "push",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch3"
  },
@@ -871,7 +914,8 @@
   "params": {
    "img": "scene37",
    "move": "panR",
-   "label": "देवी का अट्टहास"
+   "label": "देवी का अट्टहास",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch3"
  },
@@ -881,7 +925,8 @@
   "params": {
    "img": "scene38",
    "move": "pull",
-   "label": "देवताओं की पुकार"
+   "label": "देवताओं की पुकार",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch3"
  },
@@ -897,7 +942,8 @@
   "params": {
    "img": "scene39",
    "move": "panL",
-   "label": "अट्टहास महिषासुर के कानों तक"
+   "label": "अट्टहास महिषासुर के कानों तक",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch4"
  },
@@ -907,7 +953,8 @@
   "params": {
    "img": "scene40",
    "move": "push",
-   "label": "क्रोध में दौड़ती सेना"
+   "label": "क्रोध में दौड़ती सेना",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch4"
  },
@@ -916,7 +963,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene41",
-   "move": "push"
+   "move": "push",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch4"
  },
@@ -926,7 +974,8 @@
   "params": {
    "img": "scene42",
    "move": "panR",
-   "label": "सेनापति चिक्षुर और चामर"
+   "label": "सेनापति चिक्षुर और चामर",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch4"
  },
@@ -946,7 +995,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene43",
-   "move": "pull"
+   "move": "pull",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch4"
  },
@@ -977,7 +1027,8 @@
   "params": {
    "img": "scene44",
    "move": "push",
-   "label": "देवी और उनका सिंह"
+   "label": "देवी और उनका सिंह",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch4"
  },
@@ -987,7 +1038,8 @@
   "params": {
    "img": "scene45",
    "move": "panR",
-   "label": "युद्ध के शुरुआती दृश्य"
+   "label": "युद्ध के शुरुआती दृश्य",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch4"
  },
@@ -1010,7 +1062,8 @@
   "params": {
    "img": "scene46",
    "move": "pull",
-   "label": "महिषासुर के बिना सेना"
+   "label": "महिषासुर के बिना सेना",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch4"
  },
@@ -1030,7 +1083,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene47",
-   "move": "pull"
+   "move": "pull",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch4"
  },
@@ -1046,7 +1100,8 @@
   "params": {
    "img": "scene48",
    "move": "panL",
-   "label": "भैंसा के रूप में"
+   "label": "भैंसा के रूप में",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch5"
  },
@@ -1056,7 +1111,8 @@
   "params": {
    "img": "scene49",
    "move": "push",
-   "label": "सिंह के रूप में"
+   "label": "सिंह के रूप में",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch5"
  },
@@ -1066,7 +1122,8 @@
   "params": {
    "img": "scene50",
    "move": "panR",
-   "label": "एक आदमी तलवार और ढाल लिए"
+   "label": "एक आदमी तलवार और ढाल लिए",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch5"
  },
@@ -1076,7 +1133,8 @@
   "params": {
    "img": "scene51",
    "move": "pull",
-   "label": "एक विशाल हाथी"
+   "label": "एक विशाल हाथी",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch5"
  },
@@ -1098,7 +1156,8 @@
   "params": {
    "img": "scene52",
    "move": "panL",
-   "label": "देवी हर रूप को काटती गईं"
+   "label": "देवी हर रूप को काटती गईं",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch5"
  },
@@ -1108,7 +1167,8 @@
   "params": {
    "img": "scene53",
    "move": "push",
-   "label": "देवी ने पात्र उठाया"
+   "label": "देवी ने पात्र उठाया",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch5"
  },
@@ -1128,7 +1188,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene54",
-   "move": "push"
+   "move": "push",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch5"
  },
@@ -1138,7 +1199,8 @@
   "params": {
    "img": "scene55",
    "move": "panR",
-   "label": "कथा के शुरुआती क्षण"
+   "label": "कथा के शुरुआती क्षण",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch5"
  },
@@ -1159,7 +1221,8 @@
   "params": {
    "img": "scene56",
    "move": "pull",
-   "label": "पैर से गर्दन दबाई और भाले से वार किया"
+   "label": "पैर से गर्दन दबाई और भाले से वार किया",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch5"
  },
@@ -1169,7 +1232,8 @@
   "params": {
    "img": "scene57",
    "move": "panR",
-   "label": "महिषासुर के भैंसे के मुँह से आधा बाहर निकल आया"
+   "label": "महिषासुर के भैंसे के मुँह से आधा बाहर निकल आया",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch5"
  },
@@ -1179,7 +1243,8 @@
   "params": {
    "img": "scene57",
    "move": "pull",
-   "label": "देवी की तलवार चली"
+   "label": "देवी की तलवार चली",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch5"
  },
@@ -1206,7 +1271,8 @@
   "params": {
    "img": "scene58",
    "move": "panL",
-   "label": "सेना नहीं बची"
+   "label": "सेना नहीं बची",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch5"
  },
@@ -1222,7 +1288,8 @@
   "params": {
    "img": "scene59",
    "move": "push",
-   "label": "आसमान में जयकार गूँज उठी"
+   "label": "आसमान में जयकार गूँज उठी",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch6"
  },
@@ -1232,7 +1299,8 @@
   "params": {
    "img": "scene59",
    "move": "panR",
-   "label": "देवताओं ने देवी की स्तुति की"
+   "label": "देवताओं ने देवी की स्तुति की",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch6"
  },
@@ -1252,7 +1320,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene60",
-   "move": "push"
+   "move": "push",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch6"
  },
@@ -1262,7 +1331,8 @@
   "params": {
    "img": "scene60",
    "move": "panR",
-   "label": "गुणगान के आशीर्वाद"
+   "label": "गुणगान के आशीर्वाद",
+   "fx": "kinetography_cinemagraph"
   },
   "chapter": "ch6"
  },
@@ -1283,7 +1353,8 @@
   "params": {
    "img": "scene61",
    "move": "pull",
-   "label": "अंतर्धान"
+   "label": "अंतर्धान",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch6"
  },
@@ -1316,7 +1387,8 @@
   "params": {
    "img": "scene62",
    "move": "panL",
-   "label": "नवरात्रि में याद करते हैं"
+   "label": "नवरात्रि में याद करते हैं",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch6"
  },
@@ -1343,7 +1415,8 @@
   "params": {
    "img": "scene63",
    "move": "push",
-   "label": "शक्ति के रूप में"
+   "label": "शक्ति के रूप में",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch7"
  },
@@ -1352,7 +1425,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene64",
-   "move": "push"
+   "move": "push",
+   "fx": "drone_orbit_180"
   },
   "chapter": "ch7"
  },
@@ -1362,7 +1436,8 @@
   "params": {
    "img": "scene65",
    "move": "panR",
-   "label": "भद्रकाली के नाम से पुकारा गया"
+   "label": "भद्रकाली के नाम से पुकारा गया",
+   "fx": "matte_painting_extension"
   },
   "chapter": "ch7"
  },
@@ -1372,7 +1447,8 @@
   "params": {
    "img": "scene66",
    "move": "panL",
-   "label": "दुर्गा के नाम की उत्पत्ति"
+   "label": "दुर्गा के नाम की उत्पत्ति",
+   "fx": "parallax_occlusion_3d"
   },
   "chapter": "ch7"
  },
@@ -1441,7 +1517,8 @@
   "params": {
    "img": "scene67",
    "move": "pull",
-   "label": "राजा सुरथ के सवाल"
+   "label": "राजा सुरथ के सवाल",
+   "fx": "puppet_warp_breathing"
   },
   "chapter": "ch7"
  },
@@ -1472,7 +1549,8 @@
   "params": {
    "img": "scene68",
    "move": "panR",
-   "label": "नए असुर भाइयों का आगमन"
+   "label": "नए असुर भाइयों का आगमन",
+   "fx": "2.5d_parallax"
   },
   "chapter": "ch7"
  },
@@ -1502,7 +1580,8 @@
   "comp": "cinema",
   "params": {
    "img": "scene69",
-   "move": "push"
+   "move": "push",
+   "fx": "crane_up_reveal"
   },
   "chapter": "ch7"
  }

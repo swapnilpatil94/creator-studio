@@ -36,3 +36,24 @@ export async function makeScript(item, { dir, minutes = 3, log = console.log } =
   if (last) { const rep = repeats(last.beats.map(b => b.text), []).length, short = last.words < 250; if (!short && !last.notes.some(x => x.startsWith("QA "))) { log(`script: accepted${last.words < target * 0.85 ? ` (shorter than the ${minutes}-minute target: the sources support about ${Math.round(last.words / WPS)} s)` : ""}`); return { ...last, claims: item.claims || [], source: writerName(), notes: last.words < target * 0.85 ? [`length adapted to the sources: ${last.words} words`] : [] }; } throw new Error(`the writer (${writerName()}) could not produce a faithful ${minutes}-minute script from these sources (${last.words} words of ${target}${last.notes.length ? "; " + last.notes.slice(0, 2).join("; ") : ""}). Bring a script (stories/video-${item.slug}/script.txt, one line per beat), add source passages to the corpus, or set ANTHROPIC_API_KEY for a stronger writer.`); }
   throw new Error("the writer could not produce a usable script");
 }
+
+// ---------- for the Hub: the prompt a person gives to a frontier model, and the check of the script they paste back ----------
+export function videoBrief(item, { minutes = 3 } = {}) {
+  const q = [item.hook, item.topic, ...(item.claims || []).map(c => c.text)].join(" "), hits = search(q, 12), passages = hits.map(h => `[${h.src}:${h.n}] ${h.label}\n${h.text}`).join("\n\n"), target = Math.round(minutes * 60 * WPS * 0.92);
+  return `You write the voice-over script of a ${minutes}-minute vertical video for KATHAAYA, a Hindi mythology channel. A synthetic Hindi voice will read it; the studio makes every visual by itself from your lines.
+
+OUTPUT FORMAT (strict): plain text, ONE spoken thought per line, no numbering, no headings, no stage directions, no English. Devanagari Hindi, plain spoken, energetic and warm. Each line 8 to 20 words. About ${target} words in total (${Math.round(target / 13)} to ${Math.round(target / 9)} lines).
+
+STRUCTURE: line 1 is a hook that restates the question "${item.hook}" and opens a loop. Four or five movements: the question and what is at stake; who the people are and what led here; the conflict (end it on a question or a turn); the turning point and decision, as the emotional peak, quoting the exact words from the sources where they exist; what it meant and what it cost. Add a re-hook ("लेकिन...", "तभी...", or a question) near 25%, 50% and 75%. The last line is: ${item.cta || "सेव करें, फ़ॉलो करें"}.
+
+RULES: use ONLY facts that are in CLAIMS or SOURCE PASSAGES below; never invent names, numbers, dates or events. Every line must add something new (a fact, an image, a feeling): no repeating, no filler like "this is a big idea". Say "परंपरा में माना जाता है" for beliefs and call interpretation interpretation. No promises or guarantees, no clickbait, no statistics unless they are in the passages, never rank one faith above another. If the sources only support a shorter film, write fewer lines instead of padding.
+
+TOPIC: ${item.hook}
+TRADITION NOTE: ${item.tradition_note || ""}
+CLAIMS:
+${(item.claims || []).map(c => "- " + c.text).join("\n")}
+
+SOURCE PASSAGES (public-domain text):
+${passages}
+`; }
+export function checkScript(text, item, minutes = 3) { const r = fromText(text, item), c = check(r.beats, item, minutes), dup = repeats(r.beats.map(b => b.text), [], 0.33); return { beats: r.beats.length, words: c.words, seconds: Math.round(c.words / WPS), notes: [...c.fails, ...(dup.length ? [`${dup.length} line(s) repeat earlier lines: ${dup.slice(0, 2).join(" / ")}`] : [])], ok: !c.fails.some(x => x.startsWith("QA ")) }; }
