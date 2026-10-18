@@ -21,7 +21,7 @@ jobs:
         with:
           path: research/corpus
           key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
-      - run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+      - run: node tools/content/corpus.mjs fetch-all
       - run: node tools/content/qa-content.mjs --all
       - run: node blog/build.mjs && node tools/content/render-all-carousels.mjs blog/dist/c
       - name: Deploy to Cloudflare Pages

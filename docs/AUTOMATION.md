@@ -74,3 +74,20 @@ node tools/flux/klein.mjs --batch content/flux-batch.json   # resumable, one at 
 
 ## 7. First-time setup order
 1. Merge to `main`. 2. Add Cloudflare token + account id, create the Pages project, point the domain. 3. `blog-deploy` once (blog + carousels live). 4. `post-due` dry run for 7 days. 5. Meta webhook + Worker in DRY_RUN for a day. 6. Switch the Worker `DRY_RUN` to 0. 7. Enable weekly plan.
+
+## 8. Carousel art with local FLUX.2 Klein (added 2026-10-18)
+1. Each carousel item has `art: [{slide, subject, action, setting, lighting, medium}]`; `tools/flux/prompt-director.mjs` turns it into a prose prompt following Black Forest Labs' official rules (subject first, lighting, no negative prompts, 40-80 words) and lints it; the rules are vendored in the skill `flux-prompting-kathaaya` (source: docs.bfl.ai and github.com/black-forest-labs/skills, MIT).
+2. `node tools/flux/carousel-art.mjs content/items/<id>.json` (needs ComfyUI up) writes `content/art/<slug>/NN.jpg` and `prompts.json` (prompt, seed, seconds) so every picture can be reproduced. About 90 s per image.
+3. `node tools/content/carousel.mjs <item>` lays the Devanagari text over the art (full-bleed picture, dark lower panel, AI label in the corner); slides without art stay text-only.
+4. **Commit `content/art/**`**: GitHub Actions renders the carousel from those files, it never needs Flux.
+5. Review every picture (hands, attributes, stray marks, respectful iconography) before `approved`; the QA gate demands `ai_art_disclosed`, rejects negative prompts and gore/nudity words in the shot specs, and the post caption carries "AI-निर्मित".
+
+## 9. End-to-end test log (2026-10-18)
+| Step | Result |
+|---|---|
+| `content-ci` on push (lint with actionlint, corpus fetch from Wikisource inside Actions, policy tests, QA of every item, blog build, carousel render with Devanagari fonts, slides uploaded as an artifact) | passed on GitHub |
+| `post-due` from branch `e2e/first-live-run` (checkout, install, corpus, render the Ganga art carousel, upload 10 photos to the Page, publish one album post, record the result in `content/schedule.json`) | **posted live to the Facebook Page** (album, 10 slides) from GitHub Actions in about 6 minutes |
+| `daily-research` (insights snapshot of Facebook posts and Instagram media) | passed; snapshot committed to the `data` branch |
+| Instagram carousel | **not run**: Instagram needs each slide at a public URL; the blog host (Cloudflare Pages) is not connected yet. `platforms: ["facebook"]` on the schedule entry keeps the test from failing on this |
+| `workflow_dispatch` | GitHub only allows manual dispatch for workflows that exist on the default branch; until `main` has them, `post-due` and `daily-research` can be tested by pushing a branch named `e2e/<anything>` (their `push` trigger) |
+Workflow hygiene added: runner pinned to `ubuntu-24.04` (GitHub moves `ubuntu-latest` to Ubuntu 26 on 2026-10-19), GitHub-owned actions on current majors, the Cloudflare action pinned by commit SHA, actionlint in CI, step summaries, artifacts for downloads, an issue opened when posting fails.

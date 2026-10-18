@@ -7,6 +7,7 @@
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), dir = path.join(root, "research/corpus"), idxFile = path.join(root, "research/index.json");
 const SOURCES = {
+  "mahabharata-sabha": { title: n => `The_Mahabharata/Book_2:_Sabha_Parva/Section_${n}`, label: n => `Mahabharata, Sabha Parva, Section ${n} (Ganguli tr.)` },
   "mahabharata-adi": { title: n => `The_Mahabharata/Book_1:_Adi_Parva/Section_${n}`, label: n => `Mahabharata, Adi Parva, Section ${n} (Ganguli tr.)`, strip: /^[\s\S]*?Section [LXVI]+\s*\.?\s*(\([^)]*\))?/ },
 };
 // prefix sources: every subpage under a Wikisource title prefix (Griffith's Ramayana, one canto per page)
@@ -27,7 +28,8 @@ export function build() { const chunks = []; for (const f of fs.existsSync(dir) 
 export function search(q, k = 5) { if (!fs.existsSync(idxFile)) return []; const I = JSON.parse(fs.readFileSync(idxFile, "utf8")), qs = tok(q), k1 = 1.4, b = 0.75; return I.docs.map((d, i) => { let s = 0; for (const w of qs) { const f = d.tf[w] || 0; if (!f) continue; const idf = Math.log(1 + (I.N - (I.df[w] || 0) + 0.5) / ((I.df[w] || 0) + 0.5)); s += idf * f * (k1 + 1) / (f + k1 * (1 - b + b * d.len / I.avg)); } return { score: s, ...I.chunks[i] }; }).filter(x => x.score > 0).sort((a, b2) => b2.score - a.score).slice(0, k); }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const [cmd, a, b, c] = process.argv.slice(2);
-  if (cmd === "fetch-prefix") { console.log("fetched", await fetchPrefix(a), "cantos"); console.log(build()); }
+  if (cmd === "fetch-all") { for (const [src, from, to] of [["mahabharata-adi", 1, 236], ["mahabharata-sabha", 1, 81]]) { let ok = 0; for (let n = from; n <= to; n++) { if (await fetchSection(src, n)) ok++; if (!fs.existsSync(path.join(dir, `${src}-${n}.json`))) await sleep(0); else if (n % 40 === 0) console.log(src, "through", n); await sleep(250); } console.log(src, ok, "sections"); } console.log(build()); }
+  else if (cmd === "fetch-prefix") { console.log("fetched", await fetchPrefix(a), "cantos"); console.log(build()); }
   else if (cmd === "fetch") { let ok = 0; for (let n = +b; n <= +c; n++) { const d = await fetchSection(a, n); if (d) ok++; if (n % 20 === 0) console.log(`fetched through ${n} (${ok} ok)`); await sleep(1000); } console.log(`done: ${ok} sections`); console.log(build()); }
   else if (cmd === "build") console.log(build());
   else if (cmd === "search") for (const r of search(a, +b || 5)) console.log(`[${r.score.toFixed(1)}] ${r.label}\n   ${r.text.slice(0, 260)}…`);

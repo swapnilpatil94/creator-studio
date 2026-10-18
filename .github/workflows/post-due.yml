@@ -35,7 +35,7 @@ jobs:
         with:
           path: research/corpus
           key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
-      - run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+      - run: node tools/content/corpus.mjs fetch-all
       - name: Post due items
         run: node tools/content/post-due.mjs --window 20 ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '--dry-run' || '' }}
       - name: Record results

@@ -28,7 +28,7 @@ jobs:
           path: research/corpus
           key: corpus-v1-${{ hashFiles('tools/content/corpus.mjs') }}
       - name: Build research corpus (Wikisource, public-domain translations)
-        run: node tools/content/corpus.mjs fetch mahabharata-adi 1 236 && node tools/content/corpus.mjs build
+        run: node tools/content/corpus.mjs fetch-all
       - name: Policy regression tests
         run: node tests/content-qa.test.mjs
       - name: QA every content item (fails on any FAIL)
