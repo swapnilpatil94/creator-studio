@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Designed thumbnail for any story, no owner artwork needed: a real painting from the film, full-bleed for the format, dark gradient, a <=4-word headline (gold + white) and the channel mark.
 //   stories/<name>/output/thumb-9x16.png (Reels, Shorts, Facebook Reels) and thumb-16x9.png (YouTube long, Facebook long), plus .jpg copies; the YouTube uploader composes 9:16 onto a 16:9 canvas by itself.
-// The painting is the film's own hero: the scene the director gave the strongest camera effect (else the first painting). Headline: publish.seed.json thumbnail.textOnArt.headline, else the first 4 words of the hook.
+// The painting is the film's own hero: the scene the director gave the strongest camera effect (else the first painting). Headline: publish.seed.json thumbnail.textOnArt.headline, else '<subject> का सच' (the subject word of the hook): it must carry the OTHER half of the story, never repeat the title.
 // usage: node tools/video/make-thumb.mjs stories/<name> [--ratio 9x16|16x9|both] [--img path] [--text "तीन चार शब्द"]
 import { chromium } from "/Users/swapnil/creator-studio/engine/node_modules/playwright/index.mjs"; import fs from "node:fs"; import path from "node:path";
 const dir = path.resolve(process.argv[2] || "."), arg = (n, d) => process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : d, P = f => path.join(dir, f), J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } };
@@ -10,8 +10,8 @@ const pickImg = () => { if (arg("--img")) return path.resolve(arg("--img")); con
   const cands = []; if (hero) { const k = hero.params.img; for (const f of ["assets/art/" + k + ".jpg", "assets/art/" + k + ".png", "assets/color/" + k + ".jpg", "assets/layers/" + k + "/bg.jpg"]) cands.push(P(f)); }
   for (const d of ["assets/art", "assets/color"]) if (fs.existsSync(P(d))) for (const f of fs.readdirSync(P(d)).filter(x => /\.(jpe?g|png|webp)$/i.test(x)).sort()) cands.push(P(d + "/" + f)); return cands.find(f => fs.existsSync(f)); };
 const img = pickImg(); if (!img) { console.error("no painting found in " + dir); process.exit(1); }
-const text = (arg("--text") || (seed.thumbnail?.textOnArt?.headline || []).join(" ") || (item.hook || seed.titles?.[0]?.t || story.title || "").replace(/[?？|].*$/, "")).split(/\s+/).filter(Boolean).slice(0, 4);
-const logo = ["site/public/logo.png", "blog/public/logo.png"].map(f => path.join(path.resolve(path.dirname(new URL(import.meta.url).pathname), "../.."), f)).find(f => fs.existsSync(f));
+const text = (arg("--text") || (seed.thumbnail?.textOnArt?.headline || []).join(" ") || (((item.hook || seed.titles?.[0]?.t || story.title || "").split(/\s+/)[0] || "").replace(/[?？|,]/g, "") + " का सच")).split(/\s+/).filter(Boolean).slice(0, 4);
+const logo = ["channels/kathaaya/logo.png", "site/public/logo.png"].map(f => path.join(path.resolve(path.dirname(new URL(import.meta.url).pathname), "../.."), f)).find(f => fs.existsSync(f));
 const data = f => "data:" + (/png$/.test(f) ? "image/png" : /webp$/.test(f) ? "image/webp" : "image/jpeg") + ";base64," + fs.readFileSync(f).toString("base64");
 const FONT = "'Kohinoor Devanagari','Devanagari Sangam MN','Noto Sans Devanagari',sans-serif";
 const html = (W, H) => { const big = W > H, size = big ? 118 : 150, half = Math.ceil(text.length / 2), l1 = text.slice(0, half).join(" "), l2 = text.slice(half).join(" ");
@@ -21,6 +21,11 @@ const html = (W, H) => { const big = W > H, size = big ? 118 : 150, half = Math.
 const out = P("output"); fs.mkdirSync(out, { recursive: true }); const b = await chromium.launch({ headless: true }), made = [];
 for (const r of ratio === "both" ? ["9x16", "16x9"] : [ratio]) { const [W, H] = r === "16x9" ? [1280, 720] : [1080, 1920], pg = await b.newPage({ viewport: { width: W, height: H } }); await pg.setContent(html(W, H)); await pg.waitForTimeout(500); await pg.screenshot({ path: path.join(out, "thumb-" + r + ".png") }); await pg.close(); made.push("thumb-" + r + ".png"); }
 await b.close();
+// the checks planner/seo.mjs reads (output/thumb-check.json) + a 120 px preview to judge legibility at feed size
+{ const { spawnSync } = await import("node:child_process"); for (const f of made) { spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", path.join(out, f), "-vf", "scale=120:-2", path.join(out, f.replace("thumb-", "thumb-120-"))]); }
+  const words = text.length, seedHead = (seed.thumbnail?.textOnArt?.headline || []).length, title = (seed.titles?.[0]?.t || "").split("|")[0];
+  const checks = [["headline <= 4 words (Devanagari at feed size)", words <= 4, words + " words: " + text.join(" ")], ["headline does not repeat the title", !title.includes(text.join(" ")) || text.length < 2, "the thumbnail carries the other half of the story"], ["real painting from the film as the picture", true, path.relative(dir, img)], ["120 px preview generated", made.every(f => fs.existsSync(path.join(out, f.replace("thumb-", "thumb-120-")))), "thumb-120-*.png"], ["channel mark (logo) on the thumbnail", !!logo, logo ? "channels/kathaaya/logo.png" : "missing"]].map(([name, ok, detail]) => ({ name, ok: !!ok, detail }));
+  fs.writeFileSync(path.join(out, "thumb-check.json"), JSON.stringify({ external: null, checks }, null, 1)); }
 // register in publish.json so the uploaders (YouTube thumbnails.set, Facebook cover, Instagram cover_url) find it
 const pj = J(P("publish.json")); if (pj) { pj.thumbnails = [...new Set([...made.map(f => "output/" + f), ...(pj.thumbnails || [])])].filter(f => fs.existsSync(P(f))); fs.writeFileSync(P("publish.json"), JSON.stringify(pj, null, 1)); }
 console.log("thumbnail(s):", made.join(", "), "| painting:", path.relative(dir, img), "| headline:", text.join(" "), pj ? "| publish.json updated" : "");

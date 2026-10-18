@@ -1,0 +1,29 @@
+# DAILY PRODUCER AGENT: every morning (07:30 IST) it checks the calendar slots, festival deadlines, approvals and outlier topics, and opens (or updates) a GitHub issue
+# "Daily list YYYY-MM-DD" with a checkbox per input it needs from the owner. The GitHub mobile app pushes that to the phone, so the list cannot be missed.
+# CI only sees what is committed (items, schedule, outlier data from the `data` branch); finished video files live on the owner's Mac, so the Hub's Today tab (local) is the complete list.
+name: daily-agent
+on:
+  schedule: [{ cron: "0 2 * * *" }]
+  push:
+    branches: ["e2e/**"]
+  workflow_dispatch:
+permissions: { contents: read, issues: write }
+concurrency: { group: daily-agent, cancel-in-progress: false }
+jobs:
+  agent:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 22 }
+      - name: Bring the latest outlier data
+        run: |
+          git fetch origin data || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout origin/data -- planner/data/monthly 2>/dev/null || true; git reset -q HEAD -- planner/data/monthly 2>/dev/null || true; fi
+      - name: Build the list and open the issue
+        run: node tools/agent/daily.mjs --issue | tee /tmp/daily.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Close yesterday's lists
+        run: |
+          for n in $(gh issue list --state open --search "Daily list in:title" --json number,title -q '.[] | select(.title != "Daily list '"$(date -u -d '+5 hours 30 minutes' +%F)"'") | .number'); do gh issue close "$n" -c "Superseded by today's list."; done

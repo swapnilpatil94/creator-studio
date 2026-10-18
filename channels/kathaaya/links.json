@@ -1,0 +1,12 @@
+{
+ "_note": "Every link we want on every asset. tools/content/links.mjs builds the per-platform text from this. YouTube links stay OFF Facebook and Instagram copy (owner rule: keep viewers on Meta); set show_youtube_on_meta to true to override.",
+ "website": "https://kathaaya.getbyterush.com",
+ "whatsapp": "https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m",
+ "instagram": "https://www.instagram.com/kathaaya.stories/",
+ "instagram_handle": "@kathaaya.stories",
+ "facebook": "https://www.facebook.com/profile.php?id=1354404841091894",
+ "youtube": "https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ",
+ "youtube_handle": "@kathaayastories",
+ "show_youtube_on_meta": false,
+ "logo": "channels/kathaaya/logo.png"
+}

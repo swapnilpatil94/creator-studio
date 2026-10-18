@@ -38,5 +38,26 @@
   "transition": "wipe",
   "captions": "plain",
   "seed": 490
+ },
+ {
+  "name": "video-karna-birth-kunti",
+  "mood": "cosmic",
+  "hue": 157,
+  "sat": 1.04,
+  "motif": "rays",
+  "transition": "iris",
+  "captions": "plain",
+  "seed": 927
+ },
+ {
+  "name": "video-ganga-seven-sons",
+  "mood": "river",
+  "hue": 230,
+  "sat": 1.11,
+  "motif": "mandala",
+  "transition": "dissolve",
+  "captions": "box",
+  "grade": "film",
+  "seed": 390
  }
 ]
