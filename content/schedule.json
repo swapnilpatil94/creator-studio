@@ -7,7 +7,14 @@
    "facebook"
   ],
   "at": "2026-10-18T04:25:00.000Z",
-  "status": "queued",
-  "note": "first end-to-end test: GitHub Actions posts the Facebook photo carousel; Instagram waits for the public image host (Cloudflare Pages)"
+  "status": "posted",
+  "note": "first end-to-end test: GitHub Actions posts the Facebook photo carousel; Instagram waits for the public image host (Cloudflare Pages)",
+  "posted_at": "2026-10-18T04:24:03Z",
+  "result": {
+   "facebook": {
+    "id": "1354404841091894_122094096981522482",
+    "by": "GitHub Actions run 39096614318 on branch e2e/first-live-run"
+   }
+  }
  }
 ]
