@@ -1,0 +1,15 @@
+---
+import Base from "../../../layouts/Base.astro";
+import PostCard from "../../../components/PostCard.astro";
+import { getPublished, liveLangs, SECTION_KEYS, section } from "../../../lib/posts";
+import { DEFAULT_LANG, langPath } from "../../../i18n/config";
+import { useT } from "../../../i18n/ui";
+export async function getStaticPaths() { const out = []; for (const l of await liveLangs()) for (const k of SECTION_KEYS) out.push({ params: { lang: l === DEFAULT_LANG ? undefined : l, section: k }, props: { lang: l } }); return out; }
+const { lang } = Astro.props, { section: key } = Astro.params, t = useT(lang), s = section(lang, key!), live = await liveLangs(), alternates = Object.fromEntries(live.map((l) => [l, langPath(l, `/category/${key}/`)]));
+const posts = (await getPublished(lang)).filter((p) => p.data.section === key);
+---
+<Base lang={lang} alternates={alternates} title={s.name} description={s.blurb}>
+  <div class="mx-auto max-w-6xl px-4 pt-14"><h1 class="dual"><span class="hi gold-text">{s.name}</span><span class="en">{s.en}</span></h1><p class="p-hi mt-3 text-[var(--muted)]">{s.blurb}</p>
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{posts.map((p) => <PostCard post={p} lang={lang} />)}</div>
+    {posts.length === 0 && <p class="glass mt-8 p-8 text-center text-[var(--muted)]">{t("sectionSoon")}</p>}</div>
+</Base>

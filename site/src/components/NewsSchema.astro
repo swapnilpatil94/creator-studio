@@ -1,9 +1,10 @@
 ---
 // Injects NewsArticle (+ BreadcrumbList) JSON-LD built from the post's frontmatter. Usage: <NewsSchema post={post.data} url={Astro.url.href} image={absoluteImageUrl} />
 import type { PostFrontmatter } from "../content.config";
-interface Props { post: PostFrontmatter; url: string; image?: string; siteName?: string; logo?: string; }
-const { post, url, image, siteName = "कथाया (KATHAAYA)", logo = new URL("/logo.png", Astro.site).href } = Astro.props;
-const sections: Record<string, string> = { itihasa: "इतिहास", puranas: "पुराण", "vrat-tyohar": "व्रत और त्योहार" };
+import { LOCALES } from "../i18n/config";
+interface Props { post: PostFrontmatter; url: string; image?: string; siteName?: string; logo?: string; lang?: string; }
+const { post, url, image, lang = "hi", siteName = "कथाया (KATHAAYA)", logo = new URL("/logo.png", Astro.site).href } = Astro.props;
+const sections: Record<string, string> = { itihasa: "इतिहास", puranas: "पुराण", "vrat-tyohar": "व्रत और त्योहार", world: "विश्व पुराकथाएँ" };
 const iso = (d?: Date) => (d ? d.toISOString() : undefined);
 const news = {
   "@context": "https://schema.org",
@@ -11,7 +12,7 @@ const news = {
   mainEntityOfPage: { "@type": "WebPage", "@id": url },
   headline: [...post.title].slice(0, 110).join(""),
   description: post.description,
-  inLanguage: "hi-IN",
+  inLanguage: LOCALES[lang]?.bcp ?? "hi-IN",
   datePublished: iso(post.publishDate),
   dateModified: iso(post.updatedDate ?? post.publishDate),
   author: { "@type": "Organization", name: post.author, url: new URL("/about/", Astro.site).href },

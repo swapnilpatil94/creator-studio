@@ -10,7 +10,7 @@ const BAIT = /(comment|कमेंट|कमेन्ट)\s*(करो|कर�
 const SLOP = [/आइए जानते हैं/, /इस लेख में हम/, /निष्कर्ष\s*:/, /सारांश\s*:/, /आज के (डिजिटल )?(युग|दौर) में/, /एक बात (तो )?तय है/, /यह सिर्फ़? .{0,40} नहीं,? बल्कि/, /ना सिर्फ़?.{0,40}बल्कि/, /\bdelve\b|\btapestry\b|\bin conclusion\b/i, /चलिए शुरू करते हैं/];
 const CHECKS = []; let item;
 const add = (level, code, msg) => CHECKS.push({ level, code, msg });
-function hashtagRules(h, max, plat) { if (h.length > max) add("FAIL", "hashtags", `${h.length} hashtags on ${plat}, max ${max}`); if (h.some(x => !/^#\S+$/.test(x))) add("FAIL", "hashtag-format", "malformed hashtag"); }
+function hashtagRules(h, max, plat) { if (!Array.isArray(h)) { add("FAIL", "hashtags", `hashtags missing or not a list (${plat})`); return; } if (h.length > max) add("FAIL", "hashtags", `${h.length} hashtags on ${plat}, max ${max}`); if (h.some(x => !/^#\S+$/.test(x))) add("FAIL", "hashtag-format", "malformed hashtag"); }
 function shingles(t, n = 6) { const w = W(t.replace(/[।.,?!"'—-]/g, " ")), s = new Set(); for (let i = 0; i + n <= w.length; i++) s.add(w.slice(i, i + n).join(" ")); return s; }
 function run(it) {
   item = it; CHECKS.length = 0; const f = it.format, all = [it.hook, ...(it.body_lines || []), ...(it.slides || []), ...((it.narration || []).map(x => x.text)), it.cta, it.markdown].filter(Boolean).join("\n");

@@ -40,8 +40,13 @@
       "enum": [
         "itihasa",
         "puranas",
-        "vrat-tyohar"
+        "vrat-tyohar",
+        "world"
       ]
+    },
+    "machineTranslated": {
+      "default": false,
+      "type": "boolean"
     },
     "heroImage": {
       "type": "string"

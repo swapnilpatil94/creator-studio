@@ -171,6 +171,76 @@
    "status": "qa_passed",
    "sensitivity": "normal",
    "query": "Devavrata vow celibacy fisherman Satyavati"
+  },
+  {
+   "slug": "persephone-pomegranate",
+   "pillar": "world-myths",
+   "title": "यूनानी कथा: पर्सेफ़ोनी और अनार के बीज, ऋतुओं की उत्पत्ति",
+   "formats": [
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "Bulfinch, The Age of Fable (Ceres and Proserpine) (to fetch)",
+   "status": "needs_corpus",
+   "sensitivity": "normal",
+   "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
+  },
+  {
+   "slug": "prometheus-fire",
+   "pillar": "world-myths",
+   "title": "यूनानी कथा: प्रोमेथियस ने मनुष्य के लिए आग क्यों चुराई",
+   "formats": [
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "Bulfinch, The Age of Fable (Prometheus and Pandora) (to fetch)",
+   "status": "needs_corpus",
+   "sensitivity": "normal",
+   "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
+  },
+  {
+   "slug": "odin-eye-for-wisdom",
+   "pillar": "world-myths",
+   "title": "नॉर्स कथा: ओडिन ने ज्ञान के लिए अपनी आँख क्यों दी",
+   "formats": [
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "Prose Edda, Gylfaginning (Brodeur trans.) (to fetch)",
+   "status": "needs_corpus",
+   "sensitivity": "normal",
+   "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
+  },
+  {
+   "slug": "osiris-isis-resurrection",
+   "pillar": "world-myths",
+   "title": "मिस्री कथा: ओसिरिस, आइसिस और पुनर्जन्म की कथा",
+   "formats": [
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "Budge / Wikisource Egyptian texts (to select) (to fetch)",
+   "status": "needs_corpus",
+   "sensitivity": "normal",
+   "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
+  },
+  {
+   "slug": "great-flood-manu-noah-utnapishtim",
+   "pillar": "world-myths",
+   "title": "महाप्रलय की कथा: मनु, नूह और उत्नापिश्तिम की तुलना",
+   "formats": [
+    "carousel",
+    "blog",
+    "reel"
+   ],
+   "corpus": "Shatapatha Brahmana (Eggeling), Genesis (KJV), Epic of Gilgamesh tablet XI (to fetch)",
+   "status": "needs_corpus",
+   "sensitivity": "normal",
+   "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
   }
  ]
 }

@@ -1,0 +1,38 @@
+---
+import { render } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import NewsSchema from "../../../components/NewsSchema.astro";
+import PostCard from "../../../components/PostCard.astro";
+import { allPublished, postLang, postSlug, section, readingMinutes, fmtDate } from "../../../lib/posts";
+import { DEFAULT_LANG, langPath } from "../../../i18n/config";
+import { useT } from "../../../i18n/ui";
+export async function getStaticPaths() { const all = await allPublished(); return all.map((post) => { const lang = postLang(post), slug = postSlug(post), siblings = all.filter((p) => postSlug(p) === slug); return { params: { lang: lang === DEFAULT_LANG ? undefined : lang, slug }, props: { post, lang, alternates: Object.fromEntries(siblings.map((p) => [postLang(p), langPath(postLang(p), `/blog/${postSlug(p)}/`)])), related: all.filter((p) => p.id !== post.id && postLang(p) === lang && p.data.section === post.data.section).slice(0, 2) } }; }); }
+const { post, related, lang, alternates } = Astro.props, t = useT(lang), L = (p: string) => langPath(lang, p), sec = section(lang, post.data.section), d = post.data, { Content } = await render(post), img = d.heroImage;
+const share = encodeURIComponent(Astro.url.href), shareText = encodeURIComponent(d.title);
+---
+<Base lang={lang} alternates={alternates} title={d.title} description={d.description} image={img} type="article">
+  <NewsSchema slot="head" lang={lang} post={d} url={Astro.url.href} image={img ? new URL(img, Astro.site).href : undefined} />
+  <article>
+    <header class="mx-auto max-w-4xl px-4 pt-12 text-center">
+      <nav class="font-latin text-xs tracking-[.2em] text-[var(--muted)]" aria-label="breadcrumb"><a href={L("/")} class="hover:text-[var(--gold)]">HOME</a> / <a href={L(`/category/${d.section}/`)} class="hover:text-[var(--gold)]">{sec.en}</a></nav>
+      <h1 class="dual mt-5 text-center"><span class="hi gold-text">{d.title}</span>{lang === "hi" && d.hinglishKeywords[0] && <span class="en">{d.hinglishKeywords[0]}</span>}</h1>
+      <p class="p-hi mx-auto mt-4 max-w-2xl text-[var(--muted)]">{d.description}</p>
+      <div class="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-latin text-xs text-[var(--muted)]">
+        <span>{d.author}</span><span>·</span><time datetime={d.publishDate.toISOString()}>{fmtDate(d.publishDate, lang)}</time><span>·</span><span>{readingMinutes(post.body)} {t("minRead")}</span>
+        {d.updatedDate && <><span>·</span><span>{t("updated")} {fmtDate(d.updatedDate, lang)}</span></>}
+        {d.trendingEventConnection && <span class="chip">{d.trendingEventConnection}</span>}
+      </div>
+      {d.machineTranslated && alternates[DEFAULT_LANG] && <p class="mx-auto mt-4 max-w-2xl rounded-xl border border-[var(--line)] px-4 py-2 text-xs text-[var(--muted)]">🌐 {t("machineNote")} <a class="underline" href={alternates[DEFAULT_LANG]}>{t("original")}</a></p>}
+    </header>
+    {img && <figure class="mx-auto mt-8 max-w-5xl px-4"><div class="overflow-hidden rounded-3xl border border-[var(--line)] shadow-[var(--shadow)]"><img src={img} alt={d.heroAlt ?? d.title} class="max-h-[34rem] w-full object-cover" fetchpriority="high" /></div>{d.aiArt && <figcaption class="mt-2 text-center text-xs text-[var(--muted)]">{t("aiArtCaption")}</figcaption>}</figure>}
+    <div class="mx-auto mt-10 px-4"><div class="prose-hi"><Content /></div></div>
+    <div class="mx-auto mt-12 max-w-3xl px-4">
+      {(d.sources.length > 0 || d.traditionNote) && <aside class="glass p-6"><div class="chip mb-3">{t("sources")}</div>{d.sources.length > 0 && <ul class="list-disc space-y-1 pl-5">{d.sources.map((s) => <li>{s}</li>)}</ul>}{d.traditionNote && <p class="mt-3 text-[var(--muted)]">{d.traditionNote}</p>}<p class="mt-3 text-sm text-[var(--muted)]">{t("aiNote")} {t("spotMistake")} <a class="underline" href="/contact/">{t("tellUs")}</a>.</p></aside>}
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3"><span class="text-sm text-[var(--muted)]">{t("share")}</span>
+        <a class="btn btn-ghost !py-2" href={`https://wa.me/?text=${shareText}%20${share}`} rel="noopener" target="_blank">WhatsApp</a>
+        <a class="btn btn-ghost !py-2" href={`https://www.facebook.com/sharer/sharer.php?u=${share}`} rel="noopener" target="_blank">Facebook</a>
+        <a class="btn btn-ghost !py-2" href={`https://twitter.com/intent/tweet?url=${share}&text=${shareText}`} rel="noopener" target="_blank">X</a></div>
+    </div>
+  </article>
+  {related.length > 0 && <section class="mx-auto mt-16 max-w-6xl px-4"><h2 class="h2-hi">{t("readMore")}</h2><div class="mt-5 grid gap-6 sm:grid-cols-2">{related.map((p) => <PostCard post={p} lang={lang} />)}</div></section>}
+</Base>

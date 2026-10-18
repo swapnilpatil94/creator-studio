@@ -3,12 +3,14 @@
 // On click: correct option turns green, a wrong pick turns red and the right one is revealed; the dwell time (ms from the quiz being 60% in view to the click) is sent to dataLayer, a DOM event and optionally a beacon endpoint.
 interface Option { text: string; correct?: boolean; why?: string }
 interface Props { question: string; options: Option[]; id?: string; endpoint?: string; }
+import { useT, langOf } from "../i18n/ui";
+const t = useT(langOf(Astro.url.pathname));
 const { question, options, id = "q" + Math.random().toString(36).slice(2, 7), endpoint = "" } = Astro.props;
 ---
-<section class="quiz glass my-10 p-5 sm:p-7" data-quiz data-id={id} data-endpoint={endpoint} aria-labelledby={`${id}-q`}>
-  <div class="chip mb-3">प्रश्नोत्तरी · QUIZ</div>
+<section class="quiz glass my-10 p-5 sm:p-7" data-quiz data-id={id} data-endpoint={endpoint} data-right={t("right")} data-wrong={t("wrong")} aria-labelledby={`${id}-q`}>
+  <div class="chip mb-3">{t("quiz")}</div>
   <h3 id={`${id}-q`} class="h2-hi !m-0 !border-0 !pl-0">{question}</h3>
-  <div class="mt-5 grid gap-3" role="group" aria-label="उत्तर चुनिए">
+  <div class="mt-5 grid gap-3" role="group" aria-label={t("pickAnswer")}>
     {options.map((o, i) => (
       <button type="button" data-correct={o.correct ? "1" : "0"} data-why={o.why ?? ""} data-i={i}
         class="quiz-opt w-full rounded-2xl border border-[var(--line)] bg-[var(--gold-soft)] px-5 py-3 text-left text-[1.05rem] leading-relaxed transition hover:border-[var(--gold)] hover:-translate-y-0.5 disabled:cursor-default disabled:hover:translate-y-0">
@@ -28,7 +30,7 @@ const { question, options, id = "q" + Math.random().toString(36).slice(2, 7), en
       if (answered) return; answered = true; const ok = b.dataset.correct === "1", dwell = seen ? Math.round(performance.now() - seen) : null;
       buttons.forEach((x) => { x.disabled = true; if (x.dataset.correct === "1") x.classList.remove("bg-[var(--gold-soft)]"), x.classList.add(...GOOD); });
       if (!ok) { b.classList.remove("bg-[var(--gold-soft)]"); b.classList.add(...BAD); }
-      const text = (ok ? "✓ सही! " : "✗ सही उत्तर ऊपर हरे रंग में है। ") + (buttons.find((x) => x.dataset.correct === "1")?.dataset.why || b.dataset.why || ""); why.textContent = text; why.classList.remove("hidden");
+      const text = (ok ? root.dataset.right : root.dataset.wrong) + (buttons.find((x) => x.dataset.correct === "1")?.dataset.why || b.dataset.why || ""); why.textContent = text; why.classList.remove("hidden");
       const detail = { quiz: root.dataset.id, correct: ok, choice: Number(b.dataset.i), dwell_ms: dwell, path: location.pathname };
       (window as any).dataLayer = (window as any).dataLayer || []; (window as any).dataLayer.push({ event: "quiz_answer", ...detail }); root.dispatchEvent(new CustomEvent("quiz:answer", { detail, bubbles: true }));
       if (root.dataset.endpoint && navigator.sendBeacon) navigator.sendBeacon(root.dataset.endpoint, JSON.stringify(detail));

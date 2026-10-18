@@ -1,0 +1,7 @@
+---
+import { LOCALES } from "../i18n/config";
+interface Props { current: string; alternates: Record<string, string> }
+const { current, alternates } = Astro.props, entries = Object.entries(alternates);
+---
+{entries.length > 1 && <details class="relative"><summary class="btn btn-ghost !px-3 !py-1.5 cursor-pointer list-none text-sm" aria-label="Language">🌐 {LOCALES[current]?.name}</summary>
+  <ul class="glass absolute right-0 z-50 mt-2 min-w-40 p-2 text-sm">{entries.map(([l, href]) => <li><a href={href} hreflang={LOCALES[l].bcp} lang={l} class:list={["block rounded-lg px-3 py-1.5 hover:bg-[var(--gold-soft)]", l === current ? "gold-text" : ""]}>{LOCALES[l].name}</a></li>)}</ul></details>}

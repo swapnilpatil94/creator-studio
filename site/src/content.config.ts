@@ -10,7 +10,8 @@ export const postSchema = z.object({
   author: z.string().default("KATHAAYA संपादकीय टीम"),
   hinglishKeywords: z.array(z.string()).default([]),          // e.g. ["Ganga katha", "Mahabharata story"]
   trendingEventConnection: z.string().optional(),             // the festival / tithi / anniversary / news peg that makes the piece timely
-  section: z.enum(["itihasa", "puranas", "vrat-tyohar"]).default("itihasa"),
+  section: z.enum(["itihasa", "puranas", "vrat-tyohar", "world"]).default("itihasa"),
+  machineTranslated: z.boolean().default(false),               // translated by the studio's model from the Hindi original (shown as a label)
   heroImage: z.string().optional(),
   heroAlt: z.string().optional(),
   aiArt: z.boolean().default(false),                          // hero or inline art is AI-made: shown as a label

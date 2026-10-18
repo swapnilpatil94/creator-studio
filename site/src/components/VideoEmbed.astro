@@ -1,7 +1,9 @@
 ---
 // Privacy-friendly video: a poster + play button; the YouTube iframe (youtube-nocookie) loads only on click. Or pass src for a self-hosted mp4. The video must be public to play.
 interface Props { videoId?: string; src?: string; poster?: string; title?: string; vertical?: boolean }
-const { videoId, src, poster, title = "वीडियो", vertical = false } = Astro.props;
+import { useT, langOf } from "../i18n/ui";
+const t = useT(langOf(Astro.url.pathname));
+const { videoId, src, poster, title = t("video"), vertical = false } = Astro.props;
 const thumb = poster ?? (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : undefined);
 ---
 <figure class:list={["video-embed my-10", vertical ? "mx-auto max-w-[22rem]" : ""]}>

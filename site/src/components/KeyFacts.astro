@@ -2,7 +2,9 @@
 // Infographic strip: "at a glance" cards. <KeyFacts items={[{ label: "स्रोत", value: "महाभारत, आदि पर्व" }, ...]} />
 interface Item { label: string; value: string; icon?: string }
 interface Props { items: Item[]; title?: string }
-const { items, title = "एक नज़र में · AT A GLANCE" } = Astro.props;
+import { useT, langOf } from "../i18n/ui";
+const t = useT(langOf(Astro.url.pathname));
+const { items, title = t("glance") } = Astro.props;
 ---
 <aside class="my-9" aria-label={title}>
   <div class="chip mb-3">{title}</div>

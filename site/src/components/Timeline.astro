@@ -2,7 +2,9 @@
 // Vertical story timeline. <Timeline steps={[{ title: "...", text: "..." }]} />
 interface Step { title: string; text?: string }
 interface Props { steps: Step[]; title?: string }
-const { steps, title = "कथा का क्रम · THE SEQUENCE" } = Astro.props;
+import { useT, langOf } from "../i18n/ui";
+const t = useT(langOf(Astro.url.pathname));
+const { steps, title = t("sequence") } = Astro.props;
 ---
 <section class="my-10" aria-label={title}>
   <div class="chip mb-4">{title}</div>
