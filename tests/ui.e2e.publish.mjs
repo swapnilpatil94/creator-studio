@@ -19,6 +19,11 @@ try {
   } else if (what === "fbtext") {
     await tab("Create"); await page.locator("#open").selectOption(arg1); await page.waitForTimeout(1500); const ap = page.getByRole("button", { name: "I checked it: approve" }); if (await ap.isEnabled().catch(() => false)) { await ap.click(); await page.waitForTimeout(2000); }
     await page.locator("#pfb").check(); await page.getByRole("button", { name: /Post now/ }).click(); await page.waitForTimeout(25000); log("posted; last dialog:", (dialogs.at(-1) || "").slice(0, 600));
+  } else if (what === "reel") {
+    await tab("Plan"); const empty = page.locator(".slot.empty", { hasText: /Reel/ }).first(); await empty.click(); await page.waitForTimeout(1200);
+    await page.locator("#as").selectOption("story:" + arg1); await page.getByRole("button", { name: "Schedule it" }).click(); await page.waitForTimeout(2500); log("assigned", arg1, "to the first empty Reel slot");
+    await tab("Plan"); const chip = page.locator(".slot.scheduled", { hasText: /Reel/ }).first(); await chip.click(); await page.waitForTimeout(1500);
+    await page.getByRole("button", { name: /Post now/ }).click(); log("clicked Post now"); await page.waitForTimeout(270000); log("last dialog:", (dialogs.at(-1) || "").slice(0, 1200));
   } else if (what === "blog") {
     await tab("Blog"); await page.locator("#bpaste").fill(fs.readFileSync(arg1, "utf8")); if (arg2) await page.locator("#bhero").fill(arg2); await page.getByRole("button", { name: "Validate" }).click(); await page.waitForTimeout(4000); log("validate:", (await page.locator("#view").innerText()).replace(/\n/g, " ").slice(0, 700));
     await page.getByRole("button", { name: /Publish to the subdomain/ }).click(); await page.waitForTimeout(20000); log("publish dialog:", (dialogs.at(-1) || "").slice(0, 500));
