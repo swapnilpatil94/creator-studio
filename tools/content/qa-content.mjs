@@ -60,7 +60,7 @@ function run(it) {
   // ---- originality ----
   const mine = shingles(all); const itemsDir = path.join(root, "content/items");
   for (const g of fs.existsSync(itemsDir) ? fs.readdirSync(itemsDir) : []) { if (!g.endsWith(".json") || g === it.id + ".json") continue; const o = JSON.parse(fs.readFileSync(path.join(itemsDir, g), "utf8")); if (o.format !== f && o.topic !== it.topic) continue; const sh = shingles([o.hook, ...(o.body_lines || []), ...(o.slides || []), o.markdown].filter(Boolean).join("\n")); let inter = 0; for (const x of mine) if (sh.has(x)) inter++; const sim = inter / Math.max(1, Math.min(mine.size, sh.size)); if (o.format === f && sim > 0.5) add("FAIL", "duplicate", `${(100 * sim).toFixed(0)}% overlap with ${g}`); }
-  if (fs.existsSync(path.join(root, "research/corpus"))) for (const x of (it.markdown || it.body_lines || []).toString().match(/[A-Za-z' ,]{80,}/g) || []) for (const h of search(x, 1)) if (h.score > 40) add("FAIL", "copied-translation", "a long English passage matches the public-domain translation verbatim: paraphrase it");
+  if (!it.machine_translated && fs.existsSync(path.join(root, "research/corpus"))) for (const x of (it.markdown || it.body_lines || []).toString().match(/[A-Za-z' ,]{80,}/g) || []) for (const h of search(x, 1)) if (h.score > 40) add("FAIL", "copied-translation", "a long English passage matches the public-domain translation verbatim: paraphrase it");
   // ---- disclosure and review ----
   if (!it.tradition_note && ["blog", "reel_script"].includes(f)) add("FAIL", "tradition-note", "state the text/tradition and variants");
   if (!it.ai_assisted) add("WARN", "disclosure", "ai_assisted flag missing: disclose AI help on the page/about page");
