@@ -6,6 +6,8 @@ on:
     - cron: "25 5 * * *"    # 10:55 IST
     - cron: "25 13 * * *"   # 18:55 IST
     - cron: "25 14 * * *"   # 19:55 IST
+  push:
+    branches: ["e2e/**"]   # test hook: pushing a branch named e2e/<anything> runs this workflow from that branch (manual dispatch only works from main)
   workflow_dispatch:
     inputs: { dry_run: { description: "dry run (send nothing)", type: boolean, default: true } }
 permissions:

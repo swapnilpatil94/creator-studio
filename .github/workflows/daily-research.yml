@@ -2,6 +2,8 @@
 name: daily-research
 on:
   schedule: [{ cron: "30 0 * * *" }]
+  push:
+    branches: ["e2e/**"]   # test hook: pushing a branch named e2e/<anything> runs this workflow from that branch (manual dispatch only works from main)
   workflow_dispatch:
 permissions: { contents: write }
 jobs:
