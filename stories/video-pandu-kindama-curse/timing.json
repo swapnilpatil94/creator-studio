@@ -1,27 +1,79 @@
 {
  "item": "pandu-kindama-curse.carousel",
- "started": "2026-10-18T14:13:52.043Z",
+ "started": "2026-10-18T14:43:12.349Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
-   "status": "done",
-   "start": 1792332832043,
-   "detail": "36 beats, 542 words, by owner",
+   "status": "cached",
+   "start": 1792334592350,
+   "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792332832297,
+   "start": 1792334592351,
    "detail": "36 beats, 9 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
-   "status": "running",
-   "start": 1792332832300
+   "status": "cached",
+   "start": 1792334592355,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792334592355,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792334592356,
+   "detail": "3 new paintings of 19 scenes",
+   "seconds": 109
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792334700882,
+   "detail": "19 of 19 scenes layered, 0 picture beats fell back to type",
+   "seconds": 85
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792334785398,
+   "detail": "19 camera clips (12 rendered, 7 cached)",
+   "seconds": 18
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792334802928,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792334802993,
+   "detail": "QA all passed",
+   "seconds": 80
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792334882801,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 1
   }
  ],
- "total_seconds": 0
+ "total_seconds": 293,
+ "ended": "2026-10-18T14:48:03.421Z"
 }

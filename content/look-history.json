@@ -28,5 +28,15 @@
   "transition": "zoom",
   "captions": "pill",
   "seed": 690
+ },
+ {
+  "name": "video-pandu-kindama-curse",
+  "mood": "sorrow",
+  "hue": 194,
+  "sat": 1.17,
+  "motif": "ink",
+  "transition": "wipe",
+  "captions": "plain",
+  "seed": 490
  }
 ]

@@ -1,0 +1,72 @@
+{
+ "scene0": {
+  "subject": "A man in traditional Indian attire",
+  "action": "turning away from two women sitting on a low wooden bench",
+  "setting": "a serene courtyard with stone pillars and a small fountain in the center",
+  "lighting": "soft golden light filtering through the leaves of a nearby banyan tree",
+  "medium": "ravi-varma"
+ },
+ "scene2": {
+  "subject": "Kunti",
+  "action": "arriving with her sons and the twins of Madri",
+  "setting": "a sacred courtyard surrounded by ancient stone pillars and decorated with traditional Hindu motifs",
+  "lighting": "soft and golden, casting gentle shadows from the setting sun behind them",
+  "medium": "ravi-varma"
+ },
+ "scene3": {
+  "subject": "Kunti",
+  "action": "crying and lamenting with her hands clasped in sorrow",
+  "setting": "a royal chamber adorned with traditional Indian motifs and tapestries",
+  "lighting": "soft, golden light filtering through stained glass windows",
+  "medium": "ravi-varma"
+ },
+ "scene4": {
+  "subject": "Madrī",
+  "action": "climbing onto the pyre with her husband",
+  "setting": "a sacred funeral pyre surrounded by gathered family and priests in a traditional Indian cremation ground",
+  "lighting": "soft golden light from the setting sun casting long shadows across the ground",
+  "medium": "ravi-varma"
+ },
+ "scene7": {
+  "subject": "Vidura and Bhisma",
+  "action": "standing in deep discussion, Vidura seeking guidance from Bhisma",
+  "setting": "a sacred and ancient cremation ground surrounded by tall trees and spiritual symbols",
+  "lighting": "soft and golden light filtering through the canopy, casting gentle shadows on the ground",
+  "medium": "ravi-varma"
+ },
+ "scene8": {
+  "subject": "A sage in the form of a deer",
+  "action": "falling to the ground as an arrow pierces its body",
+  "setting": "a dense forest at the edge of a sacred grove",
+  "lighting": "dappled sunlight filtering through the trees, casting long shadows",
+  "medium": "ravi-varma"
+ },
+ "scene9": {
+  "subject": "Pandu",
+  "action": "clutches his chest in agony as he falls to his knees",
+  "setting": "a dimly lit forest clearing under a pale, moonlit sky",
+  "lighting": "soft, silvery light filtering through the trees, casting long shadows around him",
+  "medium": "ravi-varma"
+ },
+ "scene1": {
+  "subject": "Pandu and Madri",
+  "action": "Pandu touches Madri adorned with jewelry",
+  "setting": "royal chamber with golden pillars and tapestries",
+  "lighting": "soft golden glow",
+  "medium": "ravi-varma"
+ },
+ "scene5": {
+  "subject": "Dhritarashtra and Vidura",
+  "action": "discussing the royal funeral rites for Pandu and Madri",
+  "setting": "a grand hall adorned with traditional Indian motifs",
+  "lighting": "soft, golden glow from oil lamps",
+  "medium": "ravi-varma"
+ },
+ "scene6": {
+  "subject": "A sage with a long beard and flowing robes",
+  "action": "speaking with raised hands and a solemn expression",
+  "setting": "a sacred forest with ancient trees and a stone altar",
+  "lighting": "soft golden light filtering through leaves",
+  "medium": "ravi-varma"
+ }
+}

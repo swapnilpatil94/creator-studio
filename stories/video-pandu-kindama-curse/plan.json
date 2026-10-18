@@ -1,0 +1,444 @@
+[
+ {
+  "id": "v001",
+  "comp": "cinema",
+  "params": {
+   "img": "c1",
+   "move": "pull",
+   "label": "पांडु को किसने शाप दिया",
+   "reveal": "circle",
+   "fx": "drone_push_in"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "c2",
+   "move": "panL",
+   "label": "शिकार में पांडु का बाण",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "panR",
+   "label": "पांडु की दो पत्नियाँ",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "push",
+   "label": "पांडु शिकार पर निकले",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "pull",
+   "label": "मृग एक ऋषि थे",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "panL",
+   "label": "ऋषि ने रूप बदला",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "panR",
+   "label": "ऋषि ने कहा",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "pull",
+   "label": "ऋषि की कामना पूरी नहीं",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "push",
+   "label": "पांडु का चेहरा पीला पड़ गया",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "panL",
+   "label": "पांडु ने अपनी पत्नियों के पास जाना छोड़ दिया",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "push",
+   "label": "पांडु पीले पड़े",
+   "behind": "शाप का असर",
+   "reveal": "circle",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "निःसंतान के लिए परलोक के लोक नहीं"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "pull",
+   "label": "कुंती ने उत्तर दिया",
+   "behind": "संतान के लिए आग्रह",
+   "reveal": "diamond",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "stat",
+  "params": {
+   "value": 1,
+   "suffix": "जन्म",
+   "label": "युधिष्ठिर का जन्म",
+   "ring": 0.25
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "bars",
+  "params": {
+   "title": "पुत्रों का जन्म",
+   "items": [
+    {
+     "label": "भीम",
+     "value": 2
+    },
+    {
+     "label": "अर्जुन",
+     "value": 3
+    }
+   ]
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "panL",
+   "label": "माद्री को मंत्र दिया",
+   "behind": "संतान के लिए आह्वान",
+   "reveal": "wipe",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "dotword",
+  "params": {
+   "lines": [
+    "मंत्र दिया",
+    "माद्री को"
+   ]
+  },
+  "},{": "id",
+  "chapter": "ch1"
+ },
+ {
+  "id": "v018",
+  "comp": "iconlist",
+  "params": {
+   "title": "जन्म के दो पुत्र",
+   "items": [
+    {
+     "icon": "👶",
+     "text": "नकुल जन्मा"
+    },
+    {
+     "icon": "👶",
+     "text": "सहदेव जन्मा"
+    }
+   ]
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v019",
+  "comp": "stat",
+  "params": {
+   "value": 5,
+   "suffix": "पुत्र",
+   "label": "कुरु वंश के विस्तार के लिए",
+   "ring": 0.75
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v020",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "panR",
+   "label": "शाप फिर सच के सामने खड़ा होता है",
+   "behind": "शाप का अंतिम प्रभाव",
+   "reveal": "circle",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v021",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "pull",
+   "label": "माद्री के सामने पांडु की इच्छा जागी",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v022",
+  "comp": "fx",
+  "params": {
+   "fx": "handheld_breathing_shake",
+   "img": "scene1",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v023",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "pull",
+   "label": "माद्री अपने पति को चिता पर ले जाती हैं",
+   "reveal": "diamond",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v024",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "कुंती अपने बच्चों के साथ आती हैं",
+   "reveal": "wipe",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v025",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "माद्री ने पुकारा",
+    "कुंती, अकेली आओ"
+   ],
+   "style": "slam"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v026",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "कुंती विलाप करती हैं",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v027",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "माद्री ने उत्तर दिया राजा स्वयं को"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v028",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "panL",
+   "label": "ऋषि के शाप के बारे में बात करते हुए",
+   "reveal": "diamond",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v029",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_pull_out_reveal",
+   "img": "scene4",
+   "move": "panR"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v030",
+  "comp": "cinema",
+  "params": {
+   "img": "scene4",
+   "move": "panL",
+   "label": "माद्री अपने बच्चों को कुंती के साथ सौंपती हैं",
+   "reveal": "circle",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v031",
+  "comp": "cinema",
+  "params": {
+   "img": "scene5",
+   "move": "pull",
+   "label": "धृतराष्ट्र ने विदुर से कहा",
+   "behind": "पांडु का अंतिम संस्कार",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v032",
+  "comp": "cinema",
+  "params": {
+   "img": "scene6",
+   "move": "panR",
+   "label": "पांडु के लिए शोक मत करो",
+   "behind": "पाँच वीर पुत्र छोड़ गए",
+   "reveal": "diamond",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v033",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "label": "विदुर ने भीष्म से सलाह करके",
+   "behind": "एक पवित्र स्थान चुना",
+   "reveal": "wipe",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v034",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "panL",
+   "label": "शाप किसने दिया?",
+   "behind": "एक ऋषि ने",
+   "reveal": "circle",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v035",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "pull",
+   "label": "शाप याद होते हुए भी पांडु स्वयं को रोक न सके",
+   "behind": "इस कथा का सबसे करुण मोड़",
+   "reveal": "diamond",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v036",
+  "comp": "iconlist",
+  "params": {
+   "title": "कार्यवाहक बनें",
+   "items": [
+    {
+     "icon": "✨",
+     "text": "सेव करें"
+    },
+    {
+     "icon": "📱",
+     "text": "फ़ॉलो करें"
+    }
+   ]
+  },
+  "chapter": "ch1"
+ }
+]

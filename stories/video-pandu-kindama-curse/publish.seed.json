@@ -1,0 +1,45 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "पांडु को किसने शाप दिया, और पुत्र कैसे हुए? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "पांडु को किसने शाप दिया, और उनके पाँच पुत्र फिर कैसे जन्मे? यह कथा एक शिकार से शुरू होती है, और एक ऐसी घटना पर पहुँचती है जो टल नहीं सकी।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#महाभारत",
+  "#पांडव"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "महाभारत|कथा",
+ "extraTags": [
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "pandu-kindama-curse"
+ ],
+ "primaryKeyword": "पांडु",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?"
+ }
+}

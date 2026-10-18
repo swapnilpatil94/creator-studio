@@ -1,0 +1,64 @@
+{
+ "fixed": [
+  "v012: kinetic trimmed to 7 words",
+  "v027: kinetic trimmed to 7 words",
+  "v001: painting beat had no listed effect -> drone_push_in",
+  "v002: painting beat had no listed effect -> 2.5d_parallax",
+  "v003: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v004: painting beat had no listed effect -> crane_up_reveal",
+  "v005: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v006: painting beat had no listed effect -> puppet_warp_breathing",
+  "v007: painting beat had no listed effect -> drone_orbit_180",
+  "v008: painting beat had no listed effect -> matte_painting_extension",
+  "v009: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v010: painting beat had no listed effect -> puppet_warp_breathing",
+  "v011: painting beat had no listed effect -> drone_orbit_180",
+  "v013: painting beat had no listed effect -> 2.5d_parallax",
+  "v016: painting beat had no listed effect -> matte_painting_extension",
+  "v020: painting beat had no listed effect -> crane_up_reveal",
+  "v021: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v023: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v024: painting beat had no listed effect -> crane_up_reveal",
+  "v026: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v028: painting beat had no listed effect -> matte_painting_extension",
+  "v030: painting beat had no listed effect -> crane_up_reveal",
+  "v031: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v032: painting beat had no listed effect -> puppet_warp_breathing",
+  "v033: painting beat had no listed effect -> 2.5d_parallax",
+  "v034: painting beat had no listed effect -> drone_orbit_180",
+  "v035: painting beat had no listed effect -> crane_up_reveal"
+ ],
+ "warnings": [
+  "13 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "drone_push_in": 1,
+   "2.5d_parallax": 3,
+   "kinetography_cinemagraph": 2,
+   "crane_up_reveal": 5,
+   "parallax_occlusion_3d": 5,
+   "puppet_warp_breathing": 3,
+   "drone_orbit_180": 3,
+   "matte_painting_extension": 3,
+   "handheld_breathing_shake": 1,
+   "drone_pull_out_reveal": 1
+  },
+  "fx_distinct": 10,
+  "scenes": 10,
+  "assets_used": 9,
+  "comps": {
+   "cinema": 25,
+   "kinetic": 3,
+   "stat": 2,
+   "bars": 1,
+   "dotword": 1,
+   "iconlist": 2,
+   "fx": 2
+  },
+  "beats": 36,
+  "windows_low_variety": 13
+ },
+ "writer": "ollama:qwen3:14b",
+ "from_rules": 0
+}
