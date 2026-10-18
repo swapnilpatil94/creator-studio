@@ -1,0 +1,56 @@
+{
+ "1": {
+  "prompt": "A young prince Devavrata in royal attire with a bow on his back and folded hands, standing in front of assembled kings in a palace hall at dusk, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, carved pillars and brass lamps, warm lamp-light with soft shadows, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1001,
+  "secs": 58,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "2": {
+  "prompt": "King Shantanu in royal attire gazes across a river at a boat-woman, the river glowing at sunset, her small boat drifting, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, tall trees along the bank, warm low sunset light, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1002,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "3": {
+  "prompt": "An elderly fisherman chief with a white beard sits in a riverside hut, speaking gravely, one hand raised, a worried look, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, nets and wooden boats beside the river, soft afternoon light through thatch, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1003,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "4": {
+  "prompt": "A young prince and an elderly fisherman chief face each other, a quiet negotiation at a river boat landing, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, wooden boats and reeds, golden evening light, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1004,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "5": {
+  "prompt": "A young prince places his gold crown on a flat stone, renouncing the throne while kings watch in silence, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a royal courtyard under a pale sky, clear soft dawn light, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1005,
+  "secs": 54,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "6": {
+  "prompt": "A fisherman chief raises one finger with a worried expression, the young prince listening calmly with arms folded, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a boat landing at dusk, warm lantern light, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1006,
+  "secs": 54,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "7": {
+  "prompt": "A young prince raises his right hand toward the sky, taking a solemn vow, a sacred fire burning before him, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, an assembly of kings and sages, dramatic firelight and golden dusk glow, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1007,
+  "secs": 54,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "8": {
+  "prompt": "Celestial beings in saffron and gold shower flowers from the clouds, over a young prince standing with his hand raised, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a sky of glowing clouds above a river bank, luminous golden light from above, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1008,
+  "secs": 54,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "9": {
+  "prompt": "A solitary warrior prince sits at the foot of a great banyan tree at dusk, a bow resting beside him, his gaze distant and thoughtful, oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent, a quiet riverbank under a darkening sky, low amber light with a deep blue background, subject in the upper two thirds of a vertical frame, calm darker lower third.",
+  "seed": 1009,
+  "secs": 56,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ }
+}

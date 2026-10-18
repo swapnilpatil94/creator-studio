@@ -6,8 +6,9 @@
 // Polite: 1 request/second, cached on disk. research/corpus and research/index.json are not committed (CI rebuilds them, cached).
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), dir = path.join(root, "research/corpus"), idxFile = path.join(root, "research/index.json");
+const roman = n => { let r = ""; for (const [v, c] of [[100, "C"], [90, "XC"], [50, "L"], [40, "XL"], [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"]]) while (n >= v) { r += c; n -= v; } return r; };
 const SOURCES = {
-  "mahabharata-sabha": { title: n => `The_Mahabharata/Book_2:_Sabha_Parva/Section_${n}`, label: n => `Mahabharata, Sabha Parva, Section ${n} (Ganguli tr.)` },
+  "mahabharata-sabha": { title: n => `The_Mahabharata/Book_2:_Sabha_Parva/Section_${roman(n)}`, label: n => `Mahabharata, Sabha Parva, Section ${n} (Ganguli tr.)` },
   "mahabharata-adi": { title: n => `The_Mahabharata/Book_1:_Adi_Parva/Section_${n}`, label: n => `Mahabharata, Adi Parva, Section ${n} (Ganguli tr.)`, strip: /^[\s\S]*?Section [LXVI]+\s*\.?\s*(\([^)]*\))?/ },
 };
 // prefix sources: every subpage under a Wikisource title prefix (Griffith's Ramayana, one canto per page)
