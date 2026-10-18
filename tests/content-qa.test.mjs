@@ -6,6 +6,9 @@ const codes = r => r.filter(x => x.level === "FAIL").map(x => x.code);
 const pdf = codes(run(J("content/fixtures/pdf-original-ganga.json")));
 for (const c of ["fake-stat", "engagement-bait", "hashtags", "hook-length", "claim-unverified"]) must("planning-doc example is rejected for " + c, pdf.includes(c), pdf.join(","));
 for (const f of fs.readdirSync(path.join(root, "content/items")).filter(x => x.endsWith(".json"))) { const r = run(J("content/items/" + f)); must("exemplar passes: " + f, codes(r).length === 0, codes(r).join(",")); }
+const badDraft = J("content/fixtures/local-model-bad-draft.json"), badCodes = codes(run(badDraft));
+must("local-model draft with ungrammatical Hindi is rejected", badCodes.includes("hindi-grammar"), badCodes.join(","));
+must("local-model draft with a hallucinated citation line is rejected", badCodes.includes("source-line-mismatch") || badCodes.includes("claim-coverage"), badCodes.join(","));
 const base = J("content/items/ganga-seven-sons.fb_text.json");
 must("belief stated as fact is rejected", codes(run({ ...base, id: "t1", body_lines: ["हनुमान जी आज भी जीवित हैं और लोगों ने उन्हें देखा है।", ...base.body_lines.slice(1)] })).includes("belief-as-fact"));
 must("belief framed as मान्यता passes that rule", !codes(run({ ...base, id: "t2", body_lines: ["मान्यता है कि हनुमान जी आज भी जीवित हैं।", ...base.body_lines.slice(1)] })).includes("belief-as-fact"));

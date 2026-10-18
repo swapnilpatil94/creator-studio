@@ -27,11 +27,14 @@ Owner of the policy: the manager (editor-in-chief). Enforced by code wherever a 
 **Formats** `hook-length` (3-10 words) · `hook-gap` (question word or number) · `length` (FB text ≤ 900 chars) · `link` (no link inside a Facebook post: reach; the blog link goes in the first comment) · `hashtags` (≤3 FB text, ≤5 IG/carousel) · `slides` (5-10; Instagram's maximum is 10) · `slide-length` (hook ≤10 words, other slides ≤14) · `blog-length` (≥700 words), `blog-structure` (H1, ≥3 H2), `meta-description` (≤160), `tradition-note`, `faq` · `source-line` (every story post).
 **Honesty** `fake-stat` · `hype` (unsupported superlatives) · `belief-as-fact` · `sensitive` (needs `human_approved`) · `trivialise` (Draupadi/workplace-type equations) · `joke-frame`.
 **Claims** `claim-unverified` (the cited section does not surface for the claim in retrieval) · `claim-source` · `claim-status` · `unchecked-citation` · `label` (tradition/variant/interpretation must be labelled in the text).
-**Writing** `ai-slop` (stock AI phrases such as "आइए जानते हैं", "इस लेख में हम", "आज के डिजिटल युग में") · `repetition` · `emoji` (>3) · `devanagari` (<60% Devanagari letters).
+**Claims also checked for coverage:** `claim-coverage` (the distinctive words of the claim's English paraphrase must occur in the cited section) and `source-line-mismatch` (every section number in the visible source line must be backed by a verified claim; this caught a model draft that cited sections it never used).
+**Writing** `hindi-grammar` (known model slips such as "कौन ने"), `llm-draft` (WARN: written by a local model; needs a full human rewrite), `ai-slop` (stock AI phrases such as "आइए जानते हैं", "इस लेख में हम", "आज के डिजिटल युग में") · `repetition` · `emoji` (>3) · `devanagari` (<60% Devanagari letters).
 **Bait** `engagement-bait`: "comment WORD", tag-bait, share-or-else, blessing-for-sharing.
 **Originality** `duplicate` (>50% six-word-shingle overlap with another item in the same format) · `copied-translation` (a long English passage matching the corpus verbatim).
 **Disclosure** `ai-image-disclosure` (slide-1 image must carry `ai_art_disclosed`) · `disclosure` (`ai_assisted` flag).
 The rules are tested against the planning PDF's own example, which must fail, and against the corrected exemplars, which must pass (`node tests/content-qa.test.mjs`).
+
+**Lesson from the first local-model draft (qwen3:14b, 2026-10-18):** it passed retrieval but contained wrong Hindi ("कौन ने"), a hallucinated detail (a tiger instead of a deer-form rishi) and citations to sections it never used. Local drafts are therefore labelled `writer: ollama:...`, get a WARN, and must be rewritten by a human; for quality use the Claude API writer. The failing draft is kept as `content/fixtures/local-model-bad-draft.json` and the test suite requires the gate to reject it.
 
 **Known limits of the machine check** (so nobody over-trusts a green tick): retrieval proves the cited section *contains the topic words of the claim*, not that the sentence is a faithful paraphrase; it covers only the texts in the corpus (Mahabharata Adi Parva today); it does not judge tone, taste or theology. Hence gate 4.
 
