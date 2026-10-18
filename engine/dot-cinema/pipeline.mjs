@@ -31,7 +31,7 @@ if (TYPE === "html") {
   ev("validate", "ok", vj.warnings + " warnings auto-handled; scene " + (vj.stats.duration || "?") + "s vs film " + sceneDur.toFixed(1) + "s" + (Math.abs(TS - 1) > 0.05 ? " (timeline time-scaled x" + TS.toFixed(2) + ")" : ""));
 } else {
   const fp = sha(P(cfg.scene), P(cfg.segments), ...libFiles);
-  if (force || state.build !== fp || !fs.existsSync(html)) { const r = run("build", "node", [path.join(here, "build.mjs"), P(cfg.scene), html, P(cfg.segments), ...(cfg.format ? [cfg.format] : [])], here); if (r.status !== 0) fail("build", r); state.build = fp; ev("build", "ok"); } else ev("build", "cached");
+  if (force || state.build !== fp || !fs.existsSync(html)) { const r = run("build", "node", [path.join(here, "build.mjs"), P(cfg.scene), html, P(cfg.segments), cfg.format || "1080x1920", ...(cfg.overlay ? ["overlay"] : [])], here); if (r.status !== 0) fail("build", r); state.build = fp; ev("build", "ok"); } else ev("build", "cached");
 }
 // ---- 2. visual QA with automatic repair ----
 if (cfg.visualQa !== false) {

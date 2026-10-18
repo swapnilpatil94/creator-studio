@@ -44,6 +44,48 @@
    "en": "Dyau shall dwell on earth for length of time child named Gangeya and Deva-brata",
    "status": "verified",
    "source": "mahabharata-adi:99"
+  },
+  {
+   "text": "शांतनु पत्नी के रूप-गुण और सेवा से इतने प्रसन्न थे कि महीने, ऋतुएँ और साल बीतते गए और उन्हें पता ही नहीं चला।",
+   "en": "months seasons and years rolled away without his being conscious of them",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "गंगा ने कहा था कि जिस क्षण राजा ने दख़ल दिया या कठोर बात कही, वे उन्हें छोड़ देंगी।",
+   "en": "I shall certainly leave thee the moment thou interferest with me or speakest to me an unkind word",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "हर बार जन्म के बाद गंगा बच्चे को नदी में डालतीं और कहतीं कि यह तुम्हारे भले के लिए है।",
+   "en": "thrown into the river by Ganga saying This is for thy good",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "शांतनु ने कुछ नहीं कहा, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी।",
+   "en": "he spoke not a word about it lest his wife should leave him",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "गंगा ने बताया कि वे जह्नु की पुत्री गंगा हैं।",
+   "en": "I am Ganga the daughter of Janhu",
+   "status": "verified",
+   "source": "mahabharata-adi:98"
+  },
+  {
+   "text": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी।",
+   "en": "Dyau stole that cow along with his brothers Prithu and others Nandini",
+   "status": "verified",
+   "source": "mahabharata-adi:99"
+  },
+  {
+   "text": "वशिष्ठ ने शाप दिया कि वसु पृथ्वी पर जन्म लेंगे।",
+   "en": "Because the Vasus have stolen my cow therefore shall they certainly be born on earth",
+   "status": "verified",
+   "source": "mahabharata-adi:99"
   }
  ],
  "ai_assisted": true,
@@ -153,5 +195,42 @@
  "art_style": "full-bleed",
  "disclosure_text": "चित्र: AI-निर्मित",
  "reviewed": "2026-10-18",
- "reviewed_by": "claude (e2e test run authorised by the owner on 2026-10-18; owner to re-check)"
+ "reviewed_by": "claude (e2e test run authorised by the owner on 2026-10-18; owner to re-check)",
+ "narration": [
+  {
+   "text": "गंगा ने अपने सात पुत्रों को नदी में क्यों बहाया? महाभारत में इसका जवाब एक शाप, एक गाय और एक वचन में छिपा है।",
+   "intent": "hook"
+  },
+  {
+   "text": "राजा शांतनु ने गंगा से विवाह किया, और सुख में महीने, ऋतुएँ, साल बीतते गए।"
+  },
+  {
+   "text": "पर गंगा ने पहले ही शर्त रखी थी: राजा उनके किसी काम में दख़ल नहीं देंगे। जिस दिन टोका, वे चली जाएँगी।"
+  },
+  {
+   "text": "आठ तेजस्वी संतानें हुईं। लेकिन हर बार जन्म के तुरंत बाद, गंगा बच्चे को नदी में डाल देतीं, और कहतीं, यह तुम्हारे भले के लिए है।"
+  },
+  {
+   "text": "सात बार ऐसा हुआ। शांतनु चुप रहे, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी।",
+   "intent": "tense"
+  },
+  {
+   "text": "आठवें बच्चे पर शांतनु से रहा नहीं गया। उन्होंने कहा, इसे मत मारो! तुम कौन हो, और अपनी ही संतानों को क्यों मार रही हो?",
+   "intent": "tense"
+  },
+  {
+   "text": "तब गंगा ने सच बताया। ये आठों बच्चे आठ वसु थे, जिन्हें वशिष्ठ के शाप से मनुष्य बनना पड़ा था।",
+   "intent": "reveal"
+  },
+  {
+   "text": "वसुओं ने वशिष्ठ की गाय नंदिनी चुरा ली थी। ऋषि बोले: एक वर्ष में सब मुक्त होंगे, पर द्यौ को लंबे समय तक पृथ्वी पर रहना होगा।"
+  },
+  {
+   "text": "वसुओं ने गंगा से ही माँगा था कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए। इसलिए सात को मुक्ति मिली, और आठवाँ बालक देवव्रत बना।",
+   "intent": "reflective"
+  },
+  {
+   "text": "यही है गंगा की कथा। पसंद आई हो तो इसे सेव कर लीजिए, और अगली कथा के लिए कथाया को फ़ॉलो कीजिए।"
+  }
+ ]
 }

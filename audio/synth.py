@@ -57,9 +57,10 @@ def take(voice, spoken, p):
 def align(wav, segs):
     import whisperx
     model, meta = whisperx.load_align_model(language_code="hi", device="cpu"); audio = whisperx.load_audio(str(wav))
-    res = whisperx.align([dict(start=s["start_seconds"], end=s["end_seconds"], text=s["text"]) for s in segs], model, meta, audio, "cpu", return_char_alignments=False)
-    for s, a in zip(segs, res["segments"]):
-        s["words"] = [dict(word=w["word"], start=round(float(w["start"]), 3), end=round(float(w["end"]), 3), score=round(float(w.get("score", 0)), 3)) for w in a.get("words", []) if "start" in w and "end" in w]
+    # one segment at a time: whisperx splits long texts into several output segments, and zipping those with our beats shifted every later beat's words (found 2026-10-18)
+    for s in segs:
+        res = whisperx.align([dict(start=s["start_seconds"], end=s["end_seconds"], text=s["text"])], model, meta, audio, "cpu", return_char_alignments=False)
+        s["words"] = [dict(word=w["word"], start=round(float(w["start"]), 3), end=round(float(w["end"]), 3), score=round(float(w.get("score", 0)), 3)) for a in res["segments"] for w in a.get("words", []) if "start" in w and "end" in w]
     return segs
 def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voice=None):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8")); out = sd / "narration" / "voice"; out.mkdir(parents=True, exist_ok=True)

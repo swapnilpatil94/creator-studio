@@ -1,0 +1,46 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "गंगा ने सात पुत्रों को क्यों बहाया? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "गंगा ने अपने सात पुत्रों को नदी में क्यों बहाया? महाभारत में इसका जवाब एक शाप, एक गाय और एक वचन में छिपा है। राजा शांतनु ने गंगा से विवाह किया, और सुख में महीने, ऋतुएँ, साल बीतते गए।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#गंगाकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "महाभारत|कथा",
+ "extraTags": [
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame of the reel",
+  "textOnArt": {
+   "headline": [
+    "गंगा ने सात पुत्रों को क्यों बहाया?"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "ganga-seven-sons"
+ ],
+ "primaryKeyword": "गंगा",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "गंगा ने सात पुत्रों को क्यों बहाया?"
+ }
+}

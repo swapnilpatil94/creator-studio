@@ -1,0 +1,504 @@
+{
+ "story": "reel-ganga-seven-sons",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 226,
+ "duration_s": 69.89,
+ "speech_words_per_s": 3.39,
+ "phrases": [
+  {
+   "id": "r01.1",
+   "text": "गंगा ने अपने सात पुत्रों को नदी में क्यों बहाया?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 2.986,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "r01",
+   "pause_after": 0.08,
+   "spoken": "गंगा ने अपने सात पुत्रों को नदी में क्यों बहाया?",
+   "raw_dur_s": 3.72,
+   "checks": [
+    {
+     "seed": 59305,
+     "rate": 2.69,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r01.2",
+   "text": "महाभारत में इसका जवाब एक शाप, एक गाय और एक वचन में छिपा है।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 3.066,
+   "end": 6.863,
+   "tries": 1,
+   "words_per_s": 3.69,
+   "beat": "r01",
+   "pause_after": 0.24,
+   "spoken": "महाभारत में इसका जवाब एक शाप, एक गाय और एक वचन में छिपा है.",
+   "raw_dur_s": 4.76,
+   "checks": [
+    {
+     "seed": 39314,
+     "rate": 2.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r02.1",
+   "text": "राजा शांतनु ने गंगा से विवाह किया, और सुख में महीने, ऋतुएँ, साल बीतते गए।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 7.103,
+   "end": 11.434,
+   "tries": 3,
+   "words_per_s": 3.46,
+   "beat": "r02",
+   "pause_after": 0.3,
+   "spoken": "राजा शांतनु ने गंगा से विवाह किया, और सुख में महीने, ऋतुएँ, साल बीतते गए.",
+   "raw_dur_s": 5.43,
+   "checks": [
+    {
+     "seed": 91796,
+     "rate": 2.11,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 99715,
+     "rate": 2.19,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 107634,
+     "rate": 2.76,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r03.1",
+   "text": "पर गंगा ने पहले ही शर्त रखी थी: राजा उनके किसी काम में दख़ल नहीं देंगे।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 11.734,
+   "end": 15.835,
+   "tries": 2,
+   "words_per_s": 3.9,
+   "beat": "r03",
+   "pause_after": 0.12,
+   "spoken": "पर गंगा ने पहले ही शर्त रखी थी: राजा उनके किसी काम में दख़ल नहीं देंगे.",
+   "raw_dur_s": 5.12,
+   "checks": [
+    {
+     "seed": 14837,
+     "rate": 2.76,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 22756,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r03.2",
+   "text": "जिस दिन टोका, वे चली जाएँगी।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 15.955,
+   "end": 18.204,
+   "tries": 1,
+   "words_per_s": 2.67,
+   "beat": "r03",
+   "pause_after": 0.3,
+   "spoken": "जिस दिन टोका, वे चली जाएँगी.",
+   "raw_dur_s": 2.81,
+   "checks": [
+    {
+     "seed": 40143,
+     "rate": 2.14,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r04.1",
+   "text": "आठ तेजस्वी संतानें हुईं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 18.504,
+   "end": 20.118,
+   "tries": 1,
+   "words_per_s": 2.48,
+   "beat": "r04",
+   "pause_after": 0.07,
+   "spoken": "आठ तेजस्वी संतानें हुईं.",
+   "raw_dur_s": 2.01,
+   "checks": [
+    {
+     "seed": 80123,
+     "rate": 1.99,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r04.2",
+   "text": "लेकिन हर बार जन्म के तुरंत बाद, गंगा बच्चे को नदी में डाल देतीं, और कहतीं, यह तुम्हारे भले के लिए है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 20.188,
+   "end": 26.211,
+   "tries": 2,
+   "words_per_s": 3.65,
+   "beat": "r04",
+   "pause_after": 0.22,
+   "spoken": "लेकिन हर बार जन्म के तुरंत बाद, गंगा बच्चे को नदी में डाल देतीं, और कहतीं, यह तुम्हारे भले के लिए है.",
+   "raw_dur_s": 7.53,
+   "checks": [
+    {
+     "seed": 56807,
+     "rate": 2.64,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 64726,
+     "rate": 2.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r05.1",
+   "text": "सात बार ऐसा हुआ।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 26.431,
+   "end": 27.861,
+   "tries": 1,
+   "words_per_s": 2.8,
+   "beat": "r05",
+   "pause_after": 0.07,
+   "spoken": "सात बार ऐसा हुआ.",
+   "raw_dur_s": 1.79,
+   "checks": [
+    {
+     "seed": 63395,
+     "rate": 2.23,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r05.2",
+   "text": "शांतनु चुप रहे, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 27.931,
+   "end": 31.334,
+   "tries": 1,
+   "words_per_s": 3.53,
+   "beat": "r05",
+   "pause_after": 0.22,
+   "spoken": "शांतनु चुप रहे, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी.",
+   "raw_dur_s": 4.24,
+   "checks": [
+    {
+     "seed": 90101,
+     "rate": 2.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r06.1",
+   "text": "आठवें बच्चे पर शांतनु से रहा नहीं गया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 31.554,
+   "end": 33.896,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "r06",
+   "pause_after": 0.07,
+   "spoken": "आठवें बच्चे पर शांतनु से रहा नहीं गया.",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 12894,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r06.2",
+   "text": "उन्होंने कहा, इसे मत मारो!",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 33.966,
+   "end": 35.671,
+   "tries": 2,
+   "words_per_s": 2.93,
+   "beat": "r06",
+   "pause_after": 0.07,
+   "spoken": "उन्होंने कहा, इसे मत मारो!",
+   "raw_dur_s": 2.13,
+   "checks": [
+    {
+     "seed": 25653,
+     "rate": 1.46,
+     "problems": [
+      "raw pace 1.5 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 33572,
+     "rate": 2.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r06.3",
+   "text": "तुम कौन हो, और अपनी ही संतानों को क्यों मार रही हो?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 35.741,
+   "end": 38.233,
+   "tries": 1,
+   "words_per_s": 4.82,
+   "beat": "r06",
+   "pause_after": 0.3,
+   "spoken": "तुम कौन हो, और अपनी ही संतानों को क्यों मार रही हो?",
+   "raw_dur_s": 3.14,
+   "checks": [
+    {
+     "seed": 97986,
+     "rate": 3.82,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r07.1",
+   "text": "तब गंगा ने सच बताया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 38.533,
+   "end": 40.202,
+   "tries": 1,
+   "words_per_s": 3.0,
+   "beat": "r07",
+   "pause_after": 0.23,
+   "spoken": "तब गंगा ने सच बताया.",
+   "raw_dur_s": 1.87,
+   "checks": [
+    {
+     "seed": 28374,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r07.2",
+   "text": "ये आठों बच्चे आठ वसु थे, जिन्हें वशिष्ठ के शाप से मनुष्य बनना पड़ा था।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 40.432,
+   "end": 45.3,
+   "tries": 2,
+   "words_per_s": 3.08,
+   "beat": "r07",
+   "pause_after": 0.48,
+   "spoken": "ये आठों बच्चे आठ वसु थे, जिन्हें वशिष्ठ के शाप से मनुष्य बनना पड़ा था.",
+   "raw_dur_s": 5.41,
+   "checks": [
+    {
+     "seed": 32155,
+     "rate": 2.43,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 40074,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r08.1",
+   "text": "वसुओं ने वशिष्ठ की गाय नंदिनी चुरा ली थी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 45.78,
+   "end": 48.707,
+   "tries": 1,
+   "words_per_s": 3.07,
+   "beat": "r08",
+   "pause_after": 0.23,
+   "spoken": "वसुओं ने वशिष्ठ की गाय नंदिनी चुरा ली थी.",
+   "raw_dur_s": 3.25,
+   "checks": [
+    {
+     "seed": 45144,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r08.2",
+   "text": "ऋषि बोले: एक वर्ष में सब मुक्त होंगे, पर द्यौ को लंबे समय तक पृथ्वी पर रहना होगा।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 48.937,
+   "end": 54.589,
+   "tries": 2,
+   "words_per_s": 3.19,
+   "beat": "r08",
+   "pause_after": 0.48,
+   "spoken": "ऋषि बोले: एक वर्ष में सब मुक्त होंगे, पर द्यौ को लंबे समय तक पृथ्वी पर रहना होगा.",
+   "raw_dur_s": 6.28,
+   "checks": [
+    {
+     "seed": 98246,
+     "rate": 2.74,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 106165,
+     "rate": 2.87,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r09.1",
+   "text": "वसुओं ने गंगा से ही माँगा था कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 55.069,
+   "end": 60.316,
+   "tries": 1,
+   "words_per_s": 3.62,
+   "beat": "r09",
+   "pause_after": 0.17,
+   "spoken": "वसुओं ने गंगा से ही माँगा था कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए.",
+   "raw_dur_s": 5.89,
+   "checks": [
+    {
+     "seed": 61188,
+     "rate": 3.22,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r09.2",
+   "text": "इसलिए सात को मुक्ति मिली, और आठवाँ बालक देवव्रत बना।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 60.486,
+   "end": 63.699,
+   "tries": 1,
+   "words_per_s": 3.11,
+   "beat": "r09",
+   "pause_after": 0.38,
+   "spoken": "इसलिए सात को मुक्ति मिली, और आठवाँ बालक देवव्रत बना.",
+   "raw_dur_s": 3.63,
+   "checks": [
+    {
+     "seed": 25438,
+     "rate": 2.76,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r10.1",
+   "text": "यही है गंगा की कथा।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 64.079,
+   "end": 65.372,
+   "tries": 1,
+   "words_per_s": 3.87,
+   "beat": "r10",
+   "pause_after": 0.07,
+   "spoken": "यही है गंगा की कथा.",
+   "raw_dur_s": 1.6,
+   "checks": [
+    {
+     "seed": 22030,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "r10.2",
+   "text": "पसंद आई हो तो इसे सेव कर लीजिए, और अगली कथा के लिए कथाया को फ़ॉलो कीजिए।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 65.442,
+   "end": 69.589,
+   "tries": 1,
+   "words_per_s": 4.1,
+   "beat": "r10",
+   "pause_after": 0.3,
+   "spoken": "पसंद आई हो तो इसे सेव कर लीजिए, और अगली कथा के लिए कथाया को फ़ॉलो कीजिए.",
+   "raw_dur_s": 5.18,
+   "checks": [
+    {
+     "seed": 14047,
+     "rate": 3.28,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

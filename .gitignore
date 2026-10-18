@@ -21,3 +21,5 @@ blog/dist/
 content/out/
 stories/*/narration/voice/pre_post.wav
 content/art/*/prompts.json.bak
+stories/reel-*/assets/*.stip
+stories/reel-*/narration/voice/*.wav

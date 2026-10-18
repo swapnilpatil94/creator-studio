@@ -1,0 +1,281 @@
+{
+ "file": "/Users/swapnil/creator-studio/stories/reel-ganga-seven-sons/narration/voice/narration.wav",
+ "duration_s": 69.889,
+ "peak_dbfs": -2.0,
+ "clipped_samples": 0,
+ "lufs_integrated": -18.24,
+ "lra_lu": 2.0,
+ "true_peak_dbfs": -2.0,
+ "noise_floor_dbfs": -58.5,
+ "crest_db": 14.3,
+ "speech_ratio": 0.865,
+ "pauses": [
+  {
+   "at": 6.83,
+   "len": 0.3
+  },
+  {
+   "at": 11.43,
+   "len": 0.33
+  },
+  {
+   "at": 17.75,
+   "len": 0.75
+  },
+  {
+   "at": 26.15,
+   "len": 0.3
+  },
+  {
+   "at": 38.23,
+   "len": 0.33
+  },
+  {
+   "at": 45.28,
+   "len": 0.53
+  },
+  {
+   "at": 48.65,
+   "len": 0.3
+  },
+  {
+   "at": 54.55,
+   "len": 0.55
+  },
+  {
+   "at": 63.68,
+   "len": 0.4
+  }
+ ],
+ "longest_pause_s": 0.75,
+ "pauses_over_1_2s": [],
+ "click_events": 13,
+ "voiced_ratio": 0.707,
+ "pitch": {
+  "mean_hz": 112.27,
+  "std_st": 3.34,
+  "range_st": 9.8
+ },
+ "beats": [
+  {
+   "id": "r01",
+   "start": 0.0,
+   "end": 6.86,
+   "words": 24,
+   "words_per_s": 3.5,
+   "chars_per_s": 12.4,
+   "rms_dbfs": -16.1,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 111.3,
+   "f0_std_st": 3.0,
+   "f0_range_st": 9.95,
+   "energy_std_db": 7.15
+  },
+  {
+   "id": "r02",
+   "start": 7.1,
+   "end": 11.43,
+   "words": 15,
+   "words_per_s": 3.46,
+   "chars_per_s": 13.6,
+   "rms_dbfs": -16.5,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 117.0,
+   "f0_std_st": 2.7,
+   "f0_range_st": 9.48,
+   "energy_std_db": 6.31
+  },
+  {
+   "id": "r03",
+   "start": 11.73,
+   "end": 18.2,
+   "words": 22,
+   "words_per_s": 3.4,
+   "chars_per_s": 12.2,
+   "rms_dbfs": -16.3,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 114.4,
+   "f0_std_st": 4.68,
+   "f0_range_st": 11.7,
+   "energy_std_db": 6.82
+  },
+  {
+   "id": "r04",
+   "start": 18.5,
+   "end": 26.21,
+   "words": 26,
+   "words_per_s": 3.37,
+   "chars_per_s": 13.1,
+   "rms_dbfs": -16.5,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 107.5,
+   "f0_std_st": 2.58,
+   "f0_range_st": 9.32,
+   "energy_std_db": 6.61
+  },
+  {
+   "id": "r05",
+   "start": 26.43,
+   "end": 31.33,
+   "words": 16,
+   "words_per_s": 3.26,
+   "chars_per_s": 13.3,
+   "rms_dbfs": -16.1,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 111.8,
+   "f0_std_st": 3.04,
+   "f0_range_st": 10.98,
+   "energy_std_db": 7.32
+  },
+  {
+   "id": "r06",
+   "start": 31.55,
+   "end": 38.23,
+   "words": 25,
+   "words_per_s": 3.74,
+   "chars_per_s": 13.9,
+   "rms_dbfs": -16.1,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 109.4,
+   "f0_std_st": 2.53,
+   "f0_range_st": 7.75,
+   "energy_std_db": 6.33
+  },
+  {
+   "id": "r07",
+   "start": 38.53,
+   "end": 45.3,
+   "words": 20,
+   "words_per_s": 2.96,
+   "chars_per_s": 10.6,
+   "rms_dbfs": -16.0,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 113.9,
+   "f0_std_st": 2.8,
+   "f0_range_st": 8.7,
+   "energy_std_db": 7.69
+  },
+  {
+   "id": "r08",
+   "start": 45.78,
+   "end": 54.59,
+   "words": 27,
+   "words_per_s": 3.07,
+   "chars_per_s": 11.0,
+   "rms_dbfs": -15.9,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 125.0,
+   "f0_std_st": 4.52,
+   "f0_range_st": 19.0,
+   "energy_std_db": 7.71
+  },
+  {
+   "id": "r09",
+   "start": 55.07,
+   "end": 63.7,
+   "words": 29,
+   "words_per_s": 3.36,
+   "chars_per_s": 12.5,
+   "rms_dbfs": -17.0,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 104.8,
+   "f0_std_st": 2.17,
+   "f0_range_st": 7.5,
+   "energy_std_db": 6.1
+  },
+  {
+   "id": "r10",
+   "start": 64.08,
+   "end": 69.59,
+   "words": 22,
+   "words_per_s": 3.99,
+   "chars_per_s": 12.9,
+   "rms_dbfs": -16.3,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 107.7,
+   "f0_std_st": 2.97,
+   "f0_range_st": 9.76,
+   "energy_std_db": 7.0
+  }
+ ],
+ "beat_loudness": {
+  "std_db": 0.31,
+  "max_dev_from_median_db": 0.8
+ },
+ "rate": {
+  "mean_words_per_s": 3.39,
+  "fastest": 3.99,
+  "slowest": 2.96
+ },
+ "pitch_dynamics": {
+  "mean_f0_std_st": 3.1,
+  "mean_f0_range_st": 10.41,
+  "between_beat_f0_spread_st": 0.83
+ },
+ "boundaries": [
+  {
+   "at": 6.98,
+   "take_join": false,
+   "loudness_jump_db": 1.76,
+   "pitch_jump_st": 11.25
+  },
+  {
+   "at": 11.58,
+   "take_join": false,
+   "loudness_jump_db": 2.88,
+   "pitch_jump_st": 1.7
+  },
+  {
+   "at": 18.35,
+   "take_join": false,
+   "loudness_jump_db": 25.46,
+   "pitch_jump_st": -13.9
+  },
+  {
+   "at": 26.32,
+   "take_join": false,
+   "loudness_jump_db": 2.49,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 31.44,
+   "take_join": false,
+   "loudness_jump_db": 6.23,
+   "pitch_jump_st": 5.5
+  },
+  {
+   "at": 38.38,
+   "take_join": false,
+   "loudness_jump_db": 5.23,
+   "pitch_jump_st": 2.85
+  },
+  {
+   "at": 45.54,
+   "take_join": false,
+   "loudness_jump_db": 10.1,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 54.83,
+   "take_join": false,
+   "loudness_jump_db": 20.8,
+   "pitch_jump_st": -16.5
+  },
+  {
+   "at": 63.89,
+   "take_join": false,
+   "loudness_jump_db": 7.48,
+   "pitch_jump_st": 7.25
+  }
+ ],
+ "take_joins": {
+  "n": 0,
+  "loudness_jump_abs_mean_db": null,
+  "pitch_jump_abs_mean_st": null
+ },
+ "within_take": {
+  "n": 9,
+  "loudness_jump_abs_mean_db": 9.16,
+  "pitch_jump_abs_mean_st": 8.42
+ }
+}

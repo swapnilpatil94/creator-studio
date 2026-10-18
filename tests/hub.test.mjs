@@ -15,6 +15,10 @@ try {
   const sc = await A("/api/hub/schedule", { item: "bhishma-vow.fb_text", kind: "fb_text", at: new Date(Date.now() + 864e5).toISOString() }); must("an unapproved item cannot be scheduled", !sc.ok && /approve/.test(sc.j.error || ""), sc.j.error);
   const sto = await A("/api/hub/storage"); must("storage dry run reports sizes and does not delete", sto.j.dry === true && typeof sto.j.reclaim_bytes === "number");
   const bl = await A("/api/hub/blog/validate", { text: "FORMAT: blog\nSLUG: smoke-blog\nTITLE: परीक्षण\nMARKDOWN:\n# परीक्षण\nबहुत छोटा लेख।" }); must("a tiny blog fails QA and shows the news checklist", bl.ok && bl.j.qa.some(x => x.code === "blog-length") && bl.j.news.length >= 8);
+  const rs = await A("/api/hub/reel/status?id=ganga-seven-sons.carousel"); must("reel status reads narration and steps", rs.ok && rs.j.narration === true && rs.j.words > 200 && "prepared" in rs.j.steps, JSON.stringify(rs.j.steps));
+  const nb = await A("/api/hub/reel/brief?id=ganga-seven-sons.carousel"); must("narration prompt carries slides and claims", /CLAIMS/.test(nb.j.prompt) && /NARRATION:/.test(nb.j.prompt));
+  const two = "FORMAT: carousel\nSLUG: x-test\nHOOK: क्यों?\nSLIDES:\n1 | एक\n2 | दो\nNARRATION:\n1 | केवल एक पंक्ति\nCTA: सेव\nSOURCE_LINE: s\nHASHTAGS: #a\nCLAIMS:\n- क | thou must | verified | mahabharata-adi:98";
+  const nm = await A("/api/hub/paste/parse", { text: two }); must("narration with fewer lines than slides is rejected", nm.j.state.qa.some(x => x.code === "narration-slides" && x.level === "FAIL"));
   const lim = await A("/api/hub/limits"); must("limits table is served", lim.j.limits && lim.j.limits.length >= 6);
 } finally { srv.kill(); }
 console.log(bad ? `\n${bad} FAILED` : "\nALL PASSED"); process.exit(bad ? 1 : 0);
