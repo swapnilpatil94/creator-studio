@@ -1,6 +1,6 @@
 # KATHAAYA: Evidence-Led Mythology Topic Prediction System
 
-**Research updated:** 2026-10-19  
+**Research updated:** 2026-10-19 (multi-source architecture update)  
 **Repository branch:** `feat/global-mythology-topic`  
 **Workflow:** [global-mythology-topic](../.github/workflows/global-mythology-topic.yml)  
 **Monthly output:** `reports/global-mythology-topic-YYYY-MM.md` and matching JSON
@@ -131,10 +131,78 @@ Reserve production capacity for timely events, but keep a mix of evergreen stori
 - [ ] Resolve Google Cloud YouTube Data API quota exhaustion; check daily quota and quota history.
 - [ ] Verify the new partial-report behavior in GitHub Actions and inspect the generated Markdown artifact.
 - [ ] Add caching and a daily quota guard before expanding the query set.
-- [ ] Add an approved search-interest source and a time-series collector.
+- [ ] Add independent source adapters: Wikipedia Pageviews and reputable RSS/news first; then an authorized Google Trends time series.
+- [ ] Add compliant Reddit public-discussion discovery; treat Meta/Facebook/Instagram data as optional unless approved access exists.
+- [ ] Add per-source status, cache/freshness metadata, and a coverage-aware ranking so missing sources never become zero-demand scores.
 - [ ] Define a standard outcome schema and begin recording KATHAAYA's own video results.
 - [ ] Wait for a meaningful history of published videos before reporting predictive accuracy.
 - [ ] Verify every festival date locally before finalizing the corresponding story.
+
+
+## Multi-source architecture: YouTube is optional, not the backbone
+
+The live quota failure exposed an architectural flaw: research collection and report generation were too tightly coupled to one paid-quota API. The planner must always create a useful Markdown/JSON report from whatever sources are available, with explicit coverage and freshness labels. A source outage must reduce confidence, never silently reduce a topic's score.
+
+### What each source can and cannot tell us
+
+| Source | Useful signal | Access/reliability caveat | Role in ranking |
+|---|---|---|---|
+| Google Trends | Relative search interest by region and time; 7/28-day acceleration and year-over-year seasonality | Official API access may be limited; CSV exports are a reasonable first version. Third-party/unofficial clients can break. Values are normalized, not absolute search volume. | High-value search-momentum feature when observations are valid |
+| Google autocomplete / related queries | Language variants, question phrasing, emerging query ideas | Suggestions are not search-volume data and are not a statistically representative sample | Candidate discovery and wording only |
+| Wikipedia Pageviews API | Daily attention to a myth, character, or text over time | Measures visits to Wikipedia pages, not video demand; page names and languages need mapping | Independent attention/awareness proxy |
+| GDELT / reputable news RSS | Recent news mentions, adaptations, anniversaries, and sudden coverage | News coverage can be unrelated to audience demand; deduplicate syndicated stories | Timeliness/news-spike feature and research leads |
+| Reddit public communities | Public discussion volume, recurring questions, comment depth, and language used by fans | API access, rate limits, and terms apply; community samples are not representative of India or all viewers | Qualitative demand and question mining; never treat raw upvotes as market size |
+| Facebook / Instagram | Public trend clues where legitimately available; first-party performance for our own pages/accounts | Meta APIs do **not** provide a universal firehose of all public posts, reach, saves, or shares. Instagram insights generally require authorized professional-account access; Facebook content access is permission-limited. Meta Content Library access is restricted to eligible research use cases. | First-party learning and limited public evidence—not a required global data feed |
+| YouTube public results | Competitor video performance, format, views, creator-relative outliers | Search API quota is costly and search ranking is not a trend time series | Competitor evidence when available; never a single point of failure |
+| KATHAAYA own analytics | Our own retention, viewed/swiped-away, watch time, shares, subs, and audience response | Available only after publishing and through authorized account access | Most important long-term calibration data |
+| Cultural calendar + primary sources | Event timing, regional relevance, source/tradition verification | Lunar dates and observances can vary by region and panchang | Timing and editorial safety, not proof of virality |
+
+**Important platform distinction:** Facebook and Instagram are not interchangeable with YouTube. Their recommendation systems, formats, audience intent, and visible metrics differ. A high-performing Instagram Reel is not automatically evidence that a YouTube Short will perform similarly. Keep platform-specific features and outcome labels separate.
+
+### Recommended implementation order
+
+**Stage 0 — immediately resilient (no new API key required beyond current setup)**
+1. Make report generation independent of collection success; the monthly calendar and evergreen candidates must still be produced.
+2. Add a source-coverage panel: source status, last successful fetch, number of observations, region/language, and limitations.
+3. Use the existing cultural calendar plus primary-source verification links, Wikipedia Pageviews, and reputable RSS/news mentions as independent signals. These are supporting proxies, not proof of video demand.
+4. Keep YouTube evidence if quota is available, but skip it cleanly if blocked. Never label unsearched topics “low demand.”
+
+**Stage 1 — search and social discovery**
+1. Add Google Trends time series using an authorized/available interface or manually supplied CSV first; persist raw values and collection metadata. Do not make a brittle unofficial scraper a production dependency.
+2. Add Google autocomplete only for query expansion, not as a numerical demand score.
+3. Add Reddit public-community discovery with API-compliant collection and a small, curated list of relevant subreddits. Save post timestamps, comment counts, and text-derived question themes; avoid collecting personal data that is not needed.
+4. Treat Facebook/Instagram public observations as optional manual evidence unless the project has approved Meta API permissions or a legitimate eligible research route. Use authorized first-party insights for KATHAAYA's own accounts.
+5. Keep every source adapter independently testable, rate-limited, cached, and capable of returning `unavailable`, `stale`, `partial`, or `ok`.
+
+**Stage 2 — calibrate with KATHAAYA results**
+1. Save the exact pre-publication feature snapshot and recommendation for every candidate.
+2. Record our own 24-hour, 7-day, and 28-day outcomes separately for Shorts, long videos, and each platform.
+3. Start with transparent rules and a simple baseline. Train probability models only after enough dated examples exist; validate on future time windows.
+4. Run an ablation test: compare performance using each source alone and combinations of sources. Keep a source only if it improves out-of-time hit rate/calibration, not because it sounds sophisticated.
+
+### Source-independent scoring: do not invent missing data
+
+For each candidate, maintain separate fields rather than one opaque score:
+
+- `competitor_performance`: creator-relative video outliers and sample sizes.
+- `search_momentum`: time-series change, source, region, date window, and completeness.
+- `discussion_signal`: public conversation counts and recurring question themes, with sampling caveats.
+- `attention_proxy`: Wikipedia pageviews/news mention changes, explicitly labelled as proxy evidence.
+- `calendar_fit`: verified event date, region, and production lead time.
+- `kathaaya_fit`: language, audience fit, novelty, research quality, and production feasibility.
+- `source_coverage`: which sources succeeded, failed, or were stale.
+- `prediction_probability`: absent until a trained model is calibrated against held-out KATHAAYA outcomes.
+
+Do not normalize a missing source to zero. A topic with no Reddit observations is not necessarily unpopular; a topic with no YouTube results is not necessarily weak. Show evidence coverage alongside every rank. A high rank from one weak proxy should be labelled **low confidence**.
+
+### Practical fallback rules
+
+- If YouTube quota is blocked: continue with other available sources and generate a **multi-source partial report**.
+- If Google Trends is unavailable: use calendar, Wikipedia pageviews, RSS/news, and qualitative discussion signals; mark search momentum missing.
+- If Meta data is unavailable: do not scrape private groups or claim access to Instagram/Facebook engagement. Use lawful public evidence and KATHAAYA's own authorized insights.
+- If all live sources fail: generate a **planning-only report** from the verified calendar and evergreen backlog, clearly stating that live demand was not measured.
+- Never call a partial report a validated trend ranking. The report header must show coverage and the reason for missing evidence.
+
 
 ## Source references
 
