@@ -75,12 +75,13 @@ const durationSeconds = (iso) => {
 };
 async function searchSeed(seed) {
   const ids = new Map();
-  for (const q of seed.queries) {
-    const data = await api("search", {part:"snippet", type:"video", q, maxResults:10, order:"relevance", publishedAfter, regionCode:"IN", relevanceLanguage:"hi", safeSearch:"moderate"}, 100);
-    for (const item of data.items || []) {
-      const id = item.id?.videoId;
-      if (id) ids.set(id, {query:q, title:item.snippet?.title || "", channelId:item.snippet?.channelId || "", channel:item.snippet?.channelTitle || ""});
-    }
+  // One search call per story keeps this 30-topic run below the default daily quota.
+  // Additional aliases are preserved in the report for manual follow-up, not queried automatically.
+  const q = seed.queries[0];
+  const data = await api("search", {part:"snippet", type:"video", q, maxResults:10, order:"relevance", publishedAfter, regionCode:"IN", relevanceLanguage:"hi", safeSearch:"moderate"}, 100);
+  for (const item of data.items || []) {
+    const id = item.id?.videoId;
+    if (id) ids.set(id, {query:q, title:item.snippet?.title || "", channelId:item.snippet?.channelId || "", channel:item.snippet?.channelTitle || ""});
   }
   const all = [...ids.keys()];
   const videos = [];
@@ -94,7 +95,6 @@ async function searchSeed(seed) {
     const likes = Number(v.statistics?.likeCount || 0);
     const comments = Number(v.statistics?.commentCount || 0);
     const ageDays = Math.max(1,(now-Date.parse(v.snippet.publishedAt))/DAY);
-    const subs = Number(v.statistics?.subscriberCount || 0);
     const source = ids.get(v.id);
     return {id:v.id,url:"https://www.youtube.com/watch?v="+v.id,title:v.snippet.title,channel:v.snippet.channelTitle,channelId:v.snippet.channelId,publishedAt:v.snippet.publishedAt,ageDays:Math.round(ageDays*10)/10,durationSeconds:d,format:d<=180?"short":"long",views,viewsPerDay:Math.round(views/ageDays),likes,comments,engagementRate:views?Number(((likes+comments)/views).toFixed(4)):0,query:source.query,excluded:exclusions.test(v.snippet.title)};
   });
@@ -181,7 +181,7 @@ function makeHook(t) {
 const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic};
 fs.mkdirSync("reports",{recursive:true});
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".json",JSON.stringify(output,null,2));
-const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; Hindi-relevant YouTube search results.","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## 30-day calendar","", "| Day | Tradition | Topic | Evidence score | Evidence confidence | Hindi hook |", "|---:|---|---|---:|---|---|"];
+const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## 30-day calendar","", "| Day | Tradition | Topic | Evidence score | Evidence confidence | Hindi hook |", "|---:|---|---|---:|---|---|"];
 for(const t of calendar) lines.push("| "+t.day+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.confidence+" | "+t.hookHindi+" |");
 lines.push("","## Evidence cards","");
 for(const t of calendar) {
