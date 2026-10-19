@@ -242,6 +242,7 @@ for (const event of calendarOpportunities) {
 }
 const calendar = [];
 const usedTopics = new Set();
+const reservedTopicNames = new Set([...scheduledByDate.values()].filter(x=>!x.calendarOnly).map(x=>x.topic.topic));
 let rankedCursor = 0;
 for (let day=1; day<=daysInMonth; day++) {
   const date = new Date(Date.UTC(year,month-1,day)).toISOString().slice(0,10);
@@ -249,7 +250,7 @@ for (let day=1; day<=daysInMonth; day++) {
   let t = fixed?.topic;
   if (t && !fixed.calendarOnly && usedTopics.has(t.topic)) t = null;
   if (!t) {
-    while (rankedCursor < evidenceByTopic.length && usedTopics.has(evidenceByTopic[rankedCursor].topic)) rankedCursor++;
+    while (rankedCursor < evidenceByTopic.length && (usedTopics.has(evidenceByTopic[rankedCursor].topic) || reservedTopicNames.has(evidenceByTopic[rankedCursor].topic))) rankedCursor++;
     t = evidenceByTopic[rankedCursor++];
   }
   if (!t) continue;
@@ -294,7 +295,18 @@ const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> E
 for(const t of calendar) lines.push("| "+t.publishDate+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.calendarBoost+" | "+t.planningScore+" | "+t.confidence+" | "+t.hookHindi+" |");
 lines.push("","## Evidence cards","");
 for(const t of calendar) {
-  ,"",**Publication date:** "+t.publishDate+"  ","**Date status:** "+t.dateStatus+"  ","**Why this date:** "+t.publishReason+"  ","**Backup plan:** "+t.backupPlan+"  ","**Tradition:** "+t.tradition+"  ","**Evidence score:** +t.evidenceScore+" / 100  ","**Calendar boost:** "+t.calendarBoost+"  ","**Planning score:** "+t.planningScore+" / 100  ","**Calendar matches:** "+(t.calendarMatches.length?t.calendarMatches.map(e=>e.name+" (event "+e.eventDate+", publish by "+e.publishDate+")").join("; "):"No matching dated event boost") +"  ","**Confidence:** "+t.confidence,"","**Research queries:** "+t.researchQueries.join("; "),"");
+  lines.push("### "+t.publishDate+" — "+t.topic,"",
+    "**Publication date:** "+t.publishDate+"  ",
+    "**Date status:** "+t.dateStatus+"  ",
+    "**Why this date:** "+t.publishReason+"  ",
+    "**Backup plan:** "+t.backupPlan+"  ",
+    "**Tradition / region:** "+t.tradition+"  ",
+    "**Evidence score:** "+t.evidenceScore+" / 100  ",
+    "**Calendar boost:** "+t.calendarBoost+"  ",
+    "**Planning score:** "+t.planningScore+" / 100  ",
+    "**Calendar matches:** "+(t.calendarMatches.length?t.calendarMatches.map(e=>e.name+" (event "+e.eventDate+", publish "+e.publishDate+")").join("; "):"No matching dated event boost")+"  ",
+    "**Confidence:** "+t.confidence,"",
+    "**Research queries:** "+t.researchQueries.join("; "),"");
   if(!t.evidenceLinks.length) lines.push("No qualifying public video evidence found in this run. Treat as an exploratory idea, not a validated outlier.","");
   else {
     lines.push("| Source video | Channel | Views | Views/day | Same-format outlier | Age |","|---|---|---:|---:|---:|---:|");
