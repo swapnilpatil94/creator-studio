@@ -123,7 +123,10 @@ async function getChannelBaseline(channelId) {
   return result;
 }
 const evidenceByTopic = [];
+let quotaBlocked = false;
 for (const seed of seeds) {
+
+  try {
   console.log("Researching:",seed.topic);
   const videos = await searchSeed(seed);
   const usable = videos.filter(v=>!v.excluded && v.views>0 && v.ageDays>=2);
@@ -144,6 +147,27 @@ for (const seed of seeds) {
   const evidenceScore = Math.min(100,Math.round((Math.min(creatorCount,4)*12)+(Math.min(outliers.length,5)*8)+(Math.min(Math.log10(medianViewsPerDay+1),5)*5)+(Math.min(medianOutlier||0,5)*4)));
   const confidence = outliers.length>=3 && creatorCount>=2 ? "stronger evidence" : outliers.length>=1 ? "limited evidence" : "insufficient outlier evidence";
   evidenceByTopic.push({...seed, evidenceScore,confidence,resultsFound:videos.length,usableResults:qualified.length,outlierCount:outliers.length,independentOutlierCreators:creatorCount,medianViewsPerDay:Math.round(medianViewsPerDay),medianOutlierRatio:medianOutlier?Number(medianOutlier.toFixed(2)):null,evidence:best.slice(0,5),allOutliers:outliers.slice(0,8)});
+  } catch (error) {
+    const message = String(error?.message || error);
+    console.error("Topic research failed:", seed.topic, message);
+    evidenceByTopic.push({...seed,evidenceScore:0,calendarBoost:0,planningScore:0,
+      confidence:message.toLowerCase().includes("quota")?"research blocked: YouTube API quota exhausted":"research failed: data unavailable",
+      resultsFound:0,usableResults:0,outlierCount:0,independentOutlierCreators:0,
+      medianViewsPerDay:0,medianOutlierRatio:null,evidence:[],allOutliers:[],
+      researchError:message});
+    if (/quota|daily limit|rate limit|403/i.test(message)) {
+      quotaBlocked = true;
+      break;
+    }
+  }
+}
+const researchedTopics = new Set(evidenceByTopic.map(t=>t.topic));
+for (const seed of seeds.filter(s=>!researchedTopics.has(s.topic))) {
+  evidenceByTopic.push({...seed,evidenceScore:0,calendarBoost:0,planningScore:0,
+    confidence:quotaBlocked?"not researched: API quota exhausted earlier in this run":"not researched",
+    resultsFound:0,usableResults:0,outlierCount:0,independentOutlierCreators:0,
+    medianViewsPerDay:0,medianOutlierRatio:null,evidence:[],allOutliers:[],
+    researchError:quotaBlocked?"Skipped to preserve partial report after quota error":null});
 }
 evidenceByTopic.sort((a,b)=>b.evidenceScore-a.evidenceScore);
 const [year,month] = targetMonth.split("-").map(Number);
@@ -302,10 +326,10 @@ function makeHook(t) {
   };
   return hooks[t.tradition] || "एक प्राचीन कथा… और ऐसा मानवीय संघर्ष जो आज भी हमारे भीतर है।";
 }
-const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",calendarPolicy:"Festival calendar is a separate editorial signal, not proof of outlier performance. Year-specific and lunar dates require verification; do not schedule an event topic without checking local observance.",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting.","Festival dates and observances may vary by region, calendar, and local tradition."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic,calendarOpportunities};
+const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",runStatus:quotaBlocked?"partial: YouTube API quota exhausted":"completed",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",calendarPolicy:"Festival calendar is a separate editorial signal, not proof of outlier performance. Year-specific and lunar dates require verification; do not schedule an event topic without checking local observance.",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting.","Festival dates and observances may vary by region, calendar, and local tradition."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic,calendarOpportunities};
 fs.mkdirSync("reports",{recursive:true});
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".json",JSON.stringify(output,null,2));
-const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Evidence score reflects observed public performance; calendar boost is a separate editorial timing signal (up to 15 points). Planning score combines them but is not a probability of virality.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## Date-mapped publishing calendar","", "| Publish date | Tradition / region | Topic | Evidence score | Calendar boost | Planning score | Confidence | Hindi hook |", "|---|---|---|---:|---:|---:|---|---|"];
+const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).", "- If YouTube quota fails, the script now stops searching and still writes a partial JSON + Markdown calendar. Unsearched topics are explicitly labelled; zero scores are not evidence of low demand.","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Evidence score reflects observed public performance; calendar boost is a separate editorial timing signal (up to 15 points). Planning score combines them but is not a probability of virality.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## Date-mapped publishing calendar","", "| Publish date | Tradition / region | Topic | Evidence score | Calendar boost | Planning score | Confidence | Hindi hook |", "|---|---|---|---:|---:|---:|---|---|"];
 for(const t of calendar) lines.push("| "+t.publishDate+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.calendarBoost+" | "+t.planningScore+" | "+t.confidence+" | "+t.hookHindi+" |");
 lines.push("","## Evidence cards","");
 for(const t of calendar) {
@@ -335,6 +359,6 @@ for (const e of calendarOpportunities.filter(e => e.calendarWindowRelevant || !e
 }
 lines.push("","## Full research ranking","","| Rank | Tradition | Topic | Evidence score | Calendar boost | Planning score | Confidence | Outlier videos | Independent creators | Median views/day |","|---:|---|---|---:|---:|---:|---|---:|---:|---:|");
 for(const t of evidenceByTopic) lines.push("| "+(evidenceByTopic.indexOf(t)+1)+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.calendarBoost+" | "+t.planningScore+" | "+t.confidence+" | "+t.outlierCount+" | "+t.independentOutlierCreators+" | "+t.medianViewsPerDay+" |");
-lines.push("","## What this report cannot prove","","- It cannot guarantee virality, audience retention, shares, or subscriber growth.","- Public competitor analytics do not expose average percentage viewed or Shorts 'chose to view' rates; validate those on KATHAAYA's own uploads in YouTube Studio.","- Evidence is limited to searchable public videos and can miss relevant results.","");
+lines.push("","## What this report cannot prove","","- It cannot guarantee virality, audience retention, shares, or subscriber growth. No honest model can claim 99% certainty without a defined outcome and strong out-of-sample validation.","- Public competitor analytics do not expose average percentage viewed or Shorts 'chose to view' rates; validate those on KATHAAYA's own uploads in YouTube Studio.","- Evidence is limited to searchable public videos and can miss relevant results.","");
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".md",lines.join("\n"));
 console.log(lines.join("\n"));
