@@ -214,6 +214,13 @@ function eventTopicMatch(event, topic) {
 for (const event of calendarOpportunities) {
   if (!event.eventDate || !event.plannedPublishDate || !event.calendarWindowRelevant) continue;
   let publishDate = event.plannedPublishDate;
+  const targetMonthStart = monthStart.toISOString().slice(0,10);
+  const targetMonthEnd = monthEnd.toISOString().slice(0,10);
+  // If an event falls in this month but its ideal lead date was last month, keep it
+  // visible at the first feasible date and clearly label the lead window as missed.
+  if (event.eventDate >= targetMonthStart && event.eventDate <= targetMonthEnd && publishDate < targetMonthStart) {
+    publishDate = targetMonth === today.slice(0,7) ? today : targetMonthStart;
+  }
   if (publishDate < today && event.eventDate >= today && targetMonth === today.slice(0,7)) publishDate = today;
   if (publishDate.slice(0,7) !== targetMonth || publishDate < today) continue;
   const rankedMatches = [...evidenceByTopic]
@@ -248,10 +255,17 @@ for (let day=1; day<=daysInMonth; day++) {
   const date = new Date(Date.UTC(year,month-1,day)).toISOString().slice(0,10);
   const fixed = scheduledByDate.get(date);
   let t = fixed?.topic;
+  let repeatAngle = false;
   if (t && !fixed.calendarOnly && usedTopics.has(t.topic)) t = null;
   if (!t) {
     while (rankedCursor < evidenceByTopic.length && (usedTopics.has(evidenceByTopic[rankedCursor].topic) || reservedTopicNames.has(evidenceByTopic[rankedCursor].topic))) rankedCursor++;
     t = evidenceByTopic[rankedCursor++];
+  }
+  if (!t && evidenceByTopic.length) {
+    // A 31-day month has more dates than the 30 initial seeds. Reuse the best seed
+    // only as a fresh angle/format brief; never reuse the same finished script.
+    t = evidenceByTopic[(day-1) % evidenceByTopic.length];
+    repeatAngle = true;
   }
   if (!t) continue;
   usedTopics.add(t.topic);
@@ -267,7 +281,7 @@ for (let day=1; day<=daysInMonth; day++) {
     backupPlan:event?"If missed, publish only while audience interest is active; otherwise move to the next relevant seasonal window.":"If production slips, move to the next open evergreen slot.",
     confidence:t.confidence,hookHindi:makeHook(t),
     evidenceLinks:(t.evidence||[]).slice(0,3).map(v=>({title:v.title,url:v.url,channel:v.channel,views:v.views,viewsPerDay:v.viewsPerDay,outlierRatio:v.outlierRatio,ageDays:v.ageDays})),
-    researchQueries:t.queries||[],calendarOnly:!!fixed?.calendarOnly
+    researchQueries:t.queries||[],calendarOnly:!!fixed?.calendarOnly,repeatAngle,repeatAngleNote:repeatAngle?"Create a distinct angle, hook and visual treatment; do not reuse the prior script.":null
   });
 }
 
@@ -298,7 +312,7 @@ for(const t of calendar) {
   lines.push("### "+t.publishDate+" — "+t.topic,"",
     "**Publication date:** "+t.publishDate+"  ",
     "**Date status:** "+t.dateStatus+"  ",
-    "**Why this date:** "+t.publishReason+"  ",
+    "**Why this date:** "+t.publishReason+"  ","**Fresh-angle note:** "+(t.repeatAngleNote||"No repeat required.")+"  ",
     "**Backup plan:** "+t.backupPlan+"  ",
     "**Tradition / region:** "+t.tradition+"  ",
     "**Evidence score:** "+t.evidenceScore+" / 100  ",
