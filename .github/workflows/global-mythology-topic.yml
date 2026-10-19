@@ -1,0 +1,77 @@
+name: global-mythology-topic
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_month:
+        description: "Month to plan (YYYY-MM); defaults to current UTC month"
+        required: false
+        type: string
+  schedule:
+    - cron: "17 3 1 * *"
+  push:
+    paths:
+      - "planner/global-mythology-topic.mjs"
+      - ".github/workflows/global-mythology-topic.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: global-mythology-topic
+  cancel-in-progress: false
+
+jobs:
+  research:
+    name: Research evidence-backed global mythology topics
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Select target month
+        id: month
+        shell: bash
+        run: |
+          INPUT_MONTH="${{ inputs.target_month }}"
+          if [ -n "$INPUT_MONTH" ]; then
+            if ! [[ "$INPUT_MONTH" =~ ^[0-9]{4}-(0[1-9]|1[0-2])$ ]]; then
+              echo "target_month must be YYYY-MM" >&2
+              exit 1
+            fi
+            echo "value=$INPUT_MONTH" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run global mythology research
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TARGET_MONTH: ${{ steps.month.outputs.value }}
+        run: node planner/global-mythology-topic.mjs
+
+      - name: Publish report in workflow summary
+        if: always()
+        shell: bash
+        run: |
+          REPORT="reports/global-mythology-topic-${{ steps.month.outputs.value }}.md"
+          if [ -f "$REPORT" ]; then
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload JSON and Markdown reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-mythology-topic-${{ steps.month.outputs.value }}
+          path: |
+            reports/global-mythology-topic-${{ steps.month.outputs.value }}.json
+            reports/global-mythology-topic-${{ steps.month.outputs.value }}.md
+          if-no-files-found: warn
+          retention-days: 90
