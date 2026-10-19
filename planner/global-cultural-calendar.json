@@ -1,0 +1,549 @@
+{
+  "version": 1,
+  "description": "Editorial planning calendar for mythology and culturally relevant storytelling. Dates are year-specific where supplied; recurring civil observances are separated from lunar/region-dependent festivals. Always verify local dates and cultural context before publishing.",
+  "events": [
+    {
+      "id": "diwali-2026",
+      "name": "Diwali / Deepavali",
+      "region": "South Asia and diaspora",
+      "date": "2026-11-08",
+      "dateType": "year-specific",
+      "leadDays": 10,
+      "keywords": [
+        "Diwali",
+        "Deepavali",
+        "Lakshmi",
+        "Rama",
+        "Naraka",
+        "Krishna",
+        "light",
+        "victory of good"
+      ],
+      "storyAngles": [
+        "Why light defeats darkness across different myth traditions",
+        "Rama's return to Ayodhya and the many regional tellings",
+        "Narakasura: the story behind Naraka Chaturdashi",
+        "Lakshmi and the symbolism of prosperity"
+      ],
+      "source": "https://www.indiapost.gov.in/holidays-list",
+      "notes": "Date may differ by regional calendar and observance."
+    },
+    {
+      "id": "guru-nanak-2026",
+      "name": "Guru Nanak Jayanti / Gurpurab",
+      "region": "Sikh communities worldwide",
+      "date": "2026-11-24",
+      "dateType": "year-specific",
+      "leadDays": 7,
+      "keywords": [
+        "Guru Nanak",
+        "Sikh",
+        "Gurpurab"
+      ],
+      "storyAngles": [
+        "Respectful explainer on the life and teachings of Guru Nanak"
+      ],
+      "source": "https://www.indiapost.gov.in/holidays-list",
+      "notes": "Faith and history explainer, not mythology; include only if editorial scope includes world wisdom traditions."
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas",
+      "region": "Worldwide; especially Europe and the Americas",
+      "monthDay": "12-25",
+      "dateType": "fixed-annual",
+      "leadDays": 12,
+      "keywords": [
+        "Christmas",
+        "winter",
+        "birth",
+        "star",
+        "angels",
+        "Nativity"
+      ],
+      "storyAngles": [
+        "How winter solstice and light symbolism appear across ancient traditions",
+        "A clearly sourced history of the Nativity tradition"
+      ],
+      "source": "https://www.timeanddate.com/holidays/"
+    },
+    {
+      "id": "halloween",
+      "name": "Halloween",
+      "region": "North America, UK, Ireland and global pop culture",
+      "monthDay": "10-31",
+      "dateType": "fixed-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Halloween",
+        "underworld",
+        "ghosts",
+        "spirits",
+        "death",
+        "Samhaín"
+      ],
+      "storyAngles": [
+        "The ancient Samhain traditions behind Halloween—what is known and what is disputed",
+        "How different cultures imagined the boundary between the living and the dead"
+      ],
+      "source": "https://www.britannica.com/topic/Halloween"
+    },
+    {
+      "id": "dia-de-muertos",
+      "name": "Día de los Muertos",
+      "region": "Mexico and Mexican diaspora",
+      "monthDay": "11-01",
+      "dateType": "fixed-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Maya",
+        "Aztec",
+        "Mictlan",
+        "death",
+        "ancestors",
+        "underworld"
+      ],
+      "storyAngles": [
+        "Mictlan and the Aztec journey after death",
+        "How remembrance of ancestors differs across cultures; avoid conflating traditions"
+      ],
+      "source": "https://www.britannica.com/topic/Dia-de-los-Muertos"
+    },
+    {
+      "id": "lunar-new-year-2027",
+      "name": "Lunar New Year",
+      "region": "China, Korea, Vietnam and diaspora; traditions differ",
+      "date": "2027-02-06",
+      "dateType": "year-specific",
+      "leadDays": 12,
+      "keywords": [
+        "Chinese",
+        "dragon",
+        "zodiac",
+        "Nian",
+        "Nuwa",
+        "Sun Wukong"
+      ],
+      "storyAngles": [
+        "The Nian legend and Lunar New Year customs, with regional attribution",
+        "Chinese zodiac stories and what they mean"
+      ],
+      "source": "https://www.timeanddate.com/holidays/china/chinese-new-year"
+    },
+    {
+      "id": "nowruz",
+      "name": "Nowruz",
+      "region": "Iran, Central Asia, Caucasus and diaspora",
+      "monthDay": "03-20",
+      "dateType": "approximate-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Persian",
+        "Iranian",
+        "spring",
+        "renewal",
+        "Jamshid",
+        "creation"
+      ],
+      "storyAngles": [
+        "Persian myths of renewal and the arrival of spring",
+        "Jamshid and the traditions associated with Nowruz—verify versions"
+      ],
+      "source": "https://ich.unesco.org/en/RL/nowruz-01161",
+      "notes": "Astronomical timing and observance can vary by location/year."
+    },
+    {
+      "id": "easter",
+      "name": "Easter",
+      "region": "Christian communities worldwide",
+      "dateType": "movable",
+      "leadDays": 10,
+      "keywords": [
+        "Easter",
+        "resurrection",
+        "spring",
+        "symbolism"
+      ],
+      "storyAngles": [
+        "A sourced explainer on resurrection symbolism across traditions; clearly distinguish religious beliefs and folklore"
+      ],
+      "source": "https://www.timeanddate.com/holidays/"
+    },
+    {
+      "id": "holi-2027",
+      "name": "Holi",
+      "region": "India and diaspora",
+      "date": "2027-03-22",
+      "dateType": "year-specific-verify",
+      "leadDays": 10,
+      "keywords": [
+        "Holi",
+        "Prahlad",
+        "Holika",
+        "Krishna",
+        "Radha"
+      ],
+      "storyAngles": [
+        "Prahlad and Holika: how regional tellings vary",
+        "Krishna and the playful traditions associated with Holi"
+      ],
+      "source": "https://www.drikpanchang.com/",
+      "notes": "Confirm date and regional observance with a current local panchang before scheduling."
+    },
+    {
+      "id": "navratri-dussehra-2027",
+      "name": "Navratri / Durga Puja / Dussehra",
+      "region": "India and diaspora; regional dates and forms vary",
+      "date": "2027-09-30",
+      "dateType": "year-specific-verify",
+      "leadDays": 14,
+      "keywords": [
+        "Durga",
+        "Mahishasura",
+        "Rama",
+        "Ravana",
+        "Navratri",
+        "Dussehra"
+      ],
+      "storyAngles": [
+        "Durga and Mahishasura: symbolism and regional tellings",
+        "Why Dussehra is associated with different stories in different regions"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Date is festival start; calculate regional event days separately."
+    },
+    {
+      "id": "diwali-2027",
+      "name": "Diwali / Deepavali",
+      "region": "South Asia and diaspora",
+      "date": "2027-10-29",
+      "dateType": "year-specific-verify",
+      "leadDays": 10,
+      "keywords": [
+        "Diwali",
+        "Deepavali",
+        "Lakshmi",
+        "Rama",
+        "Naraka",
+        "Krishna"
+      ],
+      "storyAngles": [
+        "Why different regions tell different Diwali stories",
+        "Narakasura, Rama's return, and Lakshmi worship: distinguish traditions"
+      ],
+      "source": "https://www.hcilondon.gov.in/page/list-of-the-holidays/",
+      "notes": "Confirm regional calendar before scheduling."
+    },
+    {
+      "id": "maha-shivratri",
+      "name": "Maha Shivratri",
+      "region": "India and diaspora",
+      "dateType": "lunar-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Shiva",
+        "Parvati",
+        "cosmic dance",
+        "Neelkanth",
+        "lingodbhava"
+      ],
+      "storyAngles": [
+        "The many stories associated with Shiva's cosmic dance",
+        "Neelkanth and the poison from the churning of the ocean"
+      ],
+      "source": "https://www.drikpanchang.com/",
+      "notes": "Resolve the date for the selected year and location before use."
+    },
+    {
+      "id": "janmashtami",
+      "name": "Krishna Janmashtami",
+      "region": "India and diaspora",
+      "dateType": "lunar-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Krishna",
+        "Kansa",
+        "Gokul",
+        "Mathura",
+        "Bhagavad Gita"
+      ],
+      "storyAngles": [
+        "Kansa's fear and the prophecy that shaped his choices",
+        "Krishna's childhood stories across regional traditions"
+      ],
+      "source": "https://www.drikpanchang.com/",
+      "notes": "Resolve the date for the selected year and location before use."
+    },
+    {
+      "id": "ganesh-chaturthi",
+      "name": "Ganesh Chaturthi",
+      "region": "India and diaspora",
+      "dateType": "lunar-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Ganesha",
+        "Shiva",
+        "Parvati",
+        "wisdom",
+        "obstacles"
+      ],
+      "storyAngles": [
+        "Why Ganesha is associated with wisdom and removing obstacles",
+        "The story of Ganesha's birth across tellings"
+      ],
+      "source": "https://www.drikpanchang.com/",
+      "notes": "Resolve the date for the selected year and location before use."
+    },
+    {
+      "id": "ramadan-eid",
+      "name": "Ramadan / Eid al-Fitr",
+      "region": "Muslim communities worldwide",
+      "dateType": "lunar-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Ramadan",
+        "Eid",
+        "Islamic history",
+        "crescent"
+      ],
+      "storyAngles": [
+        "A respectful, sourced cultural-history explainer about Ramadan or Eid traditions"
+      ],
+      "source": "https://www.timeanddate.com/holidays/",
+      "notes": "Not mythology; include only for a broad world-cultures editorial plan. Dates depend on lunar observation."
+    },
+    {
+      "id": "vesak",
+      "name": "Vesak / Buddha Purnima",
+      "region": "Buddhist communities across Asia and worldwide",
+      "dateType": "lunar-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Buddha",
+        "Mara",
+        "Bodhi tree",
+        "awakening",
+        "Buddhist traditions"
+      ],
+      "storyAngles": [
+        "Mara's temptation in Buddhist narratives and the meaning of awakening",
+        "How Buddhist traditions tell the story of the Buddha's awakening"
+      ],
+      "source": "https://www.un.org/en/observances/vesak-day",
+      "notes": "Date and observance vary across Buddhist traditions."
+    },
+    {
+      "id": "obon",
+      "name": "Obon",
+      "region": "Japan; dates vary by region",
+      "dateType": "regional-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Japanese",
+        "ancestors",
+        "spirits",
+        "underworld",
+        "Izanagi",
+        "Yomi"
+      ],
+      "storyAngles": [
+        "Japanese stories about ancestors and the boundary between worlds",
+        "Izanagi's journey to Yomi, with a clear distinction from Obon religious practice"
+      ],
+      "source": "https://www.japan.travel/en/guide/obon/",
+      "notes": "Some regions observe in July and others in August."
+    },
+    {
+      "id": "winter-solstice",
+      "name": "Winter Solstice",
+      "region": "Northern Hemisphere; many cultures",
+      "monthDay": "12-21",
+      "dateType": "approximate-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Norse",
+        "Yule",
+        "sun",
+        "rebirth",
+        "winter",
+        "solstice"
+      ],
+      "storyAngles": [
+        "How ancient cultures made meaning of the longest night",
+        "Norse Yule: what historical sources support and what is modern reconstruction"
+      ],
+      "source": "https://www.timeanddate.com/calendar/seasons.html",
+      "notes": "Exact solstice date/time varies by year and timezone."
+    },
+    {
+      "id": "spring-equinox",
+      "name": "Spring Equinox",
+      "region": "Global seasonal observance",
+      "monthDay": "03-20",
+      "dateType": "approximate-annual",
+      "leadDays": 10,
+      "keywords": [
+        "Nowruz",
+        "spring",
+        "renewal",
+        "creation",
+        "Persian"
+      ],
+      "storyAngles": [
+        "Creation and renewal myths told around the arrival of spring"
+      ],
+      "source": "https://www.timeanddate.com/calendar/seasons.html",
+      "notes": "Exact date/time varies by year and timezone."
+    },
+    {
+      "id": "makar-sankranti-pongal-2027",
+      "name": "Makar Sankranti / Pongal",
+      "region": "India; regional harvest traditions",
+      "date": "2027-01-15",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Surya",
+        "sun",
+        "harvest",
+        "Makar Sankranti",
+        "Pongal",
+        "Uttarayana"
+      ],
+      "storyAngles": [
+        "Surya and the symbolism of the sun’s northward journey",
+        "How regional harvest traditions tell different stories about gratitude and renewal"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Festival date and customs vary by region; frame as culture/story, not a single pan-Indian myth."
+    },
+    {
+      "id": "vasant-panchami-2027",
+      "name": "Vasant Panchami / Saraswati Puja",
+      "region": "India and diaspora; regional practices vary",
+      "date": "2027-02-11",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Saraswati",
+        "learning",
+        "music",
+        "knowledge",
+        "Vasant Panchami"
+      ],
+      "storyAngles": [
+        "Why Saraswati is associated with learning, music and the arts",
+        "The symbolism of knowledge and the veena in Saraswati traditions"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Confirm local observance and source the version of the story used."
+    },
+    {
+      "id": "maha-shivratri-2027",
+      "name": "Maha Shivratri",
+      "region": "India and diaspora",
+      "date": "2027-03-06",
+      "dateType": "year-specific-verify",
+      "leadDays": 14,
+      "keywords": [
+        "Shiva",
+        "Parvati",
+        "Neelkanth",
+        "lingodbhava",
+        "cosmic dance"
+      ],
+      "storyAngles": [
+        "The many stories associated with Shiva’s cosmic dance",
+        "Neelkanth and the poison from the churning of the ocean"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Date may vary by location and panchang; verify local observance."
+    },
+    {
+      "id": "ram-navami-2027",
+      "name": "Rama Navami",
+      "region": "India and diaspora; regional tellings vary",
+      "date": "2027-04-15",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Rama",
+        "Ramayana",
+        "Ayodhya",
+        "dharma",
+        "Rama Navami"
+      ],
+      "storyAngles": [
+        "Rama’s choices: duty, compassion and the cost of dharma",
+        "How regional Ramayana traditions tell key moments differently"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Use clear attribution to the Ramayana version and regional tradition."
+    },
+    {
+      "id": "hanuman-jayanti-2027",
+      "name": "Hanuman Jayanti",
+      "region": "India and diaspora; observance varies",
+      "date": "2027-04-20",
+      "dateType": "year-specific-verify",
+      "leadDays": 10,
+      "keywords": [
+        "Hanuman",
+        "Rama",
+        "Sita",
+        "Sanjeevani",
+        "devotion"
+      ],
+      "storyAngles": [
+        "Hanuman and the mountain he carried: courage under impossible pressure",
+        "Why Hanuman’s strength is inseparable from humility and devotion"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Hanuman Jayanti is observed on different dates in some regions; verify target audience location."
+    },
+    {
+      "id": "janmashtami-2027",
+      "name": "Krishna Janmashtami",
+      "region": "India and diaspora; Vaishnava dates may differ",
+      "date": "2027-08-25",
+      "dateType": "year-specific-verify",
+      "leadDays": 14,
+      "keywords": [
+        "Krishna",
+        "Kansa",
+        "Mathura",
+        "Gokul",
+        "Bhagavad Gita",
+        "Janmashtami"
+      ],
+      "storyAngles": [
+        "Kansa’s fear of a prophecy—and how fear shaped his tyranny",
+        "Krishna’s childhood stories and the meanings attached to them"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Confirm regional/Vaishnava date locally; distinguish devotional belief from historical claims."
+    },
+    {
+      "id": "ganesh-chaturthi-2027",
+      "name": "Ganesh Chaturthi",
+      "region": "India and diaspora; regional observance varies",
+      "date": "2027-09-04",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Ganesha",
+        "Shiva",
+        "Parvati",
+        "wisdom",
+        "obstacles",
+        "Ganesh Chaturthi"
+      ],
+      "storyAngles": [
+        "The many tellings of Ganesha’s birth and what they emphasize",
+        "Why Ganesha is associated with wisdom and removing obstacles"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Verify local tithi and observance before scheduling."
+    }
+  ]
+}
