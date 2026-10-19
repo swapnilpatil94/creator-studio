@@ -1,38 +1,88 @@
 {
- "_note": "Edit freely (Hub > Topics > Outlier engine). Queries are what real viewers search; festival queries are added automatically from calendar-festivals.json for the target month.",
- "relevance": "कथा|महाभारत|रामायण|पुराण|दुर्गा|शिव|कृष्ण|राम|हनुमान|कर्ण|अर्जुन|भीष्म|द्रौपदी|रावण|सीता|विष्णु|गणेश|लक्ष्मी|सावित्री|mythology|katha|mahabharat|ramayan|krishna|shiva|durga",
+ "_note": "Edit freely (Hub > Topics > Outlier engine). KATHAAYA is a storytelling + psychology brand, not restricted to one religion or god. Each pillar is researched independently; seed_queries are starting points only -- the engine EXPANDS them with Google's real autocomplete suggestions every run, so the actual query list changes and is never just what we typed here.",
+ "pillars": {
+  "mythology-india": {
+   "label": "Indian mythology (all traditions, not one god)",
+   "relevance": "कथा|महाभारत|रामायण|पुराण|वेद|उपनिषद|दुर्गा|शिव|कृष्ण|राम|हनुमान|कर्ण|अर्जुन|भीष्म|द्रौपदी|रावण|सीता|विष्णु|गणेश|लक्ष्मी|सावित्री|बुद्ध|महावीर|गुरु नानक|सिख|जैन|बौद्ध|mythology|katha|mahabharat|ramayan|krishna|shiva|durga|buddha|jain|sikh",
+   "seed_queries": [
+    "महाभारत कथा",
+    "रामायण कथा",
+    "शिव पुराण कथा",
+    "विष्णु पुराण कथा",
+    "देवी भागवत कथा",
+    "बौद्ध कथा",
+    "सिख इतिहास कथा",
+    "भारतीय पौराणिक कथा"
+   ],
+   "calendar": true,
+   "instagram_handles": [
+    "epicstories",
+    "amarchitrakatha",
+    "storieswithvishal",
+    "bharatkatha",
+    "hindustoriesofficial",
+    "hindu_gods_official"
+   ]
+  },
+  "mythology-world": {
+   "label": "World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...)",
+   "relevance": "mythology|myth|greek|norse|egyptian|mesopotamia|gilgamesh|zeus|odin|thor|loki|ra|osiris|isis|anansi|maya|aztec|celtic|slavic|पौराणिक कथा|ग्रीक|मिस्र|नॉर्स",
+   "seed_queries": [
+    "ग्रीक पौराणिक कथा",
+    "नॉर्स पौराणिक कथा",
+    "मिस्र की पौराणिक कथा",
+    "ग्रीक देवता कहानी",
+    "zeus mythology story hindi",
+    "odin norse mythology hindi",
+    "egyptian mythology story hindi",
+    "world mythology explained hindi"
+   ],
+   "calendar": false,
+   "instagram_handles": []
+  },
+  "psychology": {
+   "label": "Psychology (everyday mind, behaviour, relationships)",
+   "relevance": "psychology|मनोविज्ञान|mind|behavior|behaviour|emotion|habit|relationship psychology|cognitive|मन की बात|व्यवहार",
+   "seed_queries": [
+    "मनोविज्ञान तथ्य",
+    "व्यवहार मनोविज्ञान",
+    "रिश्तों का मनोविज्ञान",
+    "psychology facts hindi",
+    "human behavior psychology hindi",
+    "mind psychology facts"
+   ],
+   "calendar": false,
+   "instagram_handles": [
+    "themindsjournal",
+    "the.mind.journal",
+    "thepsychologyguy"
+   ]
+  },
+  "dark-psychology": {
+   "label": "Dark psychology (manipulation awareness, persuasion, self-protection)",
+   "relevance": "dark psychology|manipulation|gaslighting|persuasion|narcissist|मनोवैज्ञानिक चाल|मैनिपुलेशन|हेरफेर|डार्क साइकोलॉजी",
+   "seed_queries": [
+    "डार्क साइकोलॉजी",
+    "मैनिपुलेशन ट्रिक्स",
+    "दिमागी हेरफेर",
+    "dark psychology facts hindi",
+    "manipulation tactics hindi",
+    "gaslighting kya hota hai"
+   ],
+   "calendar": false,
+   "instagram_handles": [
+    "themindsjournal"
+   ]
+  }
+ },
  "youtube": {
   "lang": "hi",
   "days": 120,
-  "per": 20,
-  "maxQueries": 22,
-  "evergreen_long": [
-   "कर्ण कथा महाभारत",
-   "अभिमन्यु चक्रव्यूह",
-   "शिव कथा",
-   "विष्णु अवतार कथा",
-   "द्रौपदी कथा",
-   "भीष्म प्रतिज्ञा",
-   "हनुमान कथा रामायण",
-   "सीता कथा रामायण"
-  ],
-  "evergreen_short": [
-   "mythology shorts hindi",
-   "महाभारत shorts",
-   "रामायण shorts",
-   "पौराणिक कथा shorts"
-  ]
+  "per": 15,
+  "maxQueriesPerPillar": 10
  },
  "instagram": {
-  "handles": [
-   "epicstories",
-   "amarchitrakatha",
-   "storieswithvishal",
-   "bharatkatha",
-   "hindustoriesofficial",
-   "hindu_gods_official"
-  ],
-  "posts": 30,
+  "posts": 25,
   "aliases": {
    "कर्ण": "karna",
    "द्रौपदी": "draupadi",
@@ -48,37 +98,21 @@
    "भीष्म": "bhishma",
    "अभिमन्यु": "abhimanyu",
    "विष्णु": "vishnu",
-   "गोवर्धन": "govardhan",
-   "तुलसी": "tulsi",
-   "सावित्री": "savitri",
-   "यमराज": "yama",
-   "धनतेरस": "dhanteras",
    "अर्जुन": "arjuna",
    "गणेश": "ganesh",
    "राम": "rama|ram ",
    "होली": "holi|holika|prahlad",
-   "प्रह्लाद": "prahlad",
-   "शरद": "sharad",
-   "पूर्णिमा": "purnima",
-   "करवा": "karva|karwa",
-   "चौथ": "chauth",
-   "देवउठनी": "dev uthani|prabodhini",
-   "एकादशी": "ekadashi",
-   "त्रिपुरासुर": "tripurasura|tripura",
-   "कार्तिक": "kartik",
-   "समुद्र": "samudra|churning",
-   "मंथन": "manthan|churning",
-   "अयोध्या": "ayodhya",
-   "कुंती": "kunti",
-   "पांडु": "pandu",
-   "द्रोणाचार्य": "drona",
-   "एकलव्य": "ekalavya",
-   "परशुराम": "parashurama",
    "गीता": "gita|geeta",
-   "दत्तात्रेय": "dattatreya",
    "सरस्वती": "saraswati",
-   "कंस": "kansa",
-   "जन्म": "birth"
+   "मनोविज्ञान": "psychology|mind",
+   "व्यवहार": "behavior|behaviour",
+   "रिश्तों": "relationship",
+   "हेरफेर": "manipulation",
+   "चाल": "tactics|trick",
+   "डार्क": "dark",
+   "ग्रीक": "greek",
+   "नॉर्स": "norse",
+   "मिस्र": "egyptian|egypt"
   }
  },
  "lead_days": {

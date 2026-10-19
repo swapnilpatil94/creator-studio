@@ -27,3 +27,4 @@ stories/reel-*/narration/voice/*.wav
 # outlier engine output lives on the `data` branch, not main
 planner/data/monthly/
 planner/data/outliers-monthly-*
+planner/data/outliers-kathaaya-*

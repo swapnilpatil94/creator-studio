@@ -7,10 +7,15 @@ import fs from "node:fs"; import path from "node:path"; import { fileURLToPath }
 const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, "..");
 const arg = (n, d) => process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : d;
 let KEY = process.env.YOUTUBE_API_KEY; const envf = path.join(root, ".env.local"); if (!KEY && fs.existsSync(envf)) KEY = (fs.readFileSync(envf, "utf8").match(/YOUTUBE_API_KEY=(\S+)/) || [])[1];
+// second project's key (separate 10,000/day quota): used automatically when the first is exhausted, so one busy research day does not block the whole engine. Same quota reset schedule, different project.
+let KEY2 = process.env.YOUTUBE_API_KEY_KATHAAYA; if (!KEY2 && fs.existsSync(envf)) KEY2 = (fs.readFileSync(envf, "utf8").match(/YOUTUBE_API_KEY_KATHAAYA=(\S+)/) || [])[1];
+let usingKey2 = false;
 if (!KEY) { console.error("missing YOUTUBE_API_KEY (put it in .env.local)"); process.exit(1); }
 const channelTag = arg("--channel", "kathaaya"), queries = arg("--queries", "").split("|").map(s => s.trim()).filter(Boolean), days = Number(arg("--days", 120)), lang = arg("--lang", "hi"), perQ = Number(arg("--per", 25)), label = arg("--label", channelTag);
 if (!queries.length) { console.error("give --queries 'a|b|c'"); process.exit(1); }
-let units = 0; const api = async (ep, params, cost) => { const u = new URL("https://www.googleapis.com/youtube/v3/" + ep); for (const [k, v] of Object.entries({ ...params, key: KEY })) u.searchParams.set(k, v); const r = await fetch(u); units += cost; const j = await r.json(); if (j.error) throw new Error(ep + ": " + j.error.message); return j; };
+let units = 0; const api = async (ep, params, cost) => { const u = new URL("https://www.googleapis.com/youtube/v3/" + ep); for (const [k, v] of Object.entries({ ...params, key: usingKey2 ? KEY2 : KEY })) u.searchParams.set(k, v); const r = await fetch(u); units += cost; const j = await r.json();
+  if (j.error) { if (!usingKey2 && KEY2 && /quota/i.test(j.error.message)) { usingKey2 = true; console.error(`[yt-outliers] primary key quota exhausted, switching to the second project's key for the rest of this run`); return api(ep, params, 0); } throw new Error(ep + ": " + j.error.message); }
+  return j; };
 const dur = s => { const m = /PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/.exec(s || "") || []; return (+m[1] || 0) * 3600 + (+m[2] || 0) * 60 + (+m[3] || 0); };
 const median = a => { const s = [...a].sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : 0; };
 const after = new Date(Date.now() - days * 864e5).toISOString();
