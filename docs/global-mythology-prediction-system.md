@@ -17,7 +17,9 @@ A 99% figure could be a target for engineering reliability (the scheduled job cr
 - The first YouTube API research attempt failed after three story searches with Google's explicit error: **quota exceeded for the “Search Queries” daily limit**.
 - That means the initial run did **not** provide a complete 30-topic comparison and did **not** generate its monthly report. Missing results must never be interpreted as low demand.
 - The API key is configured (the runner reached the API), but the Google Cloud project quota is currently too low or exhausted. Re-running immediately without a quota fix or another data source will likely fail again.
-- The planner has now been updated to stop on quota/rate-limit errors, preserve the partial evidence it did collect, label unresearched topics, and still write JSON and Markdown outputs.
+- The planner has now been updated to stop on quota/rate-limit errors, preserve partial evidence, label unresearched topics, and still write JSON and Markdown outputs.
+- A follow-up run completed successfully as a workflow execution and uploaded a **partial report artifact**; this is an engineering success, not a completed trend analysis. Most topic rows were not researched because the API quota was exhausted.
+- A follow-up fix also excludes generic keywords (for example, “underworld” and “death”) from automatic festival-to-topic matches to reduce false calendar boosts.
 
 **Required operational fix:** check the YouTube Data API quota for the Google Cloud project associated with `YOUTUBE_API_KEY`, request an appropriate quota if eligible, and avoid overlapping/manual runs. Search requests are expensive relative to ordinary video/channel lookups. Never share the key in logs or reports.
 
@@ -143,4 +145,4 @@ Reserve production capacity for timely events, but keep a mix of evergreen stori
 - Calendar source entries are stored in `planner/global-cultural-calendar.json`; each event's source should be checked before use.
 
 ---
-**Status:** Engineering changes are committed on the feature branch. The quota failure is confirmed. The updated workflow must complete successfully before the partial Markdown report can be treated as verified output. The prediction model described above is a staged plan, not yet a trained 99%-accurate model.
+**Status:** Engineering changes are committed on the feature branch. The updated workflow completed successfully and uploaded a partial October 2026 report artifact, but the report is explicitly quota-limited and is not a valid full topic ranking. A newer commit reduces false generic calendar matches and will trigger another workflow run. The prediction model described above is a staged plan, not yet a trained 99%-accurate model.
