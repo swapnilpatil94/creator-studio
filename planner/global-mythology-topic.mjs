@@ -195,19 +195,81 @@ for (const topic of evidenceByTopic) {
   topic.planningScore = Math.min(100,topic.evidenceScore+topic.calendarBoost);
 }
 evidenceByTopic.sort((a,b) => b.planningScore-a.planningScore || b.evidenceScore-a.evidenceScore);
-const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const chosen = [];
-const traditionCount = {};
-for (const t of evidenceByTopic) {
-  if (chosen.length>=daysInMonth) break;
-  if (chosen.filter(x=>x.tradition===t.tradition).length>=5) continue;
-  chosen.push(t); traditionCount[t.tradition]=(traditionCount[t.tradition]||0)+1;
+// Build a real date-mapped publishing calendar. Festival slots are assigned to their
+// recommended publish date (event date minus lead time); remaining dates use ranked
+// evergreen topics. If a lead date has passed but the event is still ahead this month,
+// schedule the story today rather than silently dropping the opportunity.
+const today = new Date().toISOString().slice(0,10);
+const scheduledByDate = new Map();
+const usedTopicNames = new Set();
+const genericKeywords = new Set(["death","spring","birth","winter","underworld","sun","creation","wisdom","ancestors","spirits","light","story","myth","mythology","renewal","symbolism","dragon","star"]);
+function eventTopicMatch(event, topic) {
+  const searchable = [topic.topic,topic.tradition,...topic.queries].join(" ").toLowerCase();
+  return event.keywords.reduce((score, keyword) => {
+    const k = keyword.toLowerCase().trim();
+    if (k.length < 4 || genericKeywords.has(k)) return score;
+    return searchable.includes(k) ? score + (k.includes(" ") ? 3 : 2) : score;
+  }, 0);
 }
-for (const t of evidenceByTopic) if (chosen.length<daysInMonth && !chosen.includes(t)) chosen.push(t);
-const calendar = chosen.map((t,i)=>{
-  const date = new Date(Date.UTC(year,month-1,i+1));
-  return {day:i+1,date:date.toISOString().slice(0,10),topic:t.topic,tradition:t.tradition,evidenceScore:t.evidenceScore,calendarBoost:t.calendarBoost||0,planningScore:t.planningScore??t.evidenceScore,calendarMatches:t.calendarMatches||[],confidence:t.confidence,hookHindi:makeHook(t),evidenceLinks:t.evidence.slice(0,3).map(v=>({title:v.title,url:v.url,channel:v.channel,views:v.views,viewsPerDay:v.viewsPerDay,outlierRatio:v.outlierRatio,ageDays:v.ageDays})),researchQueries:t.queries};
-});
+for (const event of calendarOpportunities) {
+  if (!event.eventDate || !event.plannedPublishDate || !event.calendarWindowRelevant) continue;
+  let publishDate = event.plannedPublishDate;
+  if (publishDate < today && event.eventDate >= today && targetMonth === today.slice(0,7)) publishDate = today;
+  if (publishDate.slice(0,7) !== targetMonth || publishDate < today) continue;
+  const rankedMatches = [...evidenceByTopic]
+    .map(topic => ({topic,matchScore:eventTopicMatch(event,topic)}))
+    .filter(x=>x.matchScore>0)
+    .sort((a,b)=>b.matchScore-a.matchScore || b.topic.planningScore-a.topic.planningScore);
+  let topic = rankedMatches[0]?.topic;
+  let calendarOnly = false;
+  if (!topic) {
+    // Keep a date-critical story opportunity even when no seed currently represents it.
+    // It is explicitly marked unvalidated rather than falsely inheriting an evidence score.
+    topic = {
+      topic:event.storyAngles?.[0] || event.name+" story",
+      tradition:event.region,
+      evidenceScore:0,calendarBoost:0,planningScore:0,
+      confidence:"calendar opportunity — demand not yet validated",
+      evidence:[],queries:[event.name,...(event.keywords||[]).slice(0,4)],
+      outlierCount:0,independentOutlierCreators:0,medianViewsPerDay:0
+    };
+    calendarOnly = true;
+  }
+  const existing = scheduledByDate.get(publishDate);
+  if (!existing || eventTopicMatch(event,topic) > eventTopicMatch(existing.event,existing.topic)) {
+    scheduledByDate.set(publishDate,{topic,event,calendarOnly});
+  }
+}
+const calendar = [];
+const usedTopics = new Set();
+let rankedCursor = 0;
+for (let day=1; day<=daysInMonth; day++) {
+  const date = new Date(Date.UTC(year,month-1,day)).toISOString().slice(0,10);
+  const fixed = scheduledByDate.get(date);
+  let t = fixed?.topic;
+  if (t && !fixed.calendarOnly && usedTopics.has(t.topic)) t = null;
+  if (!t) {
+    while (rankedCursor < evidenceByTopic.length && usedTopics.has(evidenceByTopic[rankedCursor].topic)) rankedCursor++;
+    t = evidenceByTopic[rankedCursor++];
+  }
+  if (!t) continue;
+  usedTopics.add(t.topic);
+  const event = fixed?.topic===t ? fixed.event : null;
+  calendar.push({
+    day,date,publishDate:date,topic:t.topic,tradition:t.tradition,
+    evidenceScore:t.evidenceScore??0,calendarBoost:t.calendarBoost||0,
+    planningScore:t.planningScore??t.evidenceScore??0,
+    calendarMatches:event?[{name:event.name,eventDate:event.eventDate,publishDate:date,plannedPublishDate:event.plannedPublishDate}]: (t.calendarMatches||[]),
+    calendarEvent:event?{name:event.name,eventDate:event.eventDate,plannedPublishDate:event.plannedPublishDate,dateStatus:event.dateStatus,region:event.region,source:event.source,leadDays:event.leadDays,action:event.action}:null,
+    dateStatus:event?.dateStatus||"evergreen slot — publish date can be adjusted",
+    publishReason:event?"Calendar-led: publish before the cultural moment; confirm date and story version.":"Evergreen slot ranked by observed public video evidence.",
+    backupPlan:event?"If missed, publish only while audience interest is active; otherwise move to the next relevant seasonal window.":"If production slips, move to the next open evergreen slot.",
+    confidence:t.confidence,hookHindi:makeHook(t),
+    evidenceLinks:(t.evidence||[]).slice(0,3).map(v=>({title:v.title,url:v.url,channel:v.channel,views:v.views,viewsPerDay:v.viewsPerDay,outlierRatio:v.outlierRatio,ageDays:v.ageDays})),
+    researchQueries:t.queries||[],calendarOnly:!!fixed?.calendarOnly
+  });
+}
+
 function makeHook(t) {
   const hooks = {
     "Mesopotamian":"उसने मौत को हराने की कोशिश की… लेकिन असली जवाब कुछ और था।",
@@ -228,11 +290,11 @@ function makeHook(t) {
 const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",calendarPolicy:"Festival calendar is a separate editorial signal, not proof of outlier performance. Year-specific and lunar dates require verification; do not schedule an event topic without checking local observance.",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting.","Festival dates and observances may vary by region, calendar, and local tradition."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic,calendarOpportunities};
 fs.mkdirSync("reports",{recursive:true});
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".json",JSON.stringify(output,null,2));
-const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Evidence score reflects observed public performance; calendar boost is a separate editorial timing signal (up to 15 points). Planning score combines them but is not a probability of virality.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## 30-day calendar","", "| Day | Tradition | Topic | Evidence score | Calendar boost | Planning score | Evidence confidence | Hindi hook |", "|---:|---|---|---:|---:|---:|---|---|"];
-for(const t of calendar) lines.push("| "+t.day+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.calendarBoost+" | "+t.planningScore+" | "+t.confidence+" | "+t.hookHindi+" |");
+const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Evidence score reflects observed public performance; calendar boost is a separate editorial timing signal (up to 15 points). Planning score combines them but is not a probability of virality.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## Date-mapped publishing calendar","", "| Publish date | Tradition / region | Topic | Evidence score | Calendar boost | Planning score | Confidence | Hindi hook |", "|---|---|---|---:|---:|---:|---|---|"];
+for(const t of calendar) lines.push("| "+t.publishDate+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.calendarBoost+" | "+t.planningScore+" | "+t.confidence+" | "+t.hookHindi+" |");
 lines.push("","## Evidence cards","");
 for(const t of calendar) {
-  lines.push("### "+t.day+". "+t.topic,"","**Tradition:** "+t.tradition+"  ","**Evidence score:** "+t.evidenceScore+" / 100  ","**Calendar boost:** "+t.calendarBoost+"  ","**Planning score:** "+t.planningScore+" / 100  ","**Calendar matches:** "+(t.calendarMatches.length?t.calendarMatches.map(e=>e.name+" (event "+e.eventDate+", publish by "+e.publishDate+")").join("; "):"No matching dated event boost") +"  ","**Confidence:** "+t.confidence,"","**Research queries:** "+t.researchQueries.join("; "),"");
+  ,"",**Publication date:** "+t.publishDate+"  ","**Date status:** "+t.dateStatus+"  ","**Why this date:** "+t.publishReason+"  ","**Backup plan:** "+t.backupPlan+"  ","**Tradition:** "+t.tradition+"  ","**Evidence score:** +t.evidenceScore+" / 100  ","**Calendar boost:** "+t.calendarBoost+"  ","**Planning score:** "+t.planningScore+" / 100  ","**Calendar matches:** "+(t.calendarMatches.length?t.calendarMatches.map(e=>e.name+" (event "+e.eventDate+", publish by "+e.publishDate+")").join("; "):"No matching dated event boost") +"  ","**Confidence:** "+t.confidence,"","**Research queries:** "+t.researchQueries.join("; "),"");
   if(!t.evidenceLinks.length) lines.push("No qualifying public video evidence found in this run. Treat as an exploratory idea, not a validated outlier.","");
   else {
     lines.push("| Source video | Channel | Views | Views/day | Same-format outlier | Age |","|---|---|---:|---:|---:|---:|");
