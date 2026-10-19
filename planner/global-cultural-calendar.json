@@ -394,6 +394,156 @@
       ],
       "source": "https://www.timeanddate.com/calendar/seasons.html",
       "notes": "Exact date/time varies by year and timezone."
+    },
+    {
+      "id": "makar-sankranti-pongal-2027",
+      "name": "Makar Sankranti / Pongal",
+      "region": "India; regional harvest traditions",
+      "date": "2027-01-15",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Surya",
+        "sun",
+        "harvest",
+        "Makar Sankranti",
+        "Pongal",
+        "Uttarayana"
+      ],
+      "storyAngles": [
+        "Surya and the symbolism of the sun’s northward journey",
+        "How regional harvest traditions tell different stories about gratitude and renewal"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Festival date and customs vary by region; frame as culture/story, not a single pan-Indian myth."
+    },
+    {
+      "id": "vasant-panchami-2027",
+      "name": "Vasant Panchami / Saraswati Puja",
+      "region": "India and diaspora; regional practices vary",
+      "date": "2027-02-11",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Saraswati",
+        "learning",
+        "music",
+        "knowledge",
+        "Vasant Panchami"
+      ],
+      "storyAngles": [
+        "Why Saraswati is associated with learning, music and the arts",
+        "The symbolism of knowledge and the veena in Saraswati traditions"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Confirm local observance and source the version of the story used."
+    },
+    {
+      "id": "maha-shivratri-2027",
+      "name": "Maha Shivratri",
+      "region": "India and diaspora",
+      "date": "2027-03-06",
+      "dateType": "year-specific-verify",
+      "leadDays": 14,
+      "keywords": [
+        "Shiva",
+        "Parvati",
+        "Neelkanth",
+        "lingodbhava",
+        "cosmic dance"
+      ],
+      "storyAngles": [
+        "The many stories associated with Shiva’s cosmic dance",
+        "Neelkanth and the poison from the churning of the ocean"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Date may vary by location and panchang; verify local observance."
+    },
+    {
+      "id": "ram-navami-2027",
+      "name": "Rama Navami",
+      "region": "India and diaspora; regional tellings vary",
+      "date": "2027-04-15",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Rama",
+        "Ramayana",
+        "Ayodhya",
+        "dharma",
+        "Rama Navami"
+      ],
+      "storyAngles": [
+        "Rama’s choices: duty, compassion and the cost of dharma",
+        "How regional Ramayana traditions tell key moments differently"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Use clear attribution to the Ramayana version and regional tradition."
+    },
+    {
+      "id": "hanuman-jayanti-2027",
+      "name": "Hanuman Jayanti",
+      "region": "India and diaspora; observance varies",
+      "date": "2027-04-20",
+      "dateType": "year-specific-verify",
+      "leadDays": 10,
+      "keywords": [
+        "Hanuman",
+        "Rama",
+        "Sita",
+        "Sanjeevani",
+        "devotion"
+      ],
+      "storyAngles": [
+        "Hanuman and the mountain he carried: courage under impossible pressure",
+        "Why Hanuman’s strength is inseparable from humility and devotion"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Hanuman Jayanti is observed on different dates in some regions; verify target audience location."
+    },
+    {
+      "id": "janmashtami-2027",
+      "name": "Krishna Janmashtami",
+      "region": "India and diaspora; Vaishnava dates may differ",
+      "date": "2027-08-25",
+      "dateType": "year-specific-verify",
+      "leadDays": 14,
+      "keywords": [
+        "Krishna",
+        "Kansa",
+        "Mathura",
+        "Gokul",
+        "Bhagavad Gita",
+        "Janmashtami"
+      ],
+      "storyAngles": [
+        "Kansa’s fear of a prophecy—and how fear shaped his tyranny",
+        "Krishna’s childhood stories and the meanings attached to them"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Confirm regional/Vaishnava date locally; distinguish devotional belief from historical claims."
+    },
+    {
+      "id": "ganesh-chaturthi-2027",
+      "name": "Ganesh Chaturthi",
+      "region": "India and diaspora; regional observance varies",
+      "date": "2027-09-04",
+      "dateType": "year-specific-verify",
+      "leadDays": 12,
+      "keywords": [
+        "Ganesha",
+        "Shiva",
+        "Parvati",
+        "wisdom",
+        "obstacles",
+        "Ganesh Chaturthi"
+      ],
+      "storyAngles": [
+        "The many tellings of Ganesha’s birth and what they emphasize",
+        "Why Ganesha is associated with wisdom and removing obstacles"
+      ],
+      "source": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2027",
+      "notes": "Verify local tithi and observance before scheduling."
     }
   ]
 }
