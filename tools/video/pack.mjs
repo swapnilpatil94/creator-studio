@@ -3,7 +3,7 @@
 // so a flag the model writes is a flag the engine understands. Only TITLE + NARRATION are required; every other field removes a guess the local models would otherwise make.
 //   parsePack(text)  -> { ok, errors[], warnings[], pack }      packPrompt({topic, format, source}) -> the prompt text      savePack(pack) -> content/videos/<slug>.video.json + stories/video-<slug>/{script.txt,pack.json}
 //   applyDirections(dir) -> after the director: the owner's SCENES / VISUALS / LOOK are written into plan.json, assets/art/shots.json and look.json
-import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
+import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { fileURLToPath } from "node:url";
 import { CATALOG, FX_BY_INTENT } from "../longform/director.mjs"; import { EFFECTS } from "../../engine/longform/fx.js"; import { BG_NAMES } from "../../engine/longform/backdrops.js"; import { makeLook } from "../longform/look.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } }, W = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, 1)); };
 export const WPS = 3.0;   // spoken words per second with the designed pauses (matches tools/video/script.mjs)
@@ -49,11 +49,28 @@ export function parsePack(text) {
 }
 // content/videos/<slug>.video.json is the item the pipeline reads; stories/video-<slug>/ gets the owner's script and the whole pack
 export const slugOf = p => p.slug || ("v-" + [...p.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36));
+// duplicate-content guard: warns (never blocks) when a very similar story already exists as a video, carousel, or blog post, so the channel does not repeat itself
+export function findSimilar(pack) {
+  const generic = new Set(["के", "की", "का", "को", "ने", "से", "में", "पर", "और", "है", "हैं", "था", "थी", "थे", "क्यों", "कैसे", "क्या", "कौन", "कथा", "महाभारत", "रामायण", "क्यों?", "story", "shorts"]);
+  const words = t => (t || "").replace(/[?？|,।]/g, " ").split(/\s+/).filter(w => w.length > 2 && !generic.has(w));
+  const mine = new Set(words(pack.title).concat(words((pack.beats || [])[0]?.text || "")));
+  if (mine.size < 2) return [];
+  const hits = [];
+  const vdir = path.join(root, "content/videos"); if (fs.existsSync(vdir)) for (const f of fs.readdirSync(vdir)) { if (slugOf(pack) + ".video.json" === f) continue; const it = J(path.join(vdir, f)); if (!it) continue; const w = new Set(words(it.title || it.hook)); const overlap = [...mine].filter(x => w.has(x)).length; if (overlap >= Math.min(3, mine.size)) hits.push({ id: it.id, title: it.title || it.hook, overlap, kind: "video" }); }
+  const idir = path.join(root, "content/items"); if (fs.existsSync(idir)) for (const f of fs.readdirSync(idir)) { const it = J(path.join(idir, f)); if (!it) continue; const w = new Set(words(it.hook || it.title)); const overlap = [...mine].filter(x => w.has(x)).length; if (overlap >= Math.min(3, mine.size)) hits.push({ id: it.id, title: it.hook || it.title, overlap, kind: it.format }); }
+  return hits.sort((a, b) => b.overlap - a.overlap).slice(0, 5);
+}
 export function savePack(pack) {
+  // RESUME: only the fields that change what a beat IS (its words, chapter, which picture/visual it gets) invalidate downstream work. Re-pasting the identical pack (e.g. after the laptop slept, the Hub restarted,
+  // or you just click Make again) keeps beats.json/plan.json so script+director are skipped and art/voice/camera pick up exactly where they stopped -- nothing already made is redone.
   const slug = slugOf(pack), id = slug + ".video", it = { id, format: "video", video_format: pack.format, slug, topic: slug, language: "hi", status: "approved", hook: pack.title, title: pack.title, slides: [], art: [], cta: "सेव करें · फ़ॉलो करें", source_line: pack.source_line, tradition_note: pack.tradition, hashtags: pack.hashtags.length ? pack.hashtags : ["#kathaaya"], claims: pack.claims, thumb: { headline: pack.thumb, support: pack.thumbSupport, style: pack.thumbStyle, art: pack.thumbArt, scene: pack.thumbScene }, created: new Date().toISOString().slice(0, 10) };
   W(path.join(root, "content/videos", id + ".json"), it); const d = path.join(root, "stories", "video-" + slug); fs.mkdirSync(d, { recursive: true });
-  fs.writeFileSync(path.join(d, "script.txt"), pack.beats.map(b => (b.chapter ? `## ${b.chapter}\n` : "") + (b.intent ? `[${b.intent}] ` : "") + b.text).join("\n") + "\n"); W(path.join(d, "pack.json"), pack);
-  for (const f of ["beats.json", "script.json", "plan.json", "plan.report.json", "plan.final.json"]) fs.rmSync(path.join(d, f), { force: true }); return { id, slug, dir: d };
+  fs.writeFileSync(path.join(d, "script.txt"), pack.beats.map(b => (b.chapter ? `## ${b.chapter}\n` : "") + (b.intent ? `[${b.intent}] ` : "") + b.text).join("\n") + "\n");
+  const contentHash = crypto.createHash("sha1").update(JSON.stringify({ format: pack.format, beats: pack.beats.map(b => [b.text, b.chapter, b.intent]), scenes: pack.scenes, visuals: pack.visuals })).digest("hex"), hashFile = path.join(d, "pack.hash");
+  const unchanged = fs.existsSync(hashFile) && fs.readFileSync(hashFile, "utf8").trim() === contentHash && fs.existsSync(path.join(d, "beats.json"));
+  W(path.join(d, "pack.json"), pack); fs.writeFileSync(hashFile, contentHash);
+  if (!unchanged) for (const f of ["beats.json", "script.json", "plan.json", "plan.report.json", "plan.final.json"]) fs.rmSync(path.join(d, f), { force: true });
+  return { id, slug, dir: d, resumed: unchanged };
 }
 // after the director: the owner's own picture prompts, per-beat visual choices and look are written into the plan
 export function applyDirections(dir, log = () => {}) {
