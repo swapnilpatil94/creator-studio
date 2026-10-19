@@ -22,7 +22,7 @@ const secs = l => { const m = l.match(/^(\d+):(\d\d)(?::(\d\d))?\s/); return m ?
 const pinnedComment = isLong ? (seed.pinnedComment || "आपको इस कथा में सबसे अलग क्या लगा? नीचे लिखिए 👇 और अगले भाग के लिए सब्सक्राइब कीजिए।") : null;
 const claims = fs.existsSync(P("claims.json")) ? JSON.parse(fs.readFileSync(P("claims.json"), "utf8")) : null, unchecked = claims ? claims.claims.filter(c => c.needs_check).length : null;
 const thumbs = (isLong ? ["thumb-16x9.png", "thumb-9x16.png"] : ["thumb-9x16.png", "thumb-16x9.png"]).filter(f => fs.existsSync(P("output/" + f)));   // the first one is what YouTube gets: 16:9 for long films, 9:16 for Shorts
-const out = path.join(dir, "output"), videoFile = fs.readdirSync(out).find(f => f === story.name + "-share.mp4") || fs.readdirSync(out).find(f => f === story.name + ".mp4");   // the small share file (about 25 MB) uploads reliably; the 270 MB master is the fallback
+const out = path.join(dir, "output"), videoFile = ["-upload.mp4", ".mp4", "-share.mp4"].map(x => story.name + x).find(f => fs.existsSync(path.join(out, f)));   // full quality first: the -upload copy (or the master); the 720p share copy is last resort only
 const tc = fs.existsSync(P("output/thumb-check.json")) ? JSON.parse(fs.readFileSync(P("output/thumb-check.json"), "utf8")) : null;
 const hay = (title + " " + description.split("\n").slice(0, 2).join(" ")).toLowerCase(), qs = seed.queries || [], qHit = qs.filter(q => q.toLowerCase().split(/\s+/).every(w => hay.includes(w)));
 const emojiN = (title.match(/\p{Extended_Pictographic}/gu) || []).length, capsN = (title.match(/\b[A-Z]{3,}\b/g) || []).length, pk = (seed.primaryKeyword || "").toLowerCase();
