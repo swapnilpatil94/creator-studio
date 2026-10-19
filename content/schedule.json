@@ -79,5 +79,23 @@
     "note": "posted by retry after one upload error"
    }
   }
+ },
+ {
+  "id": "durga-janm-katha.fb_long.2026-10-19T14",
+  "item": "story:durga-janm-katha:fb_long",
+  "kind": "fb_long",
+  "platforms": [
+   "facebook"
+  ],
+  "at": "2026-10-19T07:05:13.061Z",
+  "status": "posted",
+  "mode": "post-due",
+  "result": {
+   "facebook": {
+    "id": "1092057950397715",
+    "state": "public"
+   }
+  },
+  "posted_at": "2026-10-19T07:10:15.874Z"
  }
 ]
