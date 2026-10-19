@@ -148,6 +148,39 @@ for (const seed of seeds) {
 evidenceByTopic.sort((a,b)=>b.evidenceScore-a.evidenceScore);
 const [year,month] = targetMonth.split("-").map(Number);
 const daysInMonth = new Date(Date.UTC(year,month,0)).getUTCDate();
+
+// Calendar-aware planning: fixed dates, year-specific festival dates, and lunar/regional
+// events whose dates must be resolved before scheduling. Never silently guess a lunar date.
+const calendarPath = path.join("planner","global-cultural-calendar.json");
+const culturalCalendar = JSON.parse(fs.readFileSync(calendarPath,"utf8"));
+const monthStart = new Date(Date.UTC(year,month-1,1));
+const monthEnd = new Date(Date.UTC(year,month,0));
+const calendarOpportunities = culturalCalendar.events.map(event => {
+  let eventDate = null;
+  let dateStatus = "date requires local/year-specific verification";
+  if (event.date && event.date.startsWith(String(year)+"-")) {
+    eventDate = event.date;
+    dateStatus = event.dateType === "year-specific-verify" ? "year-specific date; verify locally" : "year-specific date";
+  } else if (event.monthDay && ["fixed-annual","approximate-annual"].includes(event.dateType)) {
+    eventDate = String(year)+"-"+event.monthDay;
+    dateStatus = event.dateType === "approximate-annual" ? "approximate annual date; verify exact date/time" : "recurring civil date";
+  } else if (event.dateType === "year-specific" || event.dateType === "year-specific-verify") {
+    return null; // Do not reuse a date from another year.
+  }
+  const plannedPublishDate = eventDate
+    ? new Date(Date.parse(eventDate+"T12:00:00Z")-Number(event.leadDays||10)*DAY).toISOString().slice(0,10)
+    : null;
+  const eventAtOrNearTargetMonth = eventDate
+    ? (eventDate >= monthStart.toISOString().slice(0,10) && eventDate <= monthEnd.toISOString().slice(0,10))
+      || (plannedPublishDate >= monthStart.toISOString().slice(0,10) && plannedPublishDate <= monthEnd.toISOString().slice(0,10))
+    : true;
+  return {...event,eventDate,dateStatus,plannedPublishDate,calendarWindowRelevant:eventAtOrNearTargetMonth,
+    action: eventDate ? (plannedPublishDate < new Date().toISOString().slice(0,10) ? "lead window has passed; publish only if still timely" : "schedule before the event") : "resolve local date, then calculate lead time"};
+}).filter(Boolean).sort((a,b) => {
+  const ad=a.plannedPublishDate||a.date||"9999-12-31";
+  const bd=b.plannedPublishDate||b.date||"9999-12-31";
+  return ad.localeCompare(bd);
+});
 const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 const chosen = [];
 const traditionCount = {};
@@ -178,7 +211,7 @@ function makeHook(t) {
   };
   return hooks[t.tradition] || "एक प्राचीन कथा… और ऐसा मानवीय संघर्ष जो आज भी हमारे भीतर है।";
 }
-const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic};
+const output = {generatedAt:new Date().toISOString(),targetMonth,market:"Hindi-first; global mythology",methodology:{windowDays:180,searchLanguage:"Hindi-relevant YouTube search",formats:"Short <=180s; long >180s",outlierDefinition:"At least 2x the median views of the same creator's recent same-format uploads; minimum 5 baseline uploads",evidenceScore:"Transparent heuristic based on number of outlier videos, independent creators, median views/day and median channel-relative outlier ratio; not a probability of virality",calendarPolicy:"Festival calendar is a separate editorial signal, not proof of outlier performance. Year-specific and lunar dates require verification; do not schedule an event topic without checking local observance.",caveats:["YouTube search is not a complete census.","Public views/likes/comments cannot reveal retention, swipe-away rate, or traffic sources for other creators.","A topic with weak evidence is marked as such, not silently promoted as a proven outlier.","Myth versions vary; verify a reliable primary or scholarly source before scripting.","Festival dates and observances may vary by region, calendar, and local tradition."]},quotaEstimate,topics:calendar,rankedResearch:evidenceByTopic,calendarOpportunities};
 fs.mkdirSync("reports",{recursive:true});
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".json",JSON.stringify(output,null,2));
 const lines = ["# KATHAAYA Global Mythology Topic Plan — "+targetMonth,"","> Evidence-led research, not a guarantee of virality. Every topic must pass source verification before scripting.","", "## Scoring notes","- Search window: last 180 days; one Hindi-relevant YouTube search query per story (to control API quota).","- A channel-relative outlier is at least 2x the median views of that channel's recent same-format uploads, with at least five baseline videos.","- Confidence reflects public evidence availability, not certainty that a new KATHAAYA video will succeed.","- Views/day is age-normalized but still affected by recommendation spikes and platform changes.","", "## 30-day calendar","", "| Day | Tradition | Topic | Evidence score | Evidence confidence | Hindi hook |", "|---:|---|---|---:|---|---|"];
@@ -194,7 +227,11 @@ for(const t of calendar) {
   }
   lines.push("**Script gate:** Verify the story against a primary text or reputable scholarly source; record which tradition/version is used; create an original angle rather than copying source-video packaging.","");
 }
-lines.push("## Full research ranking","","| Rank | Tradition | Topic | Score | Confidence | Outlier videos | Independent creators | Median views/day |","|---:|---|---|---:|---|---:|---:|---:|");
+lines.push("## Festival and cultural-calendar opportunities","","These are editorial timing signals, not proof of video outlier performance. Publish before the event where possible. Verify local observances and source each cultural/religious story respectfully before scripting.","","| Event | Region | Event date | Recommended publish date | Status | Story angles | Source |","|---|---|---|---|---|---|---|");
+for (const e of calendarOpportunities.filter(e => e.calendarWindowRelevant || !e.eventDate)) {
+  lines.push("| "+e.name+" | "+e.region+" | "+(e.eventDate||"verify date")+" | "+(e.plannedPublishDate||"after date verification")+" | "+e.dateStatus+" | "+e.storyAngles.join("; ")+" | [Calendar/source]("+e.source+") |");
+}
+lines.push("","## Full research ranking","","| Rank | Tradition | Topic | Score | Confidence | Outlier videos | Independent creators | Median views/day |","|---:|---|---|---:|---|---:|---:|---:|");
 for(const t of evidenceByTopic) lines.push("| "+(evidenceByTopic.indexOf(t)+1)+" | "+t.tradition+" | "+t.topic+" | "+t.evidenceScore+" | "+t.confidence+" | "+t.outlierCount+" | "+t.independentOutlierCreators+" | "+t.medianViewsPerDay+" |");
 lines.push("","## What this report cannot prove","","- It cannot guarantee virality, audience retention, shares, or subscriber growth.","- Public competitor analytics do not expose average percentage viewed or Shorts 'chose to view' rates; validate those on KATHAAYA's own uploads in YouTube Studio.","- Evidence is limited to searchable public videos and can miss relevant results.","");
 fs.writeFileSync("reports/global-mythology-topic-"+targetMonth+".md",lines.join("\n"));
