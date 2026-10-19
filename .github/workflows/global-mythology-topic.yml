@@ -50,6 +50,11 @@ jobs:
             echo "value=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Validate planner syntax and calendar data
+        run: |
+          node --check planner/global-mythology-topic.mjs
+          node -e 'JSON.parse(require("node:fs").readFileSync("planner/global-cultural-calendar.json", "utf8"))'
+
       - name: Run global mythology research
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
