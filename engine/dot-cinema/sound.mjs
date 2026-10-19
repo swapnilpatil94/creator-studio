@@ -2,7 +2,7 @@
 // Procedural sound design (no samples, no models): drone bed with mood automation + cue synth + reverb + limiter.
 // usage: node sound.mjs <cues.json> <duration_seconds> <out.wav>
 // cues.json: { lead, root, moods:[{t,mood}], cues:[{t,type,dur,level,pan,freq,...}] }  (t in narration seconds; `lead` is added)
-import fs from "node:fs";
+import fs from "node:fs"; import { spawnSync } from "node:child_process";
 const SR = 48000, TAU = Math.PI * 2;
 const db = x => Math.pow(10, x / 20), clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 function rng(seed) { let s = (seed * 2654435761) >>> 0 || 1; return () => { s ^= s << 13; s >>>= 0; s ^= s >>> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; }; }
@@ -70,6 +70,20 @@ export function synth(spec, duration) {
   // ---------- authored silences: duck everything (bed, cues, reverb tails) to near zero so the next sound lands ----------
   for (const sl of spec.silences || []) { const a0 = (sl.t + lead) * SR, b0 = a0 + sl.dur * SR, f = (sl.fade || 0.25) * SR;
     for (let i = Math.max(0, Math.floor(a0 - f)); i < Math.min(N, Math.ceil(b0 + f)); i++) { const g = i < a0 ? 1 - (i - (a0 - f)) / f : i > b0 ? (i - b0) / f : 0, gg = Math.max(0.02, g); L[i] *= gg; R[i] *= gg; } }
+  // ---------- optional background music bed (assets/music/, see its README): looped/trimmed to length, mixed quietly under the cue bed.
+  // The sidechain-ducking in mix.mjs then pulls the whole bed (cues + this) further down under the narration automatically -- nothing else changes.
+  if (spec.music && spec.music.file && fs.existsSync(spec.music.file)) {
+    try {
+      const raw = spawnSync("ffmpeg", ["-y", "-v", "error", "-i", spec.music.file, "-ac", "2", "-ar", String(SR), "-f", "f32le", "-"], { encoding: "buffer", maxBuffer: 1 << 30 }).stdout;
+      const samples = raw.length / 8 | 0; // 2 channels * 4 bytes
+      if (samples > SR) { // at least 1s of real audio decoded
+        const gain = Math.pow(10, (spec.music.gainDb ?? -16) / 20), fadeN = Math.min(Math.floor(2 * SR), Math.floor(N / 6));
+        for (let i = 0; i < N; i++) { const si = i % samples, o = si * 8; let ml = raw.readFloatLE(o), mr = raw.readFloatLE(o + 4);
+          const edge = Math.min(i, N - 1 - i); const fw = edge < fadeN ? edge / fadeN : 1; // fade the loop seam/intro/outro
+          L[i] += ml * gain * fw; R[i] += mr * gain * fw; }
+      }
+    } catch (e) { console.error("music bed skipped: " + e.message.slice(0, 160)); }
+  }
   // ---------- master: soft clip, headroom ----------
   let pk = 0; for (let i = 0; i < N; i++) { L[i] = Math.tanh(L[i] * 1.1) / 1.1; R[i] = Math.tanh(R[i] * 1.1) / 1.1; pk = Math.max(pk, Math.abs(L[i]), Math.abs(R[i])); }
   const norm = pk > 0 ? db(-3) / pk : 1; for (let i = 0; i < N; i++) { L[i] *= norm; R[i] *= norm; }
