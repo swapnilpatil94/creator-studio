@@ -33,7 +33,7 @@ function projectInfo(id) {
   const d = pdir(id), s = rj(path.join(d, "story.json")), segF = path.join(d, "narration/raw.wav.segments.json"), out = path.join(d, "output");
   const info = { id, story: s, script: fs.existsSync(path.join(d, "script.txt")) ? fs.readFileSync(path.join(d, "script.txt"), "utf8") : "", sceneBytes: fs.existsSync(path.join(d, "scene.html")) ? fs.statSync(path.join(d, "scene.html")).size : 0, narration: null, outputs: {}, qa: null, validate: null, mix: null };
   if (fs.existsSync(segF)) { const g = rj(segF); info.narration = { duration: g.duration_seconds, estimated: !!g.estimated, beats: g.segments.map(b => ({ id: b.beat_id, text: b.text, start: b.start_seconds, end: b.end_seconds })), audio: fs.existsSync(path.join(d, "narration/raw.wav")) }; }
-  for (const k of ["share", "master"]) { const f = path.join(out, s.name + (k === "share" ? "-share.mp4" : ".mp4")); if (fs.existsSync(f)) info.outputs[k] = { url: "/files/" + id + "/output/" + path.basename(f), bytes: fs.statSync(f).size, mtime: fs.statSync(f).mtimeMs }; }
+  for (const k of ["share", "master"]) { const f = path.join(out, s.name + (k === "share" ? "-upload.mp4" : ".mp4")); if (fs.existsSync(f)) info.outputs[k] = { url: "/files/" + id + "/output/" + path.basename(f), bytes: fs.statSync(f).size, mtime: fs.statSync(f).mtimeMs }; }
   for (const [k, f] of [["qa", "qa.json"], ["validate", "validate.json"], ["mix", "mix-report.json"], ["visualQa", "visual-qa.json"]]) if (fs.existsSync(path.join(out, f))) info[k] = rj(path.join(out, f)); return info;
 }
 function fillPrompt(id) {

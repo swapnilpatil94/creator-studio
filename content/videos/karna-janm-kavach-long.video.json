@@ -1,0 +1,59 @@
+{
+ "id": "karna-janm-kavach-long.video",
+ "format": "video",
+ "video_format": "long",
+ "slug": "karna-janm-kavach-long",
+ "topic": "karna-janm-kavach-long",
+ "language": "hi",
+ "status": "approved",
+ "hook": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+ "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १११ (गांगुली अनुवाद)",
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#कर्ण",
+  "#महाभारत",
+  "#कुंती"
+ ],
+ "claims": [
+  {
+   "text": "शूर ने अपनी पुत्री पृथा को निःसंतान मित्र कुंतिभोज को दे दिया।",
+   "en": "Shura gave his firstborn daughter Pritha unto his childless cousin and friend Kunti-bhoja",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "दुर्वासा ने पृथा को किसी भी देवता को बुलाने का मंत्र दिया।",
+   "en": "imparted to her a formula of invocation for summoning any of the celestials",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "सूर्य से कवच और कुंडल के साथ पुत्र जन्मा, जो कर्ण कहलाया।",
+   "en": "born a son known as Karna encased in natural armour and with face brightened by ear-rings",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "बंधुओं के भय से पृथा ने शिशु को पानी में डाल दिया; राधा और उसके सूत पति ने उसे पाला।",
+   "en": "from fear of her relatives she cast her offspring into the water; the husband of Radha of the Suta caste took up the child",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "इंद्र ने ब्राह्मण का रूप लेकर कवच माँगा; बदले में एक शक्ति दी; कवच काटने से वह कर्ण कहलाया।",
+   "en": "Indra assuming the form of a Brahmana asked of him his natural armour; he gave unto him a javelin; since he cut off his natural armour he came to be called Karna",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  }
+ ],
+ "thumb": {
+  "headline": "कवच का रहस्य",
+  "support": "कर्ण की पूरी कथा"
+ },
+ "created": "2026-10-19"
+}

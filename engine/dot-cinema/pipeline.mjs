@@ -70,7 +70,7 @@ if (force || state.render !== fpR || !fs.existsSync(mp4)) {
 { const r = run("qa", "node", [path.join(here, "qa.mjs"), mp4, P(cfg.segments), String(lead), path.join(out, "qa.json"), JSON.stringify((cfg.cuts || []).map(c => c + lead)), JSON.stringify(((fs.existsSync(P("sound.json")) ? JSON.parse(fs.readFileSync(P("sound.json"), "utf8")).silences : []) || []).map(x => [x.t + lead, x.t + lead + x.dur]))], here); console.log((r.stdout || "").trim().split("\n").slice(-16).join("\n")); if (r.status !== 0) fail("qa", r); ev("qa", "ok", "all checks passed"); }
 // ---- storage: the render frames (resume data) are 1-19 GB; once the mp4 has passed QA they are dead weight. Set "keepFrames": true in story.json to keep them.
 if (cfg.keepFrames !== true && fs.existsSync(path.join(out, "frames"))) { fs.rmSync(path.join(out, "frames"), { recursive: true, force: true }); ev("cleanup", "ok", "render frames removed after QA passed"); }
-// ---- 6. share copy ----
-const share = path.join(out, cfg.name + "-share.mp4");
-if (!fs.existsSync(share) || fs.statSync(share).mtimeMs < fs.statSync(mp4).mtimeMs) { const r = run("share", "ffmpeg", ["-y", "-loglevel", "error", "-i", mp4, "-vf", "scale=720:-2", "-c:v", "libx264", "-crf", "24", "-preset", "medium", "-c:a", "aac", "-b:a", "128k", share], here); if (r.status !== 0) fail("share", r); }
+// ---- 6. the final file: ONE high-quality copy (<name>-upload.mp4): the master when its bitrate is sane, else re-encoded to ~12 Mbps. No small preview copy any more ----
+const share = path.join(out, cfg.name + "-upload.mp4");
+{ const r = run("final", "node", [path.resolve(here, "../../tools/video/make-upload.mjs"), dir], here); if (r.status !== 0) fail("final", r); }
 fs.writeFileSync(stateFile, JSON.stringify(state, null, 1)); ev("done", "ok", share); console.log("DONE in " + ((Date.now() - t0) / 1000).toFixed(0) + "s -> " + share);
