@@ -181,6 +181,20 @@ const calendarOpportunities = culturalCalendar.events.map(event => {
   const bd=b.plannedPublishDate||b.date||"9999-12-31";
   return ad.localeCompare(bd);
 });
+// Festival timing is an editorial signal, not evidence of video performance.
+for (const topic of evidenceByTopic) {
+  const searchable = [topic.topic,topic.tradition,...topic.queries].join(" ").toLowerCase();
+  const relevantEvents = calendarOpportunities.filter(event =>
+    event.eventDate && event.calendarWindowRelevant &&
+    event.keywords.some(keyword => searchable.includes(keyword.toLowerCase()))
+  );
+  topic.calendarBoost = relevantEvents.length ? Math.min(15, relevantEvents.length * 5) : 0;
+  topic.calendarMatches = relevantEvents.map(event => ({
+    name:event.name,eventDate:event.eventDate,publishDate:event.plannedPublishDate
+  }));
+  topic.planningScore = Math.min(100,topic.evidenceScore+topic.calendarBoost);
+}
+evidenceByTopic.sort((a,b) => b.planningScore-a.planningScore || b.evidenceScore-a.evidenceScore);
 const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 const chosen = [];
 const traditionCount = {};
