@@ -48,7 +48,7 @@ export function parsePack(text) {
   return { ok: !errors.length, errors, warnings, pack, stats: { beats: beats.length, words, est_seconds: secs, chapters: chapters.length, scenes: Object.keys(scenes).length, visuals: Object.keys(visuals).length, format } };
 }
 // content/videos/<slug>.video.json is the item the pipeline reads; stories/video-<slug>/ gets the owner's script and the whole pack
-const slugOf = p => p.slug || ("v-" + [...p.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36));
+export const slugOf = p => p.slug || ("v-" + [...p.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36));
 export function savePack(pack) {
   const slug = slugOf(pack), id = slug + ".video", it = { id, format: "video", video_format: pack.format, slug, topic: slug, language: "hi", status: "approved", hook: pack.title, title: pack.title, slides: [], art: [], cta: "सेव करें · फ़ॉलो करें", source_line: pack.source_line, tradition_note: pack.tradition, hashtags: pack.hashtags.length ? pack.hashtags : ["#kathaaya"], claims: pack.claims, thumb: { headline: pack.thumb, support: pack.thumbSupport, style: pack.thumbStyle, art: pack.thumbArt, scene: pack.thumbScene }, created: new Date().toISOString().slice(0, 10) };
   W(path.join(root, "content/videos", id + ".json"), it); const d = path.join(root, "stories", "video-" + slug); fs.mkdirSync(d, { recursive: true });
