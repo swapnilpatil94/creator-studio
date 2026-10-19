@@ -1,0 +1,114 @@
+{
+ "s1": {
+  "subject": "young archer prince bow drawn",
+  "action": "aiming at a wooden bird",
+  "setting": "tall tree forest training ground",
+  "lighting": "warm morning light",
+  "medium": "ravi-varma"
+ },
+ "s2": {
+  "subject": "young prince in a royal courtyard",
+  "action": "holding a bow at the ready",
+  "setting": "sunlit palace training ground",
+  "lighting": "warm morning light",
+  "medium": "ravi-varma"
+ },
+ "s4": {
+  "subject": "teacher smiling at a kneeling boy",
+  "action": "calling him forward",
+  "setting": "forest hermitage ground",
+  "lighting": "soft golden light",
+  "medium": "ravi-varma"
+ },
+ "s6": {
+  "subject": "prince drawing a bow",
+  "action": "aiming up at a tree branch",
+  "setting": "open forest clearing",
+  "lighting": "dappled sunlight",
+  "medium": "ravi-varma"
+ },
+ "s8": {
+  "subject": "prince eyes fixed forward",
+  "action": "seeing only the bird",
+  "setting": "blurred trees behind him",
+  "lighting": "soft golden glow",
+  "medium": "ravi-varma"
+ },
+ "s9": {
+  "subject": "teacher with a white beard",
+  "action": "asking a calm question",
+  "setting": "forest hermitage",
+  "lighting": "warm afternoon light",
+  "medium": "ravi-varma"
+ },
+ "s12": {
+  "subject": "arrow leaving the bow",
+  "action": "striking the bird's head",
+  "setting": "open forest clearing",
+  "lighting": "bright sunlit air",
+  "medium": "ravi-varma"
+ },
+ "s14": {
+  "subject": "group of students walking",
+  "action": "towards a wide river bank",
+  "setting": "misty river morning",
+  "lighting": "pale golden light",
+  "medium": "ravi-varma"
+ },
+ "s15": {
+  "subject": "teacher standing in river",
+  "action": "crocodile gripping his thigh",
+  "setting": "sacred river bank",
+  "lighting": "dramatic dawn light",
+  "medium": "ravi-varma"
+ },
+ "s17": {
+  "subject": "young archer firing arrows",
+  "action": "at a crocodile in the water",
+  "setting": "river bank",
+  "lighting": "bright midday light",
+  "medium": "ravi-varma"
+ },
+ "s18": {
+  "subject": "teacher giving a glowing weapon",
+  "action": "kneeling student receives it",
+  "setting": "hermitage courtyard",
+  "lighting": "golden divine light",
+  "medium": "ravi-varma"
+ },
+ "scene0": {
+  "subject": "princes with bows",
+  "action": "straining to shoot arrows",
+  "setting": "ancient palace courtyard",
+  "lighting": "golden dawn light",
+  "medium": "ravi-varma"
+ },
+ "scene2": {
+  "subject": "Drona stands with a young boy",
+  "action": "pointing toward a tree and a bird",
+  "setting": "ancient forest clearing at dawn",
+  "lighting": "soft golden morning light",
+  "medium": "ravi-varma"
+ },
+ "scene5": {
+  "subject": "Arjuna and Drona",
+  "action": "embrace with tears streaming down their faces",
+  "setting": "ancient battlefield under a blood-red sky",
+  "lighting": "soft golden glow",
+  "medium": "ravi-varma"
+ },
+ "scene7": {
+  "subject": "Drona, his disciples",
+  "action": "pleading for mercy as he falls",
+  "setting": "battlefield with broken weapons and chariots",
+  "lighting": "dying light of sunset",
+  "medium": "ravi-varma"
+ },
+ "scene9": {
+  "subject": "Arjuna stands motionless with bow in hand",
+  "action": "his eyes fixed on a distant target",
+  "setting": "a serene battlefield at dawn",
+  "lighting": "golden morning light",
+  "medium": "ravi-varma"
+ }
+}

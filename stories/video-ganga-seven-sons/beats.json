@@ -1,0 +1,211 @@
+[
+ {
+  "id": "v001",
+  "text": "गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल दिया?",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "राजा शांतनु ने गंगा से विवाह किया, पर एक शर्त के साथ।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "शर्त यह थी कि वे गंगा के किसी काम में दख़ल नहीं देंगे, और कभी कटु शब्द नहीं कहेंगे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "गंगा ने साफ कहा था, जिस क्षण राजा ने रोका या कठोर बात कही, वे उन्हें छोड़ देंगी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "शांतनु अपनी पत्नी के रूप और सेवा से इतने प्रसन्न थे कि महीने, ऋतुएँ और साल बीतते गए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "आठ संतानें हुईं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "पहली सात को गंगा ने जन्म लेते ही नदी में डाल दिया, और हर बार कहा कि यह तुम्हारे भले के लिए है।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "शांतनु कुछ नहीं बोले, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "लेकिन आठवें बच्चे के समय उन्होंने गंगा को रोक दिया, और पूछा कि तुम कौन हो।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "तब गंगा ने बताया कि वे जह्नु की पुत्री गंगा हैं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "और वे आठों बालक वसु थे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "वशिष्ठ ने शाप दिया कि वसुओं को पृथ्वी पर जन्म लेना पड़ेगा।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "वसुओं ने गंगा से माँगा कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "सात वसु जन्म के साथ ही शाप से मुक्त हो गए।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "पर द्यौ, जिसके कारण गाय चुराई गई थी, उसे लंबे समय तक पृथ्वी पर रहना पड़ा।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "वही आठवाँ बालक आगे चलकर देवव्रत कहलाया, जिसे गंगेय भी कहा गया।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "तो गंगा ने सात पुत्र क्यों बहाए? एक शाप से उन्हें मुक्त करने के लिए।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "सेव करें · फ़ॉलो करें",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ }
+]

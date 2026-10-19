@@ -1,0 +1,244 @@
+[
+ {
+  "id": "v001",
+  "text": "अर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी?",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "सब राजकुमार धनुष ताने खड़े थे, और सब असफल हो चुके थे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "तब द्रोण ने मुस्कुराकर अर्जुन को बुलाया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "उन्होंने कहा, निशाना तुम्हें साधना है, और मेरे आदेश पर ही बाण छोड़ना।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "अर्जुन धनुष तानकर, चिड़िया पर निशाना साधे खड़े रहे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "द्रोण ने पूछा, क्या तुम्हें चिड़िया, पेड़ और मैं दिखाई देते हैं?",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "अर्जुन ने उत्तर दिया, मुझे केवल चिड़िया दिखती है, पेड़ या आप नहीं।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "द्रोण ने फिर कहा, अगर तुम्हें गिद्ध दिखता है, तो उसका वर्णन करो।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "अर्जुन बोले, मुझे केवल गिद्ध का सिर दिखता है, उसका शरीर नहीं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "यह सुनकर द्रोण के रोंगटे खड़े हो गए, और उन्होंने कहा, चलाओ।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "अर्जुन का बाण चला, और गिद्ध का सिर कटकर नीचे आ गिरा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "द्रोण ने अर्जुन को गले लगा लिया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "कुछ समय बाद सारे शिष्य गंगा के तट पर स्नान करने गए।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "जब द्रोण जल में उतरे, तब एक बलवान मगर ने उनकी जाँघ पकड़ ली।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "द्रोण ने जल्दी में शिष्यों से कहा, इसे मारो और मुझे बचाओ।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "बाकी शिष्य अपनी जगह घबराए खड़े रहे, पर अर्जुन ने पाँच तीखे बाणों से मगर को मार दिया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "तब द्रोण ने अर्जुन को ब्रह्मशिर नाम का अस्त्र दिया।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "साथ में चेतावनी दी, इसे कभी किसी मनुष्य शत्रु पर मत चलाना।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "कहा कि तुम जैसा धनुर्धर इस संसार में कोई और नहीं होगा।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "तो अर्जुन ने सिर्फ़ चिड़िया क्यों देखी? ग्रंथ के अनुसार, उनकी दृष्टि केवल लक्ष्य पर टिकी थी।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "सेव करें, और फ़ॉलो करें।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ }
+]

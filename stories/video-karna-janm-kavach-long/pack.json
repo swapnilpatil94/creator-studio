@@ -1,0 +1,399 @@
+{
+ "slug": "karna-janm-kavach-long",
+ "format": "long",
+ "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+ "thumb": "कवच का रहस्य",
+ "thumbSupport": "कर्ण की पूरी कथा",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १११ (गांगुली अनुवाद)",
+ "tradition": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#कर्ण",
+  "#महाभारत",
+  "#कुंती"
+ ],
+ "look": {
+  "grade": "film",
+  "captions": "pop",
+  "transition": "dissolve"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "कुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": "शूर की बेटी और एक वरदान"
+  },
+  {
+   "n": 2,
+   "text": "यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "यादवों में शूर नाम के एक प्रमुख थे, जो वसुदेव के पिता थे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "उनकी एक पुत्री थी, पृथा, जिनके रूप की बराबरी धरती पर कोई नहीं कर सकता था।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "शूर सदा सत्य बोलते थे, और अपने पुराने वचन के अनुसार उन्होंने पृथा को अपने निःसंतान मित्र कुंतिभोज को दे दिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "इसी कारण पृथा आगे चलकर कुंती कहलाईं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "कुंतिभोज के घर में पृथा के जिम्मे ब्राह्मणों और अतिथियों की सेवा का काम था।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "एक दिन उनकी सेवा से कठोर व्रत वाले ऋषि दुर्वासा प्रसन्न हो गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "उन्होंने पृथा को एक मंत्र दिया, जिससे वे किसी भी देवता को बुला सकती थीं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "ऋषि ने कहा, इस मंत्र से तुम जिस देवता को बुलाओगी, वह ज़रूर आएगा और तुम्हें संतान देगा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "पृथा उस समय कन्या थीं, और उनके मन में जिज्ञासा जाग उठी।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "उन्होंने मंत्र पढ़ा, और सूर्यदेव को बुला लिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": "जिज्ञासा और सूर्यदेव"
+  },
+  {
+   "n": 13,
+   "text": "मंत्र बोलते ही उन्होंने देखा कि तेज से भरे सूर्यदेव उनकी ओर आ रहे हैं।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "यह अद्भुत दृश्य देखकर पृथा चकित रह गईं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "सूर्यदेव ने कहा, हे सुंदर नेत्रों वाली, मैं आ गया हूँ, बताओ मैं तुम्हारे लिए क्या करूँ?",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "पृथा ने उत्तर दिया, एक ब्राह्मण ने मुझे यह मंत्र वरदान में दिया था, मैंने तो बस इसे परखने के लिए आपको बुलाया है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "उन्होंने क्षमा माँगी, और कहा कि स्त्री का अपराध जो भी हो, उसे क्षमा मिलनी चाहिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "सूर्यदेव बोले, मैं जानता हूँ कि दुर्वासा ने तुम्हें यह वरदान दिया है, पर मेरा आना व्यर्थ नहीं जा सकता।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "पृथा को लज्जा थी, और अपने बंधुओं का डर भी, इसलिए वे पहले सहमत नहीं हुईं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "लेकिन सूर्यदेव ने उन्हें समझाया, और उसी क्षण एक पुत्र का जन्म हुआ।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "वह बालक जन्म से ही कवच पहने हुए था, और उसका मुख कुंडलों से दमक रहा था।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "यही बालक आगे चलकर कर्ण कहलाया, जो शस्त्र चलाने वालों में सबसे आगे माना गया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 23,
+   "text": "जन्म के बाद सूर्यदेव ने पृथा को उनका कन्या-भाव लौटा दिया, और स्वर्ग लौट गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 24,
+   "text": "पृथा ने अपने उस पुत्र को शोक भरी आँखों से देखा, और बहुत देर तक सोचती रहीं कि अब क्या करना उचित है।",
+   "intent": null,
+   "accent": null,
+   "chapter": "पानी में छोड़ा गया बालक"
+  },
+  {
+   "n": 25,
+   "text": "अपने बंधुओं के डर से उन्होंने इस बात को छिपाने का निर्णय लिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 26,
+   "text": "और उन्होंने अपने बलवान पुत्र को पानी में छोड़ दिया।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 27,
+   "text": "तब सूत जाति के राधा के पति ने उस बालक को पानी से उठा लिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 28,
+   "text": "उन्होंने और राधा ने उसे अपने पुत्र की तरह पाला।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 29,
+   "text": "कवच और कुंडलों के साथ जन्म लेने के कारण उन्होंने उसका नाम वसुसेन रखा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 30,
+   "text": "यानी जिसे राजकुल ने छोड़ा, उसे एक सूत परिवार ने अपनाया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 31,
+   "text": "एक दिन अपने पुत्र अर्जुन के हित के लिए इंद्र ने ब्राह्मण का रूप लिया, और वसुसेन से उसका कवच माँग लिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 32,
+   "text": "वसुसेन ने अपना कवच उतारकर, हाथ जोड़कर, इंद्र को दे दिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 33,
+   "text": "इंद्र उसकी दानशीलता से बहुत प्रसन्न हुए, और बदले में उसे एक श्रेष्ठ शक्ति नाम का अस्त्र दिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 34,
+   "text": "कहा कि जिसे भी तुम जीतना चाहोगे, वह इस शक्ति से मारा जाएगा, पर यह एक ही बार काम करेगी।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 35,
+   "text": "अपना कवच काट देने के कारण ही वसुसेन आगे कर्ण कहलाया, यानी जिसने अपना आवरण स्वयं उतार दिया।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 36,
+   "text": "तो कुंती ने पहला पुत्र क्यों छोड़ा? पाठ के अनुसार, अपने बंधुओं के भय से, और यही इस कथा का सबसे करुण मोड़ है।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 37,
+   "text": "सेव करें, और फ़ॉलो करें।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "3": {
+   "subject": "tribal chief seated in royal court",
+   "action": "speaking to young princess",
+   "setting": "ancient palace hall",
+   "lighting": "warm lamp light"
+  },
+  "8": {
+   "subject": "sage with matted hair",
+   "action": "blessing a kneeling girl",
+   "setting": "hermitage garden",
+   "lighting": "soft dawn light"
+  },
+  "12": {
+   "subject": "young princess hands joined",
+   "action": "sun god descending in light",
+   "setting": "riverbank at sunrise",
+   "lighting": "radiant golden rays"
+  },
+  "21": {
+   "subject": "newborn child wearing golden armour",
+   "action": "resting on silk cloth",
+   "setting": "quiet palace chamber",
+   "lighting": "gentle glowing light"
+  },
+  "26": {
+   "subject": "young woman on riverbank",
+   "action": "placing a basket in water",
+   "setting": "misty river dusk",
+   "lighting": "muted blue light"
+  },
+  "31": {
+   "subject": "brahmin priest holding out hand",
+   "action": "warrior removing golden armour",
+   "setting": "river bank at noon",
+   "lighting": "harsh bright sunlight"
+  }
+ },
+ "visuals": {
+  "12": {
+   "fx": "volumetric_god_rays",
+   "sticker": "sparkle"
+  },
+  "13": {
+   "comp": "kinetic",
+   "style": "spring",
+   "bg": "nebula",
+   "mark": "highlight",
+   "text": "तेज से भरे *सूर्यदेव*"
+  },
+  "20": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "gold-bokeh",
+   "mark": "circle",
+   "text": "उसी क्षण *पुत्र* का जन्म"
+  },
+  "26": {
+   "comp": "kinetic",
+   "style": "glitch",
+   "bg": "water-ripples",
+   "mark": "underline",
+   "text": "पानी में *छोड़ दिया*"
+  },
+  "32": {
+   "fx": "drone_orbit_180"
+  },
+  "35": {
+   "comp": "quote",
+   "bg": "temple-jali"
+  }
+ },
+ "claims": [
+  {
+   "text": "शूर ने अपनी पुत्री पृथा को निःसंतान मित्र कुंतिभोज को दे दिया।",
+   "en": "Shura gave his firstborn daughter Pritha unto his childless cousin and friend Kunti-bhoja",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "दुर्वासा ने पृथा को किसी भी देवता को बुलाने का मंत्र दिया।",
+   "en": "imparted to her a formula of invocation for summoning any of the celestials",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "सूर्य से कवच और कुंडल के साथ पुत्र जन्मा, जो कर्ण कहलाया।",
+   "en": "born a son known as Karna encased in natural armour and with face brightened by ear-rings",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "बंधुओं के भय से पृथा ने शिशु को पानी में डाल दिया; राधा और उसके सूत पति ने उसे पाला।",
+   "en": "from fear of her relatives she cast her offspring into the water; the husband of Radha of the Suta caste took up the child",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  },
+  {
+   "text": "इंद्र ने ब्राह्मण का रूप लेकर कवच माँगा; बदले में एक शक्ति दी; कवच काटने से वह कर्ण कहलाया।",
+   "en": "Indra assuming the form of a Brahmana asked of him his natural armour; he gave unto him a javelin; since he cut off his natural armour he came to be called Karna",
+   "status": "verified",
+   "source": "mahabharata-adi:111"
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "शूर की बेटी और एक वरदान"
+  },
+  {
+   "n": 12,
+   "title": "जिज्ञासा और सूर्यदेव"
+  },
+  {
+   "n": 24,
+   "title": "पानी में छोड़ा गया बालक"
+  }
+ ]
+}

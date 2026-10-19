@@ -1,0 +1,36 @@
+{
+ "fixed": [],
+ "warnings": [
+  "15 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "2.5d_parallax": 2,
+   "kinetography_cinemagraph": 3,
+   "crane_up_reveal": 2,
+   "parallax_occlusion_3d": 1,
+   "puppet_warp_breathing": 1,
+   "drone_orbit_180": 1,
+   "eye_glow_energy_pulse": 2,
+   "matte_painting_extension": 1,
+   "volumetric_god_rays": 1,
+   "crane_down": 1,
+   "shadow_play_reveal": 1,
+   "sacred_geometry_carve": 1,
+   "drone_top_down_bird_eye": 1,
+   "diya_flicker_light": 1
+  },
+  "fx_distinct": 14,
+  "scenes": 10,
+  "assets_used": 0,
+  "comps": {
+   "kinetic": 2,
+   "cinema": 19,
+   "stat": 1
+  },
+  "beats": 22,
+  "windows_low_variety": 15
+ },
+ "writer": "rules",
+ "from_rules": 22
+}

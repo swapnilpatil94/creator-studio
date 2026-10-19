@@ -1,0 +1,68 @@
+{
+ "id": "lakshagriha-pandava-escape.video",
+ "format": "video",
+ "video_format": "long",
+ "slug": "lakshagriha-pandava-escape",
+ "topic": "lakshagriha-pandava-escape",
+ "language": "hi",
+ "status": "approved",
+ "hook": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+ "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: महाभारत, आदि पर्व (जतुगृह पर्व), खंड १४३ से १५१ (गांगुली अनुवाद)",
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#पांडव",
+  "#महाभारत",
+  "#लाक्षागृह"
+ ],
+ "claims": [
+  {
+   "text": "दुर्योधन, कर्ण और शकुनि ने धृतराष्ट्र की सहमति से पांडवों को जलाने की योजना बनाई।",
+   "en": "Duryodhana, Dush-shasana, Karna and Sakuni resolved with the sanction of Dhrita-rashtra to burn to death Kunti and her five sons",
+   "status": "verified",
+   "source": "mahabharata-adi:143"
+  },
+  {
+   "text": "पुरोचन ने दुर्योधन के कहने पर सन, राल, घी, तेल, चरबी और लाख से भवन बनवाया।",
+   "en": "use hemp and resin and all other inflammable materials; clarified butter and oil and fat and a large measure of lac",
+   "status": "verified",
+   "source": "mahabharata-adi:146"
+  },
+  {
+   "text": "युधिष्ठिर ने घी और लाख की गंध से जान लिया कि भवन जलने वाली चीज़ों से बना है, और विदुर ने पहले ही चेताया था।",
+   "en": "scenting the smell of fat mixed with clarified butter and preparations of lac; Vidura apprised me beforehand",
+   "status": "verified",
+   "source": "mahabharata-adi:148"
+  },
+  {
+   "text": "विदुर के भेजे खनिक ने घर के बीच सुरंग खोदी, जिसका मुँह फ़र्श के बराबर और तख़्तों से ढका था।",
+   "en": "a large subterranean passage; the mouth in the centre of that house level with the floor and closed up with planks",
+   "status": "verified",
+   "source": "mahabharata-adi:149"
+  },
+  {
+   "text": "भीम ने पुरोचन के सोने की जगह आग लगाई, और माता व भाइयों को उठाकर भागे; एक निषाद स्त्री और उसके पाँच पुत्र भवन में जल गए।",
+   "en": "Bhima set fire to the house where Purochana was sleeping; a Nishada woman with her five sons lay down to sleep there; Bhima took his mother and brothers on his body",
+   "status": "verified",
+   "source": "mahabharata-adi:150"
+  },
+  {
+   "text": "विदुर के भेजे व्यक्ति ने गंगा तट पर नाव से पांडवों को पार कराया।",
+   "en": "a boat with engines and flags on the sacred banks of the Ganges; took them to the other side",
+   "status": "verified",
+   "source": "mahabharata-adi:151"
+  }
+ ],
+ "thumb": {
+  "headline": "सुरंग का राज़?",
+  "support": "लाक्षागृह की पूरी कथा",
+  "style": null,
+  "art": null,
+  "scene": "A powerful prince carries his mother on his shoulder and four brothers on his arms as they flee through a dark forest at night, a huge wooden palace burning with orange flames behind them; the prince's face shows fierce resolve; a dark tunnel mouth glows at his feet; deep crimson and gold firelight, smoke and sparks."
+ },
+ "created": "2026-10-19"
+}

@@ -1,0 +1,68 @@
+{
+ "fixed": [
+  "v001: kinetic trimmed to 7 words",
+  "v017: kinetic trimmed to 7 words",
+  "v019: kinetic trimmed to 7 words",
+  "v034: kinetic trimmed to 7 words",
+  "v037: iconlist needs 2+ items with text -> cinema",
+  "v008: repeated fx -> cinema",
+  "v010: repeated fx -> cinema",
+  "v013: repeated fx -> cinema",
+  "v016: repeated quote -> cinema",
+  "v019: 3 text-only beats in a row -> cinema",
+  "v002: painting beat had no listed effect -> 2.5d_parallax",
+  "v003: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v004: painting beat had no listed effect -> crane_up_reveal",
+  "v006: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v008: painting beat had no listed effect -> puppet_warp_breathing",
+  "v010: painting beat had no listed effect -> drone_orbit_180",
+  "v011: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v013: painting beat had no listed effect -> 2.5d_parallax",
+  "v016: painting beat had no listed effect -> matte_painting_extension",
+  "v019: painting beat had no listed effect -> drone_orbit_180",
+  "v031: painting beat had no listed effect -> puppet_warp_breathing",
+  "v032: painting beat had no listed effect -> 2.5d_parallax",
+  "v033: painting beat had no listed effect -> drone_orbit_180",
+  "v037: painting beat had no listed effect -> parallax_occlusion_3d"
+ ],
+ "warnings": [
+  "no re-hook (question or turn) near 25% of the film",
+  "no re-hook (question or turn) near 75% of the film",
+  "30 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "2.5d_parallax": 3,
+   "kinetography_cinemagraph": 2,
+   "crane_up_reveal": 1,
+   "drone_pull_out_reveal": 1,
+   "parallax_occlusion_3d": 4,
+   "handheld_breathing_shake": 2,
+   "puppet_warp_breathing": 2,
+   "particle_formation": 1,
+   "drone_orbit_180": 3,
+   "matte_painting_extension": 1,
+   "infinite_zoom_droste": 1,
+   "dolly_zoom_vertigo": 2,
+   "lightning_flash": 2,
+   "crane_down": 1,
+   "shadow_play_reveal": 1,
+   "eye_glow_energy_pulse": 1,
+   "day_to_night_timelapse": 1
+  },
+  "fx_distinct": 17,
+  "scenes": 21,
+  "assets_used": 0,
+  "comps": {
+   "kinetic": 4,
+   "cinema": 24,
+   "fx": 5,
+   "quote": 3,
+   "versus": 1
+  },
+  "beats": 37,
+  "windows_low_variety": 30
+ },
+ "writer": "ollama:qwen3:14b",
+ "from_rules": 10
+}

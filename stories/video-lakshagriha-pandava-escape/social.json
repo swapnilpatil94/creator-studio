@@ -1,0 +1,48 @@
+{
+ "story": "video-lakshagriha-pandava-escape",
+ "format": "long",
+ "generated": "2026-10-19T11:45:16.506Z",
+ "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
+ "instagram": {
+  "type": "NONE",
+  "note": "A 16:9 film is not an Instagram Reel. Cut 3-5 vertical Shorts from it (long-form-playbook: one idea each, new hook line) and publish those with this tool."
+ },
+ "facebook": {
+  "type": "VIDEO",
+  "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+  "description": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?\n\nपांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले? यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।\n\n0:00 शुरुआत\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#kathaaya #पांडव #महाभारत #लाक्षागृह",
+  "hashtags": [
+   "#kathaaya",
+   "#पांडव",
+   "#महाभारत",
+   "#लाक्षागृह"
+  ],
+  "cover": "output/thumb-16x9.png",
+  "checks": [
+   {
+    "platform": "facebook",
+    "name": "title <= 100 chars",
+    "ok": true,
+    "detail": "48"
+   },
+   {
+    "platform": "facebook",
+    "name": "description <= 5000 chars",
+    "ok": true,
+    "detail": "378"
+   },
+   {
+    "platform": "facebook",
+    "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
+    "ok": true,
+    "detail": "none"
+   }
+  ]
+ },
+ "monetizationNotes": [
+  "Original content only: no reposts, no other creators' clips, no third-party watermarks (Meta deprioritises duplicative content; reported in secondary sources, verify in Monetization Manager).",
+  "Eligibility figures vary by source (5k-10k followers, watch-minute thresholds): check your Page in Meta Business Suite > Monetization before relying on any number.",
+  "A copyright check runs on every Reel upload (API: GET /{video-id}?fields=copyright_check_information). Our audio is procedural and our voice is synthetic; the paintings are public domain/CC0.",
+  "Long videos (Page videos) and Reels are separate surfaces: post the 16:9 film as a Page video and cut vertical Reels from it; in-stream ads are reported (secondary source) to need >= 3 minutes."
+ ]
+}

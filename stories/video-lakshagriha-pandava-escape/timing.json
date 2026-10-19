@@ -1,0 +1,86 @@
+{
+ "item": "lakshagriha-pandava-escape.video",
+ "started": "2026-10-19T10:46:04.042Z",
+ "minutes": 12,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792406764043,
+   "detail": "59 beats, 1034 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792406764264,
+   "detail": "59 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "done",
+   "start": 1792406764265,
+   "detail": "317 s of speech",
+   "seconds": 2107
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792408871014,
+   "detail": "59 beats, 4 visual types, 8 new scenes, 0 carousel paintings reused, 59 by rules",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792408871030,
+   "detail": "22 new paintings of 22 scenes",
+   "seconds": 920
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792409790697,
+   "detail": "22 of 22 scenes layered, 0 picture beats fell back to type",
+   "seconds": 7
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792409797478,
+   "detail": "19 camera clips (19 rendered, 0 cached)",
+   "seconds": 45
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792409842191,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792409842268,
+   "detail": "QA all passed",
+   "seconds": 474
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792410316218,
+   "detail": "gold palette, \"सुरंग का राज़?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792410316219,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 3553,
+ "ended": "2026-10-19T11:45:16.509Z"
+}

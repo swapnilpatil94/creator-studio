@@ -1,0 +1,422 @@
+[
+ {
+  "id": "v001",
+  "comp": "cinema",
+  "params": {
+   "img": "c1",
+   "move": "pull",
+   "label": "कुंती ने पहले पुत्र को क्यों बहाया?",
+   "reveal": "circle",
+   "fx": "drone_push_in",
+   "clip": "v001",
+   "clip_n": 97
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "c2",
+   "move": "panR",
+   "label": "एक वरदान से शुरू होती है",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 148
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "push",
+   "label": "शूर नाम के एक प्रमुख",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "panL",
+   "label": "रूप में उनकी बराबरी धरती पर कोई नहीं कर सकता था",
+   "fx": "crane_up_reveal",
+   "clip": "v004",
+   "clip_n": 178
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "pull",
+   "label": "शूर ने अपना वचन निभाया",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v005",
+   "clip_n": 163
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "panR",
+   "label": "कुंतिभोज के घर में पृथा",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "push",
+   "label": "ऋषि दुर्वासा प्रसन्न हो गए",
+   "fx": "drone_orbit_180",
+   "clip": "v007",
+   "clip_n": 106
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "panL",
+   "label": "एक मंत्र दिया",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "pull",
+   "label": "जिस देवता को बुलाओगी, वह ज़रूर आएगा",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v009",
+   "clip_n": 134
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "panR",
+   "label": "जिज्ञासा जाग उठी",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "push",
+   "label": "मंत्र बोलते ही",
+   "reveal": "circle",
+   "fx": "drone_orbit_180",
+   "clip": "v011",
+   "clip_n": 73
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "pull",
+   "label": "सूर्यदेव आ रहे हैं",
+   "reveal": "diamond",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "panL",
+   "label": "सूर्यदेव बोलते हैं",
+   "reveal": "wipe",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v013",
+   "clip_n": 134
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "panR",
+   "label": "पृथा का उत्तर",
+   "reveal": "circle",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "push",
+   "label": "सूर्यदेव का आना",
+   "reveal": "diamond",
+   "fx": "drone_orbit_180",
+   "clip": "v015",
+   "clip_n": 145
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "pull",
+   "label": "पृथा की लज्जा",
+   "reveal": "wipe",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "panL",
+   "label": "पुत्र का जन्म",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v017",
+   "clip_n": 115
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v018",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "कवच वाला बालक",
+   "reveal": "diamond",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v019",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "कर्ण का नाम",
+   "reveal": "wipe",
+   "fx": "drone_orbit_180",
+   "clip": "v019",
+   "clip_n": 127
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v020",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "सूर्यदेव लौट गए",
+   "reveal": "circle",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v021",
+  "comp": "cinema",
+  "params": {
+   "img": "scene4",
+   "move": "pull",
+   "label": "कुंती ने शोक भरी आँखों से देखा",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v021",
+   "clip_n": 145
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v022",
+  "comp": "cinema",
+  "params": {
+   "img": "scene5",
+   "move": "panL",
+   "label": "अपने बंधुओं के डर से छिपाने का निर्णय",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v023",
+  "comp": "cinema",
+  "params": {
+   "img": "scene6",
+   "move": "push",
+   "label": "बलवान पुत्र को पानी में छोड़ दिया",
+   "fx": "drone_orbit_180",
+   "clip": "v023",
+   "clip_n": 85
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v024",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "panR",
+   "label": "राधा और उनके सूत पति ने बालक को उठा लिया",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v025",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "label": "उन्होंने अपने पुत्र की तरह पाला",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v025",
+   "clip_n": 84
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v026",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "panL",
+   "label": "कवच और कुंडलों के साथ जन्म लेने के कारण",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v027",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "drone_pull_out_reveal",
+   "label": "इंद्र ने अपने पुत्र अर्जुन के हित के लिए ब्राह्मण का रूप लिया",
+   "fx": "drone_orbit_180",
+   "clip": "v027",
+   "clip_n": 161
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v028",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "handheld_breathing_shake",
+   "label": "वसुसेन ने अपना कवच उतारकर इंद्र को दे दिया",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v029",
+  "comp": "cinema",
+  "params": {
+   "img": "scene10",
+   "move": "drone_orbit_180",
+   "label": "इंद्र उसकी दानशीलता से बहुत प्रसन्न हुए",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v029",
+   "clip_n": 163
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v030",
+  "comp": "cinema",
+  "params": {
+   "img": "scene10",
+   "move": "dolly_zoom_vertigo",
+   "label": "एक शक्ति नाम का अस्त्र दिया",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v031",
+  "comp": "cinema",
+  "params": {
+   "img": "scene11",
+   "move": "pull",
+   "label": "कवच और कुंडल वाले बालक",
+   "reveal": "circle",
+   "fx": "drone_orbit_180",
+   "clip": "v031",
+   "clip_n": 155
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v032",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "तो कुंती ने पहला पुत्र क्यों बहाया?"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v033",
+  "comp": "iconlist",
+  "params": {
+   "title": "कुंती के चुनाव",
+   "items": [
+    {
+     "icon": "💧",
+     "text": "जल में छोड़ दिया शिशु को"
+    },
+    {
+     "icon": "🙏",
+     "text": "दुर्वासा ऋषि की सेवा की"
+    },
+    {
+     "icon": "✨",
+     "text": "मंत्र ले लिया सूर्य के लिए"
+    }
+   ]
+  },
+  "chapter": "ch1"
+ }
+]

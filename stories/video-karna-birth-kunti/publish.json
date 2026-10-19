@@ -1,0 +1,241 @@
+{
+ "pinnedComment": null,
+ "chapters": [],
+ "story": "video-karna-birth-kunti",
+ "channel": "kathaaya",
+ "format": "short",
+ "titleOptions": [
+  {
+   "t": "कुंती ने पहले पुत्र को क्यों बहाया? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "title": "कुंती ने पहले पुत्र को क्यों बहाया? | KATHAAYA",
+ "description": "कुंती ने अपने पहले पुत्र को नदी में क्यों बहा दिया? यह कथा एक वरदान से शुरू होती है, और एक ऐसे फैसले पर पहुँचती है जो उम्र भर पीछा करता रहा।\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #कर्णकथा #महाभारत #kathaayastories",
+ "tags": [
+  "story",
+  "samudra manthan story",
+  "shri shiv mahapuran katha",
+  "pandit pradeep mishra ji katha",
+  "#aaj ki katha",
+  "श्री शिव महापुराण कथा",
+  "vat savitri vrat katha",
+  "mahadev story",
+  "mahishasur vadh story",
+  "mahishasur story",
+  "devotional story",
+  "ekadashi vrat katha",
+  "durga mata story",
+  "mahishasur vadh katha",
+  "pauranik katha"
+ ],
+ "hashtags": [
+  "#kathaaya",
+  "#कर्णकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "categoryId": "24",
+ "defaultLanguage": "hi",
+ "defaultAudioLanguage": "hi",
+ "privacyStatus": "private",
+ "selfDeclaredMadeForKids": false,
+ "containsSyntheticMedia": true,
+ "video": "output/video-karna-birth-kunti-share.mp4",
+ "thumbnails": [
+  "output/thumb-9x16.png",
+  "output/thumb-16x9.png"
+ ],
+ "tagEvidence": [
+  {
+   "t": "story",
+   "n": 8
+  },
+  {
+   "t": "samudra manthan story",
+   "n": 8
+  },
+  {
+   "t": "shri shiv mahapuran katha",
+   "n": 7
+  },
+  {
+   "t": "pandit pradeep mishra ji katha",
+   "n": 7
+  },
+  {
+   "t": "#aaj ki katha",
+   "n": 7
+  },
+  {
+   "t": "श्री शिव महापुराण कथा",
+   "n": 7
+  },
+  {
+   "t": "vat savitri vrat katha",
+   "n": 6
+  },
+  {
+   "t": "mahadev story",
+   "n": 6
+  },
+  {
+   "t": "mahishasur vadh story",
+   "n": 5
+  },
+  {
+   "t": "mahishasur story",
+   "n": 5
+  },
+  {
+   "t": "devotional story",
+   "n": 5
+  },
+  {
+   "t": "ekadashi vrat katha",
+   "n": 5
+  },
+  {
+   "t": "durga mata story",
+   "n": 4
+  },
+  {
+   "t": "mahishasur vadh katha",
+   "n": 4
+  },
+  {
+   "t": "pauranik katha",
+   "n": 4
+  }
+ ],
+ "thumbnailSeed": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "कुंती का सच"
+   ],
+   "support": []
+  }
+ },
+ "checks": [
+  {
+   "name": "title <= 100 chars",
+   "ok": true,
+   "detail": 46
+  },
+  {
+   "name": "title before | <= 60 chars (desktop truncation)",
+   "ok": true,
+   "detail": 35
+  },
+  {
+   "name": "primary keyword in first 55 chars of title",
+   "ok": true,
+   "detail": "कुंती"
+  },
+  {
+   "name": "<= 1 emoji in title (channel style)",
+   "ok": true,
+   "detail": "0 emoji"
+  },
+  {
+   "name": "<= 2 all-caps Latin words",
+   "ok": true,
+   "detail": "1 (KATHAAYA)"
+  },
+  {
+   "name": "primary keyword in first 160 chars of description",
+   "ok": true,
+   "detail": "first 160: कुंती ने अपने पहले पुत्र को नदी में क्यों बहा दिया? यह कथा ए…"
+  },
+  {
+   "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
+   "ok": true,
+   "detail": "1/1 (कुंती ने पहले)"
+  },
+  {
+   "name": "description <= 5000 bytes",
+   "ok": true,
+   "detail": 1540
+  },
+  {
+   "name": "tags <= 15 and <= 500 chars",
+   "ok": true,
+   "detail": "15 tags, 288 chars"
+  },
+  {
+   "name": "format fits Shorts (<= 180 s)",
+   "ok": true,
+   "detail": "154 s"
+  },
+  {
+   "name": "channel brand line in description",
+   "ok": true,
+   "detail": "tagline present"
+  },
+  {
+   "name": "variant/source note in description",
+   "ok": true,
+   "detail": "disclaimer present"
+  },
+  {
+   "name": "synthetic-media disclosure set",
+   "ok": true,
+   "detail": "containsSyntheticMedia=true + description line"
+  },
+  {
+   "name": "rendered video exists",
+   "ok": true,
+   "detail": "video-karna-birth-kunti-share.mp4"
+  },
+  {
+   "name": "thumbnail: headline <= 4 words (Devanagari at feed size)",
+   "ok": true,
+   "detail": "3 words: कुंती का सच"
+  },
+  {
+   "name": "thumbnail: headline does not repeat the title",
+   "ok": true,
+   "detail": "the thumbnail carries the other half of the story"
+  },
+  {
+   "name": "thumbnail: real painting from the film as the picture",
+   "ok": true,
+   "detail": "assets/art/c1.jpg"
+  },
+  {
+   "name": "thumbnail: 120 px preview generated",
+   "ok": true,
+   "detail": "thumb-120-*.png"
+  },
+  {
+   "name": "thumbnail: channel mark (logo) on the thumbnail",
+   "ok": true,
+   "detail": "channels/kathaaya/logo.png"
+  },
+  {
+   "name": "claims verified at source",
+   "ok": false,
+   "detail": "no ledger"
+  }
+ ],
+ "reviewItems": [
+  "Pair test: covering the title, the thumbnail alone still raises a question",
+  "Pair test: covering the thumbnail, the title alone still pulls",
+  "Honesty test: the film delivers what the title and thumbnail promise (variant note stated)",
+  "I watched the film with sound and the narration pace and emotion feel right",
+  "Thumbnail reads in the 120 px preview (mood, subject, text)",
+  "I reviewed the claims warnings and sources",
+  "Title, description and tags read correctly in Devanagari and Roman spelling"
+ ],
+ "skillsApplied": [
+  "titles-and-thumbnails",
+  "youtube-packaging",
+  "youtube-seo-description",
+  "youtube-thumbnail-design",
+  "storytelling-hooks",
+  "viral-hooks"
+ ],
+ "generated": "2026-10-18T19:52:51.853Z"
+}

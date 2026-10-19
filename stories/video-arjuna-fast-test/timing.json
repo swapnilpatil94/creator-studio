@@ -1,0 +1,86 @@
+{
+ "item": "arjuna-fast-test.video",
+ "started": "2026-10-19T10:21:13.681Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792405273681,
+   "detail": "22 beats, 261 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792405273813,
+   "detail": "22 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "done",
+   "start": 1792405273813,
+   "detail": "82 s of speech (imported)",
+   "seconds": 15
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792405289211,
+   "detail": "22 beats, 3 visual types, 10 new scenes, 0 carousel paintings reused, 22 by rules",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792405289216,
+   "detail": "14 new paintings of 14 scenes",
+   "seconds": 570
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792405859205,
+   "detail": "14 of 14 scenes layered, 0 picture beats fell back to type",
+   "seconds": 98
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792405956720,
+   "detail": "9 camera clips (9 rendered, 0 cached)",
+   "seconds": 14
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792405970333,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792405970435,
+   "detail": "QA all passed",
+   "seconds": 123
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792406093802,
+   "detail": "gold palette, \"द्रोण को क्या दिखा?\"",
+   "seconds": 53
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792406147227,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 873,
+ "ended": "2026-10-19T10:35:47.526Z"
+}

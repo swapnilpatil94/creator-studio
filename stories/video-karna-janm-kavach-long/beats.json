@@ -1,0 +1,409 @@
+[
+ {
+  "id": "v001",
+  "text": "कुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया?",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "यादवों में शूर नाम के एक प्रमुख थे, जो वसुदेव के पिता थे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "उनकी एक पुत्री थी, पृथा, जिनके रूप की बराबरी धरती पर कोई नहीं कर सकता था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "शूर सदा सत्य बोलते थे, और अपने पुराने वचन के अनुसार उन्होंने पृथा को अपने निःसंतान मित्र कुंतिभोज को दे दिया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "इसी कारण पृथा आगे चलकर कुंती कहलाईं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "कुंतिभोज के घर में पृथा के जिम्मे ब्राह्मणों और अतिथियों की सेवा का काम था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "एक दिन उनकी सेवा से कठोर व्रत वाले ऋषि दुर्वासा प्रसन्न हो गए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "उन्होंने पृथा को एक मंत्र दिया, जिससे वे किसी भी देवता को बुला सकती थीं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "ऋषि ने कहा, इस मंत्र से तुम जिस देवता को बुलाओगी, वह ज़रूर आएगा और तुम्हें संतान देगा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "पृथा उस समय कन्या थीं, और उनके मन में जिज्ञासा जाग उठी।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "उन्होंने मंत्र पढ़ा, और सूर्यदेव को बुला लिया।",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "मंत्र बोलते ही उन्होंने देखा कि तेज से भरे सूर्यदेव उनकी ओर आ रहे हैं।",
+  "intent": "awe",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "यह अद्भुत दृश्य देखकर पृथा चकित रह गईं।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "सूर्यदेव ने कहा, हे सुंदर नेत्रों वाली, मैं आ गया हूँ, बताओ मैं तुम्हारे लिए क्या करूँ?",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "पृथा ने उत्तर दिया, एक ब्राह्मण ने मुझे यह मंत्र वरदान में दिया था, मैंने तो बस इसे परखने के लिए आपको बुलाया है।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "उन्होंने क्षमा माँगी, और कहा कि स्त्री का अपराध जो भी हो, उसे क्षमा मिलनी चाहिए।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "सूर्यदेव बोले, मैं जानता हूँ कि दुर्वासा ने तुम्हें यह वरदान दिया है, पर मेरा आना व्यर्थ नहीं जा सकता।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "पृथा को लज्जा थी, और अपने बंधुओं का डर भी, इसलिए वे पहले सहमत नहीं हुईं।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "लेकिन सूर्यदेव ने उन्हें समझाया, और उसी क्षण एक पुत्र का जन्म हुआ।",
+  "intent": "reveal",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "वह बालक जन्म से ही कवच पहने हुए था, और उसका मुख कुंडलों से दमक रहा था।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "यही बालक आगे चलकर कर्ण कहलाया, जो शस्त्र चलाने वालों में सबसे आगे माना गया।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v023",
+  "text": "जन्म के बाद सूर्यदेव ने पृथा को उनका कन्या-भाव लौटा दिया, और स्वर्ग लौट गए।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "23",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v024",
+  "text": "पृथा ने अपने उस पुत्र को शोक भरी आँखों से देखा, और बहुत देर तक सोचती रहीं कि अब क्या करना उचित है।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "24",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v025",
+  "text": "अपने बंधुओं के डर से उन्होंने इस बात को छिपाने का निर्णय लिया।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "25",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v026",
+  "text": "और उन्होंने अपने बलवान पुत्र को पानी में छोड़ दिया।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "26",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v027",
+  "text": "तब सूत जाति के राधा के पति ने उस बालक को पानी से उठा लिया।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "27",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v028",
+  "text": "उन्होंने और राधा ने उसे अपने पुत्र की तरह पाला।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "28",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v029",
+  "text": "कवच और कुंडलों के साथ जन्म लेने के कारण उन्होंने उसका नाम वसुसेन रखा।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "29",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v030",
+  "text": "यानी जिसे राजकुल ने छोड़ा, उसे एक सूत परिवार ने अपनाया।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "30",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v031",
+  "text": "एक दिन अपने पुत्र अर्जुन के हित के लिए इंद्र ने ब्राह्मण का रूप लिया, और वसुसेन से उसका कवच माँग लिया।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "31",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v032",
+  "text": "वसुसेन ने अपना कवच उतारकर, हाथ जोड़कर, इंद्र को दे दिया।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "32",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v033",
+  "text": "इंद्र उसकी दानशीलता से बहुत प्रसन्न हुए, और बदले में उसे एक श्रेष्ठ शक्ति नाम का अस्त्र दिया।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "33",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v034",
+  "text": "कहा कि जिसे भी तुम जीतना चाहोगे, वह इस शक्ति से मारा जाएगा, पर यह एक ही बार काम करेगी।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "34",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v035",
+  "text": "अपना कवच काट देने के कारण ही वसुसेन आगे कर्ण कहलाया, यानी जिसने अपना आवरण स्वयं उतार दिया।",
+  "intent": "reflective",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "35",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v036",
+  "text": "तो कुंती ने पहला पुत्र क्यों छोड़ा? पाठ के अनुसार, अपने बंधुओं के भय से, और यही इस कथा का सबसे करुण मोड़ है।",
+  "intent": "reflective",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "36",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v037",
+  "text": "सेव करें, और फ़ॉलो करें।",
+  "intent": "reflective",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "37",
+   "mode": "reveal"
+  }
+ }
+]

@@ -1,0 +1,79 @@
+{
+ "item": "karna-janm-kavach-long.video",
+ "started": "2026-10-19T08:31:40.453Z",
+ "minutes": 12,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792398700453,
+   "detail": "37 beats, 553 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792398700593,
+   "detail": "37 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "done",
+   "start": 1792398700593,
+   "detail": "173 s of speech",
+   "seconds": 989
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792399690027,
+   "detail": "37 beats, 5 visual types, 21 new scenes, 0 carousel paintings reused, 10 by rules",
+   "seconds": 278
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792399968096,
+   "detail": "21 new paintings of 21 scenes",
+   "seconds": 966
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792400934205,
+   "detail": "21 of 21 scenes layered, 0 picture beats fell back to type",
+   "seconds": 165
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792401099634,
+   "detail": "15 camera clips (15 rendered, 0 cached)",
+   "seconds": 30
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792401129511,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792401129579,
+   "detail": "QA all passed",
+   "seconds": 216
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792401345208,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 104
+  }
+ ],
+ "total_seconds": 2748,
+ "ended": "2026-10-19T09:17:29.359Z"
+}

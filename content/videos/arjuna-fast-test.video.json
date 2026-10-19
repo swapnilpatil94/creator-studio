@@ -1,0 +1,61 @@
+{
+ "id": "arjuna-fast-test.video",
+ "format": "video",
+ "video_format": "short",
+ "slug": "arjuna-fast-test",
+ "topic": "arjuna-fast-test",
+ "language": "hi",
+ "status": "approved",
+ "hook": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?",
+ "title": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १३५ (गांगुली अनुवाद)",
+ "tradition_note": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#अर्जुन",
+  "#महाभारत"
+ ],
+ "claims": [
+  {
+   "text": "द्रोण ने अर्जुन को निशाना लगाने बुलाया, जब सब असफल हो चुके थे।",
+   "en": "When everyone had failed, Drona smilingly called Arjuna",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "अर्जुन ने कहा कि उन्हें केवल चिड़िया दिखती है, पेड़ या गुरु नहीं, फिर केवल गिद्ध का सिर।",
+   "en": "I see the bird only, but not the tree or thyself. I only see the head of the vulture",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "अर्जुन के बाण से गिद्ध का सिर कटकर गिर गया और द्रोण ने उन्हें गले लगा लिया।",
+   "en": "struck off the head of the vulture on the tree; Drona clasped Falgoona to his bosom",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "गंगा तट पर एक मगर ने द्रोण की जाँघ पकड़ी; अर्जुन ने पाँच बाणों से उसे मारा।",
+   "en": "an alligator seized him about his thigh; Arjuna struck the monster with five sharp arrows",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "द्रोण ने अर्जुन को ब्रह्मशिर अस्त्र दिया और मनुष्य शत्रु पर न चलाने को कहा।",
+   "en": "Brahma-shira; Thou must not ever use it against any human foe",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  }
+ ],
+ "thumb": {
+  "headline": "द्रोण को क्या दिखा?",
+  "support": "पूरी परीक्षा",
+  "style": null,
+  "art": null,
+  "scene": null
+ },
+ "created": "2026-10-19"
+}

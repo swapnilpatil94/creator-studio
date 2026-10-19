@@ -1,0 +1,45 @@
+{
+ "fixed": [],
+ "warnings": [
+  "no re-hook (question or turn) near 75% of the film",
+  "52 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "puppet_warp_breathing": 6,
+   "drone_orbit_180": 3,
+   "matte_painting_extension": 4,
+   "2.5d_parallax": 1,
+   "kinetography_cinemagraph": 5,
+   "crane_up_reveal": 4,
+   "parallax_occlusion_3d": 3,
+   "shadow_play_reveal": 3,
+   "depth_fog_haze": 1,
+   "eye_glow_energy_pulse": 3,
+   "drone_pull_out_reveal": 4,
+   "dolly_zoom_vertigo": 2,
+   "handheld_breathing_shake": 2,
+   "lightning_flash": 2,
+   "crane_down": 1,
+   "volumetric_god_rays": 2,
+   "sacred_geometry_carve": 2,
+   "double_exposure_cosmos": 1,
+   "day_to_night_timelapse": 1,
+   "drone_top_down_bird_eye": 1,
+   "infinite_zoom_droste": 1
+  },
+  "fx_distinct": 21,
+  "scenes": 8,
+  "assets_used": 0,
+  "comps": {
+   "kinetic": 2,
+   "stat": 3,
+   "cinema": 52,
+   "chapter": 2
+  },
+  "beats": 59,
+  "windows_low_variety": 52
+ },
+ "writer": "rules",
+ "from_rules": 59
+}

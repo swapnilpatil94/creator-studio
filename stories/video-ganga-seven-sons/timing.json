@@ -1,0 +1,79 @@
+{
+ "item": "ganga-seven-sons.carousel",
+ "started": "2026-10-19T06:26:47.204Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792391207207,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792391207209,
+   "detail": "19 beats, 9 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792391207217,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792391207217,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "cached",
+   "start": 1792391207218,
+   "detail": "all scene pictures exist",
+   "seconds": 0
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792391207218,
+   "detail": "11 of 11 scenes layered, 0 picture beats fell back to type",
+   "seconds": 64
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792391271564,
+   "detail": "10 camera clips (8 rendered, 2 cached)",
+   "seconds": 12
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792391283173,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792391283233,
+   "detail": "QA all passed",
+   "seconds": 61
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792391344240,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 3
+  }
+ ],
+ "total_seconds": 140,
+ "ended": "2026-10-19T06:29:06.902Z"
+}

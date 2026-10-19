@@ -1,0 +1,362 @@
+{
+ "slug": "arjuna-fast-test",
+ "format": "short",
+ "title": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?",
+ "thumb": "द्रोण को क्या दिखा?",
+ "thumbSupport": "पूरी परीक्षा",
+ "thumbStyle": null,
+ "thumbArt": null,
+ "thumbScene": null,
+ "source_line": "स्रोत: महाभारत, आदि पर्व, खंड १३५ (गांगुली अनुवाद)",
+ "tradition": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#अर्जुन",
+  "#महाभारत"
+ ],
+ "look": {
+  "grade": "teal",
+  "captions": "box",
+  "transition": "iris"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "अर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "सब राजकुमार धनुष ताने खड़े थे, और सब असफल हो चुके थे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "तब द्रोण ने मुस्कुराकर अर्जुन को बुलाया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "उन्होंने कहा, निशाना तुम्हें साधना है, और मेरे आदेश पर ही बाण छोड़ना।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "अर्जुन धनुष तानकर, चिड़िया पर निशाना साधे खड़े रहे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "द्रोण ने पूछा, क्या तुम्हें चिड़िया, पेड़ और मैं दिखाई देते हैं?",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "अर्जुन ने उत्तर दिया, मुझे केवल चिड़िया दिखती है, पेड़ या आप नहीं।",
+   "intent": "tense",
+   "accent": "चिड़िया",
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "द्रोण ने फिर कहा, अगर तुम्हें गिद्ध दिखता है, तो उसका वर्णन करो।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "अर्जुन बोले, मुझे केवल गिद्ध का सिर दिखता है, उसका शरीर नहीं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "यह सुनकर द्रोण के रोंगटे खड़े हो गए, और उन्होंने कहा, चलाओ।",
+   "intent": "reveal",
+   "accent": "चलाओ",
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "अर्जुन का बाण चला, और गिद्ध का सिर कटकर नीचे आ गिरा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "द्रोण ने अर्जुन को गले लगा लिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "कुछ समय बाद सारे शिष्य गंगा के तट पर स्नान करने गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "जब द्रोण जल में उतरे, तब एक बलवान मगर ने उनकी जाँघ पकड़ ली।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "द्रोण ने जल्दी में शिष्यों से कहा, इसे मारो और मुझे बचाओ।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "बाकी शिष्य अपनी जगह घबराए खड़े रहे, पर अर्जुन ने पाँच तीखे बाणों से मगर को मार दिया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "तब द्रोण ने अर्जुन को ब्रह्मशिर नाम का अस्त्र दिया।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "साथ में चेतावनी दी, इसे कभी किसी मनुष्य शत्रु पर मत चलाना।",
+   "intent": null,
+   "accent": "मनुष्य",
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "कहा कि तुम जैसा धनुर्धर इस संसार में कोई और नहीं होगा।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "तो अर्जुन ने सिर्फ़ चिड़िया क्यों देखी? ग्रंथ के अनुसार, उनकी दृष्टि केवल लक्ष्य पर टिकी थी।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "सेव करें, और फ़ॉलो करें।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "young archer prince bow drawn",
+   "action": "aiming at a wooden bird",
+   "setting": "tall tree forest training ground",
+   "lighting": "warm morning light"
+  },
+  "2": {
+   "subject": "young prince in a royal courtyard",
+   "action": "holding a bow at the ready",
+   "setting": "sunlit palace training ground",
+   "lighting": "warm morning light"
+  },
+  "4": {
+   "subject": "teacher smiling at a kneeling boy",
+   "action": "calling him forward",
+   "setting": "forest hermitage ground",
+   "lighting": "soft golden light"
+  },
+  "6": {
+   "subject": "prince drawing a bow",
+   "action": "aiming up at a tree branch",
+   "setting": "open forest clearing",
+   "lighting": "dappled sunlight"
+  },
+  "8": {
+   "subject": "prince eyes fixed forward",
+   "action": "seeing only the bird",
+   "setting": "blurred trees behind him",
+   "lighting": "soft golden glow"
+  },
+  "9": {
+   "subject": "teacher with a white beard",
+   "action": "asking a calm question",
+   "setting": "forest hermitage",
+   "lighting": "warm afternoon light"
+  },
+  "12": {
+   "subject": "arrow leaving the bow",
+   "action": "striking the bird's head",
+   "setting": "open forest clearing",
+   "lighting": "bright sunlit air"
+  },
+  "14": {
+   "subject": "group of students walking",
+   "action": "towards a wide river bank",
+   "setting": "misty river morning",
+   "lighting": "pale golden light"
+  },
+  "15": {
+   "subject": "teacher standing in river",
+   "action": "crocodile gripping his thigh",
+   "setting": "sacred river bank",
+   "lighting": "dramatic dawn light"
+  },
+  "17": {
+   "subject": "young archer firing arrows",
+   "action": "at a crocodile in the water",
+   "setting": "river bank",
+   "lighting": "bright midday light"
+  },
+  "18": {
+   "subject": "teacher giving a glowing weapon",
+   "action": "kneeling student receives it",
+   "setting": "hermitage courtyard",
+   "lighting": "golden divine light"
+  }
+ },
+ "visuals": {
+  "1": {
+   "fx": "drone_push_in"
+  },
+  "2": {
+   "fx": "2.5d_parallax"
+  },
+  "3": {
+   "fx": "kinetography_cinemagraph"
+  },
+  "4": {
+   "fx": "drone_pull_out_reveal"
+  },
+  "5": {
+   "comp": "quote",
+   "bg": "temple-jali"
+  },
+  "6": {
+   "fx": "dolly_zoom_vertigo"
+  },
+  "7": {
+   "fx": "parallax_occlusion_3d"
+  },
+  "8": {
+   "comp": "kinetic",
+   "style": "mask",
+   "bg": "nebula",
+   "mark": "circle",
+   "text": "मुझे केवल *चिड़िया* दिखती है"
+  },
+  "9": {
+   "fx": "depth_rack_focus"
+  },
+  "10": {
+   "comp": "kinetic",
+   "style": "wave",
+   "bg": "ink-clouds"
+  },
+  "11": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "embers",
+   "mark": "underline",
+   "text": "द्रोण: *चलाओ*"
+  },
+  "12": {
+   "fx": "crane_up_reveal"
+  },
+  "13": {
+   "fx": "volumetric_god_rays"
+  },
+  "14": {
+   "fx": "depth_fog_haze"
+  },
+  "15": {
+   "fx": "drone_orbit_180"
+  },
+  "16": {
+   "fx": "handheld_breathing_shake",
+   "sticker": "burst"
+  },
+  "17": {
+   "comp": "kinetic",
+   "style": "flip",
+   "bg": "water-ripples",
+   "mark": "circle",
+   "text": "पाँच *बाण*"
+  },
+  "18": {
+   "fx": "eye_glow_energy_pulse"
+  },
+  "19": {
+   "comp": "kinetic",
+   "style": "glitch",
+   "bg": "storm",
+   "mark": "box",
+   "text": "कभी *मनुष्य* पर नहीं"
+  },
+  "20": {
+   "comp": "quote",
+   "bg": "gold-bokeh"
+  }
+ },
+ "claims": [
+  {
+   "text": "द्रोण ने अर्जुन को निशाना लगाने बुलाया, जब सब असफल हो चुके थे।",
+   "en": "When everyone had failed, Drona smilingly called Arjuna",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "अर्जुन ने कहा कि उन्हें केवल चिड़िया दिखती है, पेड़ या गुरु नहीं, फिर केवल गिद्ध का सिर।",
+   "en": "I see the bird only, but not the tree or thyself. I only see the head of the vulture",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "अर्जुन के बाण से गिद्ध का सिर कटकर गिर गया और द्रोण ने उन्हें गले लगा लिया।",
+   "en": "struck off the head of the vulture on the tree; Drona clasped Falgoona to his bosom",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "गंगा तट पर एक मगर ने द्रोण की जाँघ पकड़ी; अर्जुन ने पाँच बाणों से उसे मारा।",
+   "en": "an alligator seized him about his thigh; Arjuna struck the monster with five sharp arrows",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  },
+  {
+   "text": "द्रोण ने अर्जुन को ब्रह्मशिर अस्त्र दिया और मनुष्य शत्रु पर न चलाने को कहा।",
+   "en": "Brahma-shira; Thou must not ever use it against any human foe",
+   "status": "verified",
+   "source": "mahabharata-adi:135"
+  }
+ ],
+ "chapters": []
+}

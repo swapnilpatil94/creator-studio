@@ -1,0 +1,16 @@
+{
+ "name": "video-ganga-seven-sons",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1080x1920",
+ "title": "गंगा ने सात पुत्रों को क्यों बहाया?",
+ "from_item": "ganga-seven-sons.carousel",
+ "engine": "longform"
+}

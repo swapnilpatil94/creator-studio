@@ -1,0 +1,461 @@
+{
+ "story": "video-ganga-seven-sons",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 255,
+ "duration_s": 75.89,
+ "speech_words_per_s": 3.6,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल दिया?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 3.711,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल दिया?",
+   "raw_dur_s": 4.63,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "राजा शांतनु ने गंगा से विवाह किया, पर एक शर्त के साथ।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 3.951,
+   "end": 7.295,
+   "tries": 1,
+   "words_per_s": 3.59,
+   "beat": "v002",
+   "pause_after": 0.22,
+   "spoken": "राजा शांतनु ने गंगा से विवाह किया, पर एक शर्त के साथ.",
+   "raw_dur_s": 4.17,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 2.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "शर्त यह थी कि वे गंगा के किसी काम में दख़ल नहीं देंगे, और कभी कटु शब्द नहीं कहेंगे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 7.515,
+   "end": 12.468,
+   "tries": 1,
+   "words_per_s": 3.84,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "शर्त यह थी कि वे गंगा के किसी काम में दख़ल नहीं देंगे, और कभी कटु शब्द नहीं कहेंगे.",
+   "raw_dur_s": 6.17,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 3.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "गंगा ने साफ कहा था, जिस क्षण राजा ने रोका या कठोर बात कही, वे उन्हें छोड़ देंगी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 12.688,
+   "end": 17.177,
+   "tries": 2,
+   "words_per_s": 4.01,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "गंगा ने साफ कहा था, जिस क्षण राजा ने रोका या कठोर बात कही, वे उन्हें छोड़ देंगी.",
+   "raw_dur_s": 5.63,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.86,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 61220,
+     "rate": 3.2,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "शांतनु अपनी पत्नी के रूप और सेवा से इतने प्रसन्न थे कि महीने, ऋतुएँ और साल बीतते गए।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 17.397,
+   "end": 23.357,
+   "tries": 1,
+   "words_per_s": 3.02,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "शांतनु अपनी पत्नी के रूप और सेवा से इतने प्रसन्न थे कि महीने, ऋतुएँ और साल बीतते गए.",
+   "raw_dur_s": 7.46,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "आठ संतानें हुईं।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 23.577,
+   "end": 24.751,
+   "tries": 1,
+   "words_per_s": 2.56,
+   "beat": "v006",
+   "pause_after": 0.28,
+   "spoken": "आठ संतानें हुईं.",
+   "raw_dur_s": 1.46,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "पहली सात को गंगा ने जन्म लेते ही नदी में डाल दिया, और हर बार कहा कि यह तुम्हारे भले के लिए है।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 25.031,
+   "end": 29.992,
+   "tries": 1,
+   "words_per_s": 4.64,
+   "beat": "v007",
+   "pause_after": 0.22,
+   "spoken": "पहली सात को गंगा ने जन्म लेते ही नदी में डाल दिया, और हर बार कहा कि यह तुम्हारे भले के लिए है.",
+   "raw_dur_s": 6.19,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "शांतनु कुछ नहीं बोले, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 30.212,
+   "end": 33.544,
+   "tries": 1,
+   "words_per_s": 3.9,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "शांतनु कुछ नहीं बोले, क्योंकि उन्हें डर था कि पत्नी उन्हें छोड़ देगी.",
+   "raw_dur_s": 4.16,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "लेकिन आठवें बच्चे के समय उन्होंने गंगा को रोक दिया, और पूछा कि तुम कौन हो।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 33.764,
+   "end": 37.653,
+   "tries": 1,
+   "words_per_s": 4.11,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "लेकिन आठवें बच्चे के समय उन्होंने गंगा को रोक दिया, और पूछा कि तुम कौन हो.",
+   "raw_dur_s": 4.85,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.3,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "तब गंगा ने बताया कि वे जह्नु की पुत्री गंगा हैं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 37.873,
+   "end": 40.693,
+   "tries": 1,
+   "words_per_s": 3.9,
+   "beat": "v010",
+   "pause_after": 0.22,
+   "spoken": "तब गंगा ने बताया कि वे जह्नु की पुत्री गंगा हैं.",
+   "raw_dur_s": 3.52,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "और वे आठों बालक वसु थे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 40.913,
+   "end": 42.897,
+   "tries": 1,
+   "words_per_s": 3.02,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "और वे आठों बालक वसु थे.",
+   "raw_dur_s": 2.5,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 2.4,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 43.117,
+   "end": 47.108,
+   "tries": 1,
+   "words_per_s": 3.51,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी.",
+   "raw_dur_s": 4.99,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 2.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "वशिष्ठ ने शाप दिया कि वसुओं को पृथ्वी पर जन्म लेना पड़ेगा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 47.328,
+   "end": 51.159,
+   "tries": 1,
+   "words_per_s": 3.13,
+   "beat": "v013",
+   "pause_after": 0.22,
+   "spoken": "वशिष्ठ ने शाप दिया कि वसुओं को पृथ्वी पर जन्म लेना पड़ेगा.",
+   "raw_dur_s": 4.79,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 2.51,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "वसुओं ने गंगा से माँगा कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 51.379,
+   "end": 55.665,
+   "tries": 1,
+   "words_per_s": 3.97,
+   "beat": "v014",
+   "pause_after": 0.22,
+   "spoken": "वसुओं ने गंगा से माँगा कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए.",
+   "raw_dur_s": 5.35,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 3.18,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "सात वसु जन्म के साथ ही शाप से मुक्त हो गए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 55.885,
+   "end": 58.633,
+   "tries": 1,
+   "words_per_s": 4.0,
+   "beat": "v015",
+   "pause_after": 0.22,
+   "spoken": "सात वसु जन्म के साथ ही शाप से मुक्त हो गए.",
+   "raw_dur_s": 3.43,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 3.2,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "पर द्यौ, जिसके कारण गाय चुराई गई थी, उसे लंबे समय तक पृथ्वी पर रहना पड़ा।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 58.853,
+   "end": 64.226,
+   "tries": 1,
+   "words_per_s": 2.98,
+   "beat": "v016",
+   "pause_after": 0.48,
+   "spoken": "पर द्यौ, जिसके कारण गाय चुराई गई थी, उसे लंबे समय तक पृथ्वी पर रहना पड़ा.",
+   "raw_dur_s": 5.96,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "वही आठवाँ बालक आगे चलकर देवव्रत कहलाया, जिसे गंगेय भी कहा गया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 64.706,
+   "end": 69.056,
+   "tries": 1,
+   "words_per_s": 2.76,
+   "beat": "v017",
+   "pause_after": 0.48,
+   "spoken": "वही आठवाँ बालक आगे चलकर देवव्रत कहलाया, जिसे गंगेय भी कहा गया.",
+   "raw_dur_s": 4.83,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 2.48,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "तो गंगा ने सात पुत्र क्यों बहाए?",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 69.536,
+   "end": 71.4,
+   "tries": 1,
+   "words_per_s": 3.76,
+   "beat": "v018",
+   "pause_after": 0.17,
+   "spoken": "तो गंगा ने सात पुत्र क्यों बहाए?",
+   "raw_dur_s": 2.09,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 3.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.2",
+   "text": "एक शाप से उन्हें मुक्त करने के लिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 71.57,
+   "end": 73.755,
+   "tries": 1,
+   "words_per_s": 3.66,
+   "beat": "v018",
+   "pause_after": 0.38,
+   "spoken": "एक शाप से उन्हें मुक्त करने के लिए.",
+   "raw_dur_s": 2.45,
+   "checks": [
+    {
+     "seed": 81889,
+     "rate": 3.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "सेव करें · फ़ॉलो करें",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 74.135,
+   "end": 75.59,
+   "tries": 1,
+   "words_per_s": 3.43,
+   "beat": "v019",
+   "pause_after": 0.3,
+   "spoken": "सेव करें · फ़ॉलो करें",
+   "raw_dur_s": 1.64,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 3.06,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

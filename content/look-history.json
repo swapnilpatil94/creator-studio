@@ -59,5 +59,60 @@
   "captions": "box",
   "grade": "film",
   "seed": 390
+ },
+ {
+  "name": "video-arjuna-bird-eye-test",
+  "mood": "river",
+  "hue": 288,
+  "sat": 1.07,
+  "motif": "flow",
+  "transition": "zoom",
+  "captions": "karaoke",
+  "grade": "film",
+  "seed": 378
+ },
+ {
+  "name": "video-karna-janm-kavach-long",
+  "mood": "cosmic",
+  "hue": 322,
+  "sat": 1.01,
+  "motif": "ink",
+  "transition": "wipe",
+  "captions": "box",
+  "grade": "teal",
+  "seed": 579
+ },
+ {
+  "name": "video-arjuna-fast-test",
+  "mood": "river",
+  "hue": 134,
+  "sat": 1.08,
+  "motif": "rangoli",
+  "transition": "iris",
+  "captions": "box",
+  "grade": "teal",
+  "seed": 799
+ },
+ {
+  "name": "video-lakshagriha-pandava-escape",
+  "mood": "river",
+  "hue": 197,
+  "sat": 1.06,
+  "motif": "rays",
+  "transition": "dissolve",
+  "captions": "karaoke",
+  "grade": "film",
+  "seed": 711
+ },
+ {
+  "name": "video-resume-test-abc",
+  "mood": "river",
+  "hue": 252,
+  "sat": 1.08,
+  "motif": "flow",
+  "transition": "zoom",
+  "captions": "box",
+  "grade": "film",
+  "seed": 201
  }
 ]

@@ -1,0 +1,156 @@
+{
+ "s3": {
+  "subject": "tribal chief seated in royal court",
+  "action": "speaking to young princess",
+  "setting": "ancient palace hall",
+  "lighting": "warm lamp light",
+  "medium": "ravi-varma"
+ },
+ "s8": {
+  "subject": "sage with matted hair",
+  "action": "blessing a kneeling girl",
+  "setting": "hermitage garden",
+  "lighting": "soft dawn light",
+  "medium": "ravi-varma"
+ },
+ "s12": {
+  "subject": "young princess hands joined",
+  "action": "sun god descending in light",
+  "setting": "riverbank at sunrise",
+  "lighting": "radiant golden rays",
+  "medium": "ravi-varma"
+ },
+ "s21": {
+  "subject": "newborn child wearing golden armour",
+  "action": "resting on silk cloth",
+  "setting": "quiet palace chamber",
+  "lighting": "gentle glowing light",
+  "medium": "ravi-varma"
+ },
+ "s26": {
+  "subject": "young woman on riverbank",
+  "action": "placing a basket in water",
+  "setting": "misty river dusk",
+  "lighting": "muted blue light",
+  "medium": "ravi-varma"
+ },
+ "s31": {
+  "subject": "brahmin priest holding out hand",
+  "action": "warrior removing golden armour",
+  "setting": "river bank at noon",
+  "lighting": "harsh bright sunlight",
+  "medium": "ravi-varma"
+ },
+ "scene0": {
+  "subject": "Lord Krishna and Arjuna",
+  "action": "standing on a chariot during the Kurukshetra war",
+  "setting": "battlefield with chariots and warriors",
+  "lighting": "golden dawn light",
+  "medium": "ravi-varma"
+ },
+ "scene2": {
+  "subject": "A young woman named Priti",
+  "action": "standing gracefully with divine aura",
+  "setting": "a celestial garden with golden lotus flowers",
+  "lighting": "soft golden glow",
+  "medium": "ravi-varma"
+ },
+ "scene3": {
+  "subject": "Shur, a warrior king",
+  "action": "hands over Prita to his childless friend Kuntibhoj",
+  "setting": "ancient royal court with stone pillars and tapestries",
+  "lighting": "warm golden light from oil lamps",
+  "medium": "ravi-varma"
+ },
+ "scene4": {
+  "subject": "Pṛthā, a woman with a serene expression",
+  "action": "standing tall, holding a staff with dignity",
+  "setting": "a sacred grove surrounded by ancient trees",
+  "lighting": "soft golden light filtering through leaves",
+  "medium": "ravi-varma"
+ },
+ "scene5": {
+  "subject": "Pṛthā serving guests in Kuntibhoja's house",
+  "action": "bowing and offering food with reverence",
+  "setting": "ornate hall with golden pillars and tapestries",
+  "lighting": "warm oil lamps glowing softly",
+  "medium": "ravi-varma"
+ },
+ "scene6": {
+  "subject": "A sage and a woman named Prita",
+  "action": "The sage gives Prita a sacred mantra",
+  "setting": "A serene forest with ancient temple ruins",
+  "lighting": "Soft golden light from dawn",
+  "medium": "ravi-varma"
+ },
+ "scene7": {
+  "subject": "A young woman named Kanyā",
+  "action": "stands in deep contemplation, eyes closed",
+  "setting": "ancient palace courtyard surrounded by lotus ponds",
+  "lighting": "soft golden glow at dawn",
+  "medium": "ravi-varma"
+ },
+ "scene9": {
+  "subject": "Priti, a woman with a modest expression",
+  "action": "gently lowering her gaze and hesitating to speak",
+  "setting": "a traditional Indian hall with intricate carvings",
+  "lighting": "soft, golden ambient light",
+  "medium": "ravi-varma"
+ },
+ "scene12": {
+  "subject": "A young boy with divine aura and golden armor",
+  "action": "standing proudly, holding a shining spear",
+  "setting": "a celestial battlefield under a radiant sun",
+  "lighting": "golden and divine glow",
+  "medium": "ravi-varma"
+ },
+ "scene13": {
+  "subject": "Pṛthā, her son",
+  "action": "gazes with sorrow, contemplating silently",
+  "setting": "a dimly lit royal chamber adorned with traditional Hindu motifs",
+  "lighting": "soft, golden glow from oil lamps",
+  "medium": "ravi-varma"
+ },
+ "scene14": {
+  "subject": "A man from the Sut caste holding a child",
+  "action": "lifts the child from water with gentle hands",
+  "setting": "a riverbank under a dense forest canopy",
+  "lighting": "soft golden dawn light",
+  "medium": "ravi-varma"
+ },
+ "scene15": {
+  "subject": "Krishna and Radha cradling an infant",
+  "action": "gently holding and rocking him",
+  "setting": "a serene celestial garden with peacocks and lotus flowers",
+  "lighting": "soft golden glow from above",
+  "medium": "ravi-varma"
+ },
+ "scene16": {
+  "subject": "A young boy with a crown of flowers",
+  "action": "being embraced by a weaver and his wife",
+  "setting": "a humble loom in a village home",
+  "lighting": "warm golden glow",
+  "medium": "ravi-varma"
+ },
+ "scene18": {
+  "subject": "Vasusen removes his armor and joins his hands",
+  "action": "offers it to Indra with humility",
+  "setting": "ancient battlefield under a crimson sky",
+  "lighting": "golden rays from the sun",
+  "medium": "ravi-varma"
+ },
+ "scene19": {
+  "subject": "Indra, a divine figure with a thunderbolt",
+  "action": "grants a powerful weapon called Shreshtha Shakti to a devotee",
+  "setting": "a grand celestial hall adorned with golden pillars",
+  "lighting": "radiant divine light",
+  "medium": "ravi-varma"
+ },
+ "scene20": {
+  "subject": "A young devotee",
+  "action": "bowing deeply with folded hands",
+  "setting": "in front of a grand temple entrance",
+  "lighting": "soft golden dawn light",
+  "medium": "ravi-varma"
+ }
+}

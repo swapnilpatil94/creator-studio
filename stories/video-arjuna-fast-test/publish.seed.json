@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "अर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी? यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#अर्जुन",
+  "#महाभारत"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "अर्जुन|सिर्फ़|चिड़िया",
+ "extraTags": [
+  "अर्जुन",
+  "महाभारत",
+  "अर्जुन",
+  "सिर्फ़",
+  "चिड़िया",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "द्रोण को क्या दिखा?"
+   ],
+   "support": [
+    "पूरी परीक्षा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "अर्जुन को सिर्फ़"
+ ],
+ "primaryKeyword": "अर्जुन",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?"
+ }
+}

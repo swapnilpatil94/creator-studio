@@ -1,0 +1,174 @@
+{
+ "pinnedComment": null,
+ "chapters": [],
+ "story": "video-ganga-seven-sons",
+ "channel": "kathaaya",
+ "format": "short",
+ "titleOptions": [
+  {
+   "t": "गंगा ने सात पुत्रों को क्यों बहाया? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "title": "गंगा ने सात पुत्रों को क्यों बहाया? | KATHAAYA",
+ "description": "गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल दिया? राजा शांतनु ने गंगा से विवाह किया, पर एक शर्त के साथ।\n\nकथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #गंगाकथा #महाभारत #kathaayastories",
+ "tags": [
+  "गंगाकथा",
+  "महाभारत",
+  "kathaayastories",
+  "गंगा",
+  "बहाया",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "hashtags": [
+  "#kathaaya",
+  "#गंगाकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "categoryId": "24",
+ "defaultLanguage": "hi",
+ "defaultAudioLanguage": "hi",
+ "privacyStatus": "private",
+ "selfDeclaredMadeForKids": false,
+ "containsSyntheticMedia": true,
+ "video": "output/video-ganga-seven-sons-share.mp4",
+ "thumbnails": [
+  "output/thumb-9x16.png",
+  "output/thumb-16x9.png"
+ ],
+ "tagEvidence": [],
+ "thumbnailSeed": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "गंगा का सच"
+   ],
+   "support": []
+  }
+ },
+ "checks": [
+  {
+   "name": "title <= 100 chars",
+   "ok": true,
+   "detail": 46
+  },
+  {
+   "name": "title before | <= 60 chars (desktop truncation)",
+   "ok": true,
+   "detail": 35
+  },
+  {
+   "name": "primary keyword in first 55 chars of title",
+   "ok": true,
+   "detail": "गंगा"
+  },
+  {
+   "name": "<= 1 emoji in title (channel style)",
+   "ok": true,
+   "detail": "0 emoji"
+  },
+  {
+   "name": "<= 2 all-caps Latin words",
+   "ok": true,
+   "detail": "1 (KATHAAYA)"
+  },
+  {
+   "name": "primary keyword in first 160 chars of description",
+   "ok": true,
+   "detail": "first 160: गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल द…"
+  },
+  {
+   "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
+   "ok": true,
+   "detail": "1/1 (गंगा ने सात)"
+  },
+  {
+   "name": "description <= 5000 bytes",
+   "ok": true,
+   "detail": 1496
+  },
+  {
+   "name": "tags <= 15 and <= 500 chars",
+   "ok": true,
+   "detail": "9 tags, 118 chars"
+  },
+  {
+   "name": "format fits Shorts (<= 180 s)",
+   "ok": true,
+   "detail": "78 s"
+  },
+  {
+   "name": "channel brand line in description",
+   "ok": true,
+   "detail": "tagline present"
+  },
+  {
+   "name": "variant/source note in description",
+   "ok": true,
+   "detail": "disclaimer present"
+  },
+  {
+   "name": "synthetic-media disclosure set",
+   "ok": true,
+   "detail": "containsSyntheticMedia=true + description line"
+  },
+  {
+   "name": "rendered video exists",
+   "ok": true,
+   "detail": "video-ganga-seven-sons-share.mp4"
+  },
+  {
+   "name": "thumbnail: headline <= 4 words (Devanagari at feed size)",
+   "ok": true,
+   "detail": "3 words: गंगा का सच"
+  },
+  {
+   "name": "thumbnail: headline does not repeat the title",
+   "ok": true,
+   "detail": "the thumbnail carries the other half of the story"
+  },
+  {
+   "name": "thumbnail: real painting from the film as the picture",
+   "ok": true,
+   "detail": "assets/art/c1.jpg"
+  },
+  {
+   "name": "thumbnail: 120 px preview generated",
+   "ok": true,
+   "detail": "thumb-120-*.png"
+  },
+  {
+   "name": "thumbnail: channel mark (logo) on the thumbnail",
+   "ok": true,
+   "detail": "channels/kathaaya/logo.png"
+  },
+  {
+   "name": "claims verified at source",
+   "ok": false,
+   "detail": "no ledger"
+  }
+ ],
+ "reviewItems": [
+  "Pair test: covering the title, the thumbnail alone still raises a question",
+  "Pair test: covering the thumbnail, the title alone still pulls",
+  "Honesty test: the film delivers what the title and thumbnail promise (variant note stated)",
+  "I watched the film with sound and the narration pace and emotion feel right",
+  "Thumbnail reads in the 120 px preview (mood, subject, text)",
+  "I reviewed the claims warnings and sources",
+  "Title, description and tags read correctly in Devanagari and Roman spelling"
+ ],
+ "skillsApplied": [
+  "titles-and-thumbnails",
+  "youtube-packaging",
+  "youtube-seo-description",
+  "youtube-thumbnail-design",
+  "storytelling-hooks",
+  "viral-hooks"
+ ],
+ "generated": "2026-10-19T06:29:06.808Z"
+}

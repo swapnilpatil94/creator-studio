@@ -1,0 +1,757 @@
+{
+ "slug": "lakshagriha-pandava-escape",
+ "format": "long",
+ "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+ "thumb": "सुरंग का राज़?",
+ "thumbSupport": "लाक्षागृह की पूरी कथा",
+ "thumbStyle": null,
+ "thumbArt": null,
+ "thumbScene": "A powerful prince carries his mother on his shoulder and four brothers on his arms as they flee through a dark forest at night, a huge wooden palace burning with orange flames behind them; the prince's face shows fierce resolve; a dark tunnel mouth glows at his feet; deep crimson and gold firelight, smoke and sparks.",
+ "source_line": "स्रोत: महाभारत, आदि पर्व (जतुगृह पर्व), खंड १४३ से १५१ (गांगुली अनुवाद)",
+ "tradition": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#पांडव",
+  "#महाभारत",
+  "#लाक्षागृह"
+ ],
+ "look": {},
+ "beats": [
+  {
+   "n": 1,
+   "text": "पांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": "साज़िश की शुरुआत"
+  },
+  {
+   "n": 2,
+   "text": "यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "भीम की ताक़त और अर्जुन की धनुर्विद्या देखकर दुर्योधन उदास और चिंतित रहने लगा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "कर्ण और शकुनि ने कई उपायों से पांडवों को मारने की कोशिश की, पर पांडव हर चाल को विफल करते रहे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "फिर दुर्योधन ने भाइयों के साथ धन और सम्मान बाँटकर प्रजा को धीरे-धीरे अपनी ओर करना शुरू किया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "उसने पिता धृतराष्ट्र से कहा कि पांडवों को किसी चतुराई से वारणावत नगर भेज दिया जाए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "धृतराष्ट्र ने कहा कि पांडु ने सदा सबका भला किया, और प्रजा उन्हीं के पुत्रों से स्नेह करती है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "उन्होंने पूछा कि अगर हम पांडवों को निकालेंगे, तो क्या प्रजा हमें मित्रों समेत मार नहीं डालेगी?",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "दुर्योधन ने उत्तर दिया कि खज़ाना और मंत्री अभी हमारे हाथ में हैं, इसलिए पांडवों को कोमल उपाय से वारणावत भेज दीजिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "धृतराष्ट्र बोले, यही बात मेरे मन में भी थी, पर पाप के डर से मैंने इसे कभी कहा नहीं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "दुर्योधन ने कहा कि भीष्म तटस्थ रहेंगे, अश्वत्थामा हमारी ओर हैं, इसलिए द्रोण और कृपा भी साथ होंगे।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "और विदुर अकेले कुछ बिगाड़ नहीं सकते, इसलिए पांडवों को आज ही भेजने का प्रबंध कीजिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "चतुर सभासदों ने दरबार में वारणावत की बड़ाई शुरू की, कि वहाँ पशुपति शिव का उत्सव हो रहा है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "पांडवों के मन में वहाँ जाने की इच्छा जागी, तो धृतराष्ट्र ने कहा, जाइए, उत्सव देखिए, और ब्राह्मणों को रत्न दान कीजिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "युधिष्ठिर राजा का इरादा समझ गए, पर खुद को कमज़ोर और मित्रहीन जानकर उन्होंने कहा, जैसी आज्ञा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "उन्होंने भीष्म, द्रोण, विदुर और सभी बड़ों से आशीर्वाद माँगा, और पांडव वारणावत की ओर चल पड़े।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "उधर दुर्योधन ने अपने मंत्री पुरोचन को अकेले में बुलाया, और उसका दाहिना हाथ पकड़कर कहा।",
+   "intent": null,
+   "accent": null,
+   "chapter": "लाक्षागृह की रचना"
+  },
+  {
+   "n": 18,
+   "text": "वारणावत जाकर शस्त्रागार के पास एक चौकोर महल बनवाओ, जिसमें सन, राल, घी, तेल और चरबी जैसी जलने वाली चीज़ें लगी हों।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "दीवारों पर मिट्टी में घी, तेल, चरबी और ढेर सारी लाख मिलाकर लेप चढ़ाओ, ताकि कोई देखकर भी उसे जलने वाला भवन न समझे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "फिर पांडवों को आदर के साथ उसी में ठहराओ, और जब वे निश्चिंत होकर सो जाएँ, तब द्वार की ओर से उसमें आग लगा देना।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "लोग यही कहेंगे कि वे घर में अचानक लगी आग से जल मरे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "पुरोचन तेज़ खच्चरों वाले रथ से वारणावत पहुँचा, और दुर्योधन की आज्ञा के अनुसार सब कुछ करता गया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 23,
+   "text": "पांडवों ने रथों पर चढ़ने से पहले भीष्म, धृतराष्ट्र, द्रोण, कृपा और विदुर के चरण छुए।",
+   "intent": null,
+   "accent": null,
+   "chapter": "विदाई और विदुर की चेतावनी"
+  },
+  {
+   "n": 24,
+   "text": "नगरवासी दुखी होकर बोले कि राजा धृतराष्ट्र सबको समान दृष्टि से नहीं देखते।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 25,
+   "text": "कुछ लोग तो यह कहकर पीछे चल दिए कि हम भी वहीं चलेंगे जहाँ युधिष्ठिर जाएँगे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 26,
+   "text": "युधिष्ठिर ने कहा, राजा हमारे पिता और गुरु हैं, उनकी आज्ञा मानना ही हमारा धर्म है, आप लौट जाइए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 27,
+   "text": "फिर विदुर ने ऐसी भाषा में युधिष्ठिर से बात की, जिसे उनके सिवा कोई नहीं समझ पाया।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 28,
+   "text": "उन्होंने शत्रु की चालों को पहचानकर चलने की सीख दी।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 29,
+   "text": "वारणावत पहुँचे तो हज़ारों नगरवासियों ने जय-जयकार करके उनका स्वागत किया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 30,
+   "text": "पुरोचन आगे-आगे चलता हुआ उन्हें उस महल तक ले गया, और भोजन, पेय और बिस्तर सब उत्तम दिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 31,
+   "text": "दस रातें बीतने पर पुरोचन ने उन्हें एक भवन दिखाया, जिसे उसने शुभ भवन कहा, पर असल में वह अभिशप्त घर था।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 32,
+   "text": "युधिष्ठिर ने उसे देखा, और घी तथा लाख की गंध पाकर भीम से कहा कि यह घर जलने वाली चीज़ों से बना है।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 33,
+   "text": "उन्होंने कहा, विदुर ने यह ख़तरा पहले ही बता दिया था, और पुरोचन दुर्योधन के आदेश पर मुझे भरोसे में लेकर जलाना चाहता है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 34,
+   "text": "भीम ने कहा कि तब तो हमें पहले वाले स्थान पर लौट जाना चाहिए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 35,
+   "text": "युधिष्ठिर ने कहा, नहीं, हम यहीं भरोसा दिखाते हुए रहेंगे, पर सावधान और जागते हुए, और बचने का कोई पक्का रास्ता खोजेंगे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 36,
+   "text": "तभी विदुर का भेजा हुआ एक कुशल खनिक चुपके से पांडवों के पास आया।",
+   "intent": null,
+   "accent": null,
+   "chapter": "सुरंग"
+  },
+  {
+   "n": 37,
+   "text": "उसने विदुर के कहे शब्द और युधिष्ठिर का उत्तर दोहराकर अपनी पहचान साबित की।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 38,
+   "text": "उसने बताया कि पुरोचन कृष्ण पक्ष की चौदहवीं रात को घर के द्वार में आग लगाएगा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 39,
+   "text": "खनिक ने ध्यान से काम शुरू किया, और घर के बीचोंबीच एक बड़ी सुरंग खोद दी।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 40,
+   "text": "उसका मुँह फ़र्श के बराबर था, और पुरोचन से छिपाने के लिए तख़्तों से ढका हुआ था।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 41,
+   "text": "पांडव रात को अस्त्र-शस्त्र पास रखकर सोते, और दिन में जंगल-जंगल शिकार खेलने जाते।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 42,
+   "text": "इस तरह वे पूरे एक वर्ष तक संतुष्ट दिखने का नाटक करते रहे, और पुरोचन बहुत प्रसन्न हो गया।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 43,
+   "text": "तब युधिष्ठिर ने कहा कि उस दुष्ट को ठीक धोखा मिला है, अब भागने का समय आ गया है।",
+   "intent": null,
+   "accent": null,
+   "chapter": "आग और पलायन"
+  },
+  {
+   "n": 44,
+   "text": "कुंती ने एक रात ब्राह्मणों को भोज कराया, और उसमें एक निषाद स्त्री अपने पाँच पुत्रों के साथ आई।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 45,
+   "text": "वे मदिरा पीकर बेहोश हो गए, और उसी भवन में सो गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 46,
+   "text": "आधी रात को तेज़ हवा चली, और भीम ने ठीक वहाँ आग लगाई जहाँ पुरोचन सो रहा था।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 47,
+   "text": "फिर उन्होंने द्वार और भवन के कई हिस्सों में आग लगाई, और माता समेत सुरंग में उतर गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 48,
+   "text": "उस आग में वह निषाद स्त्री, उसके पुत्र और स्वयं पुरोचन भी जल गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 49,
+   "text": "आग की लपटों और गर्जना से नगरवासी जाग उठे, और जलते भवन को देखकर विलाप करने लगे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 50,
+   "text": "उन्होंने कहा कि पुरोचन ने ही दुर्योधन के कहने पर यह घर बनाया था, और धृतराष्ट्र के पक्षपात को धिक्कार है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 51,
+   "text": "सुरंग से निकलकर पांडव नींद और भय के कारण तेज़ नहीं चल पा रहे थे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 52,
+   "text": "तब भीम ने सबको उठा लिया।",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 53,
+   "text": "माता को कंधे पर, जुड़वाँ भाइयों को बगल में, और युधिष्ठिर तथा अर्जुन को भुजाओं पर, वे हवा की गति से अंधकार में निकल पड़े।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 54,
+   "text": "उधर विदुर ने जंगल में एक भरोसेमंद व्यक्ति को भेजा, जिसने गंगा के तट पर यंत्रों और ध्वजाओं वाली नाव दिखाई।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 55,
+   "text": "उसने विदुर का संदेश सुनाया कि अग्नि बिल में रहने वालों को नहीं जलाती, जो यह जानता है वह मृत्यु से बच जाता है।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 56,
+   "text": "उस व्यक्ति ने उन्हें नाव से गंगा पार कराई, जय कहकर विदा लिया, और पांडव गुप्त रूप से आगे बढ़ गए।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 57,
+   "text": "पर वारणावत के लोग यही समझते रहे कि पांडव जल गए, और धृतराष्ट्र ने शोक का दिखावा करके उनके अंतिम संस्कार भी करवाए।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 58,
+   "text": "तो पांडव बचे कैसे? पाठ के अनुसार, एक चेतावनी, एक सुरंग, और विदुर की समझदारी से।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 59,
+   "text": "सेव करें, और फ़ॉलो करें।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "3": {
+   "subject": "brooding prince in royal robes",
+   "action": "watching two brothers train",
+   "setting": "palace courtyard at dusk",
+   "lighting": "cold blue shadows"
+  },
+  "5": {
+   "subject": "scheming prince distributing gold",
+   "action": "to courtiers and citizens",
+   "setting": "ornate royal court",
+   "lighting": "warm lamp light"
+  },
+  "13": {
+   "subject": "courtiers praising a distant city",
+   "action": "blind king listening",
+   "setting": "grand throne hall",
+   "lighting": "amber torchlight"
+  },
+  "17": {
+   "subject": "prince whispering to a minister",
+   "action": "gripping his right hand",
+   "setting": "dim private chamber",
+   "lighting": "flickering oil lamp"
+  },
+  "19": {
+   "subject": "craftsmen plastering walls",
+   "action": "with a glossy resinous mixture",
+   "setting": "half built palace",
+   "lighting": "pale daylight"
+  },
+  "23": {
+   "subject": "five princes touching elders' feet",
+   "action": "before leaving in chariots",
+   "setting": "palace courtyard at dawn",
+   "lighting": "soft golden light"
+  },
+  "29": {
+   "subject": "cheering crowd with garlands",
+   "action": "welcoming five princes",
+   "setting": "festival town gate",
+   "lighting": "bright morning sun"
+  },
+  "31": {
+   "subject": "five princes inspecting a hall",
+   "action": "wary expressions",
+   "setting": "wooden palace interior",
+   "lighting": "dim amber light"
+  },
+  "36": {
+   "subject": "muscular miner with a pickaxe",
+   "action": "speaking quietly to a prince",
+   "setting": "night inside the hall",
+   "lighting": "low candle light"
+  },
+  "40": {
+   "subject": "wooden floor planks",
+   "action": "lifted above a dark tunnel mouth",
+   "setting": "palace chamber",
+   "lighting": "single lantern glow"
+  },
+  "44": {
+   "subject": "queen serving food",
+   "action": "to seated brahmins",
+   "setting": "lamp lit courtyard feast",
+   "lighting": "warm evening light"
+  },
+  "47": {
+   "subject": "burning wooden palace",
+   "action": "five figures slipping into a tunnel",
+   "setting": "dark night",
+   "lighting": "roaring orange flames"
+  },
+  "52": {
+   "subject": "powerful prince carrying his mother",
+   "action": "and four brothers on his body",
+   "setting": "dark forest at night",
+   "lighting": "red glow behind"
+  },
+  "53": {
+   "subject": "simple boat with flags",
+   "action": "waiting on a wide river",
+   "setting": "moonlit river bank",
+   "lighting": "silver moonlight"
+  },
+  "56": {
+   "subject": "king with a false grieving face",
+   "action": "performing funeral rites",
+   "setting": "palace courtyard",
+   "lighting": "grey smoky light"
+  }
+ },
+ "visuals": {
+  "1": {
+   "fx": "drone_push_in"
+  },
+  "2": {
+   "comp": "kinetic",
+   "style": "mask",
+   "bg": "temple-jali",
+   "text": "महाभारत, आदि पर्व: *लाक्षागृह*"
+  },
+  "3": {
+   "fx": "depth_fog_haze"
+  },
+  "4": {
+   "fx": "handheld_breathing_shake"
+  },
+  "5": {
+   "fx": "2.5d_parallax"
+  },
+  "6": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "ink-clouds",
+   "mark": "underline",
+   "text": "*वारणावत* भेज दो"
+  },
+  "7": {
+   "fx": "parallax_occlusion_3d"
+  },
+  "8": {
+   "comp": "quote",
+   "bg": "gold-bokeh"
+  },
+  "9": {
+   "fx": "puppet_warp_breathing"
+  },
+  "10": {
+   "comp": "kinetic",
+   "style": "spring",
+   "bg": "storm",
+   "mark": "box",
+   "text": "पाप के डर से *कहा नहीं*"
+  },
+  "11": {
+   "fx": "shadow_play_reveal"
+  },
+  "12": {
+   "fx": "dolly_zoom_vertigo"
+  },
+  "13": {
+   "fx": "drone_orbit_180"
+  },
+  "14": {
+   "fx": "kinetography_cinemagraph"
+  },
+  "15": {
+   "comp": "quote",
+   "bg": "temple-jali"
+  },
+  "16": {
+   "fx": "crane_up_reveal"
+  },
+  "17": {
+   "fx": "depth_rack_focus"
+  },
+  "18": {
+   "comp": "kinetic",
+   "style": "glitch",
+   "bg": "embers",
+   "mark": "circle",
+   "text": "सन, राल, घी, तेल, *लाख*"
+  },
+  "19": {
+   "fx": "matte_painting_extension"
+  },
+  "20": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "embers",
+   "mark": "underline",
+   "text": "सोते ही *आग*"
+  },
+  "21": {
+   "fx": "lightning_flash"
+  },
+  "22": {
+   "fx": "drone_pull_out_reveal"
+  },
+  "23": {
+   "fx": "crane_down"
+  },
+  "24": {
+   "fx": "eye_glow_energy_pulse"
+  },
+  "25": {
+   "comp": "kinetic",
+   "style": "wave",
+   "bg": "mountain-mist",
+   "text": "*हम भी चलेंगे*"
+  },
+  "26": {
+   "fx": "2.5d_parallax"
+  },
+  "27": {
+   "comp": "kinetic",
+   "style": "flip",
+   "bg": "nebula",
+   "mark": "circle",
+   "text": "*अनजानी भाषा* में चेतावनी"
+  },
+  "28": {
+   "fx": "depth_fog_haze"
+  },
+  "29": {
+   "fx": "drone_fpv_flythrough"
+  },
+  "30": {
+   "fx": "parallax_occlusion_3d"
+  },
+  "31": {
+   "fx": "handheld_breathing_shake"
+  },
+  "32": {
+   "comp": "kinetic",
+   "style": "glitch",
+   "bg": "yantra",
+   "text": "घी और लाख की *गंध*"
+  },
+  "33": {
+   "fx": "eye_glow_energy_pulse"
+  },
+  "34": {
+   "comp": "quote",
+   "bg": "ink-clouds"
+  },
+  "35": {
+   "comp": "kinetic",
+   "style": "mask",
+   "bg": "water-ripples",
+   "mark": "highlight",
+   "text": "भरोसे का *नाटक*"
+  },
+  "36": {
+   "fx": "shadow_play_reveal"
+  },
+  "37": {
+   "fx": "depth_rack_focus"
+  },
+  "38": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "storm",
+   "mark": "circle",
+   "text": "चौदहवीं रात, *द्वार* पर आग"
+  },
+  "39": {
+   "fx": "drone_top_down_bird_eye"
+  },
+  "40": {
+   "fx": "infinite_zoom_droste"
+  },
+  "41": {
+   "fx": "kinetography_cinemagraph"
+  },
+  "42": {
+   "comp": "kinetic",
+   "style": "spring",
+   "bg": "gold-bokeh",
+   "text": "एक वर्ष का *नाटक*"
+  }
+ },
+ "claims": [
+  {
+   "text": "दुर्योधन, कर्ण और शकुनि ने धृतराष्ट्र की सहमति से पांडवों को जलाने की योजना बनाई।",
+   "en": "Duryodhana, Dush-shasana, Karna and Sakuni resolved with the sanction of Dhrita-rashtra to burn to death Kunti and her five sons",
+   "status": "verified",
+   "source": "mahabharata-adi:143"
+  },
+  {
+   "text": "पुरोचन ने दुर्योधन के कहने पर सन, राल, घी, तेल, चरबी और लाख से भवन बनवाया।",
+   "en": "use hemp and resin and all other inflammable materials; clarified butter and oil and fat and a large measure of lac",
+   "status": "verified",
+   "source": "mahabharata-adi:146"
+  },
+  {
+   "text": "युधिष्ठिर ने घी और लाख की गंध से जान लिया कि भवन जलने वाली चीज़ों से बना है, और विदुर ने पहले ही चेताया था।",
+   "en": "scenting the smell of fat mixed with clarified butter and preparations of lac; Vidura apprised me beforehand",
+   "status": "verified",
+   "source": "mahabharata-adi:148"
+  },
+  {
+   "text": "विदुर के भेजे खनिक ने घर के बीच सुरंग खोदी, जिसका मुँह फ़र्श के बराबर और तख़्तों से ढका था।",
+   "en": "a large subterranean passage; the mouth in the centre of that house level with the floor and closed up with planks",
+   "status": "verified",
+   "source": "mahabharata-adi:149"
+  },
+  {
+   "text": "भीम ने पुरोचन के सोने की जगह आग लगाई, और माता व भाइयों को उठाकर भागे; एक निषाद स्त्री और उसके पाँच पुत्र भवन में जल गए।",
+   "en": "Bhima set fire to the house where Purochana was sleeping; a Nishada woman with her five sons lay down to sleep there; Bhima took his mother and brothers on his body",
+   "status": "verified",
+   "source": "mahabharata-adi:150"
+  },
+  {
+   "text": "विदुर के भेजे व्यक्ति ने गंगा तट पर नाव से पांडवों को पार कराया।",
+   "en": "a boat with engines and flags on the sacred banks of the Ganges; took them to the other side",
+   "status": "verified",
+   "source": "mahabharata-adi:151"
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "साज़िश की शुरुआत"
+  },
+  {
+   "n": 17,
+   "title": "लाक्षागृह की रचना"
+  },
+  {
+   "n": 23,
+   "title": "विदाई और विदुर की चेतावनी"
+  },
+  {
+   "n": 36,
+   "title": "सुरंग"
+  },
+  {
+   "n": 43,
+   "title": "आग और पलायन"
+  }
+ ]
+}

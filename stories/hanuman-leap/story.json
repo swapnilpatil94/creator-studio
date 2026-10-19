@@ -1,1 +1,0 @@
-{ "name": "hanuman-leap", "scene": "scene.js", "segments": "narration/raw.wav.segments.json", "audio": "narration/raw.wav", "lead": 0.9, "fps": 24 }

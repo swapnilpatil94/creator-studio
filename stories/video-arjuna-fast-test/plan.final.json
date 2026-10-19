@@ -1,0 +1,283 @@
+[
+ {
+  "id": "v001",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "*अर्जुन* ने पेड़"
+   ],
+   "style": "slam",
+   "img": "s1",
+   "move": "push",
+   "fx": "drone_push_in",
+   "clip": "v001",
+   "clip_n": 133
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v002",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s2",
+   "move": "pull",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 96
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v003",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "panL",
+   "fx": "kinetography_cinemagraph"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v004",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s4",
+   "move": "panR",
+   "fx": "drone_pull_out_reveal",
+   "sticker": "burst",
+   "clip": "v004",
+   "clip_n": 72
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v005",
+  "chapter": "ch1",
+  "comp": "quote",
+  "params": {
+   "text": "उन्होंने कहा, निशाना तुम्हें साधना है, और मेरे आदेश पर ही बाण छोड़ना।",
+   "by": "",
+   "bg": "temple-jali"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v006",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s6",
+   "move": "pull",
+   "fx": "dolly_zoom_vertigo",
+   "clip": "v006",
+   "clip_n": 88
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v007",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v007",
+   "clip_n": 97
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v008",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "मुझे केवल *चिड़िया* दिखती है"
+   ],
+   "style": "mask",
+   "bg": "nebula",
+   "mark": "circle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v009",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s9",
+   "move": "push",
+   "fx": "depth_rack_focus",
+   "clip": "v009",
+   "clip_n": 104
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v010",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "अर्जुन बोले मुझे केवल गिद्ध का सिर"
+   ],
+   "style": "wave",
+   "bg": "ink-clouds"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v011",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "द्रोण: *चलाओ*"
+   ],
+   "style": "slam",
+   "bg": "embers",
+   "mark": "underline"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v012",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s12",
+   "move": "panR",
+   "fx": "crane_up_reveal",
+   "clip": "v012",
+   "clip_n": 94
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v013",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene5",
+   "move": "push",
+   "fx": "volumetric_god_rays"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v014",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s14",
+   "move": "pull",
+   "fx": "depth_fog_haze"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v015",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s15",
+   "move": "panL",
+   "fx": "drone_orbit_180",
+   "clip": "v015",
+   "clip_n": 103
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v016",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panR",
+   "fx": "handheld_breathing_shake",
+   "sticker": "burst",
+   "clip": "v016",
+   "clip_n": 98
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v017",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पाँच *बाण*"
+   ],
+   "style": "flip",
+   "bg": "water-ripples",
+   "mark": "circle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v018",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s18",
+   "move": "pull",
+   "fx": "eye_glow_energy_pulse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v019",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "कभी *मनुष्य* पर नहीं"
+   ],
+   "style": "glitch",
+   "bg": "storm",
+   "mark": "box"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v020",
+  "chapter": "ch1",
+  "comp": "quote",
+  "params": {
+   "text": "कहा कि तुम जैसा धनुर्धर इस संसार में कोई और नहीं होगा।",
+   "by": "",
+   "bg": "gold-bokeh"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v021",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "push",
+   "fx": "diya_flicker_light"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v022",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "सेव *करें*, और फ़ॉलो करें"
+   ],
+   "style": "slam"
+  },
+  "from": "rules"
+ }
+]

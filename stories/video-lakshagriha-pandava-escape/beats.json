@@ -1,0 +1,651 @@
+[
+ {
+  "id": "v001",
+  "text": "पांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले?",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "भीम की ताक़त और अर्जुन की धनुर्विद्या देखकर दुर्योधन उदास और चिंतित रहने लगा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "कर्ण और शकुनि ने कई उपायों से पांडवों को मारने की कोशिश की, पर पांडव हर चाल को विफल करते रहे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "फिर दुर्योधन ने भाइयों के साथ धन और सम्मान बाँटकर प्रजा को धीरे-धीरे अपनी ओर करना शुरू किया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "उसने पिता धृतराष्ट्र से कहा कि पांडवों को किसी चतुराई से वारणावत नगर भेज दिया जाए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "धृतराष्ट्र ने कहा कि पांडु ने सदा सबका भला किया, और प्रजा उन्हीं के पुत्रों से स्नेह करती है।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "उन्होंने पूछा कि अगर हम पांडवों को निकालेंगे, तो क्या प्रजा हमें मित्रों समेत मार नहीं डालेगी?",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "दुर्योधन ने उत्तर दिया कि खज़ाना और मंत्री अभी हमारे हाथ में हैं, इसलिए पांडवों को कोमल उपाय से वारणावत भेज दीजिए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "धृतराष्ट्र बोले, यही बात मेरे मन में भी थी, पर पाप के डर से मैंने इसे कभी कहा नहीं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "दुर्योधन ने कहा कि भीष्म तटस्थ रहेंगे, अश्वत्थामा हमारी ओर हैं, इसलिए द्रोण और कृपा भी साथ होंगे।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "और विदुर अकेले कुछ बिगाड़ नहीं सकते, इसलिए पांडवों को आज ही भेजने का प्रबंध कीजिए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "चतुर सभासदों ने दरबार में वारणावत की बड़ाई शुरू की, कि वहाँ पशुपति शिव का उत्सव हो रहा है।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "पांडवों के मन में वहाँ जाने की इच्छा जागी, तो धृतराष्ट्र ने कहा, जाइए, उत्सव देखिए, और ब्राह्मणों को रत्न दान कीजिए।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "युधिष्ठिर राजा का इरादा समझ गए, पर खुद को कमज़ोर और मित्रहीन जानकर उन्होंने कहा, जैसी आज्ञा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "उन्होंने भीष्म, द्रोण, विदुर और सभी बड़ों से आशीर्वाद माँगा, और पांडव वारणावत की ओर चल पड़े।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "उधर दुर्योधन ने अपने मंत्री पुरोचन को अकेले में बुलाया, और उसका दाहिना हाथ पकड़कर कहा।",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "वारणावत जाकर शस्त्रागार के पास एक चौकोर महल बनवाओ, जिसमें सन, राल, घी, तेल और चरबी जैसी जलने वाली चीज़ें लगी हों।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "दीवारों पर मिट्टी में घी, तेल, चरबी और ढेर सारी लाख मिलाकर लेप चढ़ाओ, ताकि कोई देखकर भी उसे जलने वाला भवन न समझे।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "फिर पांडवों को आदर के साथ उसी में ठहराओ, और जब वे निश्चिंत होकर सो जाएँ, तब द्वार की ओर से उसमें आग लगा देना।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "लोग यही कहेंगे कि वे घर में अचानक लगी आग से जल मरे।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "पुरोचन तेज़ खच्चरों वाले रथ से वारणावत पहुँचा, और दुर्योधन की आज्ञा के अनुसार सब कुछ करता गया।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v023",
+  "text": "पांडवों ने रथों पर चढ़ने से पहले भीष्म, धृतराष्ट्र, द्रोण, कृपा और विदुर के चरण छुए।",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "23",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v024",
+  "text": "नगरवासी दुखी होकर बोले कि राजा धृतराष्ट्र सबको समान दृष्टि से नहीं देखते।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "24",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v025",
+  "text": "कुछ लोग तो यह कहकर पीछे चल दिए कि हम भी वहीं चलेंगे जहाँ युधिष्ठिर जाएँगे।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "25",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v026",
+  "text": "युधिष्ठिर ने कहा, राजा हमारे पिता और गुरु हैं, उनकी आज्ञा मानना ही हमारा धर्म है, आप लौट जाइए।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "26",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v027",
+  "text": "फिर विदुर ने ऐसी भाषा में युधिष्ठिर से बात की, जिसे उनके सिवा कोई नहीं समझ पाया।",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "27",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v028",
+  "text": "उन्होंने शत्रु की चालों को पहचानकर चलने की सीख दी।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "28",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v029",
+  "text": "वारणावत पहुँचे तो हज़ारों नगरवासियों ने जय-जयकार करके उनका स्वागत किया।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "29",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v030",
+  "text": "पुरोचन आगे-आगे चलता हुआ उन्हें उस महल तक ले गया, और भोजन, पेय और बिस्तर सब उत्तम दिए।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "30",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v031",
+  "text": "दस रातें बीतने पर पुरोचन ने उन्हें एक भवन दिखाया, जिसे उसने शुभ भवन कहा, पर असल में वह अभिशप्त घर था।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "31",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v032",
+  "text": "युधिष्ठिर ने उसे देखा, और घी तथा लाख की गंध पाकर भीम से कहा कि यह घर जलने वाली चीज़ों से बना है।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "32",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v033",
+  "text": "उन्होंने कहा, विदुर ने यह ख़तरा पहले ही बता दिया था, और पुरोचन दुर्योधन के आदेश पर मुझे भरोसे में लेकर जलाना चाहता है।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "33",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v034",
+  "text": "भीम ने कहा कि तब तो हमें पहले वाले स्थान पर लौट जाना चाहिए।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "34",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v035",
+  "text": "युधिष्ठिर ने कहा, नहीं, हम यहीं भरोसा दिखाते हुए रहेंगे, पर सावधान और जागते हुए, और बचने का कोई पक्का रास्ता खोजेंगे।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "35",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v036",
+  "text": "तभी विदुर का भेजा हुआ एक कुशल खनिक चुपके से पांडवों के पास आया।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "36",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v037",
+  "text": "उसने विदुर के कहे शब्द और युधिष्ठिर का उत्तर दोहराकर अपनी पहचान साबित की।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "37",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v038",
+  "text": "उसने बताया कि पुरोचन कृष्ण पक्ष की चौदहवीं रात को घर के द्वार में आग लगाएगा।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "38",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v039",
+  "text": "खनिक ने ध्यान से काम शुरू किया, और घर के बीचोंबीच एक बड़ी सुरंग खोद दी।",
+  "intent": "awe",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "39",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v040",
+  "text": "उसका मुँह फ़र्श के बराबर था, और पुरोचन से छिपाने के लिए तख़्तों से ढका हुआ था।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "40",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v041",
+  "text": "पांडव रात को अस्त्र-शस्त्र पास रखकर सोते, और दिन में जंगल-जंगल शिकार खेलने जाते।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "41",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v042",
+  "text": "इस तरह वे पूरे एक वर्ष तक संतुष्ट दिखने का नाटक करते रहे, और पुरोचन बहुत प्रसन्न हो गया।",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "42",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v043",
+  "text": "तब युधिष्ठिर ने कहा कि उस दुष्ट को ठीक धोखा मिला है, अब भागने का समय आ गया है।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "43",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v044",
+  "text": "कुंती ने एक रात ब्राह्मणों को भोज कराया, और उसमें एक निषाद स्त्री अपने पाँच पुत्रों के साथ आई।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "44",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v045",
+  "text": "वे मदिरा पीकर बेहोश हो गए, और उसी भवन में सो गए।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "45",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v046",
+  "text": "आधी रात को तेज़ हवा चली, और भीम ने ठीक वहाँ आग लगाई जहाँ पुरोचन सो रहा था।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "46",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v047",
+  "text": "फिर उन्होंने द्वार और भवन के कई हिस्सों में आग लगाई, और माता समेत सुरंग में उतर गए।",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "47",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v048",
+  "text": "उस आग में वह निषाद स्त्री, उसके पुत्र और स्वयं पुरोचन भी जल गए।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "48",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v049",
+  "text": "आग की लपटों और गर्जना से नगरवासी जाग उठे, और जलते भवन को देखकर विलाप करने लगे।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "49",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v050",
+  "text": "उन्होंने कहा कि पुरोचन ने ही दुर्योधन के कहने पर यह घर बनाया था, और धृतराष्ट्र के पक्षपात को धिक्कार है।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "50",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v051",
+  "text": "सुरंग से निकलकर पांडव नींद और भय के कारण तेज़ नहीं चल पा रहे थे।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "51",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v052",
+  "text": "तब भीम ने सबको उठा लिया।",
+  "intent": "punch",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "52",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v053",
+  "text": "माता को कंधे पर, जुड़वाँ भाइयों को बगल में, और युधिष्ठिर तथा अर्जुन को भुजाओं पर, वे हवा की गति से अंधकार में निकल पड़े।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "53",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v054",
+  "text": "उधर विदुर ने जंगल में एक भरोसेमंद व्यक्ति को भेजा, जिसने गंगा के तट पर यंत्रों और ध्वजाओं वाली नाव दिखाई।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "54",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v055",
+  "text": "उसने विदुर का संदेश सुनाया कि अग्नि बिल में रहने वालों को नहीं जलाती, जो यह जानता है वह मृत्यु से बच जाता है।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "55",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v056",
+  "text": "उस व्यक्ति ने उन्हें नाव से गंगा पार कराई, जय कहकर विदा लिया, और पांडव गुप्त रूप से आगे बढ़ गए।",
+  "intent": "reveal",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "56",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v057",
+  "text": "पर वारणावत के लोग यही समझते रहे कि पांडव जल गए, और धृतराष्ट्र ने शोक का दिखावा करके उनके अंतिम संस्कार भी करवाए।",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "57",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v058",
+  "text": "तो पांडव बचे कैसे? पाठ के अनुसार, एक चेतावनी, एक सुरंग, और विदुर की समझदारी से।",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "58",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v059",
+  "text": "सेव करें, और फ़ॉलो करें।",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "59",
+   "mode": "reveal"
+  }
+ }
+]

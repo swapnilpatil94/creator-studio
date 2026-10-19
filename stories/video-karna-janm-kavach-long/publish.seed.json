@@ -1,0 +1,56 @@
+{
+ "channel": "kathaaya",
+ "format": "long",
+ "titles": [
+  {
+   "t": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "कुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया? यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#कर्ण",
+  "#महाभारत",
+  "#कुंती"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "कर्ण|जन्म:|कुंती",
+ "extraTags": [
+  "कर्ण",
+  "महाभारत",
+  "कुंती",
+  "कर्ण",
+  "जन्म:",
+  "कुंती",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "कवच का रहस्य"
+   ],
+   "support": [
+    "कर्ण की पूरी कथा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "कर्ण का जन्म:"
+ ],
+ "primaryKeyword": "कर्ण",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?"
+ }
+}

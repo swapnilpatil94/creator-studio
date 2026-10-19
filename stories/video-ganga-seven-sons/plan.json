@@ -1,0 +1,237 @@
+[
+ {
+  "id": "v001",
+  "comp": "cinema",
+  "params": {
+   "img": "c1",
+   "move": "panL",
+   "label": "गंगा ने सात पुत्रों को क्यों बहाया?",
+   "reveal": "circle",
+   "fx": "drone_push_in"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "c2",
+   "move": "pull",
+   "label": "राजा शांतनु ने गंगा से विवाह किया",
+   "reveal": "diamond",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "c3",
+   "move": "push",
+   "label": "शर्त: मेरे किसी काम में दख़ल मत देना",
+   "reveal": "wipe",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "cinema",
+  "params": {
+   "img": "c4",
+   "move": "panR",
+   "label": "गंगा ने साफ कहा था",
+   "reveal": "circle",
+   "fx": "crane_up_reveal",
+   "sticker": "sparkle"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "pull",
+   "label": "शांतनु अपनी पत्नी के रूप और सेवा से इतने प्रसन्न थे",
+   "reveal": "diamond",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "stat",
+  "params": {
+   "value": 8,
+   "label": "संतानें",
+   "ring": 0.25
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "cinema",
+  "params": {
+   "img": "c5",
+   "move": "push",
+   "label": "पहली सात को गंगा ने जन्म लेते ही जल में डाला",
+   "reveal": "circle",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "push",
+   "label": "शांतनु कुछ नहीं बोले",
+   "reveal": "diamond",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "panR",
+   "label": "आठवें बच्चे के समय उन्होंने गंगा को रोक दिया",
+   "reveal": "circle",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "pull",
+   "label": "गंगा ने बताया कि वे जह्नु की पुत्री गंगा हैं",
+   "reveal": "diamond",
+   "fx": "puppet_warp_breathing",
+   "sticker": "sparkle"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "c8",
+   "move": "pull",
+   "label": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी",
+   "reveal": "circle",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "cinema",
+  "params": {
+   "img": "c9",
+   "move": "panR",
+   "label": "वसुओं ने गंगा से माँगा कि जन्म लेते ही उन्हें जल में डालकर मुक्त कर दिया जाए",
+   "reveal": "circle",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "pull",
+   "label": "वशिष्ठ ने शाप दिया कि वसुओं को पृथ्वी पर जन्म लेना पड़ेगा",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "push",
+   "label": "वसु द्यौ ने अपने भाइयों के साथ वशिष्ठ की गाय नंदिनी चुरा ली थी",
+   "reveal": "circle",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "सात वसु जन्म के साथ ही शाप से मुक्त हो गए",
+   "reveal": "circle",
+   "fx": "drone_orbit_180"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "cinema",
+  "params": {
+   "img": "c6",
+   "move": "panL",
+   "label": "द्यौ, जिसके कारण गाय चुराई गई थी, उसे लंबे समय तक पृथ्वी पर रहना पड़ा",
+   "reveal": "circle",
+   "fx": "matte_painting_extension",
+   "sticker": "sparkle"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "cinema",
+  "params": {
+   "img": "c7",
+   "move": "panR",
+   "label": "वही आठवाँ बालक आगे चलकर देवव्रत कहलाया, जिसे गंगेय भी कहा गया",
+   "reveal": "circle",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v018",
+  "comp": "cinema",
+  "params": {
+   "img": "c1",
+   "move": "push",
+   "label": "तो गंगा ने सात पुत्र क्यों बहाए? एक शाप से उन्हें मुक्त करने के लिए",
+   "reveal": "circle",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v019",
+  "comp": "iconlist",
+  "params": {
+   "title": "करें",
+   "items": [
+    {
+     "icon": "🔔",
+     "text": "सेव करें"
+    },
+    {
+     "icon": "📱",
+     "text": "फ़ॉलो करें"
+    }
+   ]
+  },
+  "chapter": "ch1"
+ }
+]

@@ -1,0 +1,56 @@
+{
+ "channel": "kathaaya",
+ "format": "long",
+ "titles": [
+  {
+   "t": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "पांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले? यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#पांडव",
+  "#महाभारत",
+  "#लाक्षागृह"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "लाक्षागृह:|पांडवों|जलाने",
+ "extraTags": [
+  "पांडव",
+  "महाभारत",
+  "लाक्षागृह",
+  "लाक्षागृह:",
+  "पांडवों",
+  "जलाने",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "सुरंग का राज़?"
+   ],
+   "support": [
+    "लाक्षागृह की पूरी कथा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "लाक्षागृह: पांडवों को"
+ ],
+ "primaryKeyword": "लाक्षागृह:",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?"
+ }
+}

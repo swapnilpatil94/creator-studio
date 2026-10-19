@@ -1,0 +1,694 @@
+[
+ {
+  "id": "v001",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पांडवों को ज़िंदा जलाने की योजना बनी"
+   ],
+   "style": "slam"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v002",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "महाभारत, आदि पर्व: *लाक्षागृह*"
+   ],
+   "style": "mask",
+   "bg": "temple-jali"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v003",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s3",
+   "move": "panL",
+   "fx": "depth_fog_haze"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v004",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "panR",
+   "fx": "handheld_breathing_shake",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v005",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s5",
+   "move": "push",
+   "fx": "2.5d_parallax"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v006",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*वारणावत* भेज दो"
+   ],
+   "style": "slam",
+   "bg": "ink-clouds",
+   "mark": "underline"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v007",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "fx": "parallax_occlusion_3d"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v008",
+  "chapter": "ch1",
+  "comp": "quote",
+  "params": {
+   "text": "उन्होंने पूछा कि अगर हम पांडवों को निकालेंगे, तो क्या प्रजा हमें मित्रों समेत मार नहीं डालेगी?",
+   "by": "",
+   "bg": "gold-bokeh"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v009",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene3",
+   "move": "push",
+   "fx": "puppet_warp_breathing"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v010",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पाप के डर से *कहा नहीं*"
+   ],
+   "style": "spring",
+   "bg": "storm",
+   "mark": "box"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v011",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene4",
+   "move": "panL",
+   "fx": "shadow_play_reveal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v012",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene4",
+   "move": "panR",
+   "fx": "dolly_zoom_vertigo"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v013",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s13",
+   "move": "push",
+   "fx": "drone_orbit_180"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v014",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene5",
+   "move": "pull",
+   "fx": "kinetography_cinemagraph"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v015",
+  "chapter": "ch1",
+  "comp": "quote",
+  "params": {
+   "text": "युधिष्ठिर राजा का इरादा समझ गए, पर खुद को कमज़ोर और मित्रहीन जानकर उन्होंने कहा, जैसी आज्ञा।",
+   "by": "",
+   "bg": "temple-jali"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v016",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene6",
+   "move": "panR",
+   "fx": "crane_up_reveal",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v017",
+  "chapter": "ch2",
+  "comp": "fx",
+  "params": {
+   "img": "s17",
+   "move": "push",
+   "fx": "depth_rack_focus"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v018",
+  "chapter": "ch2",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "सन, राल, घी, तेल, *लाख*"
+   ],
+   "style": "glitch",
+   "bg": "embers",
+   "mark": "circle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v019",
+  "chapter": "ch2",
+  "comp": "fx",
+  "params": {
+   "img": "s19",
+   "move": "panL",
+   "fx": "matte_painting_extension"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v020",
+  "chapter": "ch2",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "सोते ही *आग*"
+   ],
+   "style": "slam",
+   "bg": "embers",
+   "mark": "underline"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v021",
+  "chapter": "ch2",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "lightning_flash"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v022",
+  "chapter": "ch2",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "drone_pull_out_reveal",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v023",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "s23",
+   "move": "panL",
+   "fx": "crane_down"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v024",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panR",
+   "fx": "eye_glow_energy_pulse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v025",
+  "chapter": "ch3",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*हम भी चलेंगे*"
+   ],
+   "style": "wave",
+   "bg": "mountain-mist"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v026",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "2.5d_parallax"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v027",
+  "chapter": "ch3",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*अनजानी भाषा* में चेतावनी"
+   ],
+   "style": "flip",
+   "bg": "nebula",
+   "mark": "circle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v028",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panR",
+   "fx": "depth_fog_haze",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v029",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "s29",
+   "move": "push",
+   "fx": "drone_fpv_flythrough"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v030",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "parallax_occlusion_3d"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v031",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "value": 10,
+   "label": "दस रातें बीतने पर पुरोचन ने उन्हें एक भव",
+   "img": "s31",
+   "move": "push",
+   "fx": "handheld_breathing_shake"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v032",
+  "chapter": "ch3",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "घी और लाख की *गंध*"
+   ],
+   "style": "glitch",
+   "bg": "yantra"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v033",
+  "chapter": "ch3",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "eye_glow_energy_pulse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v034",
+  "chapter": "ch3",
+  "comp": "quote",
+  "params": {
+   "text": "भीम ने कहा कि तब तो हमें पहले वाले स्थान पर लौट जाना चाहिए।",
+   "by": "",
+   "bg": "ink-clouds"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v035",
+  "chapter": "ch3",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "भरोसे का *नाटक*"
+   ],
+   "style": "mask",
+   "bg": "water-ripples",
+   "mark": "highlight"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v036",
+  "chapter": "ch4",
+  "comp": "fx",
+  "params": {
+   "kicker": "ch4",
+   "title": "तभी विदुर का भेजा हुआ एक कुशल खनिक चुपके",
+   "img": "s36",
+   "move": "push",
+   "fx": "shadow_play_reveal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v037",
+  "chapter": "ch4",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "depth_rack_focus"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v038",
+  "chapter": "ch4",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "चौदहवीं रात, *द्वार* पर आग"
+   ],
+   "style": "slam",
+   "bg": "storm",
+   "mark": "circle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v039",
+  "chapter": "ch4",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panL",
+   "fx": "drone_top_down_bird_eye"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v040",
+  "chapter": "ch4",
+  "comp": "fx",
+  "params": {
+   "img": "s40",
+   "move": "panR",
+   "fx": "infinite_zoom_droste",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v041",
+  "chapter": "ch4",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "kinetography_cinemagraph"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v042",
+  "chapter": "ch4",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "एक वर्ष का *नाटक*"
+   ],
+   "style": "spring",
+   "bg": "gold-bokeh"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v043",
+  "chapter": "ch5",
+  "comp": "chapter",
+  "params": {
+   "kicker": "ch5",
+   "title": "तब युधिष्ठिर ने कहा कि उस दुष्ट को ठीक ध"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v044",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "value": 5,
+   "label": "कुंती ने एक रात ब्राह्मणों को भोज कराया",
+   "img": "s44",
+   "move": "push"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v045",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "shadow_play_reveal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v046",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "eye_glow_energy_pulse",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v047",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s47",
+   "move": "panL",
+   "fx": "dolly_zoom_vertigo"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v048",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "panR",
+   "fx": "drone_pull_out_reveal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v049",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "volumetric_god_rays"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v050",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "sacred_geometry_carve"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v051",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "panL",
+   "fx": "double_exposure_cosmos"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v052",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s52",
+   "move": "panR",
+   "fx": "puppet_warp_breathing",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v053",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s53",
+   "move": "push",
+   "fx": "drone_pull_out_reveal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v054",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "day_to_night_timelapse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v055",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "panL",
+   "fx": "volumetric_god_rays"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v056",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s56",
+   "move": "panR",
+   "fx": "sacred_geometry_carve"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v057",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "push",
+   "fx": "drone_top_down_bird_eye"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v058",
+  "chapter": "ch5",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "fx": "infinite_zoom_droste",
+   "sticker": "sparkle"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v059",
+  "chapter": "ch5",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "सेव *करें*, और फ़ॉलो करें"
+   ],
+   "style": "spring"
+  },
+  "from": "rules"
+ }
+]

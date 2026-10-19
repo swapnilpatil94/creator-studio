@@ -1,0 +1,16 @@
+{
+ "name": "video-karna-janm-kavach-long",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1920x1080",
+ "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+ "from_item": "karna-janm-kavach-long.video",
+ "engine": "longform"
+}

@@ -1,0 +1,53 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "गंगा ने सात पुत्रों को क्यों बहाया? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "गंगा ने अपने सात पुत्रों को जन्म लेते ही नदी में क्यों डाल दिया? राजा शांतनु ने गंगा से विवाह किया, पर एक शर्त के साथ।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; क्षेत्रीय परंपराओं और लोक-कथाओं में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#गंगाकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "गंगा|सात|पुत्रों",
+ "extraTags": [
+  "गंगाकथा",
+  "महाभारत",
+  "kathaayastories",
+  "गंगा",
+  "बहाया",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "गंगा का सच"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "गंगा ने सात"
+ ],
+ "primaryKeyword": "गंगा",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "गंगा ने सात पुत्रों को क्यों बहाया?"
+ }
+}

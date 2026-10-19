@@ -1,0 +1,16 @@
+{
+ "name": "video-lakshagriha-pandava-escape",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1920x1080",
+ "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+ "from_item": "lakshagriha-pandava-escape.video",
+ "engine": "longform"
+}

@@ -1,0 +1,46 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "कुंती ने पहले पुत्र को क्यों बहाया? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "कुंती ने अपने पहले पुत्र को नदी में क्यों बहा दिया? यह कथा एक वरदान से शुरू होती है, और एक ऐसे फैसले पर पहुँचती है जो उम्र भर पीछा करता रहा।",
+ "disclaimer": "कथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#कर्णकथा",
+  "#महाभारत",
+  "#kathaayastories"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "महाभारत|कथा",
+ "extraTags": [
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "कुंती का सच"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "कुंती ने पहले"
+ ],
+ "primaryKeyword": "कुंती",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "कुंती ने पहले पुत्र को क्यों बहाया?"
+ }
+}
