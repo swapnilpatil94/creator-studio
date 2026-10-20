@@ -18,7 +18,16 @@ research/corpus/
 research/index.json
 flux-out/
 blog/dist/
+site/dist/
 content/out/
+
+# Regenerable render intermediates: camera-move frame sequences (tools/layers/camera-clips.mjs)
+# and depth/parallax layer assets (tools/layers/layers.mjs, mesh_* camera effects) -- both are
+# deterministically rebuilt from the story's own art, so tracking them only bloats the repo.
+stories/*/clips/
+stories/*/assets/layers/
+.cache/
+scratch/
 stories/*/narration/voice/pre_post.wav
 content/art/*/prompts.json.bak
 stories/reel-*/assets/*.stip
