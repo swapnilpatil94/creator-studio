@@ -11,7 +11,7 @@ import { build } from "/Users/swapnil/creator-studio/engine/node_modules/esbuild
 const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, "../..");
 const PY = path.join(os.homedir(), ".venvs/kathaaya-layers/bin/python");
 
-export const MESH_FX = new Set(["mesh_crane_push", "mesh_dolly_zoom_vertigo", "mesh_rack_focus_dof"]);
+export const MESH_FX = new Set(["mesh_crane_push", "mesh_dolly_zoom_vertigo", "mesh_rack_focus_dof", "mesh_ken_burns_3d"]);
 const DOF_FX = new Set(["mesh_rack_focus_dof"]); // the only effect that needs the EffectComposer/BokehPass pipeline; the rest render straight to the canvas (faster)
 
 // Camera paths: t in [0,1]. Only push/pull/focus moves -- anything that ORBITS the subject (tried: mesh_orbit_reveal, mesh_swoop_reveal) tears faces apart at the arc's ends,
@@ -30,6 +30,11 @@ const PATHS = {
   // camera itself barely moves (a 4% push) -- the focus pull carries the shot. Only defines the bokeh focus distance; applyDof() below does the actual composer render.
   mesh_rack_focus_dof: `(e) => { const dist = THREE.MathUtils.lerp(1.0, 0.96, e) * baseDist; camera.position.set(0, 0.02, dist); camera.lookAt(0, 0.02, 0);
     if (window.__bokeh) window.__bokeh.uniforms['focus'].value = THREE.MathUtils.lerp(nearFocus, farFocus, Math.min(1, e / 0.7)); }`, // measured empirically: BokehPass's focus runs opposite to plain world distance here -- the smaller value is what reads as "background sharp"
+  // Ken Burns with real depth: a lateral truck + vertical drift + slow push, classic Ken Burns pan-and-zoom energy, but the look TARGET translates by the exact same
+  // amount as the camera so the view direction never pivots -- pure translation, not an orbit -- so near/far layers genuinely separate (true parallax, not a flat
+  // image-space pan) while staying just as safe for faces as crane_push/dolly_zoom: nothing rotates to expose a side the camera never photographed.
+  mesh_ken_burns_3d: `(e) => { const dx = THREE.MathUtils.lerp(-0.07, 0.07, e) * baseDist, dy = THREE.MathUtils.lerp(0.035, -0.05, e) * baseDist, dist = THREE.MathUtils.lerp(1.0, 0.90, e) * baseDist;
+    camera.position.set(dx, dy, dist); camera.lookAt(dx, dy, 0); }`,
 };
 const ease = "(x) => x<.5 ? 2*x*x : 1-Math.pow(-2*x+2,2)/2"; // easeInOutQuad, applied to e before indexing PATHS
 
