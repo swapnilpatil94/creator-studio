@@ -54,8 +54,14 @@ jobs:
           {
             echo "Auto-refreshed $(date -u +%F). Full calendar: CONTENT_CALENDAR.md / .csv (pull from the \`data\` branch -- see the workflow file for the exact command)."
             echo
-            sed -n '2,8p' CONTENT_CALENDAR.csv > /tmp/cal.csv
-            node -e "const rows=require('node:fs').readFileSync('/tmp/cal.csv','utf8').split('\n').filter(Boolean); console.log(rows.map(r=>'- '+r.split(',').slice(0,4).join(' | ')).join('\n'))"
+            node -e "
+              // minimal quote-aware CSV row parser (a naive comma-split breaks on this file's quoted fields,
+              // which themselves contain commas -- e.g. the mood-justification column)
+              function parseCSV(text) { const rows = []; let row = [], cur = '', q = false; for (let i = 0; i < text.length; i++) { const c = text[i]; if (q) { if (c === '\"' && text[i+1] === '\"') { cur += '\"'; i++; } else if (c === '\"') q = false; else cur += c; } else if (c === '\"') q = true; else if (c === ',') { row.push(cur); cur = ''; } else if (c === '\n' || c === '\r') { if (c === '\r' && text[i+1] === '\n') i++; row.push(cur); if (row.some(x => x !== '')) rows.push(row); row = []; cur = ''; } else cur += c; } if (cur !== '' || row.length) { row.push(cur); rows.push(row); } return rows; }
+              const rows = parseCSV(require('node:fs').readFileSync('CONTENT_CALENDAR.csv','utf8'));
+              const header = rows[0], data = rows.slice(1, 8).map(r => Object.fromEntries(header.map((h,i)=>[h,r[i]])));
+              console.log(data.map(r => '- ' + r.date + ' | ' + (r.festival !== '-' ? r.festival : r.longTitle.split(' — ')[0]) + ' | ' + r.mood + ' | ' + (r.format.includes('weekly special') ? 'Long (Sun special)' : 'Long+Short')).join('\n'));
+            "
           } > /tmp/body.md
           T="Content calendar $(date -u +%F)"
           N=$(gh issue list --state open --search "Content calendar in:title" --json number,title -q '.[0].number' || true)
