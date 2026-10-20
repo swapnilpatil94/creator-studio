@@ -19,6 +19,7 @@ research/index.json
 flux-out/
 blog/dist/
 site/dist/
+site/.astro/
 content/out/
 
 # Regenerable render intermediates: camera-move frame sequences (tools/layers/camera-clips.mjs)

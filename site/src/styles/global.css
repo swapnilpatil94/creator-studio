@@ -15,11 +15,15 @@
 :root {
   --bg: #f6efe0; --bg2: #efe3c9; --fg: #1d1712; --muted: #6d5d43; --card: rgba(255, 251, 242, .74); --card-solid: #fffaf0;
   --line: rgba(122, 88, 34, .24); --accent: #a53a2f; --gold: #b0802a; --gold-soft: rgba(176, 128, 42, .16); --glow: rgba(212, 169, 74, .30); --glow2: rgba(165, 58, 47, .12);
+  /* --gold (3.07:1 on --bg) reads fine at headline size but fails WCAG AA for the small .chip text (needs 4.5:1);
+     --chip-fg is the same bronze already used in .gold-text's gradient, just as a flat colour, for 5.02:1. */
+  --chip-fg: #8a5d12;
   --shadow: 0 18px 50px -22px rgba(70, 40, 10, .45); color-scheme: light;
 }
 [data-theme="dark"] {
   --bg: #080710; --bg2: #100e1c; --fg: #f2e8d0; --muted: #b9ab8c; --card: rgba(24, 20, 40, .62); --card-solid: #151126;
   --line: rgba(227, 185, 85, .22); --accent: #e3b955; --gold: #e3b955; --gold-soft: rgba(227, 185, 85, .12); --glow: rgba(224, 122, 47, .20); --glow2: rgba(120, 90, 220, .16);
+  --chip-fg: var(--gold); /* already 10.8:1 on --bg in dark mode */
   --shadow: 0 22px 60px -24px rgba(0, 0, 0, .85); color-scheme: dark;
 }
 
@@ -56,7 +60,7 @@ a { color: inherit; text-decoration: none; }
 /* dual-script heading: Hindi line on top, Hinglish/Latin line under it */
 .dual { display: grid; gap: .35rem; }
 .dual > .hi { font-family: var(--font-display); line-height: 1.38; text-wrap: balance; font-size: clamp(1.9rem, 1.2rem + 3.2vw, 3.6rem); }
-.dual > .en { font-family: var(--font-latin); font-weight: 500; letter-spacing: .14em; text-transform: uppercase; font-size: clamp(.7rem, .64rem + .3vw, .9rem); color: var(--gold); line-height: 1.5; }
+.dual > .en { font-family: var(--font-latin); font-weight: 500; letter-spacing: .14em; text-transform: uppercase; font-size: clamp(.7rem, .64rem + .3vw, .9rem); color: var(--chip-fg); line-height: 1.5; }
 .gold-text { background: linear-gradient(100deg, #8a5d12 0%, #d4a94a 30%, #fff1c2 50%, #d4a94a 70%, #8a5d12 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: sheen 7s linear infinite; }
 [data-theme="dark"] .gold-text { background-image: linear-gradient(100deg, #b98a2a 0%, #e3b955 30%, #fff6d6 50%, #e3b955 70%, #b98a2a 100%); }
 @keyframes sheen { to { background-position: -220% 0; } }
@@ -66,7 +70,7 @@ a { color: inherit; text-decoration: none; }
 .glass { background: var(--card); backdrop-filter: blur(16px) saturate(1.25); -webkit-backdrop-filter: blur(16px) saturate(1.25); border: 1px solid var(--line); border-radius: 1.25rem; box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, .14); }
 .glass-lift { transition: transform .35s cubic-bezier(.2, .7, .2, 1), box-shadow .35s, border-color .35s; }
 .glass-lift:hover { transform: translateY(-4px); border-color: var(--gold); }
-.chip { display: inline-flex; align-items: center; gap: .4rem; padding: .15rem .75rem; border-radius: 999px; border: 1px solid var(--line); background: var(--gold-soft); color: var(--gold); font-family: var(--font-latin); font-size: .72rem; letter-spacing: .08em; }
+.chip { display: inline-flex; align-items: center; gap: .4rem; padding: .15rem .75rem; border-radius: 999px; border: 1px solid var(--line); background: var(--gold-soft); color: var(--chip-fg); font-family: var(--font-latin); font-size: .72rem; letter-spacing: .08em; }
 .rule-gold { height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: .7; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.3rem; border-radius: 999px; font-weight: 600; background: linear-gradient(135deg, #e3b955, #c58a2b); color: #1a1209; box-shadow: 0 10px 30px -12px rgba(227, 185, 85, .7); transition: transform .2s, filter .2s; }
 .btn:hover { transform: translateY(-2px); filter: brightness(1.06); }
