@@ -26,8 +26,8 @@ def build(color_path, depth_path, out_path, grid=160, depth_scale=0.35, smooth=F
     gxx, gyy = np.meshgrid(xs, ys)
     verts = np.stack([gxx.ravel(), gyy.ravel(), z.ravel()], axis=1)
 
-    uv = np.stack([ (gxx.ravel() + aspect / 2) / aspect, (gyy.ravel() + 0.5) ], axis=1)  # 0..1, matches a standard image UV (v flipped below for GL convention)
-    uv[:, 1] = 1.0 - uv[:, 1]
+    # v: trimesh's glTF export applies its own top/bottom flip on write, so this raw (not pre-flipped) v is what comes out correctly oriented in a glTF/Three.js viewer.
+    uv = np.stack([ (gxx.ravel() + aspect / 2) / aspect, (gyy.ravel() + 0.5) ], axis=1)
 
     faces = []
     for j in range(gy - 1):
@@ -40,7 +40,10 @@ def build(color_path, depth_path, out_path, grid=160, depth_scale=0.35, smooth=F
     material = trimesh.visual.material.PBRMaterial(baseColorTexture=color, metallicFactor=0.0, roughnessFactor=0.9)
     mesh.visual = trimesh.visual.TextureVisuals(uv=uv, material=material)
     mesh.export(out_path)
-    return { "vertices": len(verts), "faces": len(faces), "aspect": round(aspect, 3), "depth_scale": depth_scale, "out": out_path }
+    info = { "vertices": len(verts), "faces": len(faces), "aspect": round(aspect, 3), "depth_scale": depth_scale, "out": out_path }
+    import json, os
+    with open(os.path.splitext(out_path)[0] + ".json", "w") as f: json.dump(info, f)
+    return info
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
