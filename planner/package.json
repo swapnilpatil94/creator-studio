@@ -1,0 +1,11 @@
+{
+  "name": "kathaaya-planner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node fix-hindu-panchang.mjs"
+  },
+  "dependencies": {
+    "hindu-panchang": "1.0.1"
+  }
+}

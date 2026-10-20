@@ -1,16 +1,251 @@
 {
- "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city",
+ "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-10-20",
  "events": [
-  {"id": "ashtami", "name": "Durga Ashtami", "date": "2026-10-18", "tags": ["navratri", "durga"]},
-  {"id": "navami", "name": "Maha Navami", "date": "2026-10-19", "tags": ["navratri", "durga"]},
-  {"id": "dussehra", "name": "Dussehra / Vijayadashami", "date": "2026-10-20", "tags": ["dussehra", "ravana", "rama"]},
-  {"id": "sharad-purnima", "name": "Sharad Purnima", "date": "2026-10-25", "tags": ["sharad-purnima", "krishna"]},
-  {"id": "karwa-chauth", "name": "Karwa Chauth", "date": "2026-10-29", "tags": ["karwa-chauth", "savitri"]},
-  {"id": "dhanteras", "name": "Dhanteras", "date": "2026-11-06", "tags": ["dhanteras", "yama", "lakshmi"]},
-  {"id": "diwali", "name": "Diwali (Lakshmi Puja)", "date": "2026-11-09", "tags": ["diwali", "lakshmi", "rama"]}
+  {
+   "id": "ashtami",
+   "name": "Durga Ashtami",
+   "date": "2026-10-18",
+   "tags": [
+    "navratri",
+    "durga"
+   ]
+  },
+  {
+   "id": "navami",
+   "name": "Maha Navami",
+   "date": "2026-10-19",
+   "tags": [
+    "navratri",
+    "durga"
+   ]
+  },
+  {
+   "id": "dussehra",
+   "name": "Dussehra / Vijayadashami",
+   "date": "2026-10-20",
+   "tags": [
+    "dussehra",
+    "ravana",
+    "rama"
+   ]
+  },
+  {
+   "id": "tulsi-vivah-2026-10-22",
+   "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+   "date": "2026-10-22",
+   "tags": [
+    "tulsi-vivah",
+    "ekadashi",
+    "vishnu",
+    "kartik"
+   ]
+  },
+  {
+   "id": "sharad-purnima",
+   "name": "Sharad Purnima",
+   "date": "2026-10-25",
+   "tags": [
+    "sharad-purnima",
+    "krishna"
+   ]
+  },
+  {
+   "id": "kartik-purnima-2026-10-26",
+   "name": "Kartik Purnima (Dev Diwali)",
+   "date": "2026-10-26",
+   "tags": [
+    "kartik-purnima",
+    "dev-diwali",
+    "shiva",
+    "vishnu"
+   ]
+  },
+  {
+   "id": "karwa-chauth",
+   "name": "Karwa Chauth",
+   "date": "2026-10-29",
+   "tags": [
+    "karwa-chauth",
+    "savitri"
+   ]
+  },
+  {
+   "id": "ekadashi-2026-11-05",
+   "name": "Krishna Ekadashi",
+   "date": "2026-11-05",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ]
+  },
+  {
+   "id": "dhanteras",
+   "name": "Dhanteras",
+   "date": "2026-11-06",
+   "tags": [
+    "dhanteras",
+    "yama",
+    "lakshmi"
+   ]
+  },
+  {
+   "id": "masik-shivratri-2026-11-08",
+   "name": "Masik Shivratri",
+   "date": "2026-11-08",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ]
+  },
+  {
+   "id": "diwali",
+   "name": "Diwali (Lakshmi Puja)",
+   "date": "2026-11-09",
+   "tags": [
+    "diwali",
+    "lakshmi",
+    "rama"
+   ]
+  },
+  {
+   "id": "amavasya-2026-11-09",
+   "name": "Amavasya (No Moon)",
+   "date": "2026-11-09",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ]
+  },
+  {
+   "id": "vaikuntha-ekadashi-2026-11-20",
+   "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
+   "date": "2026-11-20",
+   "tags": [
+    "vaikuntha-ekadashi",
+    "gita-jayanti",
+    "ekadashi",
+    "krishna",
+    "moksha"
+   ]
+  },
+  {
+   "id": "purnima-2026-11-24",
+   "name": "Purnima (Full Moon)",
+   "date": "2026-11-24",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ]
+  },
+  {
+   "id": "ekadashi-2026-12-04",
+   "name": "Krishna Ekadashi",
+   "date": "2026-12-04",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ]
+  },
+  {
+   "id": "masik-shivratri-2026-12-07",
+   "name": "Masik Shivratri",
+   "date": "2026-12-07",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ]
+  },
+  {
+   "id": "amavasya-2026-12-08",
+   "name": "Amavasya (No Moon)",
+   "date": "2026-12-08",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ]
+  },
+  {
+   "id": "ekadashi-2026-12-20",
+   "name": "Shukla Ekadashi",
+   "date": "2026-12-20",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ]
+  },
+  {
+   "id": "purnima-2026-12-23",
+   "name": "Purnima (Full Moon)",
+   "date": "2026-12-23",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ]
+  },
+  {
+   "id": "ekadashi-2027-01-03",
+   "name": "Krishna Ekadashi",
+   "date": "2027-01-03",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ]
+  },
+  {
+   "id": "masik-shivratri-2027-01-06",
+   "name": "Masik Shivratri",
+   "date": "2027-01-06",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ]
+  },
+  {
+   "id": "amavasya-2027-01-07",
+   "name": "Amavasya (No Moon)",
+   "date": "2027-01-07",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ]
+  }
  ],
  "queryTags": [
-  {"re": "दुर्गा|महिषासुर|नवरात्रि", "tag": "navratri"}, {"re": "रावण|दशहरा", "tag": "dussehra"}, {"re": "शरद पूर्णिमा", "tag": "sharad-purnima"},
-  {"re": "सावित्री", "tag": "karwa-chauth"}, {"re": "धनतेरस|यमराज", "tag": "dhanteras"}, {"re": "दिवाली|लक्ष्मी", "tag": "diwali"}
+  {
+   "re": "दुर्गा|महिषासुर|नवरात्रि",
+   "tag": "navratri"
+  },
+  {
+   "re": "रावण|दशहरा",
+   "tag": "dussehra"
+  },
+  {
+   "re": "शरद पूर्णिमा",
+   "tag": "sharad-purnima"
+  },
+  {
+   "re": "सावित्री",
+   "tag": "karwa-chauth"
+  },
+  {
+   "re": "धनतेरस|यमराज",
+   "tag": "dhanteras"
+  },
+  {
+   "re": "दिवाली|लक्ष्मी",
+   "tag": "diwali"
+  }
  ]
 }

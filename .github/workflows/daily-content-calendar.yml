@@ -1,0 +1,80 @@
+# Keeps the YouTube content calendar current every night so it's ready when the owner turns the laptop
+# on: 6:00 IST daily. Refreshes the tracked-channel outlier scan (planner/channels.mjs is NOT re-run daily --
+# that's the slow, quota-heavy discovery step; it's meant to be run by hand every week or two via
+# workflow_dispatch to pick up new/renamed channels), the Panchang lunar-calendar merge (free, no API),
+# the free trend signal, then regenerates CONTENT_CALENDAR.md/.csv + FORMAT_PLAN.md.
+# Generated data (channel-outliers-*, panchang-*, trends.json) is stored on the `data` branch like the
+# other planner workflows, so main stays clean; CONTENT_CALENDAR.md/.csv + FORMAT_PLAN.md are ALSO copied
+# there (same commit) since those are the actual morning deliverable -- pull them locally any time with:
+#   git fetch origin data && git checkout origin/data -- CONTENT_CALENDAR.md CONTENT_CALENDAR.csv FORMAT_PLAN.md planner/data
+# A GitHub issue "Content calendar YYYY-MM-DD" is also opened/updated with the next 7 days inline, so it
+# reaches the owner's phone via GitHub mobile even before they open the laptop -- same pattern as
+# daily-agent.yml's "Daily list" issue.
+# Needs repo secret YOUTUBE_API_KEY (YOUTUBE_API_KEY_KATHAAYA optional, used as quota overflow).
+name: daily-content-calendar
+on:
+  schedule: [{ cron: "30 0 * * *" }]   # 00:30 UTC = 06:00 IST
+  push:
+    branches: ["e2e/**"]
+  workflow_dispatch:
+    inputs:
+      refresh_channels: { description: "Also re-run channel discovery (slow, ~3000 quota units)", type: boolean, default: false }
+permissions: { contents: write, issues: write }
+concurrency: { group: daily-content-calendar, cancel-in-progress: false }
+jobs:
+  calendar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      YOUTUBE_API_KEY_KATHAAYA: ${{ secrets.YOUTUBE_API_KEY_KATHAAYA }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 22 }
+      - run: npm install --prefix planner
+      - name: Bring back yesterday's channel list (channels.mjs is not re-run daily)
+        run: |
+          git fetch origin data || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout origin/data -- planner/data/channels.json planner/data/channels.txt planner/data/calendar-festivals.json planner/data/calendar-2026.json 2>/dev/null || true; git reset -q HEAD -- planner/data 2>/dev/null || true; fi
+      - name: Refresh channel discovery (weekly/manual only)
+        if: inputs.refresh_channels == true
+        run: node planner/channels.mjs
+      - run: node planner/panchang.mjs --merge
+      - run: node planner/channel-outliers.mjs
+      - run: node planner/trends.mjs
+      - run: node planner/content-calendar.mjs
+      - run: node planner/format-plan.mjs
+      - name: Step summary
+        run: |
+          { echo "### Content calendar refreshed $(date -u +%F)"; echo; head -40 CONTENT_CALENDAR.md; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Open/update today's tracking issue (next 7 days)
+        run: |
+          {
+            echo "Auto-refreshed $(date -u +%F). Full calendar: CONTENT_CALENDAR.md / .csv (pull from the \`data\` branch -- see the workflow file for the exact command)."
+            echo
+            sed -n '2,8p' CONTENT_CALENDAR.csv > /tmp/cal.csv
+            node -e "const rows=require('node:fs').readFileSync('/tmp/cal.csv','utf8').split('\n').filter(Boolean); console.log(rows.map(r=>'- '+r.split(',').slice(0,4).join(' | ')).join('\n'))"
+          } > /tmp/body.md
+          T="Content calendar $(date -u +%F)"
+          N=$(gh issue list --state open --search "Content calendar in:title" --json number,title -q '.[0].number' || true)
+          if [ -n "$N" ]; then gh issue edit "$N" --title "$T" --body-file /tmp/body.md; else gh issue create --title "$T" --body-file /tmp/body.md; fi
+      - name: Store generated data + deliverables on the data branch
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          mkdir -p /tmp/keep && cp -r planner/data /tmp/keep/ && cp CONTENT_CALENDAR.md CONTENT_CALENDAR.csv FORMAT_PLAN.md /tmp/keep/
+          git stash -u -q || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git checkout -B data origin/data; else git checkout --orphan data; git rm -rf -q . >/dev/null 2>&1 || true; fi
+          mkdir -p planner && rm -rf planner/data && cp -r /tmp/keep/data planner/data && cp /tmp/keep/CONTENT_CALENDAR.md /tmp/keep/CONTENT_CALENDAR.csv /tmp/keep/FORMAT_PLAN.md .
+          git add -f planner/data CONTENT_CALENDAR.md CONTENT_CALENDAR.csv FORMAT_PLAN.md
+          (git diff --cached --quiet || git commit -m "content calendar $(date -u +%F)") && git push origin data
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: content-calendar
+          path: |
+            CONTENT_CALENDAR.md
+            CONTENT_CALENDAR.csv
+            FORMAT_PLAN.md
+          if-no-files-found: ignore

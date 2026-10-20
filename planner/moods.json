@@ -1,0 +1,14 @@
+{
+ "BHAY": {"name": "Fear", "keywords": ["narak", "saja", "dand", "yamdoot", "bhoot", "paap", "नरक", "सजा", "दंड", "यमदूत", "भूत", "पाप"], "audience": "Scared", "color": "red"},
+ "RAHASYA": {"name": "Mystery", "keywords": ["rahasya", "gupt", "chupa", "kahan hai", "kaise", "रहस्य", "गुप्त", "छुपा", "कहाँ है", "कैसे"], "audience": "Curious", "color": "purple"},
+ "SHRAP_VARDAN": {"name": "Curse/Boon", "keywords": ["shrap", "vardaan", "rishi ka shrap", "शाप", "वरदान", "ऋषि का शाप"], "audience": "Shocked", "color": "orange"},
+ "PREM_TYAG": {"name": "Love/Sacrifice", "keywords": ["prem", "tyag", "bhakt", "balidan", "प्रेम", "त्याग", "भक्त", "बलिदान"], "audience": "Emotional", "color": "pink"},
+ "YUDH_SHAKTI": {"name": "War/Power", "keywords": ["yudh", "astra", "shakti", "deva asura", "युद्ध", "अस्त्र", "शक्ति", "देव असुर"], "audience": "Excited", "color": "crimson"},
+ "UPAY_VIDHI": {"name": "Remedy", "keywords": ["upay", "vidhi", "kaise bache", "mantra", "उपाय", "विधि", "कैसे बचें", "मंत्र"], "audience": "Seeking solution", "color": "gold"},
+ "MRITYU_PARLOK": {"name": "Death/Afterlife", "keywords": ["mrityu", "marne ke baad", "parlok", "atma", "मृत्यु", "मरने के बाद", "परलोक", "आत्मा"], "audience": "Deep fear", "color": "black"},
+ "AVTAR_LEELA": {"name": "Incarnation", "keywords": ["avatar", "leela", "janm", "अवतार", "लीला", "जन्म"], "audience": "Devotional", "color": "blue"},
+ "LOK_BRAHMAND": {"name": "Multiverse", "keywords": ["lok", "naglok", "patala", "brahmand", "kailash", "लोक", "नागलोक", "पाताल", "ब्रह्मांड", "कैलाश"], "audience": "Sci-fi spiritual", "color": "indigo"},
+ "KALYUG_BHAVISHYA": {"name": "Future/Prediction", "keywords": ["kalyug", "bhavishya", "kalki", "pralay", "ant", "कलयुग", "भविष्य", "कल्कि", "प्रलय", "अंत"], "audience": "Anxious", "color": "grey"},
+ "NYAY": {"name": "Justice/Women", "keywords": ["nyay", "nari", "apman", "sati", "न्याय", "नारी", "अपमान", "सती"], "audience": "Angry/shareable", "color": "green"},
+ "DHAN_KISMAT": {"name": "Wealth/Fate", "keywords": ["dhan", "kismat", "lakshmi", "bhagya", "धन", "किस्मत", "लक्ष्मी", "भाग्य"], "audience": "Hopeful", "color": "yellow"}
+}
