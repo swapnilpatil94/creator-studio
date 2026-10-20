@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-// Mesh camera clips: an alternative to DepthFlow for beats that want a TRUE camera move through depth (orbit, crane) rather than planar 2.5D parallax.
+// Mesh camera clips: an alternative to DepthFlow for beats that want a TRUE camera move through depth (crane, dolly zoom, optical rack focus) rather than planar 2.5D parallax.
 // Builds the textured depth-displacement mesh (depth_to_mesh.py, cached) once per scene, then drives a real perspective camera through it with Three.js,
 // rendered deterministically with the same software-WebGL path proven in engine/scripts/render.mjs (Playwright + ANGLE/SwiftShader -- GPU WebGL blanks mid-render
 // on this Mac, software doesn't), straight to a JPEG frame sequence with the exact contract camera-clips.mjs already expects from DepthFlow (clips/<beat>/NNNN.jpg + .done).
-// The mesh's own single-view limit (no back side, "skirt" stretching past the camera's original cone) caps how far these moves can safely swing -- stay inside
-// about +-20deg orbit / 15% push, same range DepthFlow itself is kept inside.
+// Push/pull/focus moves only: orbiting the camera around the subject was tried and dropped (see PATHS below) because it tears faces apart at the mesh's single-view edge.
 // usage: node tools/layers/mesh-clip.mjs <img.jpg> <depth.png> <outDir> <fx> <seconds> <width> <height> <fps>
 import fs from "node:fs"; import path from "node:path"; import os from "node:os"; import { fileURLToPath, pathToFileURL } from "node:url"; import { spawnSync } from "node:child_process";
 import { chromium } from "/Users/swapnil/creator-studio/engine/node_modules/playwright/index.mjs";
@@ -12,32 +11,45 @@ import { build } from "/Users/swapnil/creator-studio/engine/node_modules/esbuild
 const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, "../..");
 const PY = path.join(os.homedir(), ".venvs/kathaaya-layers/bin/python");
 
-export const MESH_FX = new Set(["mesh_orbit_reveal", "mesh_crane_push"]);
+export const MESH_FX = new Set(["mesh_crane_push", "mesh_dolly_zoom_vertigo", "mesh_rack_focus_dof"]);
+const DOF_FX = new Set(["mesh_rack_focus_dof"]); // the only effect that needs the EffectComposer/BokehPass pipeline; the rest render straight to the canvas (faster)
 
-// Camera paths: t in [0,1]. Kept inside the mesh's safe cone (+-20deg orbit, <=15% push) so edges never show the single-view stretch artifact.
+// Camera paths: t in [0,1]. Only push/pull/focus moves -- anything that ORBITS the subject (tried: mesh_orbit_reveal, mesh_swoop_reveal) tears faces apart at the arc's ends,
+// even at a modest +-14deg: a face has the sharpest depth edges in the whole image, so it's the first thing the single-view "skirt" stretch destroys. Removed 2026-10-20
+// (owner: "if this adding thing making video an faces distortion then lets not build it"), confirmed on real rendered frames, not kept behind a flag.
 const PATHS = {
-  // a slow horizontal arc with a gentle push-in: foreground shifts against background in a real arc, not a planar slide -- the thing a flat 2.5D shader can't do.
-  mesh_orbit_reveal: `(e) => { const az = THREE.MathUtils.lerp(-14, 14, e) * Math.PI/180, el = 10 * Math.PI/180, dist = THREE.MathUtils.lerp(1.0, 0.90, e) * baseDist;
-    camera.position.set(Math.sin(az)*dist*Math.cos(el), Math.sin(el)*dist, Math.cos(az)*dist*Math.cos(el)); camera.lookAt(0,0,0); }`,
   // a crane rise with a slight downward tilt to compensate, plus a small push: the classic reveal move.
   mesh_crane_push: `(e) => { const rise = THREE.MathUtils.lerp(-0.10, 0.14, e), dist = THREE.MathUtils.lerp(1.0, 0.88, e) * baseDist;
     camera.position.set(0, rise, dist); camera.lookAt(0, rise*0.35, 0); }`,
+  // the Hitchcock/Vertigo trombone shot: camera physically tracks BACK while the lens narrows (zooms in), so the subject stays the same size on screen
+  // but the background -- genuinely farther away in the mesh, not painted-on -- rushes outward. Needs real depth to work; a flat image can only fake it with a crop-zoom.
+  mesh_dolly_zoom_vertigo: `(e) => { const fov = THREE.MathUtils.lerp(48, 20, e); camera.fov = fov; camera.updateProjectionMatrix();
+    const dist = baseDist * (Math.tan(35*Math.PI/360) / Math.tan(fov*Math.PI/360));
+    camera.position.set(0, 0.03, dist); camera.lookAt(0, 0.03, 0); }`,
+  // a true optical rack focus: the BokehPass blurs by the mesh's REAL depth (not a fake gradient), racking from the background army into the two foreground figures.
+  // camera itself barely moves (a 4% push) -- the focus pull carries the shot. Only defines the bokeh focus distance; applyDof() below does the actual composer render.
+  mesh_rack_focus_dof: `(e) => { const dist = THREE.MathUtils.lerp(1.0, 0.96, e) * baseDist; camera.position.set(0, 0.02, dist); camera.lookAt(0, 0.02, 0);
+    if (window.__bokeh) window.__bokeh.uniforms['focus'].value = THREE.MathUtils.lerp(nearFocus, farFocus, Math.min(1, e / 0.7)); }`, // measured empirically: BokehPass's focus runs opposite to plain world distance here -- the smaller value is what reads as "background sharp"
 };
 const ease = "(x) => x<.5 ? 2*x*x : 1-Math.pow(-2*x+2,2)/2"; // easeInOutQuad, applied to e before indexing PATHS
 
 function sceneSource(glbB64, fx, duration, width, height) {
+  const needsDof = DOF_FX.has(fx);
   return `<!doctype html>
 <html><head><meta charset="utf-8"><style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}canvas{display:block}</style></head>
 <body><script type="module">
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+${needsDof ? `import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
+import { BokehPass } from "three/examples/jsm/postprocessing/BokehPass.js";` : ""}
 const W = ${width}, H = ${height};
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(35, W / H, 0.01, 100);
+const camera = new THREE.PerspectiveCamera(35, W / H, 0.1, 6); // tight near/far (the mesh only ever spans roughly z 1-2.5 from camera): gives BokehPass's depth sampling the precision it needs to tell foreground from background
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1); renderer.setSize(W, H, true);
 document.body.appendChild(renderer.domElement);
-let baseDist = 1.68, ready = false; // recomputed from the loaded mesh's real bounding box once it's in (trimesh's glb export may not preserve raw units 1:1)
+let baseDist = 1.68, nearFocus = 1.4, farFocus = 2.0, ready = false, composer = null; // nearFocus/farFocus recomputed from the loaded mesh's real depth range once it's in
 window.__meshReady = false;
 const loader = new GLTFLoader();
 loader.load("data:model/gltf-binary;base64,${glbB64}", (gltf) => {
@@ -45,12 +57,16 @@ loader.load("data:model/gltf-binary;base64,${glbB64}", (gltf) => {
   const box = new THREE.Box3().setFromObject(gltf.scene), size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
   gltf.scene.position.sub(center); // recenter at origin regardless of whatever offset the exporter wrote
   baseDist = (size.y / 2) / Math.tan(35 * Math.PI / 360) * 1.06;
-  scene.add(gltf.scene); ready = true; window.__meshReady = true; window.__meshBox = { size: [size.x, size.y, size.z] }; renderer.render(scene, camera);
+  nearFocus = Math.max(0.05, baseDist - size.z * 0.65); farFocus = baseDist + size.z * 0.65; // camera-to-foreground / camera-to-background distances, from the mesh's own real depth extent
+  scene.add(gltf.scene); ready = true; window.__meshReady = true; window.__meshBox = { size: [size.x, size.y, size.z] };
+  ${needsDof ? `const bokeh = new BokehPass(scene, camera, { focus: farFocus, aperture: 0.018, maxblur: 0.02 });
+  composer = new EffectComposer(renderer); composer.addPass(new RenderPass(scene, camera)); composer.addPass(bokeh); composer.setSize(W, H); window.__bokeh = bokeh;
+  composer.render();` : "renderer.render(scene, camera);"}
 }, undefined, (err) => { console.error("GLTF load failed", err); });
 const ease = ${ease};
 const path = ${PATHS[fx]};
 window.getDuration = () => ${duration};
-window.renderAt = (seconds) => { if (!ready) return; const e = ease(Math.max(0, Math.min(1, seconds / ${duration}))); path(e); renderer.render(scene, camera); };
+window.renderAt = (seconds) => { if (!ready) return; const e = ease(Math.max(0, Math.min(1, seconds / ${duration}))); path(e); ${needsDof ? "composer ? composer.render() : renderer.render(scene, camera);" : "renderer.render(scene, camera);"} };
 window.renderAt(0);
 if (new URLSearchParams(window.location.search).get("render") === "1") document.body.style.margin = "0";
 <\/script></body></html>`;
