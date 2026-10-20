@@ -1,0 +1,134 @@
+[
+ {
+  "id": "v001",
+  "text": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "मंथन चलता रहा, और एक के बाद एक अनमोल रत्न समुद्र से निकलने लगे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "पर अमृत से पहले निकला हलाहल, ऐसा विष जिसकी गंध से तीनों लोक जलने लगे।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "देवता और असुर दोनों घबरा गए, कोई भी उस विष को सहन नहीं कर सका।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "सब भगवान शिव की शरण में पहुँचे, और उनसे रक्षा की प्रार्थना करने लगे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "शिव ने बिना डरे वह हलाहल विष अपने हाथों में उठा लिया।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "उन्होंने वह विष पी लिया, पर उसे पेट में जाने नहीं दिया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "माता पार्वती ने तुरंत शिव का गला पकड़ लिया, ताकि विष कंठ में ही रुक जाए।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "विष के प्रभाव से उनका कंठ नीला पड़ गया, और तभी से उन्हें नीलकंठ कहा गया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "शिव पुराण कहता है, यह सारी सृष्टि को बचाने का उनका बलिदान था।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "आज भी नीलकंठ का यह रूप शिव की करुणा और शक्ति दोनों की कथा कहता है।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ }
+]

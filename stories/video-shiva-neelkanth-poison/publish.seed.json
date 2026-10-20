@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए। अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।",
+ "disclaimer": "यह कथा शिव पुराण के अनुसार है; भागवत पुराण और विष्णु पुराण में भी इसका उल्लेख मिलता है, विवरण में थोड़ा अंतर हो सकता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#shiva",
+  "#neelkanth",
+  "#samudramanthan"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "शिव|विष|पिया",
+ "extraTags": [
+  "shiva",
+  "neelkanth",
+  "samudramanthan",
+  "पिया",
+  "नीलकंठ",
+  "कहलाए",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "नीलकंठ का रहस्य?"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "शिव ने विष"
+ ],
+ "primaryKeyword": "शिव",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए?"
+ }
+}

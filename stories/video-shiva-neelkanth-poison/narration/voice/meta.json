@@ -1,0 +1,292 @@
+{
+ "story": "video-shiva-neelkanth-poison",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 176,
+ "duration_s": 55.34,
+ "speech_words_per_s": 3.39,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 5.421,
+   "tries": 1,
+   "words_per_s": 3.51,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए.",
+   "raw_dur_s": 6.78,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 5.661,
+   "end": 10.483,
+   "tries": 1,
+   "words_per_s": 2.9,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे.",
+   "raw_dur_s": 6.02,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 2.33,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "मंथन चलता रहा, और एक के बाद एक अनमोल रत्न समुद्र से निकलने लगे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 10.783,
+   "end": 14.967,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "मंथन चलता रहा, और एक के बाद एक अनमोल रत्न समुद्र से निकलने लगे.",
+   "raw_dur_s": 5.22,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "पर अमृत से पहले निकला हलाहल, ऐसा विष जिसकी गंध से तीनों लोक जलने लगे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 15.187,
+   "end": 19.41,
+   "tries": 1,
+   "words_per_s": 3.55,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "पर अमृत से पहले निकला हलाहल, ऐसा विष जिसकी गंध से तीनों लोक जलने लगे.",
+   "raw_dur_s": 5.27,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "देवता और असुर दोनों घबरा गए, कोई भी उस विष को सहन नहीं कर सका।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 19.63,
+   "end": 23.939,
+   "tries": 1,
+   "words_per_s": 3.48,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "देवता और असुर दोनों घबरा गए, कोई भी उस विष को सहन नहीं कर सका.",
+   "raw_dur_s": 5.36,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "सब भगवान शिव की शरण में पहुँचे, और उनसे रक्षा की प्रार्थना करने लगे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 24.159,
+   "end": 28.653,
+   "tries": 1,
+   "words_per_s": 3.11,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "सब भगवान शिव की शरण में पहुँचे, और उनसे रक्षा की प्रार्थना करने लगे.",
+   "raw_dur_s": 5.64,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.48,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "शिव ने बिना डरे वह हलाहल विष अपने हाथों में उठा लिया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 28.873,
+   "end": 32.912,
+   "tries": 1,
+   "words_per_s": 2.97,
+   "beat": "v007",
+   "pause_after": 0.38,
+   "spoken": "शिव ने बिना डरे वह हलाहल विष अपने हाथों में उठा लिया.",
+   "raw_dur_s": 4.71,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 2.55,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "उन्होंने वह विष पी लिया, पर उसे पेट में जाने नहीं दिया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 33.292,
+   "end": 36.083,
+   "tries": 1,
+   "words_per_s": 4.3,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "उन्होंने वह विष पी लिया, पर उसे पेट में जाने नहीं दिया.",
+   "raw_dur_s": 3.47,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.45,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "माता पार्वती ने तुरंत शिव का गला पकड़ लिया, ताकि विष कंठ में ही रुक जाए।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 36.303,
+   "end": 40.936,
+   "tries": 2,
+   "words_per_s": 3.45,
+   "beat": "v009",
+   "pause_after": 0.48,
+   "spoken": "माता पार्वती ने तुरंत शिव का गला पकड़ लिया, ताकि विष कंठ में ही रुक जाए.",
+   "raw_dur_s": 5.15,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 2.58,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 54913,
+     "rate": 3.1,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "विष के प्रभाव से उनका कंठ नीला पड़ गया, और तभी से उन्हें नीलकंठ कहा गया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 41.416,
+   "end": 45.67,
+   "tries": 2,
+   "words_per_s": 3.76,
+   "beat": "v010",
+   "pause_after": 0.22,
+   "spoken": "विष के प्रभाव से उनका कंठ नीला पड़ गया, और तभी से उन्हें नीलकंठ कहा गया.",
+   "raw_dur_s": 5.33,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 2.76,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 91828,
+     "rate": 3.0,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "शिव पुराण कहता है, यह सारी सृष्टि को बचाने का उनका बलिदान था।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 45.89,
+   "end": 49.922,
+   "tries": 1,
+   "words_per_s": 3.22,
+   "beat": "v011",
+   "pause_after": 0.38,
+   "spoken": "शिव पुराण कहता है, यह सारी सृष्टि को बचाने का उनका बलिदान था.",
+   "raw_dur_s": 4.53,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 2.87,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "आज भी नीलकंठ का यह रूप शिव की करुणा और शक्ति दोनों की कथा कहता है।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 50.302,
+   "end": 55.04,
+   "tries": 1,
+   "words_per_s": 3.38,
+   "beat": "v012",
+   "pause_after": 0.3,
+   "spoken": "आज भी नीलकंठ का यह रूप शिव की करुणा और शक्ति दोनों की कथा कहता है.",
+   "raw_dur_s": 5.32,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 3.01,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

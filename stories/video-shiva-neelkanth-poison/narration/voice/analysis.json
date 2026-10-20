@@ -1,0 +1,313 @@
+{
+ "file": "/Users/swapnil/creator-studio/stories/video-shiva-neelkanth-poison/narration/voice/narration.wav",
+ "duration_s": 55.34,
+ "peak_dbfs": -2.0,
+ "clipped_samples": 0,
+ "lufs_integrated": -18.28,
+ "lra_lu": 2.0,
+ "true_peak_dbfs": -2.0,
+ "noise_floor_dbfs": -53.5,
+ "crest_db": 14.5,
+ "speech_ratio": 0.891,
+ "pauses": [
+  {
+   "at": 10.45,
+   "len": 0.35
+  },
+  {
+   "at": 23.9,
+   "len": 0.3
+  },
+  {
+   "at": 32.93,
+   "len": 0.38
+  },
+  {
+   "at": 36.0,
+   "len": 0.33
+  },
+  {
+   "at": 40.88,
+   "len": 0.55
+  },
+  {
+   "at": 45.62,
+   "len": 0.33
+  },
+  {
+   "at": 49.88,
+   "len": 0.45
+  }
+ ],
+ "longest_pause_s": 0.55,
+ "pauses_over_1_2s": [],
+ "click_events": 10,
+ "voiced_ratio": 0.736,
+ "pitch": {
+  "mean_hz": 110.46,
+  "std_st": 2.94,
+  "range_st": 9.34
+ },
+ "beats": [
+  {
+   "id": "v001",
+   "start": 0.0,
+   "end": 5.42,
+   "words": 19,
+   "words_per_s": 3.5,
+   "chars_per_s": 14.0,
+   "rms_dbfs": -16.3,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 109.4,
+   "f0_std_st": 2.42,
+   "f0_range_st": 7.69,
+   "energy_std_db": 6.79
+  },
+  {
+   "id": "v002",
+   "start": 5.66,
+   "end": 10.48,
+   "words": 14,
+   "words_per_s": 2.9,
+   "chars_per_s": 11.6,
+   "rms_dbfs": -16.6,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 104.7,
+   "f0_std_st": 2.48,
+   "f0_range_st": 7.56,
+   "energy_std_db": 6.05
+  },
+  {
+   "id": "v003",
+   "start": 10.78,
+   "end": 14.97,
+   "words": 14,
+   "words_per_s": 3.35,
+   "chars_per_s": 12.0,
+   "rms_dbfs": -16.5,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 111.2,
+   "f0_std_st": 3.21,
+   "f0_range_st": 10.09,
+   "energy_std_db": 6.48
+  },
+  {
+   "id": "v004",
+   "start": 15.19,
+   "end": 19.41,
+   "words": 15,
+   "words_per_s": 3.55,
+   "chars_per_s": 13.0,
+   "rms_dbfs": -16.2,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 110.0,
+   "f0_std_st": 2.8,
+   "f0_range_st": 9.38,
+   "energy_std_db": 6.53
+  },
+  {
+   "id": "v005",
+   "start": 19.63,
+   "end": 23.94,
+   "words": 15,
+   "words_per_s": 3.48,
+   "chars_per_s": 11.1,
+   "rms_dbfs": -16.2,
+   "peak_dbfs": -2.3,
+   "f0_mean_hz": 119.0,
+   "f0_std_st": 2.87,
+   "f0_range_st": 9.99,
+   "energy_std_db": 7.15
+  },
+  {
+   "id": "v006",
+   "start": 24.16,
+   "end": 28.65,
+   "words": 14,
+   "words_per_s": 3.12,
+   "chars_per_s": 12.2,
+   "rms_dbfs": -16.8,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 109.0,
+   "f0_std_st": 3.12,
+   "f0_range_st": 11.11,
+   "energy_std_db": 7.08
+  },
+  {
+   "id": "v007",
+   "start": 28.87,
+   "end": 32.91,
+   "words": 12,
+   "words_per_s": 2.97,
+   "chars_per_s": 10.4,
+   "rms_dbfs": -17.3,
+   "peak_dbfs": -2.1,
+   "f0_mean_hz": 107.3,
+   "f0_std_st": 2.43,
+   "f0_range_st": 8.11,
+   "energy_std_db": 6.5
+  },
+  {
+   "id": "v008",
+   "start": 33.29,
+   "end": 36.08,
+   "words": 12,
+   "words_per_s": 4.3,
+   "chars_per_s": 15.8,
+   "rms_dbfs": -16.1,
+   "peak_dbfs": -2.4,
+   "f0_mean_hz": 113.4,
+   "f0_std_st": 3.06,
+   "f0_range_st": 9.81,
+   "energy_std_db": 7.05
+  },
+  {
+   "id": "v009",
+   "start": 36.3,
+   "end": 40.94,
+   "words": 16,
+   "words_per_s": 3.45,
+   "chars_per_s": 12.3,
+   "rms_dbfs": -16.0,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 107.1,
+   "f0_std_st": 3.0,
+   "f0_range_st": 11.32,
+   "energy_std_db": 7.09
+  },
+  {
+   "id": "v010",
+   "start": 41.42,
+   "end": 45.67,
+   "words": 16,
+   "words_per_s": 3.76,
+   "chars_per_s": 13.4,
+   "rms_dbfs": -16.0,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 120.2,
+   "f0_std_st": 2.96,
+   "f0_range_st": 9.32,
+   "energy_std_db": 7.13
+  },
+  {
+   "id": "v011",
+   "start": 45.89,
+   "end": 49.92,
+   "words": 13,
+   "words_per_s": 3.22,
+   "chars_per_s": 12.2,
+   "rms_dbfs": -17.0,
+   "peak_dbfs": -2.8,
+   "f0_mean_hz": 108.5,
+   "f0_std_st": 2.82,
+   "f0_range_st": 9.68,
+   "energy_std_db": 7.21
+  },
+  {
+   "id": "v012",
+   "start": 50.3,
+   "end": 55.04,
+   "words": 16,
+   "words_per_s": 3.38,
+   "chars_per_s": 10.8,
+   "rms_dbfs": -16.8,
+   "peak_dbfs": -2.0,
+   "f0_mean_hz": 111.2,
+   "f0_std_st": 2.51,
+   "f0_range_st": 7.66,
+   "energy_std_db": 6.31
+  }
+ ],
+ "beat_loudness": {
+  "std_db": 0.4,
+  "max_dev_from_median_db": 0.9
+ },
+ "rate": {
+  "mean_words_per_s": 3.39,
+  "fastest": 4.3,
+  "slowest": 2.9
+ },
+ "pitch_dynamics": {
+  "mean_f0_std_st": 2.81,
+  "mean_f0_range_st": 9.31,
+  "between_beat_f0_spread_st": 0.68
+ },
+ "boundaries": [
+  {
+   "at": 5.54,
+   "take_join": false,
+   "loudness_jump_db": 5.23,
+   "pitch_jump_st": 2.6
+  },
+  {
+   "at": 10.63,
+   "take_join": false,
+   "loudness_jump_db": 3.87,
+   "pitch_jump_st": 4.2
+  },
+  {
+   "at": 15.08,
+   "take_join": false,
+   "loudness_jump_db": 4.68,
+   "pitch_jump_st": 5.76
+  },
+  {
+   "at": 19.52,
+   "take_join": false,
+   "loudness_jump_db": 3.66,
+   "pitch_jump_st": 6.3
+  },
+  {
+   "at": 24.05,
+   "take_join": false,
+   "loudness_jump_db": 6.28,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 28.76,
+   "take_join": false,
+   "loudness_jump_db": 8.2,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 33.1,
+   "take_join": false,
+   "loudness_jump_db": 0.29,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 36.19,
+   "take_join": false,
+   "loudness_jump_db": 5.74,
+   "pitch_jump_st": 2.15
+  },
+  {
+   "at": 41.18,
+   "take_join": false,
+   "loudness_jump_db": 5.0,
+   "pitch_jump_st": 12.3
+  },
+  {
+   "at": 45.78,
+   "take_join": false,
+   "loudness_jump_db": 4.55,
+   "pitch_jump_st": null
+  },
+  {
+   "at": 50.11,
+   "take_join": false,
+   "loudness_jump_db": 4.32,
+   "pitch_jump_st": 4.35
+  }
+ ],
+ "take_joins": {
+  "n": 0,
+  "loudness_jump_abs_mean_db": null,
+  "pitch_jump_abs_mean_st": null
+ },
+ "within_take": {
+  "n": 11,
+  "loudness_jump_abs_mean_db": 4.71,
+  "pitch_jump_abs_mean_st": 5.38
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "name": "video-shiva-neelkanth-poison",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1080x1920",
+ "title": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए?",
+ "from_item": "shiva-neelkanth-poison.video",
+ "engine": "longform"
+}

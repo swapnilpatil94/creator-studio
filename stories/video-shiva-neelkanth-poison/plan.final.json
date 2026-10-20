@@ -1,0 +1,158 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "s1",
+   "move": "push",
+   "label": "समुद्र मंथन",
+   "reveal": "circle",
+   "fx": "drone_push_in",
+   "clip": "v001",
+   "clip_n": 167
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "मंदराचल पर्वत",
+   "reveal": "diamond",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 137
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "label": "अनमोल रत्न",
+   "reveal": "wipe",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "हलाहल का विष",
+   "reveal": "circle",
+   "fx": "crane_up_reveal",
+   "sticker": "sparkle",
+   "clip": "v004",
+   "clip_n": 121
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "देवता",
+    "और",
+    "असुर",
+    "*घबरा* गए"
+   ],
+   "style": "glitch"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "cinema",
+  "params": {
+   "img": "scene4",
+   "move": "pull",
+   "label": "भगवान शिव की शरण",
+   "reveal": "diamond",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v006",
+   "clip_n": 128
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "fx": "eye_glow_energy_pulse",
+   "img": "scene5",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "fx",
+  "params": {
+   "img": "s8",
+   "move": "pull",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "fx": "mesh_rack_focus_dof",
+   "img": "scene6",
+   "move": "pull",
+   "clip": "v009",
+   "clip_n": 138
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "cinema",
+  "params": {
+   "lines": [
+    "विष के *प्रभाव* से उनका कंठ"
+   ],
+   "style": "mask",
+   "img": "s10",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "scene7",
+   "move": "pull",
+   "label": "शिव पुराण कहता है",
+   "behind": "सारी सृष्टि को बचाने का उनका बलिदान था",
+   "fx": "drone_orbit_180",
+   "clip": "v011",
+   "clip_n": 120
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "panL",
+   "label": "आज भी नीलकंठ का यह रूप",
+   "behind": "शिव की करुणा और शक्ति दोनों की कथा कहता है",
+   "fx": "mesh_ken_burns_3d",
+   "clip": "v012",
+   "clip_n": 193
+  },
+  "chapter": "ch1"
+ }
+]

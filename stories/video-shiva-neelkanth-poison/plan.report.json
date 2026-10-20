@@ -1,0 +1,44 @@
+{
+ "fixed": [
+  "v008: repeated fx -> cinema",
+  "v001: painting beat had no listed effect -> drone_push_in",
+  "v002: painting beat had no listed effect -> 2.5d_parallax",
+  "v003: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v004: painting beat had no listed effect -> crane_up_reveal",
+  "v006: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v008: painting beat had no listed effect -> puppet_warp_breathing",
+  "v011: painting beat had no listed effect -> drone_orbit_180",
+  "v012: painting beat had no listed effect -> mesh_ken_burns_3d",
+  "v010: stat figures are not in the narration -> kinetic"
+ ],
+ "warnings": [
+  "5 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "drone_push_in": 1,
+   "2.5d_parallax": 1,
+   "kinetography_cinemagraph": 1,
+   "crane_up_reveal": 1,
+   "parallax_occlusion_3d": 1,
+   "eye_glow_energy_pulse": 1,
+   "puppet_warp_breathing": 1,
+   "mesh_rack_focus_dof": 1,
+   "drone_orbit_180": 1,
+   "mesh_ken_burns_3d": 1
+  },
+  "fx_distinct": 10,
+  "scenes": 9,
+  "assets_used": 0,
+  "comps": {
+   "cinema": 8,
+   "kinetic": 1,
+   "fx": 2,
+   "stat": 1
+  },
+  "beats": 12,
+  "windows_low_variety": 5
+ },
+ "writer": "ollama:qwen3:14b",
+ "from_rules": 0
+}

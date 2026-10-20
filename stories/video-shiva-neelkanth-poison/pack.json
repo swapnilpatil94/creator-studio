@@ -1,0 +1,135 @@
+{
+ "slug": "shiva-neelkanth-poison",
+ "format": "short",
+ "title": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए?",
+ "thumb": "नीलकंठ का रहस्य?",
+ "thumbSupport": "",
+ "thumbStyle": "teal",
+ "thumbArt": null,
+ "thumbScene": "Lord Shiva, blue throat glowing, holding a dark pot of poison to his lips, cosmic churning ocean behind him, divine and intense mood",
+ "source_line": "स्रोत: शिव पुराण, रुद्र संहिता; भागवत पुराण, स्कंध आठ",
+ "tradition": "यह कथा शिव पुराण के अनुसार है; भागवत पुराण और विष्णु पुराण में भी इसका उल्लेख मिलता है, विवरण में थोड़ा अंतर हो सकता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#shiva",
+  "#neelkanth",
+  "#samudramanthan"
+ ],
+ "look": {
+  "mood": "cosmic",
+  "grade": "teal",
+  "captions": "karaoke",
+  "transition": "dissolve",
+  "motif": "rays",
+  "bg": "nebula"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए।",
+   "intent": "hook",
+   "accent": "डरा",
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "मंथन चलता रहा, और एक के बाद एक अनमोल रत्न समुद्र से निकलने लगे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "पर अमृत से पहले निकला हलाहल, ऐसा विष जिसकी गंध से तीनों लोक जलने लगे।",
+   "intent": "tense",
+   "accent": "विष",
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "देवता और असुर दोनों घबरा गए, कोई भी उस विष को सहन नहीं कर सका।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "सब भगवान शिव की शरण में पहुँचे, और उनसे रक्षा की प्रार्थना करने लगे।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "शिव ने बिना डरे वह हलाहल विष अपने हाथों में उठा लिया।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "उन्होंने वह विष पी लिया, पर उसे पेट में जाने नहीं दिया।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "माता पार्वती ने तुरंत शिव का गला पकड़ लिया, ताकि विष कंठ में ही रुक जाए।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "विष के प्रभाव से उनका कंठ नीला पड़ गया, और तभी से उन्हें नीलकंठ कहा गया।",
+   "intent": null,
+   "accent": "नीलकंठ",
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "शिव पुराण कहता है, यह सारी सृष्टि को बचाने का उनका बलिदान था।",
+   "intent": "reflective",
+   "accent": "बलिदान",
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "आज भी नीलकंठ का यह रूप शिव की करुणा और शक्ति दोनों की कथा कहता है।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "Hindu gods and demons churning a vast cosmic ocean",
+   "action": "pulling a great serpent around a mountain",
+   "setting": "mythic ocean, mountain pivot, dramatic sky",
+   "lighting": "dark storm light, dramatic"
+  },
+  "8": {
+   "subject": "the god Shiva, blue-skinned, drinking dark poison",
+   "action": "holding poison to his lips, eyes closed",
+   "setting": "cosmic ocean background",
+   "lighting": "intense golden divine glow"
+  },
+  "10": {
+   "subject": "the god Shiva with a glowing blue throat",
+   "action": "calm, serene expression, throat glowing blue",
+   "setting": "simple dark cosmic backdrop",
+   "lighting": "soft blue divine glow"
+  }
+ },
+ "visuals": {},
+ "claims": [],
+ "chapters": []
+}

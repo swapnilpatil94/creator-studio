@@ -1,0 +1,86 @@
+{
+ "item": "shiva-neelkanth-poison.video",
+ "started": "2026-10-20T08:28:39.809Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792484919809,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792484919810,
+   "detail": "12 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792484919810,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792484919811,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792484919812,
+   "detail": "1 new paintings of 11 scenes",
+   "seconds": 67
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792484986513,
+   "detail": "11 of 11 scenes layered, 0 picture beats fell back to type",
+   "seconds": 10
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792484996361,
+   "detail": "7 camera clips (1 rendered, 6 cached)",
+   "seconds": 3
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792484999413,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792484999503,
+   "detail": "QA all passed",
+   "seconds": 77
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792485076356,
+   "detail": "teal palette, \"नीलकंठ का रहस्य?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792485076357,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 157,
+ "ended": "2026-10-20T08:31:16.709Z"
+}
