@@ -1,0 +1,336 @@
+{
+ "story": "video-sharad-purnima-raas-leela",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 194,
+ "duration_s": 62.12,
+ "speech_words_per_s": 3.34,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "शरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 4.643,
+   "tries": 1,
+   "words_per_s": 3.23,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "शरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया.",
+   "raw_dur_s": 5.79,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 2.59,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 4.883,
+   "end": 9.675,
+   "tries": 1,
+   "words_per_s": 3.13,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है.",
+   "raw_dur_s": 5.99,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 2.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "यमुना के तट पर खड़े होकर कृष्ण ने अपनी बाँसुरी उठाई।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 9.975,
+   "end": 13.199,
+   "tries": 1,
+   "words_per_s": 3.41,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "यमुना के तट पर खड़े होकर कृष्ण ने अपनी बाँसुरी उठाई.",
+   "raw_dur_s": 4.02,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 2.73,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "स्वर इतना मोहक था कि वृंदावन की गोपियाँ अपना घर-गृहस्थी छोड़कर दौड़ी चली आईं।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 13.419,
+   "end": 18.562,
+   "tries": 2,
+   "words_per_s": 2.72,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "स्वर इतना मोहक था कि वृंदावन की गोपियाँ अपना घर-गृहस्थी छोड़कर दौड़ी चली आईं.",
+   "raw_dur_s": 6.42,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 1.93,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 61220,
+     "rate": 2.18,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "कृष्ण ने उन्हें रोकने की कोशिश की, कहा कि लौट जाओ, अपने कर्तव्य निभाओ।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 18.782,
+   "end": 22.791,
+   "tries": 1,
+   "words_per_s": 3.49,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "कृष्ण ने उन्हें रोकने की कोशिश की, कहा कि लौट जाओ, अपने कर्तव्य निभाओ.",
+   "raw_dur_s": 5.0,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.8,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "पर गोपियों का प्रेम इतना गहरा था कि वे पीछे नहीं हटीं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 23.011,
+   "end": 26.042,
+   "tries": 2,
+   "words_per_s": 3.96,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "पर गोपियों का प्रेम इतना गहरा था कि वे पीछे नहीं हटीं.",
+   "raw_dur_s": 3.78,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.55,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 35617,
+     "rate": 3.17,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "तब कृष्ण ने अपनी लीला रची, और एक साथ कई रूप धारण कर लिए।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 26.262,
+   "end": 29.637,
+   "tries": 1,
+   "words_per_s": 4.15,
+   "beat": "v007",
+   "pause_after": 0.38,
+   "spoken": "तब कृष्ण ने अपनी लीला रची, और एक साथ कई रूप धारण कर लिए.",
+   "raw_dur_s": 3.92,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.57,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "हर गोपी के साथ एक कृष्ण नाचे, हर एक को लगा कि कृष्ण केवल उसी के साथ हैं।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 1.166,
+   "start": 30.017,
+   "end": 34.817,
+   "tries": 1,
+   "words_per_s": 3.75,
+   "beat": "v008",
+   "pause_after": 0.38,
+   "spoken": "हर गोपी के साथ एक कृष्ण नाचे, हर एक को लगा कि कृष्ण केवल उसी के साथ हैं.",
+   "raw_dur_s": 5.59,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.22,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "यह वृत्ताकार नृत्य रास कहलाया, जो यमुना तट पर रातभर चलता रहा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 35.197,
+   "end": 38.825,
+   "tries": 1,
+   "words_per_s": 3.31,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "यह वृत्ताकार नृत्य रास कहलाया, जो यमुना तट पर रातभर चलता रहा.",
+   "raw_dur_s": 4.52,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 2.65,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "पर जब कुछ गोपियाँ गर्व से भर गईं, कृष्ण अचानक अंतर्ध्यान हो गए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 39.045,
+   "end": 42.906,
+   "tries": 1,
+   "words_per_s": 3.37,
+   "beat": "v010",
+   "pause_after": 0.22,
+   "spoken": "पर जब कुछ गोपियाँ गर्व से भर गईं, कृष्ण अचानक अंतर्ध्यान हो गए.",
+   "raw_dur_s": 4.81,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 2.7,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "विरह में गोपियाँ उन्हें हर वन में ढूँढने लगीं, हर पेड़ से उनका पता पूछती रहीं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 43.126,
+   "end": 47.375,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "विरह में गोपियाँ उन्हें हर वन में ढूँढने लगीं, हर पेड़ से उनका पता पूछती रहीं.",
+   "raw_dur_s": 5.31,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "अंत में कृष्ण लौट आए, और विनम्र हुई गोपियों के साथ फिर रास रचाया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 47.595,
+   "end": 52.372,
+   "tries": 1,
+   "words_per_s": 2.93,
+   "beat": "v012",
+   "pause_after": 0.48,
+   "spoken": "अंत में कृष्ण लौट आए, और विनम्र हुई गोपियों के साथ फिर रास रचाया.",
+   "raw_dur_s": 5.31,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 2.64,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "भागवत पुराण कहता है, यह प्रेम शरीर का नहीं, आत्मा का था।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 52.852,
+   "end": 56.649,
+   "tries": 1,
+   "words_per_s": 3.16,
+   "beat": "v013",
+   "pause_after": 0.38,
+   "spoken": "भागवत पुराण कहता है, यह प्रेम शरीर का नहीं, आत्मा का था.",
+   "raw_dur_s": 4.25,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 2.82,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "आज भी शरद पूर्णिमा की रात यह कथा वृंदावन के कण-कण में गूँजती है।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 57.029,
+   "end": 61.819,
+   "tries": 1,
+   "words_per_s": 2.92,
+   "beat": "v014",
+   "pause_after": 0.3,
+   "spoken": "आज भी शरद पूर्णिमा की रात यह कथा वृंदावन के कण-कण में गूँजती है.",
+   "raw_dur_s": 5.38,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 2.6,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

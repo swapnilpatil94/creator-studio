@@ -1,0 +1,16 @@
+{
+ "name": "video-sharad-purnima-raas-leela",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1080x1920",
+ "title": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?",
+ "from_item": "sharad-purnima-raas-leela.video",
+ "engine": "longform"
+}

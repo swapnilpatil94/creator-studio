@@ -1,0 +1,138 @@
+{
+ "story": "video-sharad-purnima-raas-leela",
+ "format": "short",
+ "generated": "2026-10-20T06:11:10.157Z",
+ "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
+ "instagram": {
+  "type": "REELS",
+  "caption": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?\n\nशरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया। यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nयह कथा श्रीमद्भागवत पुराण के अनुसार है; अन्य ग्रंथों में इसका वर्णन अलग ढंग से मिलता है। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n\n#kathaaya #sharadpurnima #raaslila #krishna #Kathaaya",
+  "hashtags": [
+   "#kathaaya",
+   "#sharadpurnima",
+   "#raaslila",
+   "#krishna",
+   "#Kathaaya"
+  ],
+  "firstLine": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?",
+  "isAiGenerated": true,
+  "cover": "output/thumb-9x16.png",
+  "shareToFeed": true,
+  "shareToFacebook": false,
+  "checks": [
+   {
+    "platform": "instagram",
+    "name": "caption <= 2200 chars",
+    "ok": true,
+    "detail": "729"
+   },
+   {
+    "platform": "instagram",
+    "name": "first line <= 125 chars (visible before 'more')",
+    "ok": true,
+    "detail": "50"
+   },
+   {
+    "platform": "instagram",
+    "name": "hashtags <= 5 (few, relevant)",
+    "ok": true,
+    "detail": "5"
+   },
+   {
+    "platform": "instagram",
+    "name": "keyword in first line",
+    "ok": false,
+    "detail": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?"
+   },
+   {
+    "platform": "instagram",
+    "name": "cover image exists",
+    "ok": true,
+    "detail": "output/thumb-9x16.png"
+   },
+   {
+    "platform": "instagram",
+    "name": "9:16 video",
+    "ok": true,
+    "detail": "1080x1920"
+   },
+   {
+    "platform": "instagram",
+    "name": "length 3-90 s (Meta Reels API)",
+    "ok": true,
+    "detail": "64 s"
+   },
+   {
+    "platform": "instagram",
+    "name": "AI disclosure in caption + is_ai_generated flag",
+    "ok": true,
+    "detail": "API sets is_ai_generated=true"
+   },
+   {
+    "platform": "instagram",
+    "name": "handle for follow CTA",
+    "ok": true,
+    "detail": "@kathaaya.stories"
+   }
+  ]
+ },
+ "facebook": {
+  "type": "REELS",
+  "description": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?\n\nशरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया। यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nयह कथा श्रीमद्भागवत पुराण के अनुसार है; अन्य ग्रंथों में इसका वर्णन अलग ढंग से मिलता है। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n\n#kathaaya #sharadpurnima #raaslila",
+  "hashtags": [
+   "#kathaaya",
+   "#sharadpurnima",
+   "#raaslila"
+  ],
+  "cover": "output/thumb-9x16.png",
+  "checks": [
+   {
+    "platform": "facebook",
+    "name": "reel specs (Meta): 9:16, >= 540x960, 24-60 fps",
+    "ok": true,
+    "detail": "1080x1920 @ 24 fps"
+   },
+   {
+    "platform": "facebook",
+    "name": "audio AAC, 48 kHz, stereo or mono ok (Meta: AAC LC 48 kHz)",
+    "ok": true,
+    "detail": "aac 48000 Hz 2ch"
+   },
+   {
+    "platform": "facebook",
+    "name": "description present, <= 2200 chars",
+    "ok": true,
+    "detail": "661"
+   },
+   {
+    "platform": "facebook",
+    "name": "hashtags <= 5",
+    "ok": true,
+    "detail": "3"
+   },
+   {
+    "platform": "facebook",
+    "name": "reel length 3-90 s (Meta Reels API)",
+    "ok": true,
+    "detail": "64 s"
+   },
+   {
+    "platform": "facebook",
+    "name": "file size <= 1000 MB",
+    "ok": true,
+    "detail": "98 MB"
+   },
+   {
+    "platform": "facebook",
+    "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
+    "ok": false,
+    "detail": "none"
+   }
+  ]
+ },
+ "monetizationNotes": [
+  "Original content only: no reposts, no other creators' clips, no third-party watermarks (Meta deprioritises duplicative content; reported in secondary sources, verify in Monetization Manager).",
+  "Eligibility figures vary by source (5k-10k followers, watch-minute thresholds): check your Page in Meta Business Suite > Monetization before relying on any number.",
+  "A copyright check runs on every Reel upload (API: GET /{video-id}?fields=copyright_check_information). Our audio is procedural and our voice is synthetic; the paintings are public domain/CC0.",
+  "Long videos (Page videos) and Reels are separate surfaces: post the 16:9 film as a Page video and cut vertical Reels from it; in-stream ads are reported (secondary source) to need >= 3 minutes."
+ ]
+}

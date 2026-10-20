@@ -1,0 +1,167 @@
+{
+ "slug": "sharad-purnima-raas-leela",
+ "format": "short",
+ "title": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?",
+ "thumb": "रास लीला का रहस्य?",
+ "thumbSupport": "",
+ "thumbStyle": "purple",
+ "thumbArt": null,
+ "thumbScene": "Krishna playing a flute under a full autumn moon by a river, multiple glowing silhouettes of himself dancing in a circle with gopis, soft divine light, devotional and cosmic mood",
+ "source_line": "स्रोत: श्रीमद्भागवत पुराण, दशम स्कंध, अध्याय २९-३३ (रास पंचाध्यायी)",
+ "tradition": "यह कथा श्रीमद्भागवत पुराण के अनुसार है; अन्य ग्रंथों में इसका वर्णन अलग ढंग से मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#sharadpurnima",
+  "#raaslila",
+  "#krishna"
+ ],
+ "look": {
+  "mood": "devotion",
+  "grade": "dream",
+  "captions": "karaoke",
+  "transition": "dissolve",
+  "motif": "mandala",
+  "bg": "nebula"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "शरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया।",
+   "intent": "hook",
+   "accent": "खिंचा",
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "यमुना के तट पर खड़े होकर कृष्ण ने अपनी बाँसुरी उठाई।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "स्वर इतना मोहक था कि वृंदावन की गोपियाँ अपना घर-गृहस्थी छोड़कर दौड़ी चली आईं।",
+   "intent": null,
+   "accent": "मोहक",
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "कृष्ण ने उन्हें रोकने की कोशिश की, कहा कि लौट जाओ, अपने कर्तव्य निभाओ।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "पर गोपियों का प्रेम इतना गहरा था कि वे पीछे नहीं हटीं।",
+   "intent": "tense",
+   "accent": "प्रेम",
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "तब कृष्ण ने अपनी लीला रची, और एक साथ कई रूप धारण कर लिए।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "हर गोपी के साथ एक कृष्ण नाचे, हर एक को लगा कि कृष्ण केवल उसी के साथ हैं।",
+   "intent": "awe",
+   "accent": "उसी",
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "यह वृत्ताकार नृत्य रास कहलाया, जो यमुना तट पर रातभर चलता रहा।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "पर जब कुछ गोपियाँ गर्व से भर गईं, कृष्ण अचानक अंतर्ध्यान हो गए।",
+   "intent": "tense",
+   "accent": "अंतर्ध्यान",
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "विरह में गोपियाँ उन्हें हर वन में ढूँढने लगीं, हर पेड़ से उनका पता पूछती रहीं।",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "अंत में कृष्ण लौट आए, और विनम्र हुई गोपियों के साथ फिर रास रचाया।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "भागवत पुराण कहता है, यह प्रेम शरीर का नहीं, आत्मा का था।",
+   "intent": "reflective",
+   "accent": "आत्मा",
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "आज भी शरद पूर्णिमा की रात यह कथा वृंदावन के कण-कण में गूँजती है।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "Krishna playing flute alone by moonlit riverbank",
+   "action": "standing, eyes closed, playing flute",
+   "setting": "Yamuna riverbank, full moon",
+   "lighting": "soft silver moonlight, gentle glow"
+  },
+  "4": {
+   "subject": "group of gopis running through forest at night",
+   "action": "running joyfully toward the music",
+   "setting": "moonlit Vrindavan forest path",
+   "lighting": "cool moonlight, warm distant glow"
+  },
+  "7": {
+   "subject": "Krishna multiplying into many glowing forms",
+   "action": "raising arms, light radiating outward",
+   "setting": "riverside under full moon",
+   "lighting": "golden divine light bursting outward"
+  },
+  "8": {
+   "subject": "circle of Krishna figures dancing with gopis",
+   "action": "dancing in a wide circle",
+   "setting": "riverbank under full moon, flowers scattered",
+   "lighting": "warm golden glow, soft moonlight"
+  },
+  "10": {
+   "subject": "empty riverbank where Krishna vanished",
+   "action": "gopis looking around confused",
+   "setting": "moonlit empty riverside",
+   "lighting": "moonlight dimming, shadows lengthening"
+  },
+  "12": {
+   "subject": "Krishna returned dancing again with gopis",
+   "action": "joyful reunion dance",
+   "setting": "riverbank under full moon",
+   "lighting": "radiant golden and silver light"
+  }
+ },
+ "visuals": {},
+ "claims": [],
+ "chapters": []
+}

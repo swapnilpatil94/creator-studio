@@ -1,0 +1,156 @@
+[
+ {
+  "id": "v001",
+  "text": "शरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "यमुना के तट पर खड़े होकर कृष्ण ने अपनी बाँसुरी उठाई।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "स्वर इतना मोहक था कि वृंदावन की गोपियाँ अपना घर-गृहस्थी छोड़कर दौड़ी चली आईं।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "कृष्ण ने उन्हें रोकने की कोशिश की, कहा कि लौट जाओ, अपने कर्तव्य निभाओ।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "पर गोपियों का प्रेम इतना गहरा था कि वे पीछे नहीं हटीं।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "तब कृष्ण ने अपनी लीला रची, और एक साथ कई रूप धारण कर लिए।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "हर गोपी के साथ एक कृष्ण नाचे, हर एक को लगा कि कृष्ण केवल उसी के साथ हैं।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "यह वृत्ताकार नृत्य रास कहलाया, जो यमुना तट पर रातभर चलता रहा।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "पर जब कुछ गोपियाँ गर्व से भर गईं, कृष्ण अचानक अंतर्ध्यान हो गए।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "विरह में गोपियाँ उन्हें हर वन में ढूँढने लगीं, हर पेड़ से उनका पता पूछती रहीं।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "अंत में कृष्ण लौट आए, और विनम्र हुई गोपियों के साथ फिर रास रचाया।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "भागवत पुराण कहता है, यह प्रेम शरीर का नहीं, आत्मा का था।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "आज भी शरद पूर्णिमा की रात यह कथा वृंदावन के कण-कण में गूँजती है।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ }
+]

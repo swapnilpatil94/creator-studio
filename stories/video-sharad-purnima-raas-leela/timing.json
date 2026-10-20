@@ -1,0 +1,86 @@
+{
+ "item": "sharad-purnima-raas-leela.video",
+ "started": "2026-10-20T06:05:53.526Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792476353526,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792476353527,
+   "detail": "14 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792476353528,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792476353528,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792476353529,
+   "detail": "4 new paintings of 12 scenes",
+   "seconds": 173
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792476526554,
+   "detail": "12 of 12 scenes layered, 0 picture beats fell back to type",
+   "seconds": 30
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792476556931,
+   "detail": "7 camera clips (2 rendered, 5 cached)",
+   "seconds": 4
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792476560837,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792476560902,
+   "detail": "QA all passed",
+   "seconds": 109
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792476669829,
+   "detail": "purple palette, \"रास लीला का रहस्य?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792476669830,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 316,
+ "ended": "2026-10-20T06:11:10.162Z"
+}

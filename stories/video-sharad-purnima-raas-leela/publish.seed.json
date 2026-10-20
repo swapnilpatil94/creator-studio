@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "शरद पूर्णिमा की रात कृष्ण ने ऐसी बाँसुरी बजाई, कि पूरा वृंदावन खिंचा चला आया। यह रात साधारण नहीं, शरद की पूर्णिमा थी, जब चाँद अपनी पूरी चाँदनी बिखेरता है।",
+ "disclaimer": "यह कथा श्रीमद्भागवत पुराण के अनुसार है; अन्य ग्रंथों में इसका वर्णन अलग ढंग से मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#sharadpurnima",
+  "#raaslila",
+  "#krishna"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "शरद|पूर्णिमा|रात",
+ "extraTags": [
+  "sharadpurnima",
+  "raaslila",
+  "krishna",
+  "पूर्णिमा",
+  "कृष्ण",
+  "अनंत",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "रास लीला का रहस्य?"
+   ],
+   "support": []
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "शरद पूर्णिमा की"
+ ],
+ "primaryKeyword": "शरद",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "शरद पूर्णिमा की रात कृष्ण अनंत रूप में क्यों नाचे?"
+ }
+}

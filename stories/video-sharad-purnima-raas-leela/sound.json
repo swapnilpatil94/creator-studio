@@ -1,0 +1,208 @@
+{
+ "lead": 0.6,
+ "root": 98,
+ "moods": [
+  {
+   "t": -1,
+   "mood": "wonder"
+  },
+  {
+   "t": 18.68,
+   "mood": "dread"
+  },
+  {
+   "t": 47.59,
+   "mood": "release"
+  }
+ ],
+ "silences": [
+  {
+   "t": 47.21,
+   "dur": 0.34,
+   "fade": 0.12,
+   "why": "before the reveal"
+  },
+  {
+   "t": 56.73,
+   "dur": 0.26,
+   "fade": 0.1,
+   "why": "before the call to action"
+  }
+ ],
+ "cues": [
+  {
+   "t": -0.6,
+   "type": "heartbeat",
+   "dur": 5.44,
+   "bpm0": 58,
+   "bpm1": 86,
+   "level": -27
+  },
+  {
+   "t": 4.58,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 9.67,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 13.12,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 18.48,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 18.58,
+   "type": "riser",
+   "dur": 1.2,
+   "level": -28
+  },
+  {
+   "t": 22.71,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 25.96,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 29.72,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 34.9,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 35,
+   "type": "riser",
+   "dur": 1.2,
+   "level": -28
+  },
+  {
+   "t": 38.75,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 42.83,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 47.3,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 47.64,
+   "type": "impact",
+   "level": -17,
+   "tail": 2.2
+  },
+  {
+   "t": 47.7,
+   "type": "bell",
+   "freq": 587,
+   "level": -23,
+   "tail": 3
+  },
+  {
+   "t": 52.55,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 52.85,
+   "type": "sparkle",
+   "dur": 3,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 52.95,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 56.73,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 57.03,
+   "type": "sparkle",
+   "dur": 3,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 57.13,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 57.13,
+   "type": "bell",
+   "freq": 528,
+   "level": -24,
+   "tail": 3.5
+  }
+ ]
+}

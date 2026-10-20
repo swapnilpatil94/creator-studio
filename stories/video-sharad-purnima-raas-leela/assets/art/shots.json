@@ -1,0 +1,86 @@
+{
+ "s1": {
+  "subject": "Krishna playing flute alone by moonlit riverbank",
+  "action": "standing, eyes closed, playing flute",
+  "setting": "Yamuna riverbank, full moon",
+  "lighting": "soft silver moonlight, gentle glow",
+  "medium": "photoreal"
+ },
+ "s4": {
+  "subject": "group of gopis running through forest at night",
+  "action": "running joyfully toward the music",
+  "setting": "moonlit Vrindavan forest path",
+  "lighting": "cool moonlight, warm distant glow",
+  "medium": "photoreal"
+ },
+ "s7": {
+  "subject": "Krishna multiplying into many glowing forms",
+  "action": "raising arms, light radiating outward",
+  "setting": "riverside under full moon",
+  "lighting": "golden divine light bursting outward",
+  "medium": "photoreal"
+ },
+ "s8": {
+  "subject": "circle of Krishna figures dancing with gopis",
+  "action": "dancing in a wide circle",
+  "setting": "riverbank under full moon, flowers scattered",
+  "lighting": "warm golden glow, soft moonlight",
+  "medium": "photoreal"
+ },
+ "s10": {
+  "subject": "empty riverbank where Krishna vanished",
+  "action": "gopis looking around confused",
+  "setting": "moonlit empty riverside",
+  "lighting": "moonlight dimming, shadows lengthening",
+  "medium": "photoreal"
+ },
+ "s12": {
+  "subject": "Krishna returned dancing again with gopis",
+  "action": "joyful reunion dance",
+  "setting": "riverbank under full moon",
+  "lighting": "radiant golden and silver light",
+  "medium": "photoreal"
+ },
+ "scene1": {
+  "subject": "a huge glowing full autumn moon over a river",
+  "action": "rising alone above the still water",
+  "setting": "Yamuna river, Vrindavan, open night sky",
+  "lighting": "brilliant silver moonlight on water",
+  "medium": "photoreal"
+ },
+ "scene2": {
+  "subject": "young Indian god Krishna, dark skin, peacock feather crown",
+  "action": "standing, lifting flute to his lips",
+  "setting": "Yamuna riverbank at dusk",
+  "lighting": "warm golden hour glow",
+  "medium": "photoreal"
+ },
+ "scene3": {
+  "subject": "young Krishna gently facing a group of women",
+  "action": "raising one hand asking them to go back home",
+  "setting": "moonlit Yamuna riverbank, forest edge",
+  "lighting": "soft silver moonlight, gentle glow",
+  "medium": "photoreal"
+ },
+ "scene5": {
+  "subject": "Devotees in traditional attire",
+  "action": "dancing in a circular formation",
+  "setting": "river Yamuna shore under stars",
+  "lighting": "soft moonlight",
+  "medium": "photoreal"
+ },
+ "scene6": {
+  "subject": "a group of gopi women, worried expressions",
+  "action": "searching alone, looking around trees anxiously",
+  "setting": "dense moonlit forest, mist",
+  "lighting": "cool moonlight filtering through leaves",
+  "medium": "photoreal"
+ },
+ "scene8": {
+  "subject": "Lord Krishna playing flute",
+  "action": "dancing with gopis in a circle",
+  "setting": "moonlit courtyard of Vrindavan",
+  "lighting": "soft moonlight",
+  "medium": "photoreal"
+ }
+}

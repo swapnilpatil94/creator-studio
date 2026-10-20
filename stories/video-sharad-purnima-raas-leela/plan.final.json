@@ -1,0 +1,175 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "s1",
+   "move": "pull",
+   "label": "बाँसुरी के स्वर",
+   "behind": "शरद पूर्णिमा की रात",
+   "fx": "drone_push_in",
+   "clip": "v001",
+   "clip_n": 148
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "चाँद की चाँदनी",
+   "behind": "शरद की पूर्णिमा",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 137
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "यमुना के तट पर",
+   "reveal": "circle",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "cinema",
+  "params": {
+   "lines": [
+    "गोपियाँ दौड़ी आईं",
+    "घर *छोड़* दिया"
+   ],
+   "style": "wave",
+   "img": "s4",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "pull",
+   "label": "कृष्ण की बात",
+   "reveal": "diamond",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "गोपियों का प्रेम",
+    "*गहरा* था"
+   ],
+   "style": "spring"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "fx": "eye_glow_energy_pulse",
+   "img": "s7",
+   "move": "push"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "fx",
+  "params": {
+   "img": "s8",
+   "move": "pull",
+   "fx": "2.5d_parallax",
+   "clip": "v008",
+   "clip_n": 139
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_orbit_180",
+   "img": "scene5",
+   "move": "pull",
+   "clip": "v009",
+   "clip_n": 107
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "fx",
+  "params": {
+   "img": "s10",
+   "move": "pull",
+   "fx": "crane_up_reveal",
+   "sticker": "sparkle",
+   "clip": "v010",
+   "clip_n": 112
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "cinema",
+  "params": {
+   "img": "scene6",
+   "move": "panL",
+   "label": "गोपियों के भाव",
+   "behind": "विरह के दुख में",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v011",
+   "clip_n": 122
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_pull_out_reveal",
+   "img": "s12",
+   "label": "कृष्ण के आगमन का दृश्य",
+   "move": "panL",
+   "clip": "v012",
+   "clip_n": 141
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "quote",
+  "params": {
+   "text": "यह प्रेम शरीर का नहीं, आत्मा का था",
+   "by": "भागवत पुराण"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "pull",
+   "label": "शरद पूर्णिमा की रात",
+   "behind": "वृंदावन की कथा",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch1"
+ }
+]
