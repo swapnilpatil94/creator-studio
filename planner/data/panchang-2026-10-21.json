@@ -1,0 +1,377 @@
+{
+ "source": "computed: hindu-panchang (sunrise tithi, New Delhi reference) -- not scraped",
+ "generated_at": "2026-10-20T19:06:28.020Z",
+ "from": "2026-10-21",
+ "days": 90,
+ "count": 28,
+ "events": [
+  {
+   "id": "tulsi-vivah-2026-10-22",
+   "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+   "date": "2026-10-22",
+   "tithi": "Ekadasi",
+   "masa": "Karttika",
+   "tags": [
+    "tulsi-vivah",
+    "ekadashi",
+    "vishnu",
+    "kartik"
+   ],
+   "mood": "shrap-prem"
+  },
+  {
+   "id": "shani-2026-10-24",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-10-24",
+   "tithi": "Trayodasi",
+   "masa": "Karttika",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "kartik-purnima-2026-10-26",
+   "name": "Kartik Purnima (Dev Diwali)",
+   "date": "2026-10-26",
+   "tithi": "Punnami",
+   "masa": "Karttika",
+   "tags": [
+    "kartik-purnima",
+    "dev-diwali",
+    "shiva",
+    "vishnu"
+   ],
+   "mood": "ananda"
+  },
+  {
+   "id": "shani-2026-10-31",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-10-31",
+   "tithi": "Shasti",
+   "masa": "Karttika",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2026-11-05",
+   "name": "Krishna Ekadashi",
+   "date": "2026-11-05",
+   "tithi": "Ekadasi",
+   "masa": "Karttika",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "shani-2026-11-07",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-07",
+   "tithi": "Trayodasi",
+   "masa": "Karttika",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "masik-shivratri-2026-11-08",
+   "name": "Masik Shivratri",
+   "date": "2026-11-08",
+   "tithi": "Chaturdasi",
+   "masa": "Karttika",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ],
+   "mood": "rahasya"
+  },
+  {
+   "id": "amavasya-2026-11-09",
+   "name": "Amavasya (No Moon)",
+   "date": "2026-11-09",
+   "tithi": "Amavasya",
+   "masa": "Karttika",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "mood": "bhay"
+  },
+  {
+   "id": "shani-2026-11-14",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-14",
+   "tithi": "Panchami",
+   "masa": "Karttika",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "vaikuntha-ekadashi-2026-11-20",
+   "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
+   "date": "2026-11-20",
+   "tithi": "Ekadasi",
+   "masa": "Margasira",
+   "tags": [
+    "vaikuntha-ekadashi",
+    "gita-jayanti",
+    "ekadashi",
+    "krishna",
+    "moksha"
+   ],
+   "mood": "gyan"
+  },
+  {
+   "id": "shani-2026-11-21",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-21",
+   "tithi": "Dvadasi",
+   "masa": "Margasira",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "purnima-2026-11-24",
+   "name": "Purnima (Full Moon)",
+   "date": "2026-11-24",
+   "tithi": "Punnami",
+   "masa": "Margasira",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ],
+   "mood": "ananda"
+  },
+  {
+   "id": "shani-2026-11-28",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-28",
+   "tithi": "Panchami",
+   "masa": "Margasira",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2026-12-04",
+   "name": "Krishna Ekadashi",
+   "date": "2026-12-04",
+   "tithi": "Ekadasi",
+   "masa": "Margasira",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "shani-2026-12-05",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-12-05",
+   "tithi": "Dvadasi",
+   "masa": "Margasira",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "masik-shivratri-2026-12-07",
+   "name": "Masik Shivratri",
+   "date": "2026-12-07",
+   "tithi": "Chaturdasi",
+   "masa": "Margasira",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ],
+   "mood": "rahasya"
+  },
+  {
+   "id": "amavasya-2026-12-08",
+   "name": "Amavasya (No Moon)",
+   "date": "2026-12-08",
+   "tithi": "Amavasya",
+   "masa": "Margasira",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "mood": "bhay"
+  },
+  {
+   "id": "shani-2026-12-12",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-12-12",
+   "tithi": "Thadiya",
+   "masa": "Margasira",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "shani-2026-12-19",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-12-19",
+   "tithi": "Dasami",
+   "masa": "Pausa",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2026-12-20",
+   "name": "Shukla Ekadashi",
+   "date": "2026-12-20",
+   "tithi": "Ekadasi",
+   "masa": "Pausa",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "purnima-2026-12-23",
+   "name": "Purnima (Full Moon)",
+   "date": "2026-12-23",
+   "tithi": "Punnami",
+   "masa": "Pausa",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ],
+   "mood": "ananda"
+  },
+  {
+   "id": "shani-2026-12-26",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-12-26",
+   "tithi": "Thadiya",
+   "masa": "Pausa",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "shani-2027-01-02",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-01-02",
+   "tithi": "Dasami",
+   "masa": "Pausa",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2027-01-03",
+   "name": "Krishna Ekadashi",
+   "date": "2027-01-03",
+   "tithi": "Ekadasi",
+   "masa": "Pausa",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "masik-shivratri-2027-01-06",
+   "name": "Masik Shivratri",
+   "date": "2027-01-06",
+   "tithi": "Chaturdasi",
+   "masa": "Pausa",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ],
+   "mood": "rahasya"
+  },
+  {
+   "id": "amavasya-2027-01-07",
+   "name": "Amavasya (No Moon)",
+   "date": "2027-01-07",
+   "tithi": "Amavasya",
+   "masa": "Pausa",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "mood": "bhay"
+  },
+  {
+   "id": "shani-2027-01-09",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-01-09",
+   "tithi": "Vidhiya",
+   "masa": "Pausa",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "shani-2027-01-16",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-01-16",
+   "tithi": "Ashtami",
+   "masa": "Magha",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  }
+ ]
+}

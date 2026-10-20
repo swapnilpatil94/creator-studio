@@ -1,0 +1,309 @@
+{
+ "generated_at": "2026-10-20T19:07:51.858Z",
+ "method": "autocomplete = live Google Suggest (free, no key). trendingNow = today's top Google Trends (per-country RSS, free, no key) titles matching this topic's keywords -- expect this to be empty most days, these are evergreen topics not daily-spike news.",
+ "topics": [
+  {
+   "id": "garuda-purana",
+   "seeds": [
+    "गरुड़ पुराण",
+    "garuda purana"
+   ],
+   "suggestions": {
+    "hi": [
+     "गरुड़ पुराण अध्याय 1",
+     "गरुड़ पुराण",
+     "गरुड़ पुराण कथा",
+     "गरुड़ पुराण pdf",
+     "गरुड़ पुराण के रहस्य",
+     "गरुड़ पुराण अध्याय 2",
+     "गरुड़ पुराण अध्याय 1 pdf",
+     "गरुड़ पुराण के टोटके",
+     "गरुड़ पुराण सुनाइए",
+     "गरुड़ पुराण अध्याय 3"
+    ],
+    "en": [
+     "garuda purana",
+     "garuda puranam",
+     "garuda purana pdf",
+     "garuda puranam telugu pdf",
+     "garuda puranam in english pdf",
+     "garuda puranam telugu",
+     "garuda purana original book",
+     "garuda purana english",
+     "garuda purana pdf in hindi",
+     "garuda purana punishments"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "narak-yamraj",
+   "seeds": [
+    "नरक की कहानी",
+    "यमराज",
+    "yamraj narak"
+   ],
+   "suggestions": {
+    "hi": [
+     "नरक की कहानी",
+     "स्वर्ग नरक की कहानी",
+     "नरक चतुर्दशी की कहानी",
+     "नरक चौदस की कहानी",
+     "नरक लोक की कहानी",
+     "नरक सड़क की कहानी",
+     "राजा नरक की कहानी",
+     "नरक चतुर्थी की कहानी"
+    ],
+    "en": [
+     "yamraj narak",
+     "yamraj narak lok",
+     "what is yamraj",
+     "yamraj in english",
+     "is dharmaraj and yamraj same"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "naglok",
+   "seeds": [
+    "नागलोक",
+    "naglok"
+   ],
+   "suggestions": {
+    "hi": [
+     "नागलोक कहा है",
+     "नागलोक",
+     "नागलोक नागपुर",
+     "नागलोक का इतिहास",
+     "नागलोक का राजा कौन है",
+     "नागलोक की कहानी",
+     "नागलोक के पर्यायवाची",
+     "नागलोक कुकू टीवी",
+     "नागलोक की नौटंकी",
+     "नागलोक साउथ मूवी"
+    ],
+    "en": [
+     "nagloko ka rin naman lyrics",
+     "naglok",
+     "nagloko in english",
+     "nagaloka",
+     "nagaloka bali",
+     "nagaloka bali cave",
+     "nagaloka cave",
+     "nagalokam",
+     "nagaloka bali indonesia",
+     "nagaloka buddhist center"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "kailash",
+   "seeds": [
+    "कैलाश पर्वत रहस्य",
+    "mount kailash mystery"
+   ],
+   "suggestions": {
+    "hi": [
+     "कैलाश पर्वत रहस्य",
+     "कैलाश पर्वत का रहस्य वीडियो",
+     "कैलाश पर्वत का रहस्य क्या है",
+     "कैलाश पर्वत का रहस्य इन हिंदी",
+     "कैलाश पर्वत की रहस्यमई बातें",
+     "कैलाश पर्वत का रहस्य दिखाइए",
+     "कैलाश पर्वत का रहस्य kaha hai",
+     "कैलाश पर्वत की रहस्यमय कहानी",
+     "कैलाश पर्वत के 12 रहस्य",
+     "कैलाश पर्वत पर क्या रहस्य है"
+    ],
+    "en": [
+     "mount kailash mystery",
+     "mount kailash mystery movie",
+     "mount kailash mystery reddit",
+     "mount kailash mystery nasa",
+     "mount kailash mystery bbc",
+     "mount kailash mystery wikipedia",
+     "mount kailash mystery in hindi",
+     "mount kailash mystery in tamil",
+     "mount kailash mystery youtube",
+     "mount kailash mystery in telugu"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "kalki",
+   "seeds": [
+    "कल्कि अवतार",
+    "kalki avatar"
+   ],
+   "suggestions": {
+    "hi": [
+     "कल्कि अवतार की तारीख",
+     "कल्कि अवतार कब होगा",
+     "कल्कि अवतार",
+     "कल्कि अवतार की आयु कितनी होगी",
+     "कल्कि अवतार फोटो",
+     "कल्कि अवतार कहा होगा",
+     "कल्कि अवतार कब होगा हिंदी",
+     "कल्कि अवतार कब होगा 2026",
+     "कल्कि अवतार क्या है",
+     "कल्कि अवतार की पहचान"
+    ],
+    "en": [
+     "kalki avatar",
+     "kalki avatar of vishnu",
+     "kalki avatar the last airbender",
+     "kalki avatar story",
+     "kalki avatar aang",
+     "kalki avatar movie",
+     "kalki avatar is already on earth",
+     "kalki avatar birth date",
+     "kalki avatar images",
+     "kalki avatar prophecy"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "afterlife",
+   "seeds": [
+    "मृत्यु के बाद क्या होता है",
+    "hindu afterlife"
+   ],
+   "suggestions": {
+    "hi": [
+     "मृत्यु के बाद क्या होता है",
+     "मृत्यु के बाद क्या होता है गरुड़ पुराण",
+     "मृत्यु के बाद क्या होता है ओशो",
+     "मृत्यु के बाद क्या होता है गीता",
+     "मृत्यु के बाद क्या होता है बताइए",
+     "मृत्यु के बाद क्या होता है इंसान का",
+     "मृत्यु के बाद क्या होता है आत्मा का",
+     "अकाल मृत्यु के बाद क्या होता है",
+     "मृत्यु के तुरंत बाद क्या होता है",
+     "मानव मृत्यु के बाद क्या होता है"
+    ],
+    "en": [
+     "hindu afterlife",
+     "hindu afterlife beliefs",
+     "hindu afterlife name",
+     "hindu afterlife explained",
+     "hindu afterlife god",
+     "hindu afterlife realms",
+     "hindu afterlife theory",
+     "hindu afterlife called",
+     "hinduism afterlife",
+     "hinduism afterlife reincarnation"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "greek-vs-hindu",
+   "seeds": [
+    "greek vs hindu mythology",
+    "ग्रीक और हिंदू पौराणिक कथा"
+   ],
+   "suggestions": {
+    "hi": [
+     "greek vs hindu mythology",
+     "greek vs hindu mythology which is older",
+     "greek mythology vs hindu mythology similarities",
+     "norse mythology vs greek mythology vs hindu mythology"
+    ],
+    "en": []
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  },
+  {
+   "id": "egyptian",
+   "seeds": [
+    "egyptian mythology hindi",
+    "मिस्र की पौराणिक कथा"
+   ],
+   "suggestions": {
+    "hi": [
+     "egyptian mythology in hindi"
+    ],
+    "en": [
+     "मिस्र की पौराणिक कथा"
+    ]
+   },
+   "trending": {
+    "IN": {
+     "label": "India",
+     "trendingNow": []
+    },
+    "US": {
+     "label": "Worldwide (proxied via US feed -- no real worldwide feed exists)",
+     "trendingNow": []
+    }
+   }
+  }
+ ]
+}
