@@ -1,12 +1,17 @@
 // Builds FLUX.2 Klein prompts from structured shot specs (skill: flux-prompting-kathaaya) and lints them against the official rules.
 // shot = { subject, action, medium: "photoreal"|"ravi-varma"|"pahari"|"ink-parchment", setting, lighting, mood, colors: [{object, hex}], composition }
 // house default is "photoreal" (owner spec 2026-10-19: no painted look, sharp and real); the painted mediums stay available for anyone who asks for them explicitly.
+// 2026-10-20 (owner: faces/eyes distorted, wants director-grade cinematography): added lens/lighting specificity and anatomy-correctness language to the positive
+// prompt (works even at the distilled model's default CFG, where the negative prompt below is silently ignored -- Draw Things only reads it when cfg > 1).
 export const MEDIUM = {
-  photoreal: "photoreal cinematic still, shot on a full-frame camera with a prime lens, hyperreal skin and fabric texture, natural shallow depth of field, filmic color grade, subtle film grain",
+  photoreal: "photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes",
   "ravi-varma": "oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent",
   pahari: "Pahari miniature painting, flat jewel colours, delicate linework, reverent",
   "ink-parchment": "black ink brushwork on warm aged parchment, restrained crimson and gold accents, dramatic chiaroscuro",
 };
+// Shared quality negative prompt: only takes effect when the caller also passes cfg > 1 (see tools/flux/klein.mjs) -- costs about 2x the time, used by default
+// for the main art pipeline and thumbnails now (2026-10-20), not just opt-in. Pillar-specific additions (e.g. ethnicity/culture for Indian mythology) are the caller's own.
+export const NEG_QUALITY = "deformed face, asymmetric eyes, cross-eyed, lazy eye, malformed eyes, extra fingers, fused fingers, deformed hands, extra limbs, missing limbs, mutated anatomy, blurry face, distorted features, incorrect anatomy, disfigured, duplicate face, long neck, plastic skin, waxy skin, cartoon, anime, illustration, painting, 3d render, cgi render, watermark, text, signature, logo, low quality, low resolution";
 const COMPOSITION = { carousel: "subject in the upper two thirds of a vertical frame, calm darker lower third", hero: "wide horizontal composition with the subject left of centre and open space on the right", thumbnail: "bold single focal point, simple background, large readable shapes" };
 // Words that make an image model paint lettering or speech bubbles (found: "speaks a solemn warning" produced a page of gibberish text). They are rewritten into purely visual wording before every generation.
 const TEXTY = [[/\b(speaks?|says?|declares?|proclaims?)\s+(a\s+|an\s+)?(solemn\s+)?(warning|curse|vow|command)\b/gi, "raises a solemn hand"], [/\b(speaks?|speaking|says?|saying|tells?|telling|declares?|proclaims?)\b/gi, "gestures gravely"], [/\b(inscription|inscribed|letters?|writing|written|scroll|book|banner|signboard|sign|caption|text)\b/gi, "ornament"]];
@@ -18,4 +23,5 @@ function build0(shot, use = "carousel") {
   return parts.map(p => p.trim().replace(/[.,;]+$/, "")).join(", ") + ".";
 }
 const NEG = /\b(no|not|without|don't|never|avoid|nothing|none)\b/i;
-export function lint(prompt) { const w = prompt.split(/\s+/).length, out = []; if (w < 35) out.push(`too short (${w} words): Klein does no prompt upsampling, be descriptive (40-70)`); if (w > 80) out.push(`too long (${w} words): front-load the subject and trim (40-70)`); const m = NEG.exec(prompt); if (m) out.push(`negative phrasing "${m[0]}": describe what you want instead (e.g. "deserted riverbank")`); if (/[ऀ-ॿ]/.test(prompt)) out.push("Devanagari in the prompt: Klein renders it badly, add text in the overlay"); if (/#[0-9a-f]{6}/i.test(prompt) && !/(in color|color) #/i.test(prompt)) out.push("hex colour not attached to an object"); return out; }
+// ceiling raised from 80 to 95 (2026-10-20) when MEDIUM.photoreal grew by ~16 words for cinematography/anatomy language
+export function lint(prompt) { const w = prompt.split(/\s+/).length, out = []; if (w < 35) out.push(`too short (${w} words): Klein does no prompt upsampling, be descriptive (40-95)`); if (w > 95) out.push(`too long (${w} words): front-load the subject and trim (40-95)`); const m = NEG.exec(prompt); if (m) out.push(`negative phrasing "${m[0]}": describe what you want instead (e.g. "deserted riverbank")`); if (/[ऀ-ॿ]/.test(prompt)) out.push("Devanagari in the prompt: Klein renders it badly, add text in the overlay"); if (/#[0-9a-f]{6}/i.test(prompt) && !/(in color|color) #/i.test(prompt)) out.push("hex colour not attached to an object"); return out; }
