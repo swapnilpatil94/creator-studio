@@ -3,6 +3,21 @@
 // house default is "photoreal" (owner spec 2026-10-19: no painted look, sharp and real); the painted mediums stay available for anyone who asks for them explicitly.
 // 2026-10-20 (owner: faces/eyes distorted, wants director-grade cinematography): added lens/lighting specificity and anatomy-correctness language to the positive
 // prompt (works even at the distilled model's default CFG, where the negative prompt below is silently ignored -- Draw Things only reads it when cfg > 1).
+// Style families (owner 2026-10-22, pasted "Universal Mythology Visual Engine"): the house style stays (cinematic painting + photoreal texture, oil-paint texture hides small
+// anatomy errors); a family adds ONE short phrase that shifts the look to suit the scene. Each phrase is at most 9 words so the 95-word painter budget holds.
+export const FAMILY = {
+  ravi: "Raja Ravi Varma oil painting glow, jewelled ornaments, soft radiant skin",
+  epic: "epic cinematic battle painting, dust, sparks, dynamic low angle",
+  luxury: "luxury editorial romance, silk drapery, warm rose gold light",
+  fresco: "ancient temple fresco texture, cracked plaster, earthy mineral pigments",
+  pattachitra: "Pattachitra folk painting, bold outlines, flat rich colour, no frame",
+  comic: "classic Indian illustrated storybook painting, clear outlines, bright friendly colour",
+  noir: "noir devotional chiaroscuro, deep shadow, single ember light",
+  floating: "floating celestial realm, clouds below, golden radiance, luminous sky" };
+export const FAMILIES = ["auto", ...Object.keys(FAMILY)];
+// automatic choice from the scene's own narration + spec (first match wins, most specific first), then the film's mood; null = plain house style
+const FAMILY_RULES = [["floating", /स्वर्ग|वैकुंठ|कैलाश|क्षीरसागर|देवलोक|heaven|vaikuntha|kailash|celestial/i], ["noir", /नरक|यमराज|यमदूत|पाप|कर्म|दंड|सज़ा|सजा|तड़प|yam|hell|sin|karma|punish/i], ["luxury", /प्रेम|राधा|रास|श्रृंगार|शृंगार|विवाह|स्वयंवर|love|romance|radha/i], ["epic", /युद्ध|रण|वध|संहार|तांडव|शस्त्र|battle|war|slay|combat/i], ["fresco", /रहस्य|नाग|पाताल|प्राचीन|गुफा|secret|serpent|naga|ancient|cave/i], ["comic", /बालक|बच्चे|बच्चा|परिवार|माँ|माता|child|children|family/i], ["pattachitra", /लीला|सीख|उपदेश|नीति|moral|leela|lesson/i], ["ravi", /भगवान|देवी|शिव|विष्णु|राम|सीता|कृष्ण|दुर्गा|लक्ष्मी|हनुमान|god|goddess|deity/i]];
+export function pickFamily(text = "", mood = "") { for (const [f, re] of FAMILY_RULES) if (re.test(text)) return f; return { war: "epic", devotion: "ravi", sorrow: "noir", cosmic: "floating" }[mood] || null; }
 export const MEDIUM = {
   // 2026-10-22 (owner: "Cinematic Painting + Photorealistic Texture -- THE WINNER", reference supplied): the strict
   // default for every video now -- a painted cinematic matte-painting environment (soft brushwork, visible canvas
@@ -19,9 +34,9 @@ export const MEDIUM = {
 // for the main art pipeline and thumbnails now (2026-10-20), not just opt-in. Pillar-specific additions (e.g. ethnicity/culture for Indian mythology) are the caller's own.
 // "painting" itself is no longer negative (2026-10-22: the default medium is now a deliberate cinematic
 // matte-painting background) -- flat/cheap renderings still are: cartoon, anime, flat illustration, 3D/CGI render.
-export const NEG_QUALITY = "deformed face, asymmetric eyes, cross-eyed, lazy eye, malformed eyes, extra fingers, fused fingers, deformed hands, extra limbs, missing limbs, mutated anatomy, blurry face, distorted features, incorrect anatomy, disfigured, duplicate face, floating disembodied head, long neck, looking at camera, posed portrait, street photography, documentary photograph, present-day people, plastic skin, waxy skin, cartoon, anime, flat illustration, 3d render, cgi render, watermark, text, signature, logo, low quality, low resolution";
+export const NEG_QUALITY = "deformed face, asymmetric eyes, cross-eyed, lazy eye, malformed eyes, extra fingers, fused fingers, deformed hands, extra limbs, missing limbs, mutated anatomy, blurry face, distorted features, incorrect anatomy, disfigured, duplicate face, floating disembodied head, long neck, crowd of identical faces, extra arms, extra hands, extra fingers, fused bodies, tangled limbs, merged people, duplicated people, looking at camera, posed portrait, street photography, documentary photograph, present-day people, plastic skin, waxy skin, cartoon, anime, flat illustration, 3d render, cgi render, watermark, text, signature, logo, low quality, low resolution";
 // shot scale for film coverage (wide / close / insert cut from one moment); replaces the default composition line when a shot sets `framing`
-export const FRAMING = { wide: "wide establishing shot, figures small in a vast environment", close: "close-up of face and shoulders, eyes looking off-frame, shallow depth of field", extreme: "extreme close-up of the eyes filling the frame, shallow depth of field", insert: "insert close-up of hands and the key object, shallow depth of field", detail: "close detail shot of the subject, shallow depth of field" };
+export const FRAMING = { wide: "wide establishing shot, figures small in a vast environment", medium: "medium shot of the subject centered, generous empty dark space above the head, shallow depth of field", close: "close-up of face and shoulders, eyes looking off-frame, shallow depth of field", extreme: "extreme close-up of the eyes filling the frame, shallow depth of field", insert: "insert close-up of the key object only, hands out of frame, shallow depth of field", profile: "profile view of the head and shoulders, half the face in shadow, hands out of frame, shallow depth of field", detail: "close detail shot of the subject, shallow depth of field" };
 const COMPOSITION = { carousel: "subject in the upper two thirds of a vertical frame, calm darker lower third", hero: "wide horizontal composition with the subject left of centre and open space on the right", thumbnail: "bold single focal point, simple background, large readable shapes" };
 // Words that make an image model paint lettering or speech bubbles (found: "speaks a solemn warning" produced a page of gibberish text). They are rewritten into purely visual wording before every generation.
 const TEXTY = [[/\b(speaks?|says?|declares?|proclaims?)\s+(a\s+|an\s+)?(solemn\s+)?(warning|curse|vow|command)\b/gi, "raises a solemn hand"], [/\b(speaks?|speaking|says?|saying|tells?|telling|declares?|proclaims?)\b/gi, "gestures gravely"], [/\b(inscription|inscribed|letters?|writing|written|scroll|book|banner|signboard|sign|caption|text)\b/gi, "ornament"]];
@@ -29,7 +44,7 @@ export const sanitize = p => { let o = p; for (const [re, to] of TEXTY) o = o.re
 export function build(shot, use = "carousel") { return sanitize(build0(shot, use)).replace(/[.]*$/, "") + ", a purely visual image, every surface plain and unmarked."; }
 function build0(shot, use = "carousel") {
   if (shot.prompt) { const p = shot.prompt.trim(); return shot.raw ? p : p.replace(/[.,;]+$/, "") + ", " + MEDIUM[shot.medium || "photoreal"] + ", " + COMPOSITION[use] + "."; }   // pasted prose prompt from a frontier model: we append our style and composition unless raw
-  const parts = [(shot.framing && FRAMING[shot.framing] ? FRAMING[shot.framing].split(",")[0] + " of " : "") + (shot.subject || ""), shot.action, MEDIUM[shot.medium || "photoreal"], shot.setting, shot.lighting, shot.mood, ...(shot.colors || []).map(c => `${c.object} in color ${c.hex}`), FRAMING[shot.framing] || shot.composition || COMPOSITION[use]].filter(Boolean);
+  const parts = [(shot.framing && FRAMING[shot.framing] ? FRAMING[shot.framing].split(",")[0] + " of " : "") + (shot.subject || ""), shot.action, (shot.family && FAMILY[shot.family] && (shot.medium || "photoreal") === "photoreal" ? "epic mythological film still, cinematic oil painting, photorealistic texture, dramatic volumetric light" : MEDIUM[shot.medium || "photoreal"]), FAMILY[shot.family] || null, shot.setting, shot.lighting, shot.mood, ...(shot.colors || []).map(c => `${c.object} in color ${c.hex}`), FRAMING[shot.framing] || shot.composition || COMPOSITION[use]].filter(Boolean);
   return parts.map(p => p.trim().replace(/[.,;]+$/, "")).join(", ") + ".";
 }
 const NEG = /\b(no|not|without|don't|never|avoid|nothing|none)\b/i;
