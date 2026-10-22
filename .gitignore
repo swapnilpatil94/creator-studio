@@ -38,3 +38,4 @@ stories/reel-*/narration/voice/*.wav
 planner/data/monthly/
 planner/data/outliers-monthly-*
 planner/data/outliers-kathaaya-*
+audio/.venv-veena/

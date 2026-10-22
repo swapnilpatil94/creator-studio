@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np, soundfile as sf
 from common import ROOT, log
 import textprep, director, postprocess
-from model import Voice, trim
+from model import Voice as ChatterboxVoice, trim
 SR = 24000; CACHE = ROOT / "audio" / "cache" / "takes"
 def rms_db(y): return 20 * np.log10(np.sqrt(np.mean(y ** 2)) + 1e-9)
 def atempo(y, f):
@@ -62,9 +62,12 @@ def align(wav, segs):
         res = whisperx.align([dict(start=s["start_seconds"], end=s["end_seconds"], text=s["text"])], model, meta, audio, "cpu", return_char_alignments=False)
         s["words"] = [dict(word=w["word"], start=round(float(w["start"]), 3), end=round(float(w["end"]), 3), score=round(float(w.get("score", 0)), 3)) for a in res["segments"] for w in a.get("words", []) if "start" in w and "end" in w]
     return segs
+VEENA_TEMPO_CORRECTION = 0.82   # measured 2026-10-22: Veena's native rate ran ~22% faster than Chatterbox's designed pace for the same beats (raurava-narak: 46.9s vs 57.0s for identical text) -- the per-beat emotion tempos in intents.json were tuned against Chatterbox's own rate, so Veena needs this baseline correction on top of them, not instead of them. Revisit if later measurement shows a different ratio.
 def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voice=None):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8")); out = sd / "narration" / "voice"; out.mkdir(parents=True, exist_ok=True)
-    prof = director.PROFILE; post = post or prof["post"]; tempo_scale = tempo_scale if tempo_scale is not None else prof.get("tempo_scale", 1.0); plans = director.plan(beats, tempo_scale=tempo_scale); voice = voice or Voice()
+    prof = director.PROFILE; post = post or prof["post"]; tempo_scale = tempo_scale if tempo_scale is not None else prof.get("tempo_scale", 1.0)
+    if getattr(voice, "variant", None) == "veena": tempo_scale *= VEENA_TEMPO_CORRECTION
+    plans = director.plan(beats, tempo_scale=tempo_scale); voice = voice or ChatterboxVoice()
     chunks, segs, phr, t = [], {}, [], 0.0
     order = {b["id"]: i for i, b in enumerate(beats)}; silent = [b for b in beats if b.get("silent") and not b.get("text", "").strip()]; done_silent = set()
     def silences_before(idx):
@@ -95,4 +98,13 @@ def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voic
     return out
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("--post", default=None); ap.add_argument("--tempo-scale", type=float, default=None); ap.add_argument("--no-align", action="store_true")
-    a = ap.parse_args(); print(run(a.story, a.post, a.tempo_scale, do_align=not a.no_align))
+    ap.add_argument("--engine", default="chatterbox", choices=["chatterbox", "veena"], help="chatterbox clones a reference voice; veena uses one of its 4 built-in Hindi/English voices (no cloning, no per-phrase emotion control yet)")
+    ap.add_argument("--reference", default=None, help="chatterbox only: WAV clip to clone the voice from (zero-shot cloning via audio_prompt_path); omit to use the active/default reference")
+    ap.add_argument("--speaker", default="maitri", choices=["kavya", "agastya", "maitri", "vinaya"], help="veena only: the model's own speaker-token conditioning is unreliable (documented upstream, confirmed here 2026-10-22) -- maitri is the one speaker that has come out consistent in testing and community reports, so it is the default; the others are not reliably different voices")
+    a = ap.parse_args()
+    if a.engine == "veena":
+        from model_veena import Voice as VeenaVoice
+        v = VeenaVoice(speaker=a.speaker)
+    else:
+        v = ChatterboxVoice(reference=a.reference) if a.reference else None
+    print(run(a.story, a.post, a.tempo_scale, do_align=not a.no_align, voice=v))

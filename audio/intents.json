@@ -2,7 +2,7 @@
  "_note": "One narration per film (no variants/candidates). Chatterbox's only reliable emotional control is `exaggeration` (sweep: audio/experiments/sweep/results.json, n=1 per setting vs a 4-seed noise floor; 0.8+ is unstable, repetition_penalty < 2 truncates). Emotional flow therefore = per-phrase exaggeration + post tempo (ffmpeg atempo, not a model control) + loudness + designed pauses. Reels pace: target 3.1-3.6 words/s.",
  "profile": {
   "name": "kathaaya-reels-v2",
-  "post": "warm",
+  "post": "broadcast",
   "room_tone_dbfs": -62,
   "target_words_per_s": [
    3.1,

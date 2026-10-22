@@ -8,6 +8,9 @@ CHAINS = {
   "off": None,
   "light": "highpass=f=70,deesser=i=0.25:m=0.5:f=0.5,loudnorm=I={lufs}:TP={tp}:LRA=11",
   "warm": "highpass=f=70,equalizer=f=150:t=q:w=0.8:g=1.5,equalizer=f=3000:t=q:w=1.2:g=1.2,deesser=i=0.25:m=0.5:f=0.5,acompressor=threshold=-22dB:ratio=1.8:attack=25:release=250:makeup=1,loudnorm=I={lufs}:TP={tp}:LRA=11",
+  # 2026-10-22 (owner: "the audio should be professional voiceover sounding"): documentary/trailer narrator chain -- de-mud at 320 Hz, chest warmth, 4 kHz presence, gentle air,
+  # de-ess, two-stage compression (levelling then peak control), light harmonic exciter for the TTS's band-limited top, limiter. Measured on Veena narration: top band 15 dB under the mids.
+  "broadcast": "highpass=f=85,lowshelf=f=140:g=2.5,equalizer=f=320:t=q:w=1.1:g=-2.5,equalizer=f=4200:t=q:w=1.0:g=2.5,highshelf=f=8500:g=1.5,deesser=i=0.4:m=0.5:f=0.45,acompressor=threshold=-24dB:ratio=3:attack=6:release=90:makeup=3:knee=4,acompressor=threshold=-14dB:ratio=6:attack=2:release=50:knee=2,aexciter=amount=0.8:drive=4:freq=6500:blend=0,alimiter=limit=0.89:attack=3:release=40,loudnorm=I={lufs}:TP={tp}:LRA=7",
   "medium": "highpass=f=75,afftdn=nr=8:nf=-45:tn=0,deesser=i=0.3:m=0.5:f=0.5,equalizer=f=3200:t=q:w=1.2:g=1.2,acompressor=threshold=-24dB:ratio=2:attack=20:release=200:makeup=2,loudnorm=I={lufs}:TP={tp}:LRA=9",
 }
 def process(src, dst, preset="light", lufs=-18, tp=-2.0):

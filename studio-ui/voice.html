@@ -12,16 +12,36 @@ pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:
 <h1>Narration <a class="mut" href="/dash">← Dashboard</a></h1>
 <div class="mut">One narration per film: energetic, punchy, reels-paced, with the emotion moving phrase by phrase. The model's only reliable emotional control is <b>exaggeration</b>; tempo, loudness and pauses are post edits. No variants to pick: a take that fails objective checks (pace, clipping, dead air) is regenerated automatically.</div>
 <div class="card"><select id="story"></select> <span id="state" class="mut"></span><div style="margin-top:10px"><label class="mut">Pace nudge (0.90-1.10 × the emotion tempos; 1.00 = designed)</label><br><input id="ts" type="number" step="0.01" min="0.9" max="1.1" value="1" style="width:90px"> <button id="gen">Regenerate narration</button> <span class="mut">≈ 5-8 minutes; cached phrases are instant</span></div></div>
+<div class="card"><b>Voice model</b>
+ <div style="margin-top:10px"><label class="mut">Engine</label><br><select id="engine" onchange="engineChanged()">
+  <option value="veena" selected>Veena (4 built-in Hindi/English voices, Apache 2.0, no cloning, no per-phrase emotion control yet)</option>
+  <option value="chatterbox">Chatterbox (clones any reference clip, per-phrase emotion)</option>
+ </select></div>
+ <div id="veenaBlock" style="margin-top:10px"><label class="mut">Voice — the model's own speaker-token locking is unreliable (documented issue, confirmed here 2026-10-22): the name is a request, not a guarantee. Generate and listen before trusting which one you get.</label><br><select id="veenaSpeaker">
+  <option value="maitri" selected>Maitri (default: the one speaker that comes out consistent)</option>
+  <option value="agastya">Agastya (requested; verify by ear)</option>
+  <option value="vinaya">Vinaya (requested; verify by ear)</option>
+  <option value="kavya">Kavya (requested; verify by ear)</option>
+ </select></div>
+ <div id="chatterboxBlock" style="margin-top:10px;display:none">
+  <span class="mut">Chatterbox clones a voice zero-shot from a short reference clip (no training). A clean 10-30s sample of one speaker, little background noise or music, clones most reliably.</span>
+  <div style="margin-top:10px"><label class="mut">Clone from</label><br><select id="voiceRef" style="min-width:260px"><option value="">Default narrator (hindi-male-narrator.wav)</option></select></div>
+  <div style="margin-top:10px"><label class="mut">Add a reference clip</label><br><input id="refName" placeholder="label, e.g. owner-voice" style="width:200px"> <input id="refFile" type="file" accept="audio/*"> <button id="refUpload">Upload</button> <span id="refMsg" class="mut"></span></div>
+ </div>
+</div>
 <div class="card" id="play"></div><div class="card" id="flow"></div><div class="card"><b>Job log</b><pre id="log">idle</pre></div>
 <script>
 const $=id=>document.getElementById(id),j=async(u,o)=>{const r=await fetch(u,o);const d=await r.json();if(!r.ok)throw new Error(d.error||r.status);return d};let S=[];
 const g=(o,k)=>k.split('.').reduce((a,p)=>a==null?a:a[p],o);
-async function load(){S=await j('/api/voice/stories');const c=$('story').value;$('story').innerHTML=S.map(s=>`<option ${s.id===c?'selected':''}>${s.id}</option>`).join('');show()}
+async function load(){S=await j('/api/voice/stories');const c=$('story').value;$('story').innerHTML=S.map(s=>`<option ${s.id===c?'selected':''}>${s.id}</option>`).join('');await loadRefs();show()}
+async function loadRefs(){try{const r=await j('/api/voice/reference/list');const cur=$('voiceRef').value;$('voiceRef').innerHTML='<option value="">Default narrator (hindi-male-narrator.wav)</option>'+r.voices.map(v=>`<option value="${v.file}" ${v.file===cur?'selected':''}>${v.file} (${v.kb} KB)</option>`).join('')}catch(e){}}
+function engineChanged(){const v=$('engine').value==='veena';$('veenaBlock').style.display=v?'':'none';$('chatterboxBlock').style.display=v?'none':''}
+$('refUpload').onclick=async()=>{const f=$('refFile').files[0],name=$('refName').value.trim();if(!f)return alert('choose an audio file first');if(!name)return alert('give it a short label (e.g. owner-voice)');$('refMsg').textContent='uploading…';try{const ext=(f.name.split('.').pop()||'wav').toLowerCase();const buf=await f.arrayBuffer();const r=await j('/api/voice/reference/upload?name='+encodeURIComponent(name)+'&ext='+encodeURIComponent(ext),{method:'POST',body:buf});$('refMsg').textContent='saved '+r.saved+' ('+r.kb+' KB)';await loadRefs();$('voiceRef').value=r.saved}catch(e){$('refMsg').textContent='upload failed: '+e.message}};
 function show(){const s=S.find(x=>x.id===$('story').value);if(!s)return;const m=s.meta,a=s.analysis;$('state').textContent=s.hasVoice?'film uses: '+(s.active||''):'no narration yet';
  $('play').innerHTML=s.hasVoice?`<b>Narration</b> <span class="chip">${m.profile}</span> <span class="chip">${m.words} words · ${m.duration_s}s · ${m.speech_words_per_s} words/s while speaking</span>${a?`<span class="chip">${a.lufs_integrated} LUFS</span><span class="chip">true peak ${a.true_peak_dbfs} dBFS</span><span class="chip">worst beat vs median ${g(a,'beat_loudness.max_dev_from_median_db')} dB</span><span class="chip">${a.click_events} clicks</span>`:''}<audio controls preload="metadata" src="/voice/file/${s.id}/voice/narration.wav?x=${Date.now()}"></audio>${s.original?`<div class="mut" style="margin-top:8px">Original raw.wav for reference</div><audio controls preload="none" src="/voice/file/${s.id}/raw.wav"></audio>`:''}<div class="mut" style="margin-top:6px">Metrics are measurements (loudness, pace, pauses, clicks), not a judgement of emotion: listen to decide.</div>`:'<div class="mut">Press Regenerate.</div>';
  $('flow').innerHTML=s.hasVoice?`<b>Emotional flow</b> <span class="mut">(one row per phrase: emotion → exaggeration, tempo, pace)</span><table><tr><th>phrase</th><th>emotion</th><th>exaggeration</th><th>tempo</th><th>words/s</th><th>tries</th><th></th></tr>${m.phrases.map(p=>`<tr><td>${p.text}</td><td><span class="chip">${p.emotion}</span></td><td>${p.exaggeration}</td><td>×${p.tempo}</td><td>${p.words_per_s}</td><td>${p.tries}</td><td><span class="bar" style="width:${Math.round(p.exaggeration*120)}px"></span></td></tr>`).join('')}</table>`:''}
 $('story').onchange=show;
-$('gen').onclick=async()=>{try{await j('/api/voice/synth',{method:'POST',body:JSON.stringify({story:$('story').value,tempoScale:+$('ts').value})});poll()}catch(e){alert(e.message)}};
+$('gen').onclick=async()=>{try{const body={story:$('story').value,tempoScale:+$('ts').value};if($('engine').value==='veena'){body.engine='veena';body.speaker=$('veenaSpeaker').value}else{body.voiceRef=$('voiceRef').value||undefined}await j('/api/voice/synth',{method:'POST',body:JSON.stringify(body)});poll()}catch(e){alert(e.message)}};
 let tm;function poll(){clearInterval(tm);tm=setInterval(async()=>{const jb=await j('/api/job');if(!jb)return;$('log').textContent=jb.lines.filter(l=>!/it\/s|%\|/.test(l)).slice(-40).join('\n');if(jb.status!=='running'){clearInterval(tm);load()}},1500)}
 load().catch(e=>$('log').textContent=e.message);
 </script></body></html>

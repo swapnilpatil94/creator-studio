@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scenes</title>
+<style>
+:root{--bg:#0e0f12;--fg:#e8e6e1;--mut:#8b8f98;--card:#17191e;--line:#2a2d35;--acc:#e8b04a;--bad:#d9573f;--ok:#5fae6e}
+@media (prefers-color-scheme:light){:root{--bg:#f6f5f1;--fg:#1b1c1f;--mut:#666b75;--card:#fff;--line:#dcdad2;--acc:#a66a00;--bad:#b23a24;--ok:#2f7a40}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;padding:16px;max-width:1040px;margin-inline:auto}
+h1{font-size:20px;margin:0 0 4px}a{color:var(--acc)}.mut{color:var(--mut);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+select,input,textarea,button{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+button{cursor:pointer;background:var(--acc);color:#111;border:0;font-weight:600}button:disabled{opacity:.5;cursor:default}
+button.s{background:var(--bg);color:var(--fg);border:1px solid var(--line);font-weight:500}
+textarea{width:100%;resize:vertical}
+.chip{display:inline-block;font-size:11px;padding:2px 9px;border:1px solid var(--line);border-radius:99px;color:var(--mut);margin:0 4px 4px 0}
+.chip.gold{color:var(--acc);border-color:var(--acc)}.chip.bad{color:var(--bad);border-color:var(--bad)}.chip.ok{color:var(--ok);border-color:var(--ok)}
+.beat{display:flex;gap:12px;align-items:flex-start}
+.beat img{border-radius:8px;border:1px solid var(--line);object-fit:cover;background:#000}
+.beat .body{flex:1;min-width:0}
+.beat .text{font-size:15px;margin:2px 0 6px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.field label{display:block;font-size:12px;color:var(--mut);margin-bottom:2px}
+.editbox{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;max-height:180px;overflow:auto;font-size:12px;white-space:pre-wrap}
+</style></head><body>
+<h1>Scenes <a class="mut" href="/hub">← Hub</a></h1>
+<div class="mut">Edit any beat's picture prompt or visual choice and rebuild — only that one picture is redone (if its prompt changed) and the rest of the video (voice, script, every other beat's picture) is reused. A short video takes about 2-4 minutes to rebuild this way; a long one more, mostly the final render.</div>
+<div class="card">
+ <div class="row"><select id="story" style="min-width:320px"></select>
+  <button id="rebuild" class="s" disabled>Rebuild (resume: only what changed)</button>
+  <span id="state" class="mut"></span></div>
+ <div id="joblog" style="display:none;margin-top:8px"><pre id="log">idle</pre></div>
+</div>
+<div id="beats"></div>
+<script>
+const $=id=>document.getElementById(id),j=async(u,o)=>{const r=await fetch(u,o);const d=await r.json();if(!r.ok)throw new Error(d.error||r.status);return d};
+let OPT=null, DATA=null, EDIT=null;
+async function boot(){OPT=await j('/api/hub/scenes/options');const r=await j('/api/hub/scenes/stories');$('story').innerHTML=r.stories.map(s=>`<option value="${s.name}">${s.name} — ${esc(s.title||'')} (${s.format})</option>`).join('')||'<option>no pack-based videos yet</option>';$('story').onchange=load;$('rebuild').onclick=rebuild;if(r.stories.length)load()}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+async function load(){const name=$('story').value;if(!name)return;$('beats').innerHTML='<div class="mut">loading…</div>';try{DATA=await j('/api/hub/scenes/list?story='+encodeURIComponent(name));render()}catch(e){$('beats').innerHTML='<div class="chip bad">'+esc(e.message)+'</div>'}}
+function fmtT(s){if(s==null)return'';const m=Math.floor(s/60),ss=Math.round(s%60);return m+':'+String(ss).padStart(2,'0')}
+function render(){
+ const portrait=DATA.format!=='long';
+ $('state').textContent=DATA.beats.length+' beats';
+ $('rebuild').disabled=false;
+ $('beats').innerHTML=DATA.beats.map(b=>{
+  const edited=EDIT===b.n;
+  const paramsLine=Object.entries(b.params||{}).filter(([k])=>!['lines','img','clip','clip_n'].includes(k)).map(([k,v])=>k+'='+(Array.isArray(v)?v.join(' '):v)).join(' ');
+  const img=b.image?`<img src="${b.image}?x=${Date.now()%100000}" width="${portrait?90:160}" height="${portrait?160:90}">`:`<div class="mut" style="width:${portrait?90:160}px;height:${portrait?160:90}px;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;text-align:center">${b.comp==='kinetic'||b.comp==='quote'||b.comp==='chapter'?'text beat<br>no picture':'no picture yet'}</div>`;
+  return `<div class="card beat" data-n="${b.n}">
+   ${img}
+   <div class="body">
+    <div class="row">
+     <span class="chip gold">#${b.n}</span>
+     ${b.chapter?`<span class="chip">${esc(b.chapter)}</span>`:''}
+     <span class="chip">${esc(b.intent||'auto')}</span>
+     <span class="chip">${fmtT(b.start)}</span>
+     <span class="chip gold">${esc(b.comp||'?')}</span>
+     ${b.ownerScene?'<span class="chip ok">your picture prompt</span>':''}
+     ${b.ownerVisual?'<span class="chip ok">your visual choice</span>':''}
+    </div>
+    <div class="text">${esc(b.text)}</div>
+    <div class="mut" style="font-size:12px">${esc(paramsLine)}</div>
+    <div class="row" style="margin-top:6px"><button class="s" onclick="toggleEdit(${b.n})">${edited?'Close':'Edit this beat'}</button></div>
+    ${edited?editForm(b):''}
+   </div>
+  </div>`;
+ }).join('');
+}
+function editForm(b){
+ const s=b.ownerScene||{subject:'',action:'',setting:'',lighting:''};
+ const v=b.ownerVisual||{};
+ const curComp=v.comp||b.comp||'cinema', curFx=v.fx||(b.params&&b.params.fx)||'', curMove=v.move||(b.params&&b.params.move)||'', curBg=v.bg||(b.params&&b.params.bg)||'', curText=v.text||'', curStyle=v.style||(b.params&&b.params.style)||'', curLabel=v.label||(b.params&&b.params.label)||'', curReveal=v.reveal||(b.params&&b.params.reveal)||'';
+ const compOpts=Object.keys(OPT.comps).map(k=>`<option value="${k}" ${k===curComp?'selected':''}>${k}</option>`).join('');
+ const fxOpts='<option value="">(none)</option>'+OPT.effects.map(k=>`<option value="${k}" ${k===curFx?'selected':''}>${k}</option>`).join('');
+ const styleOpts='<option value="">(auto)</option>'+OPT.kineticStyles.map(k=>`<option value="${k}" ${k===curStyle?'selected':''}>${k}</option>`).join('');
+ const bgOpts='<option value="">(auto)</option>'+OPT.backdrops.map(k=>`<option value="${k}" ${k===curBg?'selected':''}>${k}</option>`).join('');
+ const moveOpts='<option value="">(auto)</option>'+OPT.moves.map(k=>`<option value="${k}" ${k===curMove?'selected':''}>${k}</option>`).join('');
+ const revealOpts='<option value="">(none)</option>'+OPT.reveals.map(k=>`<option value="${k}" ${k===curReveal?'selected':''}>${k}</option>`).join('');
+ return `<div class="editbox">
+  <b>Your picture prompt</b> <span class="mut">(English, short phrases; leave all blank to let the system auto-generate or keep reusing the current picture)</span>
+  <div class="grid2" style="margin-top:6px">
+   <div class="field"><label>subject</label><input id="f_subject_${b.n}" value="${esc(s.subject)}" placeholder="e.g. glowing human soul"></div>
+   <div class="field"><label>action</label><input id="f_action_${b.n}" value="${esc(s.action)}" placeholder="e.g. rising from physical body"></div>
+   <div class="field"><label>setting</label><input id="f_setting_${b.n}" value="${esc(s.setting)}" placeholder="e.g. dark forest clearing"></div>
+   <div class="field"><label>lighting</label><input id="f_lighting_${b.n}" value="${esc(s.lighting)}" placeholder="e.g. dim silver moonlight"></div>
+  </div>
+  <div class="row" style="margin-top:6px"><button class="s" onclick="saveScene(${b.n})">Save picture prompt</button>${b.ownerScene?`<button class="s" onclick="clearScene(${b.n})">Clear (let the system decide)</button>`:''}</div>
+
+  <div style="margin-top:14px"><b>Your visual choice</b> <span class="mut">(overrides the director for this one beat; leave fields as shown to keep the current choice)</span></div>
+  <div class="grid2" style="margin-top:6px">
+   <div class="field"><label>component</label><select id="f_comp_${b.n}">${compOpts}</select></div>
+   <div class="field"><label>effect (fx)</label><select id="f_fx_${b.n}">${fxOpts}</select></div>
+   <div class="field"><label>kinetic style</label><select id="f_style_${b.n}">${styleOpts}</select></div>
+   <div class="field"><label>backdrop</label><select id="f_bg_${b.n}">${bgOpts}</select></div>
+   <div class="field"><label>camera move</label><select id="f_move_${b.n}">${moveOpts}</select></div>
+   <div class="field"><label>reveal</label><select id="f_reveal_${b.n}">${revealOpts}</select></div>
+   <div class="field"><label>on-screen text (kinetic/quote)</label><input id="f_text_${b.n}" value="${esc(curText)}" placeholder="leave blank for default"></div>
+   <div class="field"><label>caption label (cinema/fx)</label><input id="f_label_${b.n}" value="${esc(curLabel)}" placeholder="leave blank for none"></div>
+  </div>
+  <div class="row" style="margin-top:6px"><button class="s" onclick="saveVisual(${b.n})">Save visual choice</button>${b.ownerVisual?`<button class="s" onclick="clearVisual(${b.n})">Clear (let the director decide)</button>`:''}</div>
+  <div id="msg_${b.n}" class="mut" style="margin-top:6px"></div>
+ </div>`;
+}
+function toggleEdit(n){EDIT=EDIT===n?null:n;render()}
+async function saveScene(n){const g=k=>$('f_'+k+'_'+n).value.trim();const scene={subject:g('subject'),action:g('action'),setting:g('setting'),lighting:g('lighting')};if(!scene.subject||!scene.action){$('msg_'+n).innerHTML='<span class="chip bad">subject and action are required</span>';return}
+ try{const r=await j('/api/hub/scenes/edit',{method:'POST',body:JSON.stringify({story:$('story').value,n,scene})});$('msg_'+n).innerHTML='<span class="chip ok">saved'+(r.regenerateImage?' — this picture will be redone on rebuild':' — prompt unchanged, same picture kept')+'</span>';await load();EDIT=n;render()}catch(e){$('msg_'+n).innerHTML='<span class="chip bad">'+esc(e.message)+'</span>'}}
+async function clearScene(n){try{await j('/api/hub/scenes/edit',{method:'POST',body:JSON.stringify({story:$('story').value,n,scene:null})});await load();EDIT=n;render()}catch(e){alert(e.message)}}
+async function saveVisual(n){const g=k=>$('f_'+k+'_'+n).value.trim();const visual={comp:g('comp'),fx:g('fx'),style:g('style'),bg:g('bg'),move:g('move'),reveal:g('reveal'),text:g('text'),label:g('label')};
+ try{await j('/api/hub/scenes/edit',{method:'POST',body:JSON.stringify({story:$('story').value,n,visual})});$('msg_'+n).innerHTML='<span class="chip ok">saved — rebuild to see it</span>';await load();EDIT=n;render()}catch(e){$('msg_'+n).innerHTML='<span class="chip bad">'+esc(e.message)+'</span>'}}
+async function clearVisual(n){try{await j('/api/hub/scenes/edit',{method:'POST',body:JSON.stringify({story:$('story').value,n,visual:null})});await load();EDIT=n;render()}catch(e){alert(e.message)}}
+async function rebuild(){const name=$('story').value;if(!name)return;if(!confirm('Rebuild '+name+'? Stages already up to date (script, voice, and beats you did not touch) are skipped; this mainly redoes any changed picture and the final render.'))return;
+ const slug=name.replace(/^video-/,''),id=slug+'.video';$('rebuild').disabled=true;$('joblog').style.display='block';$('log').textContent='starting…';
+ try{await j('/api/hub/video/resume',{method:'POST',body:JSON.stringify({id})})}catch(e){$('log').textContent='FAILED: '+e.message;$('rebuild').disabled=false;return}
+ poll()}
+let tm;function poll(){clearInterval(tm);tm=setInterval(async()=>{try{const job=(await j('/api/hub/jobs')).jobs[0];if(!job){return}$('log').textContent=(job.log||[]).slice(-40).join('\n');if(job.status!=='running'){clearInterval(tm);$('rebuild').disabled=false;$('log').textContent+=('\n\n'+job.status.toUpperCase());if(job.status==='done')load()}}catch(e){}},2000)}
+boot().catch(e=>{$('beats').innerHTML='<div class="chip bad">'+esc(e.message)+'</div>'});
+</script></body></html>

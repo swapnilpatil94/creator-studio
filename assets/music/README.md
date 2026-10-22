@@ -1,4 +1,6 @@
-# Background music bed (optional, off until you add files)
+# Background music bed
+
+`<mood>-tanpura-drone.m4a` (devotion, sorrow, war, cosmic, river, neutral) are synthesized from scratch by `tools/reel/make-music-beds.py` (Karplus-Strong tanpura tuned to the cue bed's 98 Hz root, mood pad, heartbeat drum for war): our own work, no licence questions, loop-seamless. Curated real tracks added below sit in the same pool and are picked the same way; delete the drones if you want only curated music.
 
 Drop royalty-free instrumental tracks here, named `<mood>-<anything>.wav` or `.mp3` (e.g. `war-drums-rising.mp3`, `wonder-ambient-strings.wav`, `sorrow-piano-slow.mp3`). The mood prefix must match one used in `tools/longform/look.mjs` / `planner/outlier-config.json`'s moods: `war, cosmic, river, sorrow, devotion, neutral` (shorts) or any free word for long-form reels -- the engine matches by prefix, falls back to any file if no mood match exists.
 

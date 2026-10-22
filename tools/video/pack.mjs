@@ -4,7 +4,7 @@
 //   parsePack(text)  -> { ok, errors[], warnings[], pack }      packPrompt({topic, format, source}) -> the prompt text      savePack(pack) -> content/videos/<slug>.video.json + stories/video-<slug>/{script.txt,pack.json}
 //   applyDirections(dir) -> after the director: the owner's SCENES / VISUALS / LOOK are written into plan.json, assets/art/shots.json and look.json
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { fileURLToPath } from "node:url";
-import { CATALOG, FX_BY_INTENT } from "../longform/director.mjs"; import { EFFECTS } from "../../engine/longform/fx.js"; import { BG_NAMES } from "../../engine/longform/backdrops.js"; import { makeLook } from "../longform/look.mjs";
+import { CATALOG, FX_BY_INTENT } from "../longform/director.mjs"; import { EFFECTS } from "../../engine/longform/fx.js"; import { BG_NAMES } from "../../engine/longform/backdrops.js"; import { makeLook } from "../longform/look.mjs"; import { ensureIndian, ensureAncientEra } from "../longform/art.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } }, W = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, 1)); };
 export const WPS = 3.0;   // spoken words per second with the designed pauses (matches tools/video/script.mjs)
 export const INTENTS = { hook: "the opening question/shock (beat 1 only)", curious: "a question or a new thread opens", narrate: "plain storytelling (default)", tense: "danger, conflict, the turn", awe: "wonder, divine light, a boon", punch: "one short blow of a line (<= 6 words)", reveal: "the answer arrives", reflective: "closing thought, the last 2 beats" };
@@ -76,10 +76,15 @@ export function savePack(pack) {
 export function applyDirections(dir, log = () => {}) {
   const pack = J(path.join(dir, "pack.json")); if (!pack) return { applied: 0 }; const planF = path.join(dir, "plan.json"), plan = J(planF), beats = J(path.join(dir, "beats.json")), idOf = n => beats[n - 1] && beats[n - 1].id, byId = Object.fromEntries(plan.map(p => [p.id, p])); let applied = 0;
   const shotsF = path.join(dir, "assets/art/shots.json"), shots = J(shotsF, {});
-  for (const [n, s] of Object.entries(pack.scenes || {})) { const p = byId[idOf(+n)]; if (!p) continue; const key = "s" + n; shots[key] = { ...s, medium: "photoreal" }; const keepFx = p.params && p.params.fx; p.comp = keepFx ? "fx" : "cinema"; p.params = { ...(p.params || {}), img: key, move: (p.params && p.params.move) || "push" }; if (!keepFx) delete p.params.fx; applied++; log(`beat ${n}: owner's picture prompt -> scene ${key}`); }
+  // ensureIndian here too: the director-model path (tools/longform/art.mjs) anchors ethnicity on every
+  // AI-written shot, but an owner-pasted SCENES prompt went straight into shots.json unchecked -- a
+  // prompt like "glowing human soul | ..." with no Indian/Hindu/deity word in it rendered as a generic
+  // Western face, caught by hand on 2026-10-21 (two scenes across two videos, both from the same
+  // un-anchored subject text) before it went out.
+  for (const [n, s] of Object.entries(pack.scenes || {})) { const p = byId[idOf(+n)]; if (!p) continue; const key = "s" + n; const shot = ensureAncientEra(ensureIndian({ ...s, medium: "photoreal", src: "owner" })); if (shot.subject !== s.subject) log(`  ethnicity anchor added to owner's scene ${key}: ${shot.subject}`); if (shot.setting !== s.setting) log(`  era anchor added to owner's scene ${key}: ${shot.setting}`); shots[key] = shot; const keepFx = p.params && p.params.fx; p.comp = keepFx ? "fx" : "cinema"; p.params = { ...(p.params || {}), img: key, move: (p.params && p.params.move) || "push" }; if (!keepFx) delete p.params.fx; applied++; log(`beat ${n}: owner's picture prompt -> scene ${key}`); }
   for (const [n, v] of Object.entries(pack.visuals || {})) { const b = beats[+n - 1], p = byId[idOf(+n)]; if (!p || !b) continue; const comp = v.comp || p.comp; p.params = p.params || {};
     if (comp === "kinetic") { const acc = (pack.beats[+n - 1] || {}).accent, words = b.text.replace(/[।?!,]/g, "").split(/\s+/).filter(Boolean).slice(0, 7); let line = v.text || words.join(" "); if (acc && line.includes(acc) && !line.includes("*")) line = line.replace(acc, "*" + acc + "*"); p.comp = "kinetic"; p.params = { lines: [line], style: v.style || p.params.style || "slam", ...(v.bg ? { bg: v.bg } : {}), ...(v.mark ? { mark: v.mark } : {}) }; }
-    else if (comp === "quote") { p.comp = "quote"; p.params = { text: v.text || b.text, by: "", ...(v.bg ? { bg: v.bg } : {}) }; }
+    else if (comp === "quote") { p.comp = "quote"; p.params = { text: v.text && v.text.trim().split(/\s+/).length >= 3 ? v.text : b.text, by: "", ...(v.bg ? { bg: v.bg } : {}) }; if (v.text && v.text.trim().split(/\s+/).length < 3) log(`  beat ${n}: quote text "${v.text}" is too short to read as a quote card: the beat's own line is used`); }
     else { if (v.fx) { p.comp = "fx"; p.params.fx = v.fx; } else if (comp === "cinema") { p.comp = "cinema"; delete p.params.fx; } if (v.move) p.params.move = v.move; if (v.reveal) p.params.reveal = v.reveal; if (v.label) p.params.label = v.label; if (v.behind) p.params.behind = v.behind; }
     if (v.sticker) p.params.sticker = v.sticker; if (v.bg && p.comp !== "kinetic" && p.comp !== "quote") p.params.bg = v.bg; applied++; log(`beat ${n}: owner's visual choice ${JSON.stringify(v).slice(0, 80)}`); }
   // the accent the owner starred in kinetic beats the director chose itself
@@ -130,6 +135,15 @@ CLAIMS:   (optional; the QA gate checks them)
 - Mark ONE punch word per important line with *asterisks* (e.g. उसने *कवच* उतार दिया); the system draws a hand-made mark around it in kinetic scenes.
 - Write numbers as words (सात, सौ), never digits. No Latin letters in Hindi lines. No stats the source does not state. No mockery of faith; belief and interpretation are labelled as such.
 - Only facts from the source. Never add dialogue the source does not give.
+
+=== HOOK & SUSPENSE (craft technique, not permission to invent -- every claim still comes only from the source) ===
+- The hook is a GAP, not a statement. Naming the answer, the moral, or even the full question in line 1 closes the gap before the viewer has a reason to stay. Open it with a concrete, visual, specific detail the viewer cannot yet explain ("एक राजा ने अपना ही कवच माँग लिया -- क्यों?"), not an abstract claim ("आज हम एक रोचक कथा सुनेंगे").
+- Withhold the one piece of information the viewer most wants, and say so is being withheld ("...और जो हुआ उसने सबको चौंका दिया") rather than giving it away, then deliver it only at the structural turn -- never in the first third.
+- Escalate, do not flatline: each beat should raise the stakes, add a complication, or re-open the question slightly differently (a new "but then"), rather than restating the same tension. A curiosity gap that never widens reads as padding.
+- One open loop per chapter in a long video (CHAPTERS above): close the PREVIOUS chapter's loop in the first line of the new chapter, then open a new one before the chapter ends -- this is what keeps a 15-25 min video watched through, not just the opening hook.
+- The [reveal] intent beat should feel EARNED (it answers a question the viewer has been holding, built up over several beats), not just informational. Avoid resolving in the same line that raises the question.
+- Match the hook to what the data shows works in this niche: a visual, visceral opening beat (a feared consequence, an object, a face) outperforms an explainer framing ("आज हम जानेंगे कि...") -- see the KATHAAYA Growth Strategy doc's mood-outlier-rate findings for which emotional register (fear, mystery, remedy, avatar-story) is currently strongest.
+- This still obeys every NARRATION RULE above: a stronger hook is sharper STRUCTURE and PACING of the real facts, never an invented detail, a sharper claim than the source supports, or a cliffhanger the source does not actually resolve.
 
 === SCENES RULES (read by the picture generator) ===
 - One scene per beat that deserves its own picture (aim for a new picture every 2-3 beats; the others reuse pictures and use text scenes). Budgets are hard limits (subject<=9, action<=9, setting<=8, light<=6 words).

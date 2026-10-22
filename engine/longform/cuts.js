@@ -1,0 +1,3 @@
+// Where a beat with coverage shots is hard-cut: equal parts, each cut snapped to the nearest spoken word start (within 0.45 s, keeping shots >= 0.9 s).
+// Shared by engine/longform/core.js (the picture) and tools/reel/sound-reel.mjs (the cut's sound) so both land on the same frame.
+export function shotCuts(a, z, k, wordStarts = []) { const cuts = [a]; for (let j = 1; j < k; j++) { let c = a + (z - a) * j / k; const near = wordStarts.reduce((m, x) => Math.abs(x - c) < Math.abs(m - c) ? x : m, Infinity); if (Math.abs(near - c) < 0.45 && near - cuts[cuts.length - 1] > 0.9 && z - near > 0.9) c = near; cuts.push(c); } cuts.push(z); return cuts; }

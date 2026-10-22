@@ -33,7 +33,7 @@ def main():
     m = re.findall(r"LRA:\s+(-?[\d.]+) LU", lra); tp = re.findall(r"Peak:\s+(-?[\d.]+) dBFS", lra)
     rep["lra_lu"] = float(m[-1]) if m else None; rep["true_peak_dbfs"] = float(tp[-1]) if tp else None
     fr, hop = frames_rms_db(y); speech_db = np.percentile(fr, 90); thr = max(speech_db - 28, -62); sp = fr > thr
-    rep["noise_floor_dbfs"] = round(float(np.percentile(fr, 8)), 1); rep["crest_db"] = round(rep["peak_dbfs"] - rms_db(y[np.abs(y) > 10 ** (thr / 20)]), 1) if np.any(sp) else None
+    rep["noise_floor_dbfs"] = round(float(np.percentile(fr, 8)), 1); rep["crest_db"] = round(float(rep["peak_dbfs"] - rms_db(y[np.abs(y) > 10 ** (thr / 20)])), 1) if np.any(sp) else None
     rep["speech_ratio"] = round(float(sp.mean()), 3)
     # pauses (silent runs between speech), start/end excluded
     pauses = []; i = 0; first = int(np.argmax(sp)); last = len(sp) - 1 - int(np.argmax(sp[::-1]))
@@ -58,7 +58,7 @@ def main():
             t0, t1 = s["start_seconds"], s["end_seconds"]; seg = y[int(t0 * sr):int(t1 * sr)]; f0m = np.zeros(len(f0), bool); f0m[int(t0 / fh):int(t1 / fh)] = True; msk = f0m & voiced
             w = len(s.get("words") or s["text"].split()); st = semitone_stats(f0, msk); sfr, _ = frames_rms_db(seg) if len(seg) > 1200 else (np.array([rms_db(seg)]), 0)
             beats.append(dict(id=s["beat_id"], start=round(t0, 2), end=round(t1, 2), words=w, words_per_s=round(w / max(0.1, t1 - t0), 2), chars_per_s=round(len(re.sub(r"\s", "", s["text"])) / max(0.1, t1 - t0), 1),
-                              rms_dbfs=round(rms_db(seg[np.abs(seg) > 10 ** (thr / 20)]) if np.any(np.abs(seg) > 10 ** (thr / 20)) else -90, 1), peak_dbfs=round(20 * np.log10(np.max(np.abs(seg)) + 1e-12), 1), f0_mean_hz=None if st["mean_hz"] is None else round(st["mean_hz"], 1), f0_std_st=None if st["std_st"] is None else round(st["std_st"], 2), f0_range_st=None if st["range_st"] is None else round(st["range_st"], 2), energy_std_db=round(float(np.std(sfr[sfr > thr])) if np.any(sfr > thr) else 0, 2)))
+                              rms_dbfs=round(float(rms_db(seg[np.abs(seg) > 10 ** (thr / 20)])) if np.any(np.abs(seg) > 10 ** (thr / 20)) else -90, 1), peak_dbfs=round(float(20 * np.log10(np.max(np.abs(seg)) + 1e-12)), 1), f0_mean_hz=None if st["mean_hz"] is None else round(st["mean_hz"], 1), f0_std_st=None if st["std_st"] is None else round(st["std_st"], 2), f0_range_st=None if st["range_st"] is None else round(st["range_st"], 2), energy_std_db=round(float(np.std(sfr[sfr > thr])) if np.any(sfr > thr) else 0, 2)))
         rep["beats"] = beats; r = np.array([b["rms_dbfs"] for b in beats]); rep["beat_loudness"] = dict(std_db=round(float(np.std(r)), 2), max_dev_from_median_db=round(float(np.max(np.abs(r - np.median(r)))), 2))
         rep["rate"] = dict(mean_words_per_s=round(sum(b["words"] for b in beats) / sum(b["end"] - b["start"] for b in beats), 2), fastest=max(b["words_per_s"] for b in beats), slowest=min(b["words_per_s"] for b in beats))
         rep["pitch_dynamics"] = dict(mean_f0_std_st=round(float(np.mean([b["f0_std_st"] for b in beats if b["f0_std_st"] is not None])), 2), mean_f0_range_st=round(float(np.mean([b["f0_range_st"] for b in beats if b["f0_range_st"] is not None])), 2), between_beat_f0_spread_st=round(float(np.std([12 * np.log2(b["f0_mean_hz"] / np.median([x["f0_mean_hz"] for x in beats if x["f0_mean_hz"]])) for b in beats if b["f0_mean_hz"]])), 2))

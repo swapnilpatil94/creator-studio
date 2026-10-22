@@ -14,7 +14,18 @@ const html = path.join(build, "index.html"), mp4 = path.join(out, cfg.name + ".m
 if (!fs.existsSync(ovFile)) fs.writeFileSync(ovFile, "{}");
 const stateFile = path.join(out, "pipeline-state.json"), state = fs.existsSync(stateFile) ? JSON.parse(fs.readFileSync(stateFile, "utf8")) : {};
 const sha = (...files) => crypto.createHash("sha256").update(files.map(f => fs.existsSync(f) ? fs.readFileSync(f) : "").join("|")).digest("hex").slice(0, 16);
+// scene.js imports art/layer files by path, but its own text never changes when an image at that same path is
+// regenerated (e.g. an ethnicity fix that re-renders assets/art/s1.jpg in place) -- the build fingerprint must
+// therefore also cover those binaries, or a regenerated image never triggers a rebuild and the stale bundle
+// (and the baked-in opening poster frame drawn from it) keeps shipping the old picture. Content is too slow to
+// hash for every build check, so this walks path+size+mtime instead -- enough to catch an in-place regeneration.
+const sigDir = (d, skip = []) => { if (!fs.existsSync(d)) return ""; const out = []; const walk = p => { for (const e of fs.readdirSync(p, { withFileTypes: true })) { if (skip.includes(e.name)) continue; const f = path.join(p, e.name); if (e.isDirectory()) walk(f); else { const st = fs.statSync(f); out.push(f + ":" + st.size + ":" + st.mtimeMs); } } }; walk(d); return out.sort().join("|"); };
 const libFiles = fs.readdirSync(here).filter(f => f.endsWith(".js") || f.endsWith(".json") || f.endsWith(".mjs")).map(f => path.join(here, f));
+// esbuild (build.mjs) bundles scene.js's WHOLE import graph into build/index.html, which reaches well past this
+// folder's own files -- most of all engine/longform/core.js, the actual renderer every longform story uses. The
+// old fingerprint only ever covered dot-cinema/*.{js,json,mjs}, so a fix to core.js (e.g. the poster-text bug
+// below) silently kept shipping the pre-fix bundle to every story whose build/index.html already existed.
+const engineSig = sigDir(engine, ["node_modules", ".git"]);
 const ev = (stage, status, detail = "") => console.log("@@stage " + stage + " " + status + " " + detail);
 const segs = JSON.parse(fs.readFileSync(P(cfg.segments), "utf8")), narrDur = segs.duration_seconds, sceneDur = narrDur + lead + (cfg.tail ?? 1.9);
 function run(stage, cmd, args, cwd) { ev(stage, "running"); const r = spawnSync(cmd, args, { cwd, encoding: "utf8", maxBuffer: 1 << 28 }); fs.writeFileSync(path.join(out, stage + ".log"), (r.stdout || "") + (r.stderr || "")); return r; }
@@ -30,7 +41,7 @@ if (TYPE === "html") {
   const vj = JSON.parse(fs.readFileSync(path.join(out, "validate.json"), "utf8")); fs.copyFileSync(src, html); TS = (vj.stats.duration || sceneDur) / sceneDur;
   ev("validate", "ok", vj.warnings + " warnings auto-handled; scene " + (vj.stats.duration || "?") + "s vs film " + sceneDur.toFixed(1) + "s" + (Math.abs(TS - 1) > 0.05 ? " (timeline time-scaled x" + TS.toFixed(2) + ")" : ""));
 } else {
-  const fp = sha(P(cfg.scene), P(cfg.segments), ...libFiles);
+  const fp = sha(P(cfg.scene), P(cfg.segments), ...libFiles) + ":" + crypto.createHash("sha256").update(sigDir(P("assets/art")) + sigDir(P("assets/layers")) + engineSig).digest("hex").slice(0, 16);
   if (force || state.build !== fp || !fs.existsSync(html)) { const r = run("build", "node", [path.join(here, "build.mjs"), P(cfg.scene), html, P(cfg.segments), cfg.format || "1080x1920", ...(cfg.overlay ? ["overlay"] : [])], here); if (r.status !== 0) fail("build", r); state.build = fp; ev("build", "ok"); } else ev("build", "cached");
 }
 // ---- 2. visual QA with automatic repair ----
