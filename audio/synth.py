@@ -98,7 +98,7 @@ def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voic
     return out
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("story"); ap.add_argument("--post", default=None); ap.add_argument("--tempo-scale", type=float, default=None); ap.add_argument("--no-align", action="store_true")
-    ap.add_argument("--engine", default="chatterbox", choices=["chatterbox", "veena"], help="chatterbox clones a reference voice; veena uses one of its 4 built-in Hindi/English voices (no cloning, no per-phrase emotion control yet)")
+    ap.add_argument("--engine", default="veena", choices=["chatterbox", "veena"], help="chatterbox clones a reference voice; veena uses one of its 4 built-in Hindi/English voices (no cloning, no per-phrase emotion control yet)")
     ap.add_argument("--reference", default=None, help="chatterbox only: WAV clip to clone the voice from (zero-shot cloning via audio_prompt_path); omit to use the active/default reference")
     ap.add_argument("--speaker", default="maitri", choices=["kavya", "agastya", "maitri", "vinaya"], help="veena only: the model's own speaker-token conditioning is unreliable (documented upstream, confirmed here 2026-10-22) -- maitri is the one speaker that has come out consistent in testing and community reports, so it is the default; the others are not reliably different voices")
     a = ap.parse_args()

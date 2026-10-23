@@ -6,14 +6,14 @@
 // Style families (owner 2026-10-22, pasted "Universal Mythology Visual Engine"): the house style stays (cinematic painting + photoreal texture, oil-paint texture hides small
 // anatomy errors); a family adds ONE short phrase that shifts the look to suit the scene. Each phrase is at most 9 words so the 95-word painter budget holds.
 export const FAMILY = {
-  ravi: "Raja Ravi Varma oil painting glow, jewelled ornaments, soft radiant skin",
-  epic: "epic cinematic battle painting, dust, sparks, dynamic low angle",
-  luxury: "luxury editorial romance, silk drapery, warm rose gold light",
-  fresco: "ancient temple fresco texture, cracked plaster, earthy mineral pigments",
-  pattachitra: "Pattachitra folk painting, bold outlines, flat rich colour, no frame",
-  comic: "classic Indian illustrated storybook painting, clear outlines, bright friendly colour",
-  noir: "noir devotional chiaroscuro, deep shadow, single ember light",
-  floating: "floating celestial realm, clouds below, golden radiance, luminous sky" };
+  ravi: "warm devotional film lighting, jewelled ornaments, radiant skin",
+  epic: "epic war film, dust and sparks, dynamic low angle",
+  luxury: "romantic film lighting, silk drapery, warm rose gold glow",
+  fresco: "ancient temple stone, mysterious shadow, earthy tones",
+  pattachitra: "rich folk colour palette, bold graphic shapes, ornamental detail",
+  comic: "bright friendly film lighting, warm colour, clear readable action",
+  noir: "film noir chiaroscuro, deep shadow, single ember light",
+  floating: "celestial realm, clouds below, golden radiance, luminous sky" };
 export const FAMILIES = ["auto", ...Object.keys(FAMILY)];
 // automatic choice from the scene's own narration + spec (first match wins, most specific first), then the film's mood; null = plain house style
 const FAMILY_RULES = [["floating", /स्वर्ग|वैकुंठ|कैलाश|क्षीरसागर|देवलोक|heaven|vaikuntha|kailash|celestial/i], ["noir", /नरक|यमराज|यमदूत|यमलोक|पापी|दंड|सज़ा|सजा|तड़प|\byam\b|\bhell\b|punish/i], ["luxury", /प्रेम|राधा|रास|श्रृंगार|शृंगार|विवाह|स्वयंवर|love|romance|radha/i], ["epic", /युद्ध|रण|वध|संहार|तांडव|शस्त्र|battle|war|slay|combat/i], ["fresco", /रहस्य|नाग|पाताल|प्राचीन|गुफा|secret|serpent|naga|ancient|cave/i], ["comic", /बालक|बच्चे|बच्चा|परिवार|माँ|माता|child|children|family/i], ["pattachitra", /लीला|सीख|उपदेश|नीति|moral|leela|lesson/i], ["ravi", /भगवान|देवी|शिव|विष्णु|राम|सीता|कृष्ण|दुर्गा|लक्ष्मी|हनुमान|\bgod\b|goddess|deity|shiva|vishnu|krishna|durga|lakshmi|hanuman|\bsita\b|\bram\b/i]];
@@ -25,7 +25,7 @@ export const MEDIUM = {
   // anatomy, sharp focus) layered on top, not a flat illustration and not a plain photograph either.
   // 2026-10-22 (owner: faces read as present-day people on a street, "should feel like a mythology movie"): "85mm lens" pulled
   // every figure toward a posed street portrait; replaced by film-still / production-design language
-  photoreal: "epic mythological film still, cinematic matte painting with photorealistic texture, anamorphic lens, dramatic volumetric light, rich filmic grade, canvas grain, natural detailed eyes",
+  photoreal: "cinematic photorealistic movie still of an epic Hindu mythological film, anamorphic lens, natural skin texture, detailed eyes, dramatic volumetric light, rich filmic colour grade",
   "ravi-varma": "oil painting in the style of Raja Ravi Varma, rich pigments, soft chiaroscuro, reverent",
   pahari: "Pahari miniature painting, flat jewel colours, delicate linework, reverent",
   "ink-parchment": "black ink brushwork on warm aged parchment, restrained crimson and gold accents, dramatic chiaroscuro",
@@ -38,6 +38,8 @@ export const NEG_QUALITY = "deformed face, asymmetric eyes, cross-eyed, lazy eye
 // shot scale for film coverage (wide / close / insert cut from one moment); replaces the default composition line when a shot sets `framing`
 export const FRAMING = { wide: "figures small in a vast environment", medium: "subject centered, generous empty dark space above the head, shallow depth of field", close: "eyes looking off-frame, shallow depth of field", extreme: "eyes filling the frame, shallow depth of field", insert: "hands out of frame, shallow depth of field", detail: "shallow depth of field", profile: "half the face in shadow, hands out of frame, shallow depth of field" };
 const FRAMING_LEAD = { wide: "wide establishing shot of", medium: "medium shot of", close: "close-up of", extreme: "extreme close-up of the eyes of", insert: "insert close-up of", detail: "close detail of", profile: "profile view of the head and shoulders of" };
+// neuromarketing roles (see tools/longform/art.mjs keyInfo): hook = face + direct gaze, peak = scale + one glowing focal point, beat = one focal point, gaze toward the open side
+export const ROLE_COMP = { hook: "face large, eyes in the upper third looking into the lens, one glowing accent", peak: "monumental scale, one glowing focal point, strongest contrast", beat: "one clear focal point, eyes in the upper third, gaze toward open space" };
 const COMPOSITION = { carousel: "subject in the upper two thirds of a vertical frame, calm darker lower third", hero: "wide horizontal composition with the subject left of centre and open space on the right", thumbnail: "bold single focal point, simple background, large readable shapes" };
 // Words that make an image model paint lettering or speech bubbles (found: "speaks a solemn warning" produced a page of gibberish text). They are rewritten into purely visual wording before every generation.
 const TEXTY = [[/\b(speaks?|says?|declares?|proclaims?)\s+(a\s+|an\s+)?(solemn\s+)?(warning|curse|vow|command)\b/gi, "raises a solemn hand"], [/\b(speaks?|speaking|says?|saying|tells?|telling|declares?|proclaims?)\b/gi, "gestures gravely"], [/\b(inscription|inscribed|letters?|writing|written|scroll|book|banner|signboard|sign|caption|text)\b/gi, "ornament"]];
@@ -45,7 +47,7 @@ export const sanitize = p => { let o = p; for (const [re, to] of TEXTY) o = o.re
 export function build(shot, use = "carousel") { return sanitize(build0(shot, use)).replace(/[.]*$/, "") + ", a purely visual image, every surface plain and unmarked."; }
 function build0(shot, use = "carousel") {
   if (shot.prompt) { const p = shot.prompt.trim(); return shot.raw ? p : p.replace(/[.,;]+$/, "") + ", " + MEDIUM[shot.medium || "photoreal"] + ", " + COMPOSITION[use] + "."; }   // pasted prose prompt from a frontier model: we append our style and composition unless raw
-  const parts = [(shot.framing && FRAMING_LEAD[shot.framing] ? FRAMING_LEAD[shot.framing] + " " : "") + (shot.subject || ""), shot.action, (shot.family && FAMILY[shot.family] && (shot.medium || "photoreal") === "photoreal" ? "epic mythological film still, cinematic oil painting, photorealistic texture, dramatic volumetric light" : MEDIUM[shot.medium || "photoreal"]), FAMILY[shot.family] || null, shot.setting, shot.lighting, shot.mood, ...(shot.colors || []).map(c => `${c.object} in color ${c.hex}`), FRAMING[shot.framing] || shot.composition || COMPOSITION[use]].filter(Boolean);
+  const parts = [(shot.framing && FRAMING_LEAD[shot.framing] ? FRAMING_LEAD[shot.framing] + " " : "") + (shot.subject || ""), shot.action, (shot.family && FAMILY[shot.family] && (shot.medium || "photoreal") === "photoreal" ? "cinematic photorealistic movie still of an epic Hindu mythological film, natural skin texture, dramatic volumetric light" : MEDIUM[shot.medium || "photoreal"]), FAMILY[shot.family] || null, shot.setting, shot.lighting, shot.mood, ...(shot.colors || []).map(c => `${c.object} in color ${c.hex}`), FRAMING[shot.framing] || shot.composition || COMPOSITION[use], !shot.framing || shot.framing === "wide" || shot.framing === "medium" || shot.framing === "close" ? ROLE_COMP[shot.role] : null].filter(Boolean);
   return parts.map(p => p.trim().replace(/[.,;]+$/, "")).join(", ") + ".";
 }
 const NEG = /\b(no|not|without|don't|never|avoid|nothing|none)\b/i;
