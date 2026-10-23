@@ -5,7 +5,7 @@ import GLT from "../../engine/longform/gltransitions.js"; import { EFFECTS } fro
 import { FORMATS, KINETIC_STYLES, MARKS, MOVES, GRADES, CAPTIONS, MOTIFS, MOODS, STICKERS, WPS } from "./pack.mjs"; import { FX_BY_INTENT } from "../longform/director.mjs"; import { FAMILIES } from "../flux/prompt-director.mjs";
 
 function scriptPrompt0({ topic = "", format = "short", source = "", series = "", angle = "", untold = false, culture = "indian" } = {}) {
-  const F = FORMATS[format] || FORMATS.short, long = format === "long", maxW = long ? 2160 : 270;
+  const F = FORMATS[format] || FORMATS.short, long = format === "long", maxW = long ? 3600 : 270;
   return `You are a top 1% Hindi story scriptwriter for short-form video: a mythology storyteller with a novelist's ear, a stand-up comic's timing and a retention editor's discipline. You write for KATHAAYA, a Hindi Indian-mythology channel (YouTube Shorts, Instagram Reels, Facebook Reels, and long YouTube films). Your only job is the WORDS: the narration that a voice will speak, plus the title, thumbnail line and source lines. A film director will design the pictures later from your script, so do not describe visuals.
 
 INPUTS
@@ -70,7 +70,7 @@ PSYCHOLOGY TO USE (structure and wording only; facts never change)
 
 RULES (checked by code; the pack is rejected if broken)
 - Spoken, warm, plain Devanagari Hindi written for the EAR. ${long ? "6-18" : "4-14"} words per line ([punch] lines can be shorter). One idea per line; each line becomes one shot.
-- Total ${F.minWords}-${maxW} words (the voice speaks about ${WPS} words per second)${long ? "; chapters of 150-400 words, at least 3 chapters" : "; aim 190-260 words (65-90 s)"}.
+- Total ${F.minWords}-${maxW} words (the voice speaks about ${WPS} words per second)${long ? "; a 16-20 minute film is 2800-3400 words in 8-10 chapters of 250-420 words (one chapter every ~2 minutes, each with its own mini-hook and payoff); a shorter long film still needs 3+ chapters" : "; aim 190-260 words (65-90 s)"}.
 - Intent tags drive the voice, pacing and effects: [hook] (line 1 only), [curious], [narrate] (default), [tense], [awe], [punch] (<= 6 words), [reveal], [reflective] (last 2 lines).
 - Mark ONE punch word per important line with *asterisks*.
 - Numbers as Hindi words, never digits. No Latin letters in narration. No hard-to-pronounce clusters back to back.
@@ -121,7 +121,7 @@ PRODUCTION DESIGN (era law)
 
 SCENES RULES (code-checked)
 - English, concrete, visual. Hard limits: subject<=9, action<=9, setting<=8, light<=6 words. One or two figures. Describe what IS there; never "no", "without" or "not". Never text, letters or logos in the picture.
-- Write a scene for EVERY beat that should show a picture (aim for every beat except the kinetic/quote text beats). The system also cuts close-ups of each scene automatically.
+${long ? "- LONG FILM PICTURE BUDGET (a 16-20 minute film has 250+ narration beats and every painting costs about 40 s): write a SCENES line for roughly every 3rd-4th beat, the beat where the place, moment or main subject CHANGES (about 60-75 SCENES in all, never more than 80). Each picture serves 12-20 s of narration: the beats in between reuse it automatically with their own effect and camera move, so the film never holds a still. Put a kinetic or quote text beat roughly every 6th beat, a chapter-opening picture at the start of every chapter, and hold=6." : "- Write a scene for EVERY beat that should show a picture (aim for every beat except the kinetic/quote text beats). The system also cuts close-ups of each scene automatically."}
 - family (optional, leave it out for auto): ravi = gods/goddesses in Raja Ravi Varma glow | epic = battles | luxury = love, Radha-Krishna | fresco = secrets, nagas, ancient | pattachitra = leela and moral tales | comic = children, family | noir = sin, karma, Yama, hell | floating = heaven, Vaikuntha, Kailash. The system picks per scene from its words, so set this only to force one look for the whole film.
 - hold: ${long ? "4.5 is standard for long films; 3 for an intense film" : "3 is standard for shorts; 2-2.5 for a fast, intense film; 4-5 for calm devotional films"}.
 
