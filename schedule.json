@@ -29,9 +29,15 @@
   "story": "video-bhishma-vow",
   "platform": "instagram",
   "at": "2026-10-23T13:30:00.000Z",
-  "status": "failed",
+  "status": "done",
   "coverUrl": "https://kathaaya.getbyterush.com/covers/video-bhishma-vow.jpg",
-  "error": "400 {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  "posted_at": "2026-10-23T14:11:57.314009+00:00",
+  "result": {
+   "instagram": {
+    "id": "18126656644931264",
+    "permalink_url": "https://www.instagram.com/reel/De1vcZUCiGk/"
+   }
+  }
  },
  {
   "id": "mvjq12mk",
