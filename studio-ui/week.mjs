@@ -67,7 +67,7 @@ export const card = id => load().cards.find(c => c.id === id) || null;
 export function upsert(c) {
   const data = load(), now = new Date().toISOString(); let cur = c.id ? data.cards.find(x => x.id === c.id) : null;
   if (!cur) { cur = { id: "w" + crypto.randomBytes(4).toString("hex"), createdAt: now, flags: {} }; data.cards.push(cur); }
-  for (const k of ["date", "time", "format", "title", "source", "series", "script", "visuals", "slug", "check", "theme", "mood", "why", "belief", "regional", "planned"]) if (c[k] !== undefined) cur[k] = c[k];
+  for (const k of ["date", "time", "format", "title", "source", "series", "script", "visuals", "slug", "check", "theme", "mood", "why", "belief", "regional", "planned", "culture", "angle", "untold"]) if (c[k] !== undefined) cur[k] = c[k];
   if (c.script !== undefined && c.script !== cur.scriptSaved) { cur.scriptSavedAt = now; cur.scriptSaved = c.script; } if (c.visuals !== undefined && c.visuals !== cur.visualsSaved) { cur.visualsSavedAt = now; cur.visualsSaved = c.visuals; }
   if (c.flags) cur.flags = { ...(cur.flags || {}), ...c.flags };
   if (cur.format !== "long") cur.format = "short"; cur.updatedAt = now; save(data); return cur;

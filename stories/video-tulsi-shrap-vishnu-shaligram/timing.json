@@ -40,9 +40,37 @@
   },
   {
    "name": "art",
+   "status": "done",
+   "start": 1792745727727,
+   "detail": "36 new paintings of 38 scenes",
+   "seconds": 3856
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792749584083,
+   "detail": "39 of 39 scenes layered, 0 picture beats fell back to type",
+   "seconds": 253
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792749837022,
+   "detail": "14 camera clips (14 rendered, 0 cached)",
+   "seconds": 39
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792749876049,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
    "status": "running",
-   "start": 1792745727727
+   "start": 1792749876117
   }
  ],
- "total_seconds": 0
+ "total_seconds": 4148
 }

@@ -4,7 +4,7 @@
 import { EFFECTS } from "../../engine/longform/fx.js"; import { BG_NAMES } from "../../engine/longform/backdrops.js";
 import { FORMATS, KINETIC_STYLES, MARKS, MOVES, GRADES, CAPTIONS, MOTIFS, MOODS, STICKERS, WPS } from "./pack.mjs"; import { FX_BY_INTENT } from "../longform/director.mjs"; import { FAMILIES } from "../flux/prompt-director.mjs";
 
-export function scriptPrompt({ topic = "", format = "short", source = "", series = "" } = {}) {
+function scriptPrompt0({ topic = "", format = "short", source = "", series = "" } = {}) {
   const F = FORMATS[format] || FORMATS.short, long = format === "long", maxW = long ? 2160 : 270;
   return `You are a top 1% Hindi story scriptwriter for short-form video: a mythology storyteller with a novelist's ear, a stand-up comic's timing and a retention editor's discipline. You write for KATHAAYA, a Hindi Indian-mythology channel (YouTube Shorts, Instagram Reels, Facebook Reels, and long YouTube films). Your only job is the WORDS: the narration that a voice will speak, plus the title, thumbnail line and source lines. A film director will design the pictures later from your script, so do not describe visuals.
 
@@ -70,7 +70,7 @@ RULES (checked by code; the pack is rejected if broken)
 - TITLE and THUMB do not repeat each other; together they form one question and its sharper half.`;
 }
 
-export function visualsPrompt({ script = "", format = "short" } = {}) {
+function visualsPrompt0({ script = "", format = "short" } = {}) {
   const long = format === "long", fxGuide = Object.entries(FX_BY_INTENT).map(([k, v]) => `${k} = ${v.join(", ")}`).join(" | ");
   return `You are a top 1% film director for ${long ? "cinematic 16:9 films" : "vertical 9:16 cinema"}, working with a cinematographer, a production designer for the Puranic era, and a motion designer. You direct KATHAAYA films (Hindi Indian mythology). You receive a finished script. Your only job is the PICTURES and how the film moves: the cast look, the shot list, the effects per beat, the look of the film and the thumbnail. Do not change or repeat the narration.
 
@@ -131,3 +131,10 @@ THUMBNAIL
 
 SELF-CHECK: every SCENES number exists in the script; no two consecutive scenes share a shot scale; light follows the arc; PROTAGONIST used whenever the main character appears; every fx/style/bg/mark value spelled exactly as allowed; kinetic and title_behind lines carry text="…"; no NARRATION in your output.`;
 }
+
+// Culture-aware wrappers (owner 2026-10-23: world mythology must not carry Indian structure). The culture is given, else detected from the topic / script's own names; "indian" returns the prompt unchanged.
+import { CULTURES, CULTURE_IDS, detectCulture } from "../longform/culture.mjs";
+export function scriptPrompt(o = {}) { const id = o.culture && CULTURES[o.culture] ? o.culture : detectCulture((o.topic || "") + " " + (o.source || "") + " " + (o.series || "")), p = scriptPrompt0(o); if (id === "indian") return p;
+  const c = CULTURES[id]; return p.replace("a Hindi Indian-mythology channel", `a Hindi channel that retells the world's myths (this story: ${c.label} mythology)`) + `\n\nCULTURE: this story is ${c.label} mythology. Tell it in its own world: its own gods' and heroes' names as the source spells them (transliterated into Devanagari with the original in brackets once), its own places, customs and sources. Do not use Hindu or Indian frames, terms, or comparisons (no "like our Purana", no Hindu deity names as equivalents) unless the story itself connects them. The hook should be the thing a Hindi viewer has most likely never heard about this myth.`; }
+export function visualsPrompt(o = {}) { const id = o.culture && CULTURES[o.culture] ? o.culture : detectCulture(o.script || ""), p = visualsPrompt0(o); if (id === "indian") return p;
+  const c = CULTURES[id]; return p.replace("Hindi Indian mythology", `Hindi retellings of ${c.label} mythology`).replace("a production designer for the Puranic era", `a production designer for the world of ${c.label} myth`).replace(/- Puranic-era India:[^\n]*/, "- " + c.world).replace(/\((dhoti|angavastram|uttariya|silk saree)[^)]*\)/g, "") + `\n\nCULTURE: add one line "CULTURE: ${id}" under the LOOK line. Every figure, costume, building and landscape belongs to ${c.label} mythology: ${c.world} Never show Indian temples, sarees, dhotis or Hindu iconography in this film; never mix in another culture's look. Allowed CULTURE values: ${CULTURE_IDS.join(", ")}.`; }

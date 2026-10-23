@@ -15,7 +15,8 @@
      "img": "v001_close",
      "framing": "close",
      "of": "s1",
-     "fx": "drone_push_in"
+     "fx": "depth_rack_focus",
+     "fxBy": "cinema"
     }
    ],
    "autoShots": true
@@ -30,7 +31,7 @@
    "move": "panL",
    "label": "श्राप निकला",
    "reveal": "circle",
-   "fx": "morph_age_shift",
+   "fx": "infinite_zoom_droste",
    "tone": "cold",
    "transition": "leak",
    "shots": [
@@ -38,16 +39,18 @@
      "img": "v002_close",
      "framing": "close",
      "of": "s2",
-     "fx": "drone_push_in"
+     "fx": "mesh_ken_burns_3d",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
  {
   "id": "v003",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
    "lines": [
     "कौन?",
@@ -56,9 +59,10 @@
    "style": "wave",
    "img": "s3",
    "move": "push",
-   "fx": "chromatic_glitch_wipe",
+   "fx": "shadow_play_reveal",
    "tone": "cold",
-   "transition": "leak"
+   "transition": "leak",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -69,7 +73,7 @@
    "img": "s4",
    "move": "push",
    "label": "तुलसी दानवराज शंखचूड़ की पत्नी थी",
-   "fx": "drone_orbit_180",
+   "fx": "drone_fpv_flythrough",
    "sticker": "burst",
    "tone": "cold",
    "transition": "leak",
@@ -78,10 +82,12 @@
      "img": "v004_close",
      "framing": "close",
      "of": "s4",
-     "fx": "drone_push_in"
+     "fx": "crane_up_reveal",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -127,7 +133,7 @@
    "img": "s7",
    "move": "panR",
    "label": "ब्रह्मा का वरदान",
-   "fx": "infinite_zoom_droste",
+   "fx": "sacred_geometry_carve",
    "tone": "ember",
    "transition": "zoom",
    "shots": [
@@ -135,10 +141,12 @@
      "img": "v007_close",
      "framing": "close",
      "of": "s7",
-     "fx": "drone_push_in"
+     "fx": "parallax_occlusion_3d",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -149,7 +157,7 @@
    "img": "s8",
    "move": "pull",
    "label": "पत्नी पतिव्रता है",
-   "fx": "mesh_crane_push",
+   "fx": "mesh_rack_focus_dof",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -157,10 +165,12 @@
      "img": "v008_close",
      "framing": "close",
      "of": "s8",
-     "fx": "drone_push_in"
+     "fx": "chromatic_glitch_wipe",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -171,9 +181,10 @@
    "img": "s9",
    "move": "push",
    "label": "एक बूढ़ा ब्राह्मण आया",
-   "fx": "sacred_geometry_carve",
+   "fx": "morph_age_shift",
    "tone": "ember",
-   "transition": "cut"
+   "transition": "cut",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -199,9 +210,10 @@
    "move": "push",
    "label": "शंखचूड़ का रूप धरकर",
    "reveal": "circle",
-   "fx": "mesh_ken_burns_3d",
+   "fx": "particle_formation",
    "tone": "ember",
-   "transition": "zoom"
+   "transition": "zoom",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -213,7 +225,7 @@
    "move": "pull",
    "label": "खुशी के आँसुओं संग पति के पाँव धोए",
    "reveal": "diamond",
-   "fx": "puppet_warp_breathing",
+   "fx": "mesh_crane_push",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -221,16 +233,18 @@
      "img": "v012_close",
      "framing": "close",
      "of": "s12",
-     "fx": "drone_push_in"
+     "fx": "puppet_warp_breathing",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
  {
   "id": "v013",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
    "lines": [
     "आज *मेरा* जीवन सफल हो गया"
@@ -239,7 +253,9 @@
    "img": "s13",
    "move": "push",
    "tone": "ember",
-   "transition": "cut"
+   "transition": "cut",
+   "fx": "disintegration_dispersal",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -251,9 +267,10 @@
    "move": "panL",
    "label": "शिव का त्रिशूल चला",
    "reveal": "wipe",
-   "fx": "mesh_dolly_zoom_vertigo",
+   "fx": "drone_orbit_180",
    "tone": "ember",
-   "transition": "whip"
+   "transition": "whip",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -267,9 +284,10 @@
    "style": "glitch",
    "img": "s15",
    "move": "push",
-   "fx": "disintegration_dispersal",
+   "fx": "crane_down",
    "tone": "fire",
-   "transition": "cut"
+   "transition": "cut",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -281,7 +299,7 @@
    "move": "panR",
    "label": "कौन हो तुम, मायावी?",
    "reveal": "circle",
-   "fx": "shadow_play_reveal",
+   "fx": "handheld_breathing_shake",
    "sticker": "burst",
    "tone": "ember",
    "transition": "whip",
@@ -290,10 +308,12 @@
      "img": "v016_close",
      "framing": "close",
      "of": "s16",
-     "fx": "drone_push_in"
+     "fx": "depth_fog_haze",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -308,9 +328,10 @@
    "style": "slam",
    "img": "s17",
    "move": "push",
-   "fx": "eye_glow_energy_pulse",
+   "fx": "lightning_flash",
    "tone": "ember",
-   "transition": "cut"
+   "transition": "cut",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -322,9 +343,10 @@
    "move": "drone_push_in",
    "label": "नारायण असली रूप में आए",
    "reveal": "diamond",
-   "fx": "mesh_rack_focus_dof",
+   "fx": "drone_pull_out_reveal",
    "tone": "ember",
-   "transition": "whip"
+   "transition": "whip",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -338,7 +360,7 @@
    "style": "mask",
    "img": "s19",
    "move": "push",
-   "fx": "dolly_zoom_vertigo",
+   "fx": "2.5d_parallax",
    "tone": "fire",
    "transition": "cut",
    "shots": [
@@ -349,7 +371,8 @@
      "fx": "drone_push_in"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -370,7 +393,8 @@
      "img": "v020_close",
      "framing": "close",
      "of": "s20",
-     "fx": "drone_push_in"
+     "fx": "double_exposure_cosmos",
+     "fxBy": "cinema"
     }
    ],
    "autoShots": true
@@ -379,7 +403,7 @@
  },
  {
   "id": "v021",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
    "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
    "by": "नारायण",
@@ -392,10 +416,13 @@
      "img": "v021_close",
      "framing": "close",
      "of": "s21",
-     "fx": "drone_push_in"
+     "fx": "volumetric_god_rays",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fx": "mesh_dolly_zoom_vertigo",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -420,15 +447,16 @@
   "params": {
    "img": "s23",
    "move": "pull",
-   "fx": "kinetography_cinemagraph",
+   "fx": "speed_ramp_punch",
    "tone": "fire",
-   "transition": "zoom"
+   "transition": "zoom",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
  {
   "id": "v024",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
    "lines": [
     "*\"तुम्हारी* देह गंडकी नदी बनेगी, केश तुलसी"
@@ -443,10 +471,13 @@
      "img": "v024_close",
      "framing": "close",
      "of": "s24",
-     "fx": "drone_push_in"
+     "fx": "matte_painting_extension",
+     "fxBy": "cinema"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fx": "drone_top_down_bird_eye",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -456,10 +487,11 @@
   "params": {
    "img": "s25",
    "move": "pull",
-   "fx": "map_loka_zoom",
+   "fx": "eye_glow_energy_pulse",
    "focus": 2,
    "tone": "fire",
-   "transition": "cut"
+   "transition": "cut",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  },
@@ -518,7 +550,7 @@
  },
  {
   "id": "v029",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
    "steps": [
     {
@@ -537,13 +569,14 @@
    "img": "s29",
    "move": "push",
    "tone": "gold",
-   "transition": "zoom",
+   "transition": "dissolve",
    "shots": [
     {
      "img": "v029_close",
      "framing": "close",
      "of": "s29",
-     "fx": "drone_push_in"
+     "fx": "diya_flicker_light",
+     "fxBy": "cinema"
     },
     {
      "img": "v029_insert",
@@ -552,7 +585,9 @@
      "fx": "depth_rack_focus"
     }
    ],
-   "autoShots": true
+   "autoShots": true,
+   "fx": "dolly_zoom_vertigo",
+   "fxBy": "cinema"
   },
   "chapter": "ch1"
  }
