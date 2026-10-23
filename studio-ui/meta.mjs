@@ -58,3 +58,12 @@ export async function postInstagramCarousel(urls, caption, { delayMs = 3000, pol
 
 // Cover (thumbnail) for a Facebook Reel or Page video: uploaded as the preferred thumbnail. Verified live on 2026-10-18 (Reel 3447390945446860).
 export async function setFacebookThumbnail(videoId, file) { const e = env(), fd = new FormData(); fd.append("access_token", e.META_PAGE_TOKEN); fd.append("is_preferred", "true"); fd.append("source", new Blob([fs.readFileSync(file)], { type: "image/jpeg" }), "cover.jpg"); return post(`${G}/${videoId}/thumbnails`, fd); }
+
+// Change the time of a post that is already scheduled on Facebook, or publish it now (at = null). Graph API: POST /{video-id} with scheduled_publish_time, or published=true.
+// Untested against a live scheduled Reel at the time of writing (Reels use their own upload flow): a refusal from Meta is returned as the error so the Hub can show it.
+export async function rescheduleFacebook(videoId, at) {
+  const e = env(), body = new URLSearchParams({ access_token: e.META_PAGE_TOKEN });
+  if (!at) body.set("published", "true");
+  else { const ms = new Date(at) - Date.now(); if (!(ms > 11 * 60000 && ms < 29 * 864e5)) throw new Error("Facebook schedule time must be between 10 minutes and 29 days ahead"); body.set("scheduled_publish_time", String(Math.floor(new Date(at).getTime() / 1000))); body.set("published", "false"); }
+  return await post(`https://graph.facebook.com/${V}/${videoId}`, body);
+}

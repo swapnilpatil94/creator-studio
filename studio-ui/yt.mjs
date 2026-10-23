@@ -5,7 +5,7 @@
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { spawnSync } from "node:child_process";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), ".."), TOKEN = path.join(root, ".yt-token.json");
 const env = () => { const f = path.join(root, ".env.local"); const t = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : ""; const g = n => process.env[n] || (t.match(new RegExp("^" + n + "=(\\S+)", "m")) || [])[1]; return { id: g("YT_OAUTH_CLIENT_ID"), secret: g("YT_OAUTH_CLIENT_SECRET") }; };
-export const SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly"];
+export const SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/youtube.force-ssl"];   // force-ssl lets the Hub change a scheduled video's time (videos.update); a connection made before this was added must be reconnected once
 let pending = null; // { verifier, state }
 export const configured = () => { const e = env(); return !!(e.id && e.secret); };
 export function authUrl(redirect) {
@@ -61,4 +61,12 @@ export async function setThumbnail(videoId, src, dir) {
   try { const jpg = composeThumb(src, path.join(dir, "output/thumb-upload.jpg")), tok = await accessToken();
     const tr = await fetch("https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + videoId, { method: "POST", headers: { authorization: "Bearer " + tok, "content-type": "image/jpeg" }, body: fs.readFileSync(jpg) });
     return tr.ok ? "set" : "failed: " + (await tr.text()).slice(0, 300); } catch (e) { return "failed: " + e.message; }
+}
+
+// Change the go-live time of an uploaded video, or make it public now (at = null). videos.update needs the youtube.force-ssl scope: if the stored connection predates it Google answers 403 and the message says to reconnect.
+export async function setPublishAt(videoId, at) {
+  const tok = await accessToken(), cur = await (await fetch("https://www.googleapis.com/youtube/v3/videos?part=status&id=" + videoId, { headers: { authorization: "Bearer " + tok } })).json(); const st = cur.items && cur.items[0] && cur.items[0].status; if (!st) throw new Error("video not found on YouTube");
+  const status = { privacyStatus: at ? "private" : "public", selfDeclaredMadeForKids: !!st.selfDeclaredMadeForKids, ...(at ? { publishAt: new Date(at).toISOString() } : {}) };
+  const r = await fetch("https://www.googleapis.com/youtube/v3/videos?part=status", { method: "PUT", headers: { authorization: "Bearer " + tok, "content-type": "application/json" }, body: JSON.stringify({ id: videoId, status }) }); const j = await r.json();
+  if (!r.ok) throw new Error(r.status === 403 ? "YouTube needs one reconnect to allow changing the time (Connect YouTube again in System). " + (j.error?.message || "") : j.error?.message || "videos.update failed"); return { id: videoId, privacy: j.status?.privacyStatus, publishAt: at ? new Date(at).toISOString() : null };
 }
