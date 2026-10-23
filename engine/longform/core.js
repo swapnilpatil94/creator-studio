@@ -4,6 +4,7 @@
 // Everything is a pure function of t, so a re-voiced take re-times the film. Captions are always drawn (accessibility, and the QA gate requires them).
 import { makeFX, EFFECTS } from "./fx.js";
 import { shotCuts } from "./cuts.js";
+import { glTransition, GL_NAMES } from "./gltrans.js";   // 3D / cinematic GL Transitions (MIT), plan params.transition = "gl:<Name>"
 import { gsap } from "gsap";                                  // easing library (parseEase only: every frame stays a pure function of t)
 import rough from "roughjs/bundled/rough.esm.js";            // hand-drawn marks (underline, circle, box, highlight, bracket), seeded so they are deterministic
 import lottie from "lottie-web/build/player/lottie_canvas.min.js";   // Lottie stickers, drawn frame by frame with goToAndStop
@@ -326,8 +327,10 @@ export function createLongform({ DATA, plan, images = {}, meta = {}, look = {}, 
   function beatCanvas(i, slot, n) { let c = offs[slot]; if (!c) { c = offs[slot] = document.createElement("canvas"); c.width = W; c.height = H; } const x = c.getContext("2d"), real = g; x.setTransform(1, 0, 0, 1, 0, 0); x.globalAlpha = 1; x.globalCompositeOperation = "source-over"; x.filter = "none"; x.fillStyle = INK; x.fillRect(0, 0, W, H); g = x; try { drawBeat(i, n, 1); } finally { g = real; } return c; }
   function frame(t) { const n = t - lead, ai = beatAt(n), fade = 1 - smooth(seg(t, DURATION - 0.8, DURATION)), inK = meta.poster ? 1 : smooth(seg(t, 0, 0.6)); g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = "source-over"; g.globalAlpha = 1; g.fillStyle = INK; g.fillRect(0, 0, W, H);
     // beat transition: plan params.transition (tools/longform/coverage.mjs picks it from the colour arc), else the story look's
-    const TR = ai > 0 ? (plan[ai].params?.transition || LK.transition) : "cut", TDUR = { whip: 0.3, zoom: 0.42, leak: 0.55, dissolve: 0.35, cut: 0 }[TR] ?? 0.5, a = T0[ai], xf = ai > 0 && TDUR > 0 ? smooth(seg(n, a, a + TDUR)) : 1;
+    const TR = ai > 0 ? (plan[ai].params?.transition || LK.transition) : "cut", TDUR = TR.startsWith("gl:") ? 0.9 : { whip: 0.3, zoom: 0.42, leak: 0.55, dissolve: 0.35, cut: 0 }[TR] ?? 0.5, a = T0[ai], xf = ai > 0 && TDUR > 0 ? smooth(seg(n, a, a + TDUR)) : 1;
     if (xf >= 1) drawBeat(ai, n, 1);
+    else if (TR.startsWith("gl:") && GL_NAMES.includes(TR.slice(3))) {   // a real shader transition between the two offscreen beats; if WebGL is unavailable it degrades to a dissolve
+      const A = beatCanvas(ai - 1, 0, n), B = beatCanvas(ai, 1, n); if (!glTransition(TR.slice(3), A, B, xf, W, H, g)) { g.globalAlpha = 1; g.drawImage(A, 0, 0); g.globalAlpha = xf; g.drawImage(B, 0, 0); g.globalAlpha = 1; } curI = ai; }
     else if (TR === "whip" || TR === "zoom") {   // both beats rendered offscreen, then composited with motion blur (stacked offset/scaled copies: deterministic, no per-frame canvas filter)
       const A = beatCanvas(ai - 1, 0, n), B = beatCanvas(ai, 1, n), e = ez("power2.inOut", xf), smear = Math.sin(Math.PI * e);
       if (TR === "whip") { const dir = (ai % 2 ? 1 : -1), blur = smear * W * 0.07; for (const [cv, x0] of [[A, dir * -e * W], [B, dir * (1 - e) * W]]) { g.globalAlpha = 1; g.drawImage(cv, x0, 0); g.globalAlpha = 0.28 * smear; for (const k of [-2, -1, 1, 2]) g.drawImage(cv, x0 + k * blur * 0.5, 0); } g.globalAlpha = 1; }

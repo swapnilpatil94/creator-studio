@@ -8,6 +8,8 @@
 //  5. A REPORT (plan.cinema.json): which effect sits where and why, and what was impossible, so a film that "feels like a slideshow" can be diagnosed.
 // Beats whose effect was placed by this pass carry params.fxBy = "cinema" (shots: fxBy), so the pass is idempotent; an effect the owner pinned in the script (params.fxBy = "owner") is never touched.
 import { EFFECTS } from "../../engine/longform/fx.js";
+import GL from "../../engine/longform/gltransitions.js";
+const GL_OK = new Set(Object.keys(GL));
 
 const R = s => new RegExp(s);
 // effect -> { slot: main | shot | either, face: safe on a close-up face, kw: story words, role: preferred role, tone: preferred colour-arc tones }
@@ -76,8 +78,15 @@ export function cinemaPass(plan, beats = {}, { dissolveOk = true } = {}) {
     if (P.partner) { const pi = partnerFor(best.s.i); out[best.s.i].params.img2 = pi; out[best.s.i].params.labels = out[best.s.i].params.labels || []; }
     best.s.set(f); best.s.locked = true; pinned.add(f); rep.placed.push(`${out[best.s.i].id} ${best.s.kind}${best.s.framing ? ":" + best.s.framing : ""} <- ${f} (fit ${best.sc})`); }
   // text-only painting beats (comp cinema without fx) stay cinema: they carry typed words over the picture
+  // 3D / shader transitions (GL Transitions pack, MIT): about one boundary in five, spread evenly, chosen by the colour arc; the boundary into the PEAK gets the biggest one; the hook, cut-in-fire impacts and neighbours are left alone
+  const GLBY = { cold: ["CrossZoom", "Dreamy", "ripple", "Swirl", "zoomInOut"], ember: ["cube", "doorway", "swap", "BookFlip", "flyeye", "Revolve_Left"], fire: ["GlitchMemories", "undulatingBurnOut", "directionalwarp", "Rolls", "crosswarp", "Fold"], gold: ["FilmBurn", "Overexposure", "fadecolor", "morph", "InvertedPageCurl", "luminance_melt"], peak: ["cube", "doorway", "swap", "Fold"] };
+  const want = Math.max(3, Math.min(8, Math.round(N / 5))), glUsed = {}, glAt = new Set(); let glPlaced = 0;
+  const peakI = out.findIndex((p, i) => roleOf(i) === "peak"), ok = i => i > 1 && i < N - 1 && !glAt.has(i - 1) && !glAt.has(i + 1) && !String(out[i].params.transition || "").startsWith("gl:") && out[i].params.transition !== "cut";
+  const putGL = (i, pool) => { const name = pool.filter(n => GL_OK.has(n) && !glUsed[n]).concat(pool.filter(n => GL_OK.has(n))).find(Boolean); if (!name) return false; glUsed[name] = (glUsed[name] || 0) + 1; glAt.add(i); const prev = out[i].params.transition; out[i].params.transition = "gl:" + name; out[i].params.trBy = "cinema"; rep.transitions.push(`${out[i].id}: ${prev || "-"} -> gl:${name}`); glPlaced++; return true; };
+  if (peakI > 0 && ok(peakI)) putGL(peakI, GLBY.peak);
+  for (let k = 1; glPlaced < want && k <= want * 3; k++) { const target = Math.round((N - 1) * (k / (want + 1))), i = [0, 1, -1, 2, -2, 3, -3].map(d => target + d).find(ok); if (i === undefined) continue; if (out[i].params.trBy === "cinema") continue; putGL(i, GLBY[out[i].params.tone] || GLBY.ember); }
   // transitions: every type appears at least once, placed by the colour arc
-  const all = ["cut", "whip", "zoom", "leak", "dissolve"], used = new Set(out.map(p => p.params.transition).filter(Boolean)), fit = { cut: ["fire"], whip: ["ember", "fire"], zoom: ["ember", "fire", "cold"], leak: ["cold", "gold"], dissolve: ["gold", "cold"] };
-  for (const t of all) { if (used.has(t) || (t === "dissolve" && !dissolveOk)) continue; const c = out.map((p, i) => ({ p, i })).filter(({ p, i }) => i > 0 && p.params.transition && (!p.params.transition || used.size === 0 || [...new Set(out.map(q => q.params.transition))].length) && (fit[t] || []).includes(p.params.tone)); const pick = (t === "dissolve" ? c.filter(x => x.i > N * 0.6).slice(-1)[0] : c[Math.floor(c.length / 2)]) || out.map((p, i) => ({ p, i })).filter(x => x.i > 0)[Math.floor(N / 2)]; if (!pick) continue; const prev = pick.p.params.transition; pick.p.params.transition = t; used.add(t); rep.transitions.push(`${pick.p.id}: ${prev || "-"} -> ${t}`); }
+  const all = ["cut", "whip", "zoom", "leak", "dissolve"], used = new Set(out.map(p => p.params.transition).filter(t => t && !String(t).startsWith("gl:"))), fit = { cut: ["fire"], whip: ["ember", "fire"], zoom: ["ember", "fire", "cold"], leak: ["cold", "gold"], dissolve: ["gold", "cold"] };
+  for (const t of all) { if (used.has(t) || (t === "dissolve" && !dissolveOk)) continue; const c = out.map((p, i) => ({ p, i })).filter(({ p, i }) => i > 0 && p.params.transition && (!p.params.transition || used.size === 0 || [...new Set(out.map(q => q.params.transition))].length) && (fit[t] || []).includes(p.params.tone)); const pick = (t === "dissolve" ? c.filter(x => x.i > N * 0.6).slice(-1)[0] : c[Math.floor(c.length / 2)]) || out.map((p, i) => ({ p, i })).filter(x => x.i > 0)[Math.floor(N / 2)]; if (!pick) continue; const prev = pick.p.params.transition; if (String(prev || "").startsWith("gl:")) continue; pick.p.params.transition = t; used.add(t); rep.transitions.push(`${pick.p.id}: ${prev || "-"} -> ${t}`); }
   return { plan: out.map(p => ({ ...p, params: { ...p.params, shots: p.params.shots.length ? p.params.shots : undefined } })), report: rep };
 }

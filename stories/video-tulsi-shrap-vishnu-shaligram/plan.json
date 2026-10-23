@@ -99,9 +99,9 @@
     "शिव"
    ],
    "caption": "100 बरस",
+   "fxBy": "owner",
    "tone": "cold",
-   "transition": "leak",
-   "fxBy": "owner"
+   "transition": "leak"
   },
   "chapter": "ch1"
  },

@@ -51,6 +51,7 @@ plan.forEach((p, i) => { const pr = p.params || {}, a = T0[i], z = T1[i], tone =
     if (tr === "whip") S("whoosh_fast", a - 0.1, LV.wf, { pan: side, send: 0.2 });
     else if (tr === "zoom") { S("whoosh_long", a + 0.26, LV.wl, { alignPeak: true, send: 0.3 }); S("impact_small", a + 0.3, LV.small); }
     else if (tr === "leak") { S("air", a - 0.05, LV.air, { send: 0.4 }); S("shimmer", a + 0.2, LV.shimmer, { send: 0.5 }); }
+    else if (tr.startsWith("gl:")) { if (/FilmBurn|Overexposure|Dreamy|fadecolor|morph|luminance|ripple/i.test(tr)) { S("air", a, LV.air, { send: 0.4 }); S("shimmer", a + 0.4, LV.shimmer, { send: 0.5 }); } else { S("whoosh_long", a + 0.45, LV.wl, { alignPeak: true, send: 0.3 }); S("impact_small", a + 0.5, LV.small); } }   // 3D shader transitions last 0.9 s: the whoosh peaks mid-way, the thud lands as the new beat settles
     else if (tr === "cut") S(tone === "fire" ? "impact_mid" : "impact_small", a - 0.02, tone === "fire" ? LV.mid : LV.small);
     else if (tr === "wipe" || tr === "iris") S("whoosh_soft", a - 0.1, LV.ws, { pan: side });
     /* dissolve: silence, the music carries it */ }
@@ -61,7 +62,7 @@ plan.forEach((p, i) => { const pr = p.params || {}, a = T0[i], z = T1[i], tone =
   if (pr.fx === "chromatic_glitch_wipe") S("glitch", a + 0.1, LV.glitch, { trim: 0.6, fade: 0.15 });
   if (pr.fx === "speed_ramp_punch") S("impact_mid", a + (pr.times?.[0] ?? 0.5) * (z - a), LV.mid);
   // ---- typed text: one real key per letter, at the moment the renderer reveals it ----
-  LAG = i > 0 ? ({ zoom: 0.06, leak: 0.04 }[pr.transition || look.transition || "dissolve"] || 0) : 0;
+  LAG = i > 0 ? (String(pr.transition || "").startsWith("gl:") ? 0.08 : ({ zoom: 0.06, leak: 0.04 }[pr.transition || look.transition || "dissolve"] || 0)) : 0;
   if (p.comp === "kinetic" && Array.isArray(pr.lines)) {
     const rows = pr.lines.map(l => l.split(/\s+/).map(w => w.replace(/\*/g, "")).filter(Boolean));
     if (pr.style === "extrude") { const txt = rows.map(w => w.join(" ")), totG = txt.reduce((q, l) => q + gl(l).length, 0), d = 0.2 * Math.min(4, txt.join("").length / 2);

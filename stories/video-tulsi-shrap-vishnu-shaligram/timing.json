@@ -1,48 +1,48 @@
 {
  "item": "tulsi-shrap-vishnu-shaligram.video",
- "started": "2026-10-23T08:46:50.366Z",
+ "started": "2026-10-23T08:55:27.723Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
    "status": "cached",
-   "start": 1792745210366,
+   "start": 1792745727723,
    "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792745210367,
+   "start": 1792745727723,
    "detail": "29 beats, 0 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
-   "status": "done",
-   "start": 1792745210368,
-   "detail": "88 s of speech",
-   "seconds": 282
+   "status": "cached",
+   "start": 1792745727724,
+   "detail": "voice exists",
+   "seconds": 0
   },
   {
    "name": "director",
    "status": "cached",
-   "start": 1792745492401,
+   "start": 1792745727724,
    "detail": "plan.json is current",
    "seconds": 0
   },
   {
    "name": "coverage",
    "status": "done",
-   "start": 1792745492401,
+   "start": 1792745727725,
    "detail": "14 extra shots, hold <= 3s",
    "seconds": 0
   },
   {
    "name": "art",
    "status": "running",
-   "start": 1792745492403
+   "start": 1792745727727
   }
  ],
- "total_seconds": 282
+ "total_seconds": 0
 }
