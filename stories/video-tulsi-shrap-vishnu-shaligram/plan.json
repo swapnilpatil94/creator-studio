@@ -100,7 +100,8 @@
    ],
    "caption": "100 बरस",
    "tone": "cold",
-   "transition": "leak"
+   "transition": "leak",
+   "fxBy": "owner"
   },
   "chapter": "ch1"
  },
@@ -252,16 +253,7 @@
    "reveal": "wipe",
    "fx": "mesh_dolly_zoom_vertigo",
    "tone": "ember",
-   "transition": "whip",
-   "shots": [
-    {
-     "img": "v014_close",
-     "framing": "close",
-     "of": "s14",
-     "fx": "drone_push_in"
-    }
-   ],
-   "autoShots": true
+   "transition": "whip"
   },
   "chapter": "ch1"
  },
@@ -318,16 +310,7 @@
    "move": "push",
    "fx": "eye_glow_energy_pulse",
    "tone": "ember",
-   "transition": "cut",
-   "shots": [
-    {
-     "img": "v017_close",
-     "framing": "close",
-     "of": "s17",
-     "fx": "drone_push_in"
-    }
-   ],
-   "autoShots": true
+   "transition": "cut"
   },
   "chapter": "ch1"
  },
@@ -341,16 +324,7 @@
    "reveal": "diamond",
    "fx": "mesh_rack_focus_dof",
    "tone": "ember",
-   "transition": "whip",
-   "shots": [
-    {
-     "img": "v018_close",
-     "framing": "close",
-     "of": "s18",
-     "fx": "drone_push_in"
-    }
-   ],
-   "autoShots": true
+   "transition": "whip"
   },
   "chapter": "ch1"
  },

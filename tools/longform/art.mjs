@@ -33,7 +33,8 @@ export const ensurePeriodCostume = shot => { const s = shot.subject || ""; if (!
 // a soul/spirit subject with no ghostly word rendered as a solid flying king in costume: spirits are translucent light, never costumed bodies
 const SPIRIT = /\b(soul|spirit|ghost|preta|atma|aatma|shade)\b/i, ETHEREAL = /\b(translucent|ethereal|ghostly|luminous mist|wisp)\w*/i;
 export const ensureSpirit = shot => SPIRIT.test(shot.subject || "") && !ETHEREAL.test(shot.subject || "") ? { ...shot, subject: "translucent ethereal " + shot.subject + " of pale light and mist" } : shot;
-export const TONE_LIGHT = { cold: "cold blue moonlight, deep shadows", ember: "flickering orange torchlight in darkness", fire: "red hellfire glow, rising embers", gold: "warm golden lamplight" };
+// colour mechanism (cinema practice, not colour-meaning folklore): every tone keeps COMPLEMENTARY separation, a warm accent light against cool shadows, so the skin and the focal point leave the background; the arc cold -> ember -> fire -> gold stays
+export const TONE_LIGHT = { cold: "cold blue moonlight with one warm lamp accent, deep shadows", ember: "amber torchlight against deep teal shadows", fire: "crimson fire glow against black, rising embers", gold: "warm golden light, soft cream highlights, gentle teal shadows" };
 const CREATURE = /\b(beast|creature|demon|asura|rakshasa|serpent|snake|naga|tiger|lion|dog|hound|wolf|monster|animal|bird|ruru|bull|buffalo)\b/i;
 // coverage shots (tools/longform/coverage.mjs) are the same moment at another shot size: framing chosen for what the subject is
 function coverageSpec(parent, framing) { const s = parent.subject || "", kind = HUMAN.test(s) || /PROTAGONIST/.test(s) ? "human" : CREATURE.test(s) ? "creature" : "object";

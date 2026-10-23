@@ -1,0 +1,668 @@
+{
+ "story": "video-tulsi-shrap-vishnu-shaligram",
+ "profile": "kathaaya-reels-v2",
+ "post": "broadcast",
+ "tempo_scale": 0.8692,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 260,
+ "duration_s": 87.75,
+ "speech_words_per_s": 3.3,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "पति युद्ध से लौटा, लेकिन वो पति नहीं था।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.06,
+   "start": 0.0,
+   "end": 2.417,
+   "tries": 1,
+   "words_per_s": 3.72,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "पति युद्ध से लौटा, लेकिन वो पति नहीं था.",
+   "raw_dur_s": 2.57,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 2.657,
+   "end": 5.657,
+   "tries": 1,
+   "words_per_s": 3.33,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया.",
+   "raw_dur_s": 3.14,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.19,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "कौन? जवाब शायद आपके आँगन में ही है।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 5.957,
+   "end": 8.017,
+   "tries": 1,
+   "words_per_s": 3.88,
+   "beat": "v003",
+   "pause_after": 0.3,
+   "spoken": "कौन? जवाब शायद आपके आँगन में ही है.",
+   "raw_dur_s": 2.16,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 3.7,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 8.317,
+   "end": 12.043,
+   "tries": 1,
+   "words_per_s": 2.95,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी.",
+   "raw_dur_s": 3.95,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.78,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 12.263,
+   "end": 14.792,
+   "tries": 1,
+   "words_per_s": 3.95,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा.",
+   "raw_dur_s": 2.69,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 3.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "लेकिन क्यों?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 15.012,
+   "end": 15.651,
+   "tries": 1,
+   "words_per_s": 3.13,
+   "beat": "v006",
+   "pause_after": 0.3,
+   "spoken": "लेकिन क्यों?",
+   "raw_dur_s": 0.67,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 3.0,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 15.951,
+   "end": 18.997,
+   "tries": 1,
+   "words_per_s": 3.61,
+   "beat": "v007",
+   "pause_after": 0.22,
+   "spoken": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
+   "raw_dur_s": 3.29,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.35,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 19.217,
+   "end": 22.013,
+   "tries": 1,
+   "words_per_s": 3.93,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती.",
+   "raw_dur_s": 3.02,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.64,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 22.233,
+   "end": 24.667,
+   "tries": 1,
+   "words_per_s": 3.7,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया.",
+   "raw_dur_s": 2.62,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "वो ब्राह्मण, स्वयं हरि थे।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.026,
+   "start": 24.887,
+   "end": 26.745,
+   "tries": 1,
+   "words_per_s": 2.69,
+   "beat": "v010",
+   "pause_after": 0.28,
+   "spoken": "वो ब्राह्मण, स्वयं हरि थे.",
+   "raw_dur_s": 1.91,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 2.61,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 27.025,
+   "end": 29.728,
+   "tries": 1,
+   "words_per_s": 3.7,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे.",
+   "raw_dur_s": 2.91,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 29.948,
+   "end": 33.357,
+   "tries": 1,
+   "words_per_s": 3.52,
+   "beat": "v012",
+   "pause_after": 0.38,
+   "spoken": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए.",
+   "raw_dur_s": 3.27,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 3.67,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "बोली, \"आज मेरा जीवन सफल हो गया।\"",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 33.737,
+   "end": 35.999,
+   "tries": 1,
+   "words_per_s": 3.09,
+   "beat": "v013",
+   "pause_after": 0.38,
+   "spoken": "बोली, \"आज मेरा जीवन सफल हो गया.\"",
+   "raw_dur_s": 2.17,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 3.23,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "उसी समय, रणभूमि में शिव का त्रिशूल चला।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 36.379,
+   "end": 39.131,
+   "tries": 1,
+   "words_per_s": 2.91,
+   "beat": "v014",
+   "pause_after": 0.22,
+   "spoken": "उसी समय, रणभूमि में शिव का त्रिशूल चला.",
+   "raw_dur_s": 2.97,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 2.69,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "शंखचूड़ राख हो गया।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.026,
+   "start": 39.351,
+   "end": 40.631,
+   "tries": 1,
+   "words_per_s": 3.12,
+   "beat": "v015",
+   "pause_after": 0.28,
+   "spoken": "शंखचूड़ राख हो गया.",
+   "raw_dur_s": 1.31,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 3.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 40.911,
+   "end": 43.637,
+   "tries": 1,
+   "words_per_s": 3.67,
+   "beat": "v016",
+   "pause_after": 0.3,
+   "spoken": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
+   "raw_dur_s": 2.85,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 3.51,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 43.937,
+   "end": 46.492,
+   "tries": 1,
+   "words_per_s": 3.52,
+   "beat": "v017",
+   "pause_after": 0.22,
+   "spoken": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए.",
+   "raw_dur_s": 2.75,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.27,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "नारायण असली रूप में आए, तुलसी बेहोश हो गई।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 46.712,
+   "end": 49.238,
+   "tries": 1,
+   "words_per_s": 3.56,
+   "beat": "v018",
+   "pause_after": 0.38,
+   "spoken": "नारायण असली रूप में आए, तुलसी बेहोश हो गई.",
+   "raw_dur_s": 2.42,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 3.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.92,
+   "start": 49.618,
+   "end": 53.268,
+   "tries": 1,
+   "words_per_s": 3.29,
+   "beat": "v019",
+   "pause_after": 0.48,
+   "spoken": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
+   "raw_dur_s": 3.37,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 3.56,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v020.1",
+   "text": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.92,
+   "start": 53.748,
+   "end": 57.658,
+   "tries": 1,
+   "words_per_s": 2.3,
+   "beat": "v020",
+   "pause_after": 0.48,
+   "spoken": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम.",
+   "raw_dur_s": 3.61,
+   "checks": [
+    {
+     "seed": 31989,
+     "rate": 2.49,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v021.1",
+   "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 58.138,
+   "end": 60.869,
+   "tries": 1,
+   "words_per_s": 3.66,
+   "beat": "v021",
+   "pause_after": 0.38,
+   "spoken": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था.\"",
+   "raw_dur_s": 2.62,
+   "checks": [
+    {
+     "seed": 70029,
+     "rate": 3.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v022.1",
+   "text": "\"ये उसी तप का फल है।\"",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.026,
+   "start": 61.249,
+   "end": 62.603,
+   "tries": 3,
+   "words_per_s": 4.43,
+   "beat": "v022",
+   "pause_after": 0.28,
+   "spoken": "\"ये उसी तप का फल है.\"",
+   "raw_dur_s": 1.39,
+   "checks": [
+    {
+     "seed": 86845,
+     "rate": 4.31,
+     "problems": [
+      "raw pace 4.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 94764,
+     "rate": 4.39,
+     "problems": [
+      "raw pace 4.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 102683,
+     "rate": 4.63,
+     "problems": [
+      "raw pace 4.6 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v023.1",
+   "text": "\"यह देह छोड़ो, मुझसे विवाह करो।\"",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 62.883,
+   "end": 64.848,
+   "tries": 1,
+   "words_per_s": 3.05,
+   "beat": "v023",
+   "pause_after": 0.38,
+   "spoken": "\"यह देह छोड़ो, मुझसे विवाह करो.\"",
+   "raw_dur_s": 1.89,
+   "checks": [
+    {
+     "seed": 40937,
+     "rate": 3.18,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v024.1",
+   "text": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 65.228,
+   "end": 68.083,
+   "tries": 1,
+   "words_per_s": 2.8,
+   "beat": "v024",
+   "pause_after": 0.38,
+   "spoken": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे.\"",
+   "raw_dur_s": 2.74,
+   "checks": [
+    {
+     "seed": 85705,
+     "rate": 2.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v025.1",
+   "text": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.956,
+   "start": 68.463,
+   "end": 71.571,
+   "tries": 1,
+   "words_per_s": 2.9,
+   "beat": "v025",
+   "pause_after": 0.38,
+   "spoken": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा.\"",
+   "raw_dur_s": 2.98,
+   "checks": [
+    {
+     "seed": 84825,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v026.1",
+   "text": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 71.951,
+   "end": 75.474,
+   "tries": 1,
+   "words_per_s": 3.41,
+   "beat": "v026",
+   "pause_after": 0.22,
+   "spoken": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा.\"",
+   "raw_dur_s": 3.8,
+   "checks": [
+    {
+     "seed": 89287,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v027.1",
+   "text": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 75.694,
+   "end": 78.239,
+   "tries": 1,
+   "words_per_s": 3.54,
+   "beat": "v027",
+   "pause_after": 0.3,
+   "spoken": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
+   "raw_dur_s": 2.66,
+   "checks": [
+    {
+     "seed": 34257,
+     "rate": 3.38,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v028.1",
+   "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 78.539,
+   "end": 82.277,
+   "tries": 1,
+   "words_per_s": 2.94,
+   "beat": "v028",
+   "pause_after": 0.38,
+   "spoken": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा.",
+   "raw_dur_s": 3.45,
+   "checks": [
+    {
+     "seed": 17474,
+     "rate": 3.19,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v029.1",
+   "text": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 82.657,
+   "end": 87.446,
+   "tries": 1,
+   "words_per_s": 2.71,
+   "beat": "v029",
+   "pause_after": 0.3,
+   "spoken": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए.",
+   "raw_dur_s": 4.42,
+   "checks": [
+    {
+     "seed": 60892,
+     "rate": 2.94,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,93 +1,48 @@
 {
  "item": "tulsi-shrap-vishnu-shaligram.video",
- "started": "2026-10-23T05:17:44.245Z",
+ "started": "2026-10-23T08:46:50.366Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
    "status": "cached",
-   "start": 1792732664245,
+   "start": 1792745210366,
    "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792732664245,
+   "start": 1792745210367,
    "detail": "29 beats, 0 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
-   "status": "cached",
-   "start": 1792732664246,
-   "detail": "voice exists",
-   "seconds": 0
+   "status": "done",
+   "start": 1792745210368,
+   "detail": "88 s of speech",
+   "seconds": 282
   },
   {
    "name": "director",
    "status": "cached",
-   "start": 1792732664246,
+   "start": 1792745492401,
    "detail": "plan.json is current",
    "seconds": 0
   },
   {
    "name": "coverage",
    "status": "done",
-   "start": 1792732664247,
-   "detail": "17 extra shots, hold <= 3s",
+   "start": 1792745492401,
+   "detail": "14 extra shots, hold <= 3s",
    "seconds": 0
   },
   {
    "name": "art",
-   "status": "done",
-   "start": 1792732664248,
-   "detail": "2 new paintings of 41 scenes",
-   "seconds": 114
-  },
-  {
-   "name": "layers+scene",
-   "status": "done",
-   "start": 1792732778394,
-   "detail": "42 of 42 scenes layered, 0 picture beats fell back to type",
-   "seconds": 7
-  },
-  {
-   "name": "camera",
-   "status": "done",
-   "start": 1792732785383,
-   "detail": "11 camera clips (1 rendered, 10 cached)",
-   "seconds": 11
-  },
-  {
-   "name": "sound",
-   "status": "done",
-   "start": 1792732795883,
-   "detail": "",
-   "seconds": 0
-  },
-  {
-   "name": "render+QA",
-   "status": "done",
-   "start": 1792732795952,
-   "detail": "QA all passed",
-   "seconds": 124
-  },
-  {
-   "name": "thumbnail",
-   "status": "done",
-   "start": 1792732919651,
-   "detail": "teal palette, \"भगवान भी डर गए?\"",
-   "seconds": 0
-  },
-  {
-   "name": "package",
-   "status": "done",
-   "start": 1792732919652,
-   "detail": "seo.mjs ok, social.mjs ok",
-   "seconds": 0
+   "status": "running",
+   "start": 1792745492403
   }
  ],
- "total_seconds": 256,
- "ended": "2026-10-23T05:21:59.983Z"
+ "total_seconds": 282
 }
