@@ -24,6 +24,8 @@ const news = {
   ...(image ? { image: [image] } : {}),
   ...(post.sources.length ? { citation: post.sources } : {}),
 };
+// the embedded YouTube video as VideoObject (helps the video appear in Search and Discover; the thumbnail is YouTube's own)
+const video = post.videoId ? { "@context": "https://schema.org", "@type": "VideoObject", name: post.title, description: post.description, thumbnailUrl: [`https://i.ytimg.com/vi/${post.videoId}/hqdefault.jpg`], uploadDate: iso(post.publishDate), embedUrl: `https://www.youtube.com/embed/${post.videoId}`, inLanguage: LOCALES[lang]?.bcp ?? "hi-IN" } : null;
 const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
   { "@type": "ListItem", position: 1, name: "मुख्य पृष्ठ", item: new URL("/", Astro.site).href },
   { "@type": "ListItem", position: 2, name: sections[post.section] ?? post.section, item: new URL(`/category/${post.section}/`, Astro.site).href },
@@ -31,3 +33,4 @@ const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", it
 ---
 <script type="application/ld+json" set:html={JSON.stringify(news)} />
 <script type="application/ld+json" set:html={JSON.stringify(crumbs)} />
+{video && <script type="application/ld+json" set:html={JSON.stringify(video)} />}

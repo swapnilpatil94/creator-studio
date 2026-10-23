@@ -3,8 +3,8 @@
 # Needs repo secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
 name: blog-deploy
 on:
-  push: { branches: [main, "e2e/**"], paths: ["site/**", "content/items/**", "content/art/**", "tools/content/**", ".github/workflows/blog-deploy.yml"] }
-  schedule: [{ cron: "5 */3 * * *" }]
+  push: { branches: [main, "e2e/**"], paths: ["site/**", "content/items/**", "content/art/**", "tools/content/**", ".github/workflows/blog-deploy.yml"] }   # a blog post committed from the Hub (content/items) rebuilds and deploys on the spot
+  schedule: [{ cron: "7 * * * *" }]   # hourly: a post with a future publish time goes live within the hour (was every 3 hours)
   workflow_dispatch:
 permissions: { contents: read }
 concurrency: { group: blog-deploy, cancel-in-progress: true }
@@ -19,6 +19,8 @@ jobs:
       - run: npm ci --prefix site
       - run: node tools/content/to-mdx.mjs
       - run: npm run build --prefix site
+      - name: Verify SEO and Google News markup of the built site (stops the deploy if a page or sitemap is invalid)
+        run: node site/scripts/verify-seo.mjs
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
         with:
@@ -26,3 +28,6 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: site
           command: deploy
+      - name: Tell IndexNow search engines (Bing, Yandex...) about new and updated posts
+        continue-on-error: true
+        run: node tools/content/indexnow.mjs
