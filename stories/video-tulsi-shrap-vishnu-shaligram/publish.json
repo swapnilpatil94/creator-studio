@@ -163,7 +163,7 @@
   {
    "name": "format fits Shorts (<= 180 s)",
    "ok": true,
-   "detail": "93 s"
+   "detail": "90 s"
   },
   {
    "name": "channel brand line in description",
@@ -233,5 +233,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-23T05:21:59.858Z"
+ "generated": "2026-10-23T10:06:44.872Z"
 }

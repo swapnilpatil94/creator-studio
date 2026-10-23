@@ -1,7 +1,7 @@
 {
  "story": "video-tulsi-shrap-vishnu-shaligram",
  "format": "short",
- "generated": "2026-10-23T05:21:59.978Z",
+ "generated": "2026-10-23T10:06:44.998Z",
  "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
  "instagram": {
   "type": "REELS",
@@ -57,8 +57,8 @@
    {
     "platform": "instagram",
     "name": "length 3-90 s (Meta Reels API)",
-    "ok": false,
-    "detail": "93 s"
+    "ok": true,
+    "detail": "90 s"
    },
    {
     "platform": "instagram",
@@ -111,14 +111,14 @@
    {
     "platform": "facebook",
     "name": "reel length 3-90 s (Meta Reels API)",
-    "ok": false,
-    "detail": "93 s"
+    "ok": true,
+    "detail": "90 s"
    },
    {
     "platform": "facebook",
     "name": "file size <= 1000 MB",
     "ok": true,
-    "detail": "142 MB"
+    "detail": "137 MB"
    },
    {
     "platform": "facebook",

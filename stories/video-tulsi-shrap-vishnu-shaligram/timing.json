@@ -68,9 +68,26 @@
   },
   {
    "name": "render+QA",
-   "status": "running",
-   "start": 1792749876117
+   "status": "done",
+   "start": 1792749876117,
+   "detail": "QA all passed",
+   "seconds": 129
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792750004673,
+   "detail": "teal palette, \"भगवान भी डर गए?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792750004674,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
   }
  ],
- "total_seconds": 4148
+ "total_seconds": 4277,
+ "ended": "2026-10-23T10:06:45.003Z"
 }
