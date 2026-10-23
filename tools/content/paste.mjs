@@ -20,7 +20,7 @@
 //   - व्याख्या वाला दावा | | interpretation
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { search } from "./corpus.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const LABELS = ["FORMAT", "SLUG", "PILLAR", "TOPIC", "HOOK", "SLIDES", "BODY", "CTA", "SOURCE_LINE", "HASHTAGS", "TRADITION", "TITLE", "META", "MARKDOWN", "CLAIMS", "SOURCES", "DISCLOSURE", "ART_STYLE", "NARRATION", "YOUTUBE", "KEYWORDS", "SECTION", "PEG", "HERO_ALT", "AUTHOR", "KEYFACTS", "TIMELINE"];
+const LABELS = ["FORMAT", "SLUG", "PILLAR", "TOPIC", "HOOK", "SLIDES", "BODY", "CTA", "SOURCE_LINE", "HASHTAGS", "TRADITION", "TITLE", "META", "MARKDOWN", "CLAIMS", "SOURCES", "DISCLOSURE", "ART_STYLE", "NARRATION", "YOUTUBE", "KEYWORDS", "SECTION", "PEG", "HERO_ALT", "AUTHOR", "KEYFACTS", "TIMELINE", "COVER_PROMPT", "FIGURES"];
 export function parse(text) {
   const t = text.trim(); if (t.startsWith("{")) { const it = JSON.parse(t); return finish(it); }
   const secs = {}; let cur = null; for (const line of t.split("\n")) { const m = /^\s*([A-Z_]{3,12})\s*:\s*(.*)$/.exec(line); if (m && LABELS.includes(m[1])) { cur = m[1]; secs[cur] = [m[2]]; } else if (cur) secs[cur].push(line); }
@@ -38,6 +38,10 @@ export function parse(text) {
   if (secs.PEG) it.timely_hook = one("PEG"); if (secs.HERO_ALT) it.hero_alt = one("HERO_ALT"); if (secs.AUTHOR) it.author = one("AUTHOR");
   if (secs.KEYFACTS) it.keyfacts = many("KEYFACTS").map(l => { const [label, value, icon] = l.replace(/^[-*•]\s*/, "").split("|").map(x => x.trim()); return { label, value, icon: icon || "📜" }; }).filter(k => k.label && k.value);
   if (secs.TIMELINE) it.timeline = many("TIMELINE").map(l => { const [title, text] = l.replace(/^[-*•]\s*/, "").split("|").map(x => x.trim()); return { title, text: text || "" }; }).filter(x => x.title);
+  // pictures the model plans (the Blog tab shows them pre-filled: paste/generate the prompt with FLUX or attach your own file): COVER_PROMPT + HERO_ALT, and FIGURES lines  after=<n> | illustration|infographic | prompt or infographic brief | alt | caption
+  { const imgs = []; if (secs.COVER_PROMPT) imgs.push({ id: "cover", role: "hero", prompt: one("COVER_PROMPT"), alt: one("HERO_ALT"), caption: "", after: 0, path: "" });
+    if (secs.FIGURES) many("FIGURES").forEach((l, i) => { const [a, role, prompt, alt, caption] = l.replace(/^[-*•]\s*/, "").split("|").map(x => x.trim()), n = /after\s*=\s*(\d+)/i.exec(a || ""); if (!n || !prompt) return; imgs.push({ id: "fig" + (i + 1), role: /info/i.test(role || "") ? "infographic" : "illustration", prompt, alt: alt || "", caption: caption || "", after: +n[1], path: "" }); });
+    if (imgs.length) it.images = imgs; }
   it.claims = many("CLAIMS").map(l => { const [text, en, status, source] = l.replace(/^[-*•]\s*/, "").split("|").map(x => x.trim()); return { text, ...(en ? { en } : {}), status: status || "verified", ...(source ? { source } : {}) }; });
   const refs = [...new Set(it.claims.map(c => c.source).filter(Boolean))]; it.sources = many("SOURCES").length ? many("SOURCES").map(l => { const [label, ref] = l.replace(/^[-*•]\s*/, "").split("|").map(x => x.trim()); return { label, ref }; }) : refs.map(r => ({ label: it.source_line || r, ref: r }));
   return finish(it);
@@ -61,6 +65,7 @@ TRUST (this is what separates a publication from a content farm)
 - Every factual claim names its text and place ("देवी भागवत पुराण, नवम स्कंध, अध्याय २२"). Where tellings differ, say so and name both. Beliefs and interpretation are labelled "मान्यता" or "व्याख्या". Never invent a quote, a verse number, a date or a statistic. Quote at most 25 words from any translation and name the translator.
 - First mention of each Sanskrit name: Devanagari with the Roman spelling in brackets once (तुलसी (Tulsi)), because readers search in both scripts.
 - At least 2 distinct sources (listed under SOURCES) and 2-4 internal link suggestions in the text as {{link: slug | anchor text}}; external links only to real, authoritative pages you were given.
+- PICTURES (plan them; the editor paints or attaches them): one COVER_PROMPT and 2-4 FIGURES. Each picture prompt is ONE English paragraph of 40-80 words: subject first, then action, setting and light; cinematic photorealistic movie still; era-correct and culture-correct for the story; at most two clearly visible figures; hands hidden or doing one clear action; NO text, letters or logos in the picture. Add an infographic only when the source gives real structure (a timeline, a family tree, a journey, a comparison of two tellings, a list such as the fourteen jewels): its entry is an INFOGRAPHIC BRIEF instead of a painting prompt: the title, 4-7 items with the exact Hindi text for each, and the suggested layout (vertical timeline, tree, two columns). Never put a fact in an infographic that is not in the article. Place each figure with after=<n>: 0 = after the intro and video, n = after section n; spread them, never two in a row.
 - Respectful of every faith; no mockery, no fear-mongering, no medical, legal or money claims; no sectarian attacks.
 
 SEO WITHOUT STUFFING
@@ -78,12 +83,16 @@ PEG: <the occasion that makes it timely, in Hindi, with the date if given>
 KEYWORDS: <comma separated>
 YOUTUBE: <the video URL given below>
 HERO_ALT:
+COVER_PROMPT: <English paragraph for the cover picture, 16:9, text-free>
 AUTHOR: <a real byline if given, else leave out>
 TRADITION: <one sentence: which text this follows and that other tellings differ>
 KEYFACTS:
 - <label> | <value> | <emoji>      (3-5 lines: स्रोत, पात्र, स्थान, पर्व, पढ़ने का समय)
 TIMELINE:
 - <short step title> | <one line>     (4-7 steps, optional)
+FIGURES:
+- after=<0..n> | illustration | <English painting prompt> | <Hindi alt text> | <Hindi caption>
+- after=<n> | infographic | <INFOGRAPHIC BRIEF: title, 4-7 items with exact Hindi text, layout> | <Hindi alt text> | <Hindi caption>
 MARKDOWN:
 # <title>
 ...the article...

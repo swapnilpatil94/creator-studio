@@ -25,7 +25,7 @@ export function newsChecks(it) {
   const kws = it.hinglish_keywords || []; if (kws.length < 3) add("WARN", "news-keywords", "add 4-8 KEYWORDS (the Hinglish phrases people actually search)");
   else { const k = kws[0].toLowerCase().split(/\s+/)[0], n = (md.toLowerCase().match(new RegExp(k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length, dens = n / Math.max(1, words(md).length) * 100; if (dens > 3) add("WARN", "news-stuffing", `"${k}" is ${dens.toFixed(1)}% of the words: that reads as keyword stuffing`); }
   // pictures: a cover at least 1200 px wide (Discover), alt text on everything, AI pictures disclosed
-  const pics = it.images || [], heroP = pics.find(x => x.role === "hero");
+  const pics = (it.images || []).filter(x => x.path), heroP = pics.find(x => x.role === "hero");
   if (!heroP && !it.hero_image) add("WARN", "news-hero", "no cover picture: Google Discover and News cards need a large image (at least 1200 px wide)"); else if (heroP && heroP.w && heroP.w < 1200) add("WARN", "news-hero", `the cover is ${heroP.w} px wide; Discover wants at least 1200`);
   for (const x of pics) { if (!x.alt || len(x.alt) < 8) add("FAIL", "news-alt", `a ${x.role || "picture"} has no alt text (accessibility and image search): describe what it shows`); if (x.role === "infographic" && x.w && x.w < 800) add("WARN", "news-infographic", `an infographic is only ${x.w} px wide: text will not be readable on a phone`); }
   if (pics.some(x => x.ai) && !it.ai_art_disclosed) add("FAIL", "news-ai-art", "a picture was painted by AI: it must be disclosed (the site labels it automatically once ai_art_disclosed is set)");

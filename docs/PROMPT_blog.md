@@ -1,6 +1,6 @@
-# Blog prompt (Google News + SEO, with the YouTube video embedded)
+# Blog prompt (Google News + SEO, YouTube embed, cover and infographic plan)
 
-Generated from tools/content/paste.mjs. In the Hub (Topics tab) the SOURCES block is filled automatically with real passages from our corpus; if you use this by hand, paste the verse and translation under SOURCES. Paste the model's answer into the Blog tab: the readiness checks run before it can be published.
+Generated from tools/content/paste.mjs. In the Hub (Topics tab) the SOURCES block is filled automatically with real passages from our corpus; by hand, paste the verse and translation under SOURCES. Paste the model's answer into the Blog tab: the Pictures card is pre-filled with its COVER_PROMPT and FIGURES (press Generate with FLUX, or attach your own file), and the readiness checks run before publishing.
 
 ```
 You are the staff writer of KATHAAYA, a Hindi channel that tells Indian katha WITH its source named. You write for a Hindi-speaking devotee or curious viewer watching on a phone, often with family.
@@ -22,9 +22,9 @@ OUTPUT: one JSON object only (no prose, no code fence) with the fields: id, slug
 
 
 === TASK ===
-Topic: [TOPIC: Hindi question or promise]
+Topic: t
 Format: blog
-Pillar: unsaid-relations
+Pillar: p
 VIDEO SCRIPT (the narration of the matching video: expand it into an article, never copy it): [paste the narration lines here]
 YOUTUBE LINK: [paste the video link]
 PEG (why this is timely): [festival / tithi / anniversary, with the date if you have it]
@@ -32,8 +32,8 @@ AUTHOR (real byline, optional): [name]
 
 Return ONLY text in this labelled format (no commentary):
 FORMAT: blog
-SLUG: [slug]
-PILLAR: unsaid-relations
+SLUG: s
+PILLAR: p
 HOOK: ...
 TITLE: ...
 META: ...
@@ -71,6 +71,7 @@ TRUST (this is what separates a publication from a content farm)
 - Every factual claim names its text and place ("देवी भागवत पुराण, नवम स्कंध, अध्याय २२"). Where tellings differ, say so and name both. Beliefs and interpretation are labelled "मान्यता" or "व्याख्या". Never invent a quote, a verse number, a date or a statistic. Quote at most 25 words from any translation and name the translator.
 - First mention of each Sanskrit name: Devanagari with the Roman spelling in brackets once (तुलसी (Tulsi)), because readers search in both scripts.
 - At least 2 distinct sources (listed under SOURCES) and 2-4 internal link suggestions in the text as {{link: slug | anchor text}}; external links only to real, authoritative pages you were given.
+- PICTURES (plan them; the editor paints or attaches them): one COVER_PROMPT and 2-4 FIGURES. Each picture prompt is ONE English paragraph of 40-80 words: subject first, then action, setting and light; cinematic photorealistic movie still; era-correct and culture-correct for the story; at most two clearly visible figures; hands hidden or doing one clear action; NO text, letters or logos in the picture. Add an infographic only when the source gives real structure (a timeline, a family tree, a journey, a comparison of two tellings, a list such as the fourteen jewels): its entry is an INFOGRAPHIC BRIEF instead of a painting prompt: the title, 4-7 items with the exact Hindi text for each, and the suggested layout (vertical timeline, tree, two columns). Never put a fact in an infographic that is not in the article. Place each figure with after=<n>: 0 = after the intro and video, n = after section n; spread them, never two in a row.
 - Respectful of every faith; no mockery, no fear-mongering, no medical, legal or money claims; no sectarian attacks.
 
 SEO WITHOUT STUFFING
@@ -88,12 +89,16 @@ PEG: <the occasion that makes it timely, in Hindi, with the date if given>
 KEYWORDS: <comma separated>
 YOUTUBE: <the video URL given below>
 HERO_ALT:
+COVER_PROMPT: <English paragraph for the cover picture, 16:9, text-free>
 AUTHOR: <a real byline if given, else leave out>
 TRADITION: <one sentence: which text this follows and that other tellings differ>
 KEYFACTS:
 - <label> | <value> | <emoji>      (3-5 lines: स्रोत, पात्र, स्थान, पर्व, पढ़ने का समय)
 TIMELINE:
 - <short step title> | <one line>     (4-7 steps, optional)
+FIGURES:
+- after=<0..n> | illustration | <English painting prompt> | <Hindi alt text> | <Hindi caption>
+- after=<n> | infographic | <INFOGRAPHIC BRIEF: title, 4-7 items with exact Hindi text, layout> | <Hindi alt text> | <Hindi caption>
 MARKDOWN:
 # <title>
 ...the article...
@@ -103,28 +108,6 @@ CLAIMS:
 - <Hindi claim> | <English paraphrase using the source's words> | verified | <corpus>:<section>
 
 === SOURCES (the only facts you may use; cite as <corpus>:<section>) ===
-[mahabharata-sabha:66] Mahabharata, Sabha Parva, Section 66 (Ganguli tr.)
-in one piece of cloth with her navel itself exposed, in consequence of her season having come, she should come before her father-in-law weeping bitterly. And that intelligent messenger, O king, having gone to Draupadi's abode with speed, informed her of the intentions of Yudhishthira. The illustrious Pandavas, meanwhile, distressed and sorrowful, and bound by promise, could not settle what they should do. And casting his eyes upon them, king Duryodhana, glad at heart, addressed the Suta and said,--'O Pratikamin , bring her hither. Let the Kauravas answer her question before her face. The Suta, then, obedient to his commands, but terrified at the (possible) wrath of the daughter of Drupada, disregarding his reputation for intelligence, once again said to those that were in the assembly,--what shall I say unto Krishna?' "Duryodhana, hearing this, said,--'O Dussasana, this son of my
-
-[mahabharata-sabha:67] Mahabharata, Sabha Parva, Section 67 (Ganguli tr.)
-the oldest of the Kurus, as also the high-souled Vidura, do not say anything! The son of Bharadwaja who is the preceptor of us, as also Kripa, is here. Why do not these best of regenerate ones answer the question? Let also those other kings assembled here from all directions answer according to their judgment this question, leaving aside all motives of gain and anger. Ye kings, answer ye the question that hath been asked by this blessed daughter of king Drupada, and declare after reflection on which side each of ye is.' Thus did Vikarna repeatedly appeal to those that were in that assembly. But those kings answered him not one word, good or ill. And Vikarna having repeatedly appealed to all the kings began to rub his hands and sigh like a snake. And at last the prince
-
-[mahabharata-sabha:67] Mahabharata, Sabha Parva, Section 67 (Ganguli tr.)
-them who upon being asked a question, answer it not, or answer it falsely. Kasyapa thus asked answered.--'He that knoweth, but answereth not a question from temptation, anger or fear, casteth upon himself a thousand nooses of Varuna. And the person who, cited as a witness with respect to any matter of ocular or auricular knowledge, speaketh carelessly, casteth a thousand nooses of Varuna upon his own person. On the completion of one full year, one such noose is loosened. Therefore, he that knoweth, should speak the truth without concealment. If virtue, pierced by sin, repaireth to an assembly (for aid), it is the duty of every body in the assembly to take off the dart, otherwise they themselves would be pierced with it. In an assembly where a truly censurable act is not rebuked, half the demerit of that
-
-[mahabharata-sabha:67] Mahabharata, Sabha Parva, Section 67 (Ganguli tr.)
-quench that fire and cool him by means of truth and morality. The afflicted person asketh the assembly about his rights, as sanctioned by morality. They that are in the assembly should, unmoved by interest and anger, answer the question. Ye kings, Vikarna hath answered the question, according to his own knowledge and judgment. Ye should also answer it as ye think proper. Knowing the rules of morality, and having attended an assembly, he that doth not answer a query that is put, incurreth half the demerit that attacheth to a lie. He, on the other hand, who, knowing the rules of morality and having joined an assembly answereth falsely, assuredly incurreth the sin of a lie. The learned quote as an example in this connection the old history of Prahlada and the son of Angirasa. "There was of old
-
-[mahabharata-sabha:69] Mahabharata, Sabha Parva, Section 69 (Ganguli tr.)
-The Mahabharata , Book 2: Sabha Parva translated by Kisari Mohan Ganguli Sisupala-Badha Parva — Section LXIX Section LXX → 2418620 The Mahabharata , Book 2: Sabha Parva — Sisupala-Badha Parva — Section LXIX Kisari Mohan Ganguli Vaisampayana said,--"The kings present in that assembly, from tear of Duryodhana, uttered not a word, good or ill, although they beheld Draupadi crying piteously in affliction like a female osprey, and repeatedly appealing to them. And the son of Dhritarashtra beholding those kings and sons and grand sons of kings all remaining silent, smiled a little, and addressing the daughter of the king of Panchala, said,--O Yajnaseni, the question thou hast put dependeth on thy husbands--on Bhima of mighty strength, on Arjuna, on Nakula, on Sahadeva. Let them answer thy question. O Panchali, let them for thy sake declare in the midst of
-
-[mahabharata-sabha:67] Mahabharata, Sabha Parva, Section 67 (Ganguli tr.)
-so loud that they made the down of anybody who heard them stand on end. And all the honest men that were in that assembly began to say,--'Alas! the Kauravas answer not the question that hath been put to them by Draupadi. And all censuring Dhritarashtra together, made a loud clamour. Then Vidura, that master of the science of morality, waving his hands and silencing every one, spake these words;--'Ye that are in this assembly, Draupadi having put her question is weeping helplessly. Ye are not answering her. Virtue and morality are being persecuted by such conduct. An afflicted person approacheth an assembly of good men, like one that is being consumed by fire. They that are in the assembly quench that fire and cool him by means of truth and morality. The afflicted person asketh the assembly about his
-
-[mahabharata-sabha:69] Mahabharata, Sabha Parva, Section 69 (Ganguli tr.)
-Nakula, on Sahadeva. Let them answer thy question. O Panchali, let them for thy sake declare in the midst of these respectable men that Yudhishthira is not their lord, let them thereby make king Yudhishthira the just a liar. Thou shalt then be freed from the condition of slavery. Let the illustrious son of Dharma, always adhering to virtue, who is even like Indra, himself declare whether he is not thy lord. At his words, accept thou the Pandavas or ourselves without delay. Indeed, all the Kauravas present in this assembly are floating in the ocean of thy distress. Endued with magnanimity, they are unable to answer thy question, looking at thy unfortunate husbands.'" Vaisampayana continued,--"Hearing these words of the Kuru king, all who were present in the assembly loudly applauded them. And shouting approvingly, they made signs unto one
-
-[ramayana-aranya:X] Ramayana (Griffith tr.), Book III Aranya, Canto X: Ráma's Reply
-my promise, ne'er To Bráhmans break the oath I sware. I must, enforced by high constraint, Protect them all. Each suffering saint In me, unasked, his help had found; Still more in one by promise bound. I know thy words, mine own dear dame, From thy sweet heart's affection came: I thank thee for thy gentle speech, For those we love are those we teach. 'Tis like thyself, O fair of face, 'Tis worthy of thy noble race: Dearer than life, thy feet are set In righteous paths they ne'er forget.' Thus to the Maithil monarch's child, His own dear wife, in accents mild The high-souled hero said: Then to the holy groves which lay Beyond them fair to see, their way The bow-armed chieftain led.
+(no passages found: do not state facts)
 
 ```
