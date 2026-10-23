@@ -56,6 +56,7 @@ const PAINT = p => p.comp === "fx" || p.comp === "cinema";
 export function cinemaPass(plan, beats = {}, { dissolveOk = true } = {}) {
   const out = plan.map(p => ({ ...p, params: { ...(p.params || {}), shots: (p.params?.shots || []).map(s => ({ ...s })) } })), N = out.length, rep = { placed: [], skipped: [], transitions: [], roles: {} };
   if (N < 6) return { plan: plan.map(p => ({ ...p })), report: { ...rep, note: "film too short for the full pass" } };
+  out.forEach(p => { if (p.params.trBy === "cinema" && !String(p.params.transition || "").startsWith("gl:")) delete p.params.trBy; });   // the coverage stage rewrites transitions on every build: a stale mark from an earlier pass must not block a new placement
   const text = i => beats[out[i].id]?.text || "", pos = i => i / Math.max(1, N - 1), roleOf = i => i === 0 ? "hook" : pos(i) >= 0.7 && pos(i) <= 0.85 ? "peak" : "beat";
   out.forEach((p, i) => { rep.roles[p.id] = roleOf(i); });
   // slots: a beat's main effect (painting beats that are not text-only) and each coverage shot of it
