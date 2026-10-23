@@ -15,16 +15,23 @@
   "story": "video-arjuna-fast-test",
   "platform": "instagram",
   "at": "2026-10-22T13:00:00.000Z",
-  "status": "failed",
-  "error": "400 {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  "status": "done",
+  "posted_at": "2026-10-23T14:04:13.007216+00:00",
+  "result": {
+   "instagram": {
+    "id": "17966370203984340",
+    "permalink_url": "https://www.instagram.com/reel/De1ulfliUjb/"
+   }
+  }
  },
  {
   "id": "mvjq07e4",
   "story": "video-bhishma-vow",
   "platform": "instagram",
   "at": "2026-10-23T13:30:00.000Z",
-  "status": "queued",
-  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-bhishma-vow.jpg"
+  "status": "failed",
+  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-bhishma-vow.jpg",
+  "error": "400 {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
  },
  {
   "id": "mvjq12mk",

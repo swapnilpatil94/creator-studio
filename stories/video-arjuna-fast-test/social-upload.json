@@ -35,10 +35,11 @@
   "permalink_url": null
  },
  "instagram": {
-  "queued": "2026-10-22T13:00:00.000Z",
-  "note": "Instagram has no scheduling in the API: the studio server publishes it at that time, so keep it running"
+  "id": "17966370203984340",
+  "permalink_url": "https://www.instagram.com/reel/De1ulfliUjb/",
+  "note": "posted 2026-10-23 from a hosted copy (the resumable upload kept failing for reels over about 60 s)"
  },
- "mode": "schedule",
- "at": "2026-10-22T13:00:00.000Z",
- "when": "2026-10-21T16:54:37.526Z"
+ "mode": "public",
+ "at": null,
+ "when": "2026-10-23T14:04:13.007216+00:00"
 }
