@@ -129,18 +129,18 @@
    "pan": -0.3
   },
   {
-   "t": 12.025,
+   "t": 12.525,
    "type": "sample",
-   "pool": "air",
-   "level": -38,
-   "send": 0.4
+   "pool": "whoosh_long",
+   "level": -32,
+   "alignPeak": true,
+   "send": 0.3
   },
   {
-   "t": 12.275,
+   "t": 12.567,
    "type": "sample",
-   "pool": "shimmer",
-   "level": -44,
-   "send": 0.5
+   "pool": "impact_small",
+   "level": -28
   },
   {
    "t": 15.067,
@@ -238,7 +238,16 @@
    "level": -28
   },
   {
-   "t": 24.983,
+   "t": 25.025,
+   "type": "typing",
+   "times": [
+    25.025,
+    25.192
+   ],
+   "level": -42
+  },
+  {
+   "t": 25.15,
    "type": "sample",
    "pool": "whoosh_long",
    "level": -32,
@@ -246,19 +255,10 @@
    "send": 0.3
   },
   {
-   "t": 25.025,
+   "t": 25.192,
    "type": "sample",
    "pool": "impact_small",
    "level": -28
-  },
-  {
-   "t": 25.025,
-   "type": "typing",
-   "times": [
-    25.025,
-    25.15
-   ],
-   "level": -42
   },
   {
    "t": 25.192,
@@ -267,7 +267,7 @@
    "level": -22
   },
   {
-   "t": 25.65,
+   "t": 25.692,
    "type": "sample",
    "pool": "shimmer",
    "level": -41,
@@ -324,14 +324,6 @@
    "level": -28
   },
   {
-   "t": 36.108,
-   "type": "sample",
-   "pool": "whoosh_fast",
-   "level": -26,
-   "pan": 0.5,
-   "send": 0.2
-  },
-  {
    "t": 36.192,
    "type": "sample",
    "pool": "riser_dark",
@@ -339,6 +331,20 @@
    "alignPeak": true,
    "fit": 1.3,
    "send": 0.4
+  },
+  {
+   "t": 36.65,
+   "type": "sample",
+   "pool": "whoosh_long",
+   "level": -32,
+   "alignPeak": true,
+   "send": 0.3
+  },
+  {
+   "t": 36.692,
+   "type": "sample",
+   "pool": "impact_small",
+   "level": -28
   },
   {
    "t": 39.15,
@@ -383,12 +389,18 @@
    "level": -28
   },
   {
-   "t": 46.442,
+   "t": 46.983,
    "type": "sample",
-   "pool": "whoosh_fast",
-   "level": -26,
-   "pan": 0.5,
-   "send": 0.2
+   "pool": "whoosh_long",
+   "level": -32,
+   "alignPeak": true,
+   "send": 0.3
+  },
+  {
+   "t": 47.025,
+   "type": "sample",
+   "pool": "impact_small",
+   "level": -28
   },
   {
    "t": 49.4,
@@ -448,15 +460,15 @@
    "level": -28
   },
   {
-   "t": 61.275,
+   "t": 61.317,
    "type": "typing",
    "times": [
-    61.275,
-    61.358,
+    61.317,
     61.4,
-    61.483,
+    61.442,
     61.525,
-    61.608,
+    61.567,
+    61.65,
     61.692,
     61.733,
     61.817
@@ -464,7 +476,7 @@
    "level": -46
   },
   {
-   "t": 61.317,
+   "t": 61.525,
    "type": "sample",
    "pool": "whoosh_long",
    "level": -32,
@@ -472,7 +484,7 @@
    "send": 0.3
   },
   {
-   "t": 61.358,
+   "t": 61.567,
    "type": "sample",
    "pool": "impact_small",
    "level": -28
@@ -530,14 +542,6 @@
    "level": -28
   },
   {
-   "t": 71.692,
-   "type": "sample",
-   "pool": "whoosh_fast",
-   "level": -26,
-   "pan": 0.5,
-   "send": 0.2
-  },
-  {
    "t": 71.775,
    "type": "sample",
    "pool": "riser_dark",
@@ -545,6 +549,20 @@
    "alignPeak": true,
    "fit": 1.3,
    "send": 0.4
+  },
+  {
+   "t": 72.233,
+   "type": "sample",
+   "pool": "whoosh_long",
+   "level": -32,
+   "alignPeak": true,
+   "send": 0.3
+  },
+  {
+   "t": 72.275,
+   "type": "sample",
+   "pool": "impact_small",
+   "level": -28
   },
   {
    "t": 73.525,
@@ -587,19 +605,20 @@
    "level": -28
   },
   {
-   "t": 78.358,
-   "type": "sample",
-   "pool": "air",
-   "level": -38,
-   "send": 0.4
-  },
-  {
    "t": 78.539,
    "type": "sparkle",
    "dur": 3,
    "rate": 10,
    "ramp": true,
    "level": -30
+  },
+  {
+   "t": 78.608,
+   "type": "sample",
+   "pool": "whoosh_long",
+   "level": -32,
+   "alignPeak": true,
+   "send": 0.3
   },
   {
    "t": 78.639,
@@ -610,8 +629,15 @@
   },
   {
    "t": 78.65,
+   "type": "sample",
+   "pool": "impact_small",
+   "level": -28
+  },
+  {
+   "t": 78.65,
    "type": "typing",
    "times": [
+    78.65,
     78.65,
     78.692,
     78.692,
@@ -624,43 +650,35 @@
     78.858,
     78.858,
     78.9,
-    78.9,
+    78.942,
     78.942,
     78.983,
     78.983,
     79.025,
     79.067,
-    79.067,
+    79.108,
     79.108,
     79.15,
-    79.15,
     79.192,
+    79.233,
     79.233,
     79.275,
     79.317,
     79.358,
     79.4,
     79.442,
-    79.483,
     79.525,
     79.567,
-    79.65,
+    79.608,
     79.692,
     79.775,
-    79.858,
+    79.817,
     79.942,
     80.067,
     80.233,
     80.9
    ],
    "level": -48
-  },
-  {
-   "t": 78.775,
-   "type": "sample",
-   "pool": "shimmer",
-   "level": -44,
-   "send": 0.5
   },
   {
    "t": 82.657,
