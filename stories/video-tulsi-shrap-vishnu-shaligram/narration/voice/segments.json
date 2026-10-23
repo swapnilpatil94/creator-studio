@@ -1,5 +1,5 @@
 {
- "duration_seconds": 87.746,
+ "duration_seconds": 92.332,
  "segments": [
   {
    "beat_id": "v001",
@@ -11,1606 +11,1584 @@
      "text": "पति युद्ध से लौटा, लेकिन वो पति नहीं था।",
      "emotion": "hook",
      "exaggeration": 0.68,
-     "tempo": 1.06,
+     "tempo": 0.909,
      "start": 0.0,
-     "end": 2.417,
-     "tries": 1,
-     "words_per_s": 3.72
+     "end": 2.82,
+     "tries": 1
     }
    ],
-   "end_seconds": 2.417,
+   "end_seconds": 2.82,
    "words": [
     {
      "word": "पति",
      "start": 0.04,
-     "end": 0.262,
-     "score": 0.556
+     "end": 0.302,
+     "score": 0.504
     },
     {
      "word": "युद्ध",
-     "start": 0.322,
-     "end": 0.584,
-     "score": 0.556
+     "start": 0.383,
+     "end": 0.665,
+     "score": 0.627
     },
     {
      "word": "से",
-     "start": 0.645,
-     "end": 0.725,
+     "start": 0.745,
+     "end": 0.826,
      "score": 0.996
     },
     {
      "word": "लौटा,",
-     "start": 0.786,
-     "end": 1.108,
-     "score": 0.844
+     "start": 0.906,
+     "end": 1.269,
+     "score": 0.8
     },
     {
      "word": "लेकिन",
-     "start": 1.269,
-     "end": 1.49,
-     "score": 0.922
+     "start": 1.491,
+     "end": 1.732,
+     "score": 0.933
     },
     {
      "word": "वो",
-     "start": 1.591,
-     "end": 1.692,
-     "score": 0.816
+     "start": 1.833,
+     "end": 1.954,
+     "score": 0.954
     },
     {
      "word": "पति",
-     "start": 1.752,
-     "end": 1.954,
-     "score": 0.787
+     "start": 2.034,
+     "end": 2.276,
+     "score": 0.886
     },
     {
      "word": "नहीं",
-     "start": 1.994,
-     "end": 2.155,
-     "score": 0.747
+     "start": 2.316,
+     "end": 2.498,
+     "score": 0.824
     },
     {
      "word": "था।",
-     "start": 2.216,
-     "end": 2.276,
-     "score": 0.749
+     "start": 2.578,
+     "end": 2.639,
+     "score": 0.688
     }
    ]
   },
   {
    "beat_id": "v002",
    "text": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
-   "start_seconds": 2.657,
+   "start_seconds": 3.059,
    "phrases": [
     {
      "id": "v002.1",
      "text": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
      "emotion": "curious",
      "exaggeration": 0.6,
-     "tempo": 1.043,
-     "start": 2.657,
-     "end": 5.657,
-     "tries": 1,
-     "words_per_s": 3.33
+     "tempo": 0.982,
+     "start": 3.059,
+     "end": 6.245,
+     "tries": 1
     }
    ],
-   "end_seconds": 5.657,
+   "end_seconds": 6.245,
    "words": [
     {
      "word": "इसी",
-     "start": 2.697,
-     "end": 2.959,
-     "score": 0.777
+     "start": 3.119,
+     "end": 3.38,
+     "score": 0.758
     },
     {
      "word": "धोखे",
-     "start": 3.04,
-     "end": 3.321,
-     "score": 0.488
+     "start": 3.46,
+     "end": 3.74,
+     "score": 0.594
     },
     {
      "word": "से",
-     "start": 3.402,
-     "end": 3.462,
-     "score": 0.702
+     "start": 3.84,
+     "end": 3.901,
+     "score": 0.753
     },
     {
      "word": "निकला",
-     "start": 3.483,
-     "end": 3.845,
-     "score": 0.967
+     "start": 3.941,
+     "end": 4.301,
+     "score": 0.94
     },
     {
      "word": "श्राप,",
-     "start": 3.865,
-     "end": 4.147,
-     "score": 0.518
+     "start": 4.321,
+     "end": 4.602,
+     "score": 0.534
     },
     {
      "word": "और",
-     "start": 4.248,
-     "end": 4.348,
-     "score": 0.726
+     "start": 4.742,
+     "end": 4.842,
+     "score": 0.952
     },
     {
      "word": "कोई",
-     "start": 4.409,
-     "end": 4.55,
-     "score": 0.795
+     "start": 4.923,
+     "end": 5.063,
+     "score": 0.729
     },
     {
      "word": "पत्थर",
-     "start": 4.63,
-     "end": 4.952,
-     "score": 0.912
+     "start": 5.143,
+     "end": 5.484,
+     "score": 0.909
     },
     {
      "word": "बन",
-     "start": 5.033,
-     "end": 5.154,
-     "score": 0.994
+     "start": 5.564,
+     "end": 5.704,
+     "score": 0.826
     },
     {
      "word": "गया।",
-     "start": 5.234,
-     "end": 5.355,
-     "score": 0.851
+     "start": 5.764,
+     "end": 5.884,
+     "score": 0.995
     }
    ]
   },
   {
    "beat_id": "v003",
    "text": "कौन? जवाब शायद आपके आँगन में ही है।",
-   "start_seconds": 5.957,
+   "start_seconds": 6.545,
    "phrases": [
     {
      "id": "v003.1",
      "text": "कौन? जवाब शायद आपके आँगन में ही है।",
      "emotion": "curious",
      "exaggeration": 0.6,
-     "tempo": 1.043,
-     "start": 5.957,
-     "end": 8.017,
-     "tries": 1,
-     "words_per_s": 3.88
+     "tempo": 0.88,
+     "start": 6.545,
+     "end": 8.994,
+     "tries": 1
     }
    ],
-   "end_seconds": 8.017,
+   "end_seconds": 8.994,
    "words": [
     {
      "word": "कौन?",
-     "start": 6.018,
-     "end": 6.26,
-     "score": 0.682
+     "start": 6.625,
+     "end": 6.906,
+     "score": 0.802
     },
     {
      "word": "जवाब",
-     "start": 6.462,
-     "end": 6.765,
-     "score": 0.72
+     "start": 7.127,
+     "end": 7.468,
+     "score": 0.757
     },
     {
      "word": "शायद",
-     "start": 6.846,
-     "end": 7.048,
-     "score": 0.711
+     "start": 7.569,
+     "end": 7.83,
+     "score": 0.824
     },
     {
      "word": "आपके",
-     "start": 7.108,
-     "end": 7.27,
-     "score": 0.41
+     "start": 7.91,
+     "end": 8.071,
+     "score": 0.446
     },
     {
      "word": "आँगन",
-     "start": 7.31,
-     "end": 7.573,
-     "score": 0.854
+     "start": 8.131,
+     "end": 8.452,
+     "score": 0.714
     },
     {
      "word": "में",
-     "start": 7.613,
-     "end": 7.694,
-     "score": 0.85
+     "start": 8.492,
+     "end": 8.593,
+     "score": 0.663
     },
     {
      "word": "ही",
-     "start": 7.714,
-     "end": 7.815,
-     "score": 0.444
+     "start": 8.633,
+     "end": 8.733,
+     "score": 0.708
     },
     {
      "word": "है।",
-     "start": 7.835,
-     "end": 7.876,
-     "score": 0.74
+     "start": 8.773,
+     "end": 8.813,
+     "score": 0.984
     }
    ]
   },
   {
    "beat_id": "v004",
    "text": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।",
-   "start_seconds": 8.317,
+   "start_seconds": 9.294,
    "phrases": [
     {
      "id": "v004.1",
      "text": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।",
      "emotion": "narrate",
      "exaggeration": 0.55,
-     "tempo": 1.06,
-     "start": 8.317,
-     "end": 12.043,
-     "tries": 1,
-     "words_per_s": 2.95
+     "tempo": 1.12,
+     "start": 9.294,
+     "end": 12.821,
+     "tries": 1
     }
    ],
-   "end_seconds": 12.043,
+   "end_seconds": 12.821,
    "words": [
     {
      "word": "देवी",
-     "start": 8.437,
-     "end": 8.698,
-     "score": 0.876
+     "start": 9.394,
+     "end": 9.655,
+     "score": 0.902
     },
     {
      "word": "भागवत",
-     "start": 8.758,
-     "end": 9.118,
-     "score": 0.887
+     "start": 9.715,
+     "end": 10.056,
+     "score": 0.848
     },
     {
      "word": "पुराण",
-     "start": 9.198,
-     "end": 9.479,
-     "score": 0.572
+     "start": 10.116,
+     "end": 10.416,
+     "score": 0.565
     },
     {
      "word": "के",
-     "start": 9.539,
-     "end": 9.599,
-     "score": 0.312
+     "start": 10.456,
+     "end": 10.516,
+     "score": 0.727
     },
     {
      "word": "अनुसार,",
-     "start": 9.619,
-     "end": 10.06,
-     "score": 0.783
+     "start": 10.536,
+     "end": 10.937,
+     "score": 0.719
     },
     {
      "word": "तुलसी",
-     "start": 10.14,
-     "end": 10.42,
-     "score": 0.737
+     "start": 11.017,
+     "end": 11.298,
+     "score": 0.684
     },
     {
      "word": "दानवराज",
-     "start": 10.48,
-     "end": 10.921,
-     "score": 0.645
+     "start": 11.358,
+     "end": 11.759,
+     "score": 0.588
     },
     {
      "word": "शंखचूड़",
-     "start": 11.001,
-     "end": 11.382,
-     "score": 0.446
+     "start": 11.839,
+     "end": 12.2,
+     "score": 0.455
     },
     {
      "word": "की",
-     "start": 11.442,
-     "end": 11.482,
-     "score": 0.994
+     "start": 12.24,
+     "end": 12.3,
+     "score": 0.766
     },
     {
      "word": "पत्नी",
-     "start": 11.542,
-     "end": 11.783,
-     "score": 0.779
+     "start": 12.34,
+     "end": 12.56,
+     "score": 0.672
     },
     {
      "word": "थी।",
-     "start": 11.843,
-     "end": 11.903,
-     "score": 0.942
+     "start": 12.621,
+     "end": 12.681,
+     "score": 0.903
     }
    ]
   },
   {
    "beat_id": "v005",
    "text": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।",
-   "start_seconds": 12.263,
+   "start_seconds": 13.041,
    "phrases": [
     {
      "id": "v005.1",
      "text": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।",
      "emotion": "narrate",
      "exaggeration": 0.55,
-     "tempo": 1.06,
-     "start": 12.263,
-     "end": 14.792,
-     "tries": 1,
-     "words_per_s": 3.95
+     "tempo": 0.88,
+     "start": 13.041,
+     "end": 16.086,
+     "tries": 1
     }
    ],
-   "end_seconds": 14.792,
+   "end_seconds": 16.086,
    "words": [
     {
      "word": "शिव",
-     "start": 12.403,
-     "end": 12.564,
-     "score": 0.772
+     "start": 13.202,
+     "end": 13.364,
+     "score": 0.798
     },
     {
      "word": "से",
-     "start": 12.604,
-     "end": 12.664,
-     "score": 0.994
+     "start": 13.444,
+     "end": 13.525,
+     "score": 0.917
     },
     {
      "word": "उसका",
-     "start": 12.705,
-     "end": 12.925,
-     "score": 0.854
+     "start": 13.565,
+     "end": 13.827,
+     "score": 0.876
     },
     {
      "word": "युद्ध",
-     "start": 12.986,
-     "end": 13.206,
-     "score": 0.623
+     "start": 13.908,
+     "end": 14.17,
+     "score": 0.482
     },
     {
      "word": "सौ",
-     "start": 13.287,
-     "end": 13.387,
-     "score": 0.796
+     "start": 14.251,
+     "end": 14.412,
+     "score": 0.831
     },
     {
      "word": "बरस",
-     "start": 13.447,
-     "end": 13.668,
-     "score": 0.888
+     "start": 14.473,
+     "end": 14.715,
+     "score": 0.924
     },
     {
      "word": "चला,",
-     "start": 13.728,
-     "end": 13.949,
-     "score": 0.927
+     "start": 14.795,
+     "end": 15.058,
+     "score": 0.766
     },
     {
      "word": "कोई",
-     "start": 14.089,
-     "end": 14.25,
-     "score": 0.977
+     "start": 15.239,
+     "end": 15.441,
+     "score": 0.981
     },
     {
      "word": "नहीं",
-     "start": 14.29,
-     "end": 14.411,
-     "score": 0.728
+     "start": 15.501,
+     "end": 15.642,
+     "score": 0.867
     },
     {
      "word": "हारा।",
-     "start": 14.471,
-     "end": 14.672,
-     "score": 0.83
+     "start": 15.723,
+     "end": 15.925,
+     "score": 0.739
     }
    ]
   },
   {
    "beat_id": "v006",
    "text": "लेकिन क्यों?",
-   "start_seconds": 15.012,
+   "start_seconds": 16.306,
    "phrases": [
     {
      "id": "v006.1",
      "text": "लेकिन क्यों?",
      "emotion": "curious",
      "exaggeration": 0.6,
-     "tempo": 1.043,
-     "start": 15.012,
-     "end": 15.651,
-     "tries": 1,
-     "words_per_s": 3.13
+     "tempo": 1.044,
+     "start": 16.306,
+     "end": 16.943,
+     "tries": 1
     }
    ],
-   "end_seconds": 15.651,
+   "end_seconds": 16.943,
    "words": [
     {
      "word": "लेकिन",
-     "start": 15.094,
-     "end": 15.301,
-     "score": 0.955
+     "start": 16.388,
+     "end": 16.594,
+     "score": 0.911
     },
     {
      "word": "क्यों?",
-     "start": 15.383,
-     "end": 15.527,
-     "score": 0.385
+     "start": 16.676,
+     "end": 16.82,
+     "score": 0.395
     }
    ]
   },
   {
    "beat_id": "v007",
    "text": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
-   "start_seconds": 15.951,
+   "start_seconds": 17.243,
    "phrases": [
     {
      "id": "v007.1",
      "text": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 15.951,
-     "end": 18.997,
-     "tries": 1,
-     "words_per_s": 3.61
+     "tempo": 0.938,
+     "start": 17.243,
+     "end": 20.649,
+     "tries": 1
     }
    ],
-   "end_seconds": 18.997,
+   "end_seconds": 20.649,
    "words": [
     {
      "word": "ब्रह्मा",
-     "start": 16.051,
-     "end": 16.352,
-     "score": 0.59
+     "start": 17.363,
+     "end": 17.724,
+     "score": 0.477
     },
     {
      "word": "का",
-     "start": 16.432,
-     "end": 16.512,
-     "score": 0.978
+     "start": 17.804,
+     "end": 17.864,
+     "score": 0.696
     },
     {
      "word": "वरदान:",
-     "start": 16.572,
-     "end": 16.973,
-     "score": 0.859
+     "start": 17.944,
+     "end": 18.425,
+     "score": 0.925
     },
     {
      "word": "जब",
-     "start": 17.173,
-     "end": 17.334,
-     "score": 0.568
+     "start": 18.666,
+     "end": 18.806,
+     "score": 0.63
     },
     {
      "word": "तक",
-     "start": 17.434,
-     "end": 17.574,
-     "score": 0.75
+     "start": 18.906,
+     "end": 19.046,
+     "score": 0.752
     },
     {
      "word": "गले",
-     "start": 17.654,
-     "end": 17.855,
-     "score": 0.747
+     "start": 19.126,
+     "end": 19.327,
+     "score": 0.986
     },
     {
      "word": "में",
-     "start": 17.895,
-     "end": 17.975,
-     "score": 0.826
+     "start": 19.387,
+     "end": 19.487,
+     "score": 0.702
     },
     {
      "word": "विष्णु",
-     "start": 18.035,
-     "end": 18.316,
-     "score": 0.286
+     "start": 19.567,
+     "end": 19.868,
+     "score": 0.349
     },
     {
      "word": "का",
-     "start": 18.376,
-     "end": 18.436,
-     "score": 0.982
+     "start": 19.928,
+     "end": 20.008,
+     "score": 0.816
     },
     {
      "word": "कवच",
-     "start": 18.516,
-     "end": 18.676,
-     "score": 0.749
+     "start": 20.088,
+     "end": 20.389,
+     "score": 0.578
     },
     {
      "word": "है,",
-     "start": 18.777,
-     "end": 18.837,
-     "score": 0.25
+     "start": 20.429,
+     "end": 20.469,
+     "score": 0.673
     }
    ]
   },
   {
    "beat_id": "v008",
    "text": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।",
-   "start_seconds": 19.217,
+   "start_seconds": 20.749,
    "phrases": [
     {
      "id": "v008.1",
      "text": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 19.217,
-     "end": 22.013,
-     "tries": 1,
-     "words_per_s": 3.93
+     "tempo": 0.938,
+     "start": 20.749,
+     "end": 24.156,
+     "tries": 1
     }
    ],
-   "end_seconds": 22.013,
+   "end_seconds": 24.156,
    "words": [
     {
      "word": "और",
-     "start": 19.277,
-     "end": 19.398,
-     "score": 0.532
+     "start": 20.829,
+     "end": 20.929,
+     "score": 0.915
     },
     {
      "word": "पत्नी",
-     "start": 19.458,
-     "end": 19.72,
-     "score": 0.701
+     "start": 21.01,
+     "end": 21.33,
+     "score": 0.629
     },
     {
      "word": "पतिव्रता",
-     "start": 19.78,
-     "end": 20.263,
-     "score": 0.52
+     "start": 21.41,
+     "end": 21.911,
+     "score": 0.672
     },
     {
      "word": "है,",
-     "start": 20.303,
-     "end": 20.404,
-     "score": 0.806
+     "start": 21.992,
+     "end": 22.112,
+     "score": 0.962
     },
     {
      "word": "तब",
-     "start": 20.504,
-     "end": 20.625,
-     "score": 0.578
+     "start": 22.272,
+     "end": 22.392,
+     "score": 0.494
     },
     {
      "word": "तक",
-     "start": 20.706,
-     "end": 20.846,
-     "score": 0.787
+     "start": 22.493,
+     "end": 22.653,
+     "score": 0.763
     },
     {
      "word": "मौत",
-     "start": 20.887,
-     "end": 21.108,
-     "score": 0.789
+     "start": 22.713,
+     "end": 22.954,
+     "score": 0.919
     },
     {
      "word": "उसे",
-     "start": 21.128,
-     "end": 21.269,
-     "score": 0.829
+     "start": 22.974,
+     "end": 23.174,
+     "score": 0.683
     },
     {
      "word": "छू",
-     "start": 21.349,
-     "end": 21.49,
-     "score": 0.836
+     "start": 23.294,
+     "end": 23.435,
+     "score": 0.89
     },
     {
      "word": "नहीं",
-     "start": 21.51,
-     "end": 21.611,
-     "score": 0.485
+     "start": 23.455,
+     "end": 23.635,
+     "score": 0.823
     },
     {
      "word": "सकती।",
-     "start": 21.671,
-     "end": 21.872,
-     "score": 0.715
+     "start": 23.715,
+     "end": 23.976,
+     "score": 0.668
     }
    ]
   },
   {
    "beat_id": "v009",
    "text": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।",
-   "start_seconds": 22.233,
+   "start_seconds": 24.376,
    "phrases": [
     {
      "id": "v009.1",
      "text": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 22.233,
-     "end": 24.667,
-     "tries": 1,
-     "words_per_s": 3.7
+     "tempo": 0.936,
+     "start": 24.376,
+     "end": 27.17,
+     "tries": 1
     }
    ],
-   "end_seconds": 24.667,
+   "end_seconds": 27.17,
    "words": [
     {
      "word": "तभी",
-     "start": 22.273,
-     "end": 22.474,
-     "score": 0.97
+     "start": 24.436,
+     "end": 24.657,
+     "score": 0.878
     },
     {
      "word": "एक",
-     "start": 22.535,
-     "end": 22.635,
-     "score": 0.972
+     "start": 24.718,
+     "end": 24.838,
+     "score": 0.822
     },
     {
      "word": "बूढ़ा",
-     "start": 22.716,
-     "end": 22.957,
-     "score": 0.533
+     "start": 24.939,
+     "end": 25.2,
+     "score": 0.532
     },
     {
      "word": "ब्राह्मण",
-     "start": 23.018,
-     "end": 23.339,
-     "score": 0.578
+     "start": 25.281,
+     "end": 25.642,
+     "score": 0.547
     },
     {
      "word": "आया,",
-     "start": 23.44,
-     "end": 23.541,
-     "score": 0.553
+     "start": 25.763,
+     "end": 25.863,
+     "score": 0.657
     },
     {
      "word": "और",
-     "start": 23.722,
-     "end": 23.802,
-     "score": 0.423
+     "start": 26.064,
+     "end": 26.165,
+     "score": 0.898
     },
     {
      "word": "कवच",
-     "start": 23.862,
-     "end": 24.124,
-     "score": 0.745
+     "start": 26.265,
+     "end": 26.547,
+     "score": 0.665
     },
     {
      "word": "माँग",
-     "start": 24.164,
-     "end": 24.325,
-     "score": 0.767
+     "start": 26.587,
+     "end": 26.788,
+     "score": 0.781
     },
     {
      "word": "लिया।",
-     "start": 24.365,
-     "end": 24.526,
-     "score": 0.724
+     "start": 26.828,
+     "end": 26.989,
+     "score": 0.732
     }
    ]
   },
   {
    "beat_id": "v010",
    "text": "वो ब्राह्मण, स्वयं हरि थे।",
-   "start_seconds": 24.887,
+   "start_seconds": 27.39,
    "phrases": [
     {
      "id": "v010.1",
      "text": "वो ब्राह्मण, स्वयं हरि थे।",
      "emotion": "punch",
      "exaggeration": 0.72,
-     "tempo": 1.026,
-     "start": 24.887,
-     "end": 26.745,
-     "tries": 1,
-     "words_per_s": 2.69
+     "tempo": 1.12,
+     "start": 27.39,
+     "end": 29.09,
+     "tries": 1
     }
    ],
-   "end_seconds": 26.745,
+   "end_seconds": 29.09,
    "words": [
     {
      "word": "वो",
-     "start": 24.927,
-     "end": 24.968,
-     "score": 0.004
+     "start": 27.43,
+     "end": 27.471,
+     "score": 0.002
     },
     {
      "word": "ब्राह्मण,",
-     "start": 25.089,
-     "end": 25.594,
-     "score": 0.574
+     "start": 27.592,
+     "end": 28.038,
+     "score": 0.563
     },
     {
      "word": "स्वयं",
-     "start": 25.978,
-     "end": 26.2,
-     "score": 0.59
+     "start": 28.422,
+     "end": 28.604,
+     "score": 0.419
     },
     {
      "word": "हरि",
-     "start": 26.28,
-     "end": 26.462,
-     "score": 0.776
+     "start": 28.645,
+     "end": 28.827,
+     "score": 0.701
     },
     {
      "word": "थे।",
-     "start": 26.523,
-     "end": 26.583,
-     "score": 0.316
+     "start": 28.908,
+     "end": 28.948,
+     "score": 0.469
     }
    ]
   },
   {
    "beat_id": "v011",
    "text": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।",
-   "start_seconds": 27.025,
+   "start_seconds": 29.37,
    "phrases": [
     {
      "id": "v011.1",
      "text": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 27.025,
-     "end": 29.728,
-     "tries": 1,
-     "words_per_s": 3.7
+     "tempo": 0.936,
+     "start": 29.37,
+     "end": 32.474,
+     "tries": 1
     }
    ],
-   "end_seconds": 29.728,
+   "end_seconds": 32.474,
    "words": [
     {
      "word": "अब",
-     "start": 27.086,
-     "end": 27.207,
-     "score": 0.932
+     "start": 29.451,
+     "end": 29.572,
+     "score": 0.515
     },
     {
      "word": "शंखचूड़",
-     "start": 27.307,
-     "end": 27.67,
-     "score": 0.479
+     "start": 29.672,
+     "end": 30.116,
+     "score": 0.522
     },
     {
      "word": "का",
-     "start": 27.711,
-     "end": 27.792,
-     "score": 0.922
+     "start": 30.176,
+     "end": 30.257,
+     "score": 0.74
     },
     {
      "word": "रूप",
-     "start": 27.832,
-     "end": 27.953,
-     "score": 0.798
+     "start": 30.317,
+     "end": 30.458,
+     "score": 0.749
     },
     {
      "word": "धरकर,",
-     "start": 28.034,
-     "end": 28.336,
-     "score": 0.584
+     "start": 30.539,
+     "end": 30.862,
+     "score": 0.643
     },
     {
      "word": "वो",
-     "start": 28.397,
-     "end": 28.498,
-     "score": 0.9
+     "start": 30.942,
+     "end": 31.083,
+     "score": 0.892
     },
     {
      "word": "तुलसी",
-     "start": 28.598,
-     "end": 28.901,
-     "score": 0.899
+     "start": 31.184,
+     "end": 31.527,
+     "score": 0.85
     },
     {
      "word": "के",
-     "start": 28.961,
-     "end": 29.022,
-     "score": 0.847
+     "start": 31.587,
+     "end": 31.648,
+     "score": 0.388
     },
     {
      "word": "द्वार",
-     "start": 29.062,
-     "end": 29.264,
-     "score": 0.503
+     "start": 31.708,
+     "end": 31.93,
+     "score": 0.586
     },
     {
      "word": "पहुँचे।",
-     "start": 29.325,
-     "end": 29.587,
-     "score": 0.326
+     "start": 32.01,
+     "end": 32.313,
+     "score": 0.388
     }
    ]
   },
   {
    "beat_id": "v012",
    "text": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।",
-   "start_seconds": 29.948,
+   "start_seconds": 32.694,
    "phrases": [
     {
      "id": "v012.1",
      "text": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 29.948,
-     "end": 33.357,
-     "tries": 1,
-     "words_per_s": 3.52
+     "tempo": 0.88,
+     "start": 32.694,
+     "end": 36.396,
+     "tries": 1
     }
    ],
-   "end_seconds": 33.357,
+   "end_seconds": 36.396,
    "words": [
     {
      "word": "नगाड़े",
-     "start": 30.048,
-     "end": 30.429,
-     "score": 0.649
+     "start": 32.795,
+     "end": 33.217,
+     "score": 0.502
     },
     {
      "word": "बजे,",
-     "start": 30.489,
-     "end": 30.71,
+     "start": 33.277,
+     "end": 33.519,
      "score": 0.624
     },
     {
      "word": "तुलसी",
-     "start": 30.85,
-     "end": 31.131,
-     "score": 0.463
+     "start": 33.68,
+     "end": 33.982,
+     "score": 0.654
     },
     {
      "word": "ने",
-     "start": 31.171,
-     "end": 31.251,
-     "score": 0.998
+     "start": 34.022,
+     "end": 34.122,
+     "score": 0.72
     },
     {
      "word": "खुशी",
-     "start": 31.312,
-     "end": 31.532,
-     "score": 0.9
+     "start": 34.183,
+     "end": 34.424,
+     "score": 0.859
     },
     {
      "word": "के",
-     "start": 31.592,
-     "end": 31.632,
-     "score": 0.498
+     "start": 34.485,
+     "end": 34.545,
+     "score": 0.502
     },
     {
      "word": "आँसुओं",
-     "start": 31.693,
-     "end": 32.034,
-     "score": 0.536
+     "start": 34.585,
+     "end": 34.968,
+     "score": 0.604
     },
     {
      "word": "संग,",
-     "start": 32.114,
-     "end": 32.274,
-     "score": 0.906
+     "start": 35.048,
+     "end": 35.229,
+     "score": 0.635
     },
     {
      "word": "पति",
-     "start": 32.435,
-     "end": 32.615,
-     "score": 0.246
+     "start": 35.41,
+     "end": 35.611,
+     "score": 0.477
     },
     {
      "word": "के",
-     "start": 32.675,
-     "end": 32.735,
-     "score": 0.992
+     "start": 35.652,
+     "end": 35.732,
+     "score": 0.924
     },
     {
      "word": "पाँव",
-     "start": 32.796,
-     "end": 32.996,
-     "score": 0.696
+     "start": 35.813,
+     "end": 36.034,
+     "score": 0.712
     },
     {
      "word": "धोए।",
-     "start": 33.056,
-     "end": 33.197,
-     "score": 0.816
+     "start": 36.094,
+     "end": 36.235,
+     "score": 0.819
     }
    ]
   },
   {
    "beat_id": "v013",
    "text": "बोली, \"आज मेरा जीवन सफल हो गया।\"",
-   "start_seconds": 33.737,
+   "start_seconds": 36.776,
    "phrases": [
     {
      "id": "v013.1",
      "text": "बोली, \"आज मेरा जीवन सफल हो गया।\"",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 33.737,
-     "end": 35.999,
-     "tries": 1,
-     "words_per_s": 3.09
+     "tempo": 0.889,
+     "start": 36.776,
+     "end": 39.203,
+     "tries": 1
     }
    ],
-   "end_seconds": 35.999,
+   "end_seconds": 39.203,
    "words": [
     {
      "word": "बोली,",
-     "start": 33.858,
-     "end": 34.161,
-     "score": 0.857
+     "start": 36.896,
+     "end": 37.217,
+     "score": 0.908
     },
     {
      "word": "\"आज",
-     "start": 34.383,
-     "end": 34.605,
-     "score": 0.741
+     "start": 37.458,
+     "end": 37.699,
+     "score": 0.962
     },
     {
      "word": "मेरा",
-     "start": 34.666,
-     "end": 34.868,
-     "score": 0.698
+     "start": 37.759,
+     "end": 37.859,
+     "score": 0.348
     },
     {
      "word": "जीवन",
-     "start": 34.969,
-     "end": 35.211,
-     "score": 0.899
+     "start": 38.08,
+     "end": 38.361,
+     "score": 0.797
     },
     {
      "word": "सफल",
-     "start": 35.292,
-     "end": 35.555,
-     "score": 0.971
+     "start": 38.441,
+     "end": 38.722,
+     "score": 0.968
     },
     {
      "word": "हो",
-     "start": 35.595,
-     "end": 35.676,
-     "score": 0.891
+     "start": 38.762,
+     "end": 38.842,
+     "score": 0.881
     },
     {
      "word": "गया।\"",
-     "start": 35.736,
-     "end": 35.837,
-     "score": 0.997
+     "start": 38.922,
+     "end": 39.022,
+     "score": 0.901
     }
    ]
   },
   {
    "beat_id": "v014",
    "text": "उसी समय, रणभूमि में शिव का त्रिशूल चला।",
-   "start_seconds": 36.379,
+   "start_seconds": 39.583,
    "phrases": [
     {
      "id": "v014.1",
      "text": "उसी समय, रणभूमि में शिव का त्रिशूल चला।",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 36.379,
-     "end": 39.131,
-     "tries": 1,
-     "words_per_s": 2.91
+     "tempo": 1.12,
+     "start": 39.583,
+     "end": 42.234,
+     "tries": 1
     }
    ],
-   "end_seconds": 39.131,
+   "end_seconds": 42.234,
    "words": [
     {
      "word": "उसी",
-     "start": 36.439,
-     "end": 36.66,
-     "score": 0.927
+     "start": 39.643,
+     "end": 39.864,
+     "score": 0.875
     },
     {
      "word": "समय,",
-     "start": 36.761,
-     "end": 37.062,
-     "score": 0.887
+     "start": 39.965,
+     "end": 40.246,
+     "score": 0.902
     },
     {
      "word": "रणभूमि",
-     "start": 37.303,
-     "end": 37.745,
-     "score": 0.514
+     "start": 40.467,
+     "end": 40.888,
+     "score": 0.632
     },
     {
      "word": "में",
-     "start": 37.785,
-     "end": 37.886,
-     "score": 0.666
+     "start": 40.949,
+     "end": 41.029,
+     "score": 0.833
     },
     {
      "word": "शिव",
-     "start": 37.966,
-     "end": 38.086,
-     "score": 0.549
+     "start": 41.129,
+     "end": 41.23,
+     "score": 0.471
     },
     {
      "word": "का",
-     "start": 38.147,
-     "end": 38.227,
-     "score": 0.877
+     "start": 41.29,
+     "end": 41.37,
+     "score": 0.976
     },
     {
      "word": "त्रिशूल",
-     "start": 38.307,
-     "end": 38.629,
-     "score": 0.531
+     "start": 41.431,
+     "end": 41.752,
+     "score": 0.571
     },
     {
      "word": "चला।",
-     "start": 38.709,
-     "end": 38.83,
-     "score": 0.664
+     "start": 41.832,
+     "end": 41.953,
+     "score": 0.661
     }
    ]
   },
   {
    "beat_id": "v015",
    "text": "शंखचूड़ राख हो गया।",
-   "start_seconds": 39.351,
+   "start_seconds": 42.454,
    "phrases": [
     {
      "id": "v015.1",
      "text": "शंखचूड़ राख हो गया।",
      "emotion": "punch",
      "exaggeration": 0.72,
-     "tempo": 1.026,
-     "start": 39.351,
-     "end": 40.631,
-     "tries": 1,
-     "words_per_s": 3.12
+     "tempo": 1.011,
+     "start": 42.454,
+     "end": 43.75,
+     "tries": 1
     }
    ],
-   "end_seconds": 40.631,
+   "end_seconds": 43.75,
    "words": [
     {
      "word": "शंखचूड़",
-     "start": 39.493,
-     "end": 39.92,
-     "score": 0.555
+     "start": 42.596,
+     "end": 43.041,
+     "score": 0.368
     },
     {
      "word": "राख",
-     "start": 39.961,
-     "end": 40.164,
-     "score": 0.807
+     "start": 43.062,
+     "end": 43.264,
+     "score": 0.779
     },
     {
      "word": "हो",
-     "start": 40.204,
-     "end": 40.286,
-     "score": 0.839
+     "start": 43.304,
+     "end": 43.406,
+     "score": 0.602
     },
     {
      "word": "गया।",
-     "start": 40.347,
-     "end": 40.448,
-     "score": 0.664
+     "start": 43.467,
+     "end": 43.568,
+     "score": 0.665
     }
    ]
   },
   {
    "beat_id": "v016",
    "text": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
-   "start_seconds": 40.911,
+   "start_seconds": 44.03,
    "phrases": [
     {
      "id": "v016.1",
      "text": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
      "emotion": "curious",
      "exaggeration": 0.6,
-     "tempo": 1.043,
-     "start": 40.911,
-     "end": 43.637,
-     "tries": 1,
-     "words_per_s": 3.67
+     "tempo": 0.891,
+     "start": 44.03,
+     "end": 47.212,
+     "tries": 1
     }
    ],
-   "end_seconds": 43.637,
+   "end_seconds": 47.212,
    "words": [
     {
      "word": "लेकिन",
-     "start": 40.991,
-     "end": 41.212,
-     "score": 0.8
+     "start": 44.131,
+     "end": 44.372,
+     "score": 0.906
     },
     {
      "word": "तुलसी",
-     "start": 41.272,
-     "end": 41.572,
-     "score": 0.633
+     "start": 44.453,
+     "end": 44.795,
+     "score": 0.731
     },
     {
      "word": "को",
-     "start": 41.613,
-     "end": 41.693,
-     "score": 0.854
+     "start": 44.856,
+     "end": 44.936,
+     "score": 0.996
     },
     {
      "word": "सब",
-     "start": 41.773,
-     "end": 41.933,
-     "score": 0.501
+     "start": 45.017,
+     "end": 45.118,
+     "score": 0.686
     },
     {
      "word": "अलग",
-     "start": 41.973,
-     "end": 42.114,
-     "score": 0.597
+     "start": 45.178,
+     "end": 45.42,
+     "score": 0.885
     },
     {
      "word": "लगा,",
-     "start": 42.134,
-     "end": 42.354,
-     "score": 0.796
+     "start": 45.46,
+     "end": 45.702,
+     "score": 0.805
     },
     {
      "word": "\"कौन",
-     "start": 42.494,
-     "end": 42.695,
-     "score": 0.908
+     "start": 45.903,
+     "end": 46.124,
+     "score": 0.921
     },
     {
      "word": "हो",
-     "start": 42.715,
-     "end": 42.775,
-     "score": 0.507
+     "start": 46.145,
+     "end": 46.205,
+     "score": 0.741
     },
     {
      "word": "तुम,",
-     "start": 42.835,
-     "end": 43.176,
-     "score": 0.796
+     "start": 46.286,
+     "end": 46.427,
+     "score": 0.8
     },
     {
      "word": "मायावी?\"",
-     "start": 43.196,
-     "end": 43.316,
-     "score": 0.334
+     "start": 46.709,
+     "end": 46.849,
+     "score": 0.335
     }
    ]
   },
   {
    "beat_id": "v017",
    "text": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।",
-   "start_seconds": 43.937,
+   "start_seconds": 47.512,
    "phrases": [
     {
      "id": "v017.1",
      "text": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 43.937,
-     "end": 46.492,
-     "tries": 1,
-     "words_per_s": 3.52
+     "tempo": 0.982,
+     "start": 47.512,
+     "end": 50.309,
+     "tries": 1
     }
    ],
-   "end_seconds": 46.492,
+   "end_seconds": 50.309,
    "words": [
     {
      "word": "\"मैं",
-     "start": 43.997,
-     "end": 44.098,
-     "score": 0.701
+     "start": 47.592,
+     "end": 47.673,
+     "score": 0.961
     },
     {
      "word": "श्राप",
-     "start": 44.219,
-     "end": 44.42,
-     "score": 0.479
+     "start": 47.814,
+     "end": 48.035,
+     "score": 0.374
     },
     {
      "word": "दूँगी!\"",
-     "start": 44.48,
-     "end": 44.742,
-     "score": 0.874
-    },
-    {
-     "word": "ये",
-     "start": 44.983,
-     "end": 45.064,
-     "score": 0.669
-    },
-    {
-     "word": "सुनकर,",
-     "start": 45.164,
-     "end": 45.486,
+     "start": 48.096,
+     "end": 48.397,
      "score": 0.838
     },
     {
+     "word": "ये",
+     "start": 48.659,
+     "end": 48.739,
+     "score": 0.492
+    },
+    {
+     "word": "सुनकर,",
+     "start": 48.84,
+     "end": 49.222,
+     "score": 0.806
+    },
+    {
      "word": "भगवान",
-     "start": 45.647,
-     "end": 45.989,
-     "score": 0.962
+     "start": 49.403,
+     "end": 49.766,
+     "score": 0.833
     },
     {
      "word": "भी",
-     "start": 46.029,
-     "end": 46.09,
-     "score": 0.974
+     "start": 49.806,
+     "end": 49.866,
+     "score": 0.972
     },
     {
      "word": "डर",
-     "start": 46.13,
-     "end": 46.251,
-     "score": 0.751
+     "start": 49.927,
+     "end": 50.047,
+     "score": 0.73
     },
     {
      "word": "गए।",
-     "start": 46.291,
-     "end": 46.351,
-     "score": 0.359
+     "start": 50.088,
+     "end": 50.168,
+     "score": 0.444
     }
    ]
   },
   {
    "beat_id": "v018",
    "text": "नारायण असली रूप में आए, तुलसी बेहोश हो गई।",
-   "start_seconds": 46.712,
+   "start_seconds": 50.529,
    "phrases": [
     {
      "id": "v018.1",
      "text": "नारायण असली रूप में आए, तुलसी बेहोश हो गई।",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 46.712,
-     "end": 49.238,
-     "tries": 1,
-     "words_per_s": 3.56
+     "tempo": 0.88,
+     "start": 50.529,
+     "end": 53.269,
+     "tries": 1
     }
    ],
-   "end_seconds": 49.238,
+   "end_seconds": 53.269,
    "words": [
     {
      "word": "नारायण",
-     "start": 46.792,
-     "end": 47.093,
-     "score": 0.471
+     "start": 50.61,
+     "end": 50.932,
+     "score": 0.756
     },
     {
      "word": "असली",
-     "start": 47.113,
-     "end": 47.414,
-     "score": 0.837
+     "start": 50.972,
+     "end": 51.295,
+     "score": 0.843
     },
     {
      "word": "रूप",
-     "start": 47.454,
-     "end": 47.654,
-     "score": 0.692
+     "start": 51.335,
+     "end": 51.556,
+     "score": 0.717
     },
     {
      "word": "में",
-     "start": 47.674,
-     "end": 47.754,
-     "score": 0.788
+     "start": 51.597,
+     "end": 51.677,
+     "score": 0.844
     },
     {
      "word": "आए,",
-     "start": 47.795,
-     "end": 47.975,
-     "score": 0.889
+     "start": 51.718,
+     "end": 51.899,
+     "score": 0.836
     },
     {
      "word": "तुलसी",
-     "start": 48.115,
-     "end": 48.416,
-     "score": 0.72
+     "start": 52.08,
+     "end": 52.383,
+     "score": 0.722
     },
     {
      "word": "बेहोश",
-     "start": 48.476,
-     "end": 48.737,
-     "score": 0.841
+     "start": 52.463,
+     "end": 52.765,
+     "score": 0.729
     },
     {
      "word": "हो",
-     "start": 48.817,
-     "end": 48.917,
-     "score": 0.742
+     "start": 52.846,
+     "end": 52.926,
+     "score": 0.724
     },
     {
      "word": "गई।",
-     "start": 48.997,
-     "end": 49.038,
-     "score": 0.497
+     "start": 53.007,
+     "end": 53.068,
+     "score": 0.522
     }
    ]
   },
   {
    "beat_id": "v019",
    "text": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
-   "start_seconds": 49.618,
+   "start_seconds": 53.649,
    "phrases": [
     {
      "id": "v019.1",
      "text": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
      "emotion": "reveal",
      "exaggeration": 0.66,
-     "tempo": 0.92,
-     "start": 49.618,
-     "end": 53.268,
-     "tries": 1,
-     "words_per_s": 3.29
+     "tempo": 0.88,
+     "start": 53.649,
+     "end": 57.465,
+     "tries": 1
     }
    ],
-   "end_seconds": 53.268,
+   "end_seconds": 57.465,
    "words": [
     {
      "word": "होश",
-     "start": 49.738,
-     "end": 49.979,
-     "score": 0.769
+     "start": 53.77,
+     "end": 54.071,
+     "score": 0.885
     },
     {
      "word": "आते",
-     "start": 50.039,
-     "end": 50.26,
-     "score": 0.52
+     "start": 54.091,
+     "end": 54.332,
+     "score": 0.534
     },
     {
      "word": "ही",
-     "start": 50.3,
-     "end": 50.38,
-     "score": 0.65
+     "start": 54.372,
+     "end": 54.452,
+     "score": 0.666
     },
     {
      "word": "बोली,",
-     "start": 50.46,
-     "end": 50.741,
-     "score": 0.781
+     "start": 54.533,
+     "end": 54.814,
+     "score": 0.907
     },
     {
      "word": "\"तुम्हारा",
-     "start": 50.902,
-     "end": 51.242,
-     "score": 0.755
+     "start": 54.995,
+     "end": 55.356,
+     "score": 0.678
     },
     {
      "word": "दिल",
-     "start": 51.343,
-     "end": 51.483,
-     "score": 0.992
+     "start": 55.457,
+     "end": 55.597,
+     "score": 0.892
     },
     {
      "word": "पत्थर",
-     "start": 51.563,
-     "end": 51.904,
-     "score": 0.801
+     "start": 55.698,
+     "end": 56.039,
+     "score": 0.848
     },
     {
      "word": "का",
-     "start": 51.984,
-     "end": 52.065,
-     "score": 0.716
+     "start": 56.119,
+     "end": 56.2,
+     "score": 0.732
     },
     {
      "word": "है,",
-     "start": 52.105,
-     "end": 52.225,
-     "score": 0.93
+     "start": 56.26,
+     "end": 56.401,
+     "score": 0.908
     },
     {
      "word": "पत्थर",
-     "start": 52.386,
-     "end": 52.706,
-     "score": 0.852
+     "start": 56.541,
+     "end": 56.883,
+     "score": 0.859
     },
     {
      "word": "बन",
-     "start": 52.767,
-     "end": 52.907,
-     "score": 0.793
+     "start": 56.963,
+     "end": 57.103,
+     "score": 0.772
     },
     {
      "word": "जाओ!\"",
-     "start": 52.967,
-     "end": 53.128,
-     "score": 0.579
+     "start": 57.164,
+     "end": 57.324,
+     "score": 0.624
     }
    ]
   },
   {
    "beat_id": "v020",
    "text": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।",
-   "start_seconds": 53.748,
+   "start_seconds": 57.945,
    "phrases": [
     {
      "id": "v020.1",
      "text": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।",
      "emotion": "reveal",
      "exaggeration": 0.66,
-     "tempo": 0.92,
-     "start": 53.748,
-     "end": 57.658,
-     "tries": 1,
-     "words_per_s": 2.3
+     "tempo": 1.119,
+     "start": 57.945,
+     "end": 61.169,
+     "tries": 1
     }
    ],
-   "end_seconds": 57.658,
+   "end_seconds": 61.169,
    "words": [
     {
      "word": "यानी",
-     "start": 53.908,
-     "end": 54.189,
-     "score": 0.824
+     "start": 58.086,
+     "end": 58.328,
+     "score": 0.745
     },
     {
      "word": "पत्थर",
-     "start": 54.289,
-     "end": 54.61,
-     "score": 0.789
+     "start": 58.408,
+     "end": 58.67,
+     "score": 0.874
     },
     {
      "word": "तुलसी",
-     "start": 54.71,
-     "end": 55.011,
-     "score": 0.749
+     "start": 58.731,
+     "end": 58.993,
+     "score": 0.662
     },
     {
      "word": "नहीं",
-     "start": 55.051,
-     "end": 55.212,
-     "score": 0.858
+     "start": 59.033,
+     "end": 59.154,
+     "score": 0.865
     },
     {
      "word": "बनी,",
-     "start": 55.292,
-     "end": 55.553,
-     "score": 0.947
+     "start": 59.235,
+     "end": 59.436,
+     "score": 0.854
     },
     {
      "word": "स्वयं",
-     "start": 55.873,
-     "end": 56.134,
-     "score": 0.633
+     "start": 59.698,
+     "end": 59.92,
+     "score": 0.477
     },
     {
      "word": "विष्णु",
-     "start": 56.214,
-     "end": 56.495,
-     "score": 0.389
+     "start": 59.98,
+     "end": 60.222,
+     "score": 0.347
     },
     {
      "word": "बने,",
-     "start": 56.575,
-     "end": 56.836,
-     "score": 0.853
+     "start": 60.282,
+     "end": 60.504,
+     "score": 0.888
     },
     {
      "word": "शालिग्राम।",
-     "start": 56.996,
-     "end": 57.478,
-     "score": 0.775
+     "start": 60.645,
+     "end": 61.028,
+     "score": 0.635
     }
    ]
   },
   {
    "beat_id": "v021",
    "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
-   "start_seconds": 58.138,
+   "start_seconds": 61.649,
    "phrases": [
     {
      "id": "v021.1",
      "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 58.138,
-     "end": 60.869,
-     "tries": 1,
-     "words_per_s": 3.66
+     "tempo": 0.88,
+     "start": 61.649,
+     "end": 64.606,
+     "tries": 1
     }
    ],
-   "end_seconds": 60.869,
+   "end_seconds": 64.606,
    "words": [
     {
      "word": "नारायण",
-     "start": 58.238,
-     "end": 58.6,
-     "score": 0.54
+     "start": 61.75,
+     "end": 62.152,
+     "score": 0.514
     },
     {
      "word": "बोले,",
-     "start": 58.66,
-     "end": 58.941,
-     "score": 0.805
+     "start": 62.232,
+     "end": 62.514,
+     "score": 0.786
     },
     {
      "word": "\"तुमने",
-     "start": 59.122,
-     "end": 59.383,
-     "score": 0.919
+     "start": 62.715,
+     "end": 62.997,
+     "score": 0.949
     },
     {
      "word": "ही",
-     "start": 59.443,
-     "end": 59.504,
-     "score": 0.25
+     "start": 63.057,
+     "end": 63.138,
+     "score": 0.922
     },
     {
      "word": "मुझे",
-     "start": 59.544,
-     "end": 59.744,
-     "score": 0.842
+     "start": 63.178,
+     "end": 63.399,
+     "score": 0.804
     },
     {
      "word": "पाने",
-     "start": 59.825,
-     "end": 60.046,
-     "score": 0.808
+     "start": 63.48,
+     "end": 63.721,
+     "score": 0.876
     },
     {
      "word": "का",
-     "start": 60.086,
-     "end": 60.166,
-     "score": 0.684
+     "start": 63.781,
+     "end": 63.842,
+     "score": 0.986
     },
     {
      "word": "तप",
-     "start": 60.226,
-     "end": 60.367,
-     "score": 0.973
+     "start": 63.922,
+     "end": 64.063,
+     "score": 0.446
     },
     {
      "word": "किया",
-     "start": 60.447,
-     "end": 60.548,
-     "score": 0.371
+     "start": 64.163,
+     "end": 64.304,
+     "score": 0.891
     },
     {
      "word": "था।\"",
-     "start": 60.668,
-     "end": 60.708,
-     "score": 0.955
+     "start": 64.385,
+     "end": 64.445,
+     "score": 0.747
     }
    ]
   },
   {
    "beat_id": "v022",
    "text": "\"ये उसी तप का फल है।\"",
-   "start_seconds": 61.249,
+   "start_seconds": 64.986,
    "phrases": [
     {
      "id": "v022.1",
      "text": "\"ये उसी तप का फल है।\"",
      "emotion": "punch",
      "exaggeration": 0.72,
-     "tempo": 1.026,
-     "start": 61.249,
-     "end": 62.603,
-     "tries": 3,
-     "words_per_s": 4.43
+     "tempo": 0.88,
+     "start": 64.986,
+     "end": 66.555,
+     "tries": 3
     }
    ],
-   "end_seconds": 62.603,
+   "end_seconds": 66.555,
    "words": [
     {
      "word": "\"ये",
-     "start": 61.39,
-     "end": 61.492,
-     "score": 0.584
+     "start": 65.147,
+     "end": 65.288,
+     "score": 0.452
     },
     {
      "word": "उसी",
-     "start": 61.572,
-     "end": 61.795,
-     "score": 0.9
+     "start": 65.368,
+     "end": 65.61,
+     "score": 0.804
     },
     {
      "word": "तप",
-     "start": 61.855,
-     "end": 61.956,
-     "score": 0.984
+     "start": 65.69,
+     "end": 65.831,
+     "score": 0.996
     },
     {
      "word": "का",
-     "start": 62.057,
-     "end": 62.138,
-     "score": 0.268
+     "start": 65.911,
+     "end": 66.012,
+     "score": 0.829
     },
     {
      "word": "फल",
-     "start": 62.219,
-     "end": 62.36,
-     "score": 0.609
+     "start": 66.092,
+     "end": 66.273,
+     "score": 0.628
     },
     {
      "word": "है।\"",
-     "start": 62.401,
-     "end": 62.441,
+     "start": 66.314,
+     "end": 66.354,
      "score": 0.996
     }
    ]
@@ -1618,555 +1596,548 @@
   {
    "beat_id": "v023",
    "text": "\"यह देह छोड़ो, मुझसे विवाह करो।\"",
-   "start_seconds": 62.883,
+   "start_seconds": 66.835,
    "phrases": [
     {
      "id": "v023.1",
      "text": "\"यह देह छोड़ो, मुझसे विवाह करो।\"",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 62.883,
-     "end": 64.848,
-     "tries": 1,
-     "words_per_s": 3.05
+     "tempo": 0.902,
+     "start": 66.835,
+     "end": 68.915,
+     "tries": 1
     }
    ],
-   "end_seconds": 64.848,
+   "end_seconds": 68.915,
    "words": [
     {
      "word": "\"यह",
-     "start": 63.003,
-     "end": 63.084,
-     "score": 0.741
+     "start": 66.976,
+     "end": 67.057,
+     "score": 0.668
     },
     {
      "word": "देह",
-     "start": 63.184,
-     "end": 63.364,
-     "score": 0.461
+     "start": 67.158,
+     "end": 67.36,
+     "score": 0.574
     },
     {
      "word": "छोड़ो,",
-     "start": 63.464,
-     "end": 63.825,
-     "score": 0.723
+     "start": 67.461,
+     "end": 67.825,
+     "score": 0.591
     },
     {
      "word": "मुझसे",
-     "start": 63.865,
-     "end": 64.126,
-     "score": 0.962
+     "start": 67.885,
+     "end": 68.168,
+     "score": 0.981
     },
     {
      "word": "विवाह",
-     "start": 64.186,
-     "end": 64.467,
-     "score": 0.669
+     "start": 68.228,
+     "end": 68.511,
+     "score": 0.552
     },
     {
      "word": "करो।\"",
-     "start": 64.547,
-     "end": 64.688,
-     "score": 0.877
+     "start": 68.592,
+     "end": 68.774,
+     "score": 0.827
     }
    ]
   },
   {
    "beat_id": "v024",
    "text": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"",
-   "start_seconds": 65.228,
+   "start_seconds": 69.295,
    "phrases": [
     {
      "id": "v024.1",
      "text": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 65.228,
-     "end": 68.083,
-     "tries": 1,
-     "words_per_s": 2.8
+     "tempo": 0.982,
+     "start": 69.295,
+     "end": 72.079,
+     "tries": 1
     }
    ],
-   "end_seconds": 68.083,
+   "end_seconds": 72.079,
    "words": [
     {
      "word": "\"तुम्हारी",
-     "start": 65.288,
-     "end": 65.65,
-     "score": 0.83
+     "start": 69.356,
+     "end": 69.719,
+     "score": 0.76
     },
     {
      "word": "देह",
-     "start": 65.731,
-     "end": 65.891,
-     "score": 0.655
+     "start": 69.799,
+     "end": 69.941,
+     "score": 0.596
     },
     {
      "word": "गंडकी",
-     "start": 65.952,
-     "end": 66.273,
-     "score": 0.875
+     "start": 70.001,
+     "end": 70.324,
+     "score": 0.806
     },
     {
      "word": "नदी",
-     "start": 66.314,
-     "end": 66.515,
-     "score": 0.962
+     "start": 70.364,
+     "end": 70.566,
+     "score": 0.88
     },
     {
      "word": "बनेगी,",
-     "start": 66.575,
-     "end": 66.917,
-     "score": 0.766
+     "start": 70.606,
+     "end": 70.929,
+     "score": 0.837
     },
     {
      "word": "केश",
-     "start": 67.017,
-     "end": 67.239,
-     "score": 0.637
+     "start": 71.05,
+     "end": 71.252,
+     "score": 0.698
     },
     {
      "word": "तुलसी",
-     "start": 67.299,
-     "end": 67.56,
-     "score": 0.845
+     "start": 71.312,
+     "end": 71.575,
+     "score": 0.876
     },
     {
      "word": "बनेंगे।\"",
-     "start": 67.621,
-     "end": 67.922,
-     "score": 0.849
+     "start": 71.635,
+     "end": 71.918,
+     "score": 0.883
     }
    ]
   },
   {
    "beat_id": "v025",
    "text": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"",
-   "start_seconds": 68.463,
+   "start_seconds": 72.459,
    "phrases": [
     {
      "id": "v025.1",
      "text": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"",
      "emotion": "awe",
      "exaggeration": 0.68,
-     "tempo": 0.956,
-     "start": 68.463,
-     "end": 71.571,
-     "tries": 1,
-     "words_per_s": 2.9
+     "tempo": 0.949,
+     "start": 72.459,
+     "end": 75.586,
+     "tries": 1
     }
    ],
-   "end_seconds": 71.571,
+   "end_seconds": 75.586,
    "words": [
     {
      "word": "\"और",
-     "start": 68.543,
-     "end": 68.684,
-     "score": 0.989
+     "start": 72.539,
+     "end": 72.7,
+     "score": 0.74
     },
     {
      "word": "मैं,",
-     "start": 68.744,
-     "end": 68.864,
-     "score": 0.615
+     "start": 72.76,
+     "end": 72.86,
+     "score": 0.677
     },
     {
      "word": "तुम्हारे",
-     "start": 68.944,
-     "end": 69.305,
-     "score": 0.662
+     "start": 72.94,
+     "end": 73.301,
+     "score": 0.637
     },
     {
      "word": "श्राप",
-     "start": 69.405,
-     "end": 69.646,
-     "score": 0.761
+     "start": 73.321,
+     "end": 73.662,
+     "score": 0.728
     },
     {
      "word": "से,",
-     "start": 69.726,
-     "end": 69.847,
-     "score": 0.72
+     "start": 73.742,
+     "end": 73.862,
+     "score": 0.852
     },
     {
      "word": "उसी",
-     "start": 70.007,
-     "end": 70.228,
-     "score": 0.831
+     "start": 74.023,
+     "end": 74.243,
+     "score": 0.602
     },
     {
      "word": "किनारे",
-     "start": 70.308,
-     "end": 70.649,
-     "score": 0.956
+     "start": 74.323,
+     "end": 74.664,
+     "score": 0.979
     },
     {
      "word": "पत्थर",
-     "start": 70.729,
-     "end": 71.03,
+     "start": 74.744,
+     "end": 75.045,
      "score": 0.779
     },
     {
      "word": "बनूँगा।\"",
-     "start": 71.09,
-     "end": 71.411,
-     "score": 0.939
+     "start": 75.105,
+     "end": 75.426,
+     "score": 0.994
     }
    ]
   },
   {
    "beat_id": "v026",
    "text": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"",
-   "start_seconds": 71.951,
+   "start_seconds": 75.966,
    "phrases": [
     {
      "id": "v026.1",
      "text": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"",
      "emotion": "tense",
      "exaggeration": 0.66,
-     "tempo": 1.078,
-     "start": 71.951,
-     "end": 75.474,
-     "tries": 1,
-     "words_per_s": 3.41
+     "tempo": 1.016,
+     "start": 75.966,
+     "end": 79.702,
+     "tries": 1
     }
    ],
-   "end_seconds": 75.474,
+   "end_seconds": 79.702,
    "words": [
     {
      "word": "\"जो",
-     "start": 72.052,
-     "end": 72.132,
-     "score": 0.972
+     "start": 76.087,
+     "end": 76.167,
+     "score": 0.756
     },
     {
      "word": "शालिग्राम",
-     "start": 72.233,
-     "end": 72.716,
-     "score": 0.736
+     "start": 76.267,
+     "end": 76.769,
+     "score": 0.763
     },
     {
      "word": "से",
-     "start": 72.776,
-     "end": 72.837,
-     "score": 0.88
+     "start": 76.83,
+     "end": 76.89,
+     "score": 0.73
     },
     {
      "word": "तुलसी",
-     "start": 72.897,
-     "end": 73.179,
-     "score": 0.728
+     "start": 76.95,
+     "end": 77.272,
+     "score": 0.698
     },
     {
      "word": "अलग",
-     "start": 73.219,
-     "end": 73.38,
-     "score": 0.852
+     "start": 77.312,
+     "end": 77.493,
+     "score": 0.839
     },
     {
      "word": "करे,",
-     "start": 73.461,
-     "end": 73.662,
-     "score": 0.92
+     "start": 77.573,
+     "end": 77.794,
+     "score": 0.879
     },
     {
      "word": "वो",
-     "start": 73.823,
-     "end": 73.904,
-     "score": 0.827
+     "start": 77.955,
+     "end": 78.035,
+     "score": 0.845
     },
     {
      "word": "अगले",
-     "start": 73.984,
-     "end": 74.206,
-     "score": 0.993
+     "start": 78.115,
+     "end": 78.356,
+     "score": 0.788
     },
     {
      "word": "जन्म",
-     "start": 74.266,
-     "end": 74.488,
-     "score": 0.539
+     "start": 78.437,
+     "end": 78.658,
+     "score": 0.76
     },
     {
      "word": "पत्नी",
-     "start": 74.528,
-     "end": 74.769,
-     "score": 0.872
+     "start": 78.718,
+     "end": 78.959,
+     "score": 0.67
     },
     {
      "word": "से",
-     "start": 74.85,
-     "end": 74.91,
-     "score": 0.704
+     "start": 79.019,
+     "end": 79.079,
+     "score": 0.524
     },
     {
      "word": "बिछड़ेगा।\"",
-     "start": 74.951,
-     "end": 75.353,
-     "score": 0.762
+     "start": 79.14,
+     "end": 79.561,
+     "score": 0.799
     }
    ]
   },
   {
    "beat_id": "v027",
    "text": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
-   "start_seconds": 75.694,
+   "start_seconds": 79.922,
    "phrases": [
     {
      "id": "v027.1",
      "text": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
      "emotion": "curious",
      "exaggeration": 0.6,
-     "tempo": 1.043,
-     "start": 75.694,
-     "end": 78.239,
-     "tries": 1,
-     "words_per_s": 3.54
+     "tempo": 0.925,
+     "start": 79.922,
+     "end": 82.789,
+     "tries": 1
     }
    ],
-   "end_seconds": 78.239,
+   "end_seconds": 82.789,
    "words": [
     {
      "word": "आप",
-     "start": 75.774,
-     "end": 75.914,
-     "score": 0.488
+     "start": 80.002,
+     "end": 80.163,
+     "score": 0.5
     },
     {
      "word": "बताइए,",
-     "start": 75.955,
-     "end": 76.355,
-     "score": 0.623
+     "start": 80.203,
+     "end": 80.664,
+     "score": 0.637
     },
     {
      "word": "तुलसी",
-     "start": 76.455,
-     "end": 76.736,
-     "score": 0.633
+     "start": 80.784,
+     "end": 81.085,
+     "score": 0.659
     },
     {
      "word": "का",
-     "start": 76.776,
-     "end": 76.836,
-     "score": 0.906
+     "start": 81.125,
+     "end": 81.205,
+     "score": 0.986
     },
     {
      "word": "श्राप",
-     "start": 76.936,
-     "end": 77.137,
-     "score": 0.539
+     "start": 81.305,
+     "end": 81.546,
+     "score": 0.544
     },
     {
      "word": "न्याय",
-     "start": 77.157,
-     "end": 77.297,
-     "score": 0.389
+     "start": 81.586,
+     "end": 81.726,
+     "score": 0.3
     },
     {
      "word": "था,",
-     "start": 77.417,
-     "end": 77.538,
-     "score": 0.394
+     "start": 81.847,
+     "end": 81.987,
+     "score": 0.576
     },
     {
      "word": "या",
-     "start": 77.738,
-     "end": 77.778,
-     "score": 0.49
+     "start": 82.248,
+     "end": 82.308,
+     "score": 0.498
     },
     {
      "word": "क्रोध?",
-     "start": 77.878,
-     "end": 78.139,
-     "score": 0.424
+     "start": 82.408,
+     "end": 82.669,
+     "score": 0.616
     }
    ]
   },
   {
    "beat_id": "v028",
    "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
-   "start_seconds": 78.539,
+   "start_seconds": 83.089,
    "phrases": [
     {
      "id": "v028.1",
      "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
      "emotion": "reflective",
      "exaggeration": 0.5,
-     "tempo": 0.921,
-     "start": 78.539,
-     "end": 82.277,
-     "tries": 1,
-     "words_per_s": 2.94
+     "tempo": 0.88,
+     "start": 83.089,
+     "end": 87.003,
+     "tries": 1
     }
    ],
-   "end_seconds": 82.277,
+   "end_seconds": 87.003,
    "words": [
     {
      "word": "उसने",
-     "start": 78.619,
-     "end": 78.881,
-     "score": 0.85
-    },
-    {
-     "word": "भगवान",
-     "start": 78.961,
-     "end": 79.343,
-     "score": 0.786
-    },
-    {
-     "word": "को",
-     "start": 79.403,
-     "end": 79.484,
-     "score": 0.986
-    },
-    {
-     "word": "पत्थर",
-     "start": 79.564,
-     "end": 79.885,
-     "score": 0.683
-    },
-    {
-     "word": "बनाया,",
-     "start": 79.946,
-     "end": 80.328,
-     "score": 0.853
-    },
-    {
-     "word": "भगवान",
-     "start": 80.589,
-     "end": 80.931,
-     "score": 0.851
-    },
-    {
-     "word": "ने",
-     "start": 80.971,
-     "end": 81.051,
-     "score": 0.991
-    },
-    {
-     "word": "उसे",
-     "start": 81.071,
-     "end": 81.272,
-     "score": 0.994
-    },
-    {
-     "word": "हृदय",
-     "start": 81.353,
-     "end": 81.654,
+     "start": 83.169,
+     "end": 83.45,
      "score": 0.8
     },
     {
+     "word": "भगवान",
+     "start": 83.531,
+     "end": 83.932,
+     "score": 0.74
+    },
+    {
+     "word": "को",
+     "start": 83.992,
+     "end": 84.073,
+     "score": 0.984
+    },
+    {
+     "word": "पत्थर",
+     "start": 84.173,
+     "end": 84.494,
+     "score": 0.55
+    },
+    {
+     "word": "बनाया,",
+     "start": 84.574,
+     "end": 84.976,
+     "score": 0.915
+    },
+    {
+     "word": "भगवान",
+     "start": 85.217,
+     "end": 85.578,
+     "score": 0.911
+    },
+    {
+     "word": "ने",
+     "start": 85.638,
+     "end": 85.718,
+     "score": 0.751
+    },
+    {
+     "word": "उसे",
+     "start": 85.738,
+     "end": 85.939,
+     "score": 0.846
+    },
+    {
+     "word": "हृदय",
+     "start": 86.04,
+     "end": 86.341,
+     "score": 0.782
+    },
+    {
      "word": "पर",
-     "start": 81.734,
-     "end": 81.835,
-     "score": 0.867
+     "start": 86.421,
+     "end": 86.561,
+     "score": 0.645
     },
     {
      "word": "रखा।",
-     "start": 81.875,
-     "end": 82.096,
-     "score": 0.56
+     "start": 86.602,
+     "end": 86.802,
+     "score": 0.437
     }
    ]
   },
   {
    "beat_id": "v029",
    "text": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।",
-   "start_seconds": 82.657,
+   "start_seconds": 87.383,
    "phrases": [
     {
      "id": "v029.1",
      "text": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।",
      "emotion": "reflective",
      "exaggeration": 0.5,
-     "tempo": 0.921,
-     "start": 82.657,
-     "end": 87.446,
-     "tries": 1,
-     "words_per_s": 2.71
+     "tempo": 0.949,
+     "start": 87.383,
+     "end": 92.032,
+     "tries": 1
     }
    ],
-   "end_seconds": 87.446,
+   "end_seconds": 92.032,
    "words": [
     {
      "word": "शंखचूड़",
-     "start": 82.797,
-     "end": 83.278,
-     "score": 0.417
+     "start": 87.523,
+     "end": 87.964,
+     "score": 0.566
     },
     {
      "word": "की",
-     "start": 83.338,
-     "end": 83.418,
-     "score": 0.721
+     "start": 88.044,
+     "end": 88.104,
+     "score": 0.986
     },
     {
      "word": "अस्थियाँ",
-     "start": 83.438,
-     "end": 83.919,
-     "score": 0.633
-    },
-    {
-     "word": "शंख",
-     "start": 84.02,
-     "end": 84.26,
-     "score": 0.607
-    },
-    {
-     "word": "बनीं,",
-     "start": 84.34,
-     "end": 84.601,
-     "score": 0.707
-    },
-    {
-     "word": "तो",
-     "start": 84.741,
-     "end": 84.841,
-     "score": 0.76
-    },
-    {
-     "word": "शिव",
-     "start": 84.961,
-     "end": 85.102,
-     "score": 0.542
-    },
-    {
-     "word": "पर",
-     "start": 85.222,
-     "end": 85.322,
-     "score": 0.996
-    },
-    {
-     "word": "शंख-जल",
-     "start": 85.442,
-     "end": 85.843,
-     "score": 0.602
-    },
-    {
-     "word": "क्यों",
-     "start": 85.943,
-     "end": 86.063,
-     "score": 0.733
-    },
-    {
-     "word": "नहीं?",
-     "start": 86.124,
-     "end": 86.324,
-     "score": 0.865
-    },
-    {
-     "word": "फ़ॉलो",
-     "start": 86.544,
-     "end": 86.865,
+     "start": 88.144,
+     "end": 88.605,
      "score": 0.787
     },
     {
+     "word": "शंख",
+     "start": 88.706,
+     "end": 88.926,
+     "score": 0.498
+    },
+    {
+     "word": "बनीं,",
+     "start": 89.006,
+     "end": 89.267,
+     "score": 0.71
+    },
+    {
+     "word": "तो",
+     "start": 89.407,
+     "end": 89.567,
+     "score": 0.718
+    },
+    {
+     "word": "शिव",
+     "start": 89.627,
+     "end": 89.728,
+     "score": 0.339
+    },
+    {
+     "word": "पर",
+     "start": 89.868,
+     "end": 89.988,
+     "score": 0.743
+    },
+    {
+     "word": "शंख-जल",
+     "start": 90.088,
+     "end": 90.449,
+     "score": 0.704
+    },
+    {
+     "word": "क्यों",
+     "start": 90.569,
+     "end": 90.689,
+     "score": 0.374
+    },
+    {
+     "word": "नहीं?",
+     "start": 90.729,
+     "end": 90.95,
+     "score": 0.812
+    },
+    {
+     "word": "फ़ॉलो",
+     "start": 91.17,
+     "end": 91.471,
+     "score": 0.775
+    },
+    {
      "word": "कीजिए।",
-     "start": 86.945,
-     "end": 87.266,
-     "score": 0.756
+     "start": 91.551,
+     "end": 91.852,
+     "score": 0.791
     }
    ]
   }

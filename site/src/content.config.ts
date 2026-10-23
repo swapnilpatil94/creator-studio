@@ -17,6 +17,7 @@ export const postSchema = z.object({
   aiArt: z.boolean().default(false),                          // hero or inline art is AI-made: shown as a label
   traditionNote: z.string().optional(),
   sources: z.array(z.string()).default([]),
+  images: z.array(z.object({ src: z.string(), alt: z.string(), caption: z.string().optional(), role: z.string().optional(), w: z.number().optional(), h: z.number().optional(), ai: z.boolean().optional() })).default([]),   // every picture of the post (hero, illustrations, infographics) for the NewsArticle image list
   videoId: z.string().optional(),                             // YouTube id of the matching video (must be public to play)
   draft: z.boolean().default(false),
 });

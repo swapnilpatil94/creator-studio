@@ -21,7 +21,7 @@ const news = {
   articleSection: sections[post.section] ?? post.section,
   keywords: [...post.hinglishKeywords, ...(post.trendingEventConnection ? [post.trendingEventConnection] : [])].join(", "),
   ...(post.trendingEventConnection ? { about: { "@type": "Thing", name: post.trendingEventConnection } } : {}),
-  ...(image ? { image: [image] } : {}),
+  ...(image || post.images.length ? { image: [...(image ? [image] : []), ...post.images.filter((i) => i.role !== "hero").map((i) => new URL(i.src, Astro.site).href)] } : {}),
   ...(post.sources.length ? { citation: post.sources } : {}),
 };
 // the embedded YouTube video as VideoObject (helps the video appear in Search and Discover; the thumbnail is YouTube's own)

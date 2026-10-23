@@ -1,0 +1,12 @@
+---
+// A picture inside an article: an illustration or an infographic with caption and alt text. Infographics open full size in a new tab (they carry small text that phones need to zoom into).
+interface Props { src: string; alt: string; caption?: string; role?: "infographic" | "illustration"; w?: number; h?: number; ai?: boolean }
+const { src, alt, caption, role = "illustration", w, h, ai = false } = Astro.props;
+const info = role === "infographic";
+---
+<figure class:list={["not-prose my-10 mx-auto", info ? "max-w-3xl" : "max-w-4xl"]}>
+  <div class="overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--card-solid)] shadow-[var(--shadow)]">
+    {info ? <a href={src} target="_blank" rel="noopener" aria-label={alt + " (open full size)"}><img src={src} alt={alt} width={w} height={h} loading="lazy" decoding="async" class="h-auto w-full" /></a> : <img src={src} alt={alt} width={w} height={h} loading="lazy" decoding="async" class="h-auto w-full object-cover" />}
+  </div>
+  {(caption || ai) && <figcaption class="mt-2 px-1 text-center font-latin text-xs text-[var(--muted)]">{caption}{ai && <span class="chip ml-2">AI art</span>}{info && <span class="ml-2">· tap to enlarge</span>}</figcaption>}
+</figure>

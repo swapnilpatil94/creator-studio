@@ -15,7 +15,7 @@
      "img": "v001_close",
      "framing": "close",
      "of": "s1",
-     "fx": "depth_rack_focus",
+     "fx": "chromatic_glitch_wipe",
      "fxBy": "cinema"
     }
    ],
@@ -31,7 +31,7 @@
    "move": "panL",
    "label": "श्राप निकला",
    "reveal": "circle",
-   "fx": "eye_glow_energy_pulse",
+   "fx": "infinite_zoom_droste",
    "fxBy": "cinema",
    "tone": "cold",
    "transition": "leak",
@@ -40,8 +40,7 @@
      "img": "v002_close",
      "framing": "close",
      "of": "s2",
-     "fx": "mesh_ken_burns_3d",
-     "fxBy": "cinema"
+     "fx": "drone_push_in"
     }
    ],
    "autoShots": true
@@ -59,7 +58,7 @@
    "style": "wave",
    "img": "s3",
    "move": "push",
-   "fx": "drone_orbit_180",
+   "fx": "kinetography_cinemagraph",
    "fxBy": "cinema",
    "tone": "cold",
    "transition": "leak"
@@ -73,7 +72,7 @@
    "img": "s4",
    "move": "push",
    "label": "तुलसी दानवराज शंखचूड़ की पत्नी थी",
-   "fx": "infinite_zoom_droste",
+   "fx": "drone_fpv_flythrough",
    "sticker": "burst",
    "fxBy": "cinema",
    "tone": "cold",
@@ -108,6 +107,15 @@
    "fxBy": "owner",
    "tone": "cold",
    "transition": "gl:CrossZoom",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "s5",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true,
    "trBy": "cinema"
   },
   "chapter": "ch1"
@@ -134,7 +142,7 @@
    "img": "s7",
    "move": "panR",
    "label": "ब्रह्मा का वरदान",
-   "fx": "mesh_crane_push",
+   "fx": "lightning_flash",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "zoom",
@@ -158,7 +166,7 @@
    "img": "s8",
    "move": "pull",
    "label": "पत्नी पतिव्रता है",
-   "fx": "day_to_night_timelapse",
+   "fx": "mesh_crane_push",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "whip",
@@ -167,8 +175,7 @@
      "img": "v008_close",
      "framing": "close",
      "of": "s8",
-     "fx": "chromatic_glitch_wipe",
-     "fxBy": "cinema"
+     "fx": "drone_push_in"
     }
    ],
    "autoShots": true
@@ -182,10 +189,20 @@
    "img": "s9",
    "move": "push",
    "label": "एक बूढ़ा ब्राह्मण आया",
-   "fx": "sacred_geometry_carve",
+   "fx": "morph_age_shift",
    "fxBy": "cinema",
    "tone": "ember",
-   "transition": "cut"
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "s9",
+     "fx": "speed_ramp_punch",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -212,10 +229,19 @@
    "move": "push",
    "label": "शंखचूड़ का रूप धरकर",
    "reveal": "circle",
-   "fx": "drone_fpv_flythrough",
+   "fx": "particle_formation",
    "fxBy": "cinema",
    "tone": "ember",
-   "transition": "zoom"
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "s11",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -227,7 +253,7 @@
    "move": "pull",
    "label": "खुशी के आँसुओं संग पति के पाँव धोए",
    "reveal": "diamond",
-   "fx": "mesh_rack_focus_dof",
+   "fx": "crane_down",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "whip",
@@ -254,7 +280,7 @@
    "style": "wave",
    "img": "s13",
    "move": "push",
-   "fx": "disintegration_dispersal",
+   "fx": "2.5d_parallax",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "cut"
@@ -269,7 +295,7 @@
    "move": "panL",
    "label": "शिव का त्रिशूल चला",
    "reveal": "wipe",
-   "fx": "morph_age_shift",
+   "fx": "drone_orbit_180",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "gl:cube",
@@ -287,7 +313,7 @@
    "style": "glitch",
    "img": "s15",
    "move": "push",
-   "fx": "particle_formation",
+   "fx": "disintegration_dispersal",
    "fxBy": "cinema",
    "tone": "fire",
    "transition": "cut"
@@ -302,7 +328,7 @@
    "move": "panR",
    "label": "कौन हो तुम, मायावी?",
    "reveal": "circle",
-   "fx": "shadow_play_reveal",
+   "fx": "mesh_rack_focus_dof",
    "sticker": "burst",
    "fxBy": "cinema",
    "tone": "ember",
@@ -331,10 +357,20 @@
    "style": "slam",
    "img": "s17",
    "move": "push",
-   "fx": "drone_pull_out_reveal",
+   "fx": "day_to_night_timelapse",
    "fxBy": "cinema",
    "tone": "ember",
-   "transition": "cut"
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "s17",
+     "fx": "handheld_breathing_shake",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -346,10 +382,20 @@
    "move": "drone_push_in",
    "label": "नारायण असली रूप में आए",
    "reveal": "diamond",
-   "fx": "dolly_zoom_vertigo",
+   "fx": "shadow_play_reveal",
    "fxBy": "cinema",
    "tone": "ember",
    "transition": "gl:doorway",
+   "shots": [
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "s18",
+     "fx": "drone_pull_out_reveal",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true,
    "trBy": "cinema"
   },
   "chapter": "ch1"
@@ -364,7 +410,7 @@
    "style": "mask",
    "img": "s19",
    "move": "push",
-   "fx": "drone_top_down_bird_eye",
+   "fx": "mesh_dolly_zoom_vertigo",
    "fxBy": "cinema",
    "tone": "fire",
    "transition": "cut",
@@ -373,8 +419,7 @@
      "img": "v019_close",
      "framing": "close",
      "of": "s19",
-     "fx": "speed_ramp_punch",
-     "fxBy": "cinema"
+     "fx": "drone_push_in"
     }
    ],
    "autoShots": true
@@ -414,7 +459,7 @@
    "by": "नारायण",
    "img": "s21",
    "move": "push",
-   "fx": "crane_down",
+   "fx": "sacred_geometry_carve",
    "fxBy": "cinema",
    "tone": "fire",
    "transition": "cut",
@@ -453,7 +498,7 @@
   "params": {
    "img": "s23",
    "move": "pull",
-   "fx": "mesh_dolly_zoom_vertigo",
+   "fx": "depth_rack_focus",
    "fxBy": "cinema",
    "tone": "fire",
    "transition": "zoom"
@@ -470,7 +515,7 @@
    "style": "wave",
    "img": "s24",
    "move": "push",
-   "fx": "kinetography_cinemagraph",
+   "fx": "drone_top_down_bird_eye",
    "fxBy": "cinema",
    "tone": "fire",
    "transition": "cut",
@@ -493,7 +538,7 @@
   "params": {
    "img": "s25",
    "move": "pull",
-   "fx": "lightning_flash",
+   "fx": "eye_glow_energy_pulse",
    "focus": 2,
    "fxBy": "cinema",
    "tone": "fire",
@@ -520,7 +565,7 @@
    "style": "glitch",
    "img": "s26",
    "move": "push",
-   "fx": "handheld_breathing_shake",
+   "fx": "mesh_ken_burns_3d",
    "behind": "सदा साथ",
    "fxBy": "cinema",
    "tone": "ember",
@@ -585,7 +630,7 @@
    ],
    "img": "s29",
    "move": "push",
-   "fx": "2.5d_parallax",
+   "fx": "dolly_zoom_vertigo",
    "fxBy": "cinema",
    "tone": "gold",
    "transition": "dissolve",

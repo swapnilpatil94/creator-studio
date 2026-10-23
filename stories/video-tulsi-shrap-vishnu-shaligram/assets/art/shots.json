@@ -381,5 +381,31 @@
   "medium": "photoreal",
   "src": "owner",
   "family": "epic"
+ },
+ "v005_close": {
+  "subject": "The wife, a woman in a red saree",
+  "action": "standing defiantly with a raised hand",
+  "setting": "a stone battlefield under a dark sky",
+  "lighting": "glowing from distant flames",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "v009_close": {
+  "subject": "the wife, a young woman in a red silk saree",
+  "action": "kneeling and offering a golden armor to an old Brahmin",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v011_close": {
+  "subject": "PROTAGONIST, a young woman in red saree",
+  "action": "clutching a conch shell",
+  "setting": "stone pathway near Tulsi's door",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
  }
 }
