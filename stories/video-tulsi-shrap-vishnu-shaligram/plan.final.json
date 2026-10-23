@@ -30,7 +30,7 @@
    "move": "panL",
    "label": "श्राप निकला",
    "reveal": "circle",
-   "fx": "lightning_flash",
+   "fx": "morph_age_shift",
    "tone": "cold",
    "transition": "leak",
    "shots": [
@@ -38,14 +38,10 @@
      "img": "v002_close",
      "framing": "close",
      "of": "s2",
-     "fx": "drone_push_in",
-     "clip": "v002_v002_close",
-     "clip_n": 87
+     "fx": "drone_push_in"
     }
    ],
-   "autoShots": true,
-   "clip": "v002",
-   "clip_n": 87
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -60,6 +56,7 @@
    "style": "wave",
    "img": "s3",
    "move": "push",
+   "fx": "chromatic_glitch_wipe",
    "tone": "cold",
    "transition": "leak"
   },
@@ -94,13 +91,13 @@
  },
  {
   "id": "v005",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
-   "value": 100,
-   "suffix": "बरस",
    "label": "शिव और तुलसी के युद्ध",
    "img": "s5",
    "move": "push",
+   "fx": "split_screen_vs",
+   "img2": "s14",
    "tone": "cold",
    "transition": "leak"
   },
@@ -128,7 +125,7 @@
    "img": "s7",
    "move": "panR",
    "label": "ब्रह्मा का वरदान",
-   "fx": "volumetric_god_rays",
+   "fx": "infinite_zoom_droste",
    "tone": "ember",
    "transition": "zoom",
    "shots": [
@@ -136,14 +133,10 @@
      "img": "v007_close",
      "framing": "close",
      "of": "s7",
-     "fx": "drone_push_in",
-     "clip": "v007_v007_close",
-     "clip_n": 94
+     "fx": "drone_push_in"
     }
    ],
-   "autoShots": true,
-   "clip": "v007",
-   "clip_n": 94
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -154,7 +147,7 @@
    "img": "s8",
    "move": "pull",
    "label": "पत्नी पतिव्रता है",
-   "fx": "crane_up_reveal",
+   "fx": "mesh_crane_push",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -208,7 +201,7 @@
    "move": "push",
    "label": "शंखचूड़ का रूप धरकर",
    "reveal": "circle",
-   "fx": "2.5d_parallax",
+   "fx": "mesh_ken_burns_3d",
    "tone": "ember",
    "transition": "zoom",
    "clip": "v011",
@@ -262,7 +255,7 @@
    "move": "panL",
    "label": "शिव का त्रिशूल चला",
    "reveal": "wipe",
-   "fx": "crane_up_reveal",
+   "fx": "mesh_dolly_zoom_vertigo",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -355,7 +348,7 @@
    "move": "drone_push_in",
    "label": "नारायण असली रूप में आए",
    "reveal": "diamond",
-   "fx": "drone_orbit_180",
+   "fx": "mesh_rack_focus_dof",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -370,7 +363,7 @@
    ],
    "autoShots": true,
    "clip": "v018",
-   "clip_n": 91
+   "clip_n": 92
   },
   "chapter": "ch1"
  },
@@ -506,18 +499,10 @@
   "params": {
    "img": "s25",
    "move": "pull",
-   "fx": "matte_painting_extension",
+   "fx": "map_loka_zoom",
+   "focus": 2,
    "tone": "fire",
-   "transition": "cut",
-   "shots": [
-    {
-     "img": "v025_close",
-     "framing": "close",
-     "of": "s25",
-     "fx": "drone_push_in"
-    }
-   ],
-   "autoShots": true
+   "transition": "cut"
   },
   "chapter": "ch1"
  },

@@ -30,7 +30,7 @@
    "move": "panL",
    "label": "श्राप निकला",
    "reveal": "circle",
-   "fx": "2.5d_parallax",
+   "fx": "morph_age_shift",
    "tone": "cold",
    "transition": "leak",
    "shots": [
@@ -56,6 +56,7 @@
    "style": "wave",
    "img": "s3",
    "move": "push",
+   "fx": "chromatic_glitch_wipe",
    "tone": "cold",
    "transition": "leak"
   },
@@ -86,13 +87,13 @@
  },
  {
   "id": "v005",
-  "comp": "cinema",
+  "comp": "fx",
   "params": {
-   "value": 100,
-   "suffix": "बरस",
    "label": "शिव और तुलसी के युद्ध",
    "img": "s5",
    "move": "push",
+   "fx": "split_screen_vs",
+   "img2": "s14",
    "tone": "cold",
    "transition": "leak"
   },
@@ -120,7 +121,7 @@
    "img": "s7",
    "move": "panR",
    "label": "ब्रह्मा का वरदान",
-   "fx": "parallax_occlusion_3d",
+   "fx": "infinite_zoom_droste",
    "tone": "ember",
    "transition": "zoom",
    "shots": [
@@ -142,7 +143,7 @@
    "img": "s8",
    "move": "pull",
    "label": "पत्नी पतिव्रता है",
-   "fx": "crane_up_reveal",
+   "fx": "mesh_crane_push",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -164,7 +165,7 @@
    "img": "s9",
    "move": "push",
    "label": "एक बूढ़ा ब्राह्मण आया",
-   "fx": "matte_painting_extension",
+   "fx": "sacred_geometry_carve",
    "tone": "ember",
    "transition": "cut"
   },
@@ -192,7 +193,7 @@
    "move": "push",
    "label": "शंखचूड़ का रूप धरकर",
    "reveal": "circle",
-   "fx": "2.5d_parallax",
+   "fx": "mesh_ken_burns_3d",
    "tone": "ember",
    "transition": "zoom"
   },
@@ -244,7 +245,7 @@
    "move": "panL",
    "label": "शिव का त्रिशूल चला",
    "reveal": "wipe",
-   "fx": "crane_up_reveal",
+   "fx": "mesh_dolly_zoom_vertigo",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -333,7 +334,7 @@
    "move": "drone_push_in",
    "label": "नारायण असली रूप में आए",
    "reveal": "diamond",
-   "fx": "drone_orbit_180",
+   "fx": "mesh_rack_focus_dof",
    "tone": "ember",
    "transition": "whip",
    "shots": [
@@ -476,18 +477,10 @@
   "params": {
    "img": "s25",
    "move": "pull",
-   "fx": "matte_painting_extension",
+   "fx": "map_loka_zoom",
+   "focus": 2,
    "tone": "fire",
-   "transition": "cut",
-   "shots": [
-    {
-     "img": "v025_close",
-     "framing": "close",
-     "of": "s25",
-     "fx": "drone_push_in"
-    }
-   ],
-   "autoShots": true
+   "transition": "cut"
   },
   "chapter": "ch1"
  },

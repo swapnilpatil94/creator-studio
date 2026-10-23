@@ -101,6 +101,14 @@
    "send": 0.4
   },
   {
+   "t": 5.567,
+   "type": "sample",
+   "pool": "glitch",
+   "level": -33,
+   "trim": 0.6,
+   "fade": 0.15
+  },
+  {
    "t": 5.692,
    "type": "sample",
    "pool": "shimmer",
@@ -554,19 +562,6 @@
    "type": "sample",
    "pool": "impact_mid",
    "level": -22
-  },
-  {
-   "t": 72.775,
-   "type": "sample",
-   "pool": "whoosh_fast",
-   "level": -28,
-   "pan": -0.4
-  },
-  {
-   "t": 72.9,
-   "type": "sample",
-   "pool": "impact_small",
-   "level": -28
   },
   {
    "t": 74.567,
