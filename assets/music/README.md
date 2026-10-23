@@ -1,3 +1,5 @@
+> The synthesised tanpura drones here are now only a fallback; the main sound library is assets/sound (CC0, see its README). 
+
 # Background music bed
 
 `<mood>-tanpura-drone.m4a` (devotion, sorrow, war, cosmic, river, neutral) are synthesized from scratch by `tools/reel/make-music-beds.py` (Karplus-Strong tanpura tuned to the cue bed's 98 Hz root, mood pad, heartbeat drum for war): our own work, no licence questions, loop-seamless. Curated real tracks added below sit in the same pool and are picked the same way; delete the drones if you want only curated music.

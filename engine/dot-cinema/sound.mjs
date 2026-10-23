@@ -2,11 +2,25 @@
 // Procedural sound design (no samples, no models): drone bed with mood automation + cue synth + reverb + limiter.
 // usage: node sound.mjs <cues.json> <duration_seconds> <out.wav>
 // cues.json: { lead, root, moods:[{t,mood}], cues:[{t,type,dur,level,pan,freq,...}] }  (t in narration seconds; `lead` is added)
-import fs from "node:fs"; import { spawnSync } from "node:child_process";
+import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process";
 const SR = 48000, TAU = Math.PI * 2;
 const db = x => Math.pow(10, x / 20), clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 function rng(seed) { let s = (seed * 2654435761) >>> 0 || 1; return () => { s ^= s << 13; s >>>= 0; s ^= s >>> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; }; }
 
+// ---------- recorded samples (assets/sound, all CC0: see assets/sound/LEDGER.json) ----------
+// decoded once per (file, tempo) through ffmpeg to 48 kHz mono; `tempo` time-fits a riser so its peak lands where the picture needs it (pitch is kept)
+const SFX_ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../../assets/sound/sfx"), SAMPLES = new Map();
+function poolFiles(role) { try { return fs.readdirSync(path.join(SFX_ROOT, role)).filter(f => /\.(ogg|wav)$/i.test(f)).sort().map(f => path.join(SFX_ROOT, role, f)); } catch { return []; } }
+function loadSample(file, tempo = 1) {
+  const key = file + "@" + tempo.toFixed(3); if (SAMPLES.has(key)) return SAMPLES.get(key);
+  const chain = []; let tp = tempo; while (tp > 2) { chain.push("atempo=2.0"); tp /= 2; } while (tp < 0.5) { chain.push("atempo=0.5"); tp /= 0.5; } if (Math.abs(tp - 1) > 0.01) chain.push("atempo=" + tp.toFixed(4));
+  const r = spawnSync("ffmpeg", ["-v", "error", "-i", file, ...(chain.length ? ["-af", chain.join(",")] : []), "-ac", "1", "-ar", String(SR), "-f", "f32le", "-"], { maxBuffer: 1 << 28 });
+  if (r.status !== 0 || !r.stdout || !r.stdout.length) { SAMPLES.set(key, null); return null; }
+  const n = r.stdout.length / 4 | 0, y = new Float32Array(n); for (let i = 0; i < n; i++) y[i] = r.stdout.readFloatLE(i * 4);
+  let pk = 0, pi = 0; const w = Math.floor(0.01 * SR); for (let i = 0; i + w < n; i += w >> 1) { let e = 0; for (let k = 0; k < w; k++) e += Math.abs(y[i + k]); if (e > pk) { pk = e; pi = i + (w >> 1); } }
+  const smp = { y, n, peakT: pi / SR }; SAMPLES.set(key, smp); return smp; }
+// RBJ peaking EQ, applied once to the music so the speech band (2-4 kHz) leaves room for the narrator before any ducking happens
+function peaking(x, f0, gainDb, q) { const A = Math.pow(10, gainDb / 40), w = TAU * f0 / SR, al = Math.sin(w) / (2 * q), b0 = 1 + al * A, b1 = -2 * Math.cos(w), b2 = 1 - al * A, a0 = 1 + al / A, a2 = 1 - al / A; let x1 = 0, x2 = 0, y1 = 0, y2 = 0; for (let i = 0; i < x.length; i++) { const v = (b0 * x[i] + b1 * x1 + b2 * x2 - b1 * y1 - a2 * y2) / a0; x2 = x1; x1 = x[i]; y2 = y1; y1 = v; x[i] = v; } }
 export function synth(spec, duration) {
   const N = Math.ceil(duration * SR), L = new Float32Array(N), R = new Float32Array(N), SL = new Float32Array(N), SR_ = new Float32Array(N); // dry + reverb send
   const lead = spec.lead || 0, root = spec.root || 98;
@@ -27,6 +41,7 @@ export function synth(spec, duration) {
   { let cur = { a: MOODS[moods[0].mood].a.slice(), cut: MOODS[moods[0].mood].cut, lvl: MOODS[moods[0].mood].lvl }, mi = 0;
     for (let k = 0; k < nCtl; k++) { const t = k / CR; while (mi + 1 < moods.length && t >= moods[mi + 1].t) mi++; const tg = MOODS[moods[mi].mood], tc = 1 - Math.exp(-1 / (CR * 1.4));
       for (let p = 0; p < RATIOS.length; p++) { cur.a[p] += (tg.a[p] - cur.a[p]) * tc; ctlA[p][k] = cur.a[p]; } cur.cut += (tg.cut - cur.cut) * tc; cur.lvl += (tg.lvl - cur.lvl) * tc; ctlCut[k] = cur.cut; ctlLvl[k] = cur.lvl; } }
+  const dTrim = db(spec.droneTrimDb || 0);   // quieter synthetic drone when a recorded music bed carries the harmony
   { const ph = RATIOS.map(() => [Math.random() * 0, 0.3, 0.6, 0.9]), lpL = { y: 0 }, lpR = { y: 0 }; const f0 = root;
     const fade = i => Math.min(1, i / (SR * 2.5)) * Math.min(1, (N - i) / (SR * 2.0));
     for (let i = 0; i < N; i++) {
@@ -36,8 +51,9 @@ export function synth(spec, duration) {
       const cut = ctlCut[k0] * (1 - fr) + ctlCut[k0 + 1] * fr, alpha = 1 - Math.exp(-TAU * cut / SR), lv = db(ctlLvl[k0] * (1 - fr) + ctlLvl[k0 + 1] * fr);
       const trem = 0.85 + 0.15 * Math.sin(TAU * 0.11 * i / SR);
       lpL.y += (sl - lpL.y) * alpha; lpR.y += (sr - lpR.y) * alpha; const g = lv * trem * fade(i) * 0.5;
-      L[i] += lpL.y * g; R[i] += lpR.y * g; SL[i] += lpL.y * g * 0.25; SR_[i] += lpR.y * g * 0.25; } }
+      L[i] += lpL.y * g * dTrim; R[i] += lpR.y * g * dTrim; SL[i] += lpL.y * g * 0.25 * dTrim; SR_[i] += lpR.y * g * 0.25 * dTrim; } }
 
+  const BL = new Float32Array(L), BR = new Float32Array(R);   // bed stem so far = the drone alone (music joins it below); everything added after this line is an effect
   // ---------- cue synth ----------
   const svf = () => ({ lp: 0, bp: 0 });
   function noiseBand(st, x, fc, q) { const f = 2 * Math.sin(Math.PI * Math.min(fc, SR / 6) / SR); st.lp += f * st.bp; const hp = x - st.lp - st.bp / q; st.bp += f * hp; return st.bp; }
@@ -45,6 +61,17 @@ export function synth(spec, duration) {
     const r = rng(ci * 7919 + 13), t0 = c.t + lead, lv = db(c.level === undefined ? -12 : c.level), pan = c.pan || 0, dur = c.dur || 1;
     const send = c.send === undefined ? 0.35 : c.send;
     switch (c.type) {
+      // a recorded one-shot from assets/sound/sfx/<pool>: level = dB below the sample's own (normalised) peak, rate = pitch, alignPeak puts the sample's loudest moment ON t, fit = seconds from sample start to its peak after time-fitting
+      case "sample": { const files = poolFiles(c.pool); if (!files.length) break; const file = c.file ? path.join(SFX_ROOT, c.pool, c.file) : files[Math.floor(r() * files.length)];
+        const probe = loadSample(file, 1); if (!probe) break; const tempo = c.fit && c.alignPeak ? Math.max(0.5, probe.peakT / c.fit) : 1, smp = tempo === 1 ? probe : loadSample(file, tempo); if (!smp) break;
+        const rate = c.rate || 1, start = c.alignPeak ? t0 - smp.peakT / rate : t0, len = Math.min(smp.n, c.trim ? Math.floor(c.trim * SR) : smp.n), fo = Math.floor((c.fade ?? 0.04) * SR);
+        for (let i = 0; i < len / rate; i++) { const p = i * rate, i0 = Math.floor(p), fr = p - i0; if (i0 + 1 >= smp.n) break; let v = smp.y[i0] * (1 - fr) + smp.y[i0 + 1] * fr; const rem = len - p; if (rem < fo) v *= Math.max(0, rem / fo); add(start, i, v * lv, pan, send); }
+        break; }
+      // the typewriter: one real keystroke per entry of c.times (narration seconds), a different key each time, small level/pitch/pan jitter so it never sounds like a machine gun
+      case "typing": { const keys = poolFiles("keys"); if (!keys.length) break; const rr = rng(ci * 31 + 5);
+        for (const tt of c.times || []) { const smp = loadSample(keys[Math.floor(rr() * keys.length)]); if (!smp) continue; const g = lv * db((rr() - 0.5) * 3), rate = 0.94 + rr() * 0.12, pn = (rr() - 0.5) * 0.3, len = Math.floor(smp.n / rate);
+          for (let i = 0; i < len; i++) { const p = i * rate, i0 = Math.floor(p), fr = p - i0; if (i0 + 1 >= smp.n) break; add(tt + lead, i, (smp.y[i0] * (1 - fr) + smp.y[i0 + 1] * fr) * g, pn, 0.1); } }
+        break; }
       case "impact": { const len = Math.floor(SR * (c.tail || 2.2)); let ph = 0; const st = svf(); for (let i = 0; i < len; i++) { const t = i / SR, f = 38 + 95 * Math.exp(-t * 9); ph += TAU * f / SR; let v = Math.sin(ph) * Math.exp(-t * 2.4) * 1.0 + Math.sin(ph * 2.01) * Math.exp(-t * 5) * 0.35;
           const n = (r() * 2 - 1); const nb = noiseBand(st, n, 700 + 600 * Math.exp(-t * 8), 0.9) * Math.exp(-t * 11) * 0.9; v += nb + (i < 90 ? (r() * 2 - 1) * 0.8 * (1 - i / 90) : 0); add(t0, i, v * lv, pan, send); } break; }
       case "crack": { const len = Math.floor(SR * 0.7); const st = svf(); let ph = 0; for (let i = 0; i < len; i++) { const t = i / SR; ph += TAU * (60 + 150 * Math.exp(-t * 25)) / SR; const n = r() * 2 - 1; const v = noiseBand(st, n, 2600 - 1500 * t, 0.7) * Math.exp(-t * 16) + Math.sin(ph) * Math.exp(-t * 9) * 0.8; add(t0, i, v * lv, pan, send * 0.8); } break; }
@@ -67,31 +94,41 @@ export function synth(spec, duration) {
     for (const d of aps) { const b = new Float32Array(d + off), g = 0.5; let p = 0; for (let i = 0; i < N; i++) { const y = b[p], v = out[i]; const o = -v + y; b[p] = v + y * g; out[i] = o; p = (p + 1) % b.length; } } return out; }
   const wl = reverb(SL, 0), wr = reverb(SR_, 23); const wet = db(-4);
   for (let i = 0; i < N; i++) { L[i] += wl[i] * wet; R[i] += wr[i] * wet; }
-  // ---------- authored silences: duck everything (bed, cues, reverb tails) to near zero so the next sound lands ----------
+  // ---------- authored silences: duck everything (bed, cues, reverb tails, music) to near zero so the next sound lands ----------
+  const sg = new Float32Array(N).fill(1);
   for (const sl of spec.silences || []) { const a0 = (sl.t + lead) * SR, b0 = a0 + sl.dur * SR, f = (sl.fade || 0.25) * SR;
-    for (let i = Math.max(0, Math.floor(a0 - f)); i < Math.min(N, Math.ceil(b0 + f)); i++) { const g = i < a0 ? 1 - (i - (a0 - f)) / f : i > b0 ? (i - b0) / f : 0, gg = Math.max(0.02, g); L[i] *= gg; R[i] *= gg; } }
-  // ---------- optional background music bed (assets/music/, see its README): looped/trimmed to length, mixed quietly under the cue bed.
-  // The sidechain-ducking in mix.mjs then pulls the whole bed (cues + this) further down under the narration automatically -- nothing else changes.
+    for (let i = Math.max(0, Math.floor(a0 - f)); i < Math.min(N, Math.ceil(b0 + f)); i++) { const g = i < a0 ? 1 - (i - (a0 - f)) / f : i > b0 ? (i - b0) / f : 0, gg = Math.max(0.02, g); sg[i] = Math.min(sg[i], gg); } }
+  for (let i = 0; i < N; i++) { L[i] *= sg[i]; R[i] *= sg[i]; BL[i] *= sg[i]; BR[i] *= sg[i]; }
+  // ---------- music bed (assets/sound/music, all CC0): the whole track, looped with an equal-power crossfade when the film is longer, a gentle carve around 2.8 kHz for the voice, long fades in and out.
+  // The sidechain-ducking in mix.mjs pulls this bed further down under the narration; effects are ducked less, so keystrokes and hits stay audible.
   if (spec.music && spec.music.file && fs.existsSync(spec.music.file)) {
     try {
-      const raw = spawnSync("ffmpeg", ["-y", "-v", "error", "-i", spec.music.file, "-ac", "2", "-ar", String(SR), "-f", "f32le", "-"], { encoding: "buffer", maxBuffer: 1 << 30 }).stdout;
-      const samples = raw.length / 8 | 0; // 2 channels * 4 bytes
-      if (samples > SR) { // at least 1s of real audio decoded
-        const gain = Math.pow(10, (spec.music.gainDb ?? -16) / 20), fadeN = Math.min(Math.floor(2 * SR), Math.floor(N / 6));
-        for (let i = 0; i < N; i++) { const si = i % samples, o = si * 8; let ml = raw.readFloatLE(o), mr = raw.readFloatLE(o + 4);
-          const edge = Math.min(i, N - 1 - i); const fw = edge < fadeN ? edge / fadeN : 1; // fade the loop seam/intro/outro
-          L[i] += ml * gain * fw; R[i] += mr * gain * fw; }
+      const raw = spawnSync("ffmpeg", ["-y", "-v", "error", "-i", spec.music.file, "-vn", "-ac", "2", "-ar", String(SR), "-f", "f32le", "-"], { encoding: "buffer", maxBuffer: 1 << 30 }).stdout;
+      const samples = raw.length / 8 | 0;
+      if (samples > SR) {
+        const ml = new Float32Array(samples), mr = new Float32Array(samples); for (let i = 0; i < samples; i++) { ml[i] = raw.readFloatLE(i * 8); mr[i] = raw.readFloatLE(i * 8 + 4); }
+        peaking(ml, 2800, spec.music.carveDb ?? -3, 0.8); peaking(mr, 2800, spec.music.carveDb ?? -3, 0.8);
+        const start = Math.floor((spec.music.start || 0) * SR), xf = Math.min(Math.floor(4 * SR), Math.floor((samples - start) / 3)), gain = Math.pow(10, (spec.music.gainDb ?? -16) / 20), fadeIn = Math.min(Math.floor(2.5 * SR), Math.floor(N / 6)), fadeOut = Math.min(Math.floor(3 * SR), Math.floor(N / 6)), span = samples - start - xf;
+        for (let i = 0; i < N; i++) {
+          const pass = Math.floor(i / span), pos = start + (i - pass * span); let vl = ml[Math.min(samples - 1, pos)], vr = mr[Math.min(samples - 1, pos)];
+          if (pass > 0 && pos < start + xf) { const u = (pos - start) / xf, gi = Math.sin(u * Math.PI / 2), go = Math.cos(u * Math.PI / 2), q = Math.min(samples - 1, start + span + (pos - start)); vl = vl * gi + ml[q] * go; vr = vr * gi + mr[q] * go; }   // the tail of the previous pass fades out under the head of this one
+          const edge = Math.min(i < fadeIn ? i / fadeIn : 1, N - 1 - i < fadeOut ? (N - 1 - i) / fadeOut : 1), m = gain * edge * sg[i];
+          L[i] += vl * m; R[i] += vr * m; BL[i] += vl * m; BR[i] += vr * m; }
       }
     } catch (e) { console.error("music bed skipped: " + e.message.slice(0, 160)); }
   }
-  // ---------- master: soft clip, headroom ----------
-  let pk = 0; for (let i = 0; i < N; i++) { L[i] = Math.tanh(L[i] * 1.1) / 1.1; R[i] = Math.tanh(R[i] * 1.1) / 1.1; pk = Math.max(pk, Math.abs(L[i]), Math.abs(R[i])); }
-  const norm = pk > 0 ? db(-3) / pk : 1; for (let i = 0; i < N; i++) { L[i] *= norm; R[i] *= norm; }
-  return { L, R, N, peak: pk * norm };
+  // ---------- master ----------
+  // The level reference is the EFFECTS stem alone: its loudest hit is brought to -3 dBFS, and the bed (drone + music) is scaled by the same factor, so a cue's `level` and the music's `gainDb`
+  // mean the same thing in every film (they used to drift with whatever was loudest, music included). Each stem then gets its own soft clip as a safety net.
+  const FL = new Float32Array(N), FR = new Float32Array(N); let pk = 0; for (let i = 0; i < N; i++) { FL[i] = L[i] - BL[i]; FR[i] = R[i] - BR[i]; pk = Math.max(pk, Math.abs(FL[i]), Math.abs(FR[i])); }
+  if (!(pk > 0)) for (let i = 0; i < N; i++) pk = Math.max(pk, Math.abs(BL[i]), Math.abs(BR[i]));
+  const norm = pk > 0 ? db(-3) / pk : 1, sc = v => Math.tanh(v * 1.1) / 1.1;
+  for (let i = 0; i < N; i++) { FL[i] = sc(FL[i] * norm); FR[i] = sc(FR[i] * norm); BL[i] = sc(BL[i] * norm); BR[i] = sc(BR[i] * norm); L[i] = sc(FL[i] + BL[i]); R[i] = sc(FR[i] + BR[i]); }
+  return { L, R, N, peak: db(-3), bed: { L: BL, R: BR }, fx: { L: FL, R: FR } };
 }
 export function writeWav(path, L, R) { const N = L.length, buf = Buffer.alloc(44 + N * 4); buf.write("RIFF", 0); buf.writeUInt32LE(36 + N * 4, 4); buf.write("WAVEfmt ", 8); buf.writeUInt32LE(16, 16); buf.writeUInt16LE(1, 20); buf.writeUInt16LE(2, 22); buf.writeUInt32LE(SR, 24); buf.writeUInt32LE(SR * 4, 28); buf.writeUInt16LE(4, 32); buf.writeUInt16LE(16, 34); buf.write("data", 36); buf.writeUInt32LE(N * 4, 40);
   for (let i = 0; i < N; i++) { buf.writeInt16LE(Math.round(clamp(L[i], -1, 1) * 32767), 44 + i * 4); buf.writeInt16LE(Math.round(clamp(R[i], -1, 1) * 32767), 46 + i * 4); } fs.writeFileSync(path, buf); }
 if (process.argv[1] && process.argv[1].endsWith("sound.mjs")) {
-  const [cuesFile, dur, out] = process.argv.slice(2); const spec = JSON.parse(fs.readFileSync(cuesFile, "utf8")); const t0 = Date.now(); const r = synth(spec, Number(dur)); writeWav(out, r.L, r.R);
+  const [cuesFile, dur, out] = process.argv.slice(2); const spec = JSON.parse(fs.readFileSync(cuesFile, "utf8")); const t0 = Date.now(); const r = synth(spec, Number(dur)); writeWav(out, r.L, r.R); writeWav(out.replace(/\.wav$/, "-bed.wav"), r.bed.L, r.bed.R); writeWav(out.replace(/\.wav$/, "-fx.wav"), r.fx.L, r.fx.R);
   console.log("sound.wav " + (r.N / SR).toFixed(1) + "s, peak " + (20 * Math.log10(r.peak)).toFixed(1) + " dBFS, " + (spec.cues || []).length + " cues, synthesized in " + ((Date.now() - t0) / 1000).toFixed(1) + "s");
 }

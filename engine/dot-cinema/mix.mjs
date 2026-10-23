@@ -5,10 +5,15 @@ import { spawnSync } from "node:child_process"; import fs from "node:fs"; import
 const [sfx, narr, leadS, durS, segFile, out, rep] = process.argv.slice(2), lead = Number(leadS), dur = Number(durS);
 const ff = args => spawnSync("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", ...args], { encoding: "utf8" });
 const D = Math.round(lead * 1000), tmp = fs.mkdtempSync(path.join(os.tmpdir(), "mix-"));
+// two-stem mix (sound.mjs writes <name>-bed.wav = drone + music and <name>-fx.wav = effects): the bed is pulled hard under the voice (12:1), the effects only lightly (2.5:1)
+// so keystrokes, whooshes and hits stay audible while the narrator speaks. Falls back to the single combined file for older sound renders.
+const bedF = sfx.replace(/\.wav$/, "-bed.wav"), fxF = sfx.replace(/\.wav$/, "-fx.wav"), stems = fs.existsSync(bedF) && fs.existsSync(fxF);
 // stems for verification: delayed voice, ducked sound. gainDb lowers the sound bed; the loop below repairs the voice margin automatically.
 function mixOnce(gainDb) {
   const g = (0.9 * Math.pow(10, gainDb / 20)).toFixed(4);
-  let r = ff(["-i", sfx, "-i", narr, "-filter_complex", `[1:a]adelay=${D}|${D},aresample=48000,apad[n];[n]asplit=2[nv][nc];[0:a][nc]sidechaincompress=threshold=0.008:ratio=12:attack=8:release=450:makeup=1[duck];[duck]volume=${g},atrim=0:${dur}[d2];[nv]atrim=0:${dur},asetpts=N/SR/TB[n2]`, "-map", "[d2]", path.join(tmp, "duck.wav"), "-map", "[n2]", path.join(tmp, "voice.wav")]);
+  let r = stems
+    ? ff(["-i", bedF, "-i", narr, "-i", fxF, "-filter_complex", `[1:a]adelay=${D}|${D},aresample=48000,apad[n];[n]asplit=3[nv][nc1][nc2];[0:a][nc1]sidechaincompress=threshold=0.008:ratio=12:attack=8:release=450:makeup=1[db];[2:a][nc2]sidechaincompress=threshold=0.02:ratio=2.5:attack=4:release=220:makeup=1[df];[db][df]amix=inputs=2:normalize=0[duck];[duck]volume=${g},atrim=0:${dur}[d2];[nv]atrim=0:${dur},asetpts=N/SR/TB[n2]`, "-map", "[d2]", path.join(tmp, "duck.wav"), "-map", "[n2]", path.join(tmp, "voice.wav")])
+    : ff(["-i", sfx, "-i", narr, "-filter_complex", `[1:a]adelay=${D}|${D},aresample=48000,apad[n];[n]asplit=2[nv][nc];[0:a][nc]sidechaincompress=threshold=0.008:ratio=12:attack=8:release=450:makeup=1[duck];[duck]volume=${g},atrim=0:${dur}[d2];[nv]atrim=0:${dur},asetpts=N/SR/TB[n2]`, "-map", "[d2]", path.join(tmp, "duck.wav"), "-map", "[n2]", path.join(tmp, "voice.wav")]);
   if (r.status !== 0) { console.error(r.stderr); process.exit(1); }
   r = ff(["-i", path.join(tmp, "duck.wav"), "-i", path.join(tmp, "voice.wav"), "-filter_complex", `[0:a][1:a]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-16:TP=-1.5:LRA=9,atrim=0:${dur}[o]`, "-map", "[o]", "-ar", "48000", out]);
   if (r.status !== 0) { console.error(r.stderr); process.exit(1); }
