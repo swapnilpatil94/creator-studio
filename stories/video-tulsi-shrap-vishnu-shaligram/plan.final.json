@@ -97,7 +97,12 @@
    "img": "s5",
    "move": "push",
    "fx": "split_screen_vs",
-   "img2": "s14",
+   "img2": "v005_shiva",
+   "labels": [
+    "तुलसी",
+    "शिव"
+   ],
+   "caption": "100 बरस",
    "tone": "cold",
    "transition": "leak"
   },

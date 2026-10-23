@@ -1,93 +1,93 @@
 {
  "item": "tulsi-shrap-vishnu-shaligram.video",
- "started": "2026-10-23T04:51:25.417Z",
+ "started": "2026-10-23T05:17:44.245Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
    "status": "cached",
-   "start": 1792731085417,
+   "start": 1792732664245,
    "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792731085418,
+   "start": 1792732664245,
    "detail": "29 beats, 0 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
    "status": "cached",
-   "start": 1792731085419,
+   "start": 1792732664246,
    "detail": "voice exists",
    "seconds": 0
   },
   {
    "name": "director",
    "status": "cached",
-   "start": 1792731085420,
+   "start": 1792732664246,
    "detail": "plan.json is current",
    "seconds": 0
   },
   {
    "name": "coverage",
    "status": "done",
-   "start": 1792731085420,
+   "start": 1792732664247,
    "detail": "17 extra shots, hold <= 3s",
    "seconds": 0
   },
   {
    "name": "art",
    "status": "done",
-   "start": 1792731085423,
-   "detail": "1 new paintings of 40 scenes",
-   "seconds": 57
+   "start": 1792732664248,
+   "detail": "2 new paintings of 41 scenes",
+   "seconds": 114
   },
   {
    "name": "layers+scene",
    "status": "done",
-   "start": 1792731142731,
-   "detail": "41 of 41 scenes layered, 0 picture beats fell back to type",
-   "seconds": 9
+   "start": 1792732778394,
+   "detail": "42 of 42 scenes layered, 0 picture beats fell back to type",
+   "seconds": 7
   },
   {
    "name": "camera",
    "status": "done",
-   "start": 1792731151471,
-   "detail": "11 camera clips (4 rendered, 7 cached)",
-   "seconds": 36
+   "start": 1792732785383,
+   "detail": "11 camera clips (1 rendered, 10 cached)",
+   "seconds": 11
   },
   {
    "name": "sound",
    "status": "done",
-   "start": 1792731187118,
+   "start": 1792732795883,
    "detail": "",
    "seconds": 0
   },
   {
    "name": "render+QA",
    "status": "done",
-   "start": 1792731187187,
+   "start": 1792732795952,
    "detail": "QA all passed",
-   "seconds": 138
+   "seconds": 124
   },
   {
    "name": "thumbnail",
    "status": "done",
-   "start": 1792731325046,
+   "start": 1792732919651,
    "detail": "teal palette, \"भगवान भी डर गए?\"",
    "seconds": 0
   },
   {
    "name": "package",
    "status": "done",
-   "start": 1792731325047,
+   "start": 1792732919652,
    "detail": "seo.mjs ok, social.mjs ok",
    "seconds": 0
   }
  ],
- "total_seconds": 240,
- "ended": "2026-10-23T04:55:25.401Z"
+ "total_seconds": 256,
+ "ended": "2026-10-23T05:21:59.983Z"
 }

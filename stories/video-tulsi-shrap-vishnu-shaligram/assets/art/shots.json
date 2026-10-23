@@ -372,5 +372,14 @@
   "medium": "photoreal",
   "src": "writer",
   "framing": "close"
+ },
+ "v005_shiva": {
+  "subject": "Lord Shiva, ash-smeared ascetic god with matted hair and a blue throat",
+  "action": "stands calm and immovable holding his trident upright",
+  "setting": "a ruined battlefield of broken chariots and smoke",
+  "lighting": "cold moonlight with ember glow",
+  "medium": "photoreal",
+  "src": "owner",
+  "family": "epic"
  }
 }
