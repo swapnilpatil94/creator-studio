@@ -41,6 +41,14 @@ export function ruleBased(beats, segs) { // deterministic fallback: never fails,
     else { comp = "cinema"; run = run + 1; params = { img: "scene" + scene, move: ["push", "pull", "panL", "panR"][i % 4], fx: pickFx(b.intent, plan.filter(x => x.params?.fx).map(x => x.params.fx), i) }; if (run >= 2) { scene++; run = 0; } }
     lastChapter = b.chapter; plan.push({ id: b.id, chapter: b.chapter, comp, params }); });
   return plan; }
+// story fit (owner 2026-10-23: "use all of the features in the video"): an effect the narration plainly calls for beats a rotation pick. Only effects that need no second picture; a film uses each at most twice, never the same one on neighbouring painting beats.
+const STORY_FX = [["lightning_flash", /श्राप|शाप|क्रोध|युद्ध|त्रिशूल|वज्र|संहार|curse|wrath|war/i], ["volumetric_god_rays", /असली रूप|प्रकट|दिव्य|वैकुंठ|विष्णु|नारायण|हरि|भगवान|divine|vishnu|narayan/i], ["particle_formation", /प्रकट|उत्पन्न|जन्म|नदी|बनी|बनेंगे|बनेगी|appear|born/i], ["double_exposure_cosmos", /ब्रह्मांड|सृष्टि|ब्रह्मा|आत्मा|cosmos|creation/i], ["sacred_geometry_carve", /मंत्र|यज्ञ|कवच|वरदान|तप|mantra|yantra|boon/i], ["day_to_night_timelapse", /बरस|वर्ष|रात|सौ साल|युग|years/i], ["depth_fog_haze", /रहस्य|छल|धोखा|माया|मायावी|secret|illusion/i]];
+const GENERIC_FX = /^(2\.5d_parallax|parallax_occlusion_3d|matte_painting_extension|crane_up_reveal|crane_down|drone_|depth_|mesh_ken|mesh_crane)/;   // plain camera moves give way; effects with their own meaning (shadow play, eye glow, diya, disintegration...) stay
+export function fitEffects(plan, beats = {}) {
+  const used = [], count = {}; let n = 0;
+  return plan.map((p, i) => { if (p.comp !== "fx" || !p.params?.fx || ["title_behind", "map_loka_zoom", "split_screen_vs"].includes(p.params.fx)) { if (p.params?.fx) used.push(p.params.fx); return p; }
+    const text = beats[p.id]?.text || "", cur = p.params.fx, hit = GENERIC_FX.test(cur) && STORY_FX.find(([f, re]) => re.test(text) && !used.includes(f) && (count[f] || 0) < 2 && !used.slice(-2).includes(f) && f !== cur && !STORY_FX.some(([g, r2]) => g === cur && r2.test(text)));
+    const fx = hit ? hit[0] : cur; if (fx !== cur) n++; count[fx] = (count[fx] || 0) + 1; used.push(fx); return fx === cur ? p : { ...p, params: { ...p.params, fx } }; }); }
 export function validate(plan, segs, ctx = {}) { // returns {plan (fixed), report}
   const rep = { fixed: [], warnings: [], stats: {} }, out = plan.map(p => ({ ...p }));
   out.forEach((p, i) => { if (!CATALOG[p.comp]) { rep.fixed.push(`${p.id}: unknown component ${p.comp} -> kinetic`); p.comp = "kinetic"; p.params = { lines: [segs[p.id]?.text?.slice(0, 40) || ""] }; }

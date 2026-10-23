@@ -30,7 +30,7 @@
    "move": "panL",
    "label": "श्राप निकला",
    "reveal": "circle",
-   "fx": "2.5d_parallax",
+   "fx": "lightning_flash",
    "tone": "cold",
    "transition": "leak",
    "shots": [
@@ -128,7 +128,7 @@
    "img": "s7",
    "move": "panR",
    "label": "ब्रह्मा का वरदान",
-   "fx": "parallax_occlusion_3d",
+   "fx": "volumetric_god_rays",
    "tone": "ember",
    "transition": "zoom",
    "shots": [
@@ -180,7 +180,7 @@
    "img": "s9",
    "move": "push",
    "label": "एक बूढ़ा ब्राह्मण आया",
-   "fx": "matte_painting_extension",
+   "fx": "sacred_geometry_carve",
    "tone": "ember",
    "transition": "cut"
   },
