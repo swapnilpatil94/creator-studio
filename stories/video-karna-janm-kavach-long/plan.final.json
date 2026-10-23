@@ -6,7 +6,8 @@
    "lines": [
     "*कुंती* ने अपने पहले पुत्र को नदी"
    ],
-   "style": "slam"
+   "style": "slam",
+   "tone": "cold"
   },
   "chapter": "ch1"
  },
@@ -19,6 +20,8 @@
    "label": "महाभारत के आदि पर्व में",
    "reveal": "wipe",
    "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "zoom",
    "clip": "v002",
    "clip_n": 120
   },
@@ -32,7 +35,9 @@
    "move": "pull",
    "label": "यादवों के घर में",
    "reveal": "circle",
-   "fx": "kinetography_cinemagraph"
+   "fx": "kinetography_cinemagraph",
+   "tone": "cold",
+   "transition": "leak"
   },
   "chapter": "ch1"
  },
@@ -46,6 +51,19 @@
    "reveal": "diamond",
    "fx": "crane_up_reveal",
    "sticker": "sparkle",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in",
+     "clip": "v004_v004_close",
+     "clip_n": 136
+    }
+   ],
+   "autoShots": true,
    "clip": "v004",
    "clip_n": 136
   },
@@ -58,6 +76,19 @@
    "fx": "drone_pull_out_reveal",
    "img": "scene3",
    "move": "push",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "drone_push_in",
+     "clip": "v005_v005_close",
+     "clip_n": 191
+    }
+   ],
+   "autoShots": true,
    "clip": "v005",
    "clip_n": 191
   },
@@ -71,7 +102,9 @@
    "move": "panR",
    "label": "कुंती के नाम की उत्पत्ति",
    "reveal": "circle",
-   "fx": "parallax_occlusion_3d",
+   "fx": "mesh_rack_focus_dof",
+   "tone": "cold",
+   "transition": "leak",
    "clip": "v006",
    "clip_n": 79
   },
@@ -84,6 +117,8 @@
    "fx": "handheld_breathing_shake",
    "img": "scene5",
    "move": "pull",
+   "tone": "cold",
+   "transition": "leak",
    "clip": "v007",
    "clip_n": 120
   },
@@ -95,7 +130,9 @@
   "params": {
    "img": "s8",
    "move": "pull",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "leak"
   },
   "chapter": "ch1"
  },
@@ -105,7 +142,9 @@
   "params": {
    "fx": "particle_formation",
    "img": "scene6",
-   "move": "panL"
+   "move": "panL",
+   "tone": "cold",
+   "transition": "leak"
   },
   "chapter": "ch1"
  },
@@ -117,6 +156,19 @@
    "move": "pull",
    "fx": "drone_orbit_180",
    "sticker": "sparkle",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v010_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in",
+     "clip": "v010_v010_close",
+     "clip_n": 150
+    }
+   ],
+   "autoShots": true,
    "clip": "v010",
    "clip_n": 150
   },
@@ -131,6 +183,8 @@
    "label": "पृथा की जिज्ञासा जाग उठी",
    "behind": "पृथा की जिज्ञासा जाग उठी",
    "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "whip",
    "clip": "v011",
    "clip_n": 105
   },
@@ -143,7 +197,9 @@
    "fx": "volumetric_god_rays",
    "img": "s12",
    "move": "panR",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "cut"
   },
   "chapter": "ch2"
  },
@@ -156,7 +212,9 @@
    ],
    "style": "spring",
    "bg": "nebula",
-   "mark": "highlight"
+   "mark": "highlight",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -168,7 +226,9 @@
     "अद्भुत दृश्य देखकर",
     "*पृथा* चकित रह गईं"
    ],
-   "style": "wave"
+   "style": "wave",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -177,7 +237,9 @@
   "comp": "quote",
   "params": {
    "text": "हे सुंदर नेत्रों वाली, मैं आ गया हूँ, बताओ मैं तुम्हारे लिए क्या करूँ?",
-   "by": "सूर्यदेव"
+   "by": "सूर्यदेव",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -187,8 +249,23 @@
   "params": {
    "img": "scene9",
    "move": "pull",
-   "fx": "matte_painting_extension",
-   "sticker": "sparkle"
+   "fx": "mesh_crane_push",
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "drone_push_in",
+     "clip": "v016_v016_close",
+     "clip_n": 152
+    }
+   ],
+   "autoShots": true,
+   "clip": "v016",
+   "clip_n": 153
   },
   "chapter": "ch2"
  },
@@ -199,7 +276,9 @@
    "lines": [
     "क्षमा माँगी *स्त्री* का अपराध जो भी"
    ],
-   "style": "mask"
+   "style": "mask",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -208,7 +287,9 @@
   "comp": "quote",
   "params": {
    "text": "मैं जानता हूँ कि दुर्वासा ने तुम्हें यह वरदान दिया है, पर मेरा आना व्यर्थ नहीं जा सकता।",
-   "by": "सूर्यदेव"
+   "by": "सूर्यदेव",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -219,6 +300,8 @@
    "img": "scene9",
    "move": "push",
    "fx": "drone_orbit_180",
+   "tone": "ember",
+   "transition": "zoom",
    "clip": "v019",
    "clip_n": 119
   },
@@ -233,7 +316,9 @@
    ],
    "style": "slam",
    "bg": "gold-bokeh",
-   "mark": "circle"
+   "mark": "circle",
+   "tone": "fire",
+   "transition": "zoom"
   },
   "chapter": "ch2"
  },
@@ -245,6 +330,19 @@
    "img": "s21",
    "move": "push",
    "fx": "parallax_occlusion_3d",
+   "tone": "fire",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v021_close",
+     "framing": "close",
+     "of": "s21",
+     "fx": "drone_push_in",
+     "clip": "v021_v021_close",
+     "clip_n": 125
+    }
+   ],
+   "autoShots": true,
    "clip": "v021",
    "clip_n": 125
   },
@@ -257,10 +355,23 @@
   "params": {
    "img": "scene12",
    "move": "pull",
-   "fx": "dolly_zoom_vertigo",
+   "fx": "mesh_dolly_zoom_vertigo",
    "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v022_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in",
+     "clip": "v022_v022_close",
+     "clip_n": 133
+    }
+   ],
+   "autoShots": true,
    "clip": "v022",
-   "clip_n": 133
+   "clip_n": 134
   },
   "from": "rules"
  },
@@ -271,7 +382,18 @@
   "params": {
    "img": "scene12",
    "move": "panL",
-   "fx": "lightning_flash"
+   "fx": "lightning_flash",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v023_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -283,6 +405,19 @@
    "img": "scene13",
    "move": "panR",
    "fx": "crane_down",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v024_close",
+     "framing": "close",
+     "of": "scene13",
+     "fx": "drone_push_in",
+     "clip": "v024_v024_close",
+     "clip_n": 148
+    }
+   ],
+   "autoShots": true,
    "clip": "v024",
    "clip_n": 148
   },
@@ -296,6 +431,8 @@
    "img": "scene13",
    "move": "push",
    "fx": "handheld_breathing_shake",
+   "tone": "ember",
+   "transition": "cut",
    "clip": "v025",
    "clip_n": 110
   },
@@ -311,7 +448,9 @@
    ],
    "style": "glitch",
    "bg": "water-ripples",
-   "mark": "underline"
+   "mark": "underline",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -322,7 +461,9 @@
   "params": {
    "img": "scene14",
    "move": "panL",
-   "fx": "shadow_play_reveal"
+   "fx": "shadow_play_reveal",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -334,7 +475,9 @@
    "img": "scene15",
    "move": "panR",
    "fx": "eye_glow_energy_pulse",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip"
   },
   "from": "rules"
  },
@@ -345,7 +488,9 @@
   "params": {
    "img": "scene15",
    "move": "push",
-   "fx": "lightning_flash"
+   "fx": "lightning_flash",
+   "tone": "ember",
+   "transition": "cut"
   },
   "from": "rules"
  },
@@ -356,7 +501,9 @@
   "params": {
    "img": "scene16",
    "move": "pull",
-   "fx": "day_to_night_timelapse"
+   "fx": "day_to_night_timelapse",
+   "tone": "fire",
+   "transition": "whip"
   },
   "from": "rules"
  },
@@ -368,7 +515,18 @@
    "move": "pull",
    "label": "इंद्र के रूप में",
    "behind": "कर्ण की शुरुआत",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v031_close",
+     "framing": "close",
+     "of": "s31",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch3"
  },
@@ -381,6 +539,8 @@
    "label": "कवच देते हुए",
    "behind": "वसुसेन की दानशीलता",
    "fx": "drone_orbit_180",
+   "tone": "fire",
+   "transition": "cut",
    "clip": "v032",
    "clip_n": 114
   },
@@ -395,6 +555,19 @@
    "label": "शक्ति देते हुए",
    "behind": "इंद्र की कृपा",
    "fx": "drone_orbit_180",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v033_close",
+     "framing": "close",
+     "of": "scene19",
+     "fx": "drone_push_in",
+     "clip": "v033_v033_close",
+     "clip_n": 160
+    }
+   ],
+   "autoShots": true,
    "clip": "v033",
    "clip_n": 160
   },
@@ -407,7 +580,9 @@
    "lines": [
     "एक ही बार काम *करेगी* शक्ति के"
    ],
-   "style": "wave"
+   "style": "wave",
+   "tone": "fire",
+   "transition": "zoom"
   },
   "chapter": "ch3"
  },
@@ -417,7 +592,9 @@
   "params": {
    "text": "अपना कवच काट देने के कारण ही वसुसेन आगे कर्ण कहलाया, यानी जिसने अपना आवरण स्वयं उतार दिया।",
    "by": "",
-   "bg": "temple-jali"
+   "bg": "temple-jali",
+   "tone": "gold",
+   "transition": "zoom"
   },
   "chapter": "ch3"
  },
@@ -438,7 +615,9 @@
      "करुण मोड़",
      "इसके कारण बना"
     ]
-   }
+   },
+   "tone": "gold",
+   "transition": "zoom"
   },
   "chapter": "ch3"
  },
@@ -449,6 +628,8 @@
    "img": "scene20",
    "move": "push",
    "fx": "parallax_occlusion_3d",
+   "tone": "gold",
+   "transition": "dissolve",
    "clip": "v037",
    "clip_n": 122
   },

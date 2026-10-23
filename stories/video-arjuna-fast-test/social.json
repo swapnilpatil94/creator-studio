@@ -1,11 +1,11 @@
 {
  "story": "video-arjuna-fast-test",
  "format": "short",
- "generated": "2026-10-19T10:35:47.522Z",
+ "generated": "2026-10-21T16:47:49.058Z",
  "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
  "instagram": {
   "type": "REELS",
-  "caption": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?\n\nअर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी? यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n\n#kathaaya #अर्जुन #महाभारत #Kathaaya",
+  "caption": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?\n\nअर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी? यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।\n\n🔎 अर्जुन · महाभारत\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n\n#kathaaya #अर्जुन #महाभारत #Kathaaya",
   "hashtags": [
    "#kathaaya",
    "#अर्जुन",
@@ -22,7 +22,7 @@
     "platform": "instagram",
     "name": "caption <= 2200 chars",
     "ok": true,
-    "detail": "667"
+    "detail": "627"
    },
    {
     "platform": "instagram",
@@ -39,7 +39,7 @@
    {
     "platform": "instagram",
     "name": "keyword in first line",
-    "ok": false,
+    "ok": true,
     "detail": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?"
    },
    {
@@ -76,7 +76,7 @@
  },
  "facebook": {
   "type": "REELS",
-  "description": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?\n\nअर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी? यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n\n#kathaaya #अर्जुन #महाभारत",
+  "description": "अर्जुन को सिर्फ़ चिड़िया की आँख ही क्यों दिखी?\n\nअर्जुन ने पेड़, गुरु और चिड़िया में से सिर्फ़ चिड़िया की आँख ही क्यों देखी? यह परीक्षा महाभारत के आदि पर्व में गुरु द्रोण ने ली थी।\n\n🔎 अर्जुन · महाभारत\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n\n#kathaaya #अर्जुन #महाभारत",
   "hashtags": [
    "#kathaaya",
    "#अर्जुन",
@@ -100,7 +100,7 @@
     "platform": "facebook",
     "name": "description present, <= 2200 chars",
     "ok": true,
-    "detail": "608"
+    "detail": "568"
    },
    {
     "platform": "facebook",

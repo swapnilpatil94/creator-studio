@@ -1,7 +1,9 @@
 {
  "pinnedComment": "आपको इस कथा में सबसे अलग क्या लगा? नीचे लिखिए 👇 और अगले भाग के लिए सब्सक्राइब कीजिए।",
  "chapters": [
-  "0:00 शुरुआत"
+  "0:00 शूर की बेटी और एक वरदान",
+  "0:49 जिज्ञासा और सूर्यदेव",
+  "1:45 पानी में छोड़ा गया बालक"
  ],
  "story": "video-karna-janm-kavach-long",
  "channel": "kathaaya",
@@ -13,7 +15,7 @@
   }
  ],
  "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा? | KATHAAYA",
- "description": "कुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया? यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।\n\nकुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया? यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।\n\n⏱ अध्याय:\n0:00 शुरुआत\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #कर्ण #महाभारत #कुंती",
+ "description": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?\n\nकुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया? यह कथा महाभारत के आदि पर्व में, खंड एक सौ ग्यारह में आती है।\n\n⏱ अध्याय:\n0:00 शूर की बेटी और एक वरदान\n0:49 जिज्ञासा और सूर्यदेव\n1:45 पानी में छोड़ा गया बालक\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #कर्ण #महाभारत #कुंती",
  "tags": [
   "karna story",
   "mahabharata story",
@@ -108,8 +110,8 @@
   },
   {
    "name": "primary keyword in first 160 chars of description",
-   "ok": false,
-   "detail": "first 160: कुंती ने अपने पहले पुत्र को नदी में क्यों छोड़ दिया? यह कथा …"
+   "ok": true,
+   "detail": "first 160: कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?  कुंती ने …"
   },
   {
    "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
@@ -119,7 +121,7 @@
   {
    "name": "description <= 5000 bytes",
    "ok": true,
-   "detail": 1799
+   "detail": 1807
   },
   {
    "name": "tags <= 15 and <= 500 chars",
@@ -143,8 +145,8 @@
   },
   {
    "name": "chapters valid (first 0:00, >= 3, each >= 10 s, ascending)",
-   "ok": false,
-   "detail": "1 chapters"
+   "ok": true,
+   "detail": "3 chapters"
   },
   {
    "name": "chapter titles are not bare labels",
@@ -157,9 +159,9 @@
    "detail": 4
   },
   {
-   "name": "picture credits listed",
-   "ok": false,
-   "detail": "CREDITS.md -> description"
+   "name": "picture credits listed (only when the film uses borrowed public-domain art)",
+   "ok": true,
+   "detail": "no CREDITS.md: all-original AI art, nothing to credit"
   },
   {
    "name": "synthetic-media disclosure set",
@@ -184,7 +186,7 @@
   {
    "name": "thumbnail: own Flux painting for this story (not a film frame)",
    "ok": true,
-   "detail": "Purple & Gold: Kunti, shame and fear"
+   "detail": "KATHAAYA Gold (locked house style): Kunti, shame and fear"
   },
   {
    "name": "thumbnail: 120 px preview generated",
@@ -219,5 +221,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-19T09:17:29.243Z"
+ "generated": "2026-10-22T13:39:15.934Z"
 }

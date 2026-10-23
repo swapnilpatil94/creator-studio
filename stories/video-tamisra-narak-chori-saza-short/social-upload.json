@@ -1,0 +1,44 @@
+{
+ "when": "2026-10-21T04:17:01.849Z",
+ "instagram": {
+  "queued": "2026-10-21T03:30:00.000Z",
+  "note": "Instagram has no scheduling in the API: the studio server publishes it at that time, so keep it running"
+ },
+ "facebook": {
+  "id": "1642316897553999",
+  "state": "public",
+  "result": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/video-api/guides/reels-publishing#get-the-upload-status.",
+   "post_id": "122095994955522482"
+  },
+  "copyright": {
+   "copyright_check_information": {
+    "status": {
+     "status": "in_progress"
+    }
+   },
+   "status": {
+    "video_status": "processing",
+    "processing_progress": 0,
+    "uploading_phase": {
+     "status": "complete",
+     "bytes_transferred": 86845747
+    },
+    "processing_phase": {
+     "status": "in_progress"
+    },
+    "publishing_phase": {
+     "status": "not_started"
+    },
+    "copyright_check_status": {
+     "status": "in_progress"
+    }
+   },
+   "id": "1642316897553999"
+  },
+  "permalink_url": "/reel/1642316897553999/"
+ },
+ "mode": "public",
+ "at": null
+}

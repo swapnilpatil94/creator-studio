@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "रौरव नरक: तमिस्र नरक के बाद, गरुड़ पुराण किस लोक की बात करता है? एक ऐसा लोक, जहाँ धोखा देने वालों का हिसाब होता है",
+ "disclaimer": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; रौरव नरक का विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#रौरवनरक"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "रौरव|नरक:|धोखेबाज़ों",
+ "extraTags": [
+  "गरुड़पुराण",
+  "रौरवनरक",
+  "रौरव",
+  "नरक:",
+  "धोखेबाज़ों",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "रुरु कौन हैं?"
+   ],
+   "support": [
+    "गरुड़ पुराण की कथा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "रौरव नरक: धोखेबाज़ों"
+ ],
+ "primaryKeyword": "रौरव",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?"
+ }
+}

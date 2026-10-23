@@ -1,0 +1,353 @@
+{
+ "lead": 0.6,
+ "root": 98,
+ "moods": [
+  {
+   "t": -1,
+   "mood": "wonder"
+  },
+  {
+   "t": 6.67,
+   "mood": "dread"
+  }
+ ],
+ "silences": [
+  {
+   "t": 50.48,
+   "dur": 0.26,
+   "fade": 0.1,
+   "why": "before the call to action"
+  }
+ ],
+ "cues": [
+  {
+   "t": -0.6,
+   "type": "heartbeat",
+   "dur": 3.99,
+   "bpm0": 58,
+   "bpm1": 86,
+   "level": -27
+  },
+  {
+   "t": 1.15,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 3.13,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 4.9,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 6.46,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 6.56,
+   "type": "riser",
+   "dur": 1.2,
+   "level": -28
+  },
+  {
+   "t": 8.29,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 8.45,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
+   "t": 10.49,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 12.87,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 14.43,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 14.59,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
+   "t": 16.16,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 17.91,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 18.07,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
+   "t": 19.52,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 21.5,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 24.01,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 25.46,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 25.62,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
+   "t": 27.25,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 29.49,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 31.39,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 31.55,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
+   "t": 33.36,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 36.23,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 36.53,
+   "type": "sparkle",
+   "dur": 2.95,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 36.63,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 39.57,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 39.67,
+   "type": "riser",
+   "dur": 1.2,
+   "level": -28
+  },
+  {
+   "t": 41.07,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 42.8,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 43.1,
+   "type": "sparkle",
+   "dur": 2.55,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 43.2,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 45.73,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 46.02,
+   "type": "sparkle",
+   "dur": 3,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 46.13,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 47.83,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 50.48,
+   "type": "whoosh",
+   "dur": 0.45,
+   "f0": 320,
+   "f1": 2000,
+   "level": -28
+  },
+  {
+   "t": 50.78,
+   "type": "sparkle",
+   "dur": 3,
+   "rate": 10,
+   "ramp": true,
+   "level": -28
+  },
+  {
+   "t": 50.88,
+   "type": "bell",
+   "freq": 440,
+   "level": -25,
+   "tail": 3.2
+  },
+  {
+   "t": 50.88,
+   "type": "bell",
+   "freq": 528,
+   "level": -24,
+   "tail": 3.5
+  },
+  {
+   "t": 53.28,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  }
+ ],
+ "music": {
+  "file": "/Users/swapnil/creator-studio/assets/music/sorrow-tanpura-drone.m4a",
+  "gainDb": -16
+ }
+}

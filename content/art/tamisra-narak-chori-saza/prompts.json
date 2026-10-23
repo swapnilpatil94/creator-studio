@@ -1,0 +1,58 @@
+{
+ "1": {
+  "prompt": "thief figure frozen in shadow, fear and realization on his face, glowing eyes of Yamadutas emerging from darkness, endless black void, dramatic teal and gold lighting, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1001,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 77,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "2": {
+  "prompt": "Lord Vishnu and Garuda seated in conversation, celestial golden chamber, soft radiant glow, reverent traditional iconography, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1002,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 78,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "3": {
+  "prompt": "hooded Yamadutas binding a shadowy human figure, misty southern pathway, faint grey twilight, symbolic restrained composition, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1003,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 84,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "4": {
+  "prompt": "bound soul walking through an endless dark corridor, formless void, near total darkness, single distant glimmer of light, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1004,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 87,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "5": {
+  "prompt": "cloaked thief figure sneaking past a sleeping village household, dim alley, single flickering lamp, tense quiet mood, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1005,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 84,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "6": {
+  "prompt": "soul stepping toward a distant light, threshold between darkness and dawn, soft golden horizon, hopeful tone, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 1006,
+  "tries": 1,
+  "text_chars": 0,
+  "secs": 84,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ },
+ "7": {
+  "prompt": "ancient palm-leaf ornament unrolling with glowing script, stone temple interior, warm candlelight, reverent scholarly mood, photoreal cinematic film still, 85mm portrait lens, strong directional key light, rich filmic color grade, natural shallow depth of field, hyperreal skin and fabric texture, subtle film grain, anatomically correct symmetric face, natural detailed eyes, subject in the upper two thirds of a vertical frame, calm darker lower third, a purely visual image, every surface plain and unmarked.",
+  "seed": 16845,
+  "tries": 3,
+  "text_chars": 12,
+  "secs": 252,
+  "model": "flux-2-klein-4b distilled, 4 steps"
+ }
+}

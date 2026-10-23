@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है? गरुड़ पुराण कहता है, हर कर्म का हिसाब होता है",
+ "disclaimer": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; तमिस्र नरक का यही मूल विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#तमिस्रनरक"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "तमिस्र|नरक:|चोर",
+ "extraTags": [
+  "गरुड़पुराण",
+  "तमिस्रनरक",
+  "तमिस्र",
+  "नरक:",
+  "कैसी",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "यमदूत कहाँ ले जाते हैं?"
+   ],
+   "support": [
+    "गरुड़ पुराण की कथा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "तमिस्र नरक: चोर"
+ ],
+ "primaryKeyword": "तमिस्र",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है?"
+ }
+}

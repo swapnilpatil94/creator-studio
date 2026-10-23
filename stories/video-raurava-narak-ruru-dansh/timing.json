@@ -1,0 +1,93 @@
+{
+ "item": "raurava-narak-ruru-dansh.video",
+ "started": "2026-10-22T12:07:08.242Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792670828242,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792670828242,
+   "detail": "17 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792670828242,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792670828243,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "coverage",
+   "status": "done",
+   "start": 1792670828243,
+   "detail": "9 extra shots, hold <= 3s, hook = cover subject",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792670828244,
+   "detail": "14 new paintings of 23 scenes",
+   "seconds": 946
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792671774316,
+   "detail": "23 of 23 scenes layered, 0 picture beats fell back to type",
+   "seconds": 77
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792671851352,
+   "detail": "13 camera clips (9 rendered, 4 cached)",
+   "seconds": 22
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792671873054,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792671873116,
+   "detail": "QA all passed",
+   "seconds": 75
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792671948088,
+   "detail": "red palette, \"रुरु कौन हैं?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792671948089,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 1120,
+ "ended": "2026-10-22T12:25:48.397Z"
+}

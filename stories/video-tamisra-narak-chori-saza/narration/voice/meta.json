@@ -1,0 +1,1347 @@
+{
+ "story": "video-tamisra-narak-chori-saza",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 560,
+ "duration_s": 178.57,
+ "speech_words_per_s": 3.44,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 2.758,
+   "tries": 1,
+   "words_per_s": 3.63,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "raw_dur_s": 3.44,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 2.91,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "यह प्रश्न हर मनुष्य के मन में कभी न कभी उठता है",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 2.998,
+   "end": 6.043,
+   "tries": 1,
+   "words_per_s": 3.94,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "यह प्रश्न हर मनुष्य के मन में कभी न कभी उठता है",
+   "raw_dur_s": 3.8,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "गरुड़ पुराण में भगवान विष्णु ने यही रहस्य पक्षीराज गरुड़ को बताया",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 6.343,
+   "end": 10.806,
+   "tries": 1,
+   "words_per_s": 2.69,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "गरुड़ पुराण में भगवान विष्णु ने यही रहस्य पक्षीराज गरुड़ को बताया",
+   "raw_dur_s": 5.58,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 2.15,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "उन्होंने कहा, हर आत्मा का हिसाब होता है, हर कर्म का फल मिलता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 11.026,
+   "end": 14.82,
+   "tries": 1,
+   "words_per_s": 3.69,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "उन्होंने कहा, हर आत्मा का हिसाब होता है, हर कर्म का फल मिलता है",
+   "raw_dur_s": 4.74,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.95,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 15.04,
+   "end": 19.173,
+   "tries": 3,
+   "words_per_s": 3.15,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "raw_dur_s": 5.15,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.17,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 90170,
+     "rate": 2.2,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 98089,
+     "rate": 2.53,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "उसका नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 19.393,
+   "end": 22.444,
+   "tries": 1,
+   "words_per_s": 3.28,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "उसका नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "raw_dur_s": 3.8,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "पर वहाँ होता क्या है?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 22.664,
+   "end": 23.851,
+   "tries": 1,
+   "words_per_s": 4.21,
+   "beat": "v007",
+   "pause_after": 0.12,
+   "spoken": "पर वहाँ होता क्या है?",
+   "raw_dur_s": 1.47,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.4,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.2",
+   "text": "आइए जानते हैं",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 23.971,
+   "end": 24.927,
+   "tries": 1,
+   "words_per_s": 3.14,
+   "beat": "v007",
+   "pause_after": 0.28,
+   "spoken": "आइए जानते हैं",
+   "raw_dur_s": 1.19,
+   "checks": [
+    {
+     "seed": 62397,
+     "rate": 2.51,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "पुराण कहते हैं कि मृत्यु के बाद यमराज के दूत आते हैं",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 25.207,
+   "end": 28.117,
+   "tries": 1,
+   "words_per_s": 4.12,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "पुराण कहते हैं कि मृत्यु के बाद यमराज के दूत आते हैं",
+   "raw_dur_s": 3.63,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.31,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "वे आत्मा को बाँधकर दक्षिण दिशा की ओर ले जाते हैं",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 28.337,
+   "end": 31.153,
+   "tries": 3,
+   "words_per_s": 3.91,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "वे आत्मा को बाँधकर दक्षिण दिशा की ओर ले जाते हैं",
+   "raw_dur_s": 3.52,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 1.91,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 54913,
+     "rate": 2.17,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 62832,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "रास्ता लंबा है, न दीया है वहाँ, न सूरज की किरण",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 31.373,
+   "end": 34.347,
+   "tries": 2,
+   "words_per_s": 3.7,
+   "beat": "v010",
+   "pause_after": 0.22,
+   "spoken": "रास्ता लंबा है, न दीया है वहाँ, न सूरज की किरण",
+   "raw_dur_s": 3.72,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 2.11,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 91828,
+     "rate": 2.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "यही रास्ता तमिस्र नरक की ओर जाता है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 34.567,
+   "end": 36.634,
+   "tries": 1,
+   "words_per_s": 3.87,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "यही रास्ता तमिस्र नरक की ओर जाता है",
+   "raw_dur_s": 2.58,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.1,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "जहाँ चोर भेजे जाते हैं, जिसने दूसरे का धन छीना",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 36.854,
+   "end": 39.89,
+   "tries": 1,
+   "words_per_s": 3.29,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "जहाँ चोर भेजे जाते हैं, जिसने दूसरे का धन छीना",
+   "raw_dur_s": 3.8,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 2.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "जिसने दूसरे की ज़मीन, घर या परिवार पर अन्याय किया",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 40.11,
+   "end": 43.459,
+   "tries": 1,
+   "words_per_s": 2.99,
+   "beat": "v013",
+   "pause_after": 0.22,
+   "spoken": "जिसने दूसरे की ज़मीन, घर या परिवार पर अन्याय किया",
+   "raw_dur_s": 4.19,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 2.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "वहाँ घोर अंधकार है",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 43.679,
+   "end": 44.947,
+   "tries": 2,
+   "words_per_s": 3.16,
+   "beat": "v014",
+   "pause_after": 0.28,
+   "spoken": "वहाँ घोर अंधकार है",
+   "raw_dur_s": 1.6,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 1.13,
+     "problems": [
+      "raw pace 1.1 w/s outside 1.8-4.2",
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 74911,
+     "rate": 2.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "न दिशा दिखती है, न अपना ही हाथ",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 45.227,
+   "end": 47.498,
+   "tries": 1,
+   "words_per_s": 3.52,
+   "beat": "v015",
+   "pause_after": 0.22,
+   "spoken": "न दिशा दिखती है, न अपना ही हाथ",
+   "raw_dur_s": 2.83,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 2.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "देह नहीं होती, फिर भी हर पीड़ा जीवित जैसी अनुभव होती है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 47.718,
+   "end": 50.98,
+   "tries": 2,
+   "words_per_s": 3.68,
+   "beat": "v016",
+   "pause_after": 0.22,
+   "spoken": "देह नहीं होती, फिर भी हर पीड़ा जीवित जैसी अनुभव होती है",
+   "raw_dur_s": 4.09,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 2.3,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 20201,
+     "rate": 2.93,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "यह मन की सज़ा है, लालच और मोह की सज़ा",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 51.2,
+   "end": 53.481,
+   "tries": 1,
+   "words_per_s": 4.38,
+   "beat": "v017",
+   "pause_after": 0.22,
+   "spoken": "यह मन की सज़ा है, लालच और मोह की सज़ा",
+   "raw_dur_s": 2.84,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.52,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "पर क्यों सिर्फ़ अंधकार ही इतनी बड़ी सज़ा है?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 53.701,
+   "end": 56.639,
+   "tries": 1,
+   "words_per_s": 3.06,
+   "beat": "v018",
+   "pause_after": 0.3,
+   "spoken": "पर क्यों सिर्फ़ अंधकार ही इतनी बड़ी सज़ा है?",
+   "raw_dur_s": 3.66,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 2.46,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 56.939,
+   "end": 61.374,
+   "tries": 1,
+   "words_per_s": 2.71,
+   "beat": "v019",
+   "pause_after": 0.48,
+   "spoken": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "raw_dur_s": 4.93,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 2.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v020.1",
+   "text": "दूसरे की नज़रों से छिपकर, रात के साये में, चुपके क़दमों से",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 61.854,
+   "end": 66.214,
+   "tries": 3,
+   "words_per_s": 2.75,
+   "beat": "v020",
+   "pause_after": 0.22,
+   "spoken": "दूसरे की नज़रों से छिपकर, रात के साये में, चुपके क़दमों से",
+   "raw_dur_s": 5.45,
+   "checks": [
+    {
+     "seed": 31989,
+     "rate": 2.13,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 39908,
+     "rate": 2.17,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 47827,
+     "rate": 2.2,
+     "problems": [
+      "dead air inside the take"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v021.1",
+   "text": "जीवन में जो अंधकार चुनता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 66.434,
+   "end": 68.234,
+   "tries": 2,
+   "words_per_s": 3.33,
+   "beat": "v021",
+   "pause_after": 0.22,
+   "spoken": "जीवन में जो अंधकार चुनता है",
+   "raw_dur_s": 2.26,
+   "checks": [
+    {
+     "seed": 70029,
+     "rate": 1.77,
+     "problems": [
+      "raw pace 1.8 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 77948,
+     "rate": 2.66,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v022.1",
+   "text": "मृत्यु के बाद भी वही अंधकार उसका साथी बनता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 68.454,
+   "end": 71.109,
+   "tries": 1,
+   "words_per_s": 3.77,
+   "beat": "v022",
+   "pause_after": 0.22,
+   "spoken": "मृत्यु के बाद भी वही अंधकार उसका साथी बनता है",
+   "raw_dur_s": 3.31,
+   "checks": [
+    {
+     "seed": 86845,
+     "rate": 3.02,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v023.1",
+   "text": "गरुड़ पुराण कहता है, जैसा कर्म, वैसा ही लोक",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 71.329,
+   "end": 74.492,
+   "tries": 1,
+   "words_per_s": 2.85,
+   "beat": "v023",
+   "pause_after": 0.22,
+   "spoken": "गरुड़ पुराण कहता है, जैसा कर्म, वैसा ही लोक",
+   "raw_dur_s": 3.95,
+   "checks": [
+    {
+     "seed": 40937,
+     "rate": 2.28,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v024.1",
+   "text": "यह केवल कल्पना नहीं, एक गहरी चेतावनी है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 74.712,
+   "end": 77.368,
+   "tries": 1,
+   "words_per_s": 3.01,
+   "beat": "v024",
+   "pause_after": 0.22,
+   "spoken": "यह केवल कल्पना नहीं, एक गहरी चेतावनी है",
+   "raw_dur_s": 3.32,
+   "checks": [
+    {
+     "seed": 85705,
+     "rate": 2.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v025.1",
+   "text": "कि हर छोटा-बड़ा अपराध कहीं न कहीं दर्ज होता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 77.588,
+   "end": 80.288,
+   "tries": 1,
+   "words_per_s": 3.7,
+   "beat": "v025",
+   "pause_after": 0.22,
+   "spoken": "कि हर छोटा-बड़ा अपराध कहीं न कहीं दर्ज होता है",
+   "raw_dur_s": 3.37,
+   "checks": [
+    {
+     "seed": 84825,
+     "rate": 2.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v026.1",
+   "text": "पर पुराण यह भी कहता है, यह सज़ा अनंत नहीं है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 80.508,
+   "end": 83.259,
+   "tries": 1,
+   "words_per_s": 4.0,
+   "beat": "v026",
+   "pause_after": 0.22,
+   "spoken": "पर पुराण यह भी कहता है, यह सज़ा अनंत नहीं है",
+   "raw_dur_s": 3.43,
+   "checks": [
+    {
+     "seed": 89287,
+     "rate": 3.21,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v027.1",
+   "text": "जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 83.479,
+   "end": 86.547,
+   "tries": 1,
+   "words_per_s": 4.24,
+   "beat": "v027",
+   "pause_after": 0.22,
+   "spoken": "जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "raw_dur_s": 3.82,
+   "checks": [
+    {
+     "seed": 34257,
+     "rate": 3.4,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v028.1",
+   "text": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 86.767,
+   "end": 88.661,
+   "tries": 1,
+   "words_per_s": 4.22,
+   "beat": "v028",
+   "pause_after": 0.22,
+   "spoken": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "raw_dur_s": 2.36,
+   "checks": [
+    {
+     "seed": 17474,
+     "rate": 3.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v029.1",
+   "text": "गरुड़ पुराण में यमराज को धर्मराज भी कहा गया है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 88.881,
+   "end": 91.879,
+   "tries": 1,
+   "words_per_s": 3.34,
+   "beat": "v029",
+   "pause_after": 0.22,
+   "spoken": "गरुड़ पुराण में यमराज को धर्मराज भी कहा गया है",
+   "raw_dur_s": 3.74,
+   "checks": [
+    {
+     "seed": 60892,
+     "rate": 2.67,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v030.1",
+   "text": "वे निष्पक्ष हैं, किसी के साथ कोई भेदभाव नहीं करते",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 92.099,
+   "end": 95.084,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "v030",
+   "pause_after": 0.22,
+   "spoken": "वे निष्पक्ष हैं, किसी के साथ कोई भेदभाव नहीं करते",
+   "raw_dur_s": 3.73,
+   "checks": [
+    {
+     "seed": 12777,
+     "rate": 2.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v031.1",
+   "text": "हर आत्मा के सामने उसके अपने कर्मों का लेखा रखा जाता है",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 95.304,
+   "end": 98.717,
+   "tries": 1,
+   "words_per_s": 3.52,
+   "beat": "v031",
+   "pause_after": 0.3,
+   "spoken": "हर आत्मा के सामने उसके अपने कर्मों का लेखा रखा जाता है",
+   "raw_dur_s": 4.26,
+   "checks": [
+    {
+     "seed": 22366,
+     "rate": 2.82,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v032.1",
+   "text": "चित्रगुप्त हर अच्छे और बुरे कर्म का हिसाब लिखते हैं, कहते हैं पुराण",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 99.017,
+   "end": 102.815,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "v032",
+   "pause_after": 0.22,
+   "spoken": "चित्रगुप्त हर अच्छे और बुरे कर्म का हिसाब लिखते हैं, कहते हैं पुराण",
+   "raw_dur_s": 4.74,
+   "checks": [
+    {
+     "seed": 26874,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v033.1",
+   "text": "वहाँ न धन काम आता है, न पद, न प्रतिष्ठा",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 103.035,
+   "end": 105.786,
+   "tries": 2,
+   "words_per_s": 3.63,
+   "beat": "v033",
+   "pause_after": 0.22,
+   "spoken": "वहाँ न धन काम आता है, न पद, न प्रतिष्ठा",
+   "raw_dur_s": 3.46,
+   "checks": [
+    {
+     "seed": 48783,
+     "rate": 1.97,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 56702,
+     "rate": 2.89,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v034.1",
+   "text": "केवल कर्म ही साथ जाता है, और कुछ नहीं जाता",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 106.006,
+   "end": 108.469,
+   "tries": 1,
+   "words_per_s": 4.06,
+   "beat": "v034",
+   "pause_after": 0.22,
+   "spoken": "केवल कर्म ही साथ जाता है, और कुछ नहीं जाता",
+   "raw_dur_s": 3.08,
+   "checks": [
+    {
+     "seed": 14618,
+     "rate": 3.25,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v035.1",
+   "text": "यही गरुड़ पुराण की सबसे गहरी शिक्षा मानी जाती है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 108.689,
+   "end": 111.672,
+   "tries": 1,
+   "words_per_s": 3.35,
+   "beat": "v035",
+   "pause_after": 0.38,
+   "spoken": "यही गरुड़ पुराण की सबसे गहरी शिक्षा मानी जाती है",
+   "raw_dur_s": 3.34,
+   "checks": [
+    {
+     "seed": 55876,
+     "rate": 3.0,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v036.1",
+   "text": "आज के समय में चोरी के कई नए रूप हैं",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 112.052,
+   "end": 114.982,
+   "tries": 1,
+   "words_per_s": 3.41,
+   "beat": "v036",
+   "pause_after": 0.22,
+   "spoken": "आज के समय में चोरी के कई नए रूप हैं",
+   "raw_dur_s": 3.66,
+   "checks": [
+    {
+     "seed": 41127,
+     "rate": 2.73,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v037.1",
+   "text": "किसी का भरोसा चुराना, किसी की मेहनत का श्रेय ले लेना",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 115.202,
+   "end": 118.42,
+   "tries": 1,
+   "words_per_s": 3.42,
+   "beat": "v037",
+   "pause_after": 0.22,
+   "spoken": "किसी का भरोसा चुराना, किसी की मेहनत का श्रेय ले लेना",
+   "raw_dur_s": 4.04,
+   "checks": [
+    {
+     "seed": 32814,
+     "rate": 2.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v038.1",
+   "text": "किसी के हक़ का हिस्सा दबा लेना, यह भी एक प्रकार की चोरी है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 118.64,
+   "end": 121.9,
+   "tries": 1,
+   "words_per_s": 4.29,
+   "beat": "v038",
+   "pause_after": 0.22,
+   "spoken": "किसी के हक़ का हिस्सा दबा लेना, यह भी एक प्रकार की चोरी है",
+   "raw_dur_s": 4.07,
+   "checks": [
+    {
+     "seed": 7111,
+     "rate": 3.44,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v039.1",
+   "text": "गरुड़ पुराण की यह कथा आज भी उतनी ही सच्ची मानी जाती है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 122.12,
+   "end": 125.729,
+   "tries": 1,
+   "words_per_s": 3.6,
+   "beat": "v039",
+   "pause_after": 0.22,
+   "spoken": "गरुड़ पुराण की यह कथा आज भी उतनी ही सच्ची मानी जाती है",
+   "raw_dur_s": 4.51,
+   "checks": [
+    {
+     "seed": 92592,
+     "rate": 2.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v040.1",
+   "text": "क्योंकि नियम वही है, कर्म का हिसाब कभी नहीं भूलता",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 125.949,
+   "end": 129.045,
+   "tries": 1,
+   "words_per_s": 3.23,
+   "beat": "v040",
+   "pause_after": 0.38,
+   "spoken": "क्योंकि नियम वही है, कर्म का हिसाब कभी नहीं भूलता",
+   "raw_dur_s": 3.48,
+   "checks": [
+    {
+     "seed": 70203,
+     "rate": 2.87,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v041.1",
+   "text": "इसलिए पुराण कहता है, जो जोड़ो वह ईमानदारी से जोड़ो",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 129.425,
+   "end": 132.557,
+   "tries": 2,
+   "words_per_s": 3.19,
+   "beat": "v041",
+   "pause_after": 0.22,
+   "spoken": "इसलिए पुराण कहता है, जो जोड़ो वह ईमानदारी से जोड़ो",
+   "raw_dur_s": 3.9,
+   "checks": [
+    {
+     "seed": 35275,
+     "rate": 2.01,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 43194,
+     "rate": 2.56,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v042.1",
+   "text": "जो तुम्हारा नहीं, उसे हाथ भी मत लगाओ",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 132.777,
+   "end": 135.224,
+   "tries": 1,
+   "words_per_s": 3.27,
+   "beat": "v042",
+   "pause_after": 0.38,
+   "spoken": "जो तुम्हारा नहीं, उसे हाथ भी मत लगाओ",
+   "raw_dur_s": 2.77,
+   "checks": [
+    {
+     "seed": 58725,
+     "rate": 2.89,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v043.1",
+   "text": "यही सच्ची शांति का रास्ता माना गया है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 135.604,
+   "end": 137.953,
+   "tries": 1,
+   "words_per_s": 3.41,
+   "beat": "v043",
+   "pause_after": 0.22,
+   "spoken": "यही सच्ची शांति का रास्ता माना गया है",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 19897,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v044.1",
+   "text": "तो क्या गरुड़ पुराण केवल डराने के लिए यह कथा कहता है?",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 138.173,
+   "end": 141.421,
+   "tries": 1,
+   "words_per_s": 3.69,
+   "beat": "v044",
+   "pause_after": 0.38,
+   "spoken": "तो क्या गरुड़ पुराण केवल डराने के लिए यह कथा कहता है?",
+   "raw_dur_s": 3.65,
+   "checks": [
+    {
+     "seed": 20563,
+     "rate": 3.29,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v045.1",
+   "text": "नहीं, यह जगाने के लिए है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 141.801,
+   "end": 143.752,
+   "tries": 1,
+   "words_per_s": 3.08,
+   "beat": "v045",
+   "pause_after": 0.48,
+   "spoken": "नहीं, यह जगाने के लिए है",
+   "raw_dur_s": 2.18,
+   "checks": [
+    {
+     "seed": 29702,
+     "rate": 2.75,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v046.1",
+   "text": "यह बार-बार एक ही बात कहता है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 144.232,
+   "end": 146.416,
+   "tries": 1,
+   "words_per_s": 3.2,
+   "beat": "v046",
+   "pause_after": 0.38,
+   "spoken": "यह बार-बार एक ही बात कहता है",
+   "raw_dur_s": 2.45,
+   "checks": [
+    {
+     "seed": 83940,
+     "rate": 2.86,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v047.1",
+   "text": "हर कर्म का फल इसी जन्म में शुरू हो जाता है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 146.796,
+   "end": 149.462,
+   "tries": 1,
+   "words_per_s": 4.13,
+   "beat": "v047",
+   "pause_after": 0.48,
+   "spoken": "हर कर्म का फल इसी जन्म में शुरू हो जाता है",
+   "raw_dur_s": 2.96,
+   "checks": [
+    {
+     "seed": 99033,
+     "rate": 3.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v048.1",
+   "text": "जो आज ईमानदारी चुनता है, वह कल का डर नहीं पालता",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 149.942,
+   "end": 153.512,
+   "tries": 1,
+   "words_per_s": 3.08,
+   "beat": "v048",
+   "pause_after": 0.48,
+   "spoken": "जो आज ईमानदारी चुनता है, वह कल का डर नहीं पालता",
+   "raw_dur_s": 3.97,
+   "checks": [
+    {
+     "seed": 84362,
+     "rate": 2.77,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v049.1",
+   "text": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 153.992,
+   "end": 157.301,
+   "tries": 1,
+   "words_per_s": 2.72,
+   "beat": "v049",
+   "pause_after": 0.38,
+   "spoken": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "raw_dur_s": 3.71,
+   "checks": [
+    {
+     "seed": 94969,
+     "rate": 2.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v050.1",
+   "text": "यही सनातन परंपरा की सबसे पुरानी सीख मानी जाती है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 157.681,
+   "end": 161.423,
+   "tries": 1,
+   "words_per_s": 2.67,
+   "beat": "v050",
+   "pause_after": 0.48,
+   "spoken": "यही सनातन परंपरा की सबसे पुरानी सीख मानी जाती है",
+   "raw_dur_s": 4.16,
+   "checks": [
+    {
+     "seed": 25784,
+     "rate": 2.4,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v051.1",
+   "text": "कि हर कर्म लौटकर आता है, चाहे देर से ही सही",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 161.903,
+   "end": 164.8,
+   "tries": 2,
+   "words_per_s": 3.8,
+   "beat": "v051",
+   "pause_after": 0.48,
+   "spoken": "कि हर कर्म लौटकर आता है, चाहे देर से ही सही",
+   "raw_dur_s": 3.22,
+   "checks": [
+    {
+     "seed": 73888,
+     "rate": 2.6,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 81807,
+     "rate": 3.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v052.1",
+   "text": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 165.28,
+   "end": 168.693,
+   "tries": 2,
+   "words_per_s": 2.93,
+   "beat": "v052",
+   "pause_after": 0.38,
+   "spoken": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "raw_dur_s": 3.83,
+   "checks": [
+    {
+     "seed": 33956,
+     "rate": 2.07,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 41875,
+     "rate": 2.61,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v053.1",
+   "text": "हर एक, एक अलग पाप की कथा कहता है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 169.073,
+   "end": 171.797,
+   "tries": 1,
+   "words_per_s": 3.3,
+   "beat": "v053",
+   "pause_after": 0.48,
+   "spoken": "हर एक, एक अलग पाप की कथा कहता है",
+   "raw_dur_s": 3.02,
+   "checks": [
+    {
+     "seed": 54771,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v054.1",
+   "text": "अगली कथा में हम अगले लोक की बात करेंगे",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 172.277,
+   "end": 174.559,
+   "tries": 1,
+   "words_per_s": 3.94,
+   "beat": "v054",
+   "pause_after": 0.38,
+   "spoken": "अगली कथा में हम अगले लोक की बात करेंगे",
+   "raw_dur_s": 2.56,
+   "checks": [
+    {
+     "seed": 4586,
+     "rate": 3.52,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v055.1",
+   "text": "तब तक, इस कथा को सहेज कर रखिए, और कथा से जुड़े रहिए",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 174.939,
+   "end": 178.266,
+   "tries": 1,
+   "words_per_s": 3.91,
+   "beat": "v055",
+   "pause_after": 0.3,
+   "spoken": "तब तक, इस कथा को सहेज कर रखिए, और कथा से जुड़े रहिए",
+   "raw_dur_s": 3.74,
+   "checks": [
+    {
+     "seed": 22570,
+     "rate": 3.47,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "name": "video-tamisra-narak-chori-saza-short",
+ "mood": "sorrow",
+ "hue": 20,
+ "sat": 1.05,
+ "motif": "ink",
+ "transition": "dissolve",
+ "captions": "box",
+ "grade": "film",
+ "seed": 444,
+ "bg": "ink-clouds"
+}

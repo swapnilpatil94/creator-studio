@@ -1,0 +1,402 @@
+{
+ "story": "video-tamisra-narak-chori-saza-short",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 1.06,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 175,
+ "duration_s": 55.88,
+ "speech_words_per_s": 3.43,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.25,
+   "start": 0.0,
+   "end": 2.758,
+   "tries": 1,
+   "words_per_s": 3.63,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "raw_dur_s": 3.44,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 2.91,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "गरुड़ पुराण कहता है, हर कर्म का हिसाब होता है",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 2.998,
+   "end": 5.635,
+   "tries": 1,
+   "words_per_s": 3.79,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "गरुड़ पुराण कहता है, हर कर्म का हिसाब होता है",
+   "raw_dur_s": 3.29,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.04,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 5.935,
+   "end": 9.278,
+   "tries": 1,
+   "words_per_s": 3.89,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "raw_dur_s": 4.17,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 9.498,
+   "end": 12.568,
+   "tries": 1,
+   "words_per_s": 2.93,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "raw_dur_s": 3.84,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "पुराण कहते हैं, यमराज के दूत आत्मा को वहाँ ले जाते हैं",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 12.788,
+   "end": 15.961,
+   "tries": 2,
+   "words_per_s": 3.78,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "पुराण कहते हैं, यमराज के दूत आत्मा को वहाँ ले जाते हैं",
+   "raw_dur_s": 3.96,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.07,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 90170,
+     "rate": 3.03,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "न दीया है वहाँ, न सूरज की किरण, केवल घोर अंधकार",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 16.181,
+   "end": 19.424,
+   "tries": 1,
+   "words_per_s": 3.39,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "न दीया है वहाँ, न सूरज की किरण, केवल घोर अंधकार",
+   "raw_dur_s": 4.04,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.72,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "वहाँ चोर को कोड़ों से दंड मिलता है",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.25,
+   "start": 19.644,
+   "end": 21.692,
+   "tries": 1,
+   "words_per_s": 3.91,
+   "beat": "v007",
+   "pause_after": 0.28,
+   "spoken": "वहाँ चोर को कोड़ों से दंड मिलता है",
+   "raw_dur_s": 2.55,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.14,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 21.972,
+   "end": 25.142,
+   "tries": 1,
+   "words_per_s": 3.79,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "raw_dur_s": 3.95,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.04,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "दूसरे की नज़रों से छिपकर, रात के साये में",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 25.362,
+   "end": 28.24,
+   "tries": 1,
+   "words_per_s": 3.13,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "दूसरे की नज़रों से छिपकर, रात के साये में",
+   "raw_dur_s": 3.6,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 2.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "तो क्या यह सज़ा सदा के लिए है?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.25,
+   "start": 28.46,
+   "end": 30.377,
+   "tries": 1,
+   "words_per_s": 4.17,
+   "beat": "v010",
+   "pause_after": 0.3,
+   "spoken": "तो क्या यह सज़ा सदा के लिए है?",
+   "raw_dur_s": 2.4,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 3.34,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "नहीं, जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.113,
+   "start": 30.677,
+   "end": 35.049,
+   "tries": 2,
+   "words_per_s": 3.2,
+   "beat": "v011",
+   "pause_after": 0.48,
+   "spoken": "नहीं, जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "raw_dur_s": 4.86,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 2.54,
+     "problems": [
+      "dead air inside the take"
+     ]
+    },
+    {
+     "seed": 21844,
+     "rate": 2.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.25,
+   "start": 35.529,
+   "end": 37.849,
+   "tries": 1,
+   "words_per_s": 3.45,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "raw_dur_s": 2.9,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 2.76,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "यह कथा डराने के लिए नहीं, जगाने के लिए है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 38.069,
+   "end": 41.206,
+   "tries": 1,
+   "words_per_s": 3.19,
+   "beat": "v013",
+   "pause_after": 0.38,
+   "spoken": "यह कथा डराने के लिए नहीं, जगाने के लिए है",
+   "raw_dur_s": 3.53,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 2.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.25,
+   "start": 41.586,
+   "end": 44.84,
+   "tries": 1,
+   "words_per_s": 2.77,
+   "beat": "v014",
+   "pause_after": 0.22,
+   "spoken": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "raw_dur_s": 4.05,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 2.22,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "यही सनातन परंपरा की सबसे पुरानी सीख है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 45.06,
+   "end": 47.788,
+   "tries": 1,
+   "words_per_s": 2.93,
+   "beat": "v015",
+   "pause_after": 0.38,
+   "spoken": "यही सनातन परंपरा की सबसे पुरानी सीख है",
+   "raw_dur_s": 3.06,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 2.62,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 48.168,
+   "end": 51.186,
+   "tries": 1,
+   "words_per_s": 3.31,
+   "beat": "v016",
+   "pause_after": 0.38,
+   "spoken": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "raw_dur_s": 3.4,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 2.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "अगली कथा में अगले लोक की बात करेंगे, तब तक कथा से जुड़े रहिए",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 1.124,
+   "start": 51.566,
+   "end": 55.58,
+   "tries": 1,
+   "words_per_s": 3.49,
+   "beat": "v017",
+   "pause_after": 0.3,
+   "spoken": "अगली कथा में अगले लोक की बात करेंगे, तब तक कथा से जुड़े रहिए",
+   "raw_dur_s": 4.51,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.11,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

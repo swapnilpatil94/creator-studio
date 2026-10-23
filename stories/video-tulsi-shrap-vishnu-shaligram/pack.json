@@ -1,0 +1,609 @@
+{
+ "slug": "tulsi-shrap-vishnu-shaligram",
+ "format": "short",
+ "title": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों?",
+ "thumb": "भगवान भी डर गए?",
+ "thumbSupport": "देवी भागवत की कथा",
+ "thumbStyle": "teal",
+ "thumbArt": null,
+ "thumbScene": "Tulsi, a young woman in a crimson silk saree with gold zari border and a long black braid, eyes blazing with betrayed fury and tears, right hand raised in a curse; before her a black spiral-marked stone glowing faint blue; behind her a storm-dark teal palace hall, guttering oil lamps, lightning beyond carved stone jali.",
+ "source_line": "स्रोत: श्रीमद् देवी भागवत पुराण, स्कंध 9, अध्याय 22-24, अंग्रेज़ी अनुवाद: स्वामी विज्ञानानंद",
+ "tradition": "यह कथा देवी भागवत पुराण के अनुसार है; दूसरे ग्रंथों और लोक-परंपराओं में, जैसे वृंदा-जालंधर कथा में, विवरण अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#tulsivivah",
+  "#shaligram"
+ ],
+ "look": {
+  "mood": "sorrow",
+  "grade": "film",
+  "captions": "karaoke",
+  "motif": "flow",
+  "bg": "ink-clouds",
+  "hold": "3"
+ },
+ "cast": {
+  "role": "wife",
+  "look": "Woman, early twenties, crimson silk saree with gold zari border, emerald-green blouse, gold armlets; waist-long black braid, tulsi-leaf gold nose ring",
+  "threat": "betrayed by a disguised god",
+  "v": 3
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "पति युद्ध से लौटा, लेकिन वो पति नहीं था।",
+   "intent": "hook",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "कौन? जवाब शायद आपके आँगन में ही है।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "लेकिन क्यों?",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "वो ब्राह्मण, स्वयं हरि थे।",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "बोली, \"आज मेरा जीवन सफल हो गया।\"",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "उसी समय, रणभूमि में शिव का त्रिशूल चला।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "शंखचूड़ राख हो गया।",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "नारायण असली रूप में आए, तुलसी बेहोश हो गई।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "\"ये उसी तप का फल है।\"",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 23,
+   "text": "\"यह देह छोड़ो, मुझसे विवाह करो।\"",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 24,
+   "text": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 25,
+   "text": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 26,
+   "text": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 27,
+   "text": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 28,
+   "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 29,
+   "text": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "Medium: PROTAGONIST, wide-eyed, dark space overhead",
+   "action": "turns toward a crowned warrior's shadow in doorway",
+   "setting": "carved stone palace doorway, oil lamps, incense",
+   "lighting": "cold blue moonlight, amber torch rim"
+  },
+  "2": {
+   "subject": "Insert: black spiral-marked stone in a dark river",
+   "action": "water swirls around it, mist drifting",
+   "setting": "Gandaki riverbed, wet pebbles, reeds in foreground",
+   "lighting": "cold blue night, faint inner glow"
+  },
+  "3": {
+   "subject": "Wide: tulsi plant on a carved courtyard altar",
+   "action": "a clay diya flickers at its base",
+   "setting": "clay-tiled courtyard, timber pillars, dawn mist",
+   "lighting": "cold blue dawn, lone diya"
+  },
+  "4": {
+   "subject": "Close: PROTAGONIST watching her husband ride to war",
+   "action": "clutches a brass diya, lips moving in prayer",
+   "setting": "palace balcony, carved stone jali, banners beyond",
+   "lighting": "cold blue dusk, warm diya glow"
+  },
+  "5": {
+   "subject": "Wide: Shiva on white bull facing a demon chariot",
+   "action": "armies clash as seasons sweep across the plain",
+   "setting": "vast battlefield plain, Himalayan peaks behind",
+   "lighting": "cold steel-blue haze, drifting dust"
+  },
+  "7": {
+   "subject": "Insert: golden amulet glowing on the demon king's neck",
+   "action": "protective light ripples outward like a shield",
+   "setting": "armoured chest, chariot rail, smoke behind",
+   "lighting": "cold blue, gold shimmer"
+  },
+  "8": {
+   "subject": "Medium: PROTAGONIST praying before a lamp-lit altar",
+   "action": "a golden thread of light streams toward battle",
+   "setting": "inner shrine room, brass lamps, marigold garlands",
+   "lighting": "cold blue night, warm lamp core"
+  },
+  "9": {
+   "subject": "Wide: frail old Brahmin approaching the king's chariot",
+   "action": "holds out a trembling palm, asking",
+   "setting": "smoky battlefield, broken spears, torn banners",
+   "lighting": "flickering ember light, drifting ash"
+  },
+  "11": {
+   "subject": "Medium: crowned warrior in gold armour, faint blue aura",
+   "action": "strides through the palace gate as drums pound",
+   "setting": "torch-lit carved gate, drummers, falling petals",
+   "lighting": "flickering torchlight, ember sparks"
+  },
+  "12": {
+   "subject": "Close: PROTAGONIST, tears of joy, washing his feet",
+   "action": "pours water from a brass kalash, smiling",
+   "setting": "jewelled hall floor, drummers blurred behind",
+   "lighting": "warm flickering lamps, ember glow"
+  },
+  "13": {
+   "subject": "Medium: PROTAGONIST seating the warrior on a jewel throne",
+   "action": "offers betel, gazing up in radiant joy",
+   "setting": "gem-inlaid hall, silk drapes, oil lamps",
+   "lighting": "golden lamps, deepening ember shadows"
+  },
+  "14": {
+   "subject": "Wide: Shiva on white bull hurling a blazing trident",
+   "action": "trident streaks toward the meditating demon king",
+   "setting": "smoke-choked battlefield, burning chariots, storm sky",
+   "lighting": "red fire, white lightning"
+  },
+  "15": {
+   "subject": "Close: demon king, eyes closed, palms joined in prayer",
+   "action": "his body scatters into glowing ash",
+   "setting": "burning chariot, embers swirling, smoke",
+   "lighting": "red hellfire glow"
+  },
+  "16": {
+   "subject": "Medium: PROTAGONIST recoiling from the warrior, eyes narrowed",
+   "action": "his wall shadow shows four arms and discus",
+   "setting": "lamp-lit chamber, silk curtains, carved pillars",
+   "lighting": "guttering lamp, storm-blue shadows"
+  },
+  "17": {
+   "subject": "Close: warrior's startled face, blue light cracking through eyes",
+   "action": "flinches as his golden disguise flakes away",
+   "setting": "dark chamber, bent lamp flame in foreground",
+   "lighting": "ember flicker, storm-blue breaking"
+  },
+  "18": {
+   "subject": "Wide: PROTAGONIST collapsed before blue Vishnu in yellow silk",
+   "action": "she sinks unconscious as his true form blazes",
+   "setting": "vast pillared hall, curtains whipping, lamps toppled",
+   "lighting": "storm light, blue divine radiance"
+  },
+  "19": {
+   "subject": "Close: PROTAGONIST, tear-streaked, staring straight into camera",
+   "action": "raises a trembling hand, voicing the curse",
+   "setting": "storm-lit hall, glowing black stone in foreground",
+   "lighting": "red storm light, white lightning"
+  },
+  "20": {
+   "subject": "Medium: blue-skinned Vishnu turning into black spiral stone",
+   "action": "stone climbs from his feet, face serene",
+   "setting": "rocky Gandaki riverbank, mountain mist behind",
+   "lighting": "storm light easing, first gold"
+  },
+  "21": {
+   "subject": "Wide: PROTAGONIST lifted gently by radiant blue Vishnu",
+   "action": "he speaks softly, palm raised in blessing",
+   "setting": "pillared hall opening onto golden dawn",
+   "lighting": "warm gold dawn light"
+  },
+  "23": {
+   "subject": "Close: PROTAGONIST's face softening, eyes lifted toward light",
+   "action": "a golden divine glow rises around her",
+   "setting": "lotus-strewn shrine, brass lamps, garlands blurred",
+   "lighting": "warm gold lamplight"
+  },
+  "24": {
+   "subject": "Wide: PROTAGONIST's silhouette melting into a winding river",
+   "action": "her braid strands sprout into tulsi groves",
+   "setting": "Gandaki valley, terraced hills, Himalayan mist",
+   "lighting": "soft gold sunrise"
+  },
+  "25": {
+   "subject": "Medium: Vishnu in yellow silk on the riverbank",
+   "action": "smiles serenely as black spiral stones gleam",
+   "setting": "Gandaki shallows, tulsi groves behind, mist",
+   "lighting": "warm gold morning sun"
+  },
+  "26": {
+   "subject": "Insert: hand placing a tulsi leaf on black stone",
+   "action": "the leaf settles as the lamp flame steadies",
+   "setting": "stone shrine, brass lamps, marigold garlands",
+   "lighting": "warm gold lamplight"
+  },
+  "29": {
+   "subject": "Wide: Shiva meditating beyond a gleaming white conch",
+   "action": "water drips from the conch onto rock",
+   "setting": "torch-lit Himalayan cave shrine, snow beyond",
+   "lighting": "warm gold torch, cool mist"
+  }
+ },
+ "visuals": {
+  "1": {
+   "comp": "cinema",
+   "fx": "title_behind",
+   "text": "वो पति नहीं था",
+   "move": "push"
+  },
+  "6": {
+   "comp": "kinetic",
+   "text": "लेकिन क्यों?",
+   "style": "glitch",
+   "bg": "ink-clouds",
+   "mark": "circle"
+  },
+  "10": {
+   "comp": "kinetic",
+   "text": "हरि",
+   "style": "extrude",
+   "bg": "nebula"
+  },
+  "15": {
+   "comp": "cinema",
+   "fx": "disintegration_dispersal"
+  },
+  "16": {
+   "comp": "cinema",
+   "fx": "shadow_play_reveal"
+  },
+  "17": {
+   "comp": "cinema",
+   "fx": "eye_glow_energy_pulse"
+  },
+  "19": {
+   "comp": "cinema",
+   "fx": "dolly_zoom_vertigo",
+   "mark": "box"
+  },
+  "20": {
+   "comp": "cinema",
+   "fx": "title_behind",
+   "text": "शालिग्राम",
+   "move": "pull"
+  },
+  "22": {
+   "comp": "kinetic",
+   "text": "ये उसी तप का फल है",
+   "style": "spring",
+   "bg": "gold-bokeh",
+   "mark": "highlight"
+  },
+  "26": {
+   "comp": "cinema",
+   "fx": "diya_flicker_light",
+   "behind": "सदा साथ",
+   "mark": "underline"
+  },
+  "27": {
+   "comp": "kinetic",
+   "text": "न्याय या क्रोध?",
+   "style": "flip",
+   "bg": "storm"
+  },
+  "28": {
+   "comp": "quote",
+   "bg": "temple-jali",
+   "sticker": "diya"
+  }
+ },
+ "claims": [
+  {
+   "text": "तुलसी, शंखचूड़ की पत्नी थी",
+   "en": "\"By that tapas, S'ankhachûda got you as wife.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "शंखचूड़ दानवों का राजा था",
+   "en": "\"S'ankhachûda, the King of Dânavas\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "शिव और शंखचूड़ का युद्ध सौ वर्ष चला, कोई नहीं हारा",
+   "en": "\"for full one hundred years but there was no defeat nor victory\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.1-6"
+  },
+  {
+   "text": "ब्रह्मा के वर से, कवच और पत्नी के सतीत्व के रहते मृत्यु उसे छू नहीं सकती थी",
+   "en": "\"until the Visnu's Kavacha will remain on his neck and until his wife's chastity be not violated, old age and death will not be able to touch him\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.22.1-75"
+  },
+  {
+   "text": "एक बूढ़े ब्राह्मण ने कवच माँगा",
+   "en": "\"an aged Brâhmana ... I am desirous of your Kavacha\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "वह ब्राह्मण हरि थे, जो शंखचूड़ का रूप धरकर तुलसी के पास गए",
+   "en": "\"Bhagavân Hari (in the form of that Brâhmin) took that Kavacha and, assuming the form of S'ankhachûda came to Tulasî\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "द्वार पर नगाड़े बजे",
+   "en": "\"Dundubhis (celestial drums) were sounded at Her door\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.2-11"
+  },
+  {
+   "text": "तुलसी ने खुशी के आँसुओं संग पाँव धोए",
+   "en": "\"washed his feet and shed tears of joy\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.2-11"
+  },
+  {
+   "text": "तुलसी बोली, आज मेरा जीवन सफल हुआ",
+   "en": "\"Today my life has been crowned with success.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.2-11"
+  },
+  {
+   "text": "उसी समय शिव ने त्रिशूल चलाया",
+   "en": "\"At this time Mahâdeva took up the Hari's trident\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "शंखचूड़ राख हो गया",
+   "en": "\"burnt him and his chariot to ashes\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "तुलसी को इस बार अनुभव अलग लगा",
+   "en": "\"finding this time her experience quite different\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.14-17"
+  },
+  {
+   "text": "तुलसी ने मायावी कहकर श्राप देने को कहा",
+   "en": "\"Who are you? O Magician! ... I will curse you.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.18-22"
+  },
+  {
+   "text": "श्राप के डर से नारायण असली रूप में आए",
+   "en": "\"being afraid of the curse, assumed His real beautiful figure\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.18-22"
+  },
+  {
+   "text": "तुलसी बेहोश हो गई, फिर होश में आकर बोली",
+   "en": "\"immediately fell senseless; and at the next moment, regaining consciousness, she began to speak\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.18-22"
+  },
+  {
+   "text": "तुलसी का श्राप: दिल पत्थर है, पत्थर बन जाओ",
+   "en": "\"Thy heart is like a stone. So Let Thee be turned into a stone.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.23-27"
+  },
+  {
+   "text": "तुलसी ने नारायण को पाने का तप किया था",
+   "en": "\"you performed tapasyâ in this Bhârata, to get Me\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "यह उसी तप का फल था",
+   "en": "\"award you also with the fruit that you asked for. Therefore I have done this.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "देह छोड़कर विवाह का वचन",
+   "en": "\"quit your this terestrial body and assume a Divine Body and marry Me\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "देह गंडकी नदी बनेगी, केश तुलसी",
+   "en": "\"This body of yours will be known by the name of Gandakî ... Your hairs will be turned into sacred trees\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "विष्णु श्राप से गंडकी किनारे पत्थर बने",
+   "en": "\"I will be turned into stone by your curse; I will remain in India close to the bank of the river Gandakî\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "वही पत्थर शालिग्राम हैं",
+   "en": "\"the convolutions in the S'âlagrâma or sacred stones ... representing Me\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "शालिग्राम से तुलसी अलग करने वाले को अगले जन्म पत्नी-वियोग",
+   "en": "\"separates the Tulasî leaves from the stone, will have to suffer separation from his wife in his next birth\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "तुलसी हरि के हृदय में रहीं",
+   "en": "\"began to remain in the breast of S'rî Hari like S'rî Laksmî Devî\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.24.28-102"
+  },
+  {
+   "text": "शंखचूड़ की अस्थियाँ शंख बनीं",
+   "en": "\"The bones of S'ankhachûda ... were transformed into conch-shells\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  },
+  {
+   "text": "शंख का जल शिव को नहीं चढ़ता",
+   "en": "\"This water can be offered to all the Gods but not to S'iva.\"",
+   "status": "verified",
+   "source": "देवी भागवत 9.23.7-30"
+  }
+ ],
+ "chapters": []
+}

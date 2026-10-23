@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "पति युद्ध से लौटा, लेकिन वो पति नहीं था। इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
+ "disclaimer": "यह कथा देवी भागवत पुराण के अनुसार है; दूसरे ग्रंथों और लोक-परंपराओं में, जैसे वृंदा-जालंधर कथा में, विवरण अलग मिलते हैं।",
+ "hashtags": [
+  "#kathaaya",
+  "#tulsivivah",
+  "#shaligram"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "तुलसी|विवाह|श्राप:",
+ "extraTags": [
+  "tulsivivah",
+  "shaligram",
+  "तुलसी",
+  "विवाह",
+  "श्राप:",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "भगवान भी डर गए?"
+   ],
+   "support": [
+    "देवी भागवत की कथा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "तुलसी विवाह का"
+ ],
+ "primaryKeyword": "तुलसी",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों?"
+ }
+}

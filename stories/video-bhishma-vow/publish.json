@@ -11,23 +11,23 @@
   }
  ],
  "title": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? | KATHAAYA",
- "description": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n#kathaaya #भीष्मकथा #महाभारत #kathaayastories",
+ "description": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #भीष्मकथा #महाभारत #kathaayastories",
  "tags": [
-  "samudra manthan story",
-  "vat savitri vrat katha",
+  "ekadashi vrat katha",
+  "story",
   "shri shiv mahapuran katha",
+  "samudra manthan story",
+  "devotional story",
   "pandit pradeep mishra ji katha",
   "#aaj ki katha",
   "श्री शिव महापुराण कथा",
+  "devshayani ekadashi vrat katha",
+  "mahadev story",
+  "vat savitri vrat katha",
+  "ekadashi ki katha",
   "mahishasur vadh story",
   "mahishasur story",
-  "story",
-  "durga mata story",
-  "mahishasur vadh katha",
-  "samudra manthan katha",
-  "navratri story in hindi",
-  "vat savitri katha marathi",
-  "kurma avatar story"
+  "pauranik katha"
  ],
  "hashtags": [
   "#kathaaya",
@@ -41,14 +41,50 @@
  "privacyStatus": "private",
  "selfDeclaredMadeForKids": false,
  "containsSyntheticMedia": true,
- "video": "output/video-bhishma-vow.mp4",
+ "video": "output/video-bhishma-vow-upload.mp4",
  "thumbnails": [
   "output/thumb-9x16.png",
   "output/thumb-16x9.png"
  ],
  "tagEvidence": [
   {
+   "t": "ekadashi vrat katha",
+   "n": 10
+  },
+  {
+   "t": "story",
+   "n": 9
+  },
+  {
+   "t": "shri shiv mahapuran katha",
+   "n": 9
+  },
+  {
    "t": "samudra manthan story",
+   "n": 8
+  },
+  {
+   "t": "devotional story",
+   "n": 8
+  },
+  {
+   "t": "pandit pradeep mishra ji katha",
+   "n": 8
+  },
+  {
+   "t": "#aaj ki katha",
+   "n": 8
+  },
+  {
+   "t": "श्री शिव महापुराण कथा",
+   "n": 8
+  },
+  {
+   "t": "devshayani ekadashi vrat katha",
+   "n": 7
+  },
+  {
+   "t": "mahadev story",
    "n": 7
   },
   {
@@ -56,19 +92,7 @@
    "n": 6
   },
   {
-   "t": "shri shiv mahapuran katha",
-   "n": 6
-  },
-  {
-   "t": "pandit pradeep mishra ji katha",
-   "n": 6
-  },
-  {
-   "t": "#aaj ki katha",
-   "n": 6
-  },
-  {
-   "t": "श्री शिव महापुराण कथा",
+   "t": "ekadashi ki katha",
    "n": 6
   },
   {
@@ -80,32 +104,8 @@
    "n": 5
   },
   {
-   "t": "story",
+   "t": "pauranik katha",
    "n": 5
-  },
-  {
-   "t": "durga mata story",
-   "n": 4
-  },
-  {
-   "t": "mahishasur vadh katha",
-   "n": 4
-  },
-  {
-   "t": "samudra manthan katha",
-   "n": 4
-  },
-  {
-   "t": "navratri story in hindi",
-   "n": 3
-  },
-  {
-   "t": "vat savitri katha marathi",
-   "n": 3
-  },
-  {
-   "t": "kurma avatar story",
-   "n": 3
   }
  ],
  "thumbnailSeed": {
@@ -151,18 +151,18 @@
   },
   {
    "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
-   "ok": false,
-   "detail": "0/1 (bhishma-vow)"
+   "ok": true,
+   "detail": "3/3 (भीष्म प्रतिज्ञा | भीष्म सत्यवती | भीष्म निषादराज)"
   },
   {
    "name": "description <= 5000 bytes",
    "ok": true,
-   "detail": 1067
+   "detail": 1557
   },
   {
    "name": "tags <= 15 and <= 500 chars",
    "ok": true,
-   "detail": "15 tags, 313 chars"
+   "detail": "15 tags, 298 chars"
   },
   {
    "name": "format fits Shorts (<= 180 s)",
@@ -187,12 +187,32 @@
   {
    "name": "rendered video exists",
    "ok": true,
-   "detail": "video-bhishma-vow.mp4"
+   "detail": "video-bhishma-vow-upload.mp4"
   },
   {
-   "name": "thumbnails generated",
-   "ok": false,
-   "detail": "run tools/thumbnail.mjs"
+   "name": "thumbnail: headline <= 5 words",
+   "ok": true,
+   "detail": "3 words: सत्यवती का राज़ ?"
+  },
+  {
+   "name": "thumbnail: headline does not repeat the title",
+   "ok": true,
+   "detail": "carries the other half of the story"
+  },
+  {
+   "name": "thumbnail: own Flux painting for this story (not a film frame)",
+   "ok": true,
+   "detail": "KATHAAYA Gold (locked house style): Devavrata, resolve"
+  },
+  {
+   "name": "thumbnail: 120 px preview generated",
+   "ok": true,
+   "detail": "thumb-120-*.png"
+  },
+  {
+   "name": "thumbnail: channel mark (logo)",
+   "ok": true,
+   "detail": "channels/kathaaya/logo.png"
   },
   {
    "name": "claims verified at source",
@@ -217,5 +237,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-18T12:45:09.638Z"
+ "generated": "2026-10-21T16:46:34.911Z"
 }

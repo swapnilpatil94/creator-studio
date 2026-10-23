@@ -1,0 +1,16 @@
+{
+ "name": "video-tulsi-shrap-vishnu-shaligram",
+ "scene": "scene.js",
+ "segments": "narration/voice/segments.json",
+ "audio": "narration/voice/narration.wav",
+ "lead": 0.6,
+ "tail": 1.5,
+ "fps": 24,
+ "overlay": true,
+ "requireGates": false,
+ "visualQa": false,
+ "format": "1080x1920",
+ "title": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों?",
+ "from_item": "tulsi-shrap-vishnu-shaligram.video",
+ "engine": "longform"
+}

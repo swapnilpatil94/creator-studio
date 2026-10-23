@@ -1,0 +1,587 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "s1",
+   "move": "push",
+   "label": "पति युद्ध से लौटा",
+   "behind": "एक धोखा और एक श्राप",
+   "fx": "title_behind",
+   "title": "वो पति नहीं था",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "s1",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "fx",
+  "params": {
+   "img": "s2",
+   "move": "panL",
+   "label": "श्राप निकला",
+   "reveal": "circle",
+   "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v002_close",
+     "framing": "close",
+     "of": "s2",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "lines": [
+    "कौन?",
+    "*आँगन* में ही है"
+   ],
+   "style": "wave",
+   "img": "s3",
+   "move": "push",
+   "tone": "cold",
+   "transition": "leak"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "img": "s4",
+   "move": "push",
+   "label": "तुलसी दानवराज शंखचूड़ की पत्नी थी",
+   "fx": "drone_orbit_180",
+   "sticker": "burst",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "s4",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "value": 100,
+   "suffix": "बरस",
+   "label": "शिव और तुलसी के युद्ध",
+   "img": "s5",
+   "move": "push",
+   "tone": "cold",
+   "transition": "leak"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "लेकिन क्यों?"
+   ],
+   "style": "glitch",
+   "bg": "ink-clouds",
+   "mark": "circle",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "img": "s7",
+   "move": "panR",
+   "label": "ब्रह्मा का वरदान",
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "s7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "fx",
+  "params": {
+   "img": "s8",
+   "move": "pull",
+   "label": "पत्नी पतिव्रता है",
+   "fx": "crane_up_reveal",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v008_close",
+     "framing": "close",
+     "of": "s8",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "img": "s9",
+   "move": "push",
+   "label": "एक बूढ़ा ब्राह्मण आया",
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "cut"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "हरि"
+   ],
+   "style": "extrude",
+   "bg": "nebula",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "fx",
+  "params": {
+   "img": "s11",
+   "move": "push",
+   "label": "शंखचूड़ का रूप धरकर",
+   "reveal": "circle",
+   "fx": "2.5d_parallax",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "fx",
+  "params": {
+   "img": "s12",
+   "move": "pull",
+   "label": "खुशी के आँसुओं संग पति के पाँव धोए",
+   "reveal": "diamond",
+   "fx": "puppet_warp_breathing",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "s12",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "cinema",
+  "params": {
+   "lines": [
+    "आज *मेरा* जीवन सफल हो गया"
+   ],
+   "style": "wave",
+   "img": "s13",
+   "move": "push",
+   "tone": "ember",
+   "transition": "cut"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "fx",
+  "params": {
+   "img": "s14",
+   "move": "panL",
+   "label": "शिव का त्रिशूल चला",
+   "reveal": "wipe",
+   "fx": "crane_up_reveal",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "s14",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "*शंखचूड़* राख हो गया"
+   ],
+   "style": "glitch",
+   "img": "s15",
+   "move": "push",
+   "fx": "disintegration_dispersal",
+   "tone": "fire",
+   "transition": "cut"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "fx",
+  "params": {
+   "img": "s16",
+   "move": "panR",
+   "label": "कौन हो तुम, मायावी?",
+   "reveal": "circle",
+   "fx": "shadow_play_reveal",
+   "sticker": "burst",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "s16",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "मैं श्राप दूँगी!",
+    "*भगवान* भी डर गए"
+   ],
+   "style": "slam",
+   "img": "s17",
+   "move": "push",
+   "fx": "eye_glow_energy_pulse",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "s17",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v018",
+  "comp": "fx",
+  "params": {
+   "img": "s18",
+   "move": "drone_push_in",
+   "label": "नारायण असली रूप में आए",
+   "reveal": "diamond",
+   "fx": "drone_orbit_180",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "s18",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v019",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "*तुम्हारा* दिल पत्थर का है पत्थर बन"
+   ],
+   "style": "mask",
+   "img": "s19",
+   "move": "push",
+   "fx": "dolly_zoom_vertigo",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "s19",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v020",
+  "comp": "fx",
+  "params": {
+   "img": "s20",
+   "move": "pull",
+   "label": "विष्णु बने, शालिग्राम",
+   "reveal": "wipe",
+   "fx": "title_behind",
+   "title": "शालिग्राम",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v020_close",
+     "framing": "close",
+     "of": "s20",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v021",
+  "comp": "cinema",
+  "params": {
+   "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
+   "by": "नारायण",
+   "img": "s21",
+   "move": "push",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v021_close",
+     "framing": "close",
+     "of": "s21",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v022",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "ये उसी तप का फल है"
+   ],
+   "style": "spring",
+   "bg": "gold-bokeh",
+   "mark": "highlight",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v023",
+  "comp": "fx",
+  "params": {
+   "img": "s23",
+   "move": "pull",
+   "fx": "kinetography_cinemagraph",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v024",
+  "comp": "cinema",
+  "params": {
+   "lines": [
+    "*\"तुम्हारी* देह गंडकी नदी बनेगी, केश तुलसी"
+   ],
+   "style": "wave",
+   "img": "s24",
+   "move": "push",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v024_close",
+     "framing": "close",
+     "of": "s24",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v025",
+  "comp": "fx",
+  "params": {
+   "img": "s25",
+   "move": "pull",
+   "fx": "matte_painting_extension",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v025_close",
+     "framing": "close",
+     "of": "s25",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v026",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "\"जो *शालिग्राम* से तुलसी अलग करे, वो"
+   ],
+   "style": "glitch",
+   "img": "s26",
+   "move": "push",
+   "fx": "diya_flicker_light",
+   "behind": "सदा साथ",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v026_close",
+     "framing": "close",
+     "of": "s26",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v027",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "न्याय या क्रोध?"
+   ],
+   "style": "flip",
+   "bg": "storm",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v028",
+  "comp": "quote",
+  "params": {
+   "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
+   "by": "",
+   "bg": "temple-jali",
+   "sticker": "diya",
+   "tone": "gold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v029",
+  "comp": "cinema",
+  "params": {
+   "steps": [
+    {
+     "title": "शंखचूड़ की अस्थियाँ शंख बनीं",
+     "text": "शंखचूड़ के अस्थि शंख बन गए।"
+    },
+    {
+     "title": "शिव पर शंख-जल क्यों नहीं?",
+     "text": "शिव के शंख में जल नहीं होता।"
+    },
+    {
+     "title": "फ़ॉलो कीजिए",
+     "text": "शंख और जल के संबंध के बारे में जानें।"
+    }
+   ],
+   "img": "s29",
+   "move": "push",
+   "tone": "gold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v029_close",
+     "framing": "close",
+     "of": "s29",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v029_insert",
+     "framing": "insert",
+     "of": "s29",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ }
+]

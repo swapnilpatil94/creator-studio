@@ -1,0 +1,12 @@
+{
+ "name": "video-raurava-narak-ruru-dansh",
+ "mood": "sorrow",
+ "hue": 10,
+ "sat": 1.04,
+ "motif": "flow",
+ "transition": "dissolve",
+ "captions": "box",
+ "grade": "film",
+ "seed": 1,
+ "bg": "embers"
+}

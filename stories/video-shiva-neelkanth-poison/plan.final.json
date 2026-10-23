@@ -8,6 +8,26 @@
    "label": "समुद्र मंथन",
    "reveal": "circle",
    "fx": "drone_push_in",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "s1",
+     "fx": "drone_push_in",
+     "clip": "v001_v001_close",
+     "clip_n": 167
+    },
+    {
+     "img": "v001_insert",
+     "framing": "insert",
+     "of": "s1",
+     "fx": "depth_rack_focus",
+     "clip": "v001_v001_insert",
+     "clip_n": 167
+    }
+   ],
+   "autoShots": true,
    "clip": "v001",
    "clip_n": 167
   },
@@ -22,6 +42,19 @@
    "label": "मंदराचल पर्वत",
    "reveal": "diamond",
    "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v002_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "drone_push_in",
+     "clip": "v002_v002_close",
+     "clip_n": 137
+    }
+   ],
+   "autoShots": true,
    "clip": "v002",
    "clip_n": 137
   },
@@ -35,7 +68,18 @@
    "move": "pull",
    "label": "अनमोल रत्न",
    "reveal": "wipe",
-   "fx": "kinetography_cinemagraph"
+   "fx": "kinetography_cinemagraph",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -49,6 +93,19 @@
    "reveal": "circle",
    "fx": "crane_up_reveal",
    "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "drone_push_in",
+     "clip": "v004_v004_close",
+     "clip_n": 121
+    }
+   ],
+   "autoShots": true,
    "clip": "v004",
    "clip_n": 121
   },
@@ -64,7 +121,9 @@
     "असुर",
     "*घबरा* गए"
    ],
-   "style": "glitch"
+   "style": "glitch",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "chapter": "ch1"
  },
@@ -77,6 +136,19 @@
    "label": "भगवान शिव की शरण",
    "reveal": "diamond",
    "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v006_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in",
+     "clip": "v006_v006_close",
+     "clip_n": 128
+    }
+   ],
+   "autoShots": true,
    "clip": "v006",
    "clip_n": 128
   },
@@ -88,7 +160,18 @@
   "params": {
    "fx": "eye_glow_energy_pulse",
    "img": "scene5",
-   "move": "push"
+   "move": "push",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -98,7 +181,18 @@
   "params": {
    "img": "s8",
    "move": "pull",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v008_close",
+     "framing": "close",
+     "of": "s8",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -109,6 +203,19 @@
    "fx": "mesh_rack_focus_dof",
    "img": "scene6",
    "move": "pull",
+   "tone": "fire",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in",
+     "clip": "v009_v009_close",
+     "clip_n": 137
+    }
+   ],
+   "autoShots": true,
    "clip": "v009",
    "clip_n": 138
   },
@@ -123,7 +230,18 @@
    ],
    "style": "mask",
    "img": "s10",
-   "move": "push"
+   "move": "push",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v010_close",
+     "framing": "close",
+     "of": "s10",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -136,6 +254,19 @@
    "label": "शिव पुराण कहता है",
    "behind": "सारी सृष्टि को बचाने का उनका बलिदान था",
    "fx": "drone_orbit_180",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v011_v011_close",
+     "clip_n": 120
+    }
+   ],
+   "autoShots": true,
    "clip": "v011",
    "clip_n": 120
   },
@@ -150,6 +281,27 @@
    "label": "आज भी नीलकंठ का यह रूप",
    "behind": "शिव की करुणा और शक्ति दोनों की कथा कहता है",
    "fx": "mesh_ken_burns_3d",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "drone_push_in",
+     "clip": "v012_v012_close",
+     "clip_n": 193
+    },
+    {
+     "img": "v012_insert",
+     "framing": "insert",
+     "of": "scene8",
+     "fx": "depth_rack_focus",
+     "clip": "v012_v012_insert",
+     "clip_n": 193
+    }
+   ],
+   "autoShots": true,
    "clip": "v012",
    "clip_n": 193
   },

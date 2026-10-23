@@ -1,0 +1,420 @@
+{
+ "story": "video-raurava-narak-ruru-dansh",
+ "profile": "kathaaya-reels-v2",
+ "post": "warm",
+ "tempo_scale": 0.8692,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 175,
+ "duration_s": 54.52,
+ "speech_words_per_s": 3.52,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "तमिस्र नरक के बाद, गरुड़ पुराण किस लोक की बात करता है?",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 1.06,
+   "start": 0.0,
+   "end": 3.194,
+   "tries": 1,
+   "words_per_s": 3.76,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "तमिस्र नरक के बाद, गरुड़ पुराण किस लोक की बात करता है?",
+   "raw_dur_s": 3.38,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.55,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "एक ऐसा लोक, जहाँ धोखा देने वालों का हिसाब होता है",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 3.434,
+   "end": 6.465,
+   "tries": 1,
+   "words_per_s": 3.63,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "एक ऐसा लोक, जहाँ धोखा देने वालों का हिसाब होता है",
+   "raw_dur_s": 3.16,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.48,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "जो अपनी आजीविका के लिए दूसरों को धोखा देता है, या उनका हक़ छीनता है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 6.765,
+   "end": 10.572,
+   "tries": 1,
+   "words_per_s": 3.94,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "जो अपनी आजीविका के लिए दूसरों को धोखा देता है, या उनका हक़ छीनता है",
+   "raw_dur_s": 4.11,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 3.65,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "नाम है रौरव नरक, यानी दहाड़ों का लोक",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 10.792,
+   "end": 12.946,
+   "tries": 1,
+   "words_per_s": 3.71,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "नाम है रौरव नरक, यानी दहाड़ों का लोक",
+   "raw_dur_s": 2.29,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 3.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "पुराण कहते हैं, यहाँ रुरु नाम के भयंकर प्राणी होते हैं",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 13.166,
+   "end": 16.238,
+   "tries": 1,
+   "words_per_s": 3.58,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "पुराण कहते हैं, यहाँ रुरु नाम के भयंकर प्राणी होते हैं",
+   "raw_dur_s": 3.26,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 3.37,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "ना मनुष्य, ना पशु, केवल क्रोध में जलती आँखें",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 16.458,
+   "end": 19.598,
+   "tries": 1,
+   "words_per_s": 2.87,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "ना मनुष्य, ना पशु, केवल क्रोध में जलती आँखें",
+   "raw_dur_s": 3.33,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 2.7,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "वे धोखेबाज़ को बार-बार काटते हैं",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 1.026,
+   "start": 19.818,
+   "end": 21.519,
+   "tries": 1,
+   "words_per_s": 3.53,
+   "beat": "v007",
+   "pause_after": 0.28,
+   "spoken": "वे धोखेबाज़ को बार-बार काटते हैं",
+   "raw_dur_s": 1.75,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "क्योंकि जिसने जीवन में दूसरों को तड़पाया",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 21.799,
+   "end": 24.091,
+   "tries": 1,
+   "words_per_s": 3.05,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "क्योंकि जिसने जीवन में दूसरों को तड़पाया",
+   "raw_dur_s": 2.43,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 2.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "उसे खुद तड़पना सिखाया जाता है, वहीं कर्म के नियम से",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 24.311,
+   "end": 27.331,
+   "tries": 1,
+   "words_per_s": 3.64,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "उसे खुद तड़पना सिखाया जाता है, वहीं कर्म के नियम से",
+   "raw_dur_s": 3.22,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "पर क्या रुरु सच में कोई असली जीव हैं?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.043,
+   "start": 27.551,
+   "end": 29.486,
+   "tries": 3,
+   "words_per_s": 4.65,
+   "beat": "v010",
+   "pause_after": 0.3,
+   "spoken": "पर क्या रुरु सच में कोई असली जीव हैं?",
+   "raw_dur_s": 2.02,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 4.45,
+     "problems": [
+      "raw pace 4.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 91828,
+     "rate": 4.82,
+     "problems": [
+      "raw pace 4.8 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 99747,
+     "rate": 4.59,
+     "problems": [
+      "raw pace 4.6 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "परंपरा कहती है, वे उन्हीं के पापों से जन्मे प्रेत हैं",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.92,
+   "start": 29.786,
+   "end": 33.176,
+   "tries": 1,
+   "words_per_s": 3.24,
+   "beat": "v011",
+   "pause_after": 0.48,
+   "spoken": "परंपरा कहती है, वे उन्हीं के पापों से जन्मे प्रेत हैं",
+   "raw_dur_s": 3.13,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.52,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "हर दंश के साथ आत्मा को अपना छल याद आता है",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.06,
+   "start": 33.656,
+   "end": 36.312,
+   "tries": 1,
+   "words_per_s": 4.14,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "हर दंश के साथ आत्मा को अपना छल याद आता है",
+   "raw_dur_s": 2.82,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 3.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "यह कथा डर फैलाने के लिए नहीं, सतर्क करने के लिए है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 36.532,
+   "end": 39.486,
+   "tries": 3,
+   "words_per_s": 4.06,
+   "beat": "v013",
+   "pause_after": 0.38,
+   "spoken": "यह कथा डर फैलाने के लिए नहीं, सतर्क करने के लिए है",
+   "raw_dur_s": 2.73,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 4.39,
+     "problems": [
+      "raw pace 4.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 11569,
+     "rate": 4.52,
+     "problems": [
+      "raw pace 4.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 19488,
+     "rate": 4.59,
+     "problems": [
+      "raw pace 4.6 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "जो ईमानदारी से कमाया धन है, वही आख़िर तक टिकता है",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.078,
+   "start": 39.866,
+   "end": 42.877,
+   "tries": 1,
+   "words_per_s": 3.65,
+   "beat": "v014",
+   "pause_after": 0.22,
+   "spoken": "जो ईमानदारी से कमाया धन है, वही आख़िर तक टिकता है",
+   "raw_dur_s": 3.24,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 3.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "यही सनातन परंपरा का दूसरा पाठ है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 43.097,
+   "end": 45.645,
+   "tries": 1,
+   "words_per_s": 2.75,
+   "beat": "v015",
+   "pause_after": 0.38,
+   "spoken": "यही सनातन परंपरा का दूसरा पाठ है",
+   "raw_dur_s": 2.36,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 2.97,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "गरुड़ पुराण के अट्ठाईस लोकों में रौरव दूसरा नरक माना जाता है",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 46.025,
+   "end": 50.396,
+   "tries": 1,
+   "words_per_s": 2.75,
+   "beat": "v016",
+   "pause_after": 0.38,
+   "spoken": "गरुड़ पुराण के अट्ठाईस लोकों में रौरव दूसरा नरक माना जाता है",
+   "raw_dur_s": 4.03,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 2.97,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "अगली कथा में तीसरे लोक की बात करेंगे, कथा से जुड़े रहिए",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.921,
+   "start": 50.776,
+   "end": 54.222,
+   "tries": 1,
+   "words_per_s": 3.48,
+   "beat": "v017",
+   "pause_after": 0.3,
+   "spoken": "अगली कथा में तीसरे लोक की बात करेंगे, कथा से जुड़े रहिए",
+   "raw_dur_s": 3.18,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.77,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

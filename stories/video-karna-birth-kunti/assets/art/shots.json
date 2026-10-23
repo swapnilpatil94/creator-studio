@@ -1,86 +1,827 @@
 {
+ "c1": {
+  "subject": "PROTAGONIST, a merchant, standing by the riverbank",
+  "action": "gazing at his infant son in a cradle",
+  "setting": "banks of the Ganges river at dawn",
+  "lighting": "soft golden dawn light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c2": {
+  "subject": "PROTAGONIST the merchant",
+  "action": "signing a contract with a robed sage",
+  "setting": "timber-pillared hall with clay-tile roof",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c3": {
+  "subject": "the merchant, an elderly man",
+  "action": "chanting a mantra and summoning the sun god",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "golden rays from above",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c4": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c5": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c6": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c7": {
+  "subject": "PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c8": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "hesitantly reciting a sacred mantra",
+  "setting": "a dimly lit temple hall with carved stone pillars",
+  "lighting": "soft glow of oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "c9": {
+  "subject": "PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
  "scene0": {
-  "subject": "A young woman named Kunti standing in a quiet grove",
-  "action": "gazing upward with eyes wide in wonder and curiosity",
-  "setting": "an ancient forest clearing surrounded by tall trees and soft moss",
-  "lighting": "golden light filtering through the leaves",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "gazing at a sacred text with wide eyes",
+  "setting": "a dimly lit temple library with carved wooden shelves",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene1": {
-  "subject": "A child born with a divine armor",
-  "action": "glowing with radiant ornaments on his face",
-  "setting": "a celestial realm with golden clouds",
-  "lighting": "soft, golden radiance",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a young male merchant",
+  "action": "clutching a golden chest adorned with sacred symbols",
+  "setting": "a bustling Indian marketplace under a carved wooden awning",
+  "lighting": "warm and golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene2": {
-  "subject": "A young boy with a crown of flowers and a divine aura",
-  "action": "holding a powerful weapon with confident posture",
-  "setting": "a sacred battlefield surrounded by ancient ruins",
-  "lighting": "golden rays from above",
-  "medium": "ravi-varma"
+  "subject": "the merchant, a young man with a determined look",
+  "action": "holding a bow and arrow with practiced ease",
+  "setting": "a stone courtyard surrounded by ancient wooden pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene3": {
-  "subject": "Pṛthā, a young woman with divine aura",
-  "action": "standing with arms raised in reverence",
-  "setting": "celestial garden with golden trees and flowing rivers",
-  "lighting": "soft golden glow from above",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a young man, standing at the riverbank",
+  "action": "receiving a golden ornament from the sun god, Surya",
+  "setting": "Vrindavan riverbank with carved stone steps and oil lamps",
+  "lighting": "golden light from the rising sun",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene4": {
-  "subject": "Prita, a grieving mother",
-  "action": "stares silently at her son with tear-filled eyes",
-  "setting": "a dimly lit ancient hall with stone pillars",
-  "lighting": "soft, golden candlelight",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "gazing at his son with sorrowful eyes",
+  "setting": "a dimly lit chamber with carved wooden pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene5": {
-  "subject": "A young woman and her brother",
-  "action": "hiding a sacred idol behind a curtain",
-  "setting": "a dimly lit temple chamber with stone pillars",
-  "lighting": "soft flickering oil lamp glow",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the merchant",
+  "action": "hiding a sacred jewel in his robe",
+  "setting": "dimly lit temple corridor with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene6": {
-  "subject": "A divine mother holding her strong son",
-  "action": "releases him into the water with a gentle push",
-  "setting": "a sacred river surrounded by ancient forest",
-  "lighting": "soft golden dawn light",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a merchant",
+  "action": "dropping his strong son into the river",
+  "setting": "stone steps beside a wide, muddy riverbank",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene7": {
-  "subject": "A man and woman from the Sut Jati community",
-  "action": "lift a child from water and cradle him gently",
-  "setting": "a rural village near a riverbank",
-  "lighting": "soft golden dawn light",
-  "medium": "ravi-varma"
+  "subject": "the merchant, a young man",
+  "action": "holding a child above the water",
+  "setting": "bank of the Yamuna river in Vrindavan",
+  "lighting": "soft golden dawn",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene8": {
-  "subject": "A newborn child with armor and earrings",
-  "action": "lying in a royal cradle surrounded by divine beings",
-  "setting": "a celestial palace with golden pillars and flowing silk",
-  "lighting": "soft, golden glow from floating lamps",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a young man with armor and earrings",
+  "action": "standing proudly in a royal courtyard",
+  "setting": "ancient Indian palace with carved stone pillars",
+  "lighting": "golden sunlight through arches",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene9": {
-  "subject": "Indra in the form of a Brahmin",
-  "action": "receives a breastplate from Vasusena with folded hands",
-  "setting": "ancient Indian palace courtyard",
-  "lighting": "golden and soft",
-  "medium": "ravi-varma"
+  "subject": "the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene10": {
-  "subject": "Indra, a celestial warrior",
-  "action": "grants a glowing weapon to a humble devotee",
-  "setting": "a golden celestial battlefield under a starry sky",
-  "lighting": "radiant divine glow",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene11": {
-  "subject": "A warrior with a golden ear",
-  "action": "removes a shining armor piece with a sword",
-  "setting": "ancient battlefield under a crimson sky",
-  "lighting": "dramatic fire glow",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "tearing off his ornate armor with trembling hands",
+  "setting": "a stone battlefield under a crimson sky",
+  "lighting": "dramatic shadows from torches",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v001_close": {
+  "subject": "PROTAGONIST, a merchant, standing by the riverbank",
+  "action": "gazing at his infant son in a cradle",
+  "setting": "banks of the Ganges river at dawn",
+  "lighting": "soft golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v001_insert": {
+  "subject": "hands of PROTAGONIST, a merchant, standing by the riverbank",
+  "action": "gazing at his infant son in a cradle",
+  "setting": "banks of the Ganges river at dawn",
+  "lighting": "soft golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v002_wide": {
+  "subject": "PROTAGONIST the merchant",
+  "action": "signing a contract with a robed sage",
+  "setting": "timber-pillared hall with clay-tile roof",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v002_close": {
+  "subject": "PROTAGONIST the merchant",
+  "action": "signing a contract with a robed sage",
+  "setting": "timber-pillared hall with clay-tile roof",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v002_insert": {
+  "subject": "hands of PROTAGONIST the merchant",
+  "action": "signing a contract with a robed sage",
+  "setting": "timber-pillared hall with clay-tile roof",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v003_close": {
+  "subject": "the merchant, an elderly man",
+  "action": "chanting a mantra and summoning the sun god",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "golden rays from above",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v003_insert": {
+  "subject": "hands of the merchant, an elderly man",
+  "action": "chanting a mantra and summoning the sun god",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "golden rays from above",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v004_wide": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v004_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v004_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v005_wide": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v005_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v005_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v006_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v006_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v007_close": {
+  "subject": "PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v007_insert": {
+  "subject": "hands of PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v008_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "hesitantly reciting a sacred mantra",
+  "setting": "a dimly lit temple hall with carved stone pillars",
+  "lighting": "soft glow of oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v008_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "hesitantly reciting a sacred mantra",
+  "setting": "a dimly lit temple hall with carved stone pillars",
+  "lighting": "soft glow of oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v009_wide": {
+  "subject": "PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v009_close": {
+  "subject": "PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v009_insert": {
+  "subject": "hands of PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v010_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "gazing at a sacred text with wide eyes",
+  "setting": "a dimly lit temple library with carved wooden shelves",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v010_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "gazing at a sacred text with wide eyes",
+  "setting": "a dimly lit temple library with carved wooden shelves",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v011_close": {
+  "subject": "the merchant, an elderly man",
+  "action": "chanting a mantra and summoning the sun god",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "golden rays from above",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a middle-aged man",
+  "action": "chanting a sacred mantra with closed eyes",
+  "setting": "a stone-paved courtyard near a temple",
+  "lighting": "golden rays from the sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v013_wide": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v013_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v013_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a middle-aged man",
+  "action": "giving a child to an elder man with a crown",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v014_wide": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v014_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v014_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "bowing respectfully as Pritha serves food",
+  "setting": "the stone-paved hall of Kuntibhoj's palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v015_wide": {
+  "subject": "PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v015_close": {
+  "subject": "PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v015_insert": {
+  "subject": "hands of PROTAGONIST the merchant and the ascetic Rishi Durvasa",
+  "action": "bowing in reverence as the rishi smiles with approval",
+  "setting": "a forest clearing with a stone altar and oil lamps",
+  "lighting": "golden sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v016_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "hesitantly reciting a sacred mantra",
+  "setting": "a dimly lit temple hall with carved stone pillars",
+  "lighting": "soft glow of oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v016_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "hesitantly reciting a sacred mantra",
+  "setting": "a dimly lit temple hall with carved stone pillars",
+  "lighting": "soft glow of oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v017_close": {
+  "subject": "PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v017_insert": {
+  "subject": "hands of PROTAGONIST, a merchant woman",
+  "action": "giving birth to a baby boy",
+  "setting": "a dimly lit clay-tiled chamber in a village home",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v018_close": {
+  "subject": "PROTAGONIST, a young male merchant",
+  "action": "clutching a golden chest adorned with sacred symbols",
+  "setting": "a bustling Indian marketplace under a carved wooden awning",
+  "lighting": "warm and golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v018_insert": {
+  "subject": "hands of PROTAGONIST, a young male merchant",
+  "action": "clutching a golden chest adorned with sacred symbols",
+  "setting": "a bustling Indian marketplace under a carved wooden awning",
+  "lighting": "warm and golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v019_wide": {
+  "subject": "the merchant, a young man with a determined look",
+  "action": "holding a bow and arrow with practiced ease",
+  "setting": "a stone courtyard surrounded by ancient wooden pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v019_close": {
+  "subject": "the merchant, a young man with a determined look",
+  "action": "holding a bow and arrow with practiced ease",
+  "setting": "a stone courtyard surrounded by ancient wooden pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v019_insert": {
+  "subject": "hands of the merchant, a young man with a determined look",
+  "action": "holding a bow and arrow with practiced ease",
+  "setting": "a stone courtyard surrounded by ancient wooden pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v020_wide": {
+  "subject": "PROTAGONIST, a young man, standing at the riverbank",
+  "action": "receiving a golden ornament from the sun god, Surya",
+  "setting": "Vrindavan riverbank with carved stone steps and oil lamps",
+  "lighting": "golden light from the rising sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v020_close": {
+  "subject": "PROTAGONIST, a young man, standing at the riverbank",
+  "action": "receiving a golden ornament from the sun god, Surya",
+  "setting": "Vrindavan riverbank with carved stone steps and oil lamps",
+  "lighting": "golden light from the rising sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v020_insert": {
+  "subject": "hands of PROTAGONIST, a young man, standing at the riverbank",
+  "action": "receiving a golden ornament from the sun god, Surya",
+  "setting": "Vrindavan riverbank with carved stone steps and oil lamps",
+  "lighting": "golden light from the rising sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v021_wide": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "gazing at his son with sorrowful eyes",
+  "setting": "a dimly lit chamber with carved wooden pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v021_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "gazing at his son with sorrowful eyes",
+  "setting": "a dimly lit chamber with carved wooden pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v021_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a middle-aged man",
+  "action": "gazing at his son with sorrowful eyes",
+  "setting": "a dimly lit chamber with carved wooden pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v022_close": {
+  "subject": "PROTAGONIST the merchant",
+  "action": "hiding a sacred jewel in his robe",
+  "setting": "dimly lit temple corridor with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v022_insert": {
+  "subject": "hands of PROTAGONIST the merchant",
+  "action": "hiding a sacred jewel in his robe",
+  "setting": "dimly lit temple corridor with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v023_close": {
+  "subject": "PROTAGONIST, a merchant",
+  "action": "dropping his strong son into the river",
+  "setting": "stone steps beside a wide, muddy riverbank",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v024_close": {
+  "subject": "the merchant, a young man",
+  "action": "holding a child above the water",
+  "setting": "bank of the Yamuna river in Vrindavan",
+  "lighting": "soft golden dawn",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v024_insert": {
+  "subject": "hands of the merchant, a young man",
+  "action": "holding a child above the water",
+  "setting": "bank of the Yamuna river in Vrindavan",
+  "lighting": "soft golden dawn",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v025_close": {
+  "subject": "the merchant, a young man",
+  "action": "holding a child above the water",
+  "setting": "bank of the Yamuna river in Vrindavan",
+  "lighting": "soft golden dawn",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v026_close": {
+  "subject": "PROTAGONIST, a young man with armor and earrings",
+  "action": "standing proudly in a royal courtyard",
+  "setting": "ancient Indian palace with carved stone pillars",
+  "lighting": "golden sunlight through arches",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v026_insert": {
+  "subject": "hands of PROTAGONIST, a young man with armor and earrings",
+  "action": "standing proudly in a royal courtyard",
+  "setting": "ancient Indian palace with carved stone pillars",
+  "lighting": "golden sunlight through arches",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v027_wide": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v027_close": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v027_insert": {
+  "subject": "hands of the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v028_close": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v028_insert": {
+  "subject": "hands of the merchant, a middle-aged man",
+  "action": "kneeling to offer his armor to Indra in brahmin disguise",
+  "setting": "a stone courtyard with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v029_wide": {
+  "subject": "PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v029_close": {
+  "subject": "PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v029_insert": {
+  "subject": "hands of PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v030_wide": {
+  "subject": "PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v030_close": {
+  "subject": "PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v030_insert": {
+  "subject": "hands of PROTAGONIST, a young merchant",
+  "action": "receiving a glowing weapon from the god Indra",
+  "setting": "a stone temple courtyard with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
+ },
+ "v031_wide": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "tearing off his ornate armor with trembling hands",
+  "setting": "a stone battlefield under a crimson sky",
+  "lighting": "dramatic shadows from torches",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "wide"
+ },
+ "v031_close": {
+  "subject": "PROTAGONIST the merchant, a young man",
+  "action": "tearing off his ornate armor with trembling hands",
+  "setting": "a stone battlefield under a crimson sky",
+  "lighting": "dramatic shadows from torches",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v031_insert": {
+  "subject": "hands of PROTAGONIST the merchant, a young man",
+  "action": "tearing off his ornate armor with trembling hands",
+  "setting": "a stone battlefield under a crimson sky",
+  "lighting": "dramatic shadows from torches",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
  }
 }

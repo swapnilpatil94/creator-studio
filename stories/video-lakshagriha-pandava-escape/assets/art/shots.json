@@ -4,153 +4,499 @@
   "action": "watching two brothers train",
   "setting": "palace courtyard at dusk",
   "lighting": "cold blue shadows",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s5": {
   "subject": "scheming prince distributing gold",
   "action": "to courtiers and citizens",
   "setting": "ornate royal court",
   "lighting": "warm lamp light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s13": {
   "subject": "courtiers praising a distant city",
   "action": "blind king listening",
   "setting": "grand throne hall",
   "lighting": "amber torchlight",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s17": {
   "subject": "prince whispering to a minister",
   "action": "gripping his right hand",
   "setting": "dim private chamber",
   "lighting": "flickering oil lamp",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s19": {
   "subject": "craftsmen plastering walls",
   "action": "with a glossy resinous mixture",
   "setting": "half built palace",
   "lighting": "pale daylight",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s23": {
   "subject": "five princes touching elders' feet",
   "action": "before leaving in chariots",
   "setting": "palace courtyard at dawn",
   "lighting": "soft golden light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s29": {
   "subject": "cheering crowd with garlands",
   "action": "welcoming five princes",
   "setting": "festival town gate",
   "lighting": "bright morning sun",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s31": {
   "subject": "five princes inspecting a hall",
   "action": "wary expressions",
   "setting": "wooden palace interior",
   "lighting": "dim amber light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s36": {
   "subject": "muscular miner with a pickaxe",
   "action": "speaking quietly to a prince",
   "setting": "night inside the hall",
   "lighting": "low candle light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s40": {
   "subject": "wooden floor planks",
   "action": "lifted above a dark tunnel mouth",
   "setting": "palace chamber",
   "lighting": "single lantern glow",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s44": {
   "subject": "queen serving food",
   "action": "to seated brahmins",
   "setting": "lamp lit courtyard feast",
   "lighting": "warm evening light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s47": {
   "subject": "burning wooden palace",
   "action": "five figures slipping into a tunnel",
   "setting": "dark night",
   "lighting": "roaring orange flames",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s52": {
   "subject": "powerful prince carrying his mother",
   "action": "and four brothers on his body",
   "setting": "dark forest at night",
   "lighting": "red glow behind",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s53": {
   "subject": "simple boat with flags",
   "action": "waiting on a wide river",
   "setting": "moonlit river bank",
   "lighting": "silver moonlight",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "s56": {
   "subject": "king with a false grieving face",
   "action": "performing funeral rites",
   "setting": "palace courtyard",
   "lighting": "grey smoky light",
-  "medium": "ravi-varma"
+  "medium": "ravi-varma",
+  "src": "owner"
  },
  "scene0": {
-  "subject": "Karna and Shakuni",
-  "action": "plotting against the Pandavas in a dark chamber",
-  "setting": "ancient palace with carved pillars and flickering oil lamps",
-  "lighting": "dim, shadowy, golden glow",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the king, a young man in golden armor",
+  "action": "standing defiant as arrows rain from the sky",
+  "setting": "a battlefield under a stormy sky with broken chariots",
+  "lighting": "dramatic lightning flashes",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene2": {
-  "subject": "Dhritarashtra and Pandu",
-  "action": "standing in solemn conversation",
-  "setting": "ancient royal hall with carved pillars",
-  "lighting": "warm oil lamp glow",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, an aged king with a long beard",
+  "action": "speaking solemnly to a council of ministers",
+  "setting": "a carved stone throne room with oil lamps and tapestries",
+  "lighting": "warm, golden glow from lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene3": {
-  "subject": "Duryodhana and a minister",
-  "action": "standing proudly, holding a treasure",
-  "setting": "a grand hall with golden pillars",
-  "lighting": "golden and warm",
-  "medium": "ravi-varma"
+  "subject": "the king, a bearded man in a red dhoti",
+  "action": "speaking to a council of advisors",
+  "setting": "a carved stone hall with oil lamps",
+  "lighting": "warm and dim",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene4": {
-  "subject": "Duryodhana, Bhishma, Ashwathama, Drona, Kripa",
-  "action": "standing in a tense formation, discussing strategy",
-  "setting": "a grand Kuru court adorned with golden pillars",
-  "lighting": "soft, golden candlelight",
-  "medium": "ravi-varma"
+  "subject": "the king, a young man in gold armor",
+  "action": "speaking urgently to a council of elders",
+  "setting": "a carved stone hall with oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene5": {
-  "subject": "Pandavas standing with respectful posture",
-  "action": "receiving jewels from a brahmin with folded hands",
-  "setting": "royal hall adorned with golden pillars and tapestries",
-  "lighting": "soft glow from oil lamps",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST, a young king",
+  "action": "giving golden jewels to a brahmin",
+  "setting": "royal hall with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene6": {
-  "subject": "Yudhishthira, Arjuna, and Bhima",
-  "action": "seeking blessings from Bhishma, Drona, and Vidura",
-  "setting": "ancient battlefield with royal figures seated on chariots",
-  "lighting": "golden dawn light",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the king, elders in saffron robes",
+  "action": "bowing deeply before rising to walk forward",
+  "setting": "stone steps of a Vedic ritual hall",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene7": {
-  "subject": "Purochana and a Nishada woman with her son",
-  "action": "burning in a sudden fire",
-  "setting": "a grand palace in Varanavata",
-  "lighting": "flames and smoke",
-  "medium": "ravi-varma"
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v003_close": {
+  "subject": "brooding prince in royal robes",
+  "action": "watching two brothers train",
+  "setting": "palace courtyard at dusk",
+  "lighting": "cold blue shadows",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v004_close": {
+  "subject": "PROTAGONIST the king, a young man in golden armor",
+  "action": "standing defiant as arrows rain from the sky",
+  "setting": "a battlefield under a stormy sky with broken chariots",
+  "lighting": "dramatic lightning flashes",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v005_close": {
+  "subject": "scheming prince distributing gold",
+  "action": "to courtiers and citizens",
+  "setting": "ornate royal court",
+  "lighting": "warm lamp light",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v007_close": {
+  "subject": "PROTAGONIST, an aged king with a long beard",
+  "action": "speaking solemnly to a council of ministers",
+  "setting": "a carved stone throne room with oil lamps and tapestries",
+  "lighting": "warm, golden glow from lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v009_close": {
+  "subject": "the king, a bearded man in a red dhoti",
+  "action": "speaking to a council of advisors",
+  "setting": "a carved stone hall with oil lamps",
+  "lighting": "warm and dim",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v011_close": {
+  "subject": "the king, a young man in gold armor",
+  "action": "speaking urgently to a council of elders",
+  "setting": "a carved stone hall with oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_close": {
+  "subject": "the king, a young man in gold armor",
+  "action": "speaking urgently to a council of elders",
+  "setting": "a carved stone hall with oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v013_close": {
+  "subject": "courtiers praising a distant city",
+  "action": "blind king listening",
+  "setting": "grand throne hall",
+  "lighting": "amber torchlight",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v014_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "giving golden jewels to a brahmin",
+  "setting": "royal hall with carved pillars and oil lamps",
+  "lighting": "warm, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v016_close": {
+  "subject": "PROTAGONIST the king, elders in saffron robes",
+  "action": "bowing deeply before rising to walk forward",
+  "setting": "stone steps of a Vedic ritual hall",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v017_close": {
+  "subject": "prince whispering to a minister",
+  "action": "gripping his right hand",
+  "setting": "dim private chamber",
+  "lighting": "flickering oil lamp",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v019_close": {
+  "subject": "craftsmen plastering walls",
+  "action": "with a glossy resinous mixture",
+  "setting": "half built palace",
+  "lighting": "pale daylight",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v022_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v023_close": {
+  "subject": "five princes touching elders' feet",
+  "action": "before leaving in chariots",
+  "setting": "palace courtyard at dawn",
+  "lighting": "soft golden light",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v024_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v026_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v029_close": {
+  "subject": "cheering crowd with garlands",
+  "action": "welcoming five princes",
+  "setting": "festival town gate",
+  "lighting": "bright morning sun",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v030_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v031_close": {
+  "subject": "five princes inspecting a hall",
+  "action": "wary expressions",
+  "setting": "wooden palace interior",
+  "lighting": "dim amber light",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v033_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v037_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v039_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v041_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v044_close": {
+  "subject": "queen serving food",
+  "action": "to seated brahmins",
+  "setting": "lamp lit courtyard feast",
+  "lighting": "warm evening light",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v046_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v047_close": {
+  "subject": "burning wooden palace",
+  "action": "five figures slipping into a tunnel",
+  "setting": "dark night",
+  "lighting": "roaring orange flames",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v048_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v049_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v050_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v051_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v053_close": {
+  "subject": "simple boat with flags",
+  "action": "waiting on a wide river",
+  "setting": "moonlit river bank",
+  "lighting": "silver moonlight",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v054_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v055_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v056_close": {
+  "subject": "king with a false grieving face",
+  "action": "performing funeral rites",
+  "setting": "palace courtyard",
+  "lighting": "grey smoky light",
+  "medium": "ravi-varma",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v057_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v058_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "cowering as fanged beasts close in",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
  }
 }

@@ -241,6 +241,51 @@
    "status": "needs_corpus",
    "sensitivity": "normal",
    "note": "foreign mythology: same sourcing rule as Indian stories; present each tradition on its own terms and never rank faiths; for comparison pieces cite each text separately"
+  },
+  {
+   "slug": "mythology-world-776f72",
+   "title": "world mythology explained hindi",
+   "status": "idea",
+   "source": "outlier-engine 2026-11",
+   "pillar": "mythology-world",
+   "event": null
+  },
+  {
+   "slug": "mythology-world-e0a497",
+   "title": "ग्रीक पौराणिक कथा",
+   "status": "idea",
+   "source": "outlier-engine 2026-11",
+   "pillar": "mythology-world",
+   "event": null
+  },
+  {
+   "slug": "mythology-world-e0a497",
+   "title": "ग्रीक पौराणिक कथाओं में",
+   "status": "idea",
+   "source": "outlier-engine 2026-11",
+   "pillar": "mythology-world",
+   "event": null
+  },
+  {
+   "slug": "agent-b88aff",
+   "title": "शरद पूर्णिमा कृष्ण रास",
+   "status": "idea",
+   "source": "daily agent",
+   "pillar": "unsaid-relations"
+  },
+  {
+   "slug": "agent-756d15",
+   "title": "सावित्री सत्यवान",
+   "status": "idea",
+   "source": "daily agent",
+   "pillar": "unsaid-relations"
+  },
+  {
+   "slug": "agent-2f98a3",
+   "title": "करवा चौथ कथा",
+   "status": "idea",
+   "source": "daily agent",
+   "pillar": "unsaid-relations"
   }
  ]
 }

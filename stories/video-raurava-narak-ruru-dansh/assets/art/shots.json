@@ -1,0 +1,196 @@
+{
+ "s1": {
+  "subject": "Indian glowing restless soul",
+  "action": "hovering above a field of flickering torches",
+  "setting": "ancient Puranic-era threshold between two dark gates",
+  "lighting": "dim blue twilight",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s4": {
+  "subject": "Indian massive stone gate carved with fierce beast faces",
+  "action": "looming in dense fog",
+  "setting": "ancient Puranic-era entrance to an underground cavern",
+  "lighting": "cold grey mist light",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s6": {
+  "subject": "Indian pack of monstrous fanged beasts",
+  "action": "pacing restlessly in shadow",
+  "setting": "ancient Puranic-era narrow stone corridor",
+  "lighting": "flickering ember light",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s9": {
+  "subject": "Indian cloaked merchant figure",
+  "action": "hiding a stolen ledger behind his back",
+  "setting": "ancient Puranic-era dim marketplace at night",
+  "lighting": "single oil lamp glow",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s11": {
+  "subject": "Indian tormented spirit",
+  "action": "staring at its own reflection in dark water",
+  "setting": "ancient Puranic-era underground cavern pool",
+  "lighting": "faint reddish glow",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s14": {
+  "subject": "Indian honest trader",
+  "action": "handing coins directly to a customer",
+  "setting": "ancient Puranic-era sunlit village market",
+  "lighting": "bright clear daylight",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "s17": {
+  "subject": "Indian glowing diya lamp",
+  "action": "burning steadily beside an open scripture",
+  "setting": "ancient Puranic-era simple home altar",
+  "lighting": "warm steady flame",
+  "medium": "photoreal",
+  "src": "owner"
+ },
+ "hook": {
+  "subject": "fierce fanged beast in darkness, glowing red eyes",
+  "action": "menace and judgment",
+  "setting": "endless black cavern",
+  "lighting": "single hard rim light",
+  "framing": "close",
+  "medium": "photoreal",
+  "src": "thumbArt"
+ },
+ "v006_close": {
+  "subject": "Indian pack of monstrous fanged beasts",
+  "action": "pacing restlessly in shadow",
+  "setting": "ancient Puranic-era narrow stone corridor",
+  "lighting": "flickering ember light",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v009_close": {
+  "subject": "Indian cloaked merchant figure",
+  "action": "hiding a stolen ledger behind his back",
+  "setting": "ancient Puranic-era dim marketplace at night",
+  "lighting": "single oil lamp glow",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v011_close": {
+  "subject": "Indian tormented spirit",
+  "action": "staring at its own reflection in dark water",
+  "setting": "ancient Puranic-era underground cavern pool",
+  "lighting": "faint reddish glow",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v014_close": {
+  "subject": "Indian honest trader",
+  "action": "handing coins directly to a customer",
+  "setting": "ancient Puranic-era sunlit village market",
+  "lighting": "bright clear daylight",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "close"
+ },
+ "v017_close": {
+  "subject": "Indian glowing diya lamp",
+  "action": "burning steadily beside an open scripture",
+  "setting": "ancient Puranic-era simple home altar",
+  "lighting": "warm steady flame",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "scene1": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "clutching a broken scale and trembling",
+  "setting": "a stone marketplace in Varanasi",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene2": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching stolen gold coins tightly",
+  "setting": "a crowded Indian market with wooden stalls",
+  "lighting": "harsh midday sun",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene4": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching a bundle of silk as he flees through the jungle",
+  "setting": "dense Indian forest with towering banyan trees",
+  "lighting": "dappled sunlight through leaves",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene6": {
+  "subject": "PROTAGONIST, a merchant",
+  "action": "clutches his chest in agony",
+  "setting": "a crowded Indian market under a red awning",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene9": {
+  "subject": "PROTAGONIST, a middle-aged man",
+  "action": "clutching his chest in agony",
+  "setting": "a dimly lit temple corridor",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene11": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching a sacred text as flames rise behind him",
+  "setting": "a crumbling stone courtyard in Raurava Naraka",
+  "lighting": "fiery orange and red glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v002_close": {
+  "subject": "PROTAGONIST the merchant, a middle-aged man",
+  "action": "clutching a broken scale and trembling",
+  "setting": "a stone marketplace in Varanasi",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v003_close": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching stolen gold coins tightly",
+  "setting": "a crowded Indian market with wooden stalls",
+  "lighting": "harsh midday sun",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v005_close": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching a bundle of silk as he flees through the jungle",
+  "setting": "dense Indian forest with towering banyan trees",
+  "lighting": "dappled sunlight through leaves",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v016_close": {
+  "subject": "the merchant, a middle-aged man",
+  "action": "clutching a sacred text as flames rise behind him",
+  "setting": "a crumbling stone courtyard in Raurava Naraka",
+  "lighting": "fiery orange and red glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "slug": "raurava-narak-ruru-dansh",
+ "format": "short",
+ "title": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?",
+ "thumb": "रुरु कौन हैं?",
+ "thumbSupport": "गरुड़ पुराण की कथा",
+ "thumbStyle": "red",
+ "thumbArt": "fierce fanged beast in darkness | menace and judgment | glowing red eyes | endless black cavern",
+ "thumbScene": null,
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी नरकों की सूची मिलती है",
+ "tradition": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; रौरव नरक का विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#रौरवनरक"
+ ],
+ "look": {
+  "mood": "sorrow",
+  "grade": "film",
+  "captions": "box",
+  "transition": "dissolve",
+  "motif": "flow",
+  "bg": "embers",
+  "hue": "10"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "तमिस्र नरक के बाद, गरुड़ पुराण किस लोक की बात करता है?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "एक ऐसा लोक, जहाँ धोखा देने वालों का हिसाब होता है",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "जो अपनी आजीविका के लिए दूसरों को धोखा देता है, या उनका हक़ छीनता है",
+   "intent": "tense",
+   "accent": "धोखा",
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "नाम है रौरव नरक, यानी दहाड़ों का लोक",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "पुराण कहते हैं, यहाँ रुरु नाम के भयंकर प्राणी होते हैं",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "ना मनुष्य, ना पशु, केवल क्रोध में जलती आँखें",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "वे धोखेबाज़ को बार-बार काटते हैं",
+   "intent": "punch",
+   "accent": "काटते",
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "क्योंकि जिसने जीवन में दूसरों को तड़पाया",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "उसे खुद तड़पना सिखाया जाता है, वहीं कर्म के नियम से",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "पर क्या रुरु सच में कोई असली जीव हैं?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "परंपरा कहती है, वे उन्हीं के पापों से जन्मे प्रेत हैं",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "हर दंश के साथ आत्मा को अपना छल याद आता है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "यह कथा डर फैलाने के लिए नहीं, सतर्क करने के लिए है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "जो ईमानदारी से कमाया धन है, वही आख़िर तक टिकता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "यही सनातन परंपरा का दूसरा पाठ है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "गरुड़ पुराण के अट्ठाईस लोकों में रौरव दूसरा नरक माना जाता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "अगली कथा में तीसरे लोक की बात करेंगे, कथा से जुड़े रहिए",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "glowing restless soul",
+   "action": "hovering above a field of flickering torches",
+   "setting": "threshold between two dark gates",
+   "lighting": "dim blue twilight"
+  },
+  "4": {
+   "subject": "massive stone gate carved with fierce beast faces",
+   "action": "looming in dense fog",
+   "setting": "entrance to an underground cavern",
+   "lighting": "cold grey mist light"
+  },
+  "6": {
+   "subject": "pack of monstrous fanged beasts",
+   "action": "pacing restlessly in shadow",
+   "setting": "narrow stone corridor",
+   "lighting": "flickering ember light"
+  },
+  "9": {
+   "subject": "cloaked merchant figure",
+   "action": "hiding a stolen ledger behind his back",
+   "setting": "dim marketplace at night",
+   "lighting": "single oil lamp glow"
+  },
+  "11": {
+   "subject": "tormented spirit",
+   "action": "staring at its own reflection in dark water",
+   "setting": "underground cavern pool",
+   "lighting": "faint reddish glow"
+  },
+  "14": {
+   "subject": "honest trader",
+   "action": "handing coins directly to a customer",
+   "setting": "sunlit village market",
+   "lighting": "bright clear daylight"
+  },
+  "17": {
+   "subject": "glowing diya lamp",
+   "action": "burning steadily beside an open scripture",
+   "setting": "simple home altar",
+   "lighting": "warm steady flame"
+  }
+ },
+ "visuals": {
+  "1": {
+   "comp": "cinema",
+   "fx": "drone_push_in"
+  },
+  "7": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "embers",
+   "text": "रुरु"
+  },
+  "13": {
+   "comp": "quote",
+   "bg": "temple-jali",
+   "text": "यह"
+  },
+  "11": {
+   "fx": "speed_ramp_punch"
+  },
+  "4": {
+   "fx": "chromatic_glitch_wipe"
+  }
+ },
+ "claims": [
+  {
+   "text": "रौरव नरक गरुड़ पुराण की नरक-सूची में दूसरा नरक माना जाता है, जो छल और धोखे से जुड़े पापों के लिए है",
+   "en": "Raurava is traditionally listed as the second of the naraka realms in the Garuda Purana/Puranic tradition, associated with deceit",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  },
+  {
+   "text": "रौरव नरक की कथा में रुरु नाम के भयंकर प्राणियों का उल्लेख मिलता है, जो पापियों को दंड देते हैं",
+   "en": "The name \"Raurava\" is traditionally linked to fierce creatures called \"ruru\" who torment sinners there",
+   "status": "traditional-account",
+   "source": "puranic-naraka-tradition"
+  },
+  {
+   "text": "गरुड़ पुराण में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition describes 28 types of naraka",
+   "status": "verified",
+   "source": "bhagavata-purana-5.26"
+  }
+ ],
+ "chapters": []
+}

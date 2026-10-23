@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=540, height=960">
+</head>
+<body>
+<!-- track 1 (top): native OpenFilm compositing layer -- the channel mark surfaces only on hook/reveal beats,
+     the moments tools/openfilm/edit-plan.json marks overlay:true, so it reads as emphasis, not decoration -->
+<section>
+  <img src="assets/logo.png#t=0,5.42" at="0.60" style="left:430px;top:24px;width:80px;opacity:0.9" title="hook beat v001: fx=drone_push_in is in the hook pool (documentary pacing rule: hook beats read best with drone_push_in/dolly_zoom_vertigo/drone_fpv_flythrough...)">
+  <img src="assets/logo.png#t=0,4.63" at="36.90" style="left:430px;top:24px;width:80px;opacity:0.9" title="reveal beat v009: fx=mesh_rack_focus_dof chosen outside the reveal pool (director/LLM override, or repeat-avoidance pushed it off the usual pool)">
+</section>
+<!-- track 2: the existing longform renderer, wrapped by adapter.mjs, untouched otherwise -->
+<section>
+  <iframe src="page.html" at="0"></iframe>
+</section>
+<!-- track 3: narration, starting at the renderer's own lead-in (its t=0 is "lead seconds before narration") -->
+<section>
+  <audio src="assets/narration.wav" at="0.6"></audio>
+</section>
+</body>
+</html>

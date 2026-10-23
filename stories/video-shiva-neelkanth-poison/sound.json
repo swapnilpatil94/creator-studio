@@ -39,6 +39,22 @@
    "level": -27
   },
   {
+   "t": 1.23,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 3.29,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
    "t": 5.36,
    "type": "whoosh",
    "dur": 0.45,
@@ -47,12 +63,28 @@
    "level": -28
   },
   {
+   "t": 7.73,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
    "t": 10.48,
    "type": "whoosh",
    "dur": 0.45,
    "f0": 320,
    "f1": 2000,
    "level": -28
+  },
+  {
+   "t": 12.66,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
   },
   {
    "t": 14.89,
@@ -67,6 +99,20 @@
    "type": "riser",
    "dur": 1.2,
    "level": -28
+  },
+  {
+   "t": 17.14,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 17.3,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
   },
   {
    "t": 19.33,
@@ -85,12 +131,40 @@
    "level": -28
   },
   {
+   "t": 26.09,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 26.25,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
    "t": 28.57,
    "type": "whoosh",
    "dur": 0.45,
    "f0": 320,
    "f1": 2000,
    "level": -28
+  },
+  {
+   "t": 30.62,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 30.78,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
   },
   {
    "t": 32.99,
@@ -105,6 +179,20 @@
    "type": "riser",
    "dur": 1.2,
    "level": -28
+  },
+  {
+   "t": 34.44,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 34.6,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
   },
   {
    "t": 36,
@@ -128,6 +216,20 @@
    "tail": 3
   },
   {
+   "t": 38.37,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 38.53,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
+  },
+  {
    "t": 41.12,
    "type": "whoosh",
    "dur": 0.45,
@@ -140,6 +242,20 @@
    "type": "riser",
    "dur": 1.2,
    "level": -28
+  },
+  {
+   "t": 43.3,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -30
+  },
+  {
+   "t": 43.46,
+   "type": "impact",
+   "tail": 1.1,
+   "level": -27
   },
   {
    "t": 45.59,
@@ -163,6 +279,14 @@
    "freq": 440,
    "level": -25,
    "tail": 3.2
+  },
+  {
+   "t": 47.64,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
   },
   {
    "t": 50,
@@ -193,6 +317,26 @@
    "freq": 528,
    "level": -24,
    "tail": 3.5
+  },
+  {
+   "t": 52.05,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
+  },
+  {
+   "t": 54.36,
+   "type": "whoosh",
+   "dur": 0.22,
+   "f0": 500,
+   "f1": 2400,
+   "level": -33
   }
- ]
+ ],
+ "music": {
+  "file": "/Users/swapnil/creator-studio/assets/music/cosmic-tanpura-drone.m4a",
+  "gainDb": -16
+ }
 }

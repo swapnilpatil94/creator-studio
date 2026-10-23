@@ -1,0 +1,124 @@
+{
+ "cards": [
+  {
+   "id": "wfe251767",
+   "createdAt": "2026-10-22T16:22:59.631Z",
+   "flags": {},
+   "date": "2026-10-23",
+   "time": "19:00",
+   "format": "short",
+   "title": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?",
+   "slug": "bhishma-vow",
+   "updatedAt": "2026-10-22T16:22:59.631Z"
+  },
+  {
+   "id": "w795c00af",
+   "createdAt": "2026-10-22T16:22:59.632Z",
+   "flags": {},
+   "date": "2026-10-24",
+   "time": "19:00",
+   "format": "short",
+   "title": "कुंती ने पहले पुत्र को क्यों बहाया?",
+   "slug": "karna-birth-kunti",
+   "updatedAt": "2026-10-22T16:22:59.632Z"
+  },
+  {
+   "id": "wc100e49e",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-25",
+   "time": "19:00",
+   "format": "short",
+   "title": "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?",
+   "slug": "pandu-kindama-curse",
+   "updatedAt": "2026-10-22T16:22:59.633Z"
+  },
+  {
+   "id": "w3e8f0bae",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-25",
+   "time": "20:00",
+   "format": "long",
+   "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+   "slug": "karna-janm-kavach-long",
+   "updatedAt": "2026-10-22T16:22:59.633Z"
+  },
+  {
+   "id": "w71d3e92e",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-26",
+   "time": "19:00",
+   "format": "short",
+   "title": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?",
+   "slug": "raurava-narak-ruru-dansh",
+   "updatedAt": "2026-10-22T16:22:59.633Z"
+  },
+  {
+   "id": "w5f261459",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-26",
+   "time": "20:00",
+   "format": "long",
+   "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+   "slug": "lakshagriha-pandava-escape",
+   "updatedAt": "2026-10-22T16:22:59.633Z"
+  },
+  {
+   "id": "w348e9d25",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-27",
+   "time": "19:00",
+   "format": "short",
+   "title": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए?",
+   "slug": "shiva-neelkanth-poison",
+   "updatedAt": "2026-10-22T16:37:14.052Z"
+  },
+  {
+   "id": "w535851a0",
+   "createdAt": "2026-10-22T16:22:59.633Z",
+   "flags": {},
+   "date": "2026-10-28",
+   "time": "19:00",
+   "format": "short",
+   "title": "महारौरव नरक: जो सिर्फ़ अपना पेट पालता है, उसे क्रव्याद रुरु क्यों खाते हैं?",
+   "source": "भागवत पुराण 5.26.12: एवमेव महारौरवो यत्र निपतितं पुरुषं क्रव्यादा नाम रुरवस्तं क्रव्येण घातयन्ति यः केवलं देहम्भरः ॥\nशब्दार्थ: क्रव्यादाः नाम रुरवः = क्रव्याद नाम के रुरु (माँस खाने वाले) जीव; यः केवलं देहम्भरः = जो केवल अपने शरीर का ही पोषण करता है।\n(यहाँ एक अनुवाद चिपकाइए।)",
+   "series": "पिछला: रौरव नरक (रुरु उसे सताते हैं जिसने दूसरों को पीड़ा दी). अगला: बिना संख्या बताए अगला लोक.",
+   "updatedAt": "2026-10-22T16:22:59.633Z"
+  },
+  {
+   "id": "w7137c4c7",
+   "createdAt": "2026-10-22T16:37:49.928Z",
+   "flags": {},
+   "date": "2026-10-22",
+   "format": "short",
+   "title": "Tulsi story",
+   "updatedAt": "2026-10-22T16:39:24.968Z",
+   "time": "",
+   "source": "",
+   "series": "",
+   "script": "FORMAT: short\nSLUG: tulsi-shrap-vishnu-shaligram\nTITLE: तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों?\nTHUMB: भगवान भी डर गए?\nTHUMB_SUPPORT: देवी भागवत की कथा\nSOURCE_LINE: स्रोत: श्रीमद् देवी भागवत पुराण, स्कंध 9, अध्याय 22-24, अंग्रेज़ी अनुवाद: स्वामी विज्ञानानंद\nTRADITION: यह कथा देवी भागवत पुराण के अनुसार है; दूसरे ग्रंथों और लोक-परंपराओं में, जैसे वृंदा-जालंधर कथा में, विवरण अलग मिलते हैं।\nHASHTAGS: #kathaaya #tulsivivah #shaligram\nNARRATION:\n1 | [hook] पति युद्ध से लौटा, लेकिन वो पति नहीं था।\n2 | [curious] इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।\n3 | [curious] कौन? जवाब शायद आपके आँगन में ही है।\n4 | [narrate] देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।\n5 | [narrate] शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।\n6 | [punch] लेकिन क्यों?\n7 | [tense] ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,\n8 | [tense] और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।\n9 | [tense] तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।\n10 | [punch] वो ब्राह्मण, स्वयं हरि थे।\n11 | [tense] अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।\n12 | [awe] नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।\n13 | [awe] बोली, \"आज मेरा जीवन सफल हो गया।\"\n14 | [tense] उसी समय, रणभूमि में शिव का त्रिशूल चला।\n15 | [punch] शंखचूड़ राख हो गया।\n16 | [tense] लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"\n17 | [tense] \"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।\n18 | [awe] नारायण असली रूप में आए, तुलसी बेहोश हो गई।\n19 | [reveal] होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"\n20 | [reveal] यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।\n21 | [awe] नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"\n22 | [punch] \"ये उसी तप का फल है।\"\n23 | [awe] \"यह देह छोड़ो, मुझसे विवाह करो।\"\n24 | [awe] \"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"\n25 | [awe] \"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"\n26 | [tense] \"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"\n27 | [curious] आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?\n28 | [reflective] उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।\n29 | [reflective] शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।\nCLAIMS:\n\nतुलसी, शंखचूड़ की पत्नी थी | \"By that tapas, S'ankhachûda got you as wife.\" | verified | देवी भागवत 9.24.28-102\nशंखचूड़ दानवों का राजा था | \"S'ankhachûda, the King of Dânavas\" | verified | देवी भागवत 9.23.7-30\nशिव और शंखचूड़ का युद्ध सौ वर्ष चला, कोई नहीं हारा | \"for full one hundred years but there was no defeat nor victory\" | verified | देवी भागवत 9.23.1-6\nब्रह्मा के वर से, कवच और पत्नी के सतीत्व के रहते मृत्यु उसे छू नहीं सकती थी | \"until the Visnu's Kavacha will remain on his neck and until his wife's chastity be not violated, old age and death will not be able to touch him\" | verified | देवी भागवत 9.22.1-75\nएक बूढ़े ब्राह्मण ने कवच माँगा | \"an aged Brâhmana ... I am desirous of your Kavacha\" | verified | देवी भागवत 9.23.7-30\nवह ब्राह्मण हरि थे, जो शंखचूड़ का रूप धरकर तुलसी के पास गए | \"Bhagavân Hari (in the form of that Brâhmin) took that Kavacha and, assuming the form of S'ankhachûda came to Tulasî\" | verified | देवी भागवत 9.23.7-30\nद्वार पर नगाड़े बजे | \"Dundubhis (celestial drums) were sounded at Her door\" | verified | देवी भागवत 9.24.2-11\nतुलसी ने खुशी के आँसुओं संग पाँव धोए | \"washed his feet and shed tears of joy\" | verified | देवी भागवत 9.24.2-11\nतुलसी बोली, आज मेरा जीवन सफल हुआ | \"Today my life has been crowned with success.\" | verified | देवी भागवत 9.24.2-11\nउसी समय शिव ने त्रिशूल चलाया | \"At this time Mahâdeva took up the Hari's trident\" | verified | देवी भागवत 9.23.7-30\nशंखचूड़ राख हो गया | \"burnt him and his chariot to ashes\" | verified | देवी भागवत 9.23.7-30\nतुलसी को इस बार अनुभव अलग लगा | \"finding this time her experience quite different\" | verified | देवी भागवत 9.24.14-17\nतुलसी ने मायावी कहकर श्राप देने को कहा | \"Who are you? O Magician! ... I will curse you.\" | verified | देवी भागवत 9.24.18-22\nश्राप के डर से नारायण असली रूप में आए | \"being afraid of the curse, assumed His real beautiful figure\" | verified | देवी भागवत 9.24.18-22\nतुलसी बेहोश हो गई, फिर होश में आकर बोली | \"immediately fell senseless; and at the next moment, regaining consciousness, she began to speak\" | verified | देवी भागवत 9.24.18-22\nतुलसी का श्राप: दिल पत्थर है, पत्थर बन जाओ | \"Thy heart is like a stone. So Let Thee be turned into a stone.\" | verified | देवी भागवत 9.24.23-27\nतुलसी ने नारायण को पाने का तप किया था | \"you performed tapasyâ in this Bhârata, to get Me\" | verified | देवी भागवत 9.24.28-102\nयह उसी तप का फल था | \"award you also with the fruit that you asked for. Therefore I have done this.\" | verified | देवी भागवत 9.24.28-102\nदेह छोड़कर विवाह का वचन | \"quit your this terestrial body and assume a Divine Body and marry Me\" | verified | देवी भागवत 9.24.28-102\nदेह गंडकी नदी बनेगी, केश तुलसी | \"This body of yours will be known by the name of Gandakî ... Your hairs will be turned into sacred trees\" | verified | देवी भागवत 9.24.28-102\nविष्णु श्राप से गंडकी किनारे पत्थर बने | \"I will be turned into stone by your curse; I will remain in India close to the bank of the river Gandakî\" | verified | देवी भागवत 9.24.28-102\nवही पत्थर शालिग्राम हैं | \"the convolutions in the S'âlagrâma or sacred stones ... representing Me\" | verified | देवी भागवत 9.24.28-102\nशालिग्राम से तुलसी अलग करने वाले को अगले जन्म पत्नी-वियोग | \"separates the Tulasî leaves from the stone, will have to suffer separation from his wife in his next birth\" | verified | देवी भागवत 9.24.28-102\nतुलसी हरि के हृदय में रहीं | \"began to remain in the breast of S'rî Hari like S'rî Laksmî Devî\" | verified | देवी भागवत 9.24.28-102\nशंखचूड़ की अस्थियाँ शंख बनीं | \"The bones of S'ankhachûda ... were transformed into conch-shells\" | verified | देवी भागवत 9.23.7-30\nशंख का जल शिव को नहीं चढ़ता | \"This water can be offered to all the Gods but not to S'iva.\" | verified | देवी भागवत 9.23.7-30",
+   "slug": "tulsi-shrap-vishnu-shaligram",
+   "check": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "beats": 29,
+     "words": 260,
+     "est_seconds": 87,
+     "chapters": 0,
+     "scenes": 24,
+     "visuals": 12,
+     "format": "short"
+    },
+    "slug": "tulsi-shrap-vishnu-shaligram",
+    "at": "2026-10-22T16:39:24.950Z"
+   },
+   "visuals": "CAST: wife | Woman, early twenties, crimson silk saree with gold zari border, emerald-green blouse, gold armlets; waist-long black braid, tulsi-leaf gold nose ring | betrayed by a disguised god\nTHUMB_STYLE: teal\nTHUMB_SCENE: Tulsi, a young woman in a crimson silk saree with gold zari border and a long black braid, eyes blazing with betrayed fury and tears, right hand raised in a curse; before her a black spiral-marked stone glowing faint blue; behind her a storm-dark teal palace hall, guttering oil lamps, lightning beyond carved stone jali.\nLOOK: mood=sorrow grade=film captions=karaoke motif=flow bg=ink-clouds hold=3\nSCENES:\n1 | Medium: PROTAGONIST, wide-eyed, dark space overhead | turns toward a crowned warrior's shadow in doorway | carved stone palace doorway, oil lamps, incense | cold blue moonlight, amber torch rim\n2 | Insert: black spiral-marked stone in a dark river | water swirls around it, mist drifting | Gandaki riverbed, wet pebbles, reeds in foreground | cold blue night, faint inner glow\n3 | Wide: tulsi plant on a carved courtyard altar | a clay diya flickers at its base | clay-tiled courtyard, timber pillars, dawn mist | cold blue dawn, lone diya\n4 | Close: PROTAGONIST watching her husband ride to war | clutches a brass diya, lips moving in prayer | palace balcony, carved stone jali, banners beyond | cold blue dusk, warm diya glow\n5 | Wide: Shiva on white bull facing a demon chariot | armies clash as seasons sweep across the plain | vast battlefield plain, Himalayan peaks behind | cold steel-blue haze, drifting dust\n7 | Insert: golden amulet glowing on the demon king's neck | protective light ripples outward like a shield | armoured chest, chariot rail, smoke behind | cold blue, gold shimmer\n8 | Medium: PROTAGONIST praying before a lamp-lit altar | a golden thread of light streams toward battle | inner shrine room, brass lamps, marigold garlands | cold blue night, warm lamp core\n9 | Wide: frail old Brahmin approaching the king's chariot | holds out a trembling palm, asking | smoky battlefield, broken spears, torn banners | flickering ember light, drifting ash\n11 | Medium: crowned warrior in gold armour, faint blue aura | strides through the palace gate as drums pound | torch-lit carved gate, drummers, falling petals | flickering torchlight, ember sparks\n12 | Close: PROTAGONIST, tears of joy, washing his feet | pours water from a brass kalash, smiling | jewelled hall floor, drummers blurred behind | warm flickering lamps, ember glow\n13 | Medium: PROTAGONIST seating the warrior on a jewel throne | offers betel, gazing up in radiant joy | gem-inlaid hall, silk drapes, oil lamps | golden lamps, deepening ember shadows\n14 | Wide: Shiva on white bull hurling a blazing trident | trident streaks toward the meditating demon king | smoke-choked battlefield, burning chariots, storm sky | red fire, white lightning\n15 | Close: demon king, eyes closed, palms joined in prayer | his body scatters into glowing ash | burning chariot, embers swirling, smoke | red hellfire glow\n16 | Medium: PROTAGONIST recoiling from the warrior, eyes narrowed | his wall shadow shows four arms and discus | lamp-lit chamber, silk curtains, carved pillars | guttering lamp, storm-blue shadows\n17 | Close: warrior's startled face, blue light cracking through eyes | flinches as his golden disguise flakes away | dark chamber, bent lamp flame in foreground | ember flicker, storm-blue breaking\n18 | Wide: PROTAGONIST collapsed before blue Vishnu in yellow silk | she sinks unconscious as his true form blazes | vast pillared hall, curtains whipping, lamps toppled | storm light, blue divine radiance\n19 | Close: PROTAGONIST, tear-streaked, staring straight into camera | raises a trembling hand, voicing the curse | storm-lit hall, glowing black stone in foreground | red storm light, white lightning\n20 | Medium: blue-skinned Vishnu turning into black spiral stone | stone climbs from his feet, face serene | rocky Gandaki riverbank, mountain mist behind | storm light easing, first gold\n21 | Wide: PROTAGONIST lifted gently by radiant blue Vishnu | he speaks softly, palm raised in blessing | pillared hall opening onto golden dawn | warm gold dawn light\n23 | Close: PROTAGONIST's face softening, eyes lifted toward light | a golden divine glow rises around her | lotus-strewn shrine, brass lamps, garlands blurred | warm gold lamplight\n24 | Wide: PROTAGONIST's silhouette melting into a winding river | her braid strands sprout into tulsi groves | Gandaki valley, terraced hills, Himalayan mist | soft gold sunrise\n25 | Medium: Vishnu in yellow silk on the riverbank | smiles serenely as black spiral stones gleam | Gandaki shallows, tulsi groves behind, mist | warm gold morning sun\n26 | Insert: hand placing a tulsi leaf on black stone | the leaf settles as the lamp flame steadies | stone shrine, brass lamps, marigold garlands | warm gold lamplight\n29 | Wide: Shiva meditating beyond a gleaming white conch | water drips from the conch onto rock | torch-lit Himalayan cave shrine, snow beyond | warm gold torch, cool mist\nVISUALS:\n1 | comp=cinema fx=title_behind text=\"वो पति नहीं था\" move=push\n6 | comp=kinetic text=\"लेकिन क्यों?\" style=glitch bg=ink-clouds mark=circle\n10 | comp=kinetic text=\"हरि\" style=extrude bg=nebula\n15 | comp=cinema fx=disintegration_dispersal\n16 | comp=cinema fx=shadow_play_reveal\n17 | comp=cinema fx=eye_glow_energy_pulse\n19 | comp=cinema fx=dolly_zoom_vertigo mark=box\n20 | comp=cinema fx=title_behind text=\"शालिग्राम\" move=pull\n22 | comp=kinetic text=\"ये उसी तप का फल है\" style=spring bg=gold-bokeh mark=highlight\n26 | comp=cinema fx=diya_flicker_light behind=\"सदा साथ\" mark=underline\n27 | comp=kinetic text=\"न्याय या क्रोध?\" style=flip bg=storm\n28 | comp=quote bg=temple-jali sticker=diya"
+  }
+ ]
+}

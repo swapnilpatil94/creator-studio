@@ -4,76 +4,204 @@
   "action": "pulling a great serpent around a mountain",
   "setting": "mythic ocean, mountain pivot, dramatic sky",
   "lighting": "dark storm light, dramatic",
-  "medium": "photoreal"
+  "medium": "photoreal",
+  "src": "owner"
  },
  "s8": {
   "subject": "the god Shiva, blue-skinned, drinking dark poison",
   "action": "holding poison to his lips, eyes closed",
   "setting": "cosmic ocean background",
   "lighting": "intense golden divine glow",
-  "medium": "photoreal"
+  "medium": "photoreal",
+  "src": "owner"
  },
  "s10": {
   "subject": "the god Shiva with a glowing blue throat",
   "action": "calm, serene expression, throat glowing blue",
   "setting": "simple dark cosmic backdrop",
   "lighting": "soft blue divine glow",
-  "medium": "photoreal"
+  "medium": "photoreal",
+  "src": "owner"
  },
  "scene1": {
-  "subject": "Deity and asura",
-  "action": "churning the ocean on Mandarachal mountain",
-  "setting": "cosmic mountain surrounded by celestial beings",
-  "lighting": "golden and ethereal glow",
-  "medium": "photoreal"
- },
- "scene4": {
-  "subject": "devotees kneeling before Lord Shiva",
-  "action": "raising hands in prayer",
-  "setting": "ancient temple courtyard surrounded by trees",
-  "lighting": "soft golden glow from oil lamps",
-  "medium": "photoreal"
- },
- "scene5": {
-  "subject": "Shiva with matted hair and third eye",
-  "action": "raises a vial of poison in his hand",
-  "setting": "cosmic battlefield surrounded by deities",
-  "lighting": "glowing aura around him",
-  "medium": "photoreal"
- },
- "scene6": {
-  "subject": "Mata Parvati and Lord Shiva",
-  "action": "Parvati grabs Shiva's throat to stop the poison",
-  "setting": "Amidst a sacred Himalayan temple during a ritual",
-  "lighting": "Candlelight and divine glow",
-  "medium": "photoreal"
- },
- "scene7": {
-  "subject": "Shiva in meditative pose",
-  "action": "offering his head to the cosmic fire",
-  "setting": "mountain peak surrounded by flames",
-  "lighting": "glowing embers and divine light",
-  "medium": "photoreal"
- },
- "scene8": {
-  "subject": "Lord Shiva in the form of Nilakantha",
-  "action": "holding a trident and drinking poison",
-  "setting": "a celestial battlefield surrounded by flames",
-  "lighting": "ethereal blue and golden glow",
-  "medium": "photoreal"
+  "subject": "Deities and asuras",
+  "action": "churning the ocean to extract the nectar of immortality",
+  "setting": "the mountain Mandarachal surrounded by celestial beings and demons",
+  "lighting": "golden glow from celestial lamps",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene2": {
-  "subject": "Devotees perform the cosmic churn",
-  "action": "Extracting precious gems from the ocean",
-  "setting": "Mount Mandara surrounded by celestial beings",
-  "lighting": "Golden rays from the divine churning",
-  "medium": "photoreal"
+  "subject": "the god Vishnu, a bearded man",
+  "action": "twisting the cosmic serpent with his foot",
+  "setting": "the churning ocean, foam and waves",
+  "lighting": "golden from below",
+  "medium": "photoreal",
+  "src": "writer"
  },
  "scene3": {
-  "subject": "Indian a male sage holding a vial of halahal",
-  "action": "pouring the poison into the cosmic ocean",
-  "setting": "the sacred Ganga riverbank surrounded by ancient Indian temples",
-  "lighting": "ethereal glow from the vial",
-  "medium": "photoreal"
+  "subject": "a young man holding a golden pot",
+  "action": "pouring a dark liquid into the air",
+  "setting": "a stone platform surrounded by ancient fire altars",
+  "lighting": "flames casting red shadows",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene4": {
+  "subject": "A group of devotees, all men in dhotis and angavastrams",
+  "action": "kneeling in a circle, clasping their hands in prayer",
+  "setting": "a stone courtyard outside a temple in the Himalayas",
+  "lighting": "soft glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene5": {
+  "subject": "the god Shiva, an aged man with matted hair",
+  "action": "raises the poison halahal in his hands",
+  "setting": "a stone platform surrounded by lingam pillars",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene6": {
+  "subject": "Mother Parvati, a fierce woman",
+  "action": "grabs Lord Shiva's throat to stop the poison",
+  "setting": "a stone temple floor with broken idols",
+  "lighting": "dramatic shadows from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene7": {
+  "subject": "the god Shiva, a bearded man in ash-streaked dhoti",
+  "action": "standing on a mountain peak, holding a burning lingam",
+  "setting": "snow-capped Himalayas at dusk",
+  "lighting": "crimson and gold firelight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene8": {
+  "subject": "the god Shiva, a bearded man with a blue throat",
+  "action": "standing atop a mountain, holding a drum and a snake",
+  "setting": "a misty Himalayan peak with snow-capped rocks",
+  "lighting": "soft dawn light filtering through clouds",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v001_close": {
+  "subject": "Hindu gods and demons churning a vast cosmic ocean",
+  "action": "pulling a great serpent around a mountain",
+  "setting": "mythic ocean, mountain pivot, dramatic sky",
+  "lighting": "dark storm light, dramatic",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v001_insert": {
+  "subject": "Hindu gods and demons churning a vast cosmic ocean",
+  "action": "pulling a great serpent around a mountain",
+  "setting": "mythic ocean, mountain pivot, dramatic sky",
+  "lighting": "dark storm light, dramatic",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v002_close": {
+  "subject": "Deities and asuras",
+  "action": "churning the ocean to extract the nectar of immortality",
+  "setting": "the mountain Mandarachal surrounded by celestial beings and demons",
+  "lighting": "golden glow from celestial lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "detail"
+ },
+ "v003_close": {
+  "subject": "the god Vishnu, a bearded man",
+  "action": "twisting the cosmic serpent with his foot",
+  "setting": "the churning ocean, foam and waves",
+  "lighting": "golden from below",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v004_close": {
+  "subject": "a young man holding a golden pot",
+  "action": "pouring a dark liquid into the air",
+  "setting": "a stone platform surrounded by ancient fire altars",
+  "lighting": "flames casting red shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v006_close": {
+  "subject": "A group of devotees, all men in dhotis and angavastrams",
+  "action": "kneeling in a circle, clasping their hands in prayer",
+  "setting": "a stone courtyard outside a temple in the Himalayas",
+  "lighting": "soft glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v007_close": {
+  "subject": "the god Shiva, an aged man with matted hair",
+  "action": "raises the poison halahal in his hands",
+  "setting": "a stone platform surrounded by lingam pillars",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v008_close": {
+  "subject": "the god Shiva, blue-skinned, drinking dark poison",
+  "action": "holding poison to his lips, eyes closed",
+  "setting": "cosmic ocean background",
+  "lighting": "intense golden divine glow",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v009_close": {
+  "subject": "Mother Parvati, a fierce woman",
+  "action": "grabs Lord Shiva's throat to stop the poison",
+  "setting": "a stone temple floor with broken idols",
+  "lighting": "dramatic shadows from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v010_close": {
+  "subject": "the god Shiva with a glowing blue throat",
+  "action": "calm, serene expression, throat glowing blue",
+  "setting": "simple dark cosmic backdrop",
+  "lighting": "soft blue divine glow",
+  "medium": "photoreal",
+  "src": "owner",
+  "framing": "detail"
+ },
+ "v011_close": {
+  "subject": "the god Shiva, a bearded man in ash-streaked dhoti",
+  "action": "standing on a mountain peak, holding a burning lingam",
+  "setting": "snow-capped Himalayas at dusk",
+  "lighting": "crimson and gold firelight",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_close": {
+  "subject": "the god Shiva, a bearded man with a blue throat",
+  "action": "standing atop a mountain, holding a drum and a snake",
+  "setting": "a misty Himalayan peak with snow-capped rocks",
+  "lighting": "soft dawn light filtering through clouds",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_insert": {
+  "subject": "hands of the god Shiva, a bearded man with a blue throat",
+  "action": "standing atop a mountain, holding a drum and a snake",
+  "setting": "a misty Himalayan peak with snow-capped rocks",
+  "lighting": "soft dawn light filtering through clouds",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "insert"
  }
 }

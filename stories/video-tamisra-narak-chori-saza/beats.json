@@ -1,0 +1,607 @@
+[
+ {
+  "id": "v001",
+  "text": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "यह प्रश्न हर मनुष्य के मन में कभी न कभी उठता है",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "गरुड़ पुराण में भगवान विष्णु ने यही रहस्य पक्षीराज गरुड़ को बताया",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "उन्होंने कहा, हर आत्मा का हिसाब होता है, हर कर्म का फल मिलता है",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "उसका नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "पर वहाँ होता क्या है? आइए जानते हैं",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "पुराण कहते हैं कि मृत्यु के बाद यमराज के दूत आते हैं",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "वे आत्मा को बाँधकर दक्षिण दिशा की ओर ले जाते हैं",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "रास्ता लंबा है, न दीया है वहाँ, न सूरज की किरण",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "यही रास्ता तमिस्र नरक की ओर जाता है",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "जहाँ चोर भेजे जाते हैं, जिसने दूसरे का धन छीना",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "जिसने दूसरे की ज़मीन, घर या परिवार पर अन्याय किया",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "वहाँ घोर अंधकार है",
+  "intent": "punch",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "न दिशा दिखती है, न अपना ही हाथ",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "देह नहीं होती, फिर भी हर पीड़ा जीवित जैसी अनुभव होती है",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "यह मन की सज़ा है, लालच और मोह की सज़ा",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "पर क्यों सिर्फ़ अंधकार ही इतनी बड़ी सज़ा है?",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "दूसरे की नज़रों से छिपकर, रात के साये में, चुपके क़दमों से",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "जीवन में जो अंधकार चुनता है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "मृत्यु के बाद भी वही अंधकार उसका साथी बनता है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v023",
+  "text": "गरुड़ पुराण कहता है, जैसा कर्म, वैसा ही लोक",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "23",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v024",
+  "text": "यह केवल कल्पना नहीं, एक गहरी चेतावनी है",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "24",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v025",
+  "text": "कि हर छोटा-बड़ा अपराध कहीं न कहीं दर्ज होता है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "25",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v026",
+  "text": "पर पुराण यह भी कहता है, यह सज़ा अनंत नहीं है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "26",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v027",
+  "text": "जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "27",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v028",
+  "text": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "28",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v029",
+  "text": "गरुड़ पुराण में यमराज को धर्मराज भी कहा गया है",
+  "intent": "narrate",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "29",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v030",
+  "text": "वे निष्पक्ष हैं, किसी के साथ कोई भेदभाव नहीं करते",
+  "intent": "narrate",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "30",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v031",
+  "text": "हर आत्मा के सामने उसके अपने कर्मों का लेखा रखा जाता है",
+  "intent": "curious",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "31",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v032",
+  "text": "चित्रगुप्त हर अच्छे और बुरे कर्म का हिसाब लिखते हैं, कहते हैं पुराण",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "32",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v033",
+  "text": "वहाँ न धन काम आता है, न पद, न प्रतिष्ठा",
+  "intent": "narrate",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "33",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v034",
+  "text": "केवल कर्म ही साथ जाता है, और कुछ नहीं जाता",
+  "intent": "tense",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "34",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v035",
+  "text": "यही गरुड़ पुराण की सबसे गहरी शिक्षा मानी जाती है",
+  "intent": "reflective",
+  "chapter": "ch4",
+  "visual": {
+   "type": "painting",
+   "ref": "35",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v036",
+  "text": "आज के समय में चोरी के कई नए रूप हैं",
+  "intent": "narrate",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "36",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v037",
+  "text": "किसी का भरोसा चुराना, किसी की मेहनत का श्रेय ले लेना",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "37",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v038",
+  "text": "किसी के हक़ का हिस्सा दबा लेना, यह भी एक प्रकार की चोरी है",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "38",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v039",
+  "text": "गरुड़ पुराण की यह कथा आज भी उतनी ही सच्ची मानी जाती है",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "39",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v040",
+  "text": "क्योंकि नियम वही है, कर्म का हिसाब कभी नहीं भूलता",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "40",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v041",
+  "text": "इसलिए पुराण कहता है, जो जोड़ो वह ईमानदारी से जोड़ो",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "41",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v042",
+  "text": "जो तुम्हारा नहीं, उसे हाथ भी मत लगाओ",
+  "intent": "reflective",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "42",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v043",
+  "text": "यही सच्ची शांति का रास्ता माना गया है",
+  "intent": "tense",
+  "chapter": "ch5",
+  "visual": {
+   "type": "painting",
+   "ref": "43",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v044",
+  "text": "तो क्या गरुड़ पुराण केवल डराने के लिए यह कथा कहता है?",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "44",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v045",
+  "text": "नहीं, यह जगाने के लिए है",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "45",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v046",
+  "text": "यह बार-बार एक ही बात कहता है",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "46",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v047",
+  "text": "हर कर्म का फल इसी जन्म में शुरू हो जाता है",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "47",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v048",
+  "text": "जो आज ईमानदारी चुनता है, वह कल का डर नहीं पालता",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "48",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v049",
+  "text": "ईमानदारी से कमाया धन ही असली शांति देता है",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "49",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v050",
+  "text": "यही सनातन परंपरा की सबसे पुरानी सीख मानी जाती है",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "50",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v051",
+  "text": "कि हर कर्म लौटकर आता है, चाहे देर से ही सही",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "51",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v052",
+  "text": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "52",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v053",
+  "text": "हर एक, एक अलग पाप की कथा कहता है",
+  "intent": "reveal",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "53",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v054",
+  "text": "अगली कथा में हम अगले लोक की बात करेंगे",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "54",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v055",
+  "text": "तब तक, इस कथा को सहेज कर रखिए, और कथा से जुड़े रहिए",
+  "intent": "reflective",
+  "chapter": "ch6",
+  "visual": {
+   "type": "painting",
+   "ref": "55",
+   "mode": "reveal"
+  }
+ }
+]

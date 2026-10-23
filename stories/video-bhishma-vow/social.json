@@ -1,11 +1,11 @@
 {
  "story": "video-bhishma-vow",
  "format": "short",
- "generated": "2026-10-18T12:45:09.743Z",
+ "generated": "2026-10-21T16:47:49.151Z",
  "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
  "instagram": {
   "type": "REELS",
-  "caption": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?\n\nभीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#kathaaya #भीष्मकथा #महाभारत #kathaayastories #Kathaaya",
+  "caption": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?\n\nभीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\n🔎 भीष्मकथा · महाभारत · kathaayastories\n\nफ़ॉलो करें @kathaaya.stories — हर हफ़्ते नई कथा 🙏\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n\n#kathaaya #भीष्मकथा #महाभारत #kathaayastories #Kathaaya",
   "hashtags": [
    "#kathaaya",
    "#भीष्मकथा",
@@ -23,7 +23,7 @@
     "platform": "instagram",
     "name": "caption <= 2200 chars",
     "ok": true,
-    "detail": "472"
+    "detail": "682"
    },
    {
     "platform": "instagram",
@@ -77,7 +77,7 @@
  },
  "facebook": {
   "type": "REELS",
-  "description": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?\n\nभीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\n🔎 दुर्गा का जन्म · देवी महात्म्य · महिषासुर · नवरात्रि कथा\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#kathaaya #भीष्मकथा #महाभारत",
+  "description": "भीष्म ने ऐसी प्रतिज्ञा क्यों ली?\n\nभीष्म ने ऐसी प्रतिज्ञा क्यों ली? इस सवाल के पीछे एक बहुत बड़ा दांव छिपा है। जब सत्यवती को राजा बनना था, तब निषादराज को एक बड़ी चिंता सता रही थी।\n\n🔎 भीष्मकथा · महाभारत · kathaayastories\n\nकथा महाभारत (आदि पर्व) के अनुसार; अन्य परंपराओं और पुनर्कथनों में ब्योरे अलग मिलते हैं। आवाज़ और चित्र AI की मदद से बने हैं।\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n\n#kathaaya #भीष्मकथा #महाभारत",
   "hashtags": [
    "#kathaaya",
    "#भीष्मकथा",
@@ -101,7 +101,7 @@
     "platform": "facebook",
     "name": "description present, <= 2200 chars",
     "ok": true,
-    "detail": "394"
+    "detail": "606"
    },
    {
     "platform": "facebook",
@@ -119,12 +119,12 @@
     "platform": "facebook",
     "name": "file size <= 1000 MB",
     "ok": true,
-    "detail": "89 MB"
+    "detail": "88 MB"
    },
    {
     "platform": "facebook",
     "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
-    "ok": true,
+    "ok": false,
     "detail": "none"
    }
   ]

@@ -1,0 +1,327 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "hook",
+   "move": "panR",
+   "label": "गरुड़ पुराण के बारे में",
+   "reveal": "circle",
+   "fx": "title_behind",
+   "tone": "cold",
+   "hookFrom": "s1",
+   "autoTitle": "drone_push_in",
+   "title": "रुरु कौन हैं",
+   "titleSub": "गरुड़ पुराण की कथा",
+   "shots": [
+    {
+     "img": "s1",
+     "fx": "2.5d_parallax"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "pull",
+   "label": "धोखा देने वालों का लोक",
+   "reveal": "diamond",
+   "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v002_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "धोखेबाज़ के लिए नरक",
+   "reveal": "wipe",
+   "fx": "kinetography_cinemagraph",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "img": "s4",
+   "move": "panL",
+   "label": "रौरव नरक के बारे में",
+   "reveal": "circle",
+   "fx": "chromatic_glitch_wipe",
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "cut"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "scene4",
+   "move": "pull",
+   "label": "रुरु नाम के प्राणी",
+   "reveal": "diamond",
+   "fx": "mesh_ken_burns_3d",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "fx",
+  "params": {
+   "img": "s6",
+   "move": "push",
+   "label": "क्रोध में जलती आँखें",
+   "reveal": "wipe",
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v006_close",
+     "framing": "close",
+     "of": "s6",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "रुरु"
+   ],
+   "style": "extrude",
+   "bg": "embers",
+   "tone": "fire",
+   "transition": "zoom",
+   "autoStyle": "slam"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "cinema",
+  "params": {
+   "img": "scene6",
+   "move": "panR",
+   "label": "जीवन में दूसरों को तड़पाया",
+   "reveal": "circle",
+   "fx": "kinetography_cinemagraph",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "img": "s9",
+   "move": "pull",
+   "label": "कर्म के नियम से सिखाया जाता है",
+   "reveal": "diamond",
+   "fx": "crane_up_reveal",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "s9",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*क्या* रुरु असली जीव हैं?"
+   ],
+   "style": "glitch",
+   "label": "रुरु के अस्तित्व के सवाल",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "fx",
+  "params": {
+   "img": "s11",
+   "move": "pull",
+   "label": "परंपरा कहती है",
+   "behind": "प्रेत के जन्म का रहस्य",
+   "fx": "speed_ramp_punch",
+   "tone": "fire",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "s11",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "panL",
+   "label": "आत्मा के छल की याद",
+   "fx": "puppet_warp_breathing",
+   "tone": "fire",
+   "transition": "cut"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "quote",
+  "params": {
+   "text": "यह कथा डर फैलाने के लिए नहीं, सतर्क करने के लिए है",
+   "by": "",
+   "bg": "temple-jali",
+   "tone": "gold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "fx",
+  "params": {
+   "img": "s14",
+   "move": "push",
+   "label": "ईमानदारी का फल",
+   "fx": "matte_painting_extension",
+   "tone": "gold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "s14",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "cinema",
+  "params": {
+   "img": "scene11",
+   "move": "pull",
+   "label": "सनातन परंपरा का दूसरा पाठ",
+   "fx": "mesh_ken_burns_3d",
+   "tone": "gold",
+   "transition": "dissolve"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "cinema",
+  "params": {
+   "img": "scene11",
+   "move": "panL",
+   "label": "रौरव नरक की बात",
+   "fx": "parallax_occlusion_3d",
+   "sticker": "sparkle",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "fx",
+  "params": {
+   "img": "s17",
+   "move": "panR",
+   "label": "तीसरे लोक की ओर बढ़े",
+   "fx": "puppet_warp_breathing",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "s17",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ }
+]

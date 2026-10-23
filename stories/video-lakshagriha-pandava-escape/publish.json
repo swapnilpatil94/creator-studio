@@ -1,7 +1,11 @@
 {
  "pinnedComment": "आपको इस कथा में सबसे अलग क्या लगा? नीचे लिखिए 👇 और अगले भाग के लिए सब्सक्राइब कीजिए।",
  "chapters": [
-  "0:00 शुरुआत"
+  "0:00 साज़िश की शुरुआत",
+  "1:26 लाक्षागृह की रचना",
+  "2:03 विदाई और विदुर की चेतावनी",
+  "3:10 सुरंग",
+  "3:43 आग और पलायन"
  ],
  "story": "video-lakshagriha-pandava-escape",
  "channel": "kathaaya",
@@ -13,7 +17,7 @@
   }
  ],
  "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी? | KATHAAYA",
- "description": "पांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले? यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।\n\nपांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले? यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।\n\n⏱ अध्याय:\n0:00 शुरुआत\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #पांडव #महाभारत #लाक्षागृह",
+ "description": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?\n\nपांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचकर कैसे निकले? यह कथा महाभारत के आदि पर्व में, खंड एक सौ तैंतालीस से एक सौ इक्यावन तक आती है।\n\n⏱ अध्याय:\n0:00 साज़िश की शुरुआत\n1:26 लाक्षागृह की रचना\n2:03 विदाई और विदुर की चेतावनी\n3:10 सुरंग\n3:43 आग और पलायन\n\nकथा महाभारत (आदि पर्व) के अनुसार; पुनर्कथनों और लोक-परंपराओं में ब्योरे अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #पांडव #महाभारत #लाक्षागृह",
  "tags": [
   "पांडव",
   "महाभारत",
@@ -83,8 +87,8 @@
   },
   {
    "name": "primary keyword in first 160 chars of description",
-   "ok": false,
-   "detail": "first 160: पांडवों को ज़िंदा जलाने की योजना बनी, तो वे लाक्षागृह से बचक…"
+   "ok": true,
+   "detail": "first 160: लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?  पांडवों को…"
   },
   {
    "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
@@ -94,7 +98,7 @@
   {
    "name": "description <= 5000 bytes",
    "ok": true,
-   "detail": 2016
+   "detail": 1962
   },
   {
    "name": "tags <= 15 and <= 500 chars",
@@ -118,8 +122,8 @@
   },
   {
    "name": "chapters valid (first 0:00, >= 3, each >= 10 s, ascending)",
-   "ok": false,
-   "detail": "1 chapters"
+   "ok": true,
+   "detail": "5 chapters"
   },
   {
    "name": "chapter titles are not bare labels",
@@ -132,9 +136,9 @@
    "detail": 4
   },
   {
-   "name": "picture credits listed",
-   "ok": false,
-   "detail": "CREDITS.md -> description"
+   "name": "picture credits listed (only when the film uses borrowed public-domain art)",
+   "ok": true,
+   "detail": "no CREDITS.md: all-original AI art, nothing to credit"
   },
   {
    "name": "synthetic-media disclosure set",
@@ -194,5 +198,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-19T11:45:16.398Z"
+ "generated": "2026-10-22T14:56:33.282Z"
 }

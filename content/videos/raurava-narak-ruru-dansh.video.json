@@ -1,0 +1,49 @@
+{
+ "id": "raurava-narak-ruru-dansh.video",
+ "format": "video",
+ "video_format": "short",
+ "slug": "raurava-narak-ruru-dansh",
+ "topic": "raurava-narak-ruru-dansh",
+ "language": "hi",
+ "status": "approved",
+ "hook": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?",
+ "title": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी नरकों की सूची मिलती है",
+ "tradition_note": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; रौरव नरक का विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#रौरवनरक"
+ ],
+ "claims": [
+  {
+   "text": "रौरव नरक गरुड़ पुराण की नरक-सूची में दूसरा नरक माना जाता है, जो छल और धोखे से जुड़े पापों के लिए है",
+   "en": "Raurava is traditionally listed as the second of the naraka realms in the Garuda Purana/Puranic tradition, associated with deceit",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  },
+  {
+   "text": "रौरव नरक की कथा में रुरु नाम के भयंकर प्राणियों का उल्लेख मिलता है, जो पापियों को दंड देते हैं",
+   "en": "The name \"Raurava\" is traditionally linked to fierce creatures called \"ruru\" who torment sinners there",
+   "status": "traditional-account",
+   "source": "puranic-naraka-tradition"
+  },
+  {
+   "text": "गरुड़ पुराण में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition describes 28 types of naraka",
+   "status": "verified",
+   "source": "bhagavata-purana-5.26"
+  }
+ ],
+ "thumb": {
+  "headline": "रुरु कौन हैं?",
+  "support": "गरुड़ पुराण की कथा",
+  "style": "red",
+  "art": "fierce fanged beast in darkness | menace and judgment | glowing red eyes | endless black cavern",
+  "scene": null
+ },
+ "created": "2026-10-22"
+}

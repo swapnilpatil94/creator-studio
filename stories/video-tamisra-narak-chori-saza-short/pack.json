@@ -1,0 +1,235 @@
+{
+ "slug": "tamisra-narak-chori-saza-short",
+ "format": "short",
+ "title": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है?",
+ "thumb": "यमदूत कहाँ ले जाते हैं?",
+ "thumbSupport": "गरुड़ पुराण की कथा",
+ "thumbStyle": "teal",
+ "thumbArt": "thief figure frozen in shadow | fear and realization | glowing eyes of Yamadutas in darkness | endless black void",
+ "thumbScene": null,
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी वर्णित",
+ "tradition": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; तमिस्र नरक का यही मूल विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#तमिस्रनरक"
+ ],
+ "look": {
+  "mood": "sorrow",
+  "grade": "film",
+  "captions": "box",
+  "transition": "dissolve",
+  "motif": "ink",
+  "bg": "ink-clouds",
+  "hue": "20"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "गरुड़ पुराण कहता है, हर कर्म का हिसाब होता है",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "intent": "tense",
+   "accent": "चुराता",
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "पुराण कहते हैं, यमराज के दूत आत्मा को वहाँ ले जाते हैं",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "न दीया है वहाँ, न सूरज की किरण, केवल घोर अंधकार",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "वहाँ चोर को कोड़ों से दंड मिलता है",
+   "intent": "punch",
+   "accent": "चोर",
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "दूसरे की नज़रों से छिपकर, रात के साये में",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "तो क्या यह सज़ा सदा के लिए है?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "नहीं, जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "यह कथा डराने के लिए नहीं, जगाने के लिए है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "यही सनातन परंपरा की सबसे पुरानी सीख है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "अगली कथा में अगले लोक की बात करेंगे, तब तक कथा से जुड़े रहिए",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "glowing human soul",
+   "action": "rising from physical body",
+   "setting": "dark forest clearing",
+   "lighting": "dim silver moonlight"
+  },
+  "4": {
+   "subject": "hooded Yamadutas",
+   "action": "binding a shadowy figure",
+   "setting": "misty southern pathway",
+   "lighting": "faint grey twilight"
+  },
+  "6": {
+   "subject": "bound soul",
+   "action": "walking through endless dark corridor",
+   "setting": "formless void",
+   "lighting": "near total darkness"
+  },
+  "7": {
+   "subject": "thief figure",
+   "action": "clutching stolen pouch",
+   "setting": "village rooftop at night",
+   "lighting": "pale moonlight shadows"
+  },
+  "9": {
+   "subject": "cloaked thief",
+   "action": "sneaking past sleeping household",
+   "setting": "dim village alley",
+   "lighting": "single flickering lamp"
+  },
+  "11": {
+   "subject": "soul",
+   "action": "stepping toward distant light",
+   "setting": "threshold between dark and dawn",
+   "lighting": "soft golden horizon"
+  },
+  "14": {
+   "subject": "honest merchant",
+   "action": "counting coins openly",
+   "setting": "sunlit marketplace",
+   "lighting": "bright clear daylight"
+  },
+  "17": {
+   "subject": "glowing diya lamp",
+   "action": "burning steadily",
+   "setting": "simple home altar",
+   "lighting": "warm steady flame"
+  }
+ },
+ "visuals": {
+  "1": {
+   "comp": "cinema",
+   "fx": "drone_push_in"
+  },
+  "7": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "ink-clouds",
+   "text": "घोर अंधकार"
+  },
+  "13": {
+   "comp": "quote",
+   "bg": "temple-jali",
+   "text": "यह जगाने के लिए है"
+  }
+ },
+ "claims": [
+  {
+   "text": "गरुड़ पुराण परंपरागत रूप से भगवान विष्णु द्वारा गरुड़ को सुनाया गया माना जाता है",
+   "en": "traditionally narrated by Vishnu to Garuda",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  },
+  {
+   "text": "तमिस्र नरक पुराणों में चोरी के पाप के लिए वर्णित प्रथम नरकों में से एक है",
+   "en": "Tamisra is traditionally described as a hell for theft in Puranic naraka lists",
+   "status": "verified",
+   "source": "vishnu-purana-bhagavata-purana-naraka-list"
+  },
+  {
+   "text": "पुराणों में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition (Bhagavata Purana, Vishnu Purana, Devi Bhagavata Purana) describes 28 types of naraka",
+   "status": "verified",
+   "source": "bhagavata-purana-5.26"
+  }
+ ],
+ "chapters": []
+}

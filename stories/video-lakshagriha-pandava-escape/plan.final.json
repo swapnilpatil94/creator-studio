@@ -7,7 +7,8 @@
    "lines": [
     "पांडवों को ज़िंदा जलाने की योजना बनी"
    ],
-   "style": "slam"
+   "style": "slam",
+   "tone": "cold"
   },
   "from": "rules"
  },
@@ -20,7 +21,9 @@
     "महाभारत, आदि पर्व: *लाक्षागृह*"
    ],
    "style": "mask",
-   "bg": "temple-jali"
+   "bg": "temple-jali",
+   "tone": "cold",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -31,7 +34,18 @@
   "params": {
    "img": "s3",
    "move": "panL",
-   "fx": "depth_fog_haze"
+   "fx": "depth_fog_haze",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "s3",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -44,6 +58,19 @@
    "move": "panR",
    "fx": "handheld_breathing_shake",
    "sticker": "sparkle",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "drone_push_in",
+     "clip": "v004_v004_close",
+     "clip_n": 147
+    }
+   ],
+   "autoShots": true,
    "clip": "v004",
    "clip_n": 147
   },
@@ -57,6 +84,19 @@
    "img": "s5",
    "move": "push",
    "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "s5",
+     "fx": "drone_push_in",
+     "clip": "v005_v005_close",
+     "clip_n": 142
+    }
+   ],
+   "autoShots": true,
    "clip": "v005",
    "clip_n": 142
   },
@@ -72,7 +112,9 @@
    ],
    "style": "slam",
    "bg": "ink-clouds",
-   "mark": "underline"
+   "mark": "underline",
+   "tone": "cold",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -84,6 +126,19 @@
    "img": "scene2",
    "move": "panL",
    "fx": "parallax_occlusion_3d",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in",
+     "clip": "v007_v007_close",
+     "clip_n": 141
+    }
+   ],
+   "autoShots": true,
    "clip": "v007",
    "clip_n": 141
   },
@@ -96,7 +151,9 @@
   "params": {
    "text": "उन्होंने पूछा कि अगर हम पांडवों को निकालेंगे, तो क्या प्रजा हमें मित्रों समेत मार नहीं डालेगी?",
    "by": "",
-   "bg": "gold-bokeh"
+   "bg": "gold-bokeh",
+   "tone": "cold",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -107,7 +164,18 @@
   "params": {
    "img": "scene3",
    "move": "push",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -121,7 +189,9 @@
    ],
    "style": "spring",
    "bg": "storm",
-   "mark": "box"
+   "mark": "box",
+   "tone": "cold",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -132,7 +202,18 @@
   "params": {
    "img": "scene4",
    "move": "panL",
-   "fx": "shadow_play_reveal"
+   "fx": "shadow_play_reveal",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -144,6 +225,19 @@
    "img": "scene4",
    "move": "panR",
    "fx": "dolly_zoom_vertigo",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in",
+     "clip": "v012_v012_close",
+     "clip_n": 142
+    }
+   ],
+   "autoShots": true,
    "clip": "v012",
    "clip_n": 142
   },
@@ -157,6 +251,19 @@
    "img": "s13",
    "move": "push",
    "fx": "drone_orbit_180",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v013_close",
+     "framing": "close",
+     "of": "s13",
+     "fx": "drone_push_in",
+     "clip": "v013_v013_close",
+     "clip_n": 140
+    }
+   ],
+   "autoShots": true,
    "clip": "v013",
    "clip_n": 140
   },
@@ -169,7 +276,18 @@
   "params": {
    "img": "scene5",
    "move": "pull",
-   "fx": "kinetography_cinemagraph"
+   "fx": "kinetography_cinemagraph",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -180,7 +298,9 @@
   "params": {
    "text": "युधिष्ठिर राजा का इरादा समझ गए, पर खुद को कमज़ोर और मित्रहीन जानकर उन्होंने कहा, जैसी आज्ञा।",
    "by": "",
-   "bg": "temple-jali"
+   "bg": "temple-jali",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -193,6 +313,19 @@
    "move": "panR",
    "fx": "crane_up_reveal",
    "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in",
+     "clip": "v016_v016_close",
+     "clip_n": 137
+    }
+   ],
+   "autoShots": true,
    "clip": "v016",
    "clip_n": 137
   },
@@ -206,6 +339,19 @@
    "img": "s17",
    "move": "push",
    "fx": "depth_rack_focus",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "s17",
+     "fx": "drone_push_in",
+     "clip": "v017_v017_close",
+     "clip_n": 140
+    }
+   ],
+   "autoShots": true,
    "clip": "v017",
    "clip_n": 140
   },
@@ -221,7 +367,9 @@
    ],
    "style": "glitch",
    "bg": "embers",
-   "mark": "circle"
+   "mark": "circle",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -232,7 +380,18 @@
   "params": {
    "img": "s19",
    "move": "panL",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "s19",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -246,7 +405,9 @@
    ],
    "style": "slam",
    "bg": "embers",
-   "mark": "underline"
+   "mark": "underline",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -257,7 +418,9 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "fx": "lightning_flash"
+   "fx": "lightning_flash",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -270,6 +433,19 @@
    "move": "pull",
    "fx": "drone_pull_out_reveal",
    "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v022_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v022_v022_close",
+     "clip_n": 147
+    }
+   ],
+   "autoShots": true,
    "clip": "v022",
    "clip_n": 147
   },
@@ -283,6 +459,19 @@
    "img": "s23",
    "move": "panL",
    "fx": "crane_down",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v023_close",
+     "framing": "close",
+     "of": "s23",
+     "fx": "drone_push_in",
+     "clip": "v023_v023_close",
+     "clip_n": 142
+    }
+   ],
+   "autoShots": true,
    "clip": "v023",
    "clip_n": 142
   },
@@ -295,7 +484,18 @@
   "params": {
    "img": "scene7",
    "move": "panR",
-   "fx": "eye_glow_energy_pulse"
+   "fx": "eye_glow_energy_pulse",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v024_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -308,7 +508,9 @@
     "*हम भी चलेंगे*"
    ],
    "style": "wave",
-   "bg": "mountain-mist"
+   "bg": "mountain-mist",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -320,6 +522,19 @@
    "img": "scene7",
    "move": "pull",
    "fx": "2.5d_parallax",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v026_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v026_v026_close",
+     "clip_n": 143
+    }
+   ],
+   "autoShots": true,
    "clip": "v026",
    "clip_n": 143
   },
@@ -335,7 +550,9 @@
    ],
    "style": "flip",
    "bg": "nebula",
-   "mark": "circle"
+   "mark": "circle",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -347,7 +564,9 @@
    "img": "scene7",
    "move": "panR",
    "fx": "depth_fog_haze",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -359,6 +578,19 @@
    "img": "s29",
    "move": "push",
    "fx": "drone_fpv_flythrough",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v029_close",
+     "framing": "close",
+     "of": "s29",
+     "fx": "drone_push_in",
+     "clip": "v029_v029_close",
+     "clip_n": 124
+    }
+   ],
+   "autoShots": true,
    "clip": "v029",
    "clip_n": 124
   },
@@ -372,6 +604,19 @@
    "img": "scene7",
    "move": "pull",
    "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v030_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v030_v030_close",
+     "clip_n": 145
+    }
+   ],
+   "autoShots": true,
    "clip": "v030",
    "clip_n": 145
   },
@@ -387,6 +632,19 @@
    "img": "s31",
    "move": "push",
    "fx": "handheld_breathing_shake",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v031_close",
+     "framing": "close",
+     "of": "s31",
+     "fx": "drone_push_in",
+     "clip": "v031_v031_close",
+     "clip_n": 166
+    }
+   ],
+   "autoShots": true,
    "clip": "v031",
    "clip_n": 166
   },
@@ -401,7 +659,9 @@
     "घी और लाख की *गंध*"
    ],
    "style": "glitch",
-   "bg": "yantra"
+   "bg": "yantra",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -412,7 +672,18 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "fx": "eye_glow_energy_pulse"
+   "fx": "eye_glow_energy_pulse",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v033_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -423,7 +694,9 @@
   "params": {
    "text": "भीम ने कहा कि तब तो हमें पहले वाले स्थान पर लौट जाना चाहिए।",
    "by": "",
-   "bg": "ink-clouds"
+   "bg": "ink-clouds",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -437,7 +710,9 @@
    ],
    "style": "mask",
    "bg": "water-ripples",
-   "mark": "highlight"
+   "mark": "highlight",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -450,7 +725,9 @@
    "title": "तभी विदुर का भेजा हुआ एक कुशल खनिक चुपके",
    "img": "s36",
    "move": "push",
-   "fx": "shadow_play_reveal"
+   "fx": "shadow_play_reveal",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -462,6 +739,19 @@
    "img": "scene7",
    "move": "push",
    "fx": "depth_rack_focus",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v037_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v037_v037_close",
+     "clip_n": 126
+    }
+   ],
+   "autoShots": true,
    "clip": "v037",
    "clip_n": 126
   },
@@ -477,7 +767,9 @@
    ],
    "style": "slam",
    "bg": "storm",
-   "mark": "circle"
+   "mark": "circle",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -489,6 +781,19 @@
    "img": "scene7",
    "move": "panL",
    "fx": "drone_top_down_bird_eye",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v039_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v039_v039_close",
+     "clip_n": 132
+    }
+   ],
+   "autoShots": true,
    "clip": "v039",
    "clip_n": 132
   },
@@ -502,7 +807,9 @@
    "img": "s40",
    "move": "panR",
    "fx": "infinite_zoom_droste",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip"
   },
   "from": "rules"
  },
@@ -513,7 +820,18 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "fx": "kinetography_cinemagraph"
+   "fx": "kinetography_cinemagraph",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v041_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -526,7 +844,9 @@
     "एक वर्ष का *नाटक*"
    ],
    "style": "spring",
-   "bg": "gold-bokeh"
+   "bg": "gold-bokeh",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -536,7 +856,9 @@
   "comp": "chapter",
   "params": {
    "kicker": "ch5",
-   "title": "तब युधिष्ठिर ने कहा कि उस दुष्ट को ठीक ध"
+   "title": "तब युधिष्ठिर ने कहा कि उस दुष्ट को ठीक ध",
+   "tone": "ember",
+   "transition": "zoom"
   },
   "from": "rules"
  },
@@ -548,7 +870,18 @@
    "value": 5,
    "label": "कुंती ने एक रात ब्राह्मणों को भोज कराया",
    "img": "s44",
-   "move": "push"
+   "move": "push",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v044_close",
+     "framing": "close",
+     "of": "s44",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -559,7 +892,9 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "fx": "shadow_play_reveal"
+   "fx": "shadow_play_reveal",
+   "tone": "ember",
+   "transition": "cut"
   },
   "from": "rules"
  },
@@ -571,7 +906,18 @@
    "img": "scene7",
    "move": "pull",
    "fx": "eye_glow_energy_pulse",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v046_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -583,6 +929,19 @@
    "img": "s47",
    "move": "panL",
    "fx": "dolly_zoom_vertigo",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v047_close",
+     "framing": "close",
+     "of": "s47",
+     "fx": "drone_push_in",
+     "clip": "v047_v047_close",
+     "clip_n": 130
+    }
+   ],
+   "autoShots": true,
    "clip": "v047",
    "clip_n": 130
   },
@@ -596,6 +955,19 @@
    "img": "scene7",
    "move": "panR",
    "fx": "drone_pull_out_reveal",
+   "tone": "fire",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v048_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v048_v048_close",
+     "clip_n": 137
+    }
+   ],
+   "autoShots": true,
    "clip": "v048",
    "clip_n": 137
   },
@@ -608,7 +980,18 @@
   "params": {
    "img": "scene7",
    "move": "push",
-   "fx": "volumetric_god_rays"
+   "fx": "volumetric_god_rays",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v049_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -619,7 +1002,18 @@
   "params": {
    "img": "scene7",
    "move": "pull",
-   "fx": "sacred_geometry_carve"
+   "fx": "sacred_geometry_carve",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v050_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -630,7 +1024,18 @@
   "params": {
    "img": "scene7",
    "move": "panL",
-   "fx": "double_exposure_cosmos"
+   "fx": "double_exposure_cosmos",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v051_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -642,7 +1047,9 @@
    "img": "s52",
    "move": "panR",
    "fx": "puppet_warp_breathing",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "fire",
+   "transition": "cut"
   },
   "from": "rules"
  },
@@ -654,6 +1061,19 @@
    "img": "s53",
    "move": "push",
    "fx": "drone_pull_out_reveal",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v053_close",
+     "framing": "close",
+     "of": "s53",
+     "fx": "drone_push_in",
+     "clip": "v053_v053_close",
+     "clip_n": 213
+    }
+   ],
+   "autoShots": true,
    "clip": "v053",
    "clip_n": 213
   },
@@ -666,7 +1086,18 @@
   "params": {
    "img": "scene7",
    "move": "pull",
-   "fx": "day_to_night_timelapse"
+   "fx": "day_to_night_timelapse",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v054_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -677,7 +1108,18 @@
   "params": {
    "img": "scene7",
    "move": "panL",
-   "fx": "volumetric_god_rays"
+   "fx": "volumetric_god_rays",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v055_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -688,7 +1130,18 @@
   "params": {
    "img": "s56",
    "move": "panR",
-   "fx": "sacred_geometry_carve"
+   "fx": "sacred_geometry_carve",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v056_close",
+     "framing": "close",
+     "of": "s56",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -700,6 +1153,19 @@
    "img": "scene7",
    "move": "push",
    "fx": "drone_top_down_bird_eye",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v057_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in",
+     "clip": "v057_v057_close",
+     "clip_n": 200
+    }
+   ],
+   "autoShots": true,
    "clip": "v057",
    "clip_n": 200
   },
@@ -713,7 +1179,18 @@
    "img": "scene7",
    "move": "pull",
    "fx": "infinite_zoom_droste",
-   "sticker": "sparkle"
+   "sticker": "sparkle",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v058_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "from": "rules"
  },
@@ -725,7 +1202,9 @@
    "lines": [
     "सेव *करें*, और फ़ॉलो करें"
    ],
-   "style": "spring"
+   "style": "spring",
+   "tone": "gold",
+   "transition": "zoom"
   },
   "from": "rules"
  }

@@ -1,0 +1,618 @@
+{
+ "slug": "tamisra-narak-chori-saza",
+ "format": "long",
+ "title": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है?",
+ "thumb": "यमदूत चोर को कहाँ ले जाते हैं?",
+ "thumbSupport": "गरुड़ पुराण की कथा",
+ "thumbStyle": "teal",
+ "thumbArt": "thief figure frozen in shadow | fear and realization | glowing eyes of Yamadutas in darkness | endless black void",
+ "thumbScene": null,
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी वर्णित",
+ "tradition": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; तमिस्र नरक का यही मूल विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#तमिस्रनरक"
+ ],
+ "look": {
+  "mood": "sorrow",
+  "grade": "film",
+  "captions": "box",
+  "transition": "dissolve",
+  "motif": "ink",
+  "bg": "ink-clouds",
+  "hue": "20"
+ },
+ "beats": [
+  {
+   "n": 1,
+   "text": "जब आत्मा शरीर छोड़ती है, तो वह कहाँ जाती है?",
+   "intent": "hook",
+   "accent": null,
+   "chapter": "परिचय: मृत्यु के बाद का रहस्य"
+  },
+  {
+   "n": 2,
+   "text": "यह प्रश्न हर मनुष्य के मन में कभी न कभी उठता है",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "गरुड़ पुराण में भगवान विष्णु ने यही रहस्य पक्षीराज गरुड़ को बताया",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "उन्होंने कहा, हर आत्मा का हिसाब होता है, हर कर्म का फल मिलता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "और जो दूसरों का धन चुराता है, उसके लिए एक विशेष लोक है",
+   "intent": "tense",
+   "accent": "चुराता",
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "उसका नाम है तमिस्र नरक, अर्थात घोर अंधकार का लोक",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "पर वहाँ होता क्या है? आइए जानते हैं",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "पुराण कहते हैं कि मृत्यु के बाद यमराज के दूत आते हैं",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": "तमिस्र की राह: अंधकार में यात्रा"
+  },
+  {
+   "n": 9,
+   "text": "वे आत्मा को बाँधकर दक्षिण दिशा की ओर ले जाते हैं",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "रास्ता लंबा है, न दीया है वहाँ, न सूरज की किरण",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "यही रास्ता तमिस्र नरक की ओर जाता है",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "जहाँ चोर भेजे जाते हैं, जिसने दूसरे का धन छीना",
+   "intent": null,
+   "accent": "चोर",
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "जिसने दूसरे की ज़मीन, घर या परिवार पर अन्याय किया",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "वहाँ घोर अंधकार है",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "न दिशा दिखती है, न अपना ही हाथ",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "देह नहीं होती, फिर भी हर पीड़ा जीवित जैसी अनुभव होती है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "यह मन की सज़ा है, लालच और मोह की सज़ा",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "पर क्यों सिर्फ़ अंधकार ही इतनी बड़ी सज़ा है?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "क्योंकि पुराण कहता है, चोर हमेशा अंधेरे में ही काम करता है",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": "अंधकार का रहस्य"
+  },
+  {
+   "n": 20,
+   "text": "दूसरे की नज़रों से छिपकर, रात के साये में, चुपके क़दमों से",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "जीवन में जो अंधकार चुनता है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "मृत्यु के बाद भी वही अंधकार उसका साथी बनता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 23,
+   "text": "गरुड़ पुराण कहता है, जैसा कर्म, वैसा ही लोक",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 24,
+   "text": "यह केवल कल्पना नहीं, एक गहरी चेतावनी है",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 25,
+   "text": "कि हर छोटा-बड़ा अपराध कहीं न कहीं दर्ज होता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 26,
+   "text": "पर पुराण यह भी कहता है, यह सज़ा अनंत नहीं है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 27,
+   "text": "जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 28,
+   "text": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 29,
+   "text": "गरुड़ पुराण में यमराज को धर्मराज भी कहा गया है",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": "यमराज का न्याय"
+  },
+  {
+   "n": 30,
+   "text": "वे निष्पक्ष हैं, किसी के साथ कोई भेदभाव नहीं करते",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 31,
+   "text": "हर आत्मा के सामने उसके अपने कर्मों का लेखा रखा जाता है",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 32,
+   "text": "चित्रगुप्त हर अच्छे और बुरे कर्म का हिसाब लिखते हैं, कहते हैं पुराण",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 33,
+   "text": "वहाँ न धन काम आता है, न पद, न प्रतिष्ठा",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 34,
+   "text": "केवल कर्म ही साथ जाता है, और कुछ नहीं जाता",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 35,
+   "text": "यही गरुड़ पुराण की सबसे गहरी शिक्षा मानी जाती है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 36,
+   "text": "आज के समय में चोरी के कई नए रूप हैं",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": "आज के समय में इसका अर्थ"
+  },
+  {
+   "n": 37,
+   "text": "किसी का भरोसा चुराना, किसी की मेहनत का श्रेय ले लेना",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 38,
+   "text": "किसी के हक़ का हिस्सा दबा लेना, यह भी एक प्रकार की चोरी है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 39,
+   "text": "गरुड़ पुराण की यह कथा आज भी उतनी ही सच्ची मानी जाती है",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 40,
+   "text": "क्योंकि नियम वही है, कर्म का हिसाब कभी नहीं भूलता",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 41,
+   "text": "इसलिए पुराण कहता है, जो जोड़ो वह ईमानदारी से जोड़ो",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 42,
+   "text": "जो तुम्हारा नहीं, उसे हाथ भी मत लगाओ",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 43,
+   "text": "यही सच्ची शांति का रास्ता माना गया है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 44,
+   "text": "तो क्या गरुड़ पुराण केवल डराने के लिए यह कथा कहता है?",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": "यह कथा हमें क्या सिखाती है"
+  },
+  {
+   "n": 45,
+   "text": "नहीं, यह जगाने के लिए है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 46,
+   "text": "यह बार-बार एक ही बात कहता है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 47,
+   "text": "हर कर्म का फल इसी जन्म में शुरू हो जाता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 48,
+   "text": "जो आज ईमानदारी चुनता है, वह कल का डर नहीं पालता",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 49,
+   "text": "ईमानदारी से कमाया धन ही असली शांति देता है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 50,
+   "text": "यही सनातन परंपरा की सबसे पुरानी सीख मानी जाती है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 51,
+   "text": "कि हर कर्म लौटकर आता है, चाहे देर से ही सही",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 52,
+   "text": "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 53,
+   "text": "हर एक, एक अलग पाप की कथा कहता है",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 54,
+   "text": "अगली कथा में हम अगले लोक की बात करेंगे",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 55,
+   "text": "तब तक, इस कथा को सहेज कर रखिए, और कथा से जुड़े रहिए",
+   "intent": null,
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {
+  "1": {
+   "subject": "glowing human soul",
+   "action": "rising from physical body",
+   "setting": "dark forest clearing",
+   "lighting": "dim silver moonlight"
+  },
+  "3": {
+   "subject": "Lord Vishnu and Garuda",
+   "action": "seated in conversation",
+   "setting": "celestial golden chamber",
+   "lighting": "soft radiant glow"
+  },
+  "6": {
+   "subject": "hooded Yamadutas",
+   "action": "binding a shadowy figure",
+   "setting": "misty southern pathway",
+   "lighting": "faint grey twilight"
+  },
+  "9": {
+   "subject": "thief figure",
+   "action": "clutching stolen pouch",
+   "setting": "village rooftop at night",
+   "lighting": "pale moonlight shadows"
+  },
+  "11": {
+   "subject": "bound soul",
+   "action": "walking through endless dark corridor",
+   "setting": "formless void",
+   "lighting": "near total darkness"
+  },
+  "16": {
+   "subject": "single soul",
+   "action": "surrounded by closing shadows",
+   "setting": "featureless black expanse",
+   "lighting": "single distant glimmer"
+  },
+  "19": {
+   "subject": "cloaked thief",
+   "action": "sneaking past sleeping household",
+   "setting": "dim village alley",
+   "lighting": "single flickering lamp"
+  },
+  "22": {
+   "subject": "same soul",
+   "action": "mirrored by surrounding darkness",
+   "setting": "endless black horizon",
+   "lighting": "faint starlight above"
+  },
+  "24": {
+   "subject": "ancient palm-leaf scroll",
+   "action": "unrolling with glowing script",
+   "setting": "stone temple interior",
+   "lighting": "warm candlelight"
+  },
+  "29": {
+   "subject": "Yamaraj enthroned",
+   "action": "observing silently",
+   "setting": "vast dark judgment hall",
+   "lighting": "cool silver glow"
+  },
+  "32": {
+   "subject": "Chitragupta",
+   "action": "writing in a great ledger",
+   "setting": "dim archive chamber",
+   "lighting": "single oil lamp"
+  },
+  "35": {
+   "subject": "soul",
+   "action": "stepping toward distant light",
+   "setting": "threshold between dark and dawn",
+   "lighting": "soft golden horizon"
+  },
+  "38": {
+   "subject": "elder sage",
+   "action": "teaching a listening child",
+   "setting": "riverside temple steps",
+   "lighting": "warm sunset glow"
+  },
+  "41": {
+   "subject": "honest merchant",
+   "action": "counting coins openly",
+   "setting": "sunlit marketplace",
+   "lighting": "bright clear daylight"
+  },
+  "43": {
+   "subject": "farmer",
+   "action": "returning a lost pouch",
+   "setting": "village path",
+   "lighting": "gentle morning light"
+  },
+  "47": {
+   "subject": "storyteller silhouette",
+   "action": "gesturing toward the horizon",
+   "setting": "open temple courtyard",
+   "lighting": "golden dusk light"
+  },
+  "51": {
+   "subject": "modern figure silhouette",
+   "action": "standing at a quiet crossroads",
+   "setting": "city street at dusk",
+   "lighting": "mixed lamplight and shadow"
+  },
+  "55": {
+   "subject": "glowing diya lamp",
+   "action": "burning steadily",
+   "setting": "simple home altar",
+   "lighting": "warm steady flame"
+  }
+ },
+ "visuals": {
+  "1": {
+   "comp": "cinema",
+   "fx": "drone_push_in"
+  },
+  "6": {
+   "comp": "cinema",
+   "fx": "handheld_breathing_shake"
+  },
+  "14": {
+   "comp": "kinetic",
+   "style": "slam",
+   "bg": "ink-clouds",
+   "text": "घोर अंधकार"
+  },
+  "19": {
+   "comp": "cinema",
+   "fx": "depth_fog_haze"
+  },
+  "24": {
+   "comp": "cinema",
+   "fx": "volumetric_god_rays"
+  },
+  "32": {
+   "comp": "cinema",
+   "fx": "depth_rack_focus"
+  },
+  "39": {
+   "comp": "quote",
+   "bg": "temple-jali",
+   "text": "क्या यह केवल डराने के लिए है?"
+  },
+  "42": {
+   "comp": "kinetic",
+   "style": "wave",
+   "bg": "gold-bokeh",
+   "text": "ईमानदारी ही असली शांति"
+  },
+  "47": {
+   "comp": "cinema",
+   "fx": "day_to_night_timelapse"
+  }
+ },
+ "claims": [
+  {
+   "text": "गरुड़ पुराण परंपरागत रूप से भगवान विष्णु द्वारा गरुड़ को सुनाया गया माना जाता है",
+   "en": "traditionally narrated by Vishnu to Garuda",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  },
+  {
+   "text": "तमिस्र नरक पुराणों में चोरी के पाप के लिए वर्णित प्रथम नरकों में से एक है",
+   "en": "Tamisra is traditionally described as a hell for theft in Puranic naraka lists",
+   "status": "verified",
+   "source": "vishnu-purana-bhagavata-purana-naraka-list"
+  },
+  {
+   "text": "पुराणों में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition (Bhagavata Purana, Vishnu Purana, Devi Bhagavata Purana) describes 28 types of naraka",
+   "status": "verified",
+   "source": "bhagavata-purana-5.26"
+  },
+  {
+   "text": "चित्रगुप्त को कर्मों का लेखा रखने वाला देवता माना जाता है",
+   "en": "Chitragupta is traditionally regarded as the deity who records every soul's deeds",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "परिचय: मृत्यु के बाद का रहस्य"
+  },
+  {
+   "n": 8,
+   "title": "तमिस्र की राह: अंधकार में यात्रा"
+  },
+  {
+   "n": 19,
+   "title": "अंधकार का रहस्य"
+  },
+  {
+   "n": 29,
+   "title": "यमराज का न्याय"
+  },
+  {
+   "n": 36,
+   "title": "आज के समय में इसका अर्थ"
+  },
+  {
+   "n": 44,
+   "title": "यह कथा हमें क्या सिखाती है"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "id": "tamisra-narak-chori-saza-short.video",
+ "format": "video",
+ "video_format": "short",
+ "slug": "tamisra-narak-chori-saza-short",
+ "topic": "tamisra-narak-chori-saza-short",
+ "language": "hi",
+ "status": "approved",
+ "hook": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है?",
+ "title": "तमिस्र नरक: चोर को कैसी सज़ा मिलती है?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी वर्णित",
+ "tradition_note": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; तमिस्र नरक का यही मूल विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#तमिस्रनरक"
+ ],
+ "claims": [
+  {
+   "text": "गरुड़ पुराण परंपरागत रूप से भगवान विष्णु द्वारा गरुड़ को सुनाया गया माना जाता है",
+   "en": "traditionally narrated by Vishnu to Garuda",
+   "status": "traditional-account",
+   "source": "garuda-purana-tradition"
+  },
+  {
+   "text": "तमिस्र नरक पुराणों में चोरी के पाप के लिए वर्णित प्रथम नरकों में से एक है",
+   "en": "Tamisra is traditionally described as a hell for theft in Puranic naraka lists",
+   "status": "verified",
+   "source": "vishnu-purana-bhagavata-purana-naraka-list"
+  },
+  {
+   "text": "पुराणों में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition (Bhagavata Purana, Vishnu Purana, Devi Bhagavata Purana) describes 28 types of naraka",
+   "status": "verified",
+   "source": "bhagavata-purana-5.26"
+  }
+ ],
+ "thumb": {
+  "headline": "यमदूत कहाँ ले जाते हैं?",
+  "support": "गरुड़ पुराण की कथा",
+  "style": "teal",
+  "art": "thief figure frozen in shadow | fear and realization | glowing eyes of Yamadutas in darkness | endless black void",
+  "scene": null
+ },
+ "created": "2026-10-20"
+}

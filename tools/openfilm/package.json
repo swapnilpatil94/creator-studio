@@ -1,0 +1,9 @@
+{
+  "name": "kathaaya-openfilm-backend",
+  "private": true,
+  "type": "module",
+  "description": "Optional OpenFilm render backend for the longform engine (isolated deps; does not touch engine/ or its existing renderer)",
+  "dependencies": {
+    "openfilm": "0.2.2"
+  }
+}

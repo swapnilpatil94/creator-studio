@@ -1,0 +1,116 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-10-20T15:09:18.709Z",
+ "banner": "3 input(s) needed from you, 3 urgent",
+ "tasks": [
+  {
+   "id": "slot:2026-10-21 11:00:fb_text",
+   "priority": "blocker",
+   "title": "Give me the fb text for 2026-10-21 11:00",
+   "why": "slot in 14 h is EMPTY. Suggested topic: शरद पूर्णिमा कृष्ण रास: Sharad Purnima on 2026-10-25: publish by 2026-10-20",
+   "tab": "create",
+   "input": {
+    "what": "Paste the frontier model's answer for the prompt below into Create, then approve",
+    "topic": "शरद पूर्णिमा कृष्ण रास",
+    "prompt": "You are the staff writer of KATHAAYA, a Hindi channel that tells Indian katha WITH its source named. You write for a Hindi-speaking devotee or curious viewer watching on a phone, often with family.\n\nVOICE: warm, brisk, plain Hindi in Devanagari. Short sentences. One surprising, concrete detail per post. Respectful of every tradition. No hype.\n\nHARD RULES (a machine checks every one; a failure sends the piece back):\n1. Use ONLY the passages given in SOURCES below for facts. If the passages do not support a sentence, do not write it.\n2. Every factual sentence must be covered by an entry in \"claims\": {\"text\": Hindi claim, \"en\": short English paraphrase using the words the source uses, \"status\": \"verified\"|\"tradition\"|\"variant\"|\"interpretation\", \"source\": \"<corpus>:<section>\" for verified}.\n3. No invented statistics or percentages. No \"99% लोग नहीं जानते\". No superlatives you cannot source.\n4. Beliefs (\"आज भी जीवित\", places where someone was \"seen\") are written as मान्यता / कहा जाता है, never as fact.\n5. Never ask people to comment a specific word, tag friends, or share to avoid bad luck or get blessings. End with ONE open question and/or an invitation to save.\n6. Never joke about a deity; never compare a sacred figure's suffering to a modern case; no caste or communal framing.\n7. Do not copy the English translation; paraphrase in Hindi.\n8. Avoid stock phrases: \"आइए जानते हैं\", \"इस लेख में हम\", \"आज के डिजिटल युग में\", \"निष्कर्ष:\", \"ना सिर्फ़ ... बल्कि\".\n9. Hook: 3-10 words, a question word or a number, specific. fb_text: hook, 2-4 short body lines that withhold the answer, a cta (open question + save), a source_line, 3 hashtags max (first is #kathaaya). carousel: 5-10 slides, slide 1 is the hook (<=10 words), each other slide one fact <=14 words, last slide one action (save/follow @kathaaya.stories), 5 hashtags max. blog: markdown, H1, >=3 H2, >=700 words, FAQ at the end as **question?** answer lines, a meta_description <=160 chars, tradition_note naming the text and variants.\n\nOUTPUT: one JSON object only (no prose, no code fence) with the fields: id, slug, format, pillar, topic, language (\"hi\"), hook, body_lines (fb_text), slides (carousel), cta, markdown + title + meta_description + faq (blog), source_line, tradition_note, sources [{label, ref}], claims [...], hashtags [...], ai_assisted: true, status: \"draft\", created.\n\n\n=== TASK ===\nTopic: शरद पूर्णिमा कृष्ण रास\nFormat: fb_text\nPillar: unsaid-relations\n\nReturn ONLY text in this labelled format (no commentary):\nFORMAT: fb_text\nSLUG: agent-b88aff\nPILLAR: unsaid-relations\nHOOK: ...\nBODY:\n- ...\nCTA: ...\nSOURCE_LINE: स्रोत: <text, section numbers that your claims actually cite> (<translation>)\nHASHTAGS: #kathaaya ...\nTRADITION: ...\nCLAIMS:\n- Hindi claim | English paraphrase using the source's own words | verified | <corpus>:<section>\n- (use status tradition / variant / interpretation, without a source, for anything the text does not say)\n\nFormat rules: BODY: 2-4 short Hindi lines that withhold the answer; CTA: one open question + invitation to save; no link; <=3 hashtags.\n\n=== SOURCES (the only facts you may use; cite as <corpus>:<section>) ===\n(no passages found: do not state facts)\n"
+   },
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-21 19:00:reel",
+   "priority": "blocker",
+   "title": "Publish the finished video video-arjuna-fast-test (reel, 2026-10-21 19:00)",
+   "why": "video is made; slot in 22 h",
+   "tab": "facebook",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-21 20:00:fb_long",
+   "priority": "blocker",
+   "title": "Publish the finished video durga-janm-katha (fb_long, 2026-10-21 20:00)",
+   "why": "video is made; slot in 23 h",
+   "tab": "youtube",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-22 19:00:reel",
+   "priority": "today",
+   "title": "Publish the finished video video-bhishma-vow (reel, 2026-10-22 19:00)",
+   "why": "video is made; slot in 46 h",
+   "tab": "facebook",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-23 11:00:fb_text",
+   "priority": "today",
+   "title": "Give me the fb text for 2026-10-23 11:00",
+   "why": "slot in 62 h is EMPTY. Suggested topic: सावित्री सत्यवान: Karwa Chauth on 2026-10-29: publish by 2026-10-24",
+   "tab": "create",
+   "input": {
+    "what": "Paste the frontier model's answer for the prompt below into Create, then approve",
+    "topic": "सावित्री सत्यवान",
+    "prompt": "You are the staff writer of KATHAAYA, a Hindi channel that tells Indian katha WITH its source named. You write for a Hindi-speaking devotee or curious viewer watching on a phone, often with family.\n\nVOICE: warm, brisk, plain Hindi in Devanagari. Short sentences. One surprising, concrete detail per post. Respectful of every tradition. No hype.\n\nHARD RULES (a machine checks every one; a failure sends the piece back):\n1. Use ONLY the passages given in SOURCES below for facts. If the passages do not support a sentence, do not write it.\n2. Every factual sentence must be covered by an entry in \"claims\": {\"text\": Hindi claim, \"en\": short English paraphrase using the words the source uses, \"status\": \"verified\"|\"tradition\"|\"variant\"|\"interpretation\", \"source\": \"<corpus>:<section>\" for verified}.\n3. No invented statistics or percentages. No \"99% लोग नहीं जानते\". No superlatives you cannot source.\n4. Beliefs (\"आज भी जीवित\", places where someone was \"seen\") are written as मान्यता / कहा जाता है, never as fact.\n5. Never ask people to comment a specific word, tag friends, or share to avoid bad luck or get blessings. End with ONE open question and/or an invitation to save.\n6. Never joke about a deity; never compare a sacred figure's suffering to a modern case; no caste or communal framing.\n7. Do not copy the English translation; paraphrase in Hindi.\n8. Avoid stock phrases: \"आइए जानते हैं\", \"इस लेख में हम\", \"आज के डिजिटल युग में\", \"निष्कर्ष:\", \"ना सिर्फ़ ... बल्कि\".\n9. Hook: 3-10 words, a question word or a number, specific. fb_text: hook, 2-4 short body lines that withhold the answer, a cta (open question + save), a source_line, 3 hashtags max (first is #kathaaya). carousel: 5-10 slides, slide 1 is the hook (<=10 words), each other slide one fact <=14 words, last slide one action (save/follow @kathaaya.stories), 5 hashtags max. blog: markdown, H1, >=3 H2, >=700 words, FAQ at the end as **question?** answer lines, a meta_description <=160 chars, tradition_note naming the text and variants.\n\nOUTPUT: one JSON object only (no prose, no code fence) with the fields: id, slug, format, pillar, topic, language (\"hi\"), hook, body_lines (fb_text), slides (carousel), cta, markdown + title + meta_description + faq (blog), source_line, tradition_note, sources [{label, ref}], claims [...], hashtags [...], ai_assisted: true, status: \"draft\", created.\n\n\n=== TASK ===\nTopic: सावित्री सत्यवान\nFormat: fb_text\nPillar: unsaid-relations\n\nReturn ONLY text in this labelled format (no commentary):\nFORMAT: fb_text\nSLUG: agent-756d15\nPILLAR: unsaid-relations\nHOOK: ...\nBODY:\n- ...\nCTA: ...\nSOURCE_LINE: स्रोत: <text, section numbers that your claims actually cite> (<translation>)\nHASHTAGS: #kathaaya ...\nTRADITION: ...\nCLAIMS:\n- Hindi claim | English paraphrase using the source's own words | verified | <corpus>:<section>\n- (use status tradition / variant / interpretation, without a source, for anything the text does not say)\n\nFormat rules: BODY: 2-4 short Hindi lines that withhold the answer; CTA: one open question + invitation to save; no link; <=3 hashtags.\n\n=== SOURCES (the only facts you may use; cite as <corpus>:<section>) ===\n(no passages found: do not state facts)\n"
+   },
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-23 19:00:reel",
+   "priority": "today",
+   "title": "Publish the finished video video-karna-birth-kunti (reel, 2026-10-23 19:00)",
+   "why": "video is made; slot in 70 h",
+   "tab": "facebook",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "slot:2026-10-23 20:00:fb_long",
+   "priority": "today",
+   "title": "Publish the finished video video-karna-janm-kavach-long (fb_long, 2026-10-23 20:00)",
+   "why": "video is made; slot in 71 h",
+   "tab": "youtube",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "approve:bhishma-vow.carousel",
+   "priority": "today",
+   "title": "Review and approve \"भीष्म ने ऐसी प्रतिज्ञा क्यों ली?\"",
+   "why": "draft is in; nothing posts until you approve it",
+   "tab": "create",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "approve:nine-durgas.carousel",
+   "priority": "today",
+   "title": "Review and approve \"नवरात्रि में देवी के नौ रूप क्या दर्शाते हैं?\"",
+   "why": "draft is in; nothing posts until you approve it",
+   "tab": "create",
+   "input": null,
+   "ageHours": 0
+  },
+  {
+   "id": "festival:Karwa Chauth:2f98a3",
+   "priority": "soon",
+   "title": "Karwa Chauth (2026-10-29): nothing exists for \"करवा चौथ कथा\"",
+   "why": "Shorts must go out by 2026-10-24, long by 2026-10-17",
+   "tab": "create",
+   "input": {
+    "what": "Carousel + script for this festival topic",
+    "topic": "करवा चौथ कथा",
+    "prompt": "You are the staff writer of KATHAAYA, a Hindi channel that tells Indian katha WITH its source named. You write for a Hindi-speaking devotee or curious viewer watching on a phone, often with family.\n\nVOICE: warm, brisk, plain Hindi in Devanagari. Short sentences. One surprising, concrete detail per post. Respectful of every tradition. No hype.\n\nHARD RULES (a machine checks every one; a failure sends the piece back):\n1. Use ONLY the passages given in SOURCES below for facts. If the passages do not support a sentence, do not write it.\n2. Every factual sentence must be covered by an entry in \"claims\": {\"text\": Hindi claim, \"en\": short English paraphrase using the words the source uses, \"status\": \"verified\"|\"tradition\"|\"variant\"|\"interpretation\", \"source\": \"<corpus>:<section>\" for verified}.\n3. No invented statistics or percentages. No \"99% लोग नहीं जानते\". No superlatives you cannot source.\n4. Beliefs (\"आज भी जीवित\", places where someone was \"seen\") are written as मान्यता / कहा जाता है, never as fact.\n5. Never ask people to comment a specific word, tag friends, or share to avoid bad luck or get blessings. End with ONE open question and/or an invitation to save.\n6. Never joke about a deity; never compare a sacred figure's suffering to a modern case; no caste or communal framing.\n7. Do not copy the English translation; paraphrase in Hindi.\n8. Avoid stock phrases: \"आइए जानते हैं\", \"इस लेख में हम\", \"आज के डिजिटल युग में\", \"निष्कर्ष:\", \"ना सिर्फ़ ... बल्कि\".\n9. Hook: 3-10 words, a question word or a number, specific. fb_text: hook, 2-4 short body lines that withhold the answer, a cta (open question + save), a source_line, 3 hashtags max (first is #kathaaya). carousel: 5-10 slides, slide 1 is the hook (<=10 words), each other slide one fact <=14 words, last slide one action (save/follow @kathaaya.stories), 5 hashtags max. blog: markdown, H1, >=3 H2, >=700 words, FAQ at the end as **question?** answer lines, a meta_description <=160 chars, tradition_note naming the text and variants.\n\nOUTPUT: one JSON object only (no prose, no code fence) with the fields: id, slug, format, pillar, topic, language (\"hi\"), hook, body_lines (fb_text), slides (carousel), cta, markdown + title + meta_description + faq (blog), source_line, tradition_note, sources [{label, ref}], claims [...], hashtags [...], ai_assisted: true, status: \"draft\", created.\n\n\n=== TASK ===\nTopic: करवा चौथ कथा\nFormat: carousel\nPillar: unsaid-relations\n\nReturn ONLY text in this labelled format (no commentary):\nFORMAT: carousel\nSLUG: agent-2f98a3\nPILLAR: unsaid-relations\nHOOK: ...\nSLIDES:\n1 | ... | ...\nCTA: ...\nSOURCE_LINE: स्रोत: <text, section numbers that your claims actually cite> (<translation>)\nHASHTAGS: #kathaaya ...\nTRADITION: ...\nCLAIMS:\n- Hindi claim | English paraphrase using the source's own words | verified | <corpus>:<section>\n- (use status tradition / variant / interpretation, without a source, for anything the text does not say)\n\nFormat rules: 5-10 slides. Each slide: `n | Hindi text (<=14 words, slide 1 <=10) | English image prompt`. The English prompt is ONE prose paragraph, 40-60 words, subject first, then action, setting, lighting; describe what you want (no 'no/without'); symbolic and respectful for sacred or painful moments; never include text or Devanagari in the picture. Last slide: one action (save/follow @kathaaya.stories) with no image prompt.\n\n=== SOURCES (the only facts you may use; cite as <corpus>:<section>) ===\n(no passages found: do not state facts)\n"
+   },
+   "ageHours": 0
+  }
+ ],
+ "doneByAgent": [
+  "added \"शरद पूर्णिमा कृष्ण रास\" to the topic queue",
+  "scheduled pandu-kindama-curse.carousel for 2026-10-22 11:00 (carousel)",
+  "added \"सावित्री सत्यवान\" to the topic queue",
+  "added \"करवा चौथ कथा\" to the topic queue"
+ ],
+ "outlierMonth": "2026-11"
+}

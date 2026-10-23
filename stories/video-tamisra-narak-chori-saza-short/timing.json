@@ -1,0 +1,86 @@
+{
+ "item": "tamisra-narak-chori-saza-short.video",
+ "started": "2026-10-21T02:43:37.868Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792550617868,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792550617868,
+   "detail": "17 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792550617869,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792550617870,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792550617870,
+   "detail": "1 new paintings of 14 scenes",
+   "seconds": 60
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792550678065,
+   "detail": "14 of 14 scenes layered, 0 picture beats fell back to type",
+   "seconds": 9
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792550686569,
+   "detail": "7 camera clips (1 rendered, 6 cached)",
+   "seconds": 2
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792550688950,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792550689009,
+   "detail": "QA all passed",
+   "seconds": 69
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792550757711,
+   "detail": "teal palette, \"यमदूत कहाँ ले जाते हैं?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792550757711,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 140,
+ "ended": "2026-10-21T02:45:58.003Z"
+}

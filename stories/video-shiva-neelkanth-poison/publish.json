@@ -11,7 +11,7 @@
   }
  ],
  "title": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए? | KATHAAYA",
- "description": "जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए। अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।\n\nयह कथा शिव पुराण के अनुसार है; भागवत पुराण और विष्णु पुराण में भी इसका उल्लेख मिलता है, विवरण में थोड़ा अंतर हो सकता है।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #shiva #neelkanth #samudramanthan",
+ "description": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए? जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले जो निकला, उसने तीनों लोक डरा दिए। अमृत पाने के लिए देवता और असुर मंदराचल पर्वत से समुद्र मंथन करने लगे।\n\nयह कथा शिव पुराण के अनुसार है; भागवत पुराण और विष्णु पुराण में भी इसका उल्लेख मिलता है, विवरण में थोड़ा अंतर हो सकता है।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #shiva #neelkanth #samudramanthan",
  "tags": [
   "shri shiv mahapuran katha",
   "pandit pradeep mishra ji katha",
@@ -145,8 +145,8 @@
   },
   {
    "name": "primary keyword in first 160 chars of description",
-   "ok": false,
-   "detail": "first 160: जब देवताओं और असुरों ने मिलकर समुद्र मंथन किया, तो सबसे पहले…"
+   "ok": true,
+   "detail": "first 160: शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए? जब देवताओं और …"
   },
   {
    "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
@@ -156,7 +156,7 @@
   {
    "name": "description <= 5000 bytes",
    "ok": true,
-   "detail": 1662
+   "detail": 1778
   },
   {
    "name": "tags <= 15 and <= 500 chars",
@@ -236,5 +236,5 @@
   "storytelling-hooks",
   "viral-hooks"
  ],
- "generated": "2026-10-20T08:31:16.578Z"
+ "generated": "2026-10-22T15:57:29.777Z"
 }

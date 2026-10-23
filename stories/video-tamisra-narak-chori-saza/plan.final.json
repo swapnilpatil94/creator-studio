@@ -1,0 +1,685 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "जब आत्मा शरीर *छोड़ती* है, तो वह"
+   ],
+   "style": "slam",
+   "label": "*कहाँ जाती है*",
+   "img": "s1",
+   "move": "push",
+   "fx": "drone_push_in",
+   "clip": "v001",
+   "clip_n": 103
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "panL",
+   "label": "मन में उठता है",
+   "reveal": "circle",
+   "fx": "2.5d_parallax",
+   "clip": "v002",
+   "clip_n": 95
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "fx",
+  "params": {
+   "img": "s3",
+   "move": "push",
+   "label": "गरुड़ पुराण में बताया गया",
+   "reveal": "diamond",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "quote",
+  "params": {
+   "text": "हर आत्मा का हिसाब होता है, हर कर्म का फल मिलता है",
+   "by": "भगवान विष्णु"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "versus",
+  "params": {
+   "left": {
+    "title": "कर्म करने वाला",
+    "points": [
+     "धन चुराता है",
+     "कर्म के फल के लिए तैयार रहता है"
+    ]
+   },
+   "right": {
+    "title": "दूसरे के लिए",
+    "points": [
+     "एक विशेष लोक है",
+     "तमिस्र नरक कहलाता है"
+    ]
+   }
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "fx",
+  "params": {
+   "img": "s6",
+   "move": "pull",
+   "label": "तमिस्र नरक का लोक",
+   "reveal": "wipe",
+   "fx": "handheld_breathing_shake",
+   "clip": "v006",
+   "clip_n": 93
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पर वहाँ होता क्या है? आइए *जानते*"
+   ],
+   "style": "wave",
+   "label": "*जानते हैं*"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "chapter",
+  "params": {
+   "kicker": "चैप्टर 2",
+   "title": "मृत्यु के बाद क्या होता है?"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_pull_out_reveal",
+   "img": "s9",
+   "img2": "scene4",
+   "move": "push",
+   "clip": "v009",
+   "clip_n": 87
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v010",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "fx": "drone_orbit_180",
+   "sticker": "burst",
+   "clip": "v010",
+   "clip_n": 91
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v011",
+  "comp": "fx",
+  "params": {
+   "img": "s11",
+   "move": "pull",
+   "label": "तमिस्र नरक की ओर जाता है",
+   "behind": "तमिस्र के अंधकार",
+   "fx": "crane_up_reveal",
+   "clip": "v011",
+   "clip_n": 69
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v012",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "label": "चोर भेजे जाते हैं",
+   "fx": "mesh_ken_burns_3d",
+   "clip": "v012",
+   "clip_n": 93
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v013",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panR",
+   "label": "अन्याय किया",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v014",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "घोर अंधकार"
+   ],
+   "style": "slam",
+   "bg": "ink-clouds"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v015",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "दिशा नहीं है",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v016",
+  "comp": "fx",
+  "params": {
+   "img": "s16",
+   "move": "pull",
+   "label": "देह नहीं होती",
+   "fx": "parallax_occlusion_3d",
+   "sticker": "burst",
+   "clip": "v016",
+   "clip_n": 98
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v017",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "label": "मन की सज़ा है",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v018",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "क्यों *सिर्फ़* अंधकार ही इतनी बड़ी सज़ा"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v019",
+  "comp": "fx",
+  "params": {
+   "fx": "depth_fog_haze",
+   "img": "s19",
+   "move": "pull"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v020",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panR",
+   "label": "रात के साये में",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v021",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "label": "जीवन में जो अंधकार चुनता है",
+   "reveal": "circle",
+   "fx": "drone_orbit_180",
+   "clip": "v021",
+   "clip_n": 63
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v022",
+  "comp": "fx",
+  "params": {
+   "img": "s22",
+   "move": "panL",
+   "label": "मृत्यु के बाद भी वही अंधकार उसका साथी बनता है",
+   "fx": "crane_up_reveal",
+   "sticker": "burst",
+   "clip": "v022",
+   "clip_n": 83
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v023",
+  "comp": "quote",
+  "params": {
+   "text": "गरुड़ पुराण कहता है, जैसा कर्म, वैसा ही लोक",
+   "by": "गरुड़ पुराण"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v024",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "यह केवल कल्पना नहीं एक गहरी *चेतावनी*"
+   ],
+   "style": "glitch",
+   "label": "*चेतावनी*",
+   "img": "s24",
+   "move": "push",
+   "fx": "volumetric_god_rays"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v025",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panR",
+   "label": "कि हर छोटा-बड़ा अपराध कहीं न कहीं दर्ज होता है",
+   "fx": "mesh_ken_burns_3d",
+   "clip": "v025",
+   "clip_n": 85
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v026",
+  "comp": "quote",
+  "params": {
+   "text": "पर पुराण यह भी कहता है, यह सज़ा अनंत नहीं है",
+   "by": "पुराण"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v027",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "label": "जब तक कर्म का फल पूरा नहीं होता, तभी तक यह लोक है",
+   "fx": "2.5d_parallax",
+   "clip": "v027",
+   "clip_n": 93
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v028",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "फिर आत्मा नए जन्म की ओर बढ़ती है",
+   "fx": "kinetography_cinemagraph",
+   "sticker": "burst"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v029",
+  "comp": "cinema",
+  "params": {
+   "kicker": "चौथा अध्याय",
+   "title": "यमराज के निष्पक्ष रूप",
+   "img": "s29",
+   "move": "push"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v030",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "label": "वे निष्पक्ष हैं, किसी के साथ कोई भेदभाव नहीं करते",
+   "fx": "matte_painting_extension"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v031",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "label": "कर्म का लेखा",
+   "behind": "कर्म का लेखा रखा जाता है",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v031",
+   "clip_n": 104
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v032",
+  "comp": "fx",
+  "params": {
+   "img": "s32",
+   "move": "panL",
+   "label": "चित्रगुप्त के हाथों में लेखा-पुस्तक",
+   "behind": "चित्रगुप्त के हाथों में लेखा-पुस्तक",
+   "fx": "depth_rack_focus",
+   "clip": "v032",
+   "clip_n": 111
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v033",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "धन, पद, प्रतिष्ठा के बिना जीवन",
+   "behind": "धन, पद, प्रतिष्ठा के बिना जीवन",
+   "fx": "drone_orbit_180",
+   "clip": "v033",
+   "clip_n": 86
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v034",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panR",
+   "label": "कर्म ही जीवन के साथ जाता है",
+   "behind": "कर्म ही जीवन के साथ जाता है",
+   "fx": "matte_painting_extension",
+   "sticker": "burst"
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v035",
+  "comp": "fx",
+  "params": {
+   "img": "s35",
+   "move": "pull",
+   "label": "गरुड़ पुराण की गहरी शिक्षा",
+   "behind": "गरुड़ पुराण की गहरी शिक्षा",
+   "fx": "mesh_ken_burns_3d",
+   "clip": "v035",
+   "clip_n": 96
+  },
+  "chapter": "ch4"
+ },
+ {
+  "id": "v036",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "label": "आधुनिक चोरी के रूप",
+   "behind": "आधुनिक चोरी के रूप",
+   "fx": "parallax_occlusion_3d",
+   "clip": "v036",
+   "clip_n": 90
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "v037",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "भरोसा चुराना, श्रेय ले लेना",
+   "behind": "भरोसा चुराना, श्रेय ले लेना",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "v038",
+  "comp": "fx",
+  "params": {
+   "img": "s38",
+   "move": "panR",
+   "label": "हक़ का हिस्सा दबा लेना",
+   "behind": "हक़ का हिस्सा दबा लेना",
+   "fx": "drone_orbit_180",
+   "clip": "v038",
+   "clip_n": 98
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "v039",
+  "comp": "quote",
+  "params": {
+   "text": "क्या यह केवल डराने के लिए है?",
+   "by": "",
+   "bg": "temple-jali"
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "v040",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panL",
+   "label": "कर्म का हिसाब कभी नहीं भूलता",
+   "behind": "कर्म का हिसाब कभी नहीं भूलता",
+   "fx": "mesh_ken_burns_3d",
+   "sticker": "burst",
+   "clip": "v040",
+   "clip_n": 98
+  },
+  "chapter": "ch5"
+ },
+ {
+  "id": "v041",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s41",
+   "move": "push",
+   "fx": "handheld_breathing_shake",
+   "clip": "v041",
+   "clip_n": 95
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v042",
+  "chapter": "ch5",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "ईमानदारी ही असली शांति"
+   ],
+   "style": "wave",
+   "bg": "gold-bokeh"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v043",
+  "chapter": "ch5",
+  "comp": "fx",
+  "params": {
+   "img": "s43",
+   "move": "panL",
+   "fx": "dolly_zoom_vertigo",
+   "clip": "v043",
+   "clip_n": 76
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v044",
+  "chapter": "ch6",
+  "comp": "chapter",
+  "params": {
+   "kicker": "ch6",
+   "title": "तो क्या गरुड़ पुराण केवल डराने के लिए यह"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v045",
+  "chapter": "ch6",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "fx": "drone_pull_out_reveal",
+   "clip": "v045",
+   "clip_n": 73
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v046",
+  "chapter": "ch6",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "fx": "diya_flicker_light",
+   "sticker": "burst"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v047",
+  "chapter": "ch6",
+  "comp": "fx",
+  "params": {
+   "img": "s47",
+   "move": "panL",
+   "fx": "day_to_night_timelapse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v048",
+  "chapter": "ch6",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "panR",
+   "fx": "mesh_crane_push",
+   "clip": "v048",
+   "clip_n": 112
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v049",
+  "chapter": "ch6",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "fx": "morph_age_shift"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v050",
+  "chapter": "ch6",
+  "comp": "cinema",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "fx": "drone_pull_out_reveal",
+   "clip": "v050",
+   "clip_n": 116
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v051",
+  "comp": "fx",
+  "params": {
+   "img": "s51",
+   "move": "pull",
+   "label": "कर्म का फल",
+   "reveal": "circle",
+   "fx": "puppet_warp_breathing"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "v052",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "गरुड़ पुराण में ऐसे *अट्ठाईस* लोकों"
+   ],
+   "style": "mask"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "v053",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "हर एक एक *अलग* पाप की"
+   ],
+   "style": "mask"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "v054",
+  "comp": "chapter",
+  "params": {
+   "kicker": "अगली कथा",
+   "title": "अगले लोक की बात"
+  },
+  "chapter": "ch6"
+ },
+ {
+  "id": "v055",
+  "comp": "cinema",
+  "params": {
+   "text": "तब तक, इस कथा को सहेज कर रखिए, और कथा से जुड़े रहिए",
+   "by": "गरुड़ पुराण",
+   "img": "s55",
+   "move": "push"
+  },
+  "chapter": "ch6"
+ }
+]

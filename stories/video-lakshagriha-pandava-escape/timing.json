@@ -1,86 +1,93 @@
 {
  "item": "lakshagriha-pandava-escape.video",
- "started": "2026-10-19T10:46:04.042Z",
+ "started": "2026-10-22T13:39:28.968Z",
  "minutes": 12,
  "stages": [
   {
    "name": "script",
-   "status": "done",
-   "start": 1792406764043,
-   "detail": "59 beats, 1034 words, by owner",
+   "status": "cached",
+   "start": 1792676368968,
+   "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792406764264,
+   "start": 1792676368968,
    "detail": "59 beats, 0 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
-   "status": "done",
-   "start": 1792406764265,
-   "detail": "317 s of speech",
-   "seconds": 2107
+   "status": "cached",
+   "start": 1792676368970,
+   "detail": "voice exists",
+   "seconds": 0
   },
   {
    "name": "director",
+   "status": "cached",
+   "start": 1792676368971,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "coverage",
    "status": "done",
-   "start": 1792408871014,
-   "detail": "59 beats, 4 visual types, 8 new scenes, 0 carousel paintings reused, 59 by rules",
+   "start": 1792676368971,
+   "detail": "36 extra shots, hold <= 4.5s",
    "seconds": 0
   },
   {
    "name": "art",
    "status": "done",
-   "start": 1792408871030,
-   "detail": "22 new paintings of 22 scenes",
-   "seconds": 920
+   "start": 1792676368975,
+   "detail": "58 new paintings of 58 scenes",
+   "seconds": 4014
   },
   {
    "name": "layers+scene",
    "status": "done",
-   "start": 1792409790697,
-   "detail": "22 of 22 scenes layered, 0 picture beats fell back to type",
-   "seconds": 7
+   "start": 1792680382789,
+   "detail": "58 of 58 scenes layered, 0 picture beats fell back to type",
+   "seconds": 158
   },
   {
    "name": "camera",
    "status": "done",
-   "start": 1792409797478,
-   "detail": "19 camera clips (19 rendered, 0 cached)",
-   "seconds": 45
+   "start": 1792680540759,
+   "detail": "38 camera clips (38 rendered, 0 cached)",
+   "seconds": 67
   },
   {
    "name": "sound",
    "status": "done",
-   "start": 1792409842191,
+   "start": 1792680607411,
    "detail": "",
    "seconds": 0
   },
   {
    "name": "render+QA",
    "status": "done",
-   "start": 1792409842268,
+   "start": 1792680607473,
    "detail": "QA all passed",
-   "seconds": 474
+   "seconds": 386
   },
   {
    "name": "thumbnail",
    "status": "done",
-   "start": 1792410316218,
+   "start": 1792680993096,
    "detail": "gold palette, \"सुरंग का राज़?\"",
    "seconds": 0
   },
   {
    "name": "package",
    "status": "done",
-   "start": 1792410316219,
+   "start": 1792680993108,
    "detail": "seo.mjs ok, social.mjs ok",
    "seconds": 0
   }
  ],
- "total_seconds": 3553,
- "ended": "2026-10-19T11:45:16.509Z"
+ "total_seconds": 4625,
+ "ended": "2026-10-22T14:56:33.398Z"
 }

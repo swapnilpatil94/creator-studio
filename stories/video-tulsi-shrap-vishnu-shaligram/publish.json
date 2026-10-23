@@ -1,0 +1,237 @@
+{
+ "pinnedComment": null,
+ "chapters": [],
+ "story": "video-tulsi-shrap-vishnu-shaligram",
+ "channel": "kathaaya",
+ "format": "short",
+ "titleOptions": [
+  {
+   "t": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "title": "तुलसी विवाह का श्राप: पत्थर कौन बना, और क्यों? | KATHAAYA",
+ "description": "पति युद्ध से लौटा, लेकिन वो पति नहीं था। इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।\n\nयह कथा देवी भागवत पुराण के अनुसार है; दूसरे ग्रंथों और लोक-परंपराओं में, जैसे वृंदा-जालंधर कथा में, विवरण अलग मिलते हैं।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #tulsivivah #shaligram",
+ "tags": [
+  "devotional story",
+  "tulsi story",
+  "jalandhar story",
+  "tulsi vivah story",
+  "inspirational story",
+  "motivational story",
+  "tulsi mata ki katha",
+  "tulsi mata story",
+  "hindustory",
+  "bhaktistory",
+  "vrinda story",
+  "tulsidas life story",
+  "maa tulsi story",
+  "pauranik katha",
+  "tulsivivah"
+ ],
+ "hashtags": [
+  "#kathaaya",
+  "#tulsivivah",
+  "#shaligram"
+ ],
+ "categoryId": "24",
+ "defaultLanguage": "hi",
+ "defaultAudioLanguage": "hi",
+ "privacyStatus": "private",
+ "selfDeclaredMadeForKids": false,
+ "containsSyntheticMedia": true,
+ "video": "output/video-tulsi-shrap-vishnu-shaligram-upload.mp4",
+ "thumbnails": [
+  "output/thumb-9x16.png"
+ ],
+ "tagEvidence": [
+  {
+   "t": "devotional story",
+   "n": 6
+  },
+  {
+   "t": "tulsi story",
+   "n": 4
+  },
+  {
+   "t": "jalandhar story",
+   "n": 4
+  },
+  {
+   "t": "tulsi vivah story",
+   "n": 2
+  },
+  {
+   "t": "inspirational story",
+   "n": 2
+  },
+  {
+   "t": "motivational story",
+   "n": 2
+  },
+  {
+   "t": "tulsi mata ki katha",
+   "n": 2
+  },
+  {
+   "t": "tulsi mata story",
+   "n": 2
+  },
+  {
+   "t": "hindustory",
+   "n": 2
+  },
+  {
+   "t": "bhaktistory",
+   "n": 2
+  },
+  {
+   "t": "vrinda story",
+   "n": 2
+  },
+  {
+   "t": "tulsidas life story",
+   "n": 2
+  },
+  {
+   "t": "maa tulsi story",
+   "n": 2
+  },
+  {
+   "t": "pauranik katha",
+   "n": 2
+  }
+ ],
+ "thumbnailSeed": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "भगवान भी डर गए?"
+   ],
+   "support": [
+    "देवी भागवत की कथा"
+   ]
+  }
+ },
+ "checks": [
+  {
+   "name": "title <= 100 chars",
+   "ok": true,
+   "detail": 57
+  },
+  {
+   "name": "title before | <= 60 chars (desktop truncation)",
+   "ok": true,
+   "detail": 46
+  },
+  {
+   "name": "primary keyword in first 55 chars of title",
+   "ok": true,
+   "detail": "तुलसी"
+  },
+  {
+   "name": "<= 1 emoji in title (channel style)",
+   "ok": true,
+   "detail": "0 emoji"
+  },
+  {
+   "name": "<= 2 all-caps Latin words",
+   "ok": true,
+   "detail": "1 (KATHAAYA)"
+  },
+  {
+   "name": "primary keyword in first 160 chars of description",
+   "ok": false,
+   "detail": "first 160: पति युद्ध से लौटा, लेकिन वो पति नहीं था। इसी धोखे से निकला श…"
+  },
+  {
+   "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
+   "ok": true,
+   "detail": "1/1 (तुलसी विवाह का)"
+  },
+  {
+   "name": "description <= 5000 bytes",
+   "ok": true,
+   "detail": 1447
+  },
+  {
+   "name": "tags <= 15 and <= 500 chars",
+   "ok": true,
+   "detail": "15 tags, 237 chars"
+  },
+  {
+   "name": "format fits Shorts (<= 180 s)",
+   "ok": true,
+   "detail": "93 s"
+  },
+  {
+   "name": "channel brand line in description",
+   "ok": true,
+   "detail": "tagline present"
+  },
+  {
+   "name": "variant/source note in description",
+   "ok": true,
+   "detail": "disclaimer present"
+  },
+  {
+   "name": "synthetic-media disclosure set",
+   "ok": true,
+   "detail": "containsSyntheticMedia=true + description line"
+  },
+  {
+   "name": "rendered video exists",
+   "ok": true,
+   "detail": "video-tulsi-shrap-vishnu-shaligram-upload.mp4"
+  },
+  {
+   "name": "thumbnail: headline <= 5 words",
+   "ok": true,
+   "detail": "4 words: भगवान भी डर गए ?"
+  },
+  {
+   "name": "thumbnail: headline does not repeat the title",
+   "ok": true,
+   "detail": "carries the other half of the story"
+  },
+  {
+   "name": "thumbnail: own Flux painting for this story (not a film frame)",
+   "ok": true,
+   "detail": "Teal & Gold: Tulsi, Angry and Devoted"
+  },
+  {
+   "name": "thumbnail: 120 px preview generated",
+   "ok": true,
+   "detail": "thumb-120-*.png"
+  },
+  {
+   "name": "thumbnail: channel mark (logo)",
+   "ok": true,
+   "detail": "channels/kathaaya/logo.png"
+  },
+  {
+   "name": "claims verified at source",
+   "ok": false,
+   "detail": "no ledger"
+  }
+ ],
+ "reviewItems": [
+  "Pair test: covering the title, the thumbnail alone still raises a question",
+  "Pair test: covering the thumbnail, the title alone still pulls",
+  "Honesty test: the film delivers what the title and thumbnail promise (variant note stated)",
+  "I watched the film with sound and the narration pace and emotion feel right",
+  "Thumbnail reads in the 120 px preview (mood, subject, text)",
+  "I reviewed the claims warnings and sources",
+  "Title, description and tags read correctly in Devanagari and Roman spelling"
+ ],
+ "skillsApplied": [
+  "titles-and-thumbnails",
+  "youtube-packaging",
+  "youtube-seo-description",
+  "youtube-thumbnail-design",
+  "storytelling-hooks",
+  "viral-hooks"
+ ],
+ "generated": "2026-10-23T04:00:32.889Z"
+}

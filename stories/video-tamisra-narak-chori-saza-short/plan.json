@@ -1,0 +1,202 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "lines": [
+    "जब आत्मा शरीर *छोड़ती* है, तो वह"
+   ],
+   "style": "glitch",
+   "img": "s1",
+   "move": "push",
+   "fx": "drone_push_in"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "cinema",
+  "params": {
+   "img": "scene0",
+   "move": "pull",
+   "label": "गरुड़ पुराण कहता है",
+   "reveal": "circle",
+   "fx": "2.5d_parallax"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "cinema",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "चोर के लिए विशेष लोक",
+   "reveal": "diamond",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "img": "s4",
+   "move": "push",
+   "label": "तमिस्र नरक के बारे में",
+   "reveal": "wipe",
+   "fx": "crane_up_reveal",
+   "sticker": "burst"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "cinema",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "यमराज के दूतों के द्वारा ले जाया जाता है",
+   "reveal": "circle",
+   "fx": "mesh_ken_burns_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "fx",
+  "params": {
+   "img": "s6",
+   "move": "pull",
+   "label": "घोर अंधकार का लोक",
+   "reveal": "diamond",
+   "fx": "parallax_occlusion_3d"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "घोर अंधकार"
+   ],
+   "style": "slam",
+   "bg": "ink-clouds"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "cinema",
+  "params": {
+   "img": "scene5",
+   "move": "push",
+   "label": "चोर हमेशा अंधेरे में काम करता है",
+   "reveal": "circle",
+   "fx": "kinetography_cinemagraph"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "img": "s9",
+   "move": "panL",
+   "label": "रात के साये में छिपकर",
+   "reveal": "diamond",
+   "fx": "crane_up_reveal"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "तो *क्या* यह सज़ा सदा के लिए"
+   ],
+   "style": "wave"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s11",
+   "move": "panL",
+   "fx": "volumetric_god_rays"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v012",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "scene8",
+   "move": "panR",
+   "fx": "drone_orbit_180"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v013",
+  "chapter": "ch1",
+  "comp": "quote",
+  "params": {
+   "text": "यह जगाने के लिए है",
+   "by": "",
+   "bg": "temple-jali"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v014",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s14",
+   "move": "pull",
+   "fx": "eye_glow_energy_pulse"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v015",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "scene9",
+   "move": "panL",
+   "fx": "disintegration_dispersal"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v016",
+  "chapter": "ch1",
+  "comp": "cinema",
+  "params": {
+   "img": "scene10",
+   "move": "panR",
+   "fx": "morph_age_shift",
+   "sticker": "burst"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v017",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "s17",
+   "move": "push",
+   "fx": "diya_flicker_light"
+  },
+  "from": "rules"
+ }
+]

@@ -1,79 +1,93 @@
 {
  "item": "karna-janm-kavach-long.video",
- "started": "2026-10-19T08:31:40.453Z",
+ "started": "2026-10-22T12:55:48.493Z",
  "minutes": 12,
  "stages": [
   {
    "name": "script",
-   "status": "done",
-   "start": 1792398700453,
-   "detail": "37 beats, 553 words, by owner",
+   "status": "cached",
+   "start": 1792673748493,
+   "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792398700593,
+   "start": 1792673748494,
    "detail": "37 beats, 0 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
-   "status": "done",
-   "start": 1792398700593,
-   "detail": "173 s of speech",
-   "seconds": 989
+   "status": "cached",
+   "start": 1792673748495,
+   "detail": "voice exists",
+   "seconds": 0
   },
   {
    "name": "director",
+   "status": "cached",
+   "start": 1792673748496,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "coverage",
    "status": "done",
-   "start": 1792399690027,
-   "detail": "37 beats, 5 visual types, 21 new scenes, 0 carousel paintings reused, 10 by rules",
-   "seconds": 278
+   "start": 1792673748496,
+   "detail": "10 extra shots, hold <= 4.5s",
+   "seconds": 0
   },
   {
    "name": "art",
    "status": "done",
-   "start": 1792399968096,
-   "detail": "21 new paintings of 21 scenes",
-   "seconds": 966
+   "start": 1792673748500,
+   "detail": "30 new paintings of 31 scenes",
+   "seconds": 2201
   },
   {
    "name": "layers+scene",
    "status": "done",
-   "start": 1792400934205,
-   "detail": "21 of 21 scenes layered, 0 picture beats fell back to type",
-   "seconds": 165
+   "start": 1792675949857,
+   "detail": "31 of 31 scenes layered, 0 picture beats fell back to type",
+   "seconds": 135
   },
   {
    "name": "camera",
    "status": "done",
-   "start": 1792401099634,
-   "detail": "15 camera clips (15 rendered, 0 cached)",
-   "seconds": 30
+   "start": 1792676084409,
+   "detail": "24 camera clips (24 rendered, 0 cached)",
+   "seconds": 53
   },
   {
    "name": "sound",
    "status": "done",
-   "start": 1792401129511,
+   "start": 1792676136976,
    "detail": "",
    "seconds": 0
   },
   {
    "name": "render+QA",
    "status": "done",
-   "start": 1792401129579,
+   "start": 1792676137037,
    "detail": "QA all passed",
-   "seconds": 216
+   "seconds": 219
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792676355736,
+   "detail": "gold palette, \"कवच का रहस्य?\"",
+   "seconds": 0
   },
   {
    "name": "package",
    "status": "done",
-   "start": 1792401345208,
+   "start": 1792676355738,
    "detail": "seo.mjs ok, social.mjs ok",
-   "seconds": 104
+   "seconds": 0
   }
  ],
- "total_seconds": 2748,
- "ended": "2026-10-19T09:17:29.359Z"
+ "total_seconds": 2608,
+ "ended": "2026-10-22T13:39:16.053Z"
 }

@@ -1,79 +1,48 @@
 {
  "item": "karna-birth-kunti.carousel",
- "started": "2026-10-18T19:49:36.090Z",
+ "started": "2026-10-22T14:57:11.214Z",
  "minutes": 3,
  "stages": [
   {
    "name": "script",
    "status": "cached",
-   "start": 1792352976091,
+   "start": 1792681031214,
    "detail": "beats.json exists",
    "seconds": 0
   },
   {
    "name": "prepare",
    "status": "done",
-   "start": 1792352976092,
+   "start": 1792681031215,
    "detail": "33 beats, 9 carousel paintings",
    "seconds": 0
   },
   {
    "name": "voice",
    "status": "cached",
-   "start": 1792352976095,
+   "start": 1792681031225,
    "detail": "voice exists",
    "seconds": 0
   },
   {
    "name": "director",
    "status": "cached",
-   "start": 1792352976095,
+   "start": 1792681031226,
    "detail": "plan.json is current",
    "seconds": 0
   },
   {
+   "name": "coverage",
+   "status": "done",
+   "start": 1792681031226,
+   "detail": "73 extra shots, hold <= 1.5s",
+   "seconds": 0
+  },
+  {
    "name": "art",
-   "status": "cached",
-   "start": 1792352976095,
-   "detail": "all scene pictures exist",
-   "seconds": 0
-  },
-  {
-   "name": "layers+scene",
-   "status": "done",
-   "start": 1792352976095,
-   "detail": "21 of 21 scenes layered, 0 picture beats fell back to type",
-   "seconds": 60
-  },
-  {
-   "name": "camera",
-   "status": "done",
-   "start": 1792353036180,
-   "detail": "17 camera clips (10 rendered, 7 cached)",
-   "seconds": 14
-  },
-  {
-   "name": "sound",
-   "status": "done",
-   "start": 1792353049754,
-   "detail": "",
-   "seconds": 0
-  },
-  {
-   "name": "render+QA",
-   "status": "done",
-   "start": 1792353049811,
-   "detail": "QA all passed",
-   "seconds": 119
-  },
-  {
-   "name": "package",
-   "status": "done",
-   "start": 1792353169237,
-   "detail": "seo.mjs ok, social.mjs ok",
-   "seconds": 3
+   "status": "running",
+   "start": 1792681031229
   }
  ],
- "total_seconds": 196,
- "ended": "2026-10-18T19:52:51.947Z"
+ "total_seconds": 0
 }

@@ -1,0 +1,376 @@
+{
+ "s1": {
+  "subject": "the wife, a young woman",
+  "action": "clutching a broken clay pot",
+  "setting": "a dimly lit village hut with earthen walls",
+  "lighting": "flickering oil lamp",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "s3": {
+  "subject": "the wife, a young woman in a red saree",
+  "action": "gazing into a bronze mirror",
+  "setting": "a carved stone chamber with oil lamps",
+  "lighting": "warm, flickering glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s4": {
+  "subject": "the wife, a woman in red saree",
+  "action": "gripping a tulsi plant with both hands",
+  "setting": "a stone courtyard near a temple",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "s5": {
+  "subject": "the wife, a young woman in a red saree",
+  "action": "standing defiantly with a raised hand",
+  "setting": "a stone battlefield under a dark sky",
+  "lighting": "moonlight and fire glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "s7": {
+  "subject": "the wife, a young woman in a red saree",
+  "action": "clutching a golden shield to her chest",
+  "setting": "a temple courtyard with carved stone pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "s8": {
+  "subject": "PROTAGONIST, a devoted wife",
+  "action": "standing firm with folded hands",
+  "setting": "a dimly lit Indian temple hall",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s9": {
+  "subject": "The wife, a young woman in a red silk saree",
+  "action": "offering a golden armor to an old Brahmin",
+  "setting": "a stone courtyard near a temple",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "s11": {
+  "subject": "PROTAGONIST, a young woman in red saree",
+  "action": "clutching a brass bell",
+  "setting": "stone steps leading to Tulsi's door",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s12": {
+  "subject": "PROTAGONIST, a young woman in a red saree",
+  "action": "washing her husband's feet with joy",
+  "setting": "a stone courtyard under a peepal tree",
+  "lighting": "golden afternoon light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s13": {
+  "subject": "PROTAGONIST, a young woman in red saree",
+  "action": "smiling as she holds a glowing lotus",
+  "setting": "stone steps of a temple in Vrindavan",
+  "lighting": "golden dawn through arches",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s14": {
+  "subject": "PROTAGONIST, a young woman",
+  "action": "clutching a child as a trident passes overhead",
+  "setting": "battlefield under a shattered temple",
+  "lighting": "flashing red and gold",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "s16": {
+  "subject": "The wife, a young woman in a red saree",
+  "action": "stares at a robed figure with a raised eyebrow",
+  "setting": "a stone courtyard under a peepal tree",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s17": {
+  "subject": "PROTAGONIST, a fierce woman",
+  "action": "raising her hands in a curse",
+  "setting": "a stone courtyard of a temple",
+  "lighting": "dramatic shadows from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "s18": {
+  "subject": "The wife, a young woman in a silk saree",
+  "action": "collapsing to the ground, eyes wide",
+  "setting": "a stone courtyard surrounded by carved pillars",
+  "lighting": "golden glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s19": {
+  "subject": "PROTAGONIST, a woman in red saree",
+  "action": "clutching heart, tears streaming",
+  "setting": "stone courtyard of ancient temple",
+  "lighting": "soft dawn glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "s20": {
+  "subject": "The wife, a young woman",
+  "action": "kneeling, touching a stone",
+  "setting": "a stone courtyard with a Shaligram",
+  "lighting": "soft, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "s25": {
+  "subject": "PROTAGONIST, a woman",
+  "action": "kneeling, clutching a stone",
+  "setting": "cracked riverbank under a temple",
+  "lighting": "dull, golden dawn",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s26": {
+  "subject": "the wife, a woman in silk saree",
+  "action": "tearing a tulsi leaf from shaligram stone",
+  "setting": "dim temple with carved stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "s29": {
+  "subject": "the wife, a young woman",
+  "action": "holding a broken conch shell in her hands",
+  "setting": "a stone courtyard near a lingam shrine",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v001_close": {
+  "subject": "the wife, a young woman",
+  "action": "clutching a broken clay pot",
+  "setting": "a dimly lit village hut with earthen walls",
+  "lighting": "flickering oil lamp",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic",
+  "framing": "close"
+ },
+ "v004_close": {
+  "subject": "the wife, a woman in red saree",
+  "action": "gripping a tulsi plant with both hands",
+  "setting": "a stone courtyard near a temple",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v007_close": {
+  "subject": "the wife, a young woman in a red saree",
+  "action": "clutching a golden shield to her chest",
+  "setting": "a temple courtyard with carved stone pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v008_close": {
+  "subject": "PROTAGONIST, a devoted wife",
+  "action": "standing firm with folded hands",
+  "setting": "a dimly lit Indian temple hall",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v012_close": {
+  "subject": "PROTAGONIST, a young woman in a red saree",
+  "action": "washing her husband's feet with joy",
+  "setting": "a stone courtyard under a peepal tree",
+  "lighting": "golden afternoon light",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v014_close": {
+  "subject": "PROTAGONIST, a young woman",
+  "action": "clutching a child as a trident passes overhead",
+  "setting": "battlefield under a shattered temple",
+  "lighting": "flashing red and gold",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic",
+  "framing": "close"
+ },
+ "v016_close": {
+  "subject": "The wife, a young woman in a red saree",
+  "action": "stares at a robed figure with a raised eyebrow",
+  "setting": "a stone courtyard under a peepal tree",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v017_close": {
+  "subject": "PROTAGONIST, a fierce woman",
+  "action": "raising her hands in a curse",
+  "setting": "a stone courtyard of a temple",
+  "lighting": "dramatic shadows from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v018_close": {
+  "subject": "The wife, a young woman in a silk saree",
+  "action": "collapsing to the ground, eyes wide",
+  "setting": "a stone courtyard surrounded by carved pillars",
+  "lighting": "golden glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v019_close": {
+  "subject": "PROTAGONIST, a woman in red saree",
+  "action": "clutching heart, tears streaming",
+  "setting": "stone courtyard of ancient temple",
+  "lighting": "soft dawn glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco",
+  "framing": "close"
+ },
+ "v020_close": {
+  "subject": "The wife, a young woman",
+  "action": "kneeling, touching a stone",
+  "setting": "a stone courtyard with a Shaligram",
+  "lighting": "soft, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v025_close": {
+  "subject": "PROTAGONIST, a woman",
+  "action": "kneeling, clutching a stone",
+  "setting": "cracked riverbank under a temple",
+  "lighting": "dull, golden dawn",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "v026_close": {
+  "subject": "the wife, a woman in silk saree",
+  "action": "tearing a tulsi leaf from shaligram stone",
+  "setting": "dim temple with carved stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v029_close": {
+  "subject": "the wife, a young woman",
+  "action": "holding a broken conch shell in her hands",
+  "setting": "a stone courtyard near a lingam shrine",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "close"
+ },
+ "v029_insert": {
+  "subject": "the wife, a young woman",
+  "action": "holding a broken conch shell in her hands",
+  "setting": "a stone courtyard near a lingam shrine",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi",
+  "framing": "profile"
+ },
+ "s2": {
+  "subject": "PROTAGONIST, a woman",
+  "action": "crying as her body turns to stone",
+  "setting": "ancient temple courtyard with carved pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "s21": {
+  "subject": "The wife, a young woman in silk saree",
+  "action": "bows deeply, hands clasped in prayer",
+  "setting": "carved stone temple with oil lamps",
+  "lighting": "golden glow from lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v002_close": {
+  "subject": "PROTAGONIST, a woman",
+  "action": "crying as her body turns to stone",
+  "setting": "ancient temple courtyard with carved pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco",
+  "framing": "close"
+ },
+ "v021_close": {
+  "subject": "The wife, a young woman in silk saree",
+  "action": "bows deeply, hands clasped in prayer",
+  "setting": "carved stone temple with oil lamps",
+  "lighting": "golden glow from lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ },
+ "s15": {
+  "subject": "the wife, a young",
+  "action": "clutching a broken conch",
+  "setting": "",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "s23": {
+  "subject": "PROTAGONIST, a young woman in",
+  "action": "pleading with a god in",
+  "setting": "stone temple under peepal",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "luxury"
+ },
+ "s24": {
+  "subject": "PROTAGONIST, a young woman",
+  "action": "kneeling, arms raised in plea",
+  "setting": "stone steps of a",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v024_close": {
+  "subject": "PROTAGONIST, a young woman",
+  "action": "kneeling, arms raised in plea",
+  "setting": "stone steps of a",
+  "medium": "photoreal",
+  "src": "writer",
+  "framing": "close"
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "s1": {
+  "subject": "young Indian man in white dhoti, translucent glowing spirit",
+  "action": "rising from physical body",
+  "setting": "dark forest clearing",
+  "lighting": "dim silver moonlight",
+  "medium": "photoreal"
+ },
+ "s3": {
+  "subject": "Lord Vishnu and Garuda",
+  "action": "seated in conversation",
+  "setting": "celestial golden chamber",
+  "lighting": "soft radiant glow",
+  "medium": "photoreal"
+ },
+ "s6": {
+  "subject": "hooded Yamadutas",
+  "action": "binding a shadowy figure",
+  "setting": "misty southern pathway",
+  "lighting": "faint grey twilight",
+  "medium": "photoreal"
+ },
+ "s9": {
+  "subject": "Indian thief figure",
+  "action": "clutching stolen pouch",
+  "setting": "Indian village rooftop at night",
+  "lighting": "pale moonlight shadows",
+  "medium": "photoreal"
+ },
+ "s11": {
+  "subject": "bound soul",
+  "action": "walking through endless dark corridor",
+  "setting": "formless void",
+  "lighting": "near total darkness",
+  "medium": "photoreal"
+ },
+ "s16": {
+  "subject": "single soul",
+  "action": "surrounded by closing shadows",
+  "setting": "featureless black expanse",
+  "lighting": "single distant glimmer",
+  "medium": "photoreal"
+ },
+ "s19": {
+  "subject": "cloaked thief",
+  "action": "sneaking past sleeping household",
+  "setting": "dim village alley",
+  "lighting": "single flickering lamp",
+  "medium": "photoreal"
+ },
+ "s22": {
+  "subject": "same soul",
+  "action": "mirrored by surrounding darkness",
+  "setting": "endless black horizon",
+  "lighting": "faint starlight above",
+  "medium": "photoreal"
+ },
+ "s24": {
+  "subject": "ancient palm-leaf scroll",
+  "action": "unrolling with glowing script",
+  "setting": "stone temple interior",
+  "lighting": "warm candlelight",
+  "medium": "photoreal"
+ },
+ "s29": {
+  "subject": "Yamaraj enthroned",
+  "action": "observing silently",
+  "setting": "vast dark judgment hall",
+  "lighting": "cool silver glow",
+  "medium": "photoreal"
+ },
+ "s32": {
+  "subject": "Chitragupta",
+  "action": "writing in a great ledger",
+  "setting": "dim archive chamber",
+  "lighting": "single oil lamp",
+  "medium": "photoreal"
+ },
+ "s35": {
+  "subject": "soul",
+  "action": "stepping toward distant light",
+  "setting": "threshold between dark and dawn",
+  "lighting": "soft golden horizon",
+  "medium": "photoreal"
+ },
+ "s38": {
+  "subject": "elder sage",
+  "action": "teaching a listening child",
+  "setting": "riverside temple steps",
+  "lighting": "warm sunset glow",
+  "medium": "photoreal"
+ },
+ "s41": {
+  "subject": "honest merchant",
+  "action": "counting coins openly",
+  "setting": "sunlit marketplace",
+  "lighting": "bright clear daylight",
+  "medium": "photoreal"
+ },
+ "s43": {
+  "subject": "farmer",
+  "action": "returning a lost pouch",
+  "setting": "village path",
+  "lighting": "gentle morning light",
+  "medium": "photoreal"
+ },
+ "s47": {
+  "subject": "storyteller silhouette",
+  "action": "gesturing toward the horizon",
+  "setting": "open temple courtyard",
+  "lighting": "golden dusk light",
+  "medium": "photoreal"
+ },
+ "s51": {
+  "subject": "modern figure silhouette",
+  "action": "standing at a quiet crossroads",
+  "setting": "city street at dusk",
+  "lighting": "mixed lamplight and shadow",
+  "medium": "photoreal"
+ },
+ "s55": {
+  "subject": "glowing diya lamp",
+  "action": "burning steadily",
+  "setting": "simple home altar",
+  "lighting": "warm steady flame",
+  "medium": "photoreal"
+ },
+ "scene0": {
+  "subject": "A young man in a dhoti and kurta",
+  "action": "gazes thoughtfully at a lotus in his hand",
+  "setting": "a serene garden in Vrindavan",
+  "lighting": "soft golden dawn light",
+  "medium": "photoreal"
+ },
+ "scene4": {
+  "subject": "Indian Two ascetic men in saffron robes",
+  "action": "chanting mantras while holding a bound soul in the air",
+  "setting": "a rocky hillside near a sacred fire",
+  "lighting": "golden firelight and twilight",
+  "medium": "photoreal"
+ },
+ "scene2": {
+  "subject": "a young man in a dhoti and kurta",
+  "action": "walking alone through a dark forest path",
+  "setting": "a dense Indian forest at midnight",
+  "lighting": "moonlight filtering through trees",
+  "medium": "photoreal"
+ }
+}

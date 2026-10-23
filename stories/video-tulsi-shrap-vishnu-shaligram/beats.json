@@ -1,0 +1,321 @@
+[
+ {
+  "id": "v001",
+  "text": "पति युद्ध से लौटा, लेकिन वो पति नहीं था।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "इसी धोखे से निकला श्राप, और कोई पत्थर बन गया।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "कौन? जवाब शायद आपके आँगन में ही है।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "देवी भागवत पुराण के अनुसार, तुलसी दानवराज शंखचूड़ की पत्नी थी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "शिव से उसका युद्ध सौ बरस चला, कोई नहीं हारा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "लेकिन क्यों?",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "ब्रह्मा का वरदान: जब तक गले में विष्णु का कवच है,",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "और पत्नी पतिव्रता है, तब तक मौत उसे छू नहीं सकती।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "तभी एक बूढ़ा ब्राह्मण आया, और कवच माँग लिया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "वो ब्राह्मण, स्वयं हरि थे।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "अब शंखचूड़ का रूप धरकर, वो तुलसी के द्वार पहुँचे।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "नगाड़े बजे, तुलसी ने खुशी के आँसुओं संग, पति के पाँव धोए।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "बोली, \"आज मेरा जीवन सफल हो गया।\"",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "उसी समय, रणभूमि में शिव का त्रिशूल चला।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "शंखचूड़ राख हो गया।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "लेकिन तुलसी को सब अलग लगा, \"कौन हो तुम, मायावी?\"",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "\"मैं श्राप दूँगी!\" ये सुनकर, भगवान भी डर गए।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "नारायण असली रूप में आए, तुलसी बेहोश हो गई।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "होश आते ही बोली, \"तुम्हारा दिल पत्थर का है, पत्थर बन जाओ!\"",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "यानी पत्थर तुलसी नहीं बनी, स्वयं विष्णु बने, शालिग्राम।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "नारायण बोले, \"तुमने ही मुझे पाने का तप किया था।\"",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "\"ये उसी तप का फल है।\"",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v023",
+  "text": "\"यह देह छोड़ो, मुझसे विवाह करो।\"",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "23",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v024",
+  "text": "\"तुम्हारी देह गंडकी नदी बनेगी, केश तुलसी बनेंगे।\"",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "24",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v025",
+  "text": "\"और मैं, तुम्हारे श्राप से, उसी किनारे पत्थर बनूँगा।\"",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "25",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v026",
+  "text": "\"जो शालिग्राम से तुलसी अलग करे, वो अगले जन्म पत्नी से बिछड़ेगा।\"",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "26",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v027",
+  "text": "आप बताइए, तुलसी का श्राप न्याय था, या क्रोध?",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "27",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v028",
+  "text": "उसने भगवान को पत्थर बनाया, भगवान ने उसे हृदय पर रखा।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "28",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v029",
+  "text": "शंखचूड़ की अस्थियाँ शंख बनीं, तो शिव पर शंख-जल क्यों नहीं? फ़ॉलो कीजिए।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "29",
+   "mode": "reveal"
+  }
+ }
+]

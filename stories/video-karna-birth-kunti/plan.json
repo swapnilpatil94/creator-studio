@@ -7,7 +7,23 @@
    "move": "pull",
    "label": "कुंती ने पहले पुत्र को क्यों बहाया?",
    "reveal": "circle",
-   "fx": "drone_push_in"
+   "fx": "drone_push_in",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "c1",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v001_insert",
+     "framing": "insert",
+     "of": "c1",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -18,7 +34,30 @@
    "img": "c2",
    "move": "panR",
    "label": "एक वरदान से शुरू होती है",
-   "fx": "2.5d_parallax"
+   "fx": "2.5d_parallax",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v002_wide",
+     "framing": "wide",
+     "of": "c2",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v002_close",
+     "framing": "close",
+     "of": "c2",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v002_insert",
+     "framing": "insert",
+     "of": "c2",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -29,7 +68,24 @@
    "img": "c3",
    "move": "push",
    "label": "शूर नाम के एक प्रमुख",
-   "fx": "kinetography_cinemagraph"
+   "fx": "kinetography_cinemagraph",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "c3",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v003_insert",
+     "framing": "insert",
+     "of": "c3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -40,7 +96,30 @@
    "img": "c4",
    "move": "panL",
    "label": "रूप में उनकी बराबरी धरती पर कोई नहीं कर सकता था",
-   "fx": "crane_up_reveal"
+   "fx": "crane_up_reveal",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v004_wide",
+     "framing": "wide",
+     "of": "c4",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "c4",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v004_insert",
+     "framing": "insert",
+     "of": "c4",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -51,7 +130,30 @@
    "img": "c5",
    "move": "pull",
    "label": "शूर ने अपना वचन निभाया",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v005_wide",
+     "framing": "wide",
+     "of": "c5",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "c5",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v005_insert",
+     "framing": "insert",
+     "of": "c5",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -62,7 +164,24 @@
    "img": "c6",
    "move": "panR",
    "label": "कुंतिभोज के घर में पृथा",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v006_close",
+     "framing": "close",
+     "of": "c6",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v006_insert",
+     "framing": "insert",
+     "of": "c6",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -73,7 +192,24 @@
    "img": "c7",
    "move": "push",
    "label": "ऋषि दुर्वासा प्रसन्न हो गए",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "c7",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v007_insert",
+     "framing": "insert",
+     "of": "c7",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -84,7 +220,24 @@
    "img": "c8",
    "move": "panL",
    "label": "एक मंत्र दिया",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v008_close",
+     "framing": "close",
+     "of": "c8",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v008_insert",
+     "framing": "insert",
+     "of": "c8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -95,7 +248,30 @@
    "img": "c9",
    "move": "pull",
    "label": "जिस देवता को बुलाओगी, वह ज़रूर आएगा",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v009_wide",
+     "framing": "wide",
+     "of": "c9",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "c9",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v009_insert",
+     "framing": "insert",
+     "of": "c9",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -106,7 +282,24 @@
    "img": "scene0",
    "move": "panR",
    "label": "जिज्ञासा जाग उठी",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v010_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v010_insert",
+     "framing": "insert",
+     "of": "scene0",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -118,7 +311,18 @@
    "move": "push",
    "label": "मंत्र बोलते ही",
    "reveal": "circle",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "c3",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -130,7 +334,24 @@
    "move": "pull",
    "label": "सूर्यदेव आ रहे हैं",
    "reveal": "diamond",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "c4",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v012_insert",
+     "framing": "insert",
+     "of": "c4",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -142,7 +363,30 @@
    "move": "panL",
    "label": "सूर्यदेव बोलते हैं",
    "reveal": "wipe",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v013_wide",
+     "framing": "wide",
+     "of": "c5",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v013_close",
+     "framing": "close",
+     "of": "c5",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v013_insert",
+     "framing": "insert",
+     "of": "c5",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -154,7 +398,30 @@
    "move": "panR",
    "label": "पृथा का उत्तर",
    "reveal": "circle",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v014_wide",
+     "framing": "wide",
+     "of": "c6",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "c6",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v014_insert",
+     "framing": "insert",
+     "of": "c6",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -166,7 +433,30 @@
    "move": "push",
    "label": "सूर्यदेव का आना",
    "reveal": "diamond",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v015_wide",
+     "framing": "wide",
+     "of": "c7",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v015_close",
+     "framing": "close",
+     "of": "c7",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v015_insert",
+     "framing": "insert",
+     "of": "c7",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -178,7 +468,24 @@
    "move": "pull",
    "label": "पृथा की लज्जा",
    "reveal": "wipe",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "c8",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v016_insert",
+     "framing": "insert",
+     "of": "c8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -190,7 +497,24 @@
    "move": "panL",
    "label": "पुत्र का जन्म",
    "reveal": "circle",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "c9",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v017_insert",
+     "framing": "insert",
+     "of": "c9",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -202,7 +526,24 @@
    "move": "panL",
    "label": "कवच वाला बालक",
    "reveal": "diamond",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v018_insert",
+     "framing": "insert",
+     "of": "scene1",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -214,7 +555,30 @@
    "move": "push",
    "label": "कर्ण का नाम",
    "reveal": "wipe",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v019_wide",
+     "framing": "wide",
+     "of": "scene2",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v019_insert",
+     "framing": "insert",
+     "of": "scene2",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -226,7 +590,30 @@
    "move": "panR",
    "label": "सूर्यदेव लौट गए",
    "reveal": "circle",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v020_wide",
+     "framing": "wide",
+     "of": "scene3",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v020_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v020_insert",
+     "framing": "insert",
+     "of": "scene3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -237,7 +624,30 @@
    "img": "scene4",
    "move": "pull",
    "label": "कुंती ने शोक भरी आँखों से देखा",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v021_wide",
+     "framing": "wide",
+     "of": "scene4",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v021_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v021_insert",
+     "framing": "insert",
+     "of": "scene4",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -248,7 +658,24 @@
    "img": "scene5",
    "move": "panL",
    "label": "अपने बंधुओं के डर से छिपाने का निर्णय",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v022_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v022_insert",
+     "framing": "insert",
+     "of": "scene5",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -259,7 +686,18 @@
    "img": "scene6",
    "move": "push",
    "label": "बलवान पुत्र को पानी में छोड़ दिया",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v023_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -270,7 +708,24 @@
    "img": "scene7",
    "move": "panR",
    "label": "राधा और उनके सूत पति ने बालक को उठा लिया",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v024_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v024_insert",
+     "framing": "insert",
+     "of": "scene7",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -281,7 +736,18 @@
    "img": "scene7",
    "move": "pull",
    "label": "उन्होंने अपने पुत्र की तरह पाला",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v025_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -292,7 +758,24 @@
    "img": "scene8",
    "move": "panL",
    "label": "कवच और कुंडलों के साथ जन्म लेने के कारण",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v026_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v026_insert",
+     "framing": "insert",
+     "of": "scene8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -303,7 +786,30 @@
    "img": "scene9",
    "move": "drone_pull_out_reveal",
    "label": "इंद्र ने अपने पुत्र अर्जुन के हित के लिए ब्राह्मण का रूप लिया",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v027_wide",
+     "framing": "wide",
+     "of": "scene9",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v027_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v027_insert",
+     "framing": "insert",
+     "of": "scene9",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -314,7 +820,24 @@
    "img": "scene9",
    "move": "handheld_breathing_shake",
    "label": "वसुसेन ने अपना कवच उतारकर इंद्र को दे दिया",
-   "fx": "matte_painting_extension"
+   "fx": "matte_painting_extension",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v028_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v028_insert",
+     "framing": "insert",
+     "of": "scene9",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -325,7 +848,30 @@
    "img": "scene10",
    "move": "drone_orbit_180",
    "label": "इंद्र उसकी दानशीलता से बहुत प्रसन्न हुए",
-   "fx": "parallax_occlusion_3d"
+   "fx": "parallax_occlusion_3d",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v029_wide",
+     "framing": "wide",
+     "of": "scene10",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v029_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v029_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -336,7 +882,30 @@
    "img": "scene10",
    "move": "dolly_zoom_vertigo",
    "label": "एक शक्ति नाम का अस्त्र दिया",
-   "fx": "puppet_warp_breathing"
+   "fx": "puppet_warp_breathing",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v030_wide",
+     "framing": "wide",
+     "of": "scene10",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v030_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v030_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -348,7 +917,30 @@
    "move": "pull",
    "label": "कवच और कुंडल वाले बालक",
    "reveal": "circle",
-   "fx": "drone_orbit_180"
+   "fx": "drone_orbit_180",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v031_wide",
+     "framing": "wide",
+     "of": "scene11",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v031_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v031_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
   },
   "chapter": "ch1"
  },
@@ -359,7 +951,9 @@
    "lines": [
     "तो कुंती ने पहला पुत्र क्यों बहाया?"
    ],
-   "style": "wave"
+   "style": "wave",
+   "tone": "gold",
+   "transition": "zoom"
   },
   "chapter": "ch1"
  },
@@ -381,7 +975,9 @@
      "icon": "✨",
      "text": "मंत्र ले लिया सूर्य के लिए"
     }
-   ]
+   ],
+   "tone": "gold",
+   "transition": "zoom"
   },
   "chapter": "ch1"
  }

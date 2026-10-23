@@ -1,0 +1,102 @@
+{
+ "language": "hi",
+ "ai_assisted": true,
+ "status": "approved",
+ "created": "2026-10-20",
+ "format": "carousel",
+ "slug": "tamisra-narak-chori-saza",
+ "pillar": "mythology-india",
+ "topic": "tamisra-narak-chori-saza",
+ "hook": "तमिस्र नरक में चोर को कैसी सज़ा मिलती है?",
+ "body_lines": [
+  "गरुड़ पुराण में भगवान विष्णु ने गरुड़ को नरक लोकों का रहस्य बताया — हर कर्म का अपना फल होता है।",
+  "जो व्यक्ति दूसरों का धन, ज़मीन या हक़ छीनता है, मृत्यु के बाद उसे तमिस्र नरक भेजा जाता है — घोर अंधकार का लोक, जहाँ न दीया जलता है, न सूरज की किरण पहुँचती है।",
+  "क्योंकि चोर हमेशा अंधेरे में ही काम करता है, दूसरों की नज़रों से छिपकर। इसलिए मृत्यु के बाद भी वही अंधकार उसका साथी बनता है।",
+  "पर यह सज़ा अनंत नहीं — जब तक कर्म का फल पूरा नहीं होता, तभी तक। गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है, हर एक अलग पाप की कथा कहता है।",
+  "यह कथा डराने के लिए नहीं, जगाने के लिए है — ईमानदारी से कमाया धन ही असली शांति देता है।"
+ ],
+ "cta": "सेव करें · फॉलो करें",
+ "source_line": "स्रोत: गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन); विष्णु पुराण एवं भागवत पुराण में भी वर्णित",
+ "tradition_note": "यह कथा गरुड़ पुराण की नरक-परंपरा का अनुसरण करती है; तमिस्र नरक का यही मूल विवरण विष्णु पुराण और भागवत पुराण में भी मिलता है।",
+ "hashtags": [
+  "#kathaaya",
+  "#गरुड़पुराण",
+  "#तमिस्रनरक"
+ ],
+ "id": "tamisra-narak-chori-saza.carousel",
+ "slides": [
+  "तमिस्र नरक में चोर को कैसी सज़ा मिलती है?",
+  "गरुड़ पुराण में भगवान विष्णु ने गरुड़ को यह रहस्य बताया",
+  "जो दूसरों का धन चुराता है, उसके लिए है तमिस्र नरक",
+  "वहाँ न दीया है, न सूरज की किरण, केवल घोर अंधकार",
+  "क्योंकि चोर हमेशा अंधेरे में ही काम करता है",
+  "पर यह सज़ा सदा के लिए नहीं, कर्म का फल पूरा होने तक है",
+  "गरुड़ पुराण में ऐसे अट्ठाईस लोकों का वर्णन मिलता है",
+  "कथा सेव करें · फॉलो करें @kathaaya.stories"
+ ],
+ "art": [
+  {
+   "slide": 1,
+   "prompt": "thief figure frozen in shadow, fear and realization on his face, glowing eyes of Yamadutas emerging from darkness, endless black void, dramatic teal and gold lighting",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 2,
+   "prompt": "Lord Vishnu and Garuda seated in conversation, celestial golden chamber, soft radiant glow, reverent traditional iconography",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 3,
+   "prompt": "hooded Yamadutas binding a shadowy human figure, misty southern pathway, faint grey twilight, symbolic restrained composition",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 4,
+   "prompt": "bound soul walking through an endless dark corridor, formless void, near total darkness, single distant glimmer of light",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 5,
+   "prompt": "cloaked thief figure sneaking past a sleeping village household, dim alley, single flickering lamp, tense quiet mood",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 6,
+   "prompt": "soul stepping toward a distant light, threshold between darkness and dawn, soft golden horizon, hopeful tone",
+   "medium": "photoreal"
+  },
+  {
+   "slide": 7,
+   "prompt": "ancient palm-leaf scroll unrolling with glowing script, stone temple interior, warm candlelight, reverent scholarly mood",
+   "medium": "photoreal"
+  }
+ ],
+ "ai_art_disclosed": true,
+ "disclosure_text": "चित्र: AI-निर्मित",
+ "claims": [
+  {
+   "text": "गरुड़ पुराण परंपरागत रूप से भगवान विष्णु द्वारा गरुड़ को सुनाया गया माना जाता है",
+   "en": "traditionally narrated by Vishnu to Garuda",
+   "status": "tradition"
+  },
+  {
+   "text": "तमिस्र नरक पुराणों में चोरी के पाप के लिए वर्णित प्रथम नरकों में से एक है",
+   "en": "Tamisra is traditionally described as a hell for theft in Puranic naraka lists",
+   "status": "tradition"
+  },
+  {
+   "text": "पुराणों में अट्ठाईस प्रकार के नरकों का वर्णन मिलता है",
+   "en": "Puranic tradition (Bhagavata Purana, Vishnu Purana, Devi Bhagavata Purana) describes 28 types of naraka",
+   "status": "tradition"
+  }
+ ],
+ "sources": [
+  {
+   "label": "गरुड़ पुराण, प्रेतकाण्ड (नरक वर्णन)",
+   "ref": "garuda-purana-pretakanda"
+  }
+ ],
+ "cta_slide_last": true,
+ "reviewed": "2026-10-21",
+ "reviewed_by": "owner (hub)"
+}
