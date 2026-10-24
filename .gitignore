@@ -49,3 +49,5 @@ reel-factory/episodes/*
 !reel-factory/episodes/.gitkeep
 reel-factory/.cache/
 reel-factory/node_modules/
+reel-factory/assets/cache/
+reel-factory/.venv/

@@ -1,0 +1,80 @@
+{
+ "theme": "field-notebook",
+ "assets": [
+  {
+   "id": "jewel_wasp",
+   "subject": "a jewel wasp, side view",
+   "character": false
+  },
+  {
+   "id": "cockroach",
+   "subject": "a cockroach, top view",
+   "character": false
+  },
+  {
+   "id": "tree_frog",
+   "subject": "a tree frog on a leaf",
+   "character": false
+  },
+  {
+   "id": "octopus",
+   "subject": "an octopus with curled tentacles",
+   "character": false
+  },
+  {
+   "id": "orchid_flower",
+   "subject": "an orchid flower",
+   "character": false
+  },
+  {
+   "id": "rhino_beetle",
+   "subject": "a rhinoceros beetle, side view",
+   "character": false
+  },
+  {
+   "id": "nautilus_shell",
+   "subject": "a cut nautilus shell showing its spiral chambers",
+   "character": false
+  },
+  {
+   "id": "fern_frond",
+   "subject": "a fern frond",
+   "character": false
+  },
+  {
+   "id": "microscope",
+   "subject": "a brass laboratory microscope",
+   "character": false
+  },
+  {
+   "id": "hanging_bat",
+   "subject": "a bat hanging upside down",
+   "character": false
+  },
+  {
+   "id": "feather",
+   "subject": "a single bird feather",
+   "character": false
+  },
+  {
+   "id": "monarch_butterfly",
+   "subject": "a monarch butterfly with open wings",
+   "character": false
+  },
+  {
+   "id": "mushroom",
+   "subject": "a cluster of three mushrooms",
+   "character": false
+  },
+  {
+   "id": "oak_leaf",
+   "subject": "an oak leaf with acorns",
+   "character": false
+  },
+  {
+   "id": "naturalist",
+   "subject": "a naturalist in a pith helmet with a butterfly net, seen from the front, simple face",
+   "character": true
+  }
+ ]
+}

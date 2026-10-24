@@ -12,13 +12,15 @@ export function timing(plan, style = styles[plan.style || "scrapbook"]) {
   const total = Math.ceil(t / 2) * 2; if (total > t) { const pad = total - t, l = rows[n - 1]; l.speechEnd = +(l.speechEnd + pad).toFixed(3); l.end = +(l.end + pad).toFixed(3); }   // whole 2 s boil cycles: the loop is exact
   return { rows, total };
 }
-export async function compose({ plan, outDir, assetsDir }) {
+export async function compose({ plan, outDir, assetsDir, usePlaceholders = false }) {
   const theme = loadTheme(plan.theme), style = styles[plan.style || "scrapbook"]; if (!style) throw new Error("unknown style " + plan.style);
   const { rows, total } = timing(plan, style), n = plan.beats.length, gaps = [], maps = [], cues = [], impacts = [], fx = [], used = [], leaks = [];
   fs.mkdirSync(path.join(outDir, "assets/fonts"), { recursive: true }); fs.mkdirSync(path.join(outDir, "assets/cutouts"), { recursive: true });
   for (const f of fs.readdirSync(path.join(RF, "fonts"))) if (f.endsWith(".woff2")) fs.copyFileSync(path.join(RF, "fonts", f), path.join(outDir, "assets/fonts", f));
   fs.copyFileSync(path.join(RF, "vendor/gsap.min.js"), path.join(outDir, "assets/gsap.min.js")); fs.writeFileSync(path.join(outDir, "assets/grain.png"), grainPng(256, "grain"));
-  const assetUrl = id => { for (const ext of ["png", "svg", "webp", "jpg"]) { const src = path.join(assetsDir, id + "." + ext); if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(outDir, "assets/cutouts", id + "." + ext)); return `assets/cutouts/${id}.${ext}`; } } throw new Error(`asset "${id}" not found in ${assetsDir}`); };
+  // asset lookup: explicit assetsDir first, then the theme's generated cut-outs (assets/cache/<theme>/cutouts), then (only if allowed) the placeholder icons
+  const dirs = [assetsDir, path.join(RF, "assets/cache", plan.theme, "cutouts"), ...(usePlaceholders || !assetsDir ? [path.join(RF, "placeholder-cutouts")] : [])].filter(Boolean);
+  const assetUrl = id => { for (const dir of dirs) for (const ext of ["png", "svg", "webp", "jpg"]) { const src = path.join(dir, id + "." + ext); if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(outDir, "assets/cutouts", id + "." + ext)); return `assets/cutouts/${id}.${ext}`; } } throw new Error(`asset "${id}" not found (looked in ${dirs.join(", ")}); run: node src/cli.mjs assets plan <plan.json>`); };
   let scenes = "", js = "", top = ""; const loopReset = [];
   const sheetNames = Object.keys(theme.sheets);
   for (const [i, beat] of plan.beats.entries()) {

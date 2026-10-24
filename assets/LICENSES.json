@@ -139,6 +139,25 @@
    "file": "reel-factory/node_modules/world-atlas/countries-50m.json",
    "licence": "ISC (package) / Natural Earth is public domain",
    "source": "npm world-atlas"
+  },
+  {
+   "kind": "model",
+   "name": "BiRefNet general (rembg 2.0.86, birefnet-general.onnx)",
+   "licence": "MIT",
+   "source": "github.com/danielgatis/rembg releases / ZhengPeng7/BiRefNet"
+  },
+  {
+   "kind": "model",
+   "name": "FLUX.2 Klein 4B q6p (Draw Things) for theme assets",
+   "licence": "Apache-2.0",
+   "source": "installed in ~/DrawThingsModels"
+  },
+  {
+   "kind": "art",
+   "name": "generated pothi asset library (15 cut-outs, Klein + style lock)",
+   "file": "reel-factory/assets/cache/pothi (git-ignored, rebuilt from fixed seeds)",
+   "licence": "Generated for this project",
+   "source": "node reel-factory/src/cli.mjs assets library pothi"
   }
  ]
 }

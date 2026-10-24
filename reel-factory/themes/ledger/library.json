@@ -1,0 +1,80 @@
+{
+ "theme": "ledger",
+ "assets": [
+  {
+   "id": "coin_stack",
+   "subject": "a stack of gold coins",
+   "character": false
+  },
+  {
+   "id": "banknote",
+   "subject": "a banknote with a plain abstract design",
+   "character": false
+  },
+  {
+   "id": "bar_chart_rising",
+   "subject": "a rising bar chart with an arrow, no numbers",
+   "character": false
+  },
+  {
+   "id": "piggy_bank",
+   "subject": "a piggy bank",
+   "character": false
+  },
+  {
+   "id": "calculator",
+   "subject": "a desk calculator, buttons only",
+   "character": false
+  },
+  {
+   "id": "briefcase",
+   "subject": "a leather briefcase",
+   "character": false
+  },
+  {
+   "id": "gold_bar",
+   "subject": "a gold bar",
+   "character": false
+  },
+  {
+   "id": "bank_vault_door",
+   "subject": "a round bank vault door with a wheel handle",
+   "character": false
+  },
+  {
+   "id": "receipt",
+   "subject": "a long paper receipt with abstract lines",
+   "character": false
+  },
+  {
+   "id": "skyscraper",
+   "subject": "a tall glass skyscraper",
+   "character": false
+  },
+  {
+   "id": "balance_scale",
+   "subject": "a balance scale",
+   "character": false
+  },
+  {
+   "id": "credit_card",
+   "subject": "a credit card, plain abstract design",
+   "character": false
+  },
+  {
+   "id": "shopping_cart",
+   "subject": "a shopping cart",
+   "character": false
+  },
+  {
+   "id": "magnifying_glass",
+   "subject": "a magnifying glass over a coin",
+   "character": false
+  },
+  {
+   "id": "businessperson",
+   "subject": "a faceless businessperson in a suit holding a briefcase, seen from the front, no face details",
+   "character": true
+  }
+ ]
+}

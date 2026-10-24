@@ -1,0 +1,80 @@
+{
+ "theme": "pothi",
+ "assets": [
+  {
+   "id": "lotus",
+   "subject": "a pink lotus flower with its stem",
+   "character": false
+  },
+  {
+   "id": "conch_shell",
+   "subject": "a white conch shell, spiral shell",
+   "character": false
+  },
+  {
+   "id": "trident",
+   "subject": "a golden trident standing upright, symbol only",
+   "character": false
+  },
+  {
+   "id": "chakra_discus",
+   "subject": "a spinning discus chakra with ornamental spokes",
+   "character": false
+  },
+  {
+   "id": "peacock_feather",
+   "subject": "a single peacock feather",
+   "character": false
+  },
+  {
+   "id": "kalash_pot",
+   "subject": "a brass kalash pot with mango leaves and a coconut on top",
+   "character": false
+  },
+  {
+   "id": "diya_lamp",
+   "subject": "a lit clay oil lamp, diya",
+   "character": false
+  },
+  {
+   "id": "temple_gopuram",
+   "subject": "a tall South Indian temple gateway tower",
+   "character": false
+  },
+  {
+   "id": "nandi_bull",
+   "subject": "a resting bull statue, front three-quarter view",
+   "character": false
+  },
+  {
+   "id": "cobra",
+   "subject": "a hooded cobra rising up",
+   "character": false
+  },
+  {
+   "id": "himalaya_peak",
+   "subject": "a snow-capped Himalayan peak",
+   "character": false
+  },
+  {
+   "id": "crescent_moon",
+   "subject": "a crescent moon with a few stars",
+   "character": false
+  },
+  {
+   "id": "damaru_drum",
+   "subject": "a small two-sided damaru hand drum",
+   "character": false
+  },
+  {
+   "id": "elephant",
+   "subject": "a decorated elephant, side view",
+   "character": false
+  },
+  {
+   "id": "sage_figure",
+   "subject": "an elderly sage with a long beard sitting cross-legged, seen from the front, simple face",
+   "character": true
+  }
+ ]
+}

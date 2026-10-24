@@ -1,0 +1,169 @@
+{
+ "title": "pothi real assets demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "scrapbook",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.4,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "",
+   "on_screen": [
+    "हिमालय की झील",
+    "सैकड़ों कंकाल",
+    "और एक राज़"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [
+    "sparks"
+   ],
+   "emphasis_word": "हिमालय",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "हिमालय की झील सैकड़ों कंकाल और एक राज़"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "रूपकुंड झील"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "himalaya_peak",
+     "subject": "a snow-capped Himalayan peak",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "rise"
+   ],
+   "emphasis_word": "रूपकुंड",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "रूपकुंड झील"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "twist",
+   "component": "Stamp",
+   "variant": "",
+   "on_screen": [
+    "सच या अफवाह",
+    "अनसुलझा"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "सच",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "सच या अफवाह अनसुलझा"
+  },
+  {
+   "id": 4,
+   "line_ids": [
+    4
+   ],
+   "seconds": 3.4,
+   "archetype": "quote",
+   "component": "QuoteCard",
+   "variant": "",
+   "on_screen": [
+    "लोग कहते हैं",
+    "यहाँ आत्माएँ हैं"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "लोग",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "लोग कहते हैं यहाँ आत्माएँ हैं"
+  },
+  {
+   "id": 5,
+   "line_ids": [
+    5
+   ],
+   "seconds": 3.4,
+   "archetype": "character_intro",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "एक साधु",
+    "कथा सुनाता है"
+   ],
+   "accent_line": 2,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "sage_figure",
+     "subject": "an elderly sage",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "rise",
+    "sparks"
+   ],
+   "emphasis_word": "साधु",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "एक साधु कथा सुनाता है"
+  },
+  {
+   "id": 6,
+   "line_ids": [
+    6
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "मंदिर की ओर"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [
+    {
+     "id": "temple_gopuram",
+     "subject": "temple",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "pop"
+   ],
+   "emphasis_word": "मंदिर",
+   "sfx": [],
+   "loop_to_start": true,
+   "narration": "मंदिर की ओर चले"
+  }
+ ]
+}

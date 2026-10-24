@@ -1,0 +1,80 @@
+{
+ "theme": "collage-ocean",
+ "assets": [
+  {
+   "id": "blue_whale",
+   "subject": "a blue whale, side view",
+   "character": false
+  },
+  {
+   "id": "octopus",
+   "subject": "an octopus with curled tentacles",
+   "character": false
+  },
+  {
+   "id": "jellyfish",
+   "subject": "a glowing jellyfish",
+   "character": false
+  },
+  {
+   "id": "sea_turtle",
+   "subject": "a sea turtle swimming, side view",
+   "character": false
+  },
+  {
+   "id": "great_white_shark",
+   "subject": "a great white shark, side view",
+   "character": false
+  },
+  {
+   "id": "anglerfish",
+   "subject": "an anglerfish with its glowing lure",
+   "character": false
+  },
+  {
+   "id": "coral_reef",
+   "subject": "a branching coral",
+   "character": false
+  },
+  {
+   "id": "submarine",
+   "subject": "a small yellow submarine",
+   "character": false
+  },
+  {
+   "id": "ship_anchor",
+   "subject": "a ship anchor with a rope",
+   "character": false
+  },
+  {
+   "id": "spiral_seashell",
+   "subject": "a spiral seashell",
+   "character": false
+  },
+  {
+   "id": "crab",
+   "subject": "a crab, top view",
+   "character": false
+  },
+  {
+   "id": "seahorse",
+   "subject": "a seahorse",
+   "character": false
+  },
+  {
+   "id": "diving_helmet",
+   "subject": "an old brass diving helmet",
+   "character": false
+  },
+  {
+   "id": "lighthouse",
+   "subject": "a lighthouse on a rock",
+   "character": false
+  },
+  {
+   "id": "diver",
+   "subject": "a scuba diver swimming, seen from the side, simple mask",
+   "character": true
+  }
+ ]
+}

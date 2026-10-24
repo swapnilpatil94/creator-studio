@@ -1,0 +1,80 @@
+{
+ "theme": "rahasya",
+ "assets": [
+  {
+   "id": "old_key",
+   "subject": "an old iron skeleton key",
+   "character": false
+  },
+  {
+   "id": "magnifying_glass",
+   "subject": "a brass magnifying glass",
+   "character": false
+  },
+  {
+   "id": "oil_lantern",
+   "subject": "an old oil lantern, lit",
+   "character": false
+  },
+  {
+   "id": "folded_map",
+   "subject": "a folded old paper map with a red X",
+   "character": false
+  },
+  {
+   "id": "compass",
+   "subject": "a brass pocket compass",
+   "character": false
+  },
+  {
+   "id": "vintage_camera",
+   "subject": "a vintage folding camera",
+   "character": false
+  },
+  {
+   "id": "typewriter",
+   "subject": "an old manual typewriter",
+   "character": false
+  },
+  {
+   "id": "ancient_coin",
+   "subject": "an ancient worn coin",
+   "character": false
+  },
+  {
+   "id": "mountain_lake",
+   "subject": "a still mountain lake surrounded by peaks",
+   "character": false
+  },
+  {
+   "id": "footprints_in_snow",
+   "subject": "a trail of footprints in snow",
+   "character": false
+  },
+  {
+   "id": "open_notebook",
+   "subject": "an open notebook with handwritten notes, scribbles only",
+   "character": false
+  },
+  {
+   "id": "flashlight",
+   "subject": "a metal flashlight shining a beam",
+   "character": false
+  },
+  {
+   "id": "steel_safe",
+   "subject": "a heavy steel safe with a dial",
+   "character": false
+  },
+  {
+   "id": "raven_bird",
+   "subject": "a raven perched, side view",
+   "character": false
+  },
+  {
+   "id": "detective",
+   "subject": "a faceless detective in a trench coat and fedora, seen from the front, no face details",
+   "character": true
+  }
+ ]
+}
