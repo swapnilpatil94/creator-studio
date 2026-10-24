@@ -6,7 +6,8 @@ import { styles } from "../styles/index.mjs"; import { transition, TRANSITIONS }
 import { grainPng } from "./lib/grain.mjs"; import { allShapes } from "./lib/shapes.mjs";
 const here = path.dirname(fileURLToPath(import.meta.url)), RF = path.resolve(here, ".."), W = 1080, H = 1920;
 export const loadTheme = name => JSON.parse(fs.readFileSync(path.join(RF, "themes", name, "tokens.json"), "utf8"));
-const kindOf = (style, plan, i) => plan.beats[i].transition || style.transitions[i % style.transitions.length];
+export const PACKS = { calm: ["dissolve", "cut", "dissolve", "cut"], punchy: ["whip", "cut", "flash", "whip"], tape: ["tapeRip", "cut", "tapeRip", "flash"], glitch: ["glitch", "cut", "flash", "glitch"], default: null };
+const kindOf = (style, plan, i) => plan.beats[i].transition || ((PACKS[plan.animation] || style.transitions)[i % (PACKS[plan.animation] || style.transitions).length]);
 export function timing(plan, style = styles[plan.style || "scrapbook"]) {
   const n = plan.beats.length, loop = style.loop !== false && plan.loop !== false, fixed = plan.beats.every(b => typeof b.start === "number"); let t = 0, rows;
   if (fixed) {   // start times come from the narration (forced alignment): the voice is continuous, scenes follow it; transitions end exactly where the next scene starts
@@ -44,6 +45,11 @@ export async function compose({ plan, outDir, assetsDir, usePlaceholders = false
     for (const m of beat.motion || []) if (["sparks", "petals", "dust"].includes(m)) { const f0 = { kind: m, n: m === "dust" ? 24 : 18, x: 120, y: 200, w: 840, h: 1100, t0: first ? 0 : contentT, t1: +r.end.toFixed(3), seed: id + m, period: total / Math.round(total / 3), color: m === "petals" ? theme.palette.saffron : theme.palette.gold }; fx.push(f0); if (first && loop) fx.push({ ...f0, t0: +(rows[n - 1].trStart).toFixed(3), t1: total }); }
     for (const c of beat.sfx || []) { const at = typeof c.at === "number" ? contentT + c.at : ({ enter: contentT, emphasis: r.start + 0.9, impact: contentT + 0.2, exit: r.speechEnd }[c.at] ?? r.start); cues.push({ beat: i + 1, name: c.name, at: +at.toFixed(3) }); if (c.shake && c.at === "impact" && !impacts.includes(+at.toFixed(3))) impacts.push(+at.toFixed(3)); }
     if (first) { const seen = new Set(); for (const m of js.slice(jsMark).matchAll(/tl\.fromTo\(("[^"]+"),(\{[^{}]*\}),/g)) { if (seen.has(m[1])) continue; seen.add(m[1]); const fromVars = m[2].replace(/"?opacity"?\s*:\s*[^,}]+,?/, ""); if (/\S/.test(fromVars.replace(/[{}\s,]/g, ""))) loopReset.push(`tl.set(${m[1]},${fromVars},LOOPT);`); } }   // scene 1's own motion is put back to its frame-0 state while it is hidden, so the loop closes exactly
+    if (beat.mood === "reveal") {   // tension devices on the reveal beats: a pulsing red edge and a short flicker as the scene lands
+      body += `<div id="${id}-pulse" style="position:absolute;inset:0;z-index:30;pointer-events:none;opacity:0;box-shadow:inset 0 0 190px 40px rgba(185,58,54,.75)"></div>`; const pt = first ? 0.2 : contentT + 0.15, n = Math.max(2, Math.min(6, Math.floor((beat.seconds - 0.4) / 0.9)));
+      js += `tl.fromTo("#${id}-pulse",{opacity:0},{opacity:0.55,duration:0.45,ease:"sine.inOut",yoyo:true,repeat:${n * 2 - 1},immediateRender:false},${pt.toFixed(3)});`;
+      if (!first) js += [0, 0.05, 0.1, 0.15].map((d, q) => `tl.set("#in${i}",{opacity:${[0.35, 1, 0.55, 1][q]}},${(contentT + d).toFixed(3)});`).join("");
+    }
     scenes += `<div class="scene" id="sc${i}" style="opacity:${first ? 1 : 0};z-index:${first ? 4 : 1}"><div class="inner" id="in${i}">${html}${body}</div></div>\n`;
     if (style.push) { const a = first ? 0 : contentT, b = r.speechEnd; js += `tl.fromTo("#in${i}",{scale:1},{scale:1.035,duration:${(b - a).toFixed(3)},ease:"none",immediateRender:false},${a.toFixed(3)});` + (first ? `tl.set("#in0",{scale:1},${rows[n - 1].speechEnd.toFixed(3)});` : "") + "\n"; }
     // transition into the next scene (the last one loops back to scene 1)

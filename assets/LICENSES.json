@@ -158,6 +158,13 @@
    "file": "reel-factory/assets/cache/pothi (git-ignored, rebuilt from fixed seeds)",
    "licence": "Generated for this project",
    "source": "node reel-factory/src/cli.mjs assets library pothi"
+  },
+  {
+   "kind": "sfx",
+   "name": "heartbeat loop (synthesised with ffmpeg sine tones)",
+   "file": "reel-factory/assets/sfx/heartbeat.wav",
+   "licence": "Original work (generated), no third-party material",
+   "source": "reel-factory/src/mix.mjs heartbeatFile()"
   }
  ]
 }

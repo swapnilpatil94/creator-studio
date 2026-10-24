@@ -47,3 +47,7 @@ COLOUR PSYCHOLOGY (the `mood` of every beat sets the paper colour; the arc matte
 - reveal (deep blood-red tint): the twist, the moment it is named. One or two beats only (never more than two), usually the stamp or the "arranged choices" beat.
 - clarity (pale paper): the closing realisation, the viewer finally sees it. Only the last one or two beats.
 Red is a warning colour: use it sparingly. Vary the mood along this arc: calm -> pressure -> reveal -> clarity.
+
+MOTIF AND TENSION
+- Pick ONE symbolic object that stands for the idea (a hand with strings, an eye, a door, a button, a cup) and bring it back in at least two beats with the SAME asset id and reuse true; the film should feel designed around it.
+- Hold one open question from the second beat to the end; the reveal beats (mood reveal) land the answer; the last beat asks the viewer to decide.

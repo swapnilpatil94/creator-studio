@@ -13,10 +13,10 @@ export function buildMessages({ theme, style, genre = "psychology", beats, learn
 }
 const ajv = new Ajv({ allErrors: true, strict: false });
 /** semantic rules on top of the schema: returns a list of problems (empty = ok) */
-const norm = t => t.replace(/\u093C/g, "").replace(/[ाीुूेैोौंँः्]/g, m => m);
-const toks = t => norm(t).replace(/[।,?!:;…"“”'’()]/g, " ").split(/\s+/).filter(Boolean);
+export const norm = t => t.replace(/\u093C/g, "").replace(/[ाीुूेैोौंँः्]/g, m => m);
+export const toks = t => norm(t).replace(/[।,?!:;…"“”'’()]/g, " ").split(/\s+/).filter(Boolean);
 /** a word counts as "from the narration" only if it is a whole word of it (inflection of up to 2 trailing characters allowed for words of 4+ characters): this catches words cut off mid-way */
-const wordOk = (x, nt) => nt.some(w => w === x || (x.length >= 4 && w.length >= 4 && (w.startsWith(x) || x.startsWith(w)) && Math.abs(w.length - x.length) <= 2));
+export const wordOk = (x, nt) => nt.some(w => w === x || (x.length >= 4 && w.length >= 4 && (w.startsWith(x) || x.startsWith(w)) && Math.abs(w.length - x.length) <= 2));
 const inNarration = (w, nar) => { const nt = toks(nar); return toks(w).every(x => wordOk(x, nt)); };
 export function check(plan, { style, beats }) {
   const schema = beatPlanSchema(), ok = ajv.compile(schema)(plan) ? [] : ajv.errors.slice(0, 8).map(e => `schema ${e.instancePath || "/"} ${e.message}`), errs = [...ok]; if (!Array.isArray(plan?.beats)) return errs.length ? errs : ["no beats"];
@@ -39,6 +39,7 @@ export function check(plan, { style, beats }) {
   if (new Set(plan.beats.map(b => b.component)).size < Math.min(5, plan.beats.length)) errs.push("use at least 5 different components");
   const pic = plan.beats.filter(b => ["Specimen", "StringBoard", "Cutout"].includes(b.component)).length, need = Math.ceil(0.5 * plan.beats.length); if (pic < need) errs.push(`[soft] only ${pic} beats show a cut-out picture; at least ${need} of ${plan.beats.length} must use Specimen, StringBoard or Cutout (a different physical object each time)`);
   const tl = plan.beats.filter(b => b.component === "Timeline").length; if (tl > 2) errs.push(`[soft] Timeline is used ${tl} times; at most 2 (use Specimen with a different object instead)`);
+  const use = {}; plan.beats.forEach(b => (b.assets || []).forEach(a => { use[a.id] = (use[a.id] || 0) + 1; })); if (plan.beats.length >= 8 && !Object.values(use).some(n => n >= 2)) errs.push("[soft] no recurring motif: reuse one symbolic object (same asset id, reuse true) in at least 2 beats");
   const seen = new Set(); plan.beats.forEach((b, i) => { const k = JSON.stringify(b.on_screen); if (b.on_screen?.length && seen.has(k)) errs.push(`[soft] beat ${i + 1}: the same on_screen text as an earlier beat`); seen.add(k); });
   const ids = new Map(); plan.beats.forEach((b, i) => (b.assets || []).forEach(a => { if (ids.has(a.id) && !a.reuse) errs.push(`beat ${i + 1}: asset id "${a.id}" repeats beat ${ids.get(a.id)}; give a new object, or set reuse true if it is meant to return`); ids.set(a.id, i + 1); }));
   return errs;

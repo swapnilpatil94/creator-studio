@@ -9,12 +9,17 @@ const STAGES = ["lines", "voice", "director", "assets", "compose", "check", "ren
 const JOBS = {}; let busy = null;
 async function options() { const { styles } = await import("../reel-factory/styles/index.mjs"), { themes } = await import("../reel-factory/src/catalog.mjs"), { allowedComponents } = await import("../reel-factory/src/director.mjs");
   const { TEMPLATES } = await import("../reel-factory/templates/index.mjs"); return { templates: Object.entries(TEMPLATES).map(([k, v]) => ({ name: k, ...v })), themes: themes(), styles: Object.values(styles).map(s => ({ name: s.name, label: s.label, looks: s.looks, best_for: s.best_for, components: allowedComponents(s.name).map(c => c.name) })), speakers: ["maitri", "kavya", "agastya", "vinaya"] }; }
-function start(slug, args) {
+function start(slug, args, cmd = "make") {
   if (busy) throw new Error("another reel job is running: " + busy); const job = { slug, status: "running", log: [], started: Date.now(), stages: {} }; JOBS[slug] = job; busy = slug;
-  const c = spawn("node", [path.join(RF, "src/cli.mjs"), "make", slug, ...args], { cwd: RF, stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, PYTHONUNBUFFERED: "1" } }); let buf = "";
+  const c = spawn("node", [path.join(RF, "src/cli.mjs"), cmd, ...(cmd === "make" ? [slug] : []), ...args], { cwd: RF, stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, PYTHONUNBUFFERED: "1" } }); let buf = "";
   const on = d => { buf += d.toString().replace(/\r/g, "\n"); const L = buf.split("\n"); buf = L.pop(); for (const l of L) { if (!l.trim()) continue; const m = /^@@stage (\S+) (start|done|failed)\s*(.*)$/.exec(l); if (m) job.stages[m[1]] = { status: m[2], info: m[3] }; if (!/@hf-progress|\[INFO\]/.test(l)) { job.log.push(l.slice(0, 220)); if (job.log.length > 300) job.log.shift(); } } };
   c.stdout.on("data", on); c.stderr.on("data", on); c.on("close", code => { job.status = code === 0 ? "done" : "failed"; job.ended = Date.now(); busy = null; }); return job;
 }
+// ---- daily factory: queue + schedule (reel-factory/src/queue.mjs); a one-minute tick starts the next topic when the schedule says so ----
+const Q = () => import("../reel-factory/src/queue.mjs");
+async function factoryState() { const q = await Q(), data = q.load(), j = JOBS._daily || null; return { settings: data.settings, items: data.items.map(i => ({ id: i.id, title: i.title, status: i.status, slug: i.slug, template: i.template, animation: i.animation, error: i.error, hint: i.template_hint, finished: i.finished })), madeToday: q.madeToday(data), busy, job: j }; }
+async function tick() { try { if (busy) return; const q = await Q(), data = q.load(); if (q.due(data)) start("_daily", ["--once"], "daily"); } catch {} }
+setInterval(tick, 60000).unref?.();
 export async function handle(req, res, p, ctx) {
   const { send, serveFile } = ctx; if (!p.startsWith("/api/reel/") && !p.startsWith("/reel/file/")) return false; const url = new URL(req.url, "http://x"), body = async () => JSON.parse((await ctx.readBody(req, 2e6)).toString() || "{}");
   try { let m;
@@ -31,6 +36,12 @@ export async function handle(req, res, p, ctx) {
       if (b.reroll) { const { dirFor, cutoutsDir } = await import("../reel-factory/src/assets.mjs"); for (const a of beat.assets || []) { fs.rmSync(path.join(cutoutsDir(plan.theme), a.id + ".png"), { force: true }); fs.rmSync(dirFor(plan.theme, a.id), { recursive: true, force: true }); } }
       W(pf, plan); send(res, 200, { ok: true }); return true; }
     if (req.method === "POST" && p === "/api/reel/delete") { const b = await body(); if (busy === b.slug) throw new Error("a job is running for this episode"); fs.rmSync(dir(b.slug), { recursive: true, force: true }); send(res, 200, { ok: true }); return true; }
+    if (req.method === "GET" && p === "/api/reel/factory") { send(res, 200, await factoryState()); return true; }
+    if (req.method === "POST" && p === "/api/reel/factory/settings") { const b = await body(), q = await Q(), d = q.load(); if (b.enabled !== undefined) d.settings.enabled = !!b.enabled; if (b.perDay) d.settings.perDay = Math.max(1, Math.min(12, +b.perDay)); if (b.hour !== undefined) d.settings.hour = Math.max(0, Math.min(23, +b.hour)); q.save(d); send(res, 200, await factoryState()); return true; }
+    if (req.method === "POST" && p === "/api/reel/queue/add") { const b = await body(), q = await Q(), d = q.load(), facts = (Array.isArray(b.facts) ? b.facts : String(b.facts || "").split("\n")).map(x => x.trim()).filter(Boolean); if (!b.title || facts.length < 3) throw new Error("a topic needs a title and at least 3 facts (one per line); the writer may use only these facts"); q.add(d, [{ title: b.title, facts, verify: String(b.verify || "").split("\n").map(x => x.trim()).filter(Boolean) }]); q.save(d); send(res, 200, await factoryState()); return true; }
+    if (req.method === "POST" && p === "/api/reel/queue/seed") { const q = await Q(), d = q.load(), n = q.seedFrom(d, path.join(RF, "topics/dark-psychology.json")); q.save(d); send(res, 200, { added: n, ...(await factoryState()) }); return true; }
+    if (req.method === "POST" && p === "/api/reel/queue/run") { start("_daily", ["--once"], "daily"); send(res, 200, { started: true }); return true; }
+    if (req.method === "POST" && (p === "/api/reel/queue/remove" || p === "/api/reel/queue/retry")) { const b = await body(), q = await Q(), d = q.load(), it = d.items.find(i => i.id === b.id); if (!it) throw new Error("no such topic"); if (it.status === "running") throw new Error("it is running"); if (p.endsWith("remove")) d.items = d.items.filter(i => i !== it); else Object.assign(it, { status: "queued", error: null }); q.save(d); send(res, 200, await factoryState()); return true; }
     send(res, 404, { error: "unknown reel route" }); return true;
   } catch (e) { send(res, 400, { error: e.message }); return true; }
 }

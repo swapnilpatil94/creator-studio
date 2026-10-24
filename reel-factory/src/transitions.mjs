@@ -6,6 +6,7 @@ const hideOut = (a, t) => `tl.set(${j(a)},{opacity:0,zIndex:1,x:0,y:0,scale:1,ro
 const NR = { immediateRender: false };
 export const TRANSITIONS = {
   dissolve:   { dur: 0.55, desc: "calm cross-dissolve" },
+  glitch:     { dur: 0.26, desc: "digital glitch: jittering slices and a hard switch" },
   cut:        { dur: 0.12, desc: "hard cut, tiny impact flash" },
   flash:      { dur: 0.16, desc: "white flash cut" },
   whip:       { dur: 0.28, desc: "speed-ramp whip pan with blur" },
@@ -19,6 +20,10 @@ export const TRANSITIONS = {
 export function transition(kind, { a, b, t, i, theme, focus = { x: 540, y: 800 }, shapes = ["circle", "circle"], impactAt }) {
   const d = (TRANSITIONS[kind] || TRANSITIONS.cut).dur, t1 = t + d, mid = t + d / 2, pal = theme.palette; let js = "", html = "";
   switch (kind) {
+    case "glitch": {
+      const seq = [[0, -26, 5], [0.04, 32, -6], [0.08, -18, 3], [0.12, 40, -8]]; js += setZ(a, b, t);
+      for (const [dt, x, sk] of seq) js += `tl.set(${j(a)},{x:${x},skewX:${sk},filter:"hue-rotate(${x * 3}deg) saturate(1.8)"},${(t + dt).toFixed(3)});`;
+      js += `tl.set(${j(a)},{opacity:0,x:0,skewX:0,filter:"none",zIndex:1},${(t + 0.14).toFixed(3)});tl.set(${j(b)},{opacity:1,x:28,skewX:-5,filter:"hue-rotate(-60deg) saturate(1.8)"},${(t + 0.14).toFixed(3)});tl.set(${j(b)},{x:-16,skewX:3},${(t + 0.18).toFixed(3)});tl.set(${j(b)},{x:0,skewX:0,filter:"none"},${(t + 0.22).toFixed(3)});tl.set(${j(b)},{clearProps:"filter,transform"},${t1.toFixed(3)});`; break; }
     case "dissolve":
       js += setZ(a, b, t) + `tl.fromTo(${j(b)},{opacity:0},{opacity:1,duration:${d},ease:"power1.inOut",immediateRender:false},${t.toFixed(3)});` + hideOut(a, t1); break;
     case "whip":
@@ -49,5 +54,5 @@ export function transition(kind, { a, b, t, i, theme, focus = { x: 540, y: 800 }
       html = `<div id="fl${i}" style="position:absolute;inset:0;z-index:9;opacity:0;background:#fff"></div>`;
       js += `tl.set(${j(a)},{opacity:0,zIndex:1},${t.toFixed(3)});tl.set(${j(b)},{opacity:1,zIndex:4},${t.toFixed(3)});tl.fromTo("#fl${i}",{opacity:0.55},{opacity:0,duration:${d},ease:"power2.out",immediateRender:false},${t.toFixed(3)});`;
   }
-  return { js, html, dur: d, impact: kind === "cut" || kind === "whip" };
+  return { js, html, dur: d, impact: kind === "cut" || kind === "whip" || kind === "glitch" };
 }
