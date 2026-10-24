@@ -23,3 +23,4 @@ test("writer rules: a grounded script passes; digits, invented numbers, unground
   const c = good(); c.lines = c.lines.map(l => ({ ...l, fact: null })); assert.ok(check(c, topic).some(e => /not tied to a fact/.test(e)));
   const d = good(); d.lines[7].text = "यह सब बस इतना ही है।"; assert.ok(check(d, topic).some(e => /question/.test(e)));
 });
+test("queue defaults carry a voice choice (Veena, maitri, natural) the daily run passes on", () => { const q = Q.load(path.resolve("episodes/__none__.json")); assert.deepEqual(q.settings.voice, { engine: "veena", speaker: "maitri", mode: "natural", reference: null }); });

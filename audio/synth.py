@@ -69,6 +69,9 @@ VEENA_TEMPO_CORRECTION = 0.82   # measured 2026-10-22: Veena's native rate ran ~
 # Now: (1) a line that does not end its sentence is spoken TOGETHER with the next line in one call and cut apart at the word boundary (forced alignment), with only a breath between them;
 # (2) each line's stretch is chosen to bring its raw rate to a steady target (3.0 words/s with a small emotion lean), limited to +-12%, instead of fixed emotion tempos. VOICE_FLOW=classic restores the old behaviour.
 FLOW = os.environ.get("VOICE_FLOW", "natural") != "classic"
+MODE = os.environ.get("VOICE_MODE", "natural")   # natural (default): keeps the voice's own dynamics and presence, barely stretches it; classic: the earlier soft, levelled chain
+TEMPO_LIM = (0.95, 1.05) if MODE == "natural" else (0.88, 1.12)
+GAIN_CLIP = 2.5 if MODE == "natural" else 6.0
 SENT_END = ("।", ".", "?", "!", "…", '"', "”", "’")
 _ALIGN = None
 def split_audio(y, ta, tb):
@@ -93,10 +96,10 @@ def merge_flow(plans, order):
         else: out.append(a); i += 1
     return out
 def flow_tempo(p, y, tempo_scale):
-    rate = p["words"] / max(len(y) / SR, 1e-3); rel = max(0.93, min(1.07, (p["tempo"] / max(tempo_scale, 1e-3)) / 1.15)); return round(max(0.88, min(1.12, 3.0 * rel / rate)), 3)
+    rate = p["words"] / max(len(y) / SR, 1e-3); rel = max(0.93, min(1.07, (p["tempo"] / max(tempo_scale, 1e-3)) / 1.15)); return round(max(TEMPO_LIM[0], min(TEMPO_LIM[1], 3.0 * rel / rate)), 3)
 def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voice=None):
     sd = ROOT / "stories" / story; beats = json.loads((sd / "beats.json").read_text(encoding="utf-8")); out = sd / "narration" / "voice"; out.mkdir(parents=True, exist_ok=True)
-    prof = director.PROFILE; post = post or prof["post"]; tempo_scale = tempo_scale if tempo_scale is not None else prof.get("tempo_scale", 1.0)
+    prof = director.PROFILE; post = post or ("natural" if MODE == "natural" else prof["post"]); tempo_scale = tempo_scale if tempo_scale is not None else prof.get("tempo_scale", 1.0)
     if getattr(voice, "variant", None) == "veena": tempo_scale *= VEENA_TEMPO_CORRECTION
     plans = director.plan(beats, tempo_scale=tempo_scale); voice = voice or ChatterboxVoice()
     chunks, segs, phr, t = [], {}, [], 0.0
@@ -111,7 +114,7 @@ def run(story, post=None, tempo_scale=None, do_align=True, target_db=-23.0, voic
         nonlocal t
         raw_dur = len(y) / SR
         if veena_flow: p = dict(p, tempo=flow_tempo(p, y, tempo_scale))
-        y = atempo(y, p["tempo"]); d = target_db - rms_db(y); y = fade(y * 10 ** (np.clip(d, -6, 6) / 20) * 10 ** (p["gain_db"] / 20))
+        y = atempo(y, p["tempo"]); d = target_db - rms_db(y); y = fade(y * 10 ** (np.clip(d, -GAIN_CLIP, GAIN_CLIP) / 20) * 10 ** (p["gain_db"] / 20))
         gap = np.zeros(int(SR * pause), dtype=np.float32); s0 = t
         sg = segs.setdefault(p["beat"], dict(beat_id=p["beat"], text=next(b["text"] for b in beats if b["id"] == p["beat"]), start_seconds=round(s0, 3), phrases=[]))
         sg["end_seconds"] = round(s0 + len(y) / SR, 3); sg["phrases"].append(dict(id=p["id"], text=p["text"], emotion=p["emotion"], exaggeration=p["params"]["exaggeration"], tempo=p["tempo"], start=round(s0, 3), end=round(s0 + len(y) / SR, 3), tries=len(tries)))

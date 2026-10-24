@@ -1,7 +1,7 @@
 // The production queue: topics (title + facts) waiting to become videos, plus the daily schedule settings. One JSON file, so it survives restarts.
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
 const RF = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), QF = path.join(RF, "episodes/_queue.json");
-export const load = (f = QF) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return { settings: { enabled: false, perDay: 2, hour: 2 }, items: [] }; } };
+export const load = (f = QF) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return { settings: { enabled: false, perDay: 2, hour: 2, voice: { engine: "veena", speaker: "maitri", mode: "natural", reference: null } }, items: [] }; } };
 export const save = (q, f = QF) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(q, null, 1)); };
 const slugify = s => (s || "topic").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 24) || "topic";
 export const today = () => new Date().toISOString().slice(0, 10);

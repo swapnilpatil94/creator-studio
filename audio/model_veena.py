@@ -37,7 +37,7 @@ class Voice:
         # Chatterbox-specific controls (exaggeration, cfg_weight, min_p, repetition_penalty) have no Veena
         # equivalent yet (the model has no exposed emotion/prosody control -- see maya-research/Veena README,
         # "Future Updates"): only temperature/top_p carry through, at their Veena-README defaults.
-        req = {"text": text, "speaker": self.speaker, "seed": seed, "temperature": params.get("temperature", 0.4), "top_p": params.get("top_p", 0.9)}
+        req = {"text": text, "speaker": self.speaker, "seed": seed, "temperature": params.get("temperature", float(os.environ.get("VEENA_TEMPERATURE", "0.5" if os.environ.get("VOICE_MODE", "natural") == "natural" else "0.4"))), "top_p": params.get("top_p", 0.9)}
         self.proc.stdin.write(json.dumps(req) + "\n"); self.proc.stdin.flush()
         line = self.proc.stdout.readline()
         if not line:
