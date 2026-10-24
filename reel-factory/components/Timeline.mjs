@@ -1,6 +1,6 @@
 import { piece, f, esc } from "./_kit.mjs"; import { fitSize } from "../src/lib/measure.mjs";
 export default {
-  name: "Timeline", archetypes: ["date_era", "process_steps", "cause_effect"], slot: "full", styles: ["documentary", "desktop", "scrapbook", "kinetic"],
+  name: "Timeline", archetypes: ["date_era", "process_steps", "cause_effect"], slot: "full", styles: ["documentary", "desktop", "scrapbook", "kinetic", "specimen"],
   when_to_use: "Evidence timeline: 2-4 dated nodes reveal down a vertical line (year in amber, what happened in ivory). Use only dates stated in the script; prefix a node with '!' to mark a crisis in red.",
   schema: { type: "object", properties: { nodes: { type: "array", maxItems: 4, items: { type: "object", properties: { year: { type: "string" }, text: { type: "string", maxLength: 28 }, hot: { type: "boolean" } } } }, title: { type: "string" } }, required: ["nodes"] },
   demo: { archetype: "date_era", component: "Timeline", on_screen: ["1903|एक कमेटी बनी", "!1930 के दशक|विदेश में माँग गिरी"] },

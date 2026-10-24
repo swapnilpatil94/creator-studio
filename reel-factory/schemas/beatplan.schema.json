@@ -1,5 +1,4 @@
 {
- "$schema": "https://json-schema.org/draft/2020-12/schema",
  "type": "object",
  "required": [
   "title",
@@ -16,6 +15,7 @@
   "theme": {
    "enum": [
     "collage-ocean",
+    "darkpsych",
     "documentary",
     "field-notebook",
     "ledger",
@@ -39,6 +39,7 @@
   },
   "style": {
    "enum": [
+    "specimen",
     "documentary",
     "scrapbook",
     "kinetic",
@@ -75,18 +76,20 @@
   },
   "beats": {
    "type": "array",
-   "minItems": 6,
+   "minItems": 3,
    "maxItems": 16,
    "items": {
     "type": "object",
     "required": [
      "id",
-     "line_ids",
+     "segment",
      "archetype",
      "component",
      "on_screen",
      "assets",
-     "motion"
+     "motion",
+     "emphasis_word",
+     "mood"
     ],
     "additionalProperties": false,
     "properties": {
@@ -149,7 +152,9 @@
        "MapFlight",
        "Footage",
        "Timeline",
-       "ChoiceTree"
+       "ChoiceTree",
+       "Specimen",
+       "StringBoard"
       ]
      },
      "variant": {
@@ -215,7 +220,8 @@
       }
      },
      "emphasis_word": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
      },
      "transition": {
       "enum": [
@@ -253,19 +259,35 @@
      },
      "sfx": {
       "type": "array",
+      "maxItems": 4,
       "items": {
        "type": "object",
+       "required": [
+        "at",
+        "name"
+       ],
        "properties": {
         "at": {
-         "enum": [
-          "enter",
-          "emphasis",
-          "impact",
-          "exit"
+         "type": [
+          "string",
+          "number"
          ]
         },
         "name": {
-         "type": "string"
+         "enum": [
+          "tick",
+          "keys",
+          "pop",
+          "whoosh_soft",
+          "impact_small",
+          "impact_mid",
+          "impact_big",
+          "boom",
+          "riser",
+          "riser_dark",
+          "air",
+          "shimmer"
+         ]
         }
        }
       }
@@ -280,6 +302,57 @@
      },
      "loop_to_start": {
       "type": "boolean"
+     },
+     "tag": {
+      "type": "string",
+      "maxLength": 14
+     },
+     "title": {
+      "type": "string",
+      "maxLength": 24
+     },
+     "options": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 16
+      },
+      "maxItems": 4
+     },
+     "default": {
+      "type": "integer"
+     },
+     "why": {
+      "type": "string",
+      "maxLength": 40
+     },
+     "move": {
+      "enum": [
+       "in",
+       "out",
+       "left",
+       "right"
+      ]
+     },
+     "plate": {
+      "type": "string"
+     },
+     "mood": {
+      "enum": [
+       "calm",
+       "pressure",
+       "reveal",
+       "clarity"
+      ]
+     },
+     "label": {
+      "enum": [
+       "illustrative",
+       "archive"
+      ]
+     },
+     "segment": {
+      "type": "string"
      }
     }
    }

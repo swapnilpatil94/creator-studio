@@ -2,7 +2,7 @@
 // Usage: node examples/chai/build.mjs   (needs stories/rf-chai narration and the plates; see plates.json)
 import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process"; import { fileURLToPath } from "node:url";
 import { compose } from "../../src/compose.mjs"; import { planFromNarration } from "../../src/plan-from-narration.mjs"; import { mix, inspectAudio } from "../../src/mix.mjs";
-const HERE = path.dirname(fileURLToPath(import.meta.url)), RF = path.resolve(HERE, "../.."), OUT = path.join(RF, "episodes/chai"), narr = path.resolve(RF, "../stories/rf-chai/narration/voice");
+const HERE = path.dirname(fileURLToPath(import.meta.url)), RF = path.resolve(HERE, "../.."), OUT = path.join(RF, "episodes/chai-documentary"), narr = path.resolve(RF, "../stories/rf-chai/narration/voice");
 const T = {}; const stage = async (n, f) => { const t = Date.now(); const r = await f(); T[n] = +((Date.now() - t) / 1000).toFixed(1); console.log(`⏱ ${n}: ${T[n]}s`); return r; };
 fs.rmSync(path.join(OUT, "composition"), { recursive: true, force: true }); fs.mkdirSync(path.join(OUT, "composition"), { recursive: true });
 const plan = planFromNarration({ base: JSON.parse(fs.readFileSync(path.join(HERE, "plan.base.json"), "utf8")), segments: path.join(narr, "segments.json"), offset: 0.5 }); fs.writeFileSync(path.join(OUT, "plan.json"), JSON.stringify(plan, null, 1));

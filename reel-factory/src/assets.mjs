@@ -11,6 +11,8 @@ export const dirFor = (themeName, id) => path.join(CACHE, themeName, id), cutout
 const J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } };
 /** free memory in GB (free + inactive + speculative pages) */
 export function freeGB() { const o = spawnSync("vm_stat", { encoding: "utf8" }).stdout || "", pg = +(/page size of (\d+)/.exec(o) || [0, 16384])[1], n = k => +((new RegExp(k + ":\\s+(\\d+)").exec(o) || [0, 0])[1]); return (n("Pages free") + n("Pages inactive") + n("Pages speculative")) * pg / 1073741824; }
+/** wait (up to `secs`) for memory to be released by the previous stage (Ollama unloads asynchronously) */
+export async function waitForMemory(gb, secs = 120) { for (let i = 0; i < secs / 3; i++) { if (freeGB() >= gb) return; await new Promise(r => setTimeout(r, 3000)); } throw new Error(`only ${freeGB().toFixed(1)} GB of memory free after ${secs}s: close other heavy apps (Ollama models, ComfyUI) and retry`); }
 const klein = (prompt, out, seed) => new Promise((ok, no) => { const c = spawn("draw-things-cli", ["generate", "--local", "--model", MODEL, "--prompt", prompt, "--width", String(SIZE), "--height", String(SIZE), "--steps", String(STEPS), "--seed", String(seed), "--output", out], { env: { ...process.env, DRAWTHINGS_MODELS_DIR: DT_DIR }, stdio: ["ignore", "pipe", "pipe"] }); let err = ""; c.stderr.on("data", d => err += d); c.stdout.on("data", d => err += d); c.on("close", code => code === 0 && fs.existsSync(out) ? ok() : no(new Error("draw-things-cli failed: " + err.slice(-200)))); });
 const cut = jobs => new Promise((ok, no) => { const jf = path.join(os.tmpdir(), "rf-cut-" + process.pid + ".json"); fs.writeFileSync(jf, JSON.stringify(jobs)); const c = spawn(PY, [path.join(RF, "src/cutout.py"), jf], { stdio: ["ignore", "pipe", "pipe"] }); let o = "", e = ""; c.stdout.on("data", d => o += d); c.stderr.on("data", d => e += d); c.on("close", code => { const m = /@@METRICS(.*)/.exec(o); code === 0 && m ? ok(JSON.parse(m[1])) : no(new Error("cutout failed: " + e.slice(-300))); }); });
 /** deterministic pick: subject should fill 18-75% of the frame, centred, not cropped by the frame edge */
@@ -25,7 +27,7 @@ export async function ensureAssets({ theme: themeName, assets, candidates = 2, l
     todo.push({ ...a, key });
   }
   if (!todo.length) return { made, cached, picked: {} };
-  if (freeGB() < 4) throw new Error(`only ${freeGB().toFixed(1)} GB of memory free: close other heavy apps (Ollama models, ComfyUI) and retry`);
+  await waitForMemory(4);
   // stage 1: all candidates (Draw Things loads the model once per image; nothing else is resident)
   for (const [i, a] of todo.entries()) { const d = dirFor(themeName, a.id); fs.mkdirSync(d, { recursive: true });
     for (let n = 1; n <= candidates; n++) { const f = path.join(d, `cand${n}.jpg`), png = f + ".png", t = Date.now(); if (fs.existsSync(f) && fs.statSync(f).size > 5000 && J(path.join(d, `cand${n}.json`))?.key === a.key) continue;

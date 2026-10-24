@@ -1,6 +1,6 @@
 import { piece, f, esc } from "./_kit.mjs"; import { fitSize } from "../src/lib/measure.mjs";
 export default {
-  name: "ChoiceTree", archetypes: ["options", "cause_effect", "comparison", "twist"], slot: "full", styles: ["documentary", "desktop", "kinetic"],
+  name: "ChoiceTree", archetypes: ["options", "cause_effect", "comparison", "twist"], slot: "full", styles: ["documentary", "desktop", "kinetic", "specimen"],
   when_to_use: "Choice architecture: a question branches into 3-4 options; the DEFAULT option is the one made easy, visible and first. The branches draw, then the default path lights amber while the others dim.",
   schema: { type: "object", properties: { question: { type: "string", maxLength: 28 }, options: { type: "array", maxItems: 4, items: { type: "string", maxLength: 16 } }, default: { type: "integer" }, why: { type: "string", maxLength: 40 } }, required: ["question", "options"] },
   demo: { archetype: "options", component: "ChoiceTree", on_screen: ["सुबह क्या पिएँ?", "चाय", "कॉफ़ी", "शरबत"], options: ["चाय", "कॉफ़ी", "शरबत", "पानी"], default: 0, why: "हर जगह · आसान · सबसे आगे" },

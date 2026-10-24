@@ -1,0 +1,36 @@
+// Reel Factory tab backend: episodes, one background job at a time (a child process running `reel make`), stage progress from "@@stage" lines, per-beat edits, files.
+// Mounted by server.mjs: `if (await reel.handle(req, res, p, ctx)) return;`  Everything heavy runs in reel-factory/ (own package, own branch); the Hub only starts it and reads its files.
+import fs from "node:fs"; import path from "node:path"; import { spawn } from "node:child_process";
+const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), ".."), RF = path.join(root, "reel-factory"), EP = path.join(RF, "episodes");
+const J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } }, W = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, 1)); };
+const okSlug = s => /^[a-z0-9][a-z0-9-]{0,40}$/.test(s || ""), dir = s => { if (!okSlug(s)) throw new Error("bad slug"); return path.join(EP, s); };
+const FILES = { final: "09_mix/final.mp4", srt: "09_mix/final.srt", video: "08_render/video.mp4", sheet: "07_qa/contact-sheet.jpg", audio: "02_audio/narration.wav" };
+const STAGES = ["lines", "voice", "director", "assets", "compose", "check", "render", "mix", "inspect"];
+const JOBS = {}; let busy = null;
+async function options() { const { styles } = await import("../reel-factory/styles/index.mjs"), { themes } = await import("../reel-factory/src/catalog.mjs"), { allowedComponents } = await import("../reel-factory/src/director.mjs");
+  return { themes: themes(), styles: Object.values(styles).map(s => ({ name: s.name, label: s.label, looks: s.looks, best_for: s.best_for, components: allowedComponents(s.name).map(c => c.name) })), speakers: ["maitri", "kavya", "agastya", "vinaya"] }; }
+function start(slug, args) {
+  if (busy) throw new Error("another reel job is running: " + busy); const job = { slug, status: "running", log: [], started: Date.now(), stages: {} }; JOBS[slug] = job; busy = slug;
+  const c = spawn("node", [path.join(RF, "src/cli.mjs"), "make", slug, ...args], { cwd: RF, stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, PYTHONUNBUFFERED: "1" } }); let buf = "";
+  const on = d => { buf += d.toString().replace(/\r/g, "\n"); const L = buf.split("\n"); buf = L.pop(); for (const l of L) { if (!l.trim()) continue; const m = /^@@stage (\S+) (start|done|failed)\s*(.*)$/.exec(l); if (m) job.stages[m[1]] = { status: m[2], info: m[3] }; if (!/@hf-progress|\[INFO\]/.test(l)) { job.log.push(l.slice(0, 220)); if (job.log.length > 300) job.log.shift(); } } };
+  c.stdout.on("data", on); c.stderr.on("data", on); c.on("close", code => { job.status = code === 0 ? "done" : "failed"; job.ended = Date.now(); busy = null; }); return job;
+}
+export async function handle(req, res, p, ctx) {
+  const { send, serveFile } = ctx; if (!p.startsWith("/api/reel/") && !p.startsWith("/reel/file/")) return false; const url = new URL(req.url, "http://x"), body = async () => JSON.parse((await ctx.readBody(req, 2e6)).toString() || "{}");
+  try { let m;
+    if ((m = p.match(/^\/reel\/file\/([a-z0-9-]+)\/(final|srt|video|sheet|audio)$/)) && req.method === "GET") { serveFile(req, res, path.join(dir(m[1]), FILES[m[2]])); return true; }
+    if (req.method === "GET" && p === "/api/reel/options") { send(res, 200, await options()); return true; }
+    if (req.method === "GET" && p === "/api/reel/list") { fs.mkdirSync(EP, { recursive: true }); send(res, 200, { busy, episodes: fs.readdirSync(EP).filter(okSlug).filter(s => fs.statSync(path.join(EP, s)).isDirectory()).map(s => { const man = J(path.join(EP, s, "manifest.json"), {}), sc = (fs.existsSync(path.join(EP, s, "input/script.md")) ? fs.readFileSync(path.join(EP, s, "input/script.md"), "utf8") : "").split("\n")[0]; return { slug: s, title: sc.slice(0, 60), theme: man.theme, style: man.style, done: !!man.finished && fs.existsSync(path.join(EP, s, FILES.final)), updated: fs.statSync(path.join(EP, s)).mtimeMs }; }).sort((a, b) => b.updated - a.updated) }); return true; }
+    if (req.method === "GET" && p === "/api/reel/state") { const slug = url.searchParams.get("slug"), d = dir(slug); if (!fs.existsSync(d)) { send(res, 404, { error: "no such episode" }); return true; }
+      const man = J(path.join(d, "manifest.json"), {}), plan = J(path.join(d, "04_beatplan.json")), v = k => fs.existsSync(path.join(d, FILES[k])) ? `/reel/file/${slug}/${k}?v=${fs.statSync(path.join(d, FILES[k])).mtimeMs | 0}` : null;
+      send(res, 200, { slug, manifest: man, stages: STAGES, job: JOBS[slug] || null, busy, script: fs.existsSync(path.join(d, "input/script.md")) ? fs.readFileSync(path.join(d, "input/script.md"), "utf8") : "", beats: plan ? plan.beats.map(b => ({ id: b.id, segment: b.segment, component: b.component, on_screen: b.on_screen, assets: (b.assets || []).map(a => a.id), emphasis_word: b.emphasis_word, narration: (J(path.join(d, "03_align.json"), { segments: [] }).segments.find(s => s.beat_id === b.segment) || {}).text || "" })) : [], files: { final: v("final"), srt: v("srt"), video: v("video"), sheet: v("sheet") }, audio: man.audio || null }); return true; }
+    if (req.method === "POST" && p === "/api/reel/make") { const b = await body(); if (!okSlug(b.slug)) throw new Error("slug: lowercase letters, digits, dashes"); if (!String(b.script || "").trim()) throw new Error("write the script first (one line per beat)"); const d = dir(b.slug); fs.mkdirSync(path.join(d, "input"), { recursive: true }); fs.writeFileSync(path.join(d, "input/script.md"), b.script);
+      const args = ["--script", path.join(d, "input/script.md"), "--theme", b.theme || "darkpsych", "--genre", b.genre || "psychology"]; if (b.style && b.style !== "auto") args.push("--style", b.style); if (b.speaker) args.push("--speaker", b.speaker); if (b.keepPlan) args.push("--keep-plan"); start(b.slug, args); send(res, 200, { started: true }); return true; }
+    if (req.method === "POST" && p === "/api/reel/edit") { const b = await body(), d = dir(b.slug), pf = path.join(d, "04_beatplan.json"), plan = J(pf); if (!plan) throw new Error("no beat plan yet"); const beat = plan.beats[b.beat - 1]; if (!beat) throw new Error("no such beat");
+      if (Array.isArray(b.on_screen)) beat.on_screen = b.on_screen.map(String).filter(Boolean).slice(0, 3); if (typeof b.emphasis_word === "string") beat.emphasis_word = b.emphasis_word; if (b.component) { const { registry } = await import("../reel-factory/components/index.mjs"); if (!registry[b.component]) throw new Error("unknown component"); beat.component = b.component; }
+      if (b.reroll) { const { dirFor, cutoutsDir } = await import("../reel-factory/src/assets.mjs"); for (const a of beat.assets || []) { fs.rmSync(path.join(cutoutsDir(plan.theme), a.id + ".png"), { force: true }); fs.rmSync(dirFor(plan.theme, a.id), { recursive: true, force: true }); } }
+      W(pf, plan); send(res, 200, { ok: true }); return true; }
+    if (req.method === "POST" && p === "/api/reel/delete") { const b = await body(); if (busy === b.slug) throw new Error("a job is running for this episode"); fs.rmSync(dir(b.slug), { recursive: true, force: true }); send(res, 200, { ok: true }); return true; }
+    send(res, 404, { error: "unknown reel route" }); return true;
+  } catch (e) { send(res, 400, { error: e.message }); return true; }
+}

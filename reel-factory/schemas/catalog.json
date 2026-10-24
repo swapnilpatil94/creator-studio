@@ -857,7 +857,8 @@
     "documentary",
     "desktop",
     "scrapbook",
-    "kinetic"
+    "kinetic",
+    "specimen"
    ],
    "when_to_use": "Evidence timeline: 2-4 dated nodes reveal down a vertical line (year in amber, what happened in ivory). Use only dates stated in the script; prefix a node with '!' to mark a crisis in red.",
    "props_schema": {
@@ -902,7 +903,8 @@
    "styles": [
     "documentary",
     "desktop",
-    "kinetic"
+    "kinetic",
+    "specimen"
    ],
    "when_to_use": "Choice architecture: a question branches into 3-4 options; the DEFAULT option is the one made easy, visible and first. The branches draw, then the default path lights amber while the others dim.",
    "props_schema": {
@@ -933,9 +935,98 @@
      "options"
     ]
    }
+  },
+  {
+   "name": "Specimen",
+   "archetypes": [
+    "hook",
+    "character_intro",
+    "place",
+    "evidence_reveal",
+    "many_scale",
+    "twist"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "THE signature visual: one engraved cut-out taped onto a paper mount like a museum specimen, with a typewritten label card under it (tag, title, small caption). Use it for the object or place the narration is talking about. on_screen = [title, caption]; beat.tag = the small red tag (SPECIMEN, ARTEFACT, EXHIBIT A ...).",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "asset": {
+      "type": "string"
+     },
+     "tag": {
+      "type": "string",
+      "maxLength": 14
+     },
+     "title": {
+      "type": "string",
+      "maxLength": 24
+     },
+     "sub": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "asset",
+     "title"
+    ]
+   }
+  },
+  {
+   "name": "StringBoard",
+   "archetypes": [
+    "cause_effect",
+    "evidence_reveal",
+    "many_scale",
+    "twist"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "Evidence board: 2-3 cut-outs pinned on index cards and joined by a red thread that draws from one to the next: 'it was all connected / someone arranged this'. Give 2-3 assets and a short label for each (on_screen).",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "assets": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 3
+     },
+     "labels": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 16
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "assets"
+    ]
+   }
   }
  ],
  "styles": [
+  {
+   "name": "specimen",
+   "label": "Specimen file (dark psychology)",
+   "looks": "Dark aged paper with a grid, taped engraved cut-outs, typewriter labels, option cards with struck-out choices, red stamps and red thread: someone arranged these choices for you.",
+   "best_for": "Dark-psychology and invisible-systems explainers; mystery and true-crime hooks",
+   "how_built": "Code-drawn paper, tape and labels; generated cut-outs (Klein + BiRefNet); hard cuts and tape-rip transitions; dark vignette and light grain.",
+   "transitions": [
+    "cut",
+    "tapeRip",
+    "cut",
+    "flash"
+   ]
+  },
   {
    "name": "documentary",
    "label": "Investigative documentary",
@@ -1209,6 +1300,7 @@
  },
  "themes": [
   "collage-ocean",
+  "darkpsych",
   "documentary",
   "field-notebook",
   "ledger",
