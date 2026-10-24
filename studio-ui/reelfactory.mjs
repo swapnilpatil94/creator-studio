@@ -17,7 +17,7 @@ function start(slug, args, cmd = "make") {
 }
 // ---- daily factory: queue + schedule (reel-factory/src/queue.mjs); a one-minute tick starts the next topic when the schedule says so ----
 const Q = () => import("../reel-factory/src/queue.mjs");
-async function factoryState() { const q = await Q(), data = q.load(), j = JOBS._daily || null; return { settings: data.settings, items: data.items.map(i => ({ id: i.id, title: i.title, status: i.status, slug: i.slug, template: i.template, animation: i.animation, error: i.error, hint: i.template_hint, finished: i.finished })), madeToday: q.madeToday(data), busy, job: j }; }
+async function factoryState() { const q = await Q(), data = q.load(), j = JOBS._daily || null; return { settings: data.settings, items: data.items.map(i => ({ id: i.id, title: i.title, status: i.status, slug: i.slug, template: i.template, animation: i.animation, qa: i.qa, qa_issues: i.qa_issues, error: i.error, hint: i.template_hint, finished: i.finished })), madeToday: q.madeToday(data), busy, job: j }; }
 async function tick() { try { if (busy) return; const q = await Q(), data = q.load(); if (q.due(data)) start("_daily", ["--once"], "daily"); } catch {} }
 // a restarted Hub has no job running: topics left "running" by a killed job go back to the queue
 Q().then(q => { const d = q.load(); let n = 0; for (const i of d.items) if (i.status === "running") { i.status = "queued"; n++; } if (n) q.save(d); }).catch(() => {});
