@@ -8,6 +8,6 @@ export const today = () => new Date().toISOString().slice(0, 10);
 export function add(q, topics) { const have = new Set(q.items.map(i => i.id)); let n = 0; for (const t of topics) { const id = t.id || slugify(t.title) + "-" + Date.now().toString(36).slice(-4); if (have.has(id) || !t.title || !(t.facts || []).length) continue; q.items.push({ id, title: t.title, topic: { title: t.title, facts: t.facts, verify: t.verify || [] }, template_hint: t.template_hint || null, status: "queued", created: new Date().toISOString() }); have.add(id); n++; } return n; }
 export const seedFrom = (q, bankFile) => add(q, JSON.parse(fs.readFileSync(bankFile, "utf8")).topics);
 export const next = q => q.items.find(i => i.status === "queued");
-export const madeToday = q => q.items.filter(i => i.finished && i.finished.slice(0, 10) === today() || i.started && i.started.slice(0, 10) === today() && i.status === "running").length;
+export const madeToday = q => q.items.filter(i => (i.status === "done" && i.finished && i.finished.slice(0, 10) === today()) || (i.status === "running" && i.started && i.started.slice(0, 10) === today())).length;   // failed topics do not use up the day's quota
 /** is the scheduler allowed to start something now? (enabled, after the start hour, under today's quota, something queued) */
 export const due = (q, now = new Date()) => q.settings.enabled && now.getHours() >= q.settings.hour && madeToday(q) < q.settings.perDay && !!next(q);

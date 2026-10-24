@@ -12,7 +12,7 @@ export function check(out, topic) {
   out.lines.forEach((l, i) => { const n = i + 1, w = words(l.text); if (w > 22 || w < 5) errs.push(`line ${n}: ${w} words; keep 8 to 20`);
     if (/[0-9]/.test(l.text)) errs.push(`line ${n}: write numbers as Hindi words, no digits`);
     if (ABSOLUTE.test(l.text)) errs.push(`line ${n}: avoid absolute or conspiratorial wording`);
-    const bad = [...numbersIn(l.text)].filter(x => !okNums.has(x)); if (bad.length) errs.push(`line ${n}: the number(s) ${bad.join(", ")} are not in the facts; never add numbers`);
+    const bad = [...numbersIn(l.text, { ignoreOne: true })].filter(x => !okNums.has(x)); if (bad.length) errs.push(`line ${n}: the number(s) ${bad.join(", ")} are not in the facts; never add numbers`);
     if (l.fact != null) { const f = topic.facts[l.fact - 1]; if (!f) errs.push(`line ${n}: fact ${l.fact} does not exist (1 to ${topic.facts.length})`); else { const ft = toks(f), content = toks(l.text).filter(x => x.length >= 4); const hit = content.filter(x => wordOk(x, ft)).length; if (content.length && hit / content.length < 0.3) errs.push(`line ${n}: it does not use the words of fact ${l.fact}; stay close to that fact`); } } });
   const total = out.lines.reduce((a, l) => a + words(l.text), 0); if (total > 165) errs.push(`${total} words in all; keep it under 150`); if (total < 70) errs.push(`only ${total} words; aim for 110 to 150`);
   const last = out.lines.at(-1)?.text || ""; if (!/[?？]\s*$/.test(last)) errs.push("the last line must be a question to the viewer, ending with ?");

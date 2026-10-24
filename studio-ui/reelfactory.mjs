@@ -19,6 +19,8 @@ function start(slug, args, cmd = "make") {
 const Q = () => import("../reel-factory/src/queue.mjs");
 async function factoryState() { const q = await Q(), data = q.load(), j = JOBS._daily || null; return { settings: data.settings, items: data.items.map(i => ({ id: i.id, title: i.title, status: i.status, slug: i.slug, template: i.template, animation: i.animation, error: i.error, hint: i.template_hint, finished: i.finished })), madeToday: q.madeToday(data), busy, job: j }; }
 async function tick() { try { if (busy) return; const q = await Q(), data = q.load(); if (q.due(data)) start("_daily", ["--once"], "daily"); } catch {} }
+// a restarted Hub has no job running: topics left "running" by a killed job go back to the queue
+Q().then(q => { const d = q.load(); let n = 0; for (const i of d.items) if (i.status === "running") { i.status = "queued"; n++; } if (n) q.save(d); }).catch(() => {});
 setInterval(tick, 60000).unref?.();
 export async function handle(req, res, p, ctx) {
   const { send, serveFile } = ctx; if (!p.startsWith("/api/reel/") && !p.startsWith("/reel/file/")) return false; const url = new URL(req.url, "http://x"), body = async () => JSON.parse((await ctx.readBody(req, 2e6)).toString() || "{}");
