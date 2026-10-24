@@ -1,0 +1,152 @@
+{
+ "title": "caseboard demo",
+ "theme": "caseboard",
+ "genre": "demo",
+ "style": "caseboard",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 4.0,
+   "archetype": "hook",
+   "component": "Specimen",
+   "variant": "",
+   "on_screen": [
+    "चाय का गिलास",
+    "एक आदत की शुरुआत"
+   ],
+   "accent_line": 2,
+   "sheet": "cork",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "lotus",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "चाय",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "चाय का गिलास एक आदत की शुरुआत",
+   "tag": "EXHIBIT A"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 4.0,
+   "archetype": "cause_effect",
+   "component": "StringBoard",
+   "variant": "",
+   "on_screen": [
+    "स्टेशन",
+    "स्टॉल",
+    "आदत"
+   ],
+   "accent_line": 3,
+   "sheet": "cork",
+   "assets": [
+    {
+     "id": "mountain",
+     "subject": "mountain",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    },
+    {
+     "id": "moon",
+     "subject": "moon",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "स्टेशन",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "स्टेशन स्टॉल आदत"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 4.0,
+   "archetype": "options",
+   "component": "Checklist",
+   "variant": "",
+   "on_screen": [
+    "- मर्ज़ी",
+    "- सोच",
+    "+ पहले से तय"
+   ],
+   "accent_line": 3,
+   "sheet": "cork",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "-",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "- मर्ज़ी - सोच + पहले से तय",
+   "title": "OPTIONS"
+  },
+  {
+   "id": 4,
+   "line_ids": [
+    4
+   ],
+   "seconds": 4.0,
+   "archetype": "twist",
+   "component": "Stamp",
+   "variant": "",
+   "on_screen": [
+    "सोचा आपने",
+    "तय किसी और ने"
+   ],
+   "accent_line": 2,
+   "sheet": "cork",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "सोचा",
+   "sfx": [
+    {
+     "at": "impact",
+     "name": "boom"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "सोचा आपने तय किसी और ने"
+  },
+  {
+   "id": 5,
+   "line_ids": [
+    5
+   ],
+   "seconds": 4.0,
+   "archetype": "date_era",
+   "component": "Timeline",
+   "variant": "",
+   "on_screen": [
+    "1903|कमेटी बनी",
+    "!1930 का दशक|माँग गिरी"
+   ],
+   "accent_line": 2,
+   "sheet": "cork",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "1903|कमेटी",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "1903|कमेटी बनी !1930 का दशक|माँग गिरी"
+  }
+ ]
+}

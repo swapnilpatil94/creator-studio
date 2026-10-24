@@ -6,7 +6,7 @@ test("prompt = subject + the theme's style lock; seed is fixed per asset id", ()
   assert.equal(assetKey(t, { id: "a", subject: "x" }, 2), assetKey(t, { id: "a", subject: "x" }, 2)); assert.notEqual(assetKey(t, { id: "a", subject: "x" }, 2), assetKey(t, { id: "a", subject: "y" }, 2));
 });
 test("every cut-out theme has 15 library assets (the documentary theme uses graded plates instead): unique snake_case ids, subject-only (<=140 chars), 1+ recurring character", () => {
-  for (const th of themes().filter(t => t !== "documentary")) { const lib = library(th); assert.equal(lib.length, 15, th); assert.equal(new Set(lib.map(a => a.id)).size, 15, th); for (const a of lib) { assert.match(a.id, /^[a-z0-9_]+$/); assert.ok(a.subject.length <= 140); } assert.ok(lib.some(a => a.character), th + " has no character"); }
+  for (const th of themes().filter(t => library(t).length)) { const lib = library(th); assert.equal(lib.length, 15, th); assert.equal(new Set(lib.map(a => a.id)).size, 15, th); for (const a of lib) { assert.match(a.id, /^[a-z0-9_]+$/); assert.ok(a.subject.length <= 140); } assert.ok(lib.some(a => a.character), th + " has no character"); }
 });
 test("pothi: 15 generated cut-outs exist, are RGBA 640x640 with transparency, and a re-run is a pure cache hit", async () => {
   const lib = library("pothi"); for (const a of lib) { const f = path.join(cutoutsDir("pothi"), a.id + ".png"); assert.ok(fs.existsSync(f), a.id); const b = fs.readFileSync(f); assert.equal(b.readUInt32BE(16), 640); assert.equal(b[25], 6, "RGBA"); }

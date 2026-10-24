@@ -24,7 +24,7 @@
   {
    "id": "puppet_hands",
    "subject": "a pair of hands holding a marionette control bar with strings hanging down",
-   "character": false
+   "character": true
   },
   {
    "id": "signpost_arrows",
