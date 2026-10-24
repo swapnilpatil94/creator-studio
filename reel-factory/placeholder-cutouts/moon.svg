@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g stroke="#241608" stroke-width="8" stroke-linejoin="round">
+ <path d="M250 40 C 110 60 60 230 150 330 C 220 400 330 360 360 300 C 250 320 170 230 250 40 Z" fill="#f6edd2"/>
+ <path d="M236 90 C 160 150 170 250 230 300" fill="none" stroke="#e0cfa0" stroke-width="10"/></g></svg>

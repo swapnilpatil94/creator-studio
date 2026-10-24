@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g stroke="#241608" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M10 350 L120 150 L180 230 L240 140 L340 270 L395 350 Z" fill="#1f6f78"/>
+ <path d="M50 350 L200 50 L350 350 Z" fill="url(#i-rock)"/>
+ <path d="M200 50 L162 128 L184 120 L198 158 L218 118 L242 132 Z" fill="#f6edd2"/>
+ <path d="M96 262 Q200 232 304 262 M70 312 Q200 280 330 312" fill="none" stroke-width="5" opacity=".55"/>
+ <path d="M150 230 L175 300 M250 220 L228 290" fill="none" stroke-width="5" opacity=".45"/></g></svg>

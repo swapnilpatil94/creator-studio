@@ -1,0 +1,4 @@
+import HeadlineStrips from "./HeadlineStrips.mjs"; import Tag from "./Tag.mjs"; import Stamp from "./Stamp.mjs"; import Note from "./Note.mjs"; import Typewriter from "./Typewriter.mjs"; import QuoteCard from "./QuoteCard.mjs";
+import Counter from "./Counter.mjs"; import Checklist from "./Checklist.mjs"; import Cutout from "./Cutout.mjs"; import MarkerDraw from "./MarkerDraw.mjs"; import Particles from "./Particles.mjs"; import UniversalFallback from "./UniversalFallback.mjs";
+export const registry = Object.fromEntries([HeadlineStrips, Tag, Stamp, Note, Typewriter, QuoteCard, Counter, Checklist, Cutout, MarkerDraw, Particles, UniversalFallback].map(c => [c.name, c]));
+export const MOTION = ["slide", "rise", "pop", "fly", "drop", "circle", "underline", "arrow", "sparks", "petals", "dust", "burst"];

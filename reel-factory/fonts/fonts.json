@@ -1,0 +1,106 @@
+[
+ {
+  "family": "Teko",
+  "weight": "700",
+  "subset": "devanagari",
+  "file": "Teko-700-devanagari.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Teko"
+ },
+ {
+  "family": "Teko",
+  "weight": "700",
+  "subset": "latin",
+  "file": "Teko-700-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Teko"
+ },
+ {
+  "family": "Kalam",
+  "weight": "700",
+  "subset": "devanagari",
+  "file": "Kalam-700-devanagari.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Kalam"
+ },
+ {
+  "family": "Kalam",
+  "weight": "700",
+  "subset": "latin",
+  "file": "Kalam-700-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Kalam"
+ },
+ {
+  "family": "Mukta",
+  "weight": "600",
+  "subset": "devanagari",
+  "file": "Mukta-600-devanagari.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Mukta"
+ },
+ {
+  "family": "Mukta",
+  "weight": "600",
+  "subset": "latin",
+  "file": "Mukta-600-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Mukta"
+ },
+ {
+  "family": "Mukta",
+  "weight": "800",
+  "subset": "devanagari",
+  "file": "Mukta-800-devanagari.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Mukta"
+ },
+ {
+  "family": "Mukta",
+  "weight": "800",
+  "subset": "latin",
+  "file": "Mukta-800-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Mukta"
+ },
+ {
+  "family": "Tiro Devanagari Hindi",
+  "weight": "400",
+  "subset": "devanagari",
+  "file": "TiroDevanagariHindi-400-devanagari.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Tiro+Devanagari+Hindi"
+ },
+ {
+  "family": "Tiro Devanagari Hindi",
+  "weight": "400",
+  "subset": "latin",
+  "file": "TiroDevanagariHindi-400-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Tiro+Devanagari+Hindi"
+ },
+ {
+  "family": "Anton",
+  "weight": "400",
+  "subset": "latin",
+  "file": "Anton-400-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Anton"
+ },
+ {
+  "family": "Permanent Marker",
+  "weight": "400",
+  "subset": "latin",
+  "file": "PermanentMarker-400-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/Permanent+Marker"
+ },
+ {
+  "family": "IBM Plex Mono",
+  "weight": "500",
+  "subset": "latin",
+  "file": "IBMPlexMono-500-latin.woff2",
+  "licence": "SIL OFL 1.1",
+  "source": "https://fonts.google.com/specimen/IBM+Plex+Mono"
+ }
+]

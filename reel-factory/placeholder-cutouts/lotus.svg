@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g stroke="#241608" stroke-width="7" stroke-linejoin="round">
+ <path d="M30 300 Q200 250 370 300 Q200 350 30 300 Z" fill="#1f6f78"/>
+ <path d="M200 70 C 150 130 150 220 200 290 C 250 220 250 130 200 70 Z" fill="#e8587e"/>
+ <path d="M200 270 C 110 250 70 170 60 120 C 130 140 190 190 200 270 Z" fill="#d9486a"/>
+ <path d="M200 270 C 290 250 330 170 340 120 C 270 140 210 190 200 270 Z" fill="#d9486a"/>
+ <path d="M200 285 C 100 290 40 250 20 200 C 90 200 170 220 200 285 Z" fill="#c13a5c"/>
+ <path d="M200 285 C 300 290 360 250 380 200 C 310 200 230 220 200 285 Z" fill="#c13a5c"/>
+ <path d="M200 120 L200 250" stroke="#f6b9c8" stroke-width="6" fill="none"/>
+ <circle cx="200" cy="290" r="16" fill="#f2b632"/></g></svg>

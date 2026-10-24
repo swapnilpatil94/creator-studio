@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g stroke="#241608" stroke-width="8" stroke-linejoin="round">
+ <path d="M200 20 C 220 100 320 150 320 250 C 320 330 270 380 200 380 C 130 380 80 330 80 250 C 80 190 130 160 140 100 C 170 130 180 90 200 20 Z" fill="#e8741f"/>
+ <path d="M200 140 C 215 190 270 220 270 280 C 270 335 240 360 200 360 C 160 360 130 335 130 285 C 130 245 175 220 180 180 C 190 195 195 175 200 140 Z" fill="#f6c64a"/>
+ <path d="M200 250 C 210 280 235 295 235 320 C 235 345 220 355 200 355 C 180 355 165 345 165 322 C 165 300 190 285 200 250 Z" fill="#fff4d6" stroke-width="5"/></g></svg>

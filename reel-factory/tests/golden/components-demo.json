@@ -1,0 +1,277 @@
+{
+ "title": "component goldens",
+ "theme": "pothi",
+ "genre": "demo",
+ "camera": "OneTakeRing",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "torn",
+   "on_screen": [
+    "हिमालय की झील",
+    "सैकड़ों कंकाल",
+    "और एक राज़"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.2,
+   "archetype": "place",
+   "component": "Tag",
+   "variant": "",
+   "on_screen": [
+    "उत्तराखंड, 5000 मीटर"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.2,
+   "archetype": "twist",
+   "component": "Stamp",
+   "variant": "",
+   "on_screen": [
+    "असली राज़",
+    "सच?"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [
+    {
+     "at": "impact",
+     "name": "stamp_thud"
+    }
+   ],
+   "loop_to_start": false
+  },
+  {
+   "id": 4,
+   "line_ids": [
+    4
+   ],
+   "seconds": 3.2,
+   "archetype": "consequence_today",
+   "component": "Note",
+   "variant": "",
+   "on_screen": [
+    "आज भी लोग मानते हैं"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 5,
+   "line_ids": [
+    5
+   ],
+   "seconds": 3.2,
+   "archetype": "loop_cta",
+   "component": "Typewriter",
+   "variant": "",
+   "on_screen": [
+    "आपको क्या लगता है?"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 6,
+   "line_ids": [
+    6
+   ],
+   "seconds": 3.2,
+   "archetype": "quote",
+   "component": "QuoteCard",
+   "variant": "",
+   "on_screen": [
+    "विष कंठ में रोक लिया",
+    "शिव पुराण के अनुसार"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 7,
+   "line_ids": [
+    7
+   ],
+   "seconds": 3.2,
+   "archetype": "big_number",
+   "component": "Counter",
+   "variant": "",
+   "on_screen": [
+    "300+",
+    "लोग"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 8,
+   "line_ids": [
+    8
+   ],
+   "seconds": 3.2,
+   "archetype": "options",
+   "component": "Checklist",
+   "variant": "",
+   "on_screen": [
+    "- देवता",
+    "- असुर",
+    "+ महादेव"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 9,
+   "line_ids": [
+    9
+   ],
+   "seconds": 3.2,
+   "archetype": "character_intro",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "a lotus",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "rise"
+   ],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 10,
+   "line_ids": [
+    10
+   ],
+   "seconds": 3.2,
+   "archetype": "evidence_reveal",
+   "component": "MarkerDraw",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [
+    "circle"
+   ],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 11,
+   "line_ids": [
+    11
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "",
+   "on_screen": [
+    "चिंगारी"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [
+    "sparks"
+   ],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 12,
+   "line_ids": [
+    12
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "UniversalFallback",
+   "variant": "",
+   "on_screen": [
+    "कुछ अनोखा"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [
+    {
+     "id": "flame",
+     "subject": "a flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": true
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "reel-factory",
+  "private": true,
+  "type": "module",
+  "description": "Fully local script-to-reel pipeline (separate from the main studio pipeline). See ../docs/reel-factory/",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "reel": "node src/cli.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "file:../engine/node_modules/playwright-core"
+  }
+}

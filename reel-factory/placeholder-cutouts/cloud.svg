@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g>
+ <g fill="#241608"><circle cx="110" cy="230" r="82"/><circle cx="200" cy="170" r="104"/><circle cx="300" cy="230" r="86"/><circle cx="205" cy="270" r="96"/></g>
+ <g fill="#2f6b3d"><circle cx="110" cy="230" r="72"/><circle cx="200" cy="170" r="94"/><circle cx="300" cy="230" r="76"/><circle cx="205" cy="270" r="86"/></g>
+ <path d="M120 200 Q150 170 190 190 M240 160 Q280 150 300 190 M150 290 Q210 320 270 280" fill="none" stroke="#6fcf7e" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+ <g fill="#f6edd2" stroke="#241608" stroke-width="5"><path d="M135 215 L190 232 L190 252 L135 238 Z"/><path d="M265 215 L210 232 L210 252 L265 238 Z"/></g>
+ <g fill="#b3261e"><circle cx="170" cy="240" r="7"/><circle cx="230" cy="240" r="7"/></g></g></svg>

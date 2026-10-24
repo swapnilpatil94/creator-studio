@@ -1,0 +1,18 @@
+import { piece, paper, enter, f, esc } from "./_kit.mjs"; import { fitSize } from "../src/lib/measure.mjs";
+export default {
+  name: "Checklist", archetypes: ["options", "comparison", "process_steps", "cause_effect"], slot: "hero",
+  when_to_use: "2-3 rows on a ruled card, each ticked, crossed or struck out: options, who passed or failed, step by step. Prefix a row '+ ' tick, '- ' cross, '~ ' strike.",
+  schema: { type: "object", properties: { items: { type: "array", maxItems: 3, items: { type: "object", properties: { text: { type: "string", maxLength: 28 }, mark: { enum: ["tick", "cross", "strike"] } } } } }, required: ["items"] },
+  demo: { archetype: "options", component: "Checklist", on_screen: ["- देवता", "- असुर", "+ महादेव"] },
+  async render(ctx) {
+    const items = ctx.props.items, p = ctx.theme.palette, rowH = 128, w = 840, h = items.length * rowH + 70, x = 120, y = ctx.y0 ?? 760;
+    let rows = "", js = enter(ctx, `#${ctx.id}-cl`, { y: 90, rotation: 4 }, { y: 0, rotation: 0 }, { dur: 0.45, ease: "back.out(1.4)" });
+    let i = 0; for (const it of items) { i++; const fit = await fitSize(it.text, { family: ctx.theme.fonts.manuscript, weight: 400, start: 72, min: 40, maxW: 560 }), top = 40 + (i - 1) * rowH, col = it.mark === "tick" ? "#2c7a3a" : p.stamp;
+      const mark = it.mark === "tick" ? `<path d="M8 36 L30 58 L68 8" fill="none" stroke="${col}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${ctx.first ? 0 : 1}" id="${ctx.id}-m${i}"/>` : it.mark === "cross" ? `<path d="M8 8 L66 66 M66 8 L8 66" fill="none" stroke="${col}" stroke-width="12" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${ctx.first ? 0 : 1}" id="${ctx.id}-m${i}"/>` : "";
+      rows += `<div style="position:absolute;left:36px;top:${top}px;height:${rowH - 20}px;width:${w - 72}px;display:flex;align-items:center;gap:26px"><svg width="76" height="76" style="flex:none;overflow:visible"><rect x="2" y="2" width="70" height="70" fill="none" stroke="${p.night}" stroke-width="6"/>${mark}</svg><div class="tx" style="position:relative;font:400 ${fit.size}px/1.2 ${f(ctx, "manuscript")};color:${p.maroon};white-space:nowrap">${esc(it.text)}${it.mark === "strike" || it.mark === "cross" ? `<i id="${ctx.id}-st${i}" style="position:absolute;left:-6px;right:-6px;top:54%;height:8px;background:${col};transform-origin:left;transform:scaleX(${ctx.first ? 1 : 0})"></i>` : ""}</div></div>`;
+      if (!ctx.first) { const t = (ctx.t0 + 0.3 + (i - 1) * 0.45).toFixed(3); if (it.mark === "tick" || it.mark === "cross") js += `tl.fromTo("#${ctx.id}-m${i}",{strokeDashoffset:1},{strokeDashoffset:0,duration:0.3,ease:"power2.out"},${t});`; if (it.mark !== "tick") js += `tl.fromTo("#${ctx.id}-st${i}",{scaleX:0},{scaleX:1,duration:0.3,ease:"power3.out"},${t});`; } }
+    const html = piece(ctx, { id: "cl", x, y, w, h, z: 7, inner: paper(ctx.id + "cl", w, h, p.ivory, { amp: 5, shadow: ctx.theme.shadow, extra: `background-image:repeating-linear-gradient(transparent 0 ${rowH - 4}px,rgba(30,42,92,.28) ${rowH - 4}px ${rowH}px);background-position:0 36px` }) + rows });
+    return { html, js, bottom: y + h };
+  },
+  parse: beat => ({ props: { items: (beat.on_screen || []).map(s => ({ mark: s.startsWith("+") ? "tick" : s.startsWith("-") ? "cross" : s.startsWith("~") ? "strike" : "tick", text: s.replace(/^[+\-~]\s*/, "") })) }, headline: [] }),
+};

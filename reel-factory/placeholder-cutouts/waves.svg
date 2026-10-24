@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="i-gold" x1="0" x2="1"><stop offset="0" stop-color="#b9731a"/><stop offset=".45" stop-color="#f6c64a"/><stop offset="1" stop-color="#9a5a12"/></linearGradient>
+<linearGradient id="i-rock" x1="0" x2="1"><stop offset="0" stop-color="#7a3a1c"/><stop offset=".5" stop-color="#b9683a"/><stop offset="1" stop-color="#6a2e16"/></linearGradient>
+<linearGradient id="i-snake" x1="0" x2="1"><stop offset="0" stop-color="#8a2a14"/><stop offset=".5" stop-color="#c2432a"/><stop offset="1" stop-color="#7a2010"/></linearGradient>
+<radialGradient id="i-poison" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#6fcf7e"/><stop offset="1" stop-color="#1d5a30"/></radialGradient>
+</defs><g stroke="#241608" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M10 160 Q60 100 110 160 T210 160 T310 160 T410 160 L410 390 L10 390 Z" fill="#2a8a96"/>
+ <path d="M10 230 Q60 170 110 230 T210 230 T310 230 T410 230 L410 390 L10 390 Z" fill="#1f6f78"/>
+ <path d="M10 300 Q60 240 110 300 T210 300 T310 300 T410 300 L410 390 L10 390 Z" fill="#175862"/>
+ <path d="M50 190 Q70 175 90 190 M230 250 Q250 235 270 250 M120 320 Q140 305 160 320" fill="none" stroke="#f6edd2" stroke-width="6"/></g></svg>

@@ -1,0 +1,116 @@
+{
+ "note": "Every font, library, icon, SFX and music file used by Reel Factory. SFX/music: reuse assets/sound/LEDGER.json (all CC0).",
+ "entries": [
+  {
+   "kind": "font",
+   "name": "Teko 700 (devanagari)",
+   "file": "reel-factory/fonts/Teko-700-devanagari.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Teko"
+  },
+  {
+   "kind": "font",
+   "name": "Teko 700 (latin)",
+   "file": "reel-factory/fonts/Teko-700-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Teko"
+  },
+  {
+   "kind": "font",
+   "name": "Kalam 700 (devanagari)",
+   "file": "reel-factory/fonts/Kalam-700-devanagari.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Kalam"
+  },
+  {
+   "kind": "font",
+   "name": "Kalam 700 (latin)",
+   "file": "reel-factory/fonts/Kalam-700-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Kalam"
+  },
+  {
+   "kind": "font",
+   "name": "Mukta 600 (devanagari)",
+   "file": "reel-factory/fonts/Mukta-600-devanagari.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Mukta"
+  },
+  {
+   "kind": "font",
+   "name": "Mukta 600 (latin)",
+   "file": "reel-factory/fonts/Mukta-600-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Mukta"
+  },
+  {
+   "kind": "font",
+   "name": "Mukta 800 (devanagari)",
+   "file": "reel-factory/fonts/Mukta-800-devanagari.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Mukta"
+  },
+  {
+   "kind": "font",
+   "name": "Mukta 800 (latin)",
+   "file": "reel-factory/fonts/Mukta-800-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Mukta"
+  },
+  {
+   "kind": "font",
+   "name": "Tiro Devanagari Hindi 400 (devanagari)",
+   "file": "reel-factory/fonts/TiroDevanagariHindi-400-devanagari.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Tiro+Devanagari+Hindi"
+  },
+  {
+   "kind": "font",
+   "name": "Tiro Devanagari Hindi 400 (latin)",
+   "file": "reel-factory/fonts/TiroDevanagariHindi-400-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Tiro+Devanagari+Hindi"
+  },
+  {
+   "kind": "font",
+   "name": "Anton 400 (latin)",
+   "file": "reel-factory/fonts/Anton-400-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Anton"
+  },
+  {
+   "kind": "font",
+   "name": "Permanent Marker 400 (latin)",
+   "file": "reel-factory/fonts/PermanentMarker-400-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/Permanent+Marker"
+  },
+  {
+   "kind": "font",
+   "name": "IBM Plex Mono 500 (latin)",
+   "file": "reel-factory/fonts/IBMPlexMono-500-latin.woff2",
+   "licence": "SIL OFL 1.1",
+   "source": "https://fonts.google.com/specimen/IBM+Plex+Mono"
+  },
+  {
+   "kind": "library",
+   "name": "GSAP 3.15.0",
+   "file": "reel-factory/vendor/gsap.min.js",
+   "licence": "GreenSock Standard 'no charge' licence (free incl. commercial use; https://gsap.com/standard-license)",
+   "source": "npm gsap"
+  },
+  {
+   "kind": "art",
+   "name": "placeholder cut-outs (13 flat icons)",
+   "file": "reel-factory/placeholder-cutouts/*.svg",
+   "licence": "Original work for this project (hand-drawn SVG); P3 replaces them with generated assets",
+   "source": "poc/hyperframes/spec2d/icons.svg"
+  },
+  {
+   "kind": "model",
+   "name": "qwen3-vl:8b (vision critic, used from P4/P6)",
+   "licence": "Apache-2.0",
+   "source": "ollama.com/library/qwen3-vl"
+  }
+ ]
+}

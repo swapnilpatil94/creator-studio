@@ -43,3 +43,9 @@ audio/.venv-veena/
 # recorded music beds (46 MB) are rebuilt by tools/sound/fetch-music.py; the licence ledger stays in git
 assets/sound/music/*.m4a
 assets/lora/*.safetensors
+
+# Reel Factory heavy output
+reel-factory/episodes/*
+!reel-factory/episodes/.gitkeep
+reel-factory/.cache/
+reel-factory/node_modules/
