@@ -1,0 +1,116 @@
+{
+ "title": "parallax demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "parallax",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 4.2,
+   "archetype": "place",
+   "component": "Parallax",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "rays",
+     "subject": "rays",
+     "reuse": true
+    },
+    {
+     "id": "mountain",
+     "subject": "mountain",
+     "reuse": true
+    },
+    {
+     "id": "serpent",
+     "subject": "serpent",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "पर्वत की गहराई में एक सर्प लिपटा था"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 4.2,
+   "archetype": "hook",
+   "component": "Parallax",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "waves",
+     "reuse": true
+    },
+    {
+     "id": "lotus",
+     "subject": "lotus",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "और जल पर एक कमल खिला"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 4.2,
+   "archetype": "twist",
+   "component": "Parallax",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "rays",
+     "subject": "rays",
+     "reuse": true
+    },
+    {
+     "id": "eye",
+     "subject": "eye",
+     "reuse": true
+    },
+    {
+     "id": "moon",
+     "subject": "moon",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "चाँद की रोशनी में एक आँख खुली"
+  }
+ ]
+}

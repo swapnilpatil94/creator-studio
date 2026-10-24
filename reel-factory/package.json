@@ -8,6 +8,9 @@
     "reel": "node src/cli.mjs"
   },
   "dependencies": {
-    "playwright-core": "file:../engine/node_modules/playwright-core"
+    "d3-geo": "^3.1.1",
+    "playwright-core": "file:../engine/node_modules/playwright-core",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   }
 }

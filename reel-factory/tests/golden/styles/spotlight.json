@@ -1,0 +1,57 @@
+{
+ "title": "spotlight demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "spotlight",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 5.0,
+   "archetype": "evidence_reveal",
+   "component": "Flashlight",
+   "variant": "",
+   "on_screen": [
+    "अंधेरे में छिपा",
+    "एक पुराना नाम",
+    "कौन था वो?"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "अंधेरे",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "अंधेरे में एक पुराना नाम छिपा था"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 4.4,
+   "archetype": "twist",
+   "component": "RedactedDoc",
+   "variant": "",
+   "on_screen": [
+    "नाम: अज्ञात",
+    "मृत्यु: 1200 वर्ष पहले",
+    "कारण: ???"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "नाम:",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "फ़ाइल में हर पंक्ति काली थी"
+  }
+ ]
+}

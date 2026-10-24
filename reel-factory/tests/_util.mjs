@@ -12,3 +12,9 @@ export function snap(dir, times) {
   if (!Object.keys(out).length) throw new Error("snapshot produced nothing: " + (r.stderr || r.stdout).slice(-300));
   return out;
 }
+/** largest per-pixel luma difference between two PNGs (0 = identical): the loop frame may differ from frame 0 by sub-pixel 3D rasterisation only */
+export function maxDiff(a, b) {
+  if (sha(a) === sha(b)) return 0;
+  const r = spawnSync("ffmpeg", ["-loglevel", "info", "-i", a, "-i", b, "-filter_complex", "[0][1]blend=all_mode=difference,signalstats,metadata=print:key=lavfi.signalstats.YMAX", "-f", "null", "-"], { encoding: "utf8" });
+  const m = [...(r.stderr || "").matchAll(/YMAX=(\d+)/g)].map(x => +x[1]); return m.length ? Math.max(...m) : 255;
+}

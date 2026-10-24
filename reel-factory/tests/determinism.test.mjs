@@ -11,13 +11,9 @@ test("no Math.random / Date / wall clock in generated page or runtime", async ()
   const d = tmp("c"); await comp(p, d); const html = fs.readFileSync(path.join(d, "index.html"), "utf8");
   assert.ok(!/Math\.random|Date\.now|new Date|performance\.now|setTimeout|setInterval|repeat\s*:\s*-1/.test(html.replace(/gsap\.min\.js/g, "")));
 });
-test("camera loop: camAt(TOTAL) equals camAt(0); moves are continuous", async () => {
-  const d = tmp("d"); const m = await comp(p, d); const html = fs.readFileSync(path.join(d, "index.html"), "utf8");
-  const cfg = JSON.parse(/window\.RF=(\{.*?\});<\/script>/s.exec(html)[1]), rt = fs.readFileSync(path.join(RF, "src/runtime/runtime.js"), "utf8");
-  const ctx = { window: { RF: cfg }, document: { getElementById: () => null, querySelectorAll: () => [] }, Math }; vm.createContext(ctx); vm.runInContext(rt, ctx);
-  const cam = ctx.window.RF.camAt, c0 = cam(0), cT = cam(cfg.TOTAL); for (const k of ["x", "y", "s", "r"]) assert.ok(Math.abs(c0[k] - cT[k]) < 1e-9, k);
-  let prev = cam(0); for (let t = 1 / 30; t < cfg.TOTAL; t += 1 / 30) { const c = cam(t); assert.ok(Math.hypot(c.x - prev.x, c.y - prev.y) < 380, "jump at " + t.toFixed(2)); prev = c; }
-  assert.equal(cfg.TOTAL % 2, 0, "whole boil cycles");
+test("timing: whole 2 s boil cycles, scenes contiguous, transitions end where the next speech starts", async () => {
+  const { timing } = await import("../src/compose.mjs"); const { rows, total } = timing(p); assert.equal(total % 2, 0);
+  rows.forEach((r, i) => { assert.ok(Math.abs(r.end - (rows[i + 1]?.start ?? total)) < 0.002, "gap after scene " + (i + 1)); assert.ok(r.dur > 0 && r.speechEnd < r.end); });
 });
 test("stills are byte-identical across two renders, and the loop frame equals frame 0", async () => {
   const a = tmp("e"), b = tmp("f"); const m = await comp(p, a); await comp(p, b);
@@ -26,6 +22,6 @@ test("stills are byte-identical across two renders, and the loop frame equals fr
   const loop = snap(a, ["0", String(m.total_seconds)]); assert.equal(sha(loop["0"]), sha(loop[String(m.total_seconds)]), "frame 0 vs frame TOTAL");
 });
 test("golden stills: every component's demo still matches its saved golden (same Chrome build)", async () => {
-  const { registry } = await import("../components/index.mjs"), names = Object.keys(registry), p2 = plan("components-demo.json"), d = tmp("g"), m = await comp(p2, d), times = m.stations.map(s => String(+(s.start + 2.4).toFixed(1))), shots = snap(d, times);
+  const { registry } = await import("../components/index.mjs"), names = Object.keys(registry), p2 = plan("components-demo.json"), d = tmp("g"), m = await comp(p2, d), times = m.scenes.map(r => String(+(r.start + 2.4).toFixed(1))), shots = snap(d, times);
   names.forEach((n, i) => assert.equal(sha(shots[times[i]]), sha(path.join(RF, "tests/golden/stills", n + ".png")), "golden still for " + n));
 });

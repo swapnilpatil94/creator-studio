@@ -1,0 +1,83 @@
+{
+ "title": "retro demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "retro",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.6,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "",
+   "on_screen": [
+    "उन्नीस सौ",
+    "बयालीस"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [
+    "dust"
+   ],
+   "emphasis_word": "उन्नीस",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "उन्नीस सौ बयालीस की बात है"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.6,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "एक पुरानी झील"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "waves",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "एक",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "एक पुरानी झील के किनारे"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.6,
+   "archetype": "evidence_reveal",
+   "component": "Typewriter",
+   "variant": "",
+   "on_screen": [
+    "रिपोर्ट संख्या 117"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "रिपोर्ट",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "रिपोर्ट संख्या एक सौ सत्रह"
+  }
+ ]
+}

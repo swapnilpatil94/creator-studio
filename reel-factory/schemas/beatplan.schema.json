@@ -1,0 +1,278 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": [
+  "title",
+  "theme",
+  "genre",
+  "style",
+  "beats"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "title": {
+   "type": "string"
+  },
+  "theme": {
+   "enum": [
+    "pothi"
+   ]
+  },
+  "genre": {
+   "enum": [
+    "mystery",
+    "mythology",
+    "science",
+    "history",
+    "space",
+    "business",
+    "crime-history",
+    "psychology",
+    "geography",
+    "biography"
+   ]
+  },
+  "style": {
+   "enum": [
+    "scrapbook",
+    "kinetic",
+    "parallax",
+    "zoomthrough",
+    "matchcut",
+    "desktop",
+    "mapflight",
+    "retro",
+    "threed",
+    "split",
+    "minimal",
+    "whip",
+    "spotlight"
+   ]
+  },
+  "sources": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "warnings": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "gaps": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "beats": {
+   "type": "array",
+   "minItems": 6,
+   "maxItems": 16,
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "line_ids",
+     "archetype",
+     "component",
+     "on_screen",
+     "assets",
+     "motion"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "integer"
+     },
+     "line_ids": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "archetype": {
+      "enum": [
+       "hook",
+       "character_intro",
+       "big_number",
+       "comparison",
+       "process_steps",
+       "options",
+       "cause_effect",
+       "date_era",
+       "place",
+       "quote",
+       "evidence_reveal",
+       "twist",
+       "countdown_time",
+       "many_scale",
+       "consequence_today",
+       "loop_cta"
+      ]
+     },
+     "component": {
+      "enum": [
+       "HeadlineStrips",
+       "Tag",
+       "Stamp",
+       "Note",
+       "Typewriter",
+       "QuoteCard",
+       "Counter",
+       "Checklist",
+       "Cutout",
+       "MarkerDraw",
+       "UniversalFallback",
+       "BigWords",
+       "Parallax",
+       "Flashlight",
+       "ShapeHero",
+       "VersusSplit",
+       "Grid4",
+       "BeforeAfter",
+       "CardFlip",
+       "Spin3D",
+       "Text3D",
+       "SearchWindow",
+       "ChatThread",
+       "FileFolders",
+       "RedactedDoc",
+       "MapFlight"
+      ]
+     },
+     "variant": {
+      "type": "string"
+     },
+     "on_screen": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      }
+     },
+     "accent_line": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+     },
+     "sheet": {
+      "type": "string"
+     },
+     "assets": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+       "type": "object",
+       "required": [
+        "id",
+        "subject"
+       ],
+       "properties": {
+        "id": {
+         "type": "string",
+         "pattern": "^[a-z0-9_]+$"
+        },
+        "subject": {
+         "type": "string",
+         "maxLength": 140
+        },
+        "reuse": {
+         "type": "boolean"
+        }
+       }
+      }
+     },
+     "motion": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "slide",
+        "rise",
+        "pop",
+        "fly",
+        "drop",
+        "circle",
+        "underline",
+        "arrow",
+        "sparks",
+        "petals",
+        "dust",
+        "burst"
+       ]
+      }
+     },
+     "emphasis_word": {
+      "type": "string"
+     },
+     "transition": {
+      "enum": [
+       "cut",
+       "flash",
+       "whip",
+       "zoomThrough",
+       "tapeRip",
+       "morphIris",
+       "filmBurn",
+       "spotlight"
+      ]
+     },
+     "shapes": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "circle",
+        "moon",
+        "eye",
+        "drop",
+        "diamond",
+        "heart",
+        "coin"
+       ]
+      },
+      "maxItems": 2
+     },
+     "focus": {
+      "type": "object"
+     },
+     "map": {
+      "type": "object"
+     },
+     "sfx": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "at": {
+         "enum": [
+          "enter",
+          "emphasis",
+          "impact",
+          "exit"
+         ]
+        },
+        "name": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "verdict": {
+      "enum": [
+       "सच",
+       "अफवाह",
+       "आधा सुलझा",
+       "अनसुलझा"
+      ]
+     },
+     "loop_to_start": {
+      "type": "boolean"
+     }
+    }
+   }
+  }
+ }
+}

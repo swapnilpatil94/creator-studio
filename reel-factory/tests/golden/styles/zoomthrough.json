@@ -1,0 +1,93 @@
+{
+ "title": "zoomthrough demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "zoomthrough",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.4,
+   "archetype": "hook",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "एक आँख",
+    "जो सब देखती है"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "eye",
+     "subject": "eye",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "एक",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "एक आँख जो सब देखती है",
+   "focus": {
+    "x": 540,
+    "y": 930
+   }
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "big_number",
+   "component": "Counter",
+   "variant": "",
+   "on_screen": [
+    "भीतर की दुनिया",
+    "14",
+    "रत्न"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "भीतर",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "उसके भीतर चौदह रत्न छिपे थे"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "समुद्र"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "waves",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "समुद्र",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "और रत्न समुद्र से निकले"
+  }
+ ]
+}

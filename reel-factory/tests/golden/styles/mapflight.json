@@ -1,0 +1,73 @@
+{
+ "title": "mapflight demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "mapflight",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 5.2,
+   "archetype": "place",
+   "component": "MapFlight",
+   "variant": "",
+   "on_screen": [
+    "रूपकुंड झील",
+    "उत्तराखंड, भारत"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "रूपकुंड",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "उत्तराखंड, समुद्र से पाँच हज़ार मीटर ऊपर",
+   "map": {
+    "lat": 30.26,
+    "lon": 79.73,
+    "country": "India",
+    "from": [
+     10,
+     -30
+    ]
+   }
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 5.2,
+   "archetype": "place",
+   "component": "MapFlight",
+   "variant": "",
+   "on_screen": [
+    "डेल्फ़ी",
+    "ग्रीस"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "डेल्फ़ी",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "और दूर यूनान में एक और रहस्य",
+   "map": {
+    "lat": 38.48,
+    "lon": 22.5,
+    "country": "Greece",
+    "from": [
+     20,
+     60
+    ]
+   }
+  }
+ ]
+}

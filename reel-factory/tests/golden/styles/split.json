@@ -1,0 +1,121 @@
+{
+ "title": "split demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "split",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 4.0,
+   "archetype": "comparison",
+   "component": "VersusSplit",
+   "variant": "",
+   "on_screen": [
+    "पहले",
+    "आज"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "moon",
+     "subject": "moon",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "पहले",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "पहले लोग डरते थे आज वैज्ञानिक जाँचते हैं"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 4.0,
+   "archetype": "many_scale",
+   "component": "Grid4",
+   "variant": "",
+   "on_screen": [
+    "झील",
+    "कंकाल",
+    "बर्फ़"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "waves",
+     "reuse": true
+    },
+    {
+     "id": "eye",
+     "subject": "eye",
+     "reuse": true
+    },
+    {
+     "id": "moon",
+     "subject": "moon",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "झील",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "चार सुराग जिनसे कहानी बनी"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 4.6,
+   "archetype": "comparison",
+   "component": "BeforeAfter",
+   "variant": "",
+   "on_screen": [
+    "पहले",
+    "बाद में"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "lotus",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "पहले",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "पहले सब शांत था बाद में सब बदल गया"
+  }
+ ]
+}

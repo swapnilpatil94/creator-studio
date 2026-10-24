@@ -1,0 +1,84 @@
+{
+ "title": "threed demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "threed",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.6,
+   "archetype": "hook",
+   "component": "Text3D",
+   "variant": "",
+   "on_screen": [
+    "विष"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "विष",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "सबसे पहले निकला विष"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 4.4,
+   "archetype": "twist",
+   "component": "CardFlip",
+   "variant": "",
+   "on_screen": [
+    "कौन था?",
+    "महादेव"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "eye",
+     "subject": "eye",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "कौन",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "कौन था वो? महादेव"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 5.0,
+   "archetype": "many_scale",
+   "component": "Spin3D",
+   "variant": "",
+   "on_screen": [
+    "झील",
+    "बर्फ़",
+    "कंकाल",
+    "राज़"
+   ],
+   "accent_line": 4,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "झील",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "चार चीज़ें जो रहस्य बनीं"
+  }
+ ]
+}

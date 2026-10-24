@@ -111,6 +111,34 @@
    "name": "qwen3-vl:8b (vision critic, used from P4/P6)",
    "licence": "Apache-2.0",
    "source": "ollama.com/library/qwen3-vl"
+  },
+  {
+   "kind": "library",
+   "name": "d3-geo 3.1.1",
+   "file": "reel-factory/node_modules (copied into each episode)",
+   "licence": "ISC",
+   "source": "npm d3-geo"
+  },
+  {
+   "kind": "library",
+   "name": "d3-array 3.x",
+   "file": "reel-factory/node_modules",
+   "licence": "ISC",
+   "source": "npm d3-array"
+  },
+  {
+   "kind": "library",
+   "name": "topojson-client 3.1.0",
+   "file": "reel-factory/node_modules",
+   "licence": "ISC",
+   "source": "npm topojson-client"
+  },
+  {
+   "kind": "data",
+   "name": "world-atlas 2.0.2 (Natural Earth country outlines, 50m)",
+   "file": "reel-factory/node_modules/world-atlas/countries-50m.json",
+   "licence": "ISC (package) / Natural Earth is public domain",
+   "source": "npm world-atlas"
   }
  ]
 }

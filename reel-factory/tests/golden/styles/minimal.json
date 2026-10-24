@@ -1,0 +1,84 @@
+{
+ "title": "minimal demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "minimal",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.6,
+   "archetype": "hook",
+   "component": "BigWords",
+   "variant": "",
+   "on_screen": [
+    "सब",
+    "शांत",
+    "था"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "सब",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "सब शांत था"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "twist",
+   "component": "BigWords",
+   "variant": "",
+   "on_screen": [
+    "और फिर",
+    "आवाज़ आई"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "और",
+   "sfx": [
+    {
+     "at": "impact",
+     "name": "impact_big"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "और फिर एक आवाज़ आई"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "loop_cta",
+   "component": "BigWords",
+   "variant": "",
+   "on_screen": [
+    "क्या",
+    "आपने",
+    "सुनी?"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "क्या",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "क्या आपने सुनी?"
+  }
+ ]
+}

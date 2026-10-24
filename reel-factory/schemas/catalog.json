@@ -1,0 +1,1061 @@
+{
+ "components": [
+  {
+   "name": "HeadlineStrips",
+   "archetypes": [
+    "hook",
+    "date_era",
+    "place",
+    "twist",
+    "consequence_today",
+    "loop_cta"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "Any beat whose main job is the big text: each line on its own torn paper strip, accent line in the accent colour. Max 3 lines, 4 words per line.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      },
+      "maxItems": 3
+     },
+     "accent_line": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+     },
+     "variant": {
+      "enum": [
+       "torn",
+       "tape",
+       "ransom"
+      ]
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "Tag",
+   "archetypes": [
+    "place",
+    "date_era",
+    "character_intro"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "A short label (place, year, who, 'लोककथा') on a taped paper tag.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 28
+     },
+     "kind": {
+      "enum": [
+       "place",
+       "date",
+       "folk"
+      ]
+     }
+    },
+    "required": [
+     "text"
+    ]
+   }
+  },
+  {
+   "name": "Stamp",
+   "archetypes": [
+    "twist",
+    "evidence_reveal",
+    "loop_cta"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "One strong word slammed on like a rubber stamp (impact beat: shakes the camera).",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 16
+     }
+    },
+    "required": [
+     "text"
+    ]
+   }
+  },
+  {
+   "name": "Note",
+   "archetypes": [
+    "character_intro",
+    "consequence_today",
+    "cause_effect"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "A handwritten margin note (Kalam) on a sticky of paper, with a marker underline: a human aside or a 'so what'.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 28
+     }
+    },
+    "required": [
+     "text"
+    ]
+   }
+  },
+  {
+   "name": "Typewriter",
+   "archetypes": [
+    "loop_cta",
+    "evidence_reveal",
+    "quote"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "A line typed out letter by letter on a manuscript card: a question, a record entry or the closing hook.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 28
+     }
+    },
+    "required": [
+     "text"
+    ]
+   }
+  },
+  {
+   "name": "QuoteCard",
+   "archetypes": [
+    "quote",
+    "evidence_reveal",
+    "cause_effect"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "A quoted line with its attribution ('शिव पुराण के अनुसार', 'लोग कहते हैं') on a manuscript card. Use for any claim that rests on a source or a legend.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "quote": {
+      "type": "string",
+      "maxLength": 28
+     },
+     "by": {
+      "type": "string",
+      "maxLength": 28
+     }
+    },
+    "required": [
+     "quote"
+    ]
+   }
+  },
+  {
+   "name": "Counter",
+   "archetypes": [
+    "big_number",
+    "countdown_time",
+    "many_scale"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "One big number that rolls up from zero, with its label. The number must appear in the script.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "value": {
+      "type": "number"
+     },
+     "label": {
+      "type": "string",
+      "maxLength": 28
+     }
+    },
+    "required": [
+     "value"
+    ]
+   }
+  },
+  {
+   "name": "Checklist",
+   "archetypes": [
+    "options",
+    "comparison",
+    "process_steps",
+    "cause_effect"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "2-3 rows on a ruled card, each ticked, crossed or struck out: options, who passed or failed, step by step. Prefix a row '+ ' tick, '- ' cross, '~ ' strike.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "items": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+       "type": "object",
+       "properties": {
+        "text": {
+         "type": "string",
+         "maxLength": 28
+        },
+        "mark": {
+         "enum": [
+          "tick",
+          "cross",
+          "strike"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "required": [
+     "items"
+    ]
+   }
+  },
+  {
+   "name": "Cutout",
+   "archetypes": [
+    "character_intro",
+    "place",
+    "evidence_reveal",
+    "hook",
+    "twist"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "One illustrated subject as a sticker cut-out (white border, hard shadow) entering by slide, rise, pop, fly or drop. The workhorse visual.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "asset": {
+      "type": "string"
+     },
+     "enter": {
+      "enum": [
+       "slide",
+       "rise",
+       "pop",
+       "fly",
+       "drop"
+      ]
+     },
+     "size": {
+      "type": "integer",
+      "minimum": 300,
+      "maximum": 900
+     }
+    },
+    "required": [
+     "asset"
+    ]
+   }
+  },
+  {
+   "name": "MarkerDraw",
+   "archetypes": [
+    "evidence_reveal",
+    "twist",
+    "cause_effect"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "A red marker circle or underline drawn on to point at the hero (works on top of a Cutout; also used by motion preset 'circle').",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "shape": {
+      "enum": [
+       "circle",
+       "underline",
+       "arrow"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "UniversalFallback",
+   "archetypes": [
+    "*"
+   ],
+   "styles": [
+    "any"
+   ],
+   "when_to_use": "When nothing in the catalog fits: headline strips + one cutout + a motion preset. Always valid. Using it logs a 'gap' so the missing component lands on the backlog.",
+   "props_schema": {
+    "type": "object",
+    "properties": {}
+   }
+  },
+  {
+   "name": "BigWords",
+   "archetypes": [
+    "hook",
+    "twist",
+    "quote",
+    "loop_cta",
+    "consequence_today"
+   ],
+   "styles": [
+    "minimal",
+    "kinetic",
+    "whip"
+   ],
+   "when_to_use": "Minimal typographic: one huge word at a time slammed on the screen (on black in the minimal style), the payoff word in the accent colour. Almost no imagery; the sound does the work.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "words": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 16
+      },
+      "maxItems": 3
+     },
+     "accent": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "words"
+    ]
+   }
+  },
+  {
+   "name": "Parallax",
+   "archetypes": [
+    "place",
+    "character_intro",
+    "evidence_reveal",
+    "hook"
+   ],
+   "styles": [
+    "parallax"
+   ],
+   "when_to_use": "2.5D: the camera pushes through 2-3 layers (background, middle, foreground) that move at different speeds, like a film shot. Give assets back to front.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "layers": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 4
+     }
+    },
+    "required": [
+     "layers"
+    ]
+   }
+  },
+  {
+   "name": "Flashlight",
+   "archetypes": [
+    "evidence_reveal",
+    "twist",
+    "quote"
+   ],
+   "styles": [
+    "spotlight",
+    "desktop",
+    "minimal"
+   ],
+   "when_to_use": "Spotlight reveal: a dark scene where a flashlight beam sweeps and uncovers the hidden lines, then opens to the whole truth. Mystery re-hooks and verdicts.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "ShapeHero",
+   "archetypes": [
+    "hook",
+    "twist",
+    "place",
+    "big_number"
+   ],
+   "styles": [
+    "matchcut"
+   ],
+   "when_to_use": "A big flat shape (circle, moon, eye, drop, diamond, heart, coin) with a short label: the thing the next scene's match cut flows out of. Set beat.shapes = [this shape, next shape].",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "shape": {
+      "enum": [
+       "circle",
+       "moon",
+       "eye",
+       "drop",
+       "diamond",
+       "heart",
+       "coin"
+      ]
+     },
+     "label": {
+      "type": "string",
+      "maxLength": 16
+     }
+    },
+    "required": [
+     "shape"
+    ]
+   }
+  },
+  {
+   "name": "VersusSplit",
+   "archetypes": [
+    "comparison",
+    "options",
+    "date_era"
+   ],
+   "styles": [
+    "split"
+   ],
+   "when_to_use": "Split screen: two panels side by side (left vs right) with a VS badge: comparisons, then vs now, two theories. Give two assets and two labels.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "left": {
+      "type": "string",
+      "maxLength": 16
+     },
+     "right": {
+      "type": "string",
+      "maxLength": 16
+     },
+     "assets": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "name": "Grid4",
+   "archetypes": [
+    "many_scale",
+    "process_steps",
+    "comparison"
+   ],
+   "styles": [
+    "split"
+   ],
+   "when_to_use": "Four-panel mosaic (2x2) with staggered pops: four clues, four theories, four steps. Up to 4 assets and 3-4 short labels.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "labels": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 12
+      },
+      "maxItems": 4
+     },
+     "assets": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "maxItems": 4
+     }
+    }
+   }
+  },
+  {
+   "name": "BeforeAfter",
+   "archetypes": [
+    "comparison",
+    "date_era",
+    "consequence_today"
+   ],
+   "styles": [
+    "split"
+   ],
+   "when_to_use": "Before / after: one frame where a divider sweeps across and reveals the second image. Two assets (before, after) and two labels.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "before": {
+      "type": "string"
+     },
+     "after": {
+      "type": "string"
+     },
+     "assets": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "assets"
+    ]
+   }
+  },
+  {
+   "name": "CardFlip",
+   "archetypes": [
+    "evidence_reveal",
+    "twist",
+    "character_intro",
+    "options"
+   ],
+   "styles": [
+    "threed"
+   ],
+   "when_to_use": "3D-lite: a card flips in 3D to reveal the answer on its back. Front = picture + question, back = the answer.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "front": {
+      "type": "string",
+      "maxLength": 20
+     },
+     "back": {
+      "type": "string",
+      "maxLength": 20
+     },
+     "asset": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "front",
+     "back"
+    ]
+   }
+  },
+  {
+   "name": "Spin3D",
+   "archetypes": [
+    "many_scale",
+    "process_steps",
+    "comparison"
+   ],
+   "styles": [
+    "threed"
+   ],
+   "when_to_use": "3D-lite: a 4-sided prism rotates in 3D showing up to 4 faces (a list, 'top 4', four facts). Faces are labels or assets.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "faces": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 14
+      },
+      "maxItems": 4
+     }
+    },
+    "required": [
+     "faces"
+    ]
+   }
+  },
+  {
+   "name": "Text3D",
+   "archetypes": [
+    "hook",
+    "big_number",
+    "twist"
+   ],
+   "styles": [
+    "threed",
+    "whip"
+   ],
+   "when_to_use": "3D-lite: one extruded 3D word that tilts and sways in perspective. Use for the single most important word or number.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 12
+     }
+    },
+    "required": [
+     "text"
+    ]
+   }
+  },
+  {
+   "name": "SearchWindow",
+   "archetypes": [
+    "evidence_reveal",
+    "date_era",
+    "place",
+    "hook"
+   ],
+   "styles": [
+    "desktop"
+   ],
+   "when_to_use": "Investigation desktop: a newspaper-archive search box types the query, then results pop in and the first one is highlighted. First on_screen item = the query, the others = the result headlines.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "maxLength": 28
+     },
+     "results": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  {
+   "name": "ChatThread",
+   "archetypes": [
+    "cause_effect",
+    "character_intro",
+    "quote",
+    "evidence_reveal"
+   ],
+   "styles": [
+    "desktop"
+   ],
+   "when_to_use": "Investigation desktop: chat bubbles pop in one by one (alternating sides, a typing indicator first): witness messages, an exchange of letters, a theory thread. Up to 3 messages.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "messages": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "messages"
+    ]
+   }
+  },
+  {
+   "name": "FileFolders",
+   "archetypes": [
+    "character_intro",
+    "evidence_reveal",
+    "many_scale",
+    "options"
+   ],
+   "styles": [
+    "desktop",
+    "scrapbook"
+   ],
+   "when_to_use": "Investigation desktop: 2-3 case-file folders slide in with labels, the last one is stamped CASE OPEN. Labels = names, places or years.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "labels": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 16
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "labels"
+    ]
+   }
+  },
+  {
+   "name": "RedactedDoc",
+   "archetypes": [
+    "evidence_reveal",
+    "twist",
+    "quote"
+   ],
+   "styles": [
+    "desktop",
+    "spotlight",
+    "scrapbook"
+   ],
+   "when_to_use": "A classified-looking document: filler lines are blacked out, then black bars wipe away one by one to reveal the key lines. Up to 3 reveal lines.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "maxLength": 28
+      },
+      "maxItems": 3
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "MapFlight",
+   "archetypes": [
+    "place",
+    "date_era",
+    "evidence_reveal"
+   ],
+   "styles": [
+    "mapflight"
+   ],
+   "when_to_use": "Map flight: a globe spins to the place, zooms through country to the spot, and drops a pin with coordinates (d3-geo + Natural Earth outlines, drawn per frame). Give the place name, lat/lon and the country name as in Natural Earth.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "place": {
+      "type": "string",
+      "maxLength": 24
+     },
+     "lat": {
+      "type": "number"
+     },
+     "lon": {
+      "type": "number"
+     },
+     "country": {
+      "type": "string"
+     },
+     "from": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      }
+     }
+    },
+    "required": [
+     "place",
+     "lat",
+     "lon"
+    ]
+   }
+  }
+ ],
+ "styles": [
+  {
+   "name": "scrapbook",
+   "label": "Grunge scrapbook",
+   "looks": "Torn paper, ink splashes, marker lines, tape-rip transitions, fast jump edits.",
+   "best_for": "Hooks, openers, mythology, folk",
+   "how_built": "Torn clip-path pieces + hard cuts; tape-rip and flash transitions.",
+   "transitions": [
+    "tapeRip",
+    "cut",
+    "flash",
+    "tapeRip"
+   ]
+  },
+  {
+   "name": "kinetic",
+   "label": "Kinetic captions",
+   "looks": "Word-by-word Hindi captions with pops and colour on the keyword.",
+   "best_for": "Every video, on top of any style",
+   "how_built": "Word timestamps (forced alignment) drive the caption animation.",
+   "transitions": [
+    "cut",
+    "flash",
+    "whip",
+    "cut"
+   ]
+  },
+  {
+   "name": "parallax",
+   "label": "2.5D parallax",
+   "looks": "A still image comes alive: the camera pushes through foreground and background layers like a film shot.",
+   "best_for": "Mystery, history, mythology",
+   "how_built": "Layered cut-outs (or an image + depth map) moved at different speeds in CSS 3D.",
+   "transitions": [
+    "zoomThrough",
+    "filmBurn",
+    "zoomThrough",
+    "flash"
+   ]
+  },
+  {
+   "name": "zoomthrough",
+   "label": "Zoom-through transitions",
+   "looks": "Zoom into an object and the next scene emerges from inside it.",
+   "best_for": "Mystery, science",
+   "how_built": "Scale the scene into an element's position, then cross-fade to the next scene.",
+   "transitions": [
+    "zoomThrough"
+   ]
+  },
+  {
+   "name": "matchcut",
+   "label": "Match cuts / shape morph",
+   "looks": "A circle becomes the moon, then a bubble, then a coin: scenes flow by shape.",
+   "best_for": "Any genre",
+   "how_built": "Polygon-morph iris between matching shapes.",
+   "transitions": [
+    "morphIris"
+   ]
+  },
+  {
+   "name": "desktop",
+   "label": "Investigation desktop",
+   "looks": "The story told through a fake screen: archive search, file folders, chat bubbles, maps, redacted documents.",
+   "best_for": "Mystery / true crime (excellent for रहस्य)",
+   "how_built": "HTML UI mockups with typing, scrolling and window pops.",
+   "transitions": [
+    "cut",
+    "flash",
+    "cut"
+   ]
+  },
+  {
+   "name": "mapflight",
+   "label": "Map flights",
+   "looks": "Globe, country, city, pin with coordinates, Google-Earth style.",
+   "best_for": "Mystery places, history, travel",
+   "how_built": "d3-geo orthographic globe with GeoJSON outlines.",
+   "transitions": [
+    "zoomThrough",
+    "cut"
+   ]
+  },
+  {
+   "name": "retro",
+   "label": "Retro film / VHS / Super 8",
+   "looks": "Grain, gate weave, light leaks, film burns, timestamp overlay.",
+   "best_for": "Mystery, old cases, history",
+   "how_built": "Pre-baked grain + deterministic jitter; light leaks on cuts.",
+   "transitions": [
+    "filmBurn",
+    "cut",
+    "filmBurn",
+    "flash"
+   ]
+  },
+  {
+   "name": "threed",
+   "label": "3D-lite",
+   "looks": "Rotating 3D objects, card flips, 3D text, low-poly props mixed with 2D.",
+   "best_for": "Science, tech, 'top 5' lists",
+   "how_built": "CSS 3D transforms (perspective, rotateX/Y) in components.",
+   "transitions": [
+    "flash",
+    "whip",
+    "cut"
+   ]
+  },
+  {
+   "name": "split",
+   "label": "Split screen / grids",
+   "looks": "Side by side, before and after, or four-panel mosaics.",
+   "best_for": "Comparisons, versus, timelines",
+   "how_built": "CSS grid layouts with staggered entrances.",
+   "transitions": [
+    "cut",
+    "flash",
+    "whip"
+   ]
+  },
+  {
+   "name": "minimal",
+   "label": "Minimal typographic",
+   "looks": "Big words on black with strong sound design and almost no imagery.",
+   "best_for": "Spooky reveals, emotional twists",
+   "how_built": "Text and timing only; the cheapest to make.",
+   "transitions": [
+    "cut",
+    "cut",
+    "spotlight"
+   ]
+  },
+  {
+   "name": "whip",
+   "label": "Speed-ramp whip cuts",
+   "looks": "Hard cuts with motion blur, speed ramps and impact shakes. Fast and punchy.",
+   "best_for": "High-energy facts, lists",
+   "how_built": "Blur on fast moves, shake on impacts.",
+   "transitions": [
+    "whip",
+    "cut",
+    "whip",
+    "flash"
+   ]
+  },
+  {
+   "name": "spotlight",
+   "label": "Spotlight / redaction reveals",
+   "looks": "A flashlight beam or black bars wipe away to reveal text.",
+   "best_for": "Mystery re-hooks and verdicts",
+   "how_built": "A radial mask or bar wipes.",
+   "transitions": [
+    "spotlight",
+    "cut"
+   ]
+  }
+ ],
+ "transitions": [
+  {
+   "name": "cut",
+   "desc": "hard cut, tiny impact flash"
+  },
+  {
+   "name": "flash",
+   "desc": "white flash cut"
+  },
+  {
+   "name": "whip",
+   "desc": "speed-ramp whip pan with blur"
+  },
+  {
+   "name": "zoomThrough",
+   "desc": "zoom into the focus point, next scene emerges from inside it"
+  },
+  {
+   "name": "tapeRip",
+   "desc": "a strip of torn paper sweeps across and tears the scene away"
+  },
+  {
+   "name": "morphIris",
+   "desc": "a shape grows and morphs into the next shape, revealing the next scene (match cut)"
+  },
+  {
+   "name": "filmBurn",
+   "desc": "orange film burn / light leak between scenes"
+  },
+  {
+   "name": "spotlight",
+   "desc": "radial mask closes to black, reopens on the next scene"
+  }
+ ],
+ "genres": {
+  "mystery": [
+   "desktop",
+   "retro",
+   "parallax",
+   "zoomthrough",
+   "spotlight",
+   "mapflight",
+   "minimal"
+  ],
+  "mythology": [
+   "scrapbook",
+   "parallax",
+   "matchcut",
+   "kinetic"
+  ],
+  "science": [
+   "threed",
+   "zoomthrough",
+   "split",
+   "whip",
+   "kinetic"
+  ],
+  "history": [
+   "retro",
+   "parallax",
+   "mapflight",
+   "desktop"
+  ],
+  "space": [
+   "zoomthrough",
+   "parallax",
+   "threed"
+  ],
+  "business": [
+   "split",
+   "kinetic",
+   "whip"
+  ],
+  "crime-history": [
+   "desktop",
+   "retro",
+   "spotlight",
+   "mapflight"
+  ],
+  "psychology": [
+   "minimal",
+   "matchcut",
+   "kinetic",
+   "spotlight"
+  ],
+  "geography": [
+   "mapflight",
+   "zoomthrough",
+   "parallax",
+   "split"
+  ],
+  "biography": [
+   "retro",
+   "parallax",
+   "scrapbook",
+   "kinetic"
+  ]
+ },
+ "themes": [
+  "pothi"
+ ]
+}

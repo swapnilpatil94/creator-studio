@@ -2,7 +2,8 @@
  "title": "component goldens",
  "theme": "pothi",
  "genre": "demo",
- "camera": "OneTakeRing",
+ "style": "scrapbook",
+ "captions": false,
  "sources": [],
  "warnings": [],
  "gaps": [],
@@ -271,7 +272,404 @@
    "motion": [],
    "emphasis_word": "",
    "sfx": [],
-   "loop_to_start": true
+   "loop_to_start": false
+  },
+  {
+   "id": 13,
+   "line_ids": [
+    13
+   ],
+   "seconds": 3.2,
+   "archetype": "twist",
+   "component": "BigWords",
+   "variant": "",
+   "on_screen": [
+    "और फिर",
+    "सब शांत",
+    "हो गया"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [
+    {
+     "at": "impact",
+     "name": "impact_big"
+    }
+   ],
+   "loop_to_start": false
+  },
+  {
+   "id": 14,
+   "line_ids": [
+    14
+   ],
+   "seconds": 3.2,
+   "archetype": "place",
+   "component": "Parallax",
+   "variant": "",
+   "on_screen": [],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "rays",
+     "subject": "sunburst",
+     "reuse": true
+    },
+    {
+     "id": "mountain",
+     "subject": "mountain",
+     "reuse": true
+    },
+    {
+     "id": "serpent",
+     "subject": "serpent",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 15,
+   "line_ids": [
+    15
+   ],
+   "seconds": 3.2,
+   "archetype": "evidence_reveal",
+   "component": "Flashlight",
+   "variant": "",
+   "on_screen": [
+    "अंधेरे में छिपा",
+    "एक पुराना नाम",
+    "कौन था वो?"
+   ],
+   "accent_line": 3,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 16,
+   "line_ids": [
+    16
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "ShapeHero",
+   "variant": "",
+   "on_screen": [
+    "एक चाँद"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "shapes": [
+    "moon",
+    "eye"
+   ]
+  },
+  {
+   "id": 17,
+   "line_ids": [
+    17
+   ],
+   "seconds": 3.2,
+   "archetype": "comparison",
+   "component": "VersusSplit",
+   "variant": "",
+   "on_screen": [
+    "पहले",
+    "आज"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "moon",
+     "subject": "moon",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "flame",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 18,
+   "line_ids": [
+    18
+   ],
+   "seconds": 3.2,
+   "archetype": "many_scale",
+   "component": "Grid4",
+   "variant": "",
+   "on_screen": [
+    "झील",
+    "कंकाल",
+    "बर्फ़"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "w",
+     "reuse": true
+    },
+    {
+     "id": "eye",
+     "subject": "e",
+     "reuse": true
+    },
+    {
+     "id": "moon",
+     "subject": "m",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "f",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 19,
+   "line_ids": [
+    19
+   ],
+   "seconds": 3.2,
+   "archetype": "comparison",
+   "component": "BeforeAfter",
+   "variant": "",
+   "on_screen": [
+    "पहले",
+    "बाद में"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "l",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "f",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 20,
+   "line_ids": [
+    20
+   ],
+   "seconds": 3.2,
+   "archetype": "twist",
+   "component": "CardFlip",
+   "variant": "",
+   "on_screen": [
+    "कौन था?",
+    "महादेव"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [
+    {
+     "id": "eye",
+     "subject": "eye",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 21,
+   "line_ids": [
+    21
+   ],
+   "seconds": 3.2,
+   "archetype": "many_scale",
+   "component": "Spin3D",
+   "variant": "",
+   "on_screen": [
+    "झील",
+    "बर्फ़",
+    "कंकाल"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 22,
+   "line_ids": [
+    22
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "Text3D",
+   "variant": "",
+   "on_screen": [
+    "विष"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 23,
+   "line_ids": [
+    23
+   ],
+   "seconds": 3.2,
+   "archetype": "evidence_reveal",
+   "component": "SearchWindow",
+   "variant": "",
+   "on_screen": [
+    "रूपकुंड 1942",
+    "झील के पास कंकाल मिले",
+    "रेंजर की रिपोर्ट"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 24,
+   "line_ids": [
+    24
+   ],
+   "seconds": 3.2,
+   "archetype": "quote",
+   "component": "ChatThread",
+   "variant": "",
+   "on_screen": [
+    "क्या तुमने वो झील देखी?",
+    "हाँ... वहाँ कंकाल थे",
+    "किसी को बताना मत"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 25,
+   "line_ids": [
+    25
+   ],
+   "seconds": 3.2,
+   "archetype": "character_intro",
+   "component": "FileFolders",
+   "variant": "",
+   "on_screen": [
+    "रेंजर 1942",
+    "DNA रिपोर्ट",
+    "रूपकुंड झील"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 26,
+   "line_ids": [
+    26
+   ],
+   "seconds": 3.2,
+   "archetype": "evidence_reveal",
+   "component": "RedactedDoc",
+   "variant": "",
+   "on_screen": [
+    "नाम: अज्ञात",
+    "मृत्यु: 1200 वर्ष पहले",
+    "कारण: ???"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 27,
+   "line_ids": [
+    27
+   ],
+   "seconds": 3.2,
+   "archetype": "place",
+   "component": "MapFlight",
+   "variant": "",
+   "on_screen": [
+    "रूपकुंड झील",
+    "उत्तराखंड, भारत"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": true,
+   "map": {
+    "lat": 30.26,
+    "lon": 79.73,
+    "country": "India"
+   }
   }
  ]
 }

@@ -1,15 +1,257 @@
 {
-  "title": "हलाहल और नीलकंठ (golden test fixture)",
-  "theme": "pothi", "genre": "mythology", "camera": "OneTakeRing",
-  "sources": ["पुराणों की लोककथा (test fixture, not for publishing)"], "warnings": [], "gaps": [],
-  "beats": [
-    { "id": 1, "line_ids": [1], "seconds": 3.6, "archetype": "hook", "component": "HeadlineStrips", "variant": "torn", "on_screen": ["समुद्र से निकला", "हलाहल", "विष!"], "accent_line": 2, "sheet": "ivory", "assets": [], "motion": ["sparks"], "emphasis_word": "हलाहल", "sfx": [{ "at": "enter", "name": "whoosh" }], "loop_to_start": false },
-    { "id": 2, "line_ids": [2], "seconds": 3.4, "archetype": "place", "component": "Cutout", "variant": "", "on_screen": ["समुद्र मंथन", "मंदराचल पर्वत"], "accent_line": 1, "sheet": "indigo", "assets": [{ "id": "mountain", "subject": "a great mountain", "reuse": true }], "motion": ["rise", "dust"], "emphasis_word": "मंथन", "sfx": [{ "at": "enter", "name": "paper_slide" }], "loop_to_start": false },
-    { "id": 3, "line_ids": [3], "seconds": 3.4, "archetype": "big_number", "component": "Counter", "variant": "", "on_screen": ["पुराणों के चौदह रत्न", "14", "रत्न"], "accent_line": 1, "sheet": "maroon", "assets": [], "motion": ["sparks"], "emphasis_word": "चौदह", "sfx": [{ "at": "enter", "name": "tick" }], "loop_to_start": false },
-    { "id": 4, "line_ids": [4], "seconds": 3.6, "archetype": "evidence_reveal", "component": "Cutout", "variant": "", "on_screen": ["अमृत से पहले", "निकला ज़हर"], "accent_line": 2, "sheet": "saffron", "assets": [{ "id": "cup", "subject": "a clay cup of green poison", "reuse": true }], "motion": ["drop"], "emphasis_word": "ज़हर", "sfx": [{ "at": "enter", "name": "impact_small" }], "loop_to_start": false },
-    { "id": 5, "line_ids": [5], "seconds": 3.4, "archetype": "twist", "component": "Stamp", "variant": "", "on_screen": ["कोई सह न सका", "हलाहल"], "accent_line": 1, "sheet": "indigo", "assets": [], "motion": [], "emphasis_word": "हलाहल", "sfx": [{ "at": "impact", "name": "impact_big" }], "loop_to_start": false },
-    { "id": 6, "line_ids": [6], "seconds": 3.8, "archetype": "options", "component": "Checklist", "variant": "", "on_screen": ["- देवता", "- असुर", "+ महादेव"], "accent_line": 1, "sheet": "ivory", "assets": [], "motion": [], "emphasis_word": "महादेव", "sfx": [{ "at": "enter", "name": "tick" }], "loop_to_start": false },
-    { "id": 7, "line_ids": [7], "seconds": 3.6, "archetype": "quote", "component": "QuoteCard", "variant": "", "on_screen": ["विष कंठ में रोक लिया", "शिव पुराण के अनुसार"], "accent_line": 1, "sheet": "maroon", "assets": [], "motion": ["petals"], "emphasis_word": "कंठ", "sfx": [{ "at": "enter", "name": "paper_slide" }], "loop_to_start": false },
-    { "id": 8, "line_ids": [8], "seconds": 3.4, "archetype": "loop_cta", "component": "Typewriter", "variant": "", "on_screen": ["वही नीलकंठ", "क्या आप जानते थे?"], "accent_line": 1, "sheet": "ivory", "assets": [], "motion": ["circle"], "emphasis_word": "नीलकंठ", "sfx": [{ "at": "enter", "name": "whoosh" }], "loop_to_start": true }
-  ]
+ "title": "हलाहल और नीलकंठ (golden test fixture)",
+ "theme": "pothi",
+ "genre": "mythology",
+ "sources": [
+  "पुराणों की लोककथा (test fixture, not for publishing)"
+ ],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.6,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "torn",
+   "on_screen": [
+    "समुद्र से निकला",
+    "हलाहल",
+    "विष!"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [
+    "sparks"
+   ],
+   "emphasis_word": "हलाहल",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "whoosh"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "समुद्र से निकला हलाहल विष।"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "समुद्र मंथन",
+    "मंदराचल पर्वत"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "mountain",
+     "subject": "a great mountain",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "rise",
+    "dust"
+   ],
+   "emphasis_word": "मंथन",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "paper_slide"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "समुद्र मंथन हुआ मंदराचल पर्वत से।"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "big_number",
+   "component": "Counter",
+   "variant": "",
+   "on_screen": [
+    "पुराणों के चौदह रत्न",
+    "14",
+    "रत्न"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [
+    "sparks"
+   ],
+   "emphasis_word": "चौदह",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "tick"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "पुराणों में चौदह रत्नों का वर्णन है।"
+  },
+  {
+   "id": 4,
+   "line_ids": [
+    4
+   ],
+   "seconds": 3.6,
+   "archetype": "evidence_reveal",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "अमृत से पहले",
+    "निकला ज़हर"
+   ],
+   "accent_line": 2,
+   "sheet": "saffron",
+   "assets": [
+    {
+     "id": "cup",
+     "subject": "a clay cup of green poison",
+     "reuse": true
+    }
+   ],
+   "motion": [
+    "drop"
+   ],
+   "emphasis_word": "ज़हर",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "impact_small"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "अमृत से पहले निकला ज़हर।"
+  },
+  {
+   "id": 5,
+   "line_ids": [
+    5
+   ],
+   "seconds": 3.4,
+   "archetype": "twist",
+   "component": "Stamp",
+   "variant": "",
+   "on_screen": [
+    "कोई सह न सका",
+    "हलाहल"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "हलाहल",
+   "sfx": [
+    {
+     "at": "impact",
+     "name": "impact_big"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "कोई उसे सह न सका, हलाहल।"
+  },
+  {
+   "id": 6,
+   "line_ids": [
+    6
+   ],
+   "seconds": 3.8,
+   "archetype": "options",
+   "component": "Checklist",
+   "variant": "",
+   "on_screen": [
+    "- देवता",
+    "- असुर",
+    "+ महादेव"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "महादेव",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "tick"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "देवता नहीं, असुर नहीं, सिर्फ महादेव।"
+  },
+  {
+   "id": 7,
+   "line_ids": [
+    7
+   ],
+   "seconds": 3.6,
+   "archetype": "quote",
+   "component": "QuoteCard",
+   "variant": "",
+   "on_screen": [
+    "विष कंठ में रोक लिया",
+    "शिव पुराण के अनुसार"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [
+    "petals"
+   ],
+   "emphasis_word": "कंठ",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "paper_slide"
+    }
+   ],
+   "loop_to_start": false,
+   "narration": "शिव पुराण के अनुसार, विष कंठ में रोक लिया।"
+  },
+  {
+   "id": 8,
+   "line_ids": [
+    8
+   ],
+   "seconds": 3.4,
+   "archetype": "loop_cta",
+   "component": "Typewriter",
+   "variant": "",
+   "on_screen": [
+    "वही नीलकंठ",
+    "क्या आप जानते थे?"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [
+    "circle"
+   ],
+   "emphasis_word": "नीलकंठ",
+   "sfx": [
+    {
+     "at": "enter",
+     "name": "whoosh"
+    }
+   ],
+   "loop_to_start": true,
+   "narration": "वही नीलकंठ। क्या आप जानते थे?"
+  }
+ ],
+ "style": "scrapbook"
 }

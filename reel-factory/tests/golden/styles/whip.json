@@ -1,0 +1,99 @@
+{
+ "title": "whip demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "whip",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 2.6,
+   "archetype": "hook",
+   "component": "Text3D",
+   "variant": "",
+   "on_screen": [
+    "तेज़"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "तेज़",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "तेज़ तथ्य एक"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 2.8,
+   "archetype": "big_number",
+   "component": "Counter",
+   "variant": "",
+   "on_screen": [
+    "गति",
+    "5000",
+    "मीटर"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "गति",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "पाँच हज़ार मीटर की ऊँचाई"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 2.6,
+   "archetype": "twist",
+   "component": "Stamp",
+   "variant": "",
+   "on_screen": [
+    "सच",
+    "आधा सुलझा"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "सच",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "फ़ैसला: आधा सुलझा"
+  },
+  {
+   "id": 4,
+   "line_ids": [
+    4
+   ],
+   "seconds": 2.6,
+   "archetype": "loop_cta",
+   "component": "HeadlineStrips",
+   "variant": "",
+   "on_screen": [
+    "और अगला",
+    "तथ्य?"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "और",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "और अगला तथ्य?"
+  }
+ ]
+}

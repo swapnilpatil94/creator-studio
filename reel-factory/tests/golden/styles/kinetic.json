@@ -1,0 +1,83 @@
+{
+ "title": "kinetic demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "kinetic",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.4,
+   "archetype": "hook",
+   "component": "HeadlineStrips",
+   "variant": "",
+   "on_screen": [
+    "एक झील",
+    "जहाँ कंकाल हैं"
+   ],
+   "accent_line": 2,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "कंकाल",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "हिमालय में एक झील है जहाँ सैकड़ों कंकाल पड़े हैं"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "big_number",
+   "component": "Counter",
+   "variant": "",
+   "on_screen": [
+    "तीन सौ से ज़्यादा",
+    "300+",
+    "लोग"
+   ],
+   "accent_line": 3,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "तीन",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "अंदाज़ा है तीन सौ से ज़्यादा लोग"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "Cutout",
+   "variant": "",
+   "on_screen": [
+    "बर्फ़ पिघलती है"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "waves",
+     "subject": "waves",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "बर्फ़",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "हर साल जब बर्फ़ पिघलती है कंकाल फिर दिखने लगते हैं"
+  }
+ ]
+}

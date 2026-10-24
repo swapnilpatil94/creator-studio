@@ -1,0 +1,98 @@
+{
+ "title": "matchcut demo",
+ "theme": "pothi",
+ "genre": "demo",
+ "style": "matchcut",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.4,
+   "archetype": "hook",
+   "component": "ShapeHero",
+   "variant": "",
+   "on_screen": [
+    "एक चाँद"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "एक",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "एक चाँद आकाश में था",
+   "shapes": [
+    "moon",
+    "eye"
+   ],
+   "focus": {
+    "x": 540,
+    "y": 750
+   }
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.4,
+   "archetype": "twist",
+   "component": "ShapeHero",
+   "variant": "",
+   "on_screen": [
+    "एक आँख"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "एक",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "जो आँख बनकर देख रहा था",
+   "shapes": [
+    "eye",
+    "drop"
+   ],
+   "focus": {
+    "x": 540,
+    "y": 750
+   }
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.4,
+   "archetype": "place",
+   "component": "ShapeHero",
+   "variant": "",
+   "on_screen": [
+    "एक बूँद"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "एक",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "और उसकी एक बूँद गिरी",
+   "shapes": [
+    "drop",
+    "circle"
+   ],
+   "focus": {
+    "x": 540,
+    "y": 750
+   }
+  }
+ ]
+}
