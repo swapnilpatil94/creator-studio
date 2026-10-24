@@ -11,7 +11,7 @@ if (cmd === "compose" || cmd === "render" || cmd === "preview") {
 } else if (cmd === "make") {   // reel make <slug> --script file --theme darkpsych --style specimen
   const slug = a[1], sf = arg("--script"); await make({ slug, script: sf ? fs.readFileSync(sf, "utf8") : undefined, template: arg("--template"), theme: arg("--theme"), style: arg("--style"), genre: arg("--genre"), model: arg("--model"), speaker: arg("--speaker"), engine: arg("--engine"), reference: arg("--reference"), voiceMode: arg("--voice-mode"), candidates: +arg("--candidates", 2), keepPlan: a.includes("--keep-plan") });
 } else if (cmd === "daily") {   // reel daily [--once] [--max N]: make the next queued topic(s) with today's template and animation
-  const max = a.includes("--once") ? 1 : +arg("--max", 1); for (let i = 0; i < max; i++) { const r = await runNext({}); if (!r) break; }
+  const max = a.includes("--once") ? 1 : +arg("--max", 1); for (let i = 0; i < max; i++) { const r = await runNext({ id: arg("--id") }); if (!r) break; }
 } else if (cmd === "queue") {   // reel queue seed | list
   const q = Q.load(); if (a[1] === "seed") console.log("added", Q.seedFrom(q, path.join(RF, "topics/dark-psychology.json"))), Q.save(q); else console.table(q.items.map(i => ({ id: i.id, status: i.status, template: i.template || "-", animation: i.animation || "-" })));
 } else if (cmd === "assets") {   // reel assets library <theme> | reel assets plan <plan.json>
