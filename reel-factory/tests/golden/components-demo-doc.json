@@ -1,0 +1,90 @@
+{
+ "title": "component goldens",
+ "theme": "documentary",
+ "genre": "demo",
+ "style": "documentary",
+ "captions": false,
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.2,
+   "archetype": "place",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "असम · 19वीं सदी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "c_assam_tea",
+     "subject": "tea hills",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.2,
+   "archetype": "date_era",
+   "component": "Timeline",
+   "variant": "",
+   "on_screen": [
+    "1903|एक कमेटी बनी",
+    "!1930 के दशक|विदेश में माँग गिरी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.2,
+   "archetype": "options",
+   "component": "ChoiceTree",
+   "variant": "",
+   "on_screen": [
+    "सुबह क्या पिएँ?",
+    "चाय",
+    "कॉफ़ी",
+    "शरबत"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": true,
+   "options": [
+    "चाय",
+    "कॉफ़ी",
+    "शरबत",
+    "पानी"
+   ],
+   "default": 0,
+   "why": "हर जगह · आसान · सबसे आगे"
+  }
+ ]
+}

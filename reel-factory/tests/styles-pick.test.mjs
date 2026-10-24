@@ -6,6 +6,6 @@ test("every genre's candidate styles exist; every style lists transitions and a 
   for (const [g, list] of Object.entries(GENRE_STYLES)) for (const s of list) assert.ok(styles[s], g + " -> " + s);
   for (const s of Object.values(styles)) { assert.ok(s.transitions.length && typeof s.bg === "function" && s.how && s.looks && s.best_for, s.name); }
 });
-test("catalog: 13 styles, >= 26 components each with when_to_use and a props schema", () => {
-  const c = catalog(); assert.equal(c.styles.length, 13); assert.ok(c.components.length >= 26); for (const k of c.components) assert.ok(k.when_to_use && k.props_schema, k.name);
+test("catalog: 14 styles, >= 26 components each with when_to_use and a props schema", () => {
+  const c = catalog(); assert.equal(c.styles.length, 14); assert.ok(c.components.length >= 26); for (const k of c.components) assert.ok(k.when_to_use && k.props_schema, k.name);
 });

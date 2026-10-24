@@ -798,9 +798,157 @@
      "lon"
     ]
    }
+  },
+  {
+   "name": "Footage",
+   "archetypes": [
+    "hook",
+    "place",
+    "character_intro",
+    "evidence_reveal",
+    "consequence_today",
+    "twist"
+   ],
+   "styles": [
+    "documentary"
+   ],
+   "when_to_use": "A full-bleed graded photographic plate with a slow camera move, a small kicker (place/date) and an honest label: ILLUSTRATIVE RECONSTRUCTION for generated images, ARCHIVE only for verified real material. Optional amber highlight box on the exact thing being discussed.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "plate": {
+      "type": "string"
+     },
+     "kicker": {
+      "type": "string",
+      "maxLength": 28
+     },
+     "label": {
+      "enum": [
+       "illustrative",
+       "archive"
+      ]
+     },
+     "highlight": {
+      "type": "object"
+     },
+     "move": {
+      "enum": [
+       "in",
+       "out",
+       "left",
+       "right"
+      ]
+     }
+    },
+    "required": [
+     "plate"
+    ]
+   }
+  },
+  {
+   "name": "Timeline",
+   "archetypes": [
+    "date_era",
+    "process_steps",
+    "cause_effect"
+   ],
+   "styles": [
+    "documentary",
+    "desktop",
+    "scrapbook",
+    "kinetic"
+   ],
+   "when_to_use": "Evidence timeline: 2-4 dated nodes reveal down a vertical line (year in amber, what happened in ivory). Use only dates stated in the script; prefix a node with '!' to mark a crisis in red.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "nodes": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+       "type": "object",
+       "properties": {
+        "year": {
+         "type": "string"
+        },
+        "text": {
+         "type": "string",
+         "maxLength": 28
+        },
+        "hot": {
+         "type": "boolean"
+        }
+       }
+      }
+     },
+     "title": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "nodes"
+    ]
+   }
+  },
+  {
+   "name": "ChoiceTree",
+   "archetypes": [
+    "options",
+    "cause_effect",
+    "comparison",
+    "twist"
+   ],
+   "styles": [
+    "documentary",
+    "desktop",
+    "kinetic"
+   ],
+   "when_to_use": "Choice architecture: a question branches into 3-4 options; the DEFAULT option is the one made easy, visible and first. The branches draw, then the default path lights amber while the others dim.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "question": {
+      "type": "string",
+      "maxLength": 28
+     },
+     "options": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+       "type": "string",
+       "maxLength": 16
+      }
+     },
+     "default": {
+      "type": "integer"
+     },
+     "why": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "question",
+     "options"
+    ]
+   }
   }
  ],
  "styles": [
+  {
+   "name": "documentary",
+   "label": "Investigative documentary",
+   "looks": "Graded photographic plates with slow camera moves, evidence timelines, choice trees, calm dissolves, restrained captions.",
+   "best_for": "Invisible-systems explainers: habits, pricing, history of customs, behavioural experiments",
+   "how_built": "Pre-graded plates (Ken Burns) + code-drawn motion graphics + dissolves; light vignette; continuous narration with forced-alignment captions.",
+   "transitions": [
+    "dissolve",
+    "cut",
+    "dissolve",
+    "dissolve"
+   ]
+  },
   {
    "name": "scrapbook",
    "label": "Grunge scrapbook",
@@ -959,6 +1107,10 @@
  ],
  "transitions": [
   {
+   "name": "dissolve",
+   "desc": "calm cross-dissolve"
+  },
+  {
    "name": "cut",
    "desc": "hard cut, tiny impact flash"
   },
@@ -1056,6 +1208,11 @@
   ]
  },
  "themes": [
-  "pothi"
+  "collage-ocean",
+  "documentary",
+  "field-notebook",
+  "ledger",
+  "pothi",
+  "rahasya"
  ]
 }

@@ -1,0 +1,86 @@
+{
+ "title": "documentary demo",
+ "theme": "documentary",
+ "genre": "demo",
+ "style": "documentary",
+ "sources": [],
+ "warnings": [],
+ "gaps": [],
+ "beats": [
+  {
+   "id": 1,
+   "line_ids": [
+    1
+   ],
+   "seconds": 3.6,
+   "archetype": "date_era",
+   "component": "Timeline",
+   "variant": "",
+   "on_screen": [
+    "1903|कमेटी बनी",
+    "!1930 का दशक|विदेश में माँग गिरी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "1903|कमेटी बनी !1930 का दशक|विदेश में माँग गिरी",
+   "title": "समयरेखा"
+  },
+  {
+   "id": 2,
+   "line_ids": [
+    2
+   ],
+   "seconds": 3.6,
+   "archetype": "options",
+   "component": "ChoiceTree",
+   "variant": "",
+   "on_screen": [
+    "सुबह क्या पिएँ?"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "सुबह क्या पिएँ?",
+   "options": [
+    "चाय",
+    "कॉफ़ी",
+    "शरबत",
+    "पानी"
+   ],
+   "default": 0,
+   "why": "हर जगह · आसान"
+  },
+  {
+   "id": 3,
+   "line_ids": [
+    3
+   ],
+   "seconds": 3.6,
+   "archetype": "process_steps",
+   "component": "Checklist",
+   "variant": "",
+   "on_screen": [
+    "+ पानी उबालो",
+    "+ पत्ती डालो",
+    "+ दूध और चीनी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "narration": "+ पानी उबालो + पत्ती डालो + दूध और चीनी"
+  }
+ ]
+}

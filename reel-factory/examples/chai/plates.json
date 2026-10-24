@@ -1,0 +1,8 @@
+[
+ { "id": "a_hands_chai", "prompt": "close-up of a person's hands holding a steaming glass of milky chai at a wooden window sill, soft morning window light, no face visible" },
+ { "id": "b_street_1900", "prompt": "wide street in a small Indian town around the year 1900, dusty road, bullock carts and wooden shopfronts, a few people in period clothing seen from behind, hazy daylight, historical reconstruction" },
+ { "id": "c_assam_tea", "prompt": "tea plantation hills in Assam in the 1890s, neat rows of tea bushes, workers picking leaves far away, mist over the hills, early morning light, wide historical reconstruction" },
+ { "id": "d_railway_stall", "prompt": "Indian railway platform in the 1930s at dawn, a tea stall with a kettle and glasses and rising steam, a vendor seen from the side, passengers waiting far in the background, warm lamp light, historical reconstruction" },
+ { "id": "e_corridor_doors", "prompt": "a long dim corridor with many identical wooden doors on both sides, one door slightly open with warm amber light spilling out, symmetrical perspective, cinematic" },
+ { "id": "f_cup_dawn", "prompt": "a single cup of tea on a kitchen table at dawn with steam rising, a hand reaching toward the cup, window light, no face visible" }
+]

@@ -15,7 +15,12 @@
   },
   "theme": {
    "enum": [
-    "pothi"
+    "collage-ocean",
+    "documentary",
+    "field-notebook",
+    "ledger",
+    "pothi",
+    "rahasya"
    ]
   },
   "genre": {
@@ -34,6 +39,7 @@
   },
   "style": {
    "enum": [
+    "documentary",
     "scrapbook",
     "kinetic",
     "parallax",
@@ -140,7 +146,10 @@
        "ChatThread",
        "FileFolders",
        "RedactedDoc",
-       "MapFlight"
+       "MapFlight",
+       "Footage",
+       "Timeline",
+       "ChoiceTree"
       ]
      },
      "variant": {
@@ -210,6 +219,7 @@
      },
      "transition": {
       "enum": [
+       "dissolve",
        "cut",
        "flash",
        "whip",

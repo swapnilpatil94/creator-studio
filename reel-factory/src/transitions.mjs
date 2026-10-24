@@ -5,6 +5,7 @@ const setZ = (a, b, t) => `tl.set(${j(a)},{zIndex:3},${t.toFixed(3)});tl.set(${j
 const hideOut = (a, t) => `tl.set(${j(a)},{opacity:0,zIndex:1,x:0,y:0,scale:1,rotation:0,filter:"none"},${t.toFixed(3)});`;
 const NR = { immediateRender: false };
 export const TRANSITIONS = {
+  dissolve:   { dur: 0.55, desc: "calm cross-dissolve" },
   cut:        { dur: 0.12, desc: "hard cut, tiny impact flash" },
   flash:      { dur: 0.16, desc: "white flash cut" },
   whip:       { dur: 0.28, desc: "speed-ramp whip pan with blur" },
@@ -18,6 +19,8 @@ export const TRANSITIONS = {
 export function transition(kind, { a, b, t, i, theme, focus = { x: 540, y: 800 }, shapes = ["circle", "circle"], impactAt }) {
   const d = (TRANSITIONS[kind] || TRANSITIONS.cut).dur, t1 = t + d, mid = t + d / 2, pal = theme.palette; let js = "", html = "";
   switch (kind) {
+    case "dissolve":
+      js += setZ(a, b, t) + `tl.fromTo(${j(b)},{opacity:0},{opacity:1,duration:${d},ease:"power1.inOut",immediateRender:false},${t.toFixed(3)});` + hideOut(a, t1); break;
     case "whip":
       js += setZ(a, b, t) + `tl.fromTo(${j(a)},{x:0,scaleX:1,filter:"blur(0px)"},{x:-1400,scaleX:1.25,filter:"blur(34px)",duration:${d},ease:"power3.in",immediateRender:false},${t.toFixed(3)});`
         + `tl.set(${j(b)},{opacity:1},${(t + d * 0.25).toFixed(3)});tl.fromTo(${j(b)},{x:1400,scaleX:1.25,filter:"blur(34px)"},{x:0,scaleX:1,filter:"blur(0px)",duration:${d * 0.8},ease:"power3.out",immediateRender:false},${(t + d * 0.25).toFixed(3)});` + `tl.set(${j(b)},{clearProps:"filter,transform"},${t1.toFixed(3)});` + hideOut(a, t1); break;

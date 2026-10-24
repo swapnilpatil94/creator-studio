@@ -1,0 +1,326 @@
+{
+ "title": "भारत को चाय की आदत किसने लगाई?",
+ "theme": "documentary",
+ "genre": "mystery",
+ "style": "documentary",
+ "sources": [
+  "TEST: facts must be verified before publishing (see VERIFY.md)"
+ ],
+ "warnings": [
+  "illustrative reconstructions are AI-generated"
+ ],
+ "gaps": [],
+ "loop": false,
+ "tail": 2.2,
+ "beats": [
+  {
+   "id": 1,
+   "segment": "v001",
+   "line_ids": [
+    1
+   ],
+   "archetype": "hook",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "सुबह · आपकी चाय"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "a_hands_chai",
+     "subject": "a_hands_chai",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "अपनी",
+   "sfx": [],
+   "loop_to_start": false,
+   "move": "in"
+  },
+  {
+   "id": 2,
+   "segment": "v002",
+   "line_ids": [
+    2
+   ],
+   "archetype": "date_era",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "भारत · लगभग 1900"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "b_street_1900",
+     "subject": "b_street_1900",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "रोज़",
+   "sfx": [],
+   "loop_to_start": false,
+   "move": "left"
+  },
+  {
+   "id": 3,
+   "segment": "v003",
+   "line_ids": [
+    3
+   ],
+   "archetype": "place",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "असम · 19वीं सदी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "c_assam_tea",
+     "subject": "c_assam_tea",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "विदेश",
+   "sfx": [],
+   "loop_to_start": false,
+   "move": "in"
+  },
+  {
+   "id": 4,
+   "segment": "v004",
+   "line_ids": [
+    4
+   ],
+   "archetype": "date_era",
+   "component": "Timeline",
+   "variant": "",
+   "on_screen": [
+    "1903|कमेटी: चाय को बढ़ावा"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "कमेटी",
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "tick"
+    }
+   ],
+   "loop_to_start": false,
+   "title": "समयरेखा"
+  },
+  {
+   "id": 5,
+   "segment": "v005",
+   "line_ids": [
+    5
+   ],
+   "archetype": "evidence_reveal",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "रेलवे स्टेशन · चाय के स्टॉल"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "d_railway_stall",
+     "subject": "d_railway_stall",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "रेलवे",
+   "sfx": [],
+   "loop_to_start": false,
+   "move": "right"
+  },
+  {
+   "id": 6,
+   "segment": "v006",
+   "line_ids": [
+    6
+   ],
+   "archetype": "process_steps",
+   "component": "Checklist",
+   "variant": "",
+   "on_screen": [
+    "+ पानी उबालो",
+    "+ पत्ती डालो",
+    "+ दूध और चीनी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "दूध",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick"
+    },
+    {
+     "at": 0.75,
+     "name": "tick"
+    },
+    {
+     "at": 1.2,
+     "name": "tick"
+    }
+   ],
+   "loop_to_start": false
+  },
+  {
+   "id": 7,
+   "segment": "v007",
+   "line_ids": [
+    7
+   ],
+   "archetype": "cause_effect",
+   "component": "Timeline",
+   "variant": "",
+   "on_screen": [
+    "1903|कमेटी बनी",
+    "!1930 का दशक|विदेश में माँग गिरी"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "तेज़",
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "tick"
+    },
+    {
+     "at": 1.4,
+     "name": "tick"
+    }
+   ],
+   "loop_to_start": false,
+   "title": "समयरेखा"
+  },
+  {
+   "id": 8,
+   "segment": "v008",
+   "line_ids": [
+    8
+   ],
+   "archetype": "options",
+   "component": "ChoiceTree",
+   "variant": "",
+   "on_screen": [
+    "सुबह क्या पिएँ?"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "सबसे",
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "tick"
+    },
+    {
+     "at": 0.68,
+     "name": "tick"
+    },
+    {
+     "at": 0.96,
+     "name": "tick"
+    },
+    {
+     "at": 1.24,
+     "name": "tick"
+    },
+    {
+     "at": 2.4,
+     "name": "impact_small"
+    }
+   ],
+   "loop_to_start": false,
+   "options": [
+    "चाय",
+    "कॉफ़ी",
+    "शरबत",
+    "पानी"
+   ],
+   "default": 0,
+   "why": "हर जगह · आसान · सबसे आगे",
+   "transition": "cut"
+  },
+  {
+   "id": 9,
+   "segment": "v009",
+   "line_ids": [
+    9
+   ],
+   "archetype": "twist",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "विकल्प, पहले से सजे हुए"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "e_corridor_doors",
+     "subject": "e_corridor_doors",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "विकल्प",
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact_mid"
+    }
+   ],
+   "loop_to_start": false,
+   "move": "out"
+  },
+  {
+   "id": 10,
+   "segment": "v010",
+   "line_ids": [
+    10
+   ],
+   "archetype": "loop_cta",
+   "component": "Footage",
+   "variant": "",
+   "on_screen": [
+    "स्वाद, या एक पुरानी योजना?"
+   ],
+   "accent_line": 1,
+   "sheet": "obsidian",
+   "assets": [
+    {
+     "id": "f_cup_dawn",
+     "subject": "f_cup_dawn",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "योजना",
+   "sfx": [],
+   "loop_to_start": false,
+   "move": "in"
+  }
+ ]
+}

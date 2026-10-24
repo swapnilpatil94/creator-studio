@@ -22,6 +22,9 @@ test("stills are byte-identical across two renders, and the loop frame equals fr
   const loop = snap(a, ["0", String(m.total_seconds)]); assert.equal(sha(loop["0"]), sha(loop[String(m.total_seconds)]), "frame 0 vs frame TOTAL");
 });
 test("golden stills: every component's demo still matches its saved golden (same Chrome build)", async () => {
-  const { registry } = await import("../components/index.mjs"), names = Object.keys(registry), p2 = plan("components-demo.json"), d = tmp("g"), m = await comp(p2, d), times = m.scenes.map(r => String(+(r.start + 2.4).toFixed(1))), shots = snap(d, times);
-  names.forEach((n, i) => assert.equal(sha(shots[times[i]]), sha(path.join(RF, "tests/golden/stills", n + ".png")), "golden still for " + n));
+  const { registry } = await import("../components/index.mjs");
+  for (const [file, doc] of [["components-demo.json", false], ["components-demo-doc.json", true]]) {
+    const names = Object.keys(registry).filter(n => (registry[n].styles?.[0] === "documentary") === doc), p2 = plan(file), d = tmp("g"), m = await comp(p2, d), times = m.scenes.map(r => String(+(r.start + 2.4).toFixed(1))), shots = snap(d, times);
+    names.forEach((n, i) => assert.equal(sha(shots[times[i]]), sha(path.join(RF, "tests/golden/stills", n + ".png")), "golden still for " + n));
+  }
 });
