@@ -1,6 +1,6 @@
 """Measures how 'robotic' Veena sounds under different sampling settings, keeping the same speaker (maitri).
 Robotic speech has flat pitch (low F0 variation), metronome rhythm and glitches; the voice identity is the median pitch and timbre, which must stay put.
-Run: PYTHONPATH="$HOME/infographics animations/.vendor_py:audio" python audio/experiments/veena_naturalness.py"""
+Run: PYTHONPATH="vendor/tts-repo/.vendor_py:audio" python audio/experiments/veena_naturalness.py"""
 import sys, json, numpy as np, soundfile as sf, librosa, time
 sys.path.insert(0, "audio")
 from model_veena import Voice

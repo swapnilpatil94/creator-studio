@@ -1011,9 +1011,186 @@
      "assets"
     ]
    }
+  },
+  {
+   "name": "SwapDemo",
+   "archetypes": [
+    "twist",
+    "evidence_reveal",
+    "comparison",
+    "cause_effect"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "A swap: two pictures trade places (what you chose vs what you got). Placed by the smart picker, never by the Director.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "a": {
+      "type": "string"
+     },
+     "b": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "a",
+     "b"
+    ]
+   }
+  },
+  {
+   "name": "DotCrowd",
+   "archetypes": [
+    "big_number",
+    "many_scale",
+    "evidence_reveal"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "A share of people (a percent or a fraction): 100 small figures, n of them lit. Placed by the smart picker from the narration's own number.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "n": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+     },
+     "caption": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "n"
+    ]
+   }
+  },
+  {
+   "name": "RedactReveal",
+   "archetypes": [
+    "evidence_reveal",
+    "twist",
+    "quote",
+    "cause_effect"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "A sentence on paper with key words covered by black bars that wipe away. Placed by the smart picker.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+       "type": "string"
+      }
+     },
+     "hide": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "Contrast",
+   "archetypes": [
+    "comparison",
+    "twist",
+    "cause_effect",
+    "consequence_today"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "What you assumed versus what actually happened: two stacked cards (light then dark). Placed by the smart picker.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "top": {
+      "type": "string",
+      "maxLength": 40
+     },
+     "bottom": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "top",
+     "bottom"
+    ]
+   }
   }
  ],
  "styles": [
+  {
+   "name": "caseboard",
+   "label": "Case board (evidence wall)",
+   "looks": "Dark cork wall, polaroid-style photos pinned with red thread, case-file numbers.",
+   "best_for": "Who arranged this? Connections between people, places, events",
+   "how_built": "CSS cork texture, torn polaroid mounts, red thread (StringBoard), hard cuts and tape rips.",
+   "transitions": [
+    "cut",
+    "tapeRip",
+    "flash",
+    "cut"
+   ]
+  },
+  {
+   "name": "surveillance",
+   "label": "Surveillance log (being observed)",
+   "looks": "Black-and-green CCTV frames with scan lines, corner brackets, camera numbers and timecodes.",
+   "best_for": "Tracking, attention, feeds, notifications: someone is watching what you do",
+   "how_built": "CSS scan lines + vignette, monitor-frame mounts, mono timecode labels.",
+   "transitions": [
+    "cut",
+    "flash",
+    "spotlight",
+    "cut"
+   ]
+  },
+  {
+   "name": "clinical",
+   "label": "Clinical experiment",
+   "looks": "Cold slate lab page with graph paper, ruler ticks, subject numbers and figure labels.",
+   "best_for": "Documented experiments and studies: what researchers saw people do",
+   "how_built": "CSS graph paper and rulers, white specimen mounts, teal accents.",
+   "transitions": [
+    "cut",
+    "flash",
+    "whip",
+    "cut"
+   ]
+  },
+  {
+   "name": "noir",
+   "label": "Price-tag noir (persuasion)",
+   "looks": "Black and gold, diagonal hairlines, checker edge, item numbers: the shop as a stage.",
+   "best_for": "Pricing, anchoring, subscriptions, offers and bait",
+   "how_built": "CSS hairline pattern, checker strip, cream tag mounts with gold accents.",
+   "transitions": [
+    "cut",
+    "tapeRip",
+    "flash",
+    "cut"
+   ]
+  },
   {
    "name": "specimen",
    "label": "Specimen file (dark psychology)",
@@ -1202,6 +1379,10 @@
    "desc": "calm cross-dissolve"
   },
   {
+   "name": "glitch",
+   "desc": "digital glitch: jittering slices and a hard switch"
+  },
+  {
    "name": "cut",
    "desc": "hard cut, tiny impact flash"
   },
@@ -1299,12 +1480,16 @@
   ]
  },
  "themes": [
+  "caseboard",
+  "clinical",
   "collage-ocean",
   "darkpsych",
   "documentary",
   "field-notebook",
   "ledger",
+  "noir",
   "pothi",
-  "rahasya"
+  "rahasya",
+  "surveillance"
  ]
 }

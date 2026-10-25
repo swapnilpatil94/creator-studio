@@ -44,6 +44,10 @@ audio/.venv-veena/
 assets/sound/music/*.m4a
 assets/lora/*.safetensors
 
+# Merge tab working files (uploaded visuals, generated voices, merged mp4)
+merge/
+stories/merge-*/
+
 # Reel Factory heavy output
 reel-factory/episodes/*
 !reel-factory/episodes/.gitkeep
@@ -52,3 +56,4 @@ reel-factory/node_modules/
 reel-factory/assets/cache/
 reel-factory/.venv/
 stories/rf-*/
+vendor/

@@ -14,13 +14,17 @@
   },
   "theme": {
    "enum": [
+    "caseboard",
+    "clinical",
     "collage-ocean",
     "darkpsych",
     "documentary",
     "field-notebook",
     "ledger",
+    "noir",
     "pothi",
-    "rahasya"
+    "rahasya",
+    "surveillance"
    ]
   },
   "genre": {
@@ -39,6 +43,10 @@
   },
   "style": {
    "enum": [
+    "caseboard",
+    "surveillance",
+    "clinical",
+    "noir",
     "specimen",
     "documentary",
     "scrapbook",
@@ -154,7 +162,11 @@
        "Timeline",
        "ChoiceTree",
        "Specimen",
-       "StringBoard"
+       "StringBoard",
+       "SwapDemo",
+       "DotCrowd",
+       "RedactReveal",
+       "Contrast"
       ]
      },
      "variant": {
@@ -226,6 +238,7 @@
      "transition": {
       "enum": [
        "dissolve",
+       "glitch",
        "cut",
        "flash",
        "whip",

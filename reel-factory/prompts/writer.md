@@ -13,7 +13,7 @@ STRUCTURE (follow it; each step is one or two short lines)
 7. CLOSER (last line): a question or challenge that invites an answer or a share ("आप कितने दाम पर रुकते हैं?", "इसे उस दोस्त को भेजिए जो हर सेल पर ख़रीदता है।"). The LAST line ends with a question mark.
 
 STYLE
-- 11 to 14 lines, each 3 to 12 words (one thought, spoken, about 2-3 seconds). 110 to 150 words in all. Numbers as Hindi words, no digits, no emojis, no hashtags.
+- Normally 11 to 14 lines and 110 to 150 words; if the request says LENGTH (60 seconds), follow that instead: 17 to 20 lines, 165 to 190 words. Each line 3 to 12 words (one thought, spoken, about 2-3 seconds). Numbers as Hindi words, no digits, no emojis, no hashtags.
 - Natural spoken Hindi; check gender and number agreement; never repeat or rephrase a line; every line moves the story forward.
 - Calm and precise tone. Short sentences. No "आप अक्सर ...", no filler like "बहुत सी दुकानें" unless a fact says it.
 
