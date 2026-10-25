@@ -602,21 +602,21 @@
    "dow": "Fri",
    "format": "short",
    "time": "19:00",
-   "slug": "celtic-oisin-tir-na-nog",
-   "title": "ओसियन: तीन सौ साल बाद ज़मीन पर पैर रखते ही क्या हुआ?",
-   "culture": "celtic",
-   "angle": "COMMENT: 'Would you stay or return?' One foot on the ground and 300 years pass.",
-   "untold": true,
-   "theme": "world_myth",
-   "mood": "PREM_TYAG",
-   "source": "Acallam na Senórach and later ballads (later retelling, label it)",
+   "slug": "hima-prince-yama-deepam",
+   "title": "धनतेरस: 16 साल के राजकुमार को यमदूत क्यों नहीं ले जा सके?",
+   "culture": "indian",
+   "angle": "",
+   "untold": false,
+   "theme": "afterlife_soul",
+   "mood": "UPAY_VIDHI",
+   "source": "Skanda Purana / folk tradition (label it)",
    "belief": false,
    "regional": true,
    "event": [
     "Dhanteras"
    ],
-   "why": "World myth (celtic): no direct outlier for this culture in our Hindi scans (tiny sample): an untested gap, judge it only after 8-10 videos",
-   "score": 3.9
+   "why": "Calendar: Dhanteras (dhanteras, yama) | Demand: 6.3% of 159 short afterlife soul videos were 3x outliers (all videos: 5.2%); biggest: \"आखिर मृत्यु के बाद की पहली रात आत्मा क्या करती ह\" 0.7M views",
+   "score": 8.81
   },
   {
    "date": "2026-11-07",
@@ -666,64 +666,64 @@
    "dow": "Mon",
    "format": "short",
    "time": "19:00",
-   "slug": "gayasur-body-pilgrimage",
-   "title": "गयासुर का शरीर पितरों का तीर्थ कैसे बना?",
+   "slug": "narakasura-satyabhama",
+   "title": "सत्यभामा ने नरकासुर का वध कैसे किया?",
    "culture": "indian",
-   "angle": "SAVE: the demon whose body became the holiest place to free ancestors.",
-   "untold": true,
-   "theme": "afterlife_soul",
-   "mood": "RAHASYA",
-   "source": "Vayu Purana, Gaya Mahatmya",
+   "angle": "",
+   "untold": false,
+   "theme": "devi_shakti",
+   "mood": "YUDH_SHAKTI",
+   "source": "Bhagavata Purana 10.59",
    "belief": false,
    "regional": false,
    "event": [
     "Amavasya (No Moon)",
     "Diwali (Lakshmi Puja)"
    ],
-   "why": "Calendar: Amavasya (No Moon) / Diwali (Lakshmi Puja) (amavasya, pitru) | Untold katha: untold-style Indian titles that worked: \"The Day Hanuman Stopped Death\" 1.0M views, \"विठ्ठल: कालयवन से पंढरपुर तक\" 1.5M, \"Krishna's Son: The Prank That Triggered an Extinction\" 154k; titles with untold/secret/forgotten words: 9.4% of long videos were outliers vs 6.8% without (n=96)",
-   "score": 7.51
+   "why": "Calendar: Amavasya (No Moon) / Diwali (Lakshmi Puja) (diwali) | Demand: 5.5% of 289 short devi shakti videos were 3x outliers (all videos: 5.2%); biggest: \"एक दुल्हन जो कभी ससुराल नहीं पहुँची | माँ कालीजा\" 0.4M views",
+   "score": 6.97
   },
   {
    "date": "2026-11-10",
    "dow": "Tue",
    "format": "short",
    "time": "19:00",
-   "slug": "japan-urashima-taro",
-   "title": "उराशिमा तारो: समुद्र के नीचे तीन दिन, ऊपर तीन सौ साल",
-   "culture": "japanese",
-   "angle": "SHARE: three days under the sea, three hundred years above it, and a box he was told not to open.",
-   "untold": true,
-   "theme": "world_myth",
-   "mood": "PREM_TYAG",
-   "source": "Nihon Shoki / Man'yoshu, later folk versions (label it)",
+   "slug": "govardhan-annakut",
+   "title": "इंद्र का घमंड और गोवर्धन: कृष्ण ने सात दिन पर्वत कैसे उठाया?",
+   "culture": "indian",
+   "angle": "",
+   "untold": false,
+   "theme": "krishna",
+   "mood": "RAHASYA",
+   "source": "Bhagavata Purana 10.24-25",
    "belief": false,
-   "regional": true,
+   "regional": false,
    "event": [
     "Govardhan / Annakut (derived from Diwali date; confirm)"
    ],
-   "why": "World myth (japanese): no direct outlier for this culture in our Hindi scans (tiny sample): an untested gap, judge it only after 8-10 videos",
-   "score": 3.9
+   "why": "Calendar: Govardhan / Annakut (derived from Diwali date; confirm) (krishna, govardhan) | Demand: 3.4% of 296 short krishna videos were 3x outliers (all videos: 5.2%); biggest: \"कृष्ण 28 दिन तक जिससे लड़े… वो रामायण का किरदार \" 0.1M views",
+   "score": 8.25
   },
   {
    "date": "2026-11-11",
    "dow": "Wed",
    "format": "short",
    "time": "19:00",
-   "slug": "brahma-saraswati-fifth-head",
-   "title": "ब्रह्मा का पाँचवाँ सिर और सरस्वती का शाप",
+   "slug": "yama-yamuna-bhai-dooj",
+   "title": "यम और यमुना: भाई दूज की कथा",
    "culture": "indian",
-   "angle": "Why Brahma has four heads and no temples.",
-   "untold": true,
-   "theme": "creation_cosmic",
-   "mood": "SHRAP_VARDAN",
-   "source": "Matsya Purana 3 (verify); versions differ",
+   "angle": "",
+   "untold": false,
+   "theme": "karma_moral",
+   "mood": "PREM_TYAG",
+   "source": "Bhavishya / Padma Purana traditions (verify)",
    "belief": false,
    "regional": false,
    "event": [
     "Bhai Dooj (derived from Diwali date; confirm)"
    ],
-   "why": "Untold katha: untold-style Indian titles that worked: \"The Day Hanuman Stopped Death\" 1.0M views, \"विठ्ठल: कालयवन से पंढरपुर तक\" 1.5M, \"Krishna's Son: The Prank That Triggered an Extinction\" 154k; titles with untold/secret/forgotten words: 9.4% of long videos were outliers vs 6.8% without (n=96)",
-   "score": 2.78
+   "why": "Calendar: Bhai Dooj (derived from Diwali date; confirm) (bhai-dooj, yama) | Demand: 5.4% of 351 short karma moral videos were 3x outliers (all videos: 5.2%); biggest: \"गरीब भक्त के घर क्यों पहुंचे भगवान जगन्नाथ? 😱🙏\" 0.2M views",
+   "score": 8.64
   },
   {
    "date": "2026-11-12",
@@ -2304,5 +2304,6 @@
    "why": "World myth (celtic): no direct outlier for this culture in our Hindi scans (tiny sample): an untested gap, judge it only after 8-10 videos",
    "score": -3.5
   }
- ]
+ ],
+ "note": "untold-only plan with the Dhanteras, Diwali, Govardhan and Bhai Dooj days taken from the festival-aware plan"
 }

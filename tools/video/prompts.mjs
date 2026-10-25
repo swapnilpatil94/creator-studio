@@ -68,6 +68,26 @@ PSYCHOLOGY TO USE (structure and wording only; facts never change)
 - Authority: name the text once early ("भागवत पुराण के अनुसार"); if tellings differ, say so.
 - Emotional arc: unease -> tension -> dread or awe -> catharsis -> resolve. Each line moves the viewer one step along it.
 
+NEUROMARKETING TOOLKIT (the brain's own rules for attention, memory and sharing; use them in structure and wording only, facts never change)
+- Prediction error: line 1 breaks what the viewer expects (a believed-good person doing the feared thing, an object where a person should be). Expectation broken in 1.5 s keeps the thumb still.
+- Curiosity gap (Loewenstein): open ONE big loop in lines 1-3, and give a small but real clue in line 2 so the viewer knows a little and needs the rest. Open a micro-loop every ~8 s. Do not close the big loop before 60% of the film; then close it fully.
+- Zeigarnik: an open loop nags until closed, so end with the next story's loop (a question, never a number).
+- Identifiable victim + mirror neurons: follow ONE person with a name, a want and a weakness; use body and sense verbs (साँस रुकी, हाथ काँपे, आँखें जल उठीं) so the viewer's own body rehearses the scene.
+- Narrative transportation: show the scene first, explain after; switch to the present feel at the peak; no lecturing paragraph.
+- Loss framing: say what is lost (child, name, rest, home), not what is "bad".
+- Specificity and anchoring: the first number or exact detail the source gives goes early and is used as the anchor for scale; vague words ("बहुत", "कई") are cut.
+- Peak-end and serial position: the two strongest facts sit in lines 1-3 and in the last two lines; one unmistakable peak at about 65%.
+- Von Restorff: one odd, vivid detail the viewer will repeat to a friend (the thing that does not fit the pattern).
+- Contrast and rule of three: calm then shock; three beats of escalation, the third biggest.
+- Dissonance and resolution: show the contradiction early (a good king, a terrible act); resolve it by about 75%; the unresolved remainder becomes the comment question.
+- Variable reward: alternate the kind of tension (fear, awe, irony, tenderness, surprise) so the next beat is never predictable; two [tense] lines in a row are the limit.
+- Cognitive ease: short words, simple syntax, concrete nouns; no abstract noun piles; read every line aloud once.
+- Silence before the blow: a [punch] line of 2-5 words right before a [reveal] gives the voice a pause where attention peaks.
+- Social currency and identity: one line the viewer would send to a friend because it makes them look informed or mirrors someone they know.
+- Commitment and autonomy: an easy A-or-B question near the end gets a first yes; "तय आप कीजिए" lowers resistance; belief is always labelled as belief.
+- Authority and transparency: name the text early; say plainly when tellings differ, which makes the rest more trusted.
+- Progress cue: one "बस एक बात और" before the reveal keeps the viewer from leaving at 70%.
+
 RULES (checked by code; the pack is rejected if broken)
 - Spoken, warm, plain Devanagari Hindi written for the EAR. ${long ? "6-18" : "4-14"} words per line ([punch] lines can be shorter). One idea per line; each line becomes one shot.
 - Total ${F.minWords}-${maxW} words (the voice speaks about ${WPS} words per second)${long ? "; a 16-20 minute film is 2800-3400 words in 8-10 chapters of 250-420 words (one chapter every ~2 minutes, each with its own mini-hook and payoff); a shorter long film still needs 3+ chapters" : "; aim 190-260 words (65-90 s)"}.
