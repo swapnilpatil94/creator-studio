@@ -735,6 +735,102 @@
    "motion": [],
    "emphasis_word": "",
    "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 30,
+   "line_ids": [
+    30
+   ],
+   "seconds": 3.2,
+   "archetype": "twist",
+   "component": "SwapDemo",
+   "variant": "",
+   "on_screen": [
+    "चुना और मिला"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "a",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "b",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 31,
+   "line_ids": [
+    31
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "DotCrowd",
+   "variant": "",
+   "on_screen": [
+    "10%",
+    "सौ में से"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 32,
+   "line_ids": [
+    32
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "RedactReveal",
+   "variant": "",
+   "on_screen": [
+    "वजह बाद में आई"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "hide": [
+    "वजह"
+   ]
+  },
+  {
+   "id": 33,
+   "line_ids": [
+    33
+   ],
+   "seconds": 3.2,
+   "archetype": "hook",
+   "component": "Contrast",
+   "variant": "",
+   "on_screen": [
+    "आपने सोचा",
+    "असल में हुआ"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
    "loop_to_start": true
   }
  ]

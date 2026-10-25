@@ -4,7 +4,7 @@ export default {
   name: "SwapDemo", archetypes: ["twist", "evidence_reveal", "comparison", "cause_effect"], slot: "full", styles: ["specimen"],
   when_to_use: "A swap: two pictures trade places (what you chose vs what you got). Placed by the smart picker, never by the Director.",
   schema: { type: "object", properties: { a: { type: "string" }, b: { type: "string" }, title: { type: "string", maxLength: 40 } }, required: ["a", "b"] },
-  demo: { component: "SwapDemo", on_screen: ["चुना और मिला"], assets: [] }, defaultY: 300,
+  demo: { archetype: "twist", component: "SwapDemo", on_screen: ["चुना और मिला"], assets: [{ id: "lotus", subject: "a", reuse: true }, { id: "flame", subject: "b", reuse: true }] }, defaultY: 300,
   async render(ctx) {
     const { a, b, title = "" } = ctx.props, p = ctx.theme.palette, sk = ctx.style?.skin || { mount: "#D9CDB4", label: "#EDE3CF", labelInk: "#1A1511", tag: p.red }, t0 = ctx.first ? 0 : ctx.t0, W = 400, H = 520, y = 330, xa = 70, xb = 610;
     const fit = await fitSize(title, { family: "Mukta", weight: 800, start: 64, min: 40, maxW: 800 }); let html = "", js = "";
