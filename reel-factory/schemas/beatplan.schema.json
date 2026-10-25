@@ -168,7 +168,9 @@
        "RedactReveal",
        "Contrast",
        "Narrator",
-       "HighlightText"
+       "HighlightText",
+       "Ledger",
+       "CollageWall"
       ]
      },
      "variant": {

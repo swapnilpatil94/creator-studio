@@ -1202,6 +1202,72 @@
      "lines"
     ]
    }
+  },
+  {
+   "name": "Ledger",
+   "archetypes": [
+    "cause_effect",
+    "twist",
+    "evidence_reveal",
+    "process_steps"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "Cause and cost as accounts: 2 to 4 ruled lines written in one by one, then a stamp. Placed by the smart picker for boons, curses, prices and debts.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+       "type": "string",
+       "maxLength": 40
+      }
+     },
+     "stamp": {
+      "type": "string",
+      "maxLength": 10
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "CollageWall",
+   "archetypes": [
+    "many_scale",
+    "evidence_reveal",
+    "options",
+    "cause_effect"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "A collage of several cut-outs at once (who is involved, what was lost). Placed by the smart picker, reusing pictures already in the film.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "assets": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": {
+       "type": "string"
+      }
+     },
+     "caption": {
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "assets"
+    ]
+   }
   }
  ],
  "styles": [

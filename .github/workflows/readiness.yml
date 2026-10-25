@@ -1,0 +1,39 @@
+# Every morning 08:00 IST: are the next 7 days READY (script ok, video shipped as a Release asset, a schedule entry exists)?
+# Writes content/readiness.json (the Hub's Week tab reads it) and keeps ONE issue open while anything is missing, so a gap is never silent.
+name: readiness
+on:
+  schedule: [{ cron: "30 2 * * *" }]
+  workflow_dispatch:
+permissions: { contents: write, issues: write }
+concurrency: { group: readiness, cancel-in-progress: false }
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 22 }
+      - name: Check the next 7 days
+        id: chk
+        run: |
+          set +e
+          node tools/content/readiness.mjs --remote --need 7 --days 14 | tee /tmp/readiness.txt
+          echo "code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+      - name: Record the result
+        run: |
+          git config user.name "kathaaya-bot"; git config user.email "bot@users.noreply.github.com"
+          git add content/readiness.json && (git diff --cached --quiet || git commit -m "readiness: $(date -u +%F)" && git push)
+      - name: Keep one issue open while days are missing
+        run: |
+          T="Not ready: some of the next 7 days have nothing to post"
+          N=$(gh issue list --state open --search "\"$T\" in:title" --json number --jq '.[0].number')
+          if [ "${{ steps.chk.outputs.code }}" = "0" ]; then
+            [ -n "$N" ] && gh issue close "$N" --comment "All of the next 7 days are ready."
+            exit 0
+          fi
+          B="$(printf 'Run %s/%s/actions/runs/%s\n\n```\n%s\n```\nOpen the Hub Week tab, build the missing days, then press Ship on each card.' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(cat /tmp/readiness.txt)")"
+          if [ -n "$N" ]; then gh issue edit "$N" --body "$B"; else gh issue create --title "$T" --body "$B"; fi
+          exit 1

@@ -12,5 +12,5 @@ for (const [i, d] of dates.entries()) { const c = byDate.get(d), f = path.join(r
   const next = byDate.get(dates[i + 1]), line = next ? `अगली कथा में, ${tease(next.title)}। फ़ॉलो कीजिए।` : "अगली कथा में, एक और अनसुनी कथा। फ़ॉलो कीजिए।";
   const script = fs.readFileSync(f, "utf8").replace("अगली कथा में, @@NEXT@@ फ़ॉलो कीजिए।", line), r = parsePack(joinPack(script, c.visuals || ""));
   if (!r.ok) { bad++; console.log("ERRORS in", c.slug, r.errors.slice(0, 2)); continue; }
-  c.script = script; c.check = { ok: r.ok, errors: r.errors, warnings: r.warnings.slice(0, 12), stats: r.stats, slug: r.pack.slug || null, at: now }; c.slug = slugOf(r.pack); c.updatedAt = now; c.draft = "pack-drafts: written from memory of the source, needs the owner's check against the named text"; n++; }
+  c.script = script; c.scriptSaved = script; c.scriptSavedAt = now; c.check = { ok: r.ok, errors: r.errors, warnings: r.warnings.slice(0, 12), stats: r.stats, slug: r.pack.slug || null, at: now }; c.slug = slugOf(r.pack); c.updatedAt = now; c.draft = "pack-drafts: written from memory of the source, needs the owner's check against the named text"; n++; }
 fs.writeFileSync(F, JSON.stringify(data, null, 1)); console.log(`scripts applied to ${n} cards, ${skipped} already had one, ${bad} with errors`);
