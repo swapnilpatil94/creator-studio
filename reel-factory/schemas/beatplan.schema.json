@@ -166,7 +166,9 @@
        "SwapDemo",
        "DotCrowd",
        "RedactReveal",
-       "Contrast"
+       "Contrast",
+       "Narrator",
+       "HighlightText"
       ]
      },
      "variant": {

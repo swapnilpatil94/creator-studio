@@ -43,7 +43,7 @@
     if (C.film) { wx = (h01("wx", f) * 2 - 1) * 2.4; wy = (h01("wy", f) * 2 - 1) * 1.8; wr = (h01("wr", f) * 2 - 1) * 0.14; }   /* gate weave, on twos */
     stage.style.transform = "translate(" + (sh[0] + wx).toFixed(2) + "px," + (sh[1] + wy).toFixed(2) + "px) rotate(" + wr.toFixed(3) + "deg)";
     const fr = f;   /* boil: jitter on twos (12 fps), 2 s cycle, seeded */
-    for (let i = 0; i < boils.length; i++) { const b = boils[i], sd = b.dataset.seed || i, k = +(b.dataset.boil || 1); b.style.transform = "translate(" + ((h01(sd, fr) * 2 - 1) * 1.5 * k).toFixed(2) + "px," + ((h01(sd, fr + 31) * 2 - 1) * 1.5 * k).toFixed(2) + "px) rotate(" + ((h01(sd, fr + 77) * 2 - 1) * 0.5 * k).toFixed(3) + "deg)"; }
+    for (let i = 0; i < boils.length; i++) { const b = boils[i], sd = b.dataset.seed || i, k = +(b.dataset.boil || 1) * (window.RF.boilK == null ? 1 : window.RF.boilK); b.style.transform = "translate(" + ((h01(sd, fr) * 2 - 1) * 1.5 * k).toFixed(2) + "px," + ((h01(sd, fr + 31) * 2 - 1) * 1.5 * k).toFixed(2) + "px) rotate(" + ((h01(sd, fr + 77) * 2 - 1) * 0.5 * k).toFixed(3) + "deg)"; }
     for (const q of fxs) { const f2 = q.f, on = t >= f2.t0 && t <= f2.t1; q.el.style.display = on ? "block" : "none"; if (!on) continue;
       for (let k = 0; k < q.kids.length; k++) { const ph = frac(t / f2.period + h01(f2.seed, k)), px = h01(f2.seed, k + 500), s = q.kids[k].style; let x, y, o, r = 0, sc = 1;
         if (f2.kind === "sparks") { x = px * f2.w + Math.sin(ph * TAU * 2 + k) * 24; y = f2.h * (1 - ph); o = Math.sin(Math.PI * ph); sc = 0.5 + h01(f2.seed, k + 900); }

@@ -25,7 +25,7 @@ setInterval(tick, 60000).unref?.();
 export async function handle(req, res, p, ctx) {
   const { send, serveFile } = ctx; if (!p.startsWith("/api/reel/") && !p.startsWith("/reel/file/")) return false; const url = new URL(req.url, "http://x"), body = async () => JSON.parse((await ctx.readBody(req, 2e6)).toString() || "{}");
   try { let m;
-    if ((m = p.match(/^\/reel\/file\/([a-z0-9-]+)\/(final|srt|video|sheet|audio)$/)) && req.method === "GET") { serveFile(req, res, path.join(dir(m[1]), FILES[m[2]])); return true; }
+    if ((m = p.match(/^\/reel\/file\/([a-z0-9-]+)\/(final|srt|video|sheet|audio)$/)) && (req.method === "GET" || req.method === "HEAD")) { serveFile(req, res, path.join(dir(m[1]), FILES[m[2]])); return true; }
     if (req.method === "GET" && p === "/api/reel/options") { send(res, 200, await options()); return true; }
     if (req.method === "GET" && p === "/api/reel/list") { fs.mkdirSync(EP, { recursive: true }); send(res, 200, { busy, episodes: fs.readdirSync(EP).filter(okSlug).filter(s => fs.statSync(path.join(EP, s)).isDirectory()).map(s => { const man = J(path.join(EP, s, "manifest.json"), {}), sc = (fs.existsSync(path.join(EP, s, "input/script.md")) ? fs.readFileSync(path.join(EP, s, "input/script.md"), "utf8") : "").split("\n")[0]; return { slug: s, title: sc.slice(0, 60), theme: man.theme, style: man.style, done: !!man.finished && fs.existsSync(path.join(EP, s, FILES.final)), updated: fs.statSync(path.join(EP, s)).mtimeMs }; }).sort((a, b) => b.updated - a.updated) }); return true; }
     if (req.method === "GET" && p === "/api/reel/state") { const slug = url.searchParams.get("slug"), d = dir(slug); if (!fs.existsSync(d)) { send(res, 404, { error: "no such episode" }); return true; }

@@ -1136,6 +1136,72 @@
      "bottom"
     ]
    }
+  },
+  {
+   "name": "Narrator",
+   "archetypes": [
+    "twist",
+    "evidence_reveal",
+    "character_intro",
+    "quote"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "The theme's mascot character says one line from a note; use once per video for the named effect or the reveal. Placed by the smart picker.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "asset": {
+      "type": "string"
+     },
+     "lines": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "asset",
+     "lines"
+    ]
+   }
+  },
+  {
+   "name": "HighlightText",
+   "archetypes": [
+    "quote",
+    "evidence_reveal",
+    "twist",
+    "cause_effect"
+   ],
+   "styles": [
+    "specimen"
+   ],
+   "when_to_use": "A statement with key words highlighted in sequence. Placed by the smart picker.",
+   "props_schema": {
+    "type": "object",
+    "properties": {
+     "lines": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+       "type": "string"
+      }
+     },
+     "hl": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "lines"
+    ]
+   }
   }
  ],
  "styles": [

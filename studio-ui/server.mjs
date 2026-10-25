@@ -4,7 +4,7 @@
 // usage: node studio-ui/server.mjs [--port 4180]
 import http from "node:http"; import fs from "node:fs"; import path from "node:path"; import { spawn, spawnSync } from "node:child_process"; import { fileURLToPath } from "node:url";
 const here = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(here, ".."), dc = path.join(root, "engine/dot-cinema");
-const cfg = { ttsRepo: path.join(process.env.HOME, "infographics animations"), port: 4180, lead: 0.9, ...(fs.existsSync(path.join(here, "config.json")) ? JSON.parse(fs.readFileSync(path.join(here, "config.json"), "utf8")) : {}) };
+const cfg = { ttsRepo: path.join(root, "vendor/tts-repo"), port: 4180, lead: 0.9, ...(fs.existsSync(path.join(here, "config.json")) ? JSON.parse(fs.readFileSync(path.join(here, "config.json"), "utf8")) : {}) };
 if (process.argv.includes("--port")) cfg.port = Number(process.argv[process.argv.indexOf("--port") + 1]);
 const PROJ = path.join(root, "projects"); fs.mkdirSync(PROJ, { recursive: true });
 const pdir = id => { if (!/^[a-z0-9][a-z0-9-]{0,60}$/.test(id)) throw new Error("bad project id"); return path.join(PROJ, id); };
@@ -61,13 +61,14 @@ const MIME = { ".mp4": "video/mp4", ".wav": "audio/wav", ".json": "application/j
 function serveFile(req, res, file) {
   if (!fs.existsSync(file) || !fs.statSync(file).isFile()) return send(res, 404, { error: "not found" });
   const st = fs.statSync(file), type = MIME[path.extname(file)] || "application/octet-stream", range = req.headers.range;
+  if (req.method === "HEAD") { res.writeHead(200, { "content-type": type, "content-length": st.size, "accept-ranges": "bytes" }); return res.end(); }
   if (range) { const m = /bytes=(\d*)-(\d*)/.exec(range), a = m[1] ? Number(m[1]) : 0, b = m[2] ? Number(m[2]) : st.size - 1; res.writeHead(206, { "content-type": type, "content-range": `bytes ${a}-${b}/${st.size}`, "accept-ranges": "bytes", "content-length": b - a + 1 }); fs.createReadStream(file, { start: a, end: b }).pipe(res); }
   else { const dlh = /[?&]dl=1/.test(req.url || "") ? { "content-disposition": `attachment; filename="${path.basename(file)}"` } : {}; res.writeHead(200, { "content-type": type, "content-length": st.size, "accept-ranges": "bytes", ...dlh }); fs.createReadStream(file).pipe(res); }
 }
 
 
 // ---------- dashboard helpers ----------
-import * as yt from "./yt.mjs"; import * as meta from "./meta.mjs"; import * as hub from "./hub.mjs";
+import * as yt from "./yt.mjs"; import * as meta from "./meta.mjs"; import * as hub from "./hub.mjs"; import * as merge from "./merge.mjs"; import * as reel from "./reelfactory.mjs";
 // local queue for Instagram scheduled posts (the API cannot schedule): checked every 30 s while the server runs
 setInterval(async () => { try { const f = path.join(root, "schedule.json"); if (!fs.existsSync(f)) return; const q = JSON.parse(fs.readFileSync(f, "utf8")); let ch = false; for (const e of q) { if (e.status !== "queued" || new Date(e.at) > new Date()) continue; e.status = "running"; fs.writeFileSync(f, JSON.stringify(q, null, 1)); try { const d = path.join(root, "stories", e.story), sj = JSON.parse(fs.readFileSync(path.join(d, "social.json"), "utf8")), pf = JSON.parse(fs.readFileSync(path.join(d, "publish.json"), "utf8")); let coverUrl = e.coverUrl || null; if (!coverUrl) { const pa = await import("../tools/content/publish-assets.mjs"), u = pa.domain + "/covers/" + e.story + ".jpg"; if (await pa.live(u)) coverUrl = u; } const r = await meta.uploadInstagram(sj.instagram, path.join(d, pf.video), () => {}, { coverUrl, thumbOffset: 1500 }); e.status = "done"; e.result = r; } catch (er) { e.status = "failed"; e.error = er.message; } ch = true; fs.writeFileSync(f, JSON.stringify(q, null, 1)); } } catch {} }, 30000);
 const storyDir = id => { if (!/^[a-z0-9-]+$/.test(id || "")) throw new Error("bad story id"); const d = path.join(root, "stories", id); if (!fs.existsSync(d)) throw new Error("no such story"); return d; };
@@ -93,6 +94,8 @@ function dashData() {
 const server = http.createServer(async (req, res) => {
   try {
     const u = new URL(req.url, "http://x"), p = u.pathname; let m;
+    if (await reel.handle(req, res, p, { send, readBody, serveFile })) return;
+    if (await merge.handle(req, res, p, { send, readBody, serveFile })) return;
     if (await hub.handle(req, res, p, { send, readBody, serveFile })) return;
     if (req.method === "GET" && p === "/") return send(res, 200, fs.readFileSync(path.join(here, "index.html")), "text/html; charset=utf-8");
     if (req.method === "GET" && p === "/voice") return send(res, 200, fs.readFileSync(path.join(here, "voice.html")), "text/html; charset=utf-8");
@@ -186,7 +189,7 @@ const server = http.createServer(async (req, res) => {
       if (!yt.connected()) return send(res, 400, { error: "connect YouTube first (OAuth)" }); if (!b.confirm) return send(res, 400, { error: "confirm required" });
       startJob("upload", b.story, "node", ["-e", `import("${path.join(here, "yt.mjs")}").then(async m=>{const fs=await import("node:fs");const pub=JSON.parse(fs.readFileSync(${JSON.stringify(pf)},"utf8"));const r=await m.upload(pub,${JSON.stringify(d)},{privacy:${JSON.stringify(b.privacy || "private")},publishAt:${JSON.stringify(b.publishAt || null)},log:l=>console.log(l)});fs.writeFileSync(${JSON.stringify(path.join(d, "upload.json"))},JSON.stringify(r,null,1));console.log("DONE "+r.url+" ("+r.privacy+")")}).catch(e=>{console.error("UPLOAD FAILED: "+e.message);process.exit(1)})`]); return send(res, 200, { started: true }); }
     if (req.method === "GET" && p === "/shim.js") return send(res, 200, fs.readFileSync(path.join(dc, "studio-shim.js")), "text/javascript");
-    if (req.method === "GET" && p === "/api/health") { const tts = fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py")), py = fs.existsSync(path.join(cfg.ttsRepo, ".venv/bin/python")); return send(res, 200, { ok: true, ttsRepo: cfg.ttsRepo, chatterbox: tts && py, ffmpeg: spawnSync("ffmpeg", ["-version"]).status === 0, job: job ? { kind: job.kind, id: job.id, status: job.status } : null }); }
+    if (req.method === "GET" && p === "/api/health") { const tts = fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py")), py = fs.existsSync(path.join(process.env.HOME, ".pyenv/versions/3.12.0/bin/python")); return send(res, 200, { ok: true, ttsRepo: cfg.ttsRepo, chatterbox: tts && py, ffmpeg: spawnSync("ffmpeg", ["-version"]).status === 0, job: job ? { kind: job.kind, id: job.id, status: job.status } : null }); }
     if (req.method === "GET" && p === "/api/projects") return send(res, 200, fs.readdirSync(PROJ).filter(x => fs.existsSync(path.join(PROJ, x, "story.json"))).map(x => ({ id: x, name: rj(path.join(PROJ, x, "story.json")).title || x, mtime: fs.statSync(path.join(PROJ, x, "story.json")).mtimeMs })).sort((a, b) => b.mtime - a.mtime));
     if (req.method === "POST" && p === "/api/projects") { const b = JSON.parse((await readBody(req)).toString() || "{}"), id = slug(b.name || "film") + "-" + Date.now().toString(36).slice(-4), d = pdir(id); fs.mkdirSync(path.join(d, "narration"), { recursive: true }); fs.mkdirSync(path.join(d, "output"), { recursive: true });
       wj(path.join(d, "story.json"), { name: id, title: b.name || id, type: "html", scene: "scene.html", segments: "narration/raw.wav.segments.json", audio: "narration/raw.wav", lead: cfg.lead, fps: 24, sound: true, captionsInScene: false, channel: b.channel || "kathaaya" }); wj(path.join(d, "overrides.json"), {}); return send(res, 200, projectInfo(id)); }
@@ -207,7 +210,7 @@ const server = http.createServer(async (req, res) => {
     if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/narration$/)) && req.method === "POST") { const d = pdir(m[1]), b = JSON.parse((await readBody(req)).toString() || "{}");
       if (!fs.existsSync(path.join(d, "beats.json"))) return send(res, 400, { error: "save a script first" });
       if (b.mode === "estimate") { if (!fs.existsSync(path.join(d, "narration/raw.wav"))) return send(res, 400, { error: "upload a WAV first" }); estimateSegments(m[1]); return send(res, 200, projectInfo(m[1])); }
-      const py = path.join(cfg.ttsRepo, ".venv/bin/python"); if (!fs.existsSync(py) || !fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py"))) return send(res, 400, { error: "Chatterbox not found at " + cfg.ttsRepo + " (set ttsRepo in studio-ui/config.json)" });
+      const py = path.join(process.env.HOME, ".pyenv/versions/3.12.0/bin/python"); if (!fs.existsSync(py) || !fs.existsSync(path.join(cfg.ttsRepo, "tools/tts_beats.py"))) return send(res, 400, { error: "Chatterbox not found at " + cfg.ttsRepo + " (set ttsRepo in studio-ui/config.json)" });
       fs.rmSync(path.join(d, "narration/raw.wav"), { force: true }); fs.rmSync(path.join(d, "narration/raw.wav.segments.json"), { force: true });
       startJob("narration", m[1], py, ["-u", "tools/tts_beats.py", path.join(d, "beats.json"), path.join(d, "narration/raw")], { cwd: cfg.ttsRepo, env: { PYTHONPATH: path.join(cfg.ttsRepo, ".vendor_py"), CHATTERBOX_MODEL_VARIANT: "dedicated_hindi", NARRATION_STYLE: b.style || "storytelling", HINDI_PRONUNCIATION: b.pronunciation || "hindi_mixed" } }); return send(res, 200, { started: true }); }
     if ((m = p.match(/^\/api\/projects\/([a-z0-9-]+)\/narration\/upload$/)) && req.method === "POST") { const d = pdir(m[1]); fs.writeFileSync(path.join(d, "narration/raw.wav"), await readBody(req, 120e6)); fs.rmSync(path.join(d, "narration/raw.wav.segments.json"), { force: true }); return send(res, 200, projectInfo(m[1])); }

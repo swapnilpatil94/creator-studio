@@ -25,13 +25,14 @@ export function check(out, topic) {
   return errs;
 }
 export async function write({ topic, model = MODEL, log = console.log, rounds = 4, ollama = "http://127.0.0.1:11434" }) {
-  const sys = fs.readFileSync(path.join(RF, "prompts/writer.md"), "utf8"), msgs = [{ role: "system", content: sys }, { role: "user", content: `TOPIC: ${topic.title}\nFACTS:\n${topic.facts.map((f, i) => `${i + 1}. ${f}`).join("\n")}\n\n${topic.seconds >= 50 ? "LENGTH: this is a 60-second reel: 17 to 20 lines of 8 to 12 words each (about 10 words per line), 165 to 190 words in all. Add a second proof beat and a second reveal; never pad or repeat a line.\n" : ""}\nWrite the script JSON now.` }]; let errs = [];
+  const sys = fs.readFileSync(path.join(RF, "prompts/writer.md"), "utf8"), msgs = [{ role: "system", content: sys }, { role: "user", content: `TOPIC: ${topic.title}\nFACTS:\n${topic.facts.map((f, i) => `${i + 1}. ${f}`).join("\n")}\n\n${topic.seconds >= 50 ? "LENGTH: this is a 60-second reel: 17 to 20 lines of 8 to 12 words each (about 10 words per line), 165 to 190 words in all. Add a second proof beat and a second reveal; never pad or repeat a line.\n" : ""}\nWrite the script JSON now.` }]; let errs = [], best = null;
   for (let r = 0; r <= rounds; r++) {
     const t = Date.now(), res = await fetch(ollama + "/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ model, messages: msgs, stream: false, keep_alive: 0, format: writerSchema, options: { temperature: 0.5, num_ctx: 12288, num_predict: 5000 } }) }); if (!res.ok) throw new Error("ollama " + res.status);
     const j = await res.json(); let out; try { out = JSON.parse(j.message.content); } catch { errs = ["not JSON"]; msgs.push({ role: "assistant", content: j.message.content }, { role: "user", content: "Return only the JSON object." }); continue; }
-    errs = check(out, topic); log(`  writer round ${r + 1}: ${errs.length ? errs.length + " problem(s)" : "valid"} (${((Date.now() - t) / 1000).toFixed(0)}s)`);
+    errs = check(out, topic); { const w = out.lines.reduce((a, l) => a + words(l.text), 0); if (!best || w > best.words) best = { out, errs, words: w }; } log(`  writer round ${r + 1}: ${errs.length ? errs.length + " problem(s)" : "valid"} (${((Date.now() - t) / 1000).toFixed(0)}s)`);
     if (!errs.length) return { title: out.title, hook_title: out.hook_title, lines: out.lines.map(l => l.text.trim()), grounding: out.lines.map(l => l.fact), rounds: r + 1 };
     msgs.push({ role: "assistant", content: j.message.content }, { role: "user", content: `Fix these problems and return the full corrected JSON only:\n- ${errs.slice(0, 10).join("\n- ")}` });
   }
+  if (best && best.out.lines.length >= (topic.seconds >= 50 ? 14 : 8) && best.errs.every(e => /words|lines;/.test(e) && !/not in the facts|do(es)? not use the words|digits|absolute/.test(e))) { log("  writer: accepting the longest valid-but-short script (" + best.words + " words)"); return { title: best.out.title, hook_title: best.out.hook_title, lines: best.out.lines.map(l => l.text.trim()), grounding: best.out.lines.map(l => l.fact), rounds: rounds + 1, short: true }; }
   throw new Error("Writer could not produce a grounded script: " + errs.slice(0, 4).join("; "));
 }

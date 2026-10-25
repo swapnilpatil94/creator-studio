@@ -831,7 +831,58 @@
    "motion": [],
    "emphasis_word": "",
    "sfx": [],
-   "loop_to_start": true
+   "loop_to_start": false
+  },
+  {
+   "id": 34,
+   "line_ids": [
+    34
+   ],
+   "seconds": 3.2,
+   "archetype": "twist",
+   "component": "Narrator",
+   "variant": "",
+   "on_screen": [
+    "यह एक नाम है"
+   ],
+   "accent_line": 1,
+   "sheet": "indigo",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "a",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false
+  },
+  {
+   "id": 35,
+   "line_ids": [
+    35
+   ],
+   "seconds": 3.2,
+   "archetype": "quote",
+   "component": "HighlightText",
+   "variant": "",
+   "on_screen": [
+    "दाम पहले बना",
+    "पसंद बाद में"
+   ],
+   "accent_line": 1,
+   "sheet": "maroon",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": true,
+   "hl": [
+    "पहले",
+    "बाद"
+   ]
   }
  ]
 }

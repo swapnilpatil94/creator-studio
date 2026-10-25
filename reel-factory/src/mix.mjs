@@ -20,7 +20,7 @@ export function mix({ video, voice, plan, manifest, out, music = "neutral-quiet-
   cues.forEach((q, i) => { fg += `[${3 + i}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=${sfxGain},adelay=${Math.max(0, Math.round(q.at * 1000))}:all=1[s${i}];`; mixIn.push(`[s${i}]`); });
   if (hb && hb.to > hb.from + 1) { const hi = 3 + cues.length; fg += `[${hi}:a]atrim=0:${(hb.to - hb.from).toFixed(2)},asetpts=PTS-STARTPTS,aformat=sample_rates=44100:channel_layouts=stereo,afade=t=in:d=1.5,afade=t=out:st=${Math.max(0, hb.to - hb.from - 1.5).toFixed(2)}:d=1.5,volume=0.22,adelay=${Math.round(hb.from * 1000)}:all=1[hb];`; mixIn.push("[hb]"); }
   fg += `${mixIn.join("")}amix=inputs=${mixIn.length}:normalize=0:duration=longest,atrim=0:${dur},alimiter=limit=0.95,loudnorm=I=-14:TP=-1.5:LRA=9,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2[aout]`;
-  const r = spawnSync("ffmpeg", ["-y", "-loglevel", "error", ...inputs, "-filter_complex", fg, "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", String(dur), "-movflags", "+faststart", out], { encoding: "utf8" });
+  const r = spawnSync("ffmpeg", ["-y", "-loglevel", "error", ...inputs, "-filter_complex", fg, "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-tag:v", "avc1", "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "192k", "-t", String(dur), "-movflags", "+faststart", out], { encoding: "utf8" });
   if (r.status !== 0) throw new Error("mix failed: " + (r.stderr || "").slice(-400)); fs.writeFileSync(out.replace(/\.mp4$/, ".srt"), srt(plan));
   return { cues: cues.length, heartbeat: hb && hb.to > hb.from + 1 ? { from: +hb.from.toFixed(1), to: +hb.to.toFixed(1) } : null, drop: { from: +a.toFixed(2), silent_until: +c.toFixed(2) } };
 }
@@ -29,4 +29,14 @@ export function inspectAudio(file) {
   const l = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", file, "-af", "ebur128=peak=true", "-f", "null", "-"], { encoding: "utf8" }).stderr || "", num = re => { const m = re.exec(l.slice(l.lastIndexOf("Summary:"))); return m ? +m[1] : null; };
   const sil = [...((spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", file, "-af", "silencedetect=n=-45dB:d=0.35", "-f", "null", "-"], { encoding: "utf8" }).stderr || "").matchAll(/silence_start: ([\d.]+)|silence_end: ([\d.]+)/g))].map(m => +(m[1] ?? m[2]));
   return { lufs: num(/I:\s+(-?[\d.]+) LUFS/), lra: num(/LRA:\s+([\d.]+) LU/), truePeak: num(/Peak:\s+(-?[\d.]+) dBFS/), silences: sil };
+}
+
+/** QuickTime / iPhone compatibility: H.264 (avc1, yuv420p, even size, level <= 4.2) + AAC-LC 44.1/48 kHz, moov atom before mdat so it opens without reading the whole file. */
+export function qtCheck(file) {
+  const pr = spawnSync("ffprobe", ["-v", "error", "-show_streams", "-show_format", "-of", "json", file], { encoding: "utf8" }); if (pr.status) return { ok: false, problems: ["ffprobe failed"] };
+  const j = JSON.parse(pr.stdout), v = j.streams.find(s => s.codec_type === "video"), a = j.streams.find(s => s.codec_type === "audio"), bad = [];
+  if (!v || v.codec_name !== "h264") bad.push("video is not H.264"); else { if (v.pix_fmt !== "yuv420p") bad.push("pixel format " + v.pix_fmt + " (QuickTime needs yuv420p)"); if (v.codec_tag_string !== "avc1") bad.push("video tag " + v.codec_tag_string + " (needs avc1)"); if (v.width % 2 || v.height % 2) bad.push("odd frame size"); if (v.level > 42) bad.push("H.264 level " + v.level + " is too high"); if (!/High|Main|Baseline/.test(v.profile || "")) bad.push("profile " + v.profile); }
+  if (!a || a.codec_name !== "aac") bad.push("audio is not AAC"); else if (![44100, 48000].includes(+a.sample_rate)) bad.push("audio sample rate " + a.sample_rate + " (use 44.1 or 48 kHz)");
+  const buf = fs.readFileSync(file, { encoding: null, flag: "r" }).subarray(0, 2e6), moov = buf.indexOf("moov"), mdat = buf.indexOf("mdat"); if (moov < 0 || (mdat >= 0 && mdat < moov)) bad.push("moov atom is after the media data (no faststart)");
+  return { ok: !bad.length, problems: bad };
 }
