@@ -9,7 +9,8 @@
 //        node planner/topic-plan.mjs --apply    also adds the days to content/weekplan.json (days that already have a card are left alone)
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), J = f => JSON.parse(fs.readFileSync(path.join(root, f), "utf8"));
-const FROM = "2026-10-29", TO = "2026-12-31";
+const ARG = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; }, SHORT = process.argv.includes("--short"), UNTOLD_ONLY = process.argv.includes("--untold-only");
+const FROM = ARG("--from") || "2026-10-29", TO = ARG("--to") || "2026-12-31", OUT = ARG("--from") || ARG("--to") || SHORT || UNTOLD_ONLY ? `planner/data/topic-plan-${FROM}-to-${TO}${SHORT ? "-shorts" : ""}.json` : "planner/data/topic-plan-2026-q4.json";   // --from/--to/--short/--untold-only write a separate plan file and never touch the original
 const addDays = (s, n) => { const d = new Date(s + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }, dow = s => new Date(s + "T00:00:00Z").getUTCDay();
 // ---- demand from the real outlier scan ----
 const out = J("planner/data/channel-outliers-2026-10-20.json").videos.filter(v => v.outlierScore != null);
@@ -24,10 +25,10 @@ const diwali = [...ev].find(([d, l]) => l.some(x => /Diwali \(Lakshmi/.test(x.na
 const tagsOn = d => new Set((ev.get(d) || []).flatMap(e => e.tags)), namesOn = d => [...new Set((ev.get(d) || []).map(e => e.name))];
 const BIG = new Set(["diwali", "gita-jayanti", "kartik-purnima", "karwa-chauth"]);
 // ---- plan ----
-const bank = [...J("planner/data/topic-bank-2026-q4.json").topics.map(t => ({ culture: "indian", known: !t.untold, ...t })), ...J("planner/data/topic-bank-2026-q4-v2.json").topics], used = new Set(), produced = new Set(fs.readdirSync(path.join(root, "stories")).map(s => s.replace(/^(video|reel)-/, "")));
+const v3 = fs.existsSync(path.join(root, "planner/data/topic-bank-2026-q4-v3.json")) ? J("planner/data/topic-bank-2026-q4-v3.json").topics : [], bank = [...J("planner/data/topic-bank-2026-q4.json").topics.map(t => ({ culture: "indian", known: !t.untold, ...t })), ...J("planner/data/topic-bank-2026-q4-v2.json").topics, ...v3].filter(t => !UNTOLD_ONLY || t.untold), used = new Set(), produced = new Set(fs.readdirSync(path.join(root, "stories")).map(s => s.replace(/^(video|reel)-/, "")));
 const days = []; for (let d = FROM; d <= TO; d = addDays(d, 1)) days.push(d);
 const isWorld = t => t.culture && t.culture !== "indian", worldDay = d => [2, 5, 0].includes(dow(d));   // Tue, Fri, Sun are world-myth days
-const fmtOf = d => { const tags = tagsOn(d), w = dow(d); return (w === 4 || w === 0 || [...tags].some(t => BIG.has(t))) ? "long" : "short"; };
+const fmtOf = d => { if (SHORT) return "short"; const tags = tagsOn(d), w = dow(d); return (w === 4 || w === 0 || [...tags].some(t => BIG.has(t))) ? "long" : "short"; };
 const assigned = {};   // date -> { t, s, dm, anchor, teaser }
 const scoreOf = (t, d, strict) => {
   const w = dow(d), tags = tagsOn(d), near = new Set([-2, -1, 1, 2].flatMap(k => [...tagsOn(addDays(d, k))])), fmt = fmtOf(d), dm = DEMAND[t.theme + ":" + (t.fmt === "long" ? "long" : fmt)] || DEMAND[t.theme + ":" + fmt] || { ratio: 1 };
@@ -55,7 +56,7 @@ for (const d of days) { const best = assigned[d]; if (!best) continue; const t =
   if (isWorld(t)) why.push(`World myth (${t.culture}): ${t.evidence && WE[t.evidence] ? WE[t.evidence] : "no direct outlier for this culture in our Hindi scans (tiny sample): an untested gap, judge it only after 8-10 videos"}`); else if (t.untold) why.push("Untold katha: " + UNTOLD_EV);
   if (!isWorld(t) && !t.untold) why.push(dm.top ? `Demand: ${dm.rate}% of ${dm.n} ${t.fmt === "long" ? "long" : fmt} ${t.theme.replace(/_/g, " ")} videos were 3x outliers (all videos: ${dm.base}%); biggest: "${dm.top}" ${(dm.topViews / 1e6).toFixed(1)}M views` : `Demand: ${dm.note || "no theme data"}`);
   rows.push({ date: d, dow: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][w], format: fmt, time: fmt === "long" ? "20:00" : "19:00", slug: t.slug, title: t.title, culture: t.culture || "indian", angle: t.angle || "", untold: !!t.untold, theme: t.theme, mood: t.mood, source: t.source, belief: !!t.belief, regional: !!t.regional, event: namesOn(d), why: why.join(" | "), score: +best.s.toFixed(2) }); }
-fs.writeFileSync(path.join(root, "planner/data/topic-plan-2026-q4.json"), JSON.stringify({ generated: new Date().toISOString().slice(0, 10), from: FROM, to: TO, method: "theme outlier-rate ratio x calendar bonus x rhythm; see header of planner/topic-plan.mjs", demand: DEMAND, days: rows }, null, 1));
+fs.writeFileSync(path.join(root, OUT), JSON.stringify({ generated: new Date().toISOString().slice(0, 10), from: FROM, to: TO, method: "theme outlier-rate ratio x calendar bonus x rhythm; see header of planner/topic-plan.mjs", demand: DEMAND, days: rows }, null, 1));
 for (const r of rows) console.log(r.date, r.dow, r.format.padEnd(5), r.theme.padEnd(18), r.title.slice(0, 46), r.event.length ? "  <" + r.event[0].slice(0, 28) + ">" : "");
 console.log(rows.length + " days, " + rows.filter(r => r.format === "long").length + " long, " + rows.filter(r => r.format === "short").length + " short; bank left: " + (bank.length - used.size));
 if (process.argv.includes("--apply")) { const F = path.join(root, "content/weekplan.json"), data = JSON.parse(fs.readFileSync(F, "utf8")), now = new Date().toISOString(); data.cards = data.cards.filter(c => !(c.planned && !(c.script || "").trim() && !(c.visuals || "").trim() && !c.slug_built)); let n = 0; for (const r of rows) { if (data.cards.some(c => c.date === r.date)) continue; data.cards.push({ id: "w" + crypto.randomBytes(4).toString("hex"), createdAt: now, updatedAt: now, flags: {}, date: r.date, time: r.time, format: r.format, title: r.title, slug: r.slug, culture: r.culture, angle: r.angle, untold: r.untold, theme: r.theme, mood: r.mood, why: r.why, source: r.source, belief: r.belief, regional: r.regional, planned: true }); n++; } fs.writeFileSync(F, JSON.stringify(data, null, 1)); console.log("added " + n + " cards to content/weekplan.json"); }
