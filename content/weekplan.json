@@ -209,7 +209,7 @@
   {
    "id": "we789f418",
    "createdAt": "2026-10-25T08:50:22.573587Z",
-   "updatedAt": "2026-10-25T09:28:22.942Z",
+   "updatedAt": "2026-10-26T05:38:04.538Z",
    "flags": {},
    "date": "2026-10-31",
    "time": "19:00",
@@ -250,9 +250,9 @@
   {
    "id": "w79aad1b4",
    "createdAt": "2026-10-25T08:50:22.573587Z",
-   "updatedAt": "2026-10-25T09:28:22.942Z",
+   "updatedAt": "2026-10-26T09:48:18.848Z",
    "flags": {},
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "time": "19:00",
    "format": "short",
    "title": "हर रात सूर्य मरता क्यों था? रा की पाताल यात्रा",
@@ -291,9 +291,9 @@
   {
    "id": "wc2ca0d0b",
    "createdAt": "2026-10-25T08:50:22.573587Z",
-   "updatedAt": "2026-10-25T09:28:22.942Z",
+   "updatedAt": "2026-10-26T09:48:18.839Z",
    "flags": {},
-   "date": "2026-11-02",
+   "date": "2026-11-01",
    "time": "19:00",
    "format": "short",
    "title": "बालाजी पर कुबेर का कर्ज़: क्या वे आज भी ब्याज चुका रहे हैं?",
@@ -409,7 +409,8 @@
    },
    "draft": "pack-drafts: written from memory of the source, needs the owner's check against the named text",
    "scriptSaved": "FORMAT: short\nSLUG: chhaya-sanjna-yama-leg\nTITLE: छाया को छोड़कर संज्ञा क्यों भागी? और यम ने माँ पर पैर क्यों उठाया?\nTHUMB: छाया ने क्या किया?\nTHUMB_SUPPORT: सूर्य की पत्नी\nSOURCE_LINE: स्रोत: मार्कण्डेय पुराण और विष्णु पुराण (3.2); ब्योरे पुराणों में अलग हैं\nTRADITION: यह कथा मार्कण्डेय और विष्णु पुराण के अनुसार है; पुराणों में शाप और उसके असर का ब्योरा अलग मिलता है।\nHASHTAGS: #kathaaya #yamraj #surya\nNARRATION:\n1 | [hook] माँ बदल गई, और बच्चों को पता नहीं चला।\n2 | [curious] संज्ञा ने अपनी जगह किसे छोड़ा?\n3 | [narrate] पुराणों के अनुसार, संज्ञा, सूर्यदेव की पत्नी थी।\n4 | [narrate] पर सूर्य का तेज उससे सहा नहीं जाता था।\n5 | [tense] वह रोज़ अपनी आँखें भींचती, और धीरे-धीरे थकती गई।\n6 | [narrate] एक दिन उसने अपनी छाया को रचा, और कहा, \"मेरी जगह रहो।\"\n7 | [punch] \"और *किसी को* मत बताना।\"\n8 | [narrate] संज्ञा तपस्या के लिए जंगल चली गई।\n9 | [tense] छाया, सूर्य की पत्नी बनकर महल में रही।\n10 | [narrate] उसके अपने बच्चे हुए, शनि और तपती।\n11 | [tense] वह संज्ञा के बच्चों, यम और यमी से, सौतेला बर्ताव करने लगी।\n12 | [tense] एक दिन यम ने ग़ुस्से में, छाया की ओर पैर उठा दिया।\n13 | [reveal] माँ ने शाप दिया, \"तेरा वह पैर गल जाएगा।\"\n14 | [curious] पर कोई सगी माँ, अपने ही बच्चे को ऐसा शाप कैसे देती?\n15 | [tense] यम ने पिता सूर्य से यही पूछा।\n16 | [reveal] तब सूर्य ने जाना, यह उसकी पत्नी नहीं, छाया है।\n17 | [narrate] सूर्य ने शाप को हल्का किया, कीड़े माँस ले जाएँगे, पर पैर रहेगा।\n18 | [reflective] जिसने जगह ली, उसने प्यार नहीं, सिर्फ़ भूमिका निभाई।\n19 | [curious] आप कहेंगे, ग़लती संज्ञा की थी, या छाया की?\n20 | [reflective] अगली कथा में, सुदर्शन चक्र ने दुर्वासा का पीछा क्यों किया?। फ़ॉलो कीजिए।\nCLAIMS:\n- संज्ञा सूर्य की पत्नी थी | Sanjna was the Sun's wife | traditional-account | मार्कण्डेय पुराण\n- संज्ञा ने अपनी छाया को अपनी जगह छोड़ा | Sanjna left her shadow (Chhaya) in her place | traditional-account | मार्कण्डेय पुराण; विष्णु पुराण 3.2\n- छाया के पुत्र शनि और तपती हैं | Chhaya's children are Shani and Tapti | traditional-account | विष्णु पुराण 3.2\n- यम ने पैर उठाया और शाप मिला, शाप के ब्योरे अलग हैं | Yama raised his foot and was cursed; details differ | traditional-account | मार्कण्डेय पुराण (संस्करण भिन्न)\n",
-   "scriptSavedAt": "2026-10-25T09:28:22.942Z"
+   "scriptSavedAt": "2026-10-25T09:28:22.942Z",
+   "engine": "hyperframes"
   },
   {
    "id": "w553c71bb",
@@ -911,7 +912,8 @@
    },
    "draft": "pack-drafts: written from memory of the source, needs the owner's check against the named text",
    "scriptSaved": "FORMAT: short\nSLUG: kamadeva-burnt-rati-grief\nTITLE: कामदेव की राख और रति का विलाप\nTHUMB: राख से क्या जन्मा?\nTHUMB_SUPPORT: तीसरी आँख\nSOURCE_LINE: स्रोत: शिव पुराण, रुद्र संहिता (पार्वती खंड); कालिदास का कुमारसंभव\nTRADITION: यह कथा शिव पुराण और कुमारसंभव की परंपरा के अनुसार है; दोनों के कुछ ब्योरे अलग हैं।\nHASHTAGS: #kathaaya #kamadeva #shiva\nNARRATION:\n1 | [hook] शिव ने तीसरी आँख खोली, और प्रेम राख हो गया।\n2 | [curious] कामदेव ने ऐसा क्या किया कि महादेव भड़क उठे?\n3 | [narrate] शिव पुराण के अनुसार, तारकासुर को वरदान था कि केवल शिव का पुत्र उसे मार सकता है।\n4 | [narrate] पर शिव सती के वियोग के बाद, गहरी तपस्या में थे।\n5 | [tense] देवताओं ने कामदेव को बुलाया, \"शिव का मन जगाओ।\"\n6 | [narrate] कामदेव जानता था कि यह ख़तरा है, फिर भी तैयार हो गया।\n7 | [tense] वह हिमालय पहुँचा, जहाँ पार्वती शिव की सेवा कर रही थीं।\n8 | [awe] उसने फूलों का बाण साधा, और शिव पर चला दिया।\n9 | [tense] शिव की समाधि पल भर काँपी, और आँखें खुल गईं।\n10 | [punch] सामने कामदेव था, और *तीसरी आँख* जल उठी।\n11 | [reveal] पल भर में, कामदेव राख हो गया।\n12 | [narrate] पत्नी रति ने यह देखा, तो वहीं बिलख उठी।\n13 | [tense] वह शिव के सामने रोई, \"मेरे पति का क्या दोष?\"\n14 | [narrate] शिव शांत हुए, और बोले, \"वह अनंग बनकर रहेगा।\"\n15 | [narrate] बिना देह के वह जीवित रहा, और बाद में कृष्ण के पुत्र प्रद्युम्न के रूप में जन्मा।\n16 | [reflective] यानी जो प्रेम जलाया गया, उसी से पार्वती का विवाह संभव हुआ।\n17 | [curious] आप बताइए, कामदेव का साहस सही था, या शिव का क्रोध?\n18 | [reflective] अगली कथा में, कोशेई अमर क्यों था? उसकी मौत सुई में कैसे छिपी थी। फ़ॉलो कीजिए।\nCLAIMS:\n- तारकासुर को शिव-पुत्र से मृत्यु का वरदान था | Taraka could be killed only by Shiva's son | traditional-account | शिव पुराण, रुद्र संहिता\n- कामदेव को शिव की तीसरी आँख ने भस्म किया | Kamadeva was burnt by Shiva's third eye | traditional-account | शिव पुराण, रुद्र संहिता\n- रति के विलाप पर शिव ने अनंग रूप का वचन दिया | Shiva promised him a bodiless form after Rati's lament | traditional-account | कुमारसंभव, सर्ग 4\n",
-   "scriptSavedAt": "2026-10-25T09:28:22.942Z"
+   "scriptSavedAt": "2026-10-25T09:28:22.942Z",
+   "engine": "hyperframes"
   },
   {
    "id": "w9b8db61b",
@@ -1581,7 +1583,8 @@
    },
    "draft": "pack-drafts: written from memory of the source, needs the owner's check against the named text",
    "scriptSaved": "FORMAT: short\nSLUG: yayati-puru-youth\nTITLE: पुरु ने पिता के लिए अपना यौवन क्यों दे दिया?\nTHUMB: बुढ़ापा किसने लिया?\nTHUMB_SUPPORT: सहस्र वर्ष का सौदा\nSOURCE_LINE: स्रोत: महाभारत, आदिपर्व 80-88\nTRADITION: यह कथा महाभारत के आदिपर्व के अनुसार है; पुराणों में यही कथा थोड़े अलग रूप में मिलती है।\nHASHTAGS: #kathaaya #yayati #mahabharat\nNARRATION:\n1 | [hook] एक बेटे ने पिता का बुढ़ापा ले लिया।\n2 | [curious] पिता ने इसे लौटाया कब?\n3 | [narrate] महाभारत के अनुसार, राजा ययाति की पत्नी थीं देवयानी, शुक्राचार्य की पुत्री।\n4 | [narrate] पर ययाति का मन, उनकी सखी शर्मिष्ठा पर भी था।\n5 | [tense] शुक्राचार्य ने सुना, और क्रोध में शाप दे दिया।\n6 | [punch] \"तुम *असमय बूढ़े* हो जाओगे।\"\n7 | [narrate] ययाति गिड़गिड़ाए, तो शाप में एक राह रखी गई।\n8 | [narrate] कोई अपनी जवानी दे दे, तो बुढ़ापा उसे सौंपा जा सकता था।\n9 | [tense] ययाति ने अपने बड़े पुत्रों से माँगा।\n10 | [tense] चारों ने मना कर दिया।\n11 | [narrate] सबसे छोटे, पुरु ने हाथ जोड़कर कहा, \"मैं तैयार हूँ।\"\n12 | [awe] ययाति ने पुरु की जवानी पाई, और हज़ारों बरस भोग किए।\n13 | [reveal] फिर उसने जाना, \"आग में घी डालने से, आग बुझती नहीं।\"\n14 | [reveal] \"इच्छाएँ भोगने से, और बढ़ती हैं।\"\n15 | [narrate] उसने पुरु का यौवन लौटा दिया, और उसे राजा बनाया।\n16 | [narrate] जिन्होंने मना किया था, उन्हें शाप मिला।\n17 | [reflective] जो हज़ार बरस में न सीख सका, वह एक पल की समझ में आ गया।\n18 | [curious] आप बताइए, पुरु ने सही किया, या पिता ने बहुत माँग लिया?\n19 | [reflective] अगली कथा में, रावण पर वह शाप जिसने सीता को बचाया। फ़ॉलो कीजिए।\nCLAIMS:\n- शुक्राचार्य ने ययाति को शाप दिया | Shukracharya cursed Yayati | traditional-account | महाभारत आदिपर्व 80\n- पुरु ने पिता का बुढ़ापा लेकर यौवन दिया | Puru gave his youth and took his father's age | traditional-account | महाभारत आदिपर्व 83-85\n- ययाति ने समझा कि इच्छाएँ भोग से नहीं बुझतीं | Yayati realised desire is not quenched by indulgence | traditional-account | महाभारत आदिपर्व 85\n",
-   "scriptSavedAt": "2026-10-25T09:28:22.942Z"
+   "scriptSavedAt": "2026-10-25T09:28:22.942Z",
+   "engine": "hyperframes"
   },
   {
    "id": "w7ca4688c",
@@ -2091,7 +2094,8 @@
    },
    "draft": "pack-drafts: written from memory of the source, needs the owner's check against the named text",
    "scriptSaved": "FORMAT: short\nSLUG: lakshmana-abandoned-by-rama\nTITLE: राम ने अपने ही भाई को क्यों छोड़ दिया? लक्ष्मण का अंत\nTHUMB: किसने किसे छोड़ा?\nTHUMB_SUPPORT: समय का वचन\nSOURCE_LINE: स्रोत: वाल्मीकि रामायण, उत्तरकांड (काल का आगमन और दुर्वासा)\nTRADITION: यह कथा वाल्मीकि रामायण के उत्तरकांड के अनुसार है; लक्ष्मण के अंत का ब्योरा अलग रामकथाओं में अलग मिलता है।\nHASHTAGS: #kathaaya #lakshmana #ramayana\nNARRATION:\n1 | [hook] राम को अपने सबसे प्रिय भाई को, छोड़ना पड़ा।\n2 | [curious] ऐसी क्या मजबूरी आ गई?\n3 | [narrate] उत्तरकांड के अनुसार, काल एक तपस्वी बनकर अयोध्या आया।\n4 | [narrate] उसने राम से अकेले में बात करने की शर्त रखी।\n5 | [tense] शर्त थी, \"जो बीच में आएगा, उसका वध होगा।\"\n6 | [narrate] राम ने लक्ष्मण को द्वार पर बैठाया।\n7 | [tense] तभी ऋषि दुर्वासा आए, और राम से अभी मिलना चाहा।\n8 | [tense] उन्होंने धमकी दी, \"न मिलने दिया, तो अयोध्या को शाप दूँगा।\"\n9 | [punch] लक्ष्मण को *चुनना* पड़ा।\n10 | [narrate] भाई की जान, या अयोध्या का विनाश।\n11 | [tense] लक्ष्मण भीतर चले गए।\n12 | [narrate] राम का वचन टूटा, और वे स्तब्ध रह गए।\n13 | [narrate] वसिष्ठ ने सलाह दी, \"ऐसे अपने को त्यागना, मृत्यु जैसा ही माना जाता है।\"\n14 | [reveal] राम ने भारी मन से, लक्ष्मण को त्याग दिया।\n15 | [narrate] लक्ष्मण सरयू के तट गए, और देह छोड़ दी।\n16 | [narrate] कथाओं में इसका ब्योरा अलग है, किसी में जल, किसी में समाधि।\n17 | [reflective] वचन निभाने के लिए, राम ने अपना सबसे बड़ा सहारा खो दिया।\n18 | [curious] आप बताइए, राम का फ़ैसला सही था, या वचन से बड़ा भाई था?\n19 | [reflective] अगली कथा में, अमातेरासु गुफा में क्यों छिप गईं, और दुनिया अँधेरी हो गई?। फ़ॉलो कीजिए।\nCLAIMS:\n- काल ने राम से एकांत वार्ता की शर्त रखी | Kala made a condition of private talk with Rama | traditional-account | वाल्मीकि रामायण, उत्तरकांड\n- लक्ष्मण ने दुर्वासा के कारण वार्ता में प्रवेश किया | Lakshmana interrupted because of Durvasa | traditional-account | वाल्मीकि रामायण, उत्तरकांड\n- राम ने वचन के कारण लक्ष्मण का त्याग किया | Rama abandoned Lakshmana to keep his word | traditional-account | वाल्मीकि रामायण, उत्तरकांड\n",
-   "scriptSavedAt": "2026-10-25T09:28:22.942Z"
+   "scriptSavedAt": "2026-10-25T09:28:22.942Z",
+   "engine": "hyperframes"
   },
   {
    "id": "wd509b729",

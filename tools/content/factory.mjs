@@ -16,7 +16,8 @@ const { readiness } = await import("./readiness.mjs"), pk = await import("../vid
 const busy = () => spawnSync("pgrep", ["-f", "make-video.mjs|reel-factory/src/cli.mjs|scripts/render.mjs"]).status === 0 && !a.includes("--ignore-busy");
 const r0 = await readiness({ need: S.bufferDays || 7, days: S.bufferDays || 7 }), plan = r0.days.flatMap(d => d.cards.map(c => ({ ...c, date: d.date }))).filter(c => c.format !== undefined), gaps = [], actions = [];
 for (const d of r0.days) if (d.empty) gaps.push(`${d.date}: no topic planned`);
-for (const c of plan) { if (!c.gates.script) { gaps.push(`${c.date}: "${c.title}" has no script (write or paste one on the card)`); continue; } if (!c.gates.video) actions.push({ do: "build", c }); else if (!c.gates.shipped && S.ship && S.ship.enabled) actions.push({ do: "ship", c }); }
+const cardsById = Object.fromEntries((J("content/weekplan.json", { cards: [] }).cards || []).map(c => [c.id, c]));
+for (const c of plan) { if (cardsById[c.id] && cardsById[c.id].engine === "hyperframes" && !c.gates.video) { gaps.push(`${c.date}: "${c.title}" is an A/B card for HyperFrames: build it in Reel Factory (the factory only builds cinematic)`); continue; } if (!c.gates.script) { gaps.push(`${c.date}: "${c.title}" has no script (write or paste one on the card)`); continue; } if (!c.gates.video) actions.push({ do: "build", c }); else if (!c.gates.shipped && S.ship && S.ship.enabled) actions.push({ do: "ship", c }); }
 log(`${plan.length} cards in the next ${S.bufferDays} days; ${actions.filter(x => x.do === "build").length} to build, ${actions.filter(x => x.do === "ship").length} to ship, ${gaps.length} gap(s)`); for (const g of gaps) log("GAP", g); for (const x of actions) log(run ? "PLAN" : "WOULD", x.do, x.c.date, x.c.slug);
 const t0 = Date.now(); let built = 0, shipped = 0; const errors = [];
 if (run) {

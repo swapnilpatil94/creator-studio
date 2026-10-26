@@ -1,0 +1,30 @@
+{
+ "name": "cinematic vs HyperFrames, KATHAAYA shorts",
+ "started": "2026-10-26",
+ "engines": {
+  "cinematic": "stories pipeline (painted portraits + camera moves), the default",
+  "hyperframes": "Reel Factory (cut-outs, collage, motion graphics), theme kathaaya-myth, template specimen, portrait 1080x1920"
+ },
+ "test_slugs": [
+  "chhaya-sanjna-yama-leg",
+  "kamadeva-burnt-rati-grief",
+  "yayati-puru-youth",
+  "lakshmana-abandoned-by-rama"
+ ],
+ "control": "every other KATHAAYA mythology short published in the same weeks (cinematic)",
+ "question": "Does the HyperFrames look hold viewers better than the cinematic look on the same kind of story?",
+ "metrics": [
+  "averageViewPercentage",
+  "averageViewDuration",
+  "stayed-to-watch % (YouTube Studio, Shorts)",
+  "views per impression in the first 48 h",
+  "sends/shares on Instagram"
+ ],
+ "how": "node tools/content/retention.mjs (after YouTube is reconnected with the analytics permission) groups every video by engine and prints the medians.",
+ "rules": [
+  "same voice, same posting slot, same title pattern for both",
+  "judge each test video against the channel's own median for the same week, not against other channels",
+  "with 4 test videos only a big gap (about 20 percent relative or more) means anything; a small gap means keep both and test again"
+ ],
+ "note": "The Hub builds cinematic by default. A card with engine:'hyperframes' is skipped by the factory and listed as a gap until it is built in Reel Factory."
+}

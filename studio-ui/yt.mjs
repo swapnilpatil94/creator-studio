@@ -5,7 +5,7 @@
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { spawnSync } from "node:child_process";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), ".."), TOKEN = path.join(root, ".yt-token.json");
 const env = () => { const f = path.join(root, ".env.local"); const t = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : ""; const g = n => process.env[n] || (t.match(new RegExp("^" + n + "=(\\S+)", "m")) || [])[1]; return { id: g("YT_OAUTH_CLIENT_ID"), secret: g("YT_OAUTH_CLIENT_SECRET") }; };
-export const SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/youtube.force-ssl"];   // force-ssl lets the Hub change a scheduled video's time (videos.update); a connection made before this was added must be reconnected once
+export const SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/youtube.force-ssl", "https://www.googleapis.com/auth/yt-analytics.readonly"];   // force-ssl lets the Hub change a scheduled video's time (videos.update); a connection made before this was added must be reconnected once
 let pending = null; // { verifier, state }
 export const configured = () => { const e = env(); return !!(e.id && e.secret); };
 export function authUrl(redirect) {
