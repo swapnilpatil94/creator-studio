@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "बेताल की शर्त: राजा विक्रम हर बार क्यों हारा? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "शव पेड़ से उतरा, और राजा से सवाल पूछा। शर्त थी: जवाब जानकर चुप रहा, तो सिर फट जाएगा।",
+ "disclaimer": "यह कथा लोककथा-संग्रह वेताल पंचविंशति के अनुसार है; कथासरित्सागर में राजा का नाम त्रिविक्रमसेन मिलता है, बाद के संस्करणों में विक्रमादित्य।",
+ "hashtags": [
+  "#kathaaya",
+  "#baitalpachisi",
+  "#vikramaditya"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "बेताल|शर्त:|राजा",
+ "extraTags": [
+  "baitalpachisi",
+  "vikramaditya",
+  "बेताल",
+  "शर्त:",
+  "राजा",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "मुर्दा क्यों बोला?"
+   ],
+   "support": [
+    "पच्चीस पहेलियाँ"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "बेताल की शर्त:"
+ ],
+ "primaryKeyword": "बेताल",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "बेताल की शर्त: राजा विक्रम हर बार क्यों हारा?"
+ }
+}

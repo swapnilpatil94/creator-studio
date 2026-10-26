@@ -44,16 +44,18 @@
   "story": "video-pandu-kindama-curse",
   "platform": "instagram",
   "at": "2026-10-25T13:30:00.000Z",
-  "status": "queued",
-  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-pandu-kindama-curse.jpg"
+  "status": "failed",
+  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-pandu-kindama-curse.jpg",
+  "error": "400 {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
  },
  {
   "id": "mvjq84vn",
   "story": "video-karna-birth-kunti",
   "platform": "instagram",
   "at": "2026-10-24T13:30:00.000Z",
-  "status": "queued",
-  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-karna-birth-kunti.jpg"
+  "status": "failed",
+  "coverUrl": "https://kathaaya.getbyterush.com/covers/video-karna-birth-kunti.jpg",
+  "error": "400 {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
  },
  {
   "id": "mvjqmblt",

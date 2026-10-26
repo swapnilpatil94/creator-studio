@@ -180,5 +180,38 @@
   "captions": "pop",
   "grade": "film",
   "seed": 423
+ },
+ {
+  "name": "video-baital-pachisi-vikram",
+  "mood": "sorrow",
+  "hue": 210,
+  "sat": 1,
+  "motif": "flow",
+  "transition": "dissolve",
+  "captions": "chroma",
+  "grade": "film",
+  "seed": 713
+ },
+ {
+  "name": "video-norse-tyr-fenrir-hand",
+  "mood": "cosmic",
+  "hue": 244,
+  "sat": 1.07,
+  "motif": "rays",
+  "transition": "zoom",
+  "captions": "chroma",
+  "grade": "teal",
+  "seed": 37
+ },
+ {
+  "name": "video-harishchandra-satya-ki-keemat-long",
+  "mood": "devotion",
+  "hue": -1,
+  "sat": 1.16,
+  "motif": "mandala",
+  "transition": "wipe",
+  "captions": "box",
+  "grade": "teal",
+  "seed": 971
  }
 ]

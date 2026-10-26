@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "long",
+ "titles": [
+  {
+   "t": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा। वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।",
+ "disclaimer": "यह कथा मार्कण्डेय पुराण के अनुसार है; ख़रीदार चांडाल है, कुछ संस्करणों में ब्राह्मण भी बताया गया है।",
+ "hashtags": [
+  "#kathaaya",
+  "#harishchandra",
+  "#markandeyapurana"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "हरिश्चंद्र:|सत्य|क़ीमत",
+ "extraTags": [
+  "harishchandra",
+  "markandeyapurana",
+  "हरिश्चंद्र:",
+  "सत्य",
+  "क़ीमत",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "क्या सच इतना भारी होता है?"
+   ],
+   "support": [
+    "मार्कण्डेय पुराण"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "हरिश्चंद्र: सत्य की"
+ ],
+ "primaryKeyword": "हरिश्चंद्र:",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात"
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "item": "baital-pachisi-vikram.video",
+ "started": "2026-10-25T11:17:33.715Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "cached",
+   "start": 1792927053715,
+   "detail": "beats.json exists",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792927053715,
+   "detail": "23 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "cached",
+   "start": 1792927053715,
+   "detail": "voice exists",
+   "seconds": 0
+  },
+  {
+   "name": "director",
+   "status": "cached",
+   "start": 1792927053715,
+   "detail": "plan.json is current",
+   "seconds": 0
+  },
+  {
+   "name": "coverage",
+   "status": "done",
+   "start": 1792927053716,
+   "detail": "27 extra shots, hold <= 1.5s",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792927053717,
+   "detail": "1 new paintings of 39 scenes",
+   "seconds": 42
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792927095635,
+   "detail": "39 of 39 scenes layered, 0 picture beats fell back to type",
+   "seconds": 9
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792927104688,
+   "detail": "16 camera clips (16 rendered, 0 cached)",
+   "seconds": 45
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792927149612,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792927149681,
+   "detail": "QA all passed",
+   "seconds": 267
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792927416286,
+   "detail": "gold palette, \"मुर्दा क्यों बोला?\"",
+   "seconds": 56
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792927471844,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 419,
+ "ended": "2026-10-25T11:24:32.150Z"
+}

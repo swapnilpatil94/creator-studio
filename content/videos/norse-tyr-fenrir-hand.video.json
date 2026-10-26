@@ -1,0 +1,55 @@
+{
+ "id": "norse-tyr-fenrir-hand.video",
+ "format": "video",
+ "video_format": "short",
+ "slug": "norse-tyr-fenrir-hand",
+ "topic": "norse-tyr-fenrir-hand",
+ "language": "hi",
+ "status": "approved",
+ "hook": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?",
+ "title": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: गद्य एडा (स्नोरी स्टुर्लुसन), गिल्फ़ागिन्निंग, अध्याय 34",
+ "tradition_note": "यह कथा नॉर्स परंपरा के गद्य एडा के अनुसार है; यह भारतीय कथा नहीं है और स्रोत मध्ययुगीन आइसलैंड में लिखा गया।",
+ "hashtags": [
+  "#kathaaya",
+  "#norsemythology",
+  "#tyr"
+ ],
+ "claims": [
+  {
+   "text": "देवताओं ने फ़ेनरिर नाम का भेड़िया पाला",
+   "en": "The gods raised the wolf Fenrir",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "बौनों की बनाई डोरी का नाम ग्लाइप्निर था",
+   "en": "The dwarf-made cord was named Gleipnir",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "टीर ने भेड़िये के मुँह में हाथ रखा",
+   "en": "Tyr put his hand in the wolf's mouth",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "फ़ेनरिर ने टीर का हाथ काट दिया",
+   "en": "Fenrir bit off Tyr's hand",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  }
+ ],
+ "thumb": {
+  "headline": "हाथ का सौदा?",
+  "support": "देवताओं का धोखा",
+  "style": null,
+  "art": null,
+  "scene": null
+ },
+ "created": "2026-10-25"
+}

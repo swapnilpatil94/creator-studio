@@ -1,0 +1,61 @@
+{
+ "id": "harishchandra-satya-ki-keemat-long.video",
+ "format": "video",
+ "video_format": "long",
+ "slug": "harishchandra-satya-ki-keemat-long",
+ "topic": "harishchandra-satya-ki-keemat-long",
+ "language": "hi",
+ "status": "approved",
+ "hook": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात",
+ "title": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात",
+ "slides": [],
+ "art": [],
+ "cta": "सेव करें · फ़ॉलो करें",
+ "source_line": "स्रोत: मार्कण्डेय पुराण, अध्याय 7-8 (हरिश्चंद्र का आख्यान)",
+ "tradition_note": "यह कथा मार्कण्डेय पुराण के अनुसार है; ख़रीदार चांडाल है, कुछ संस्करणों में ब्राह्मण भी बताया गया है।",
+ "hashtags": [
+  "#kathaaya",
+  "#harishchandra",
+  "#markandeyapurana"
+ ],
+ "claims": [
+  {
+   "text": "हरिश्चंद्र अयोध्या का सत्यवादी राजा था",
+   "en": "King Harishchandra of Ayodhya, known for truth",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7"
+  },
+  {
+   "text": "विश्वामित्र ने उसके सत्य की परीक्षा ली",
+   "en": "Vishvamitra tested his truthfulness",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7"
+  },
+  {
+   "text": "उसने राज्य और दक्षिणा के लिए पत्नी और पुत्र को बेचा",
+   "en": "He sold his wife and son for the fee",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7-8"
+  },
+  {
+   "text": "वह चांडाल का सेवक बनकर श्मशान पर रहा",
+   "en": "He served a chandala at the cremation ground",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 8"
+  },
+  {
+   "text": "रोहित को साँप ने डस लिया और देवताओं ने उसे जीवित किया",
+   "en": "Rohita died of a snakebite and was revived by the gods",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 8"
+  }
+ ],
+ "thumb": {
+  "headline": "क्या सच इतना भारी होता है?",
+  "support": "मार्कण्डेय पुराण",
+  "style": null,
+  "art": null,
+  "scene": null
+ },
+ "created": "2026-10-25"
+}

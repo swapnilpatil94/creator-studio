@@ -1,0 +1,389 @@
+{
+ "scene0": {
+  "subject": "PROTAGONIST, a male god with a golden beard",
+  "action": "holding up his severed right hand",
+  "setting": "a stone hall with carved pillars and flickering torches",
+  "lighting": "dramatic torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v001_close": {
+  "subject": "PROTAGONIST, a bearded man with a golden armlet",
+  "action": "gripping a broken sword hilt with his bare hand",
+  "setting": "a stone hall with carved pillars and flickering torches",
+  "lighting": "dramatic torchlight shadows",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v001_insert": {
+  "subject": "PROTAGONIST, a male god",
+  "action": "sacrificing his hand to a glowing altar",
+  "setting": "ancient Norse stone hall with carved pillars",
+  "lighting": "golden firelight from braziers",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene1": {
+  "subject": "PROTAGONIST the god, a young man",
+  "action": "standing beside a wolf pup in his arms",
+  "setting": "a Norse Viking-age hall with carved wooden beams",
+  "lighting": "warm firelight from a central hearth",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v003_close": {
+  "subject": "PROTAGONIST, a bearded man in a woolen tunic and fur cloak",
+  "action": "standing beside a large black wolf with glowing amber eyes",
+  "setting": "a misty forest clearing surrounded by ancient rune-carved stones",
+  "lighting": "cold moonlight filtering through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v003_insert": {
+  "subject": "PROTAGONIST the god, a young man with a golden beard",
+  "action": "standing before a massive wolf with glowing eyes",
+  "setting": "a rocky cliff overlooking a stormy sea",
+  "lighting": "dramatic shadows from lightning",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene2": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "clutching a rune-carved staff as he stares into the darkening sky",
+  "setting": "a windswept Viking-age Norse cliffside at dusk",
+  "lighting": "golden sunset bleeding through storm clouds",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_close": {
+  "subject": "PROTAGONIST, a young man, standing alone",
+  "action": "clutching a glowing rune-stone tightly",
+  "setting": "a dimly lit Norse Viking-age hall with carved wooden pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_insert": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "clutching a rune-carved staff as he stares into the darkening sky",
+  "setting": "a windswept Norse Viking-age cliffside at dusk",
+  "lighting": "amber glow from distant fires",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene3": {
+  "subject": "PROTAGONIST, a male god, struggling against divine chains",
+  "action": "twisting his bound wrists as lightning cracks above",
+  "setting": "a storm-lashed celestial battlefield with broken pillars",
+  "lighting": "blinding flashes of blue lightning",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "floating"
+ },
+ "v005_close": {
+  "subject": "PROTAGONIST, a male god, struggling against divine chains",
+  "action": "twisting his body to break free from glowing silver chains",
+  "setting": "a stone hall with carved pillars and hanging tapestries",
+  "lighting": "golden light from high windows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v005_insert": {
+  "subject": "PROTAGONIST, a male god",
+  "action": "struggling against golden chains that snap and bend",
+  "setting": "a stone hall with carved pillars and flickering torches",
+  "lighting": "dramatic torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene4": {
+  "subject": "PROTAGONIST the god, a young man",
+  "action": "weaving a golden thread with nimble fingers",
+  "setting": "a dimly lit Viking-age hall with wooden pillars",
+  "lighting": "warm glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v007_close": {
+  "subject": "PROTAGONIST the god, a bearded man",
+  "action": "weaving a golden thread on a loom",
+  "setting": "a dimly lit hall with carved wooden pillars",
+  "lighting": "warm glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v007_insert": {
+  "subject": "PROTAGONIST the god, a tall man",
+  "action": "weaving a golden thread with nimble fingers",
+  "setting": "a dimly lit hall with carved wooden pillars",
+  "lighting": "warm glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene5": {
+  "subject": "PROTAGONIST, a young man in a golden-haired Viking-age god",
+  "action": "standing with arms raised, summoning a storm",
+  "setting": "a cliffside above a dark sea at twilight",
+  "lighting": "dramatic lightning flashes",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v009_close": {
+  "subject": "PROTAGONIST, a male god with long silver hair",
+  "action": "standing on a cliff edge, holding a fish by its tail",
+  "setting": "a misty mountain cliff overlooking a dark sea",
+  "lighting": "dappled sunlight through clouds",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v009_insert": {
+  "subject": "PROTAGONIST the god, a bearded man in a wolf pelt",
+  "action": "clutching a broken branch as a storm brews",
+  "setting": "a windswept cliff overlooking a dark sea",
+  "lighting": "dramatic storm light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene6": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "grips a thin cord tightly with his left hand",
+  "setting": "a dimly lit Norse Viking-age hall with wooden pillars",
+  "lighting": "low firelight from a brazier",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v010_close": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "pulls a thin rope taut between two trees",
+  "setting": "a misty forest clearing with fallen logs",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v010_insert": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "stares suspiciously at a thin, silver thread in his hand",
+  "setting": "a dimly lit Norse hall with wooden pillars and hanging furs",
+  "lighting": "low, flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene7": {
+  "subject": "PROTAGONIST the god, a bearded man",
+  "action": "holding his jaw in pain as another god presses a hand to his mouth",
+  "setting": "inside a stone hall with carved wooden pillars",
+  "lighting": "dim, with flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v011_close": {
+  "subject": "PROTAGONIST, a male god, standing defiantly",
+  "action": "holding his jaw with one hand and raising his other in a plea",
+  "setting": "a stone hall with carved pillars and hanging tapestries",
+  "lighting": "dramatic torchlight casting long shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene8": {
+  "subject": "PROTAGONIST, a bearded man with a golden torque",
+  "action": "ties a leather thong around a wolf's snout",
+  "setting": "a stone hall with iron-bound doors and hanging animal hides",
+  "lighting": "flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v012_close": {
+  "subject": "PROTAGONIST, a young male god, a female priestess",
+  "action": "tying a red leather thong around his wrist",
+  "setting": "a stone hall with carved wooden pillars and hanging animal hides",
+  "lighting": "warm firelight from clay lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v014_close": {
+  "subject": "PROTAGONIST, a strong man with a braided beard",
+  "action": "places his hand into the mouth of a snarling wolf",
+  "setting": "a rocky cliffside in a dark forest",
+  "lighting": "moonlight filtering through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v014_insert": {
+  "subject": "PROTAGONIST, a male god, standing before a wolf",
+  "action": "places his hand into the wolf's open mouth",
+  "setting": "a rocky cliff overlooking a dark forest",
+  "lighting": "moonlight casting long shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene9": {
+  "subject": "PROTAGONIST, a bearded man with a golden torque",
+  "action": "clenching his jaw as his arm is severed by a sharp blade",
+  "setting": "a stone hall with iron chains on the floor and pillars",
+  "lighting": "dim, flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v015_close": {
+  "subject": "PROTAGONIST, a bearded man",
+  "action": "struggling as iron chains tighten",
+  "setting": "stone hall with carved pillars",
+  "lighting": "dim, flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v015_insert": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "struggling as iron chains tighten around his wrists",
+  "setting": "a stone hall with torches on the walls",
+  "lighting": "flame-lit shadows",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v016_close": {
+  "subject": "PROTAGONIST the god, a young man",
+  "action": "clutching his severed arm as blood flows",
+  "setting": "a stone hall with carved pillars and burning torches",
+  "lighting": "dramatic torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v016_insert": {
+  "subject": "PROTAGONIST the god, a bearded man",
+  "action": "clutching his severed arm, staring in shock",
+  "setting": "a stone hall with carved pillars and banners",
+  "lighting": "dull torchlight flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene10": {
+  "subject": "PROTAGONIST, a male god with one visible hand",
+  "action": "raises his remaining hand toward a glowing rune stone",
+  "setting": "a Norse Viking-age temple with carved wooden pillars and stone altars",
+  "lighting": "ethereal blue light from the rune",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v017_close": {
+  "subject": "PROTAGONIST, a bearded man with a golden torque",
+  "action": "grasping a sword hilt with his right hand",
+  "setting": "a dimly lit Viking-age hall with carved wooden beams",
+  "lighting": "warm firelight from a central hearth",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v017_insert": {
+  "subject": "PROTAGONIST, a bearded man with a golden horn",
+  "action": "raises his hand toward a glowing rune stone",
+  "setting": "a dimly lit Norse Viking-age hall with carved wooden pillars",
+  "lighting": "amber glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v018_close": {
+  "subject": "The god, a young man with one raised hand",
+  "action": "standing atop a rocky hill",
+  "setting": "a windswept Norse Viking-age cliff",
+  "lighting": "golden sunset glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v018_insert": {
+  "subject": "PROTAGONIST, a male god with one visible hand",
+  "action": "standing atop a rocky outcrop, raising his single hand toward the sky",
+  "setting": "a windswept cliff overlooking a stormy sea",
+  "lighting": "dramatic, golden-hour glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "scene11": {
+  "subject": "the god, a young man with golden hair",
+  "action": "raising a glowing sword above his head",
+  "setting": "a storm-lit Viking-age temple with carved stone pillars",
+  "lighting": "dramatic lightning flashes",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v019_close": {
+  "subject": "PROTAGONIST, a male god, standing with a female goddess",
+  "action": "receiving a golden chalice from her outstretched hand",
+  "setting": "a grand hall with carved wooden pillars and woven tapestries",
+  "lighting": "warm candlelight casting long shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v019_insert": {
+  "subject": "PROTAGONIST the god, a bearded man",
+  "action": "receiving a golden chalice from a robed woman",
+  "setting": "a stone hall with carved pillars and hanging tapestries",
+  "lighting": "warm torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v020_close": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "clutching a broken amulet to his chest",
+  "setting": "a storm-lashed Viking-age temple courtyard",
+  "lighting": "flickering torchlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v020_insert": {
+  "subject": "PROTAGONIST the god, a bearded man with a golden horn",
+  "action": "clutching his chest as shadows swirl around him",
+  "setting": "a storm-lit Norse Viking-age hall with carved wooden beams",
+  "lighting": "dramatic flicker of firelight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "ravi"
+ },
+ "v021_wide": {
+  "subject": "PROTAGONIST, a bearded man in a woolen cloak",
+  "action": "striding across a rocky slope with a hammer over his shoulder",
+  "setting": "a misty mountain pass in the Vindhya range",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v021_close": {
+  "subject": "PROTAGONIST, a young man in a golden torc and fur cloak",
+  "action": "gripping a jagged stone as the earth trembles",
+  "setting": "a misty mountain pass with snow-covered pines",
+  "lighting": "dappled blue light from storm clouds",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v021_insert": {
+  "subject": "PROTAGONIST, a young man with a golden beard",
+  "action": "standing atop a mountain, holding a flaming sword",
+  "setting": "a misty mountain peak in the Norse Viking-age",
+  "lighting": "dramatic firelight and shadow",
+  "medium": "photoreal",
+  "src": "writer"
+ }
+}

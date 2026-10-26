@@ -1,0 +1,93 @@
+{
+ "item": "harishchandra-satya-ki-keemat-long.video",
+ "started": "2026-10-25T14:47:05.092Z",
+ "minutes": 12,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792939625092,
+   "detail": "48 beats, 558 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792939625094,
+   "detail": "48 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "done",
+   "start": 1792939625094,
+   "detail": "179 s of speech",
+   "seconds": 593
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792940218310,
+   "detail": "48 beats, 7 visual types, 13 new scenes, 0 carousel paintings reused, 0 by rules",
+   "seconds": 379
+  },
+  {
+   "name": "coverage",
+   "status": "done",
+   "start": 1792940597606,
+   "detail": "81 extra shots, hold <= 1.5s",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792940597607,
+   "detail": "94 new paintings of 94 scenes",
+   "seconds": 6516
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792947113297,
+   "detail": "94 of 94 scenes layered, 0 picture beats fell back to type",
+   "seconds": 69
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792947182092,
+   "detail": "63 camera clips (63 rendered, 0 cached)",
+   "seconds": 121
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792947302948,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792947303018,
+   "detail": "QA all passed",
+   "seconds": 430
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792947733033,
+   "detail": "gold palette, \"क्या सच इतना भारी होता है?\"",
+   "seconds": 0
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792947733035,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 8108,
+ "ended": "2026-10-25T17:02:13.369Z"
+}

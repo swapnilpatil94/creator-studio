@@ -1,0 +1,530 @@
+[
+ {
+  "id": "v001",
+  "text": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "पर उसे यहाँ तक पहुँचाने वाला, सिर्फ़ एक वचन था।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "मार्कण्डेय पुराण के अनुसार, हरिश्चंद्र अयोध्या का सत्यवादी और दानी राजा था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "ऋषि विश्वामित्र ने तय किया कि वे उसके सत्य की परीक्षा लेंगे।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "राजा ने दान देने का वचन दिया, और वचन से पीछे हटना उसने कभी जाना ही नहीं।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "लोग कहते हैं, राजा का सबसे बड़ा धन प्रजा होती है, पर हरिश्चंद्र का सबसे बड़ा धन उसका वचन था।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "ऋषि ने कहा, \"मुझे तुम्हारा पूरा राज्य चाहिए, ख़ज़ाना भी, सब कुछ।\"",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "ऋषि की माँग हर बार बड़ी होती गई, और राजा का उत्तर हर बार वही रहा।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "हरिश्चंद्र ने एक पल सोचा नहीं, और सारा राज्य उन्हें सौंप दिया।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "फिर ऋषि बोले, \"दान के बाद दक्षिणा भी देनी पड़ती है।\"",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "अब राजा के पास देने को कुछ भी नहीं बचा था।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "वह पत्नी शैव्या और छोटे पुत्र रोहित को लेकर, अयोध्या से निकल पड़ा।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "तीनों काशी पहुँचे, जहाँ राजा कभी मुकुट पहनकर नहीं, सिर झुकाकर आया था।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "पर दक्षिणा अभी बाक़ी थी, और ऋषि का इंतज़ार ख़त्म हो रहा था।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "मार्कण्डेय पुराण के अनुसार, ऋषि ने दक्षिणा का समय तय कर दिया।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "राजा के पास बचा था सिर्फ़ अपना परिवार, और अपनी देह।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "उसने सबसे कठिन फ़ैसला लिया, और अपनी पत्नी और पुत्र को बेचने निकल पड़ा।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "कथा के अनुसार, पत्नी शैव्या ने ही सुझाया कि वह भी बिक जाएँ, ताकि वचन न टूटे।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "एक ब्राह्मण ने उन्हें ख़रीदा, और शैव्या दासी बनकर चली गई।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "राजा की आँखों में आँसू थे, पर हाथ वही थे, जो कभी राजदंड थामते थे।",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v022",
+  "text": "रोहित, इतना छोटा था कि वह समझ भी नहीं पाया कि क्या हो रहा है।",
+  "intent": "awe",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "22",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v023",
+  "text": "राजा ने जो पैसे पाए, वे ऋषि के सामने रख दिए।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "23",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v024",
+  "text": "पर ऋषि ने कहा, \"यह दक्षिणा के लिए अभी भी कम है।\"",
+  "intent": "tense",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "24",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v025",
+  "text": "राजा के पास अब सिर्फ़ वह ख़ुद था।",
+  "intent": "punch",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "25",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v026",
+  "text": "उसने ख़ुद को एक चांडाल के हाथों बेच दिया।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "26",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v027",
+  "text": "चांडाल ने उसे श्मशान घाट पर तैनात कर दिया।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "27",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v028",
+  "text": "उसका काम था, हर चिता जलाने वाले से, कर वसूलना।",
+  "intent": "narrate",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "28",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v029",
+  "text": "जो कल तक राजा था, वह आज सबका शोक गिनता था।",
+  "intent": "reflective",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "29",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v030",
+  "text": "पर सबसे बड़ा इम्तिहान अभी बाक़ी था।",
+  "intent": "curious",
+  "chapter": "ch2",
+  "visual": {
+   "type": "painting",
+   "ref": "30",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v031",
+  "text": "मार्कण्डेय पुराण के अनुसार, एक दिन रोहित को साँप ने डस लिया।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "31",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v032",
+  "text": "वह बालक वहीं गिर पड़ा, और उसके प्राण चले गए।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "32",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v033",
+  "text": "माँ शैव्या को ख़बर मिली, और वह अपने पुत्र का शव लेकर निकली।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "33",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v034",
+  "text": "वह रोती हुई, वही रास्ता चलकर, श्मशान घाट पहुँची।",
+  "intent": "narrate",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "34",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v035",
+  "text": "रात का सन्नाटा, सिर्फ़ चिताओं की चटक से टूटता था।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "35",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v036",
+  "text": "वहाँ हरिश्चंद्र अपनी जगह खड़ा था, और रात गहरी थी।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "36",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v037",
+  "text": "उसने शैव्या को पहचान लिया, और शव में अपने बेटे को।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "37",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v038",
+  "text": "कथा के अनुसार, दोनों ने एक-दूसरे को पहचाना, और दोनों चुप रहे।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "38",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v039",
+  "text": "पर उसने अपना धर्म नहीं छोड़ा।",
+  "intent": "punch",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "39",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v040",
+  "text": "उस पल एक पिता और एक सेवक के बीच, कोई जीत नहीं सकता था।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "40",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v041",
+  "text": "उसने कहा, \"कर चुकाओ, तभी अंतिम संस्कार होगा।\"",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "41",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v042",
+  "text": "शैव्या के पास कुछ भी नहीं था, सिर्फ़ अपनी साड़ी का आँचल।",
+  "intent": "tense",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "42",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v043",
+  "text": "जैसे ही वह आँचल देने को हुई, आसमान चमक उठा।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "43",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v044",
+  "text": "यमराज, देवता और ऋषि विश्वामित्र स्वयं वहाँ प्रकट हो गए।",
+  "intent": "reveal",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "44",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v045",
+  "text": "रोहित जी उठा, और राजा को उसका राज्य लौटा दिया गया।",
+  "intent": "awe",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "45",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v046",
+  "text": "जिसने सब खोकर भी सत्य नहीं छोड़ा, उसे सब लौट आया।",
+  "intent": "reflective",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "46",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v047",
+  "text": "आप बताइए, इतना कठोर सत्य, धर्म है या अति?",
+  "intent": "curious",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "47",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v048",
+  "text": "अगली कथा में, बिके हुए राजा के बाद, एक राजा जिसे नदी ने पहचाना। फ़ॉलो कीजिए।",
+  "intent": "reflective",
+  "chapter": "ch3",
+  "visual": {
+   "type": "painting",
+   "ref": "48",
+   "mode": "reveal"
+  }
+ }
+]

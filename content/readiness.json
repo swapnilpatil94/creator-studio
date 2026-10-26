@@ -1,0 +1,473 @@
+{
+ "generated": "2026-10-25T13:33:37.967Z",
+ "mode": "local",
+ "from": "2026-10-25",
+ "days": [
+  {
+   "date": "2026-10-25",
+   "cards": [
+    {
+     "id": "wc100e49e",
+     "slug": "pandu-kindama-curse",
+     "title": "पांडु को किसने शाप दिया, और पुत्र कैसे हुए?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": []
+    },
+    {
+     "id": "w3e8f0bae",
+     "slug": "karna-janm-kavach-long",
+     "title": "कर्ण का जन्म: कुंती ने पहले पुत्र को क्यों छोड़ा?",
+     "format": "long",
+     "time": "20:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": []
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-26",
+   "cards": [
+    {
+     "id": "w71d3e92e",
+     "slug": "raurava-narak-ruru-dansh",
+     "title": "रौरव नरक: धोखेबाज़ों को रुरु क्यों डसते हैं?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": []
+    },
+    {
+     "id": "w5f261459",
+     "slug": "lakshagriha-pandava-escape",
+     "title": "लाक्षागृह: पांडवों को जलाने की साज़िश कैसे टूटी?",
+     "format": "long",
+     "time": "20:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": []
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-27",
+   "cards": [
+    {
+     "id": "w348e9d25",
+     "slug": "shiva-neelkanth-poison",
+     "title": "शिव ने विष क्यों पिया, और नीलकंठ क्यों कहलाए?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": []
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-28",
+   "cards": [
+    {
+     "id": "w535851a0",
+     "slug": "",
+     "title": "महारौरव नरक: जो सिर्फ़ अपना पेट पालता है, उसे क्रव्याद रुरु क्यों खाते हैं?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": false,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "no script yet",
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-29",
+   "cards": [
+    {
+     "id": "wdb2aa24a",
+     "slug": "baital-pachisi-vikram",
+     "title": "बेताल पच्चीसी की वह रात: राजा विक्रम की अनसुनी शर्त",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": true,
+      "thumb": true,
+      "copy": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-30",
+   "cards": [
+    {
+     "id": "wbf3c90ac",
+     "slug": "norse-tyr-fenrir-hand",
+     "title": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-10-31",
+   "cards": [
+    {
+     "id": "we789f418",
+     "slug": "agastya-vindhya-bowing",
+     "title": "विंध्य पर्वत आज भी झुका क्यों है?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-01",
+   "cards": [
+    {
+     "id": "w79aad1b4",
+     "slug": "egypt-ra-night-journey",
+     "title": "हर रात सूर्य मरता क्यों था? रा की पाताल यात्रा",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-02",
+   "cards": [
+    {
+     "id": "wc2ca0d0b",
+     "slug": "tirupati-balaji-debt-kubera",
+     "title": "बालाजी पर कुबेर का कर्ज़: क्या वे आज भी ब्याज चुका रहे हैं?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-03",
+   "cards": [
+    {
+     "id": "w46a6a4cf",
+     "slug": "mesopotamia-adapa-refused-food",
+     "title": "अडापा ने अमरता की रोटी खाने से क्यों मना कर दिया?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-04",
+   "cards": [
+    {
+     "id": "w0ec36a44",
+     "slug": "chhaya-sanjna-yama-leg",
+     "title": "छाया को पीछे छोड़कर चली गई संज्ञा: जब यम ने माँ पर पैर उठाया",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-05",
+   "cards": [
+    {
+     "id": "w553c71bb",
+     "slug": "ambarisha-durvasa",
+     "title": "सुदर्शन चक्र ने दुर्वासा का पीछा क्यों किया?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-06",
+   "cards": [
+    {
+     "id": "wcfeb2e1d",
+     "slug": "hima-prince-yama-deepam",
+     "title": "धनतेरस: 16 साल के राजकुमार को यमदूत क्यों नहीं ले जा सके?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  },
+  {
+   "date": "2026-11-07",
+   "cards": [
+    {
+     "id": "w279adf6f",
+     "slug": "puranjana-nine-gates-city",
+     "title": "नौ दरवाज़ों वाला नगर और राजा पुरंजन: वह कथा जो शरीर की पहेली है",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "video": false,
+      "thumb": false,
+      "copy": false,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "video not built on this Mac",
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
+  }
+ ],
+ "need": 7,
+ "summary": {
+  "needed": 7,
+  "ready": 0,
+  "missing": [
+   "2026-10-25",
+   "2026-10-26",
+   "2026-10-27",
+   "2026-10-28",
+   "2026-10-29",
+   "2026-10-30",
+   "2026-10-31"
+  ],
+  "ok": false
+ }
+}

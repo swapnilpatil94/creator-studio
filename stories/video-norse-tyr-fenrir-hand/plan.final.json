@@ -1,0 +1,612 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "pull",
+   "label": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया",
+   "behind": "एक देवता की बलि",
+   "reveal": "circle",
+   "fx": "split_screen_vs",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "drone_pull_out_reveal",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v001_insert",
+     "framing": "insert",
+     "of": "scene0",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "img2": "scene1",
+   "labels": [],
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "उसने *भेड़िये* के मुँह में हाथ क्यों"
+   ],
+   "style": "wave",
+   "tone": "cold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "fx",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "गद्य एडा के अनुसार, देवताओं ने एक भेड़िया पाला, फ़ेनरिर नाम का।",
+   "reveal": "wipe",
+   "fx": "drone_orbit_180",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "2.5d_parallax",
+     "fxBy": "cinema",
+     "clip": "v003_v003_close",
+     "clip_n": 117
+    },
+    {
+     "img": "v003_insert",
+     "framing": "insert",
+     "of": "scene1",
+     "fx": "depth_rack_focus",
+     "clip": "v003_v003_insert",
+     "clip_n": 117
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "clip": "v003",
+   "clip_n": 117
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_fpv_flythrough",
+   "img": "scene2",
+   "move": "push",
+   "sticker": "burst",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "handheld_breathing_shake",
+     "fxBy": "cinema",
+     "clip": "v004_v004_close",
+     "clip_n": 88
+    },
+    {
+     "img": "v004_insert",
+     "framing": "insert",
+     "of": "scene2",
+     "fx": "depth_rack_focus",
+     "clip": "v004_v004_insert",
+     "clip_n": 88
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "clip": "v004",
+   "clip_n": 88
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "fx",
+  "params": {
+   "img": "scene3",
+   "move": "push",
+   "label": "देवताओं ने उसे बाँधने की ठानी, पर मज़बूत ज़ंजीर नहीं टिकी",
+   "reveal": "circle",
+   "fx": "particle_formation",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "parallax_occlusion_3d",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v005_insert",
+     "framing": "insert",
+     "of": "scene3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "दो बार *ज़ंजीरें* बनीं दोनों बार"
+   ],
+   "style": "mask",
+   "tone": "ember",
+   "transition": "gl:doorway",
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "img": "scene4",
+   "move": "panR",
+   "label": "तब बौनों ने एक रेशमी डोरी बनाई, नाम था ग्लाइप्निर",
+   "reveal": "diamond",
+   "fx": "morph_age_shift",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "double_exposure_cosmos",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v007_insert",
+     "framing": "insert",
+     "of": "scene4",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "iconlist",
+  "params": {
+   "title": "ग्लाइप्निर में क्या था?",
+   "items": [
+    {
+     "icon": "🐾",
+     "text": "बिल्ली के पैरों की आहट"
+    },
+    {
+     "icon": "耏",
+     "text": "औरत की दाढ़ी"
+    }
+   ],
+   "tone": "ember",
+   "transition": "whip"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "img": "scene5",
+   "move": "pull",
+   "fx": "infinite_zoom_droste",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "depth_fog_haze",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v009_insert",
+     "framing": "insert",
+     "of": "scene5",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "fx",
+  "params": {
+   "fx": "dolly_zoom_vertigo",
+   "img": "scene6",
+   "move": "pull",
+   "sticker": "burst",
+   "tone": "ember",
+   "transition": "gl:swap",
+   "shots": [
+    {
+     "img": "v010_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "matte_painting_extension",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v010_insert",
+     "framing": "insert",
+     "of": "scene6",
+     "fx": "depth_rack_focus",
+     "clip": "v010_v010_insert",
+     "clip_n": 99
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema",
+   "clip": "v010",
+   "clip_n": 99
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panL",
+   "fx": "day_to_night_timelapse",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "mesh_ken_burns_3d",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v012",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene8",
+   "move": "panR",
+   "fx": "lightning_flash",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "depth_rack_focus",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v013",
+  "chapter": "ch1",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "सब *देवता* चुप रहे"
+   ],
+   "style": "spring",
+   "tone": "fire",
+   "transition": "gl:GlitchMemories",
+   "trBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v014",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene8",
+   "move": "pull",
+   "fx": "kinetography_cinemagraph",
+   "tone": "fire",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "diya_flicker_light",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v014_insert",
+     "framing": "insert",
+     "of": "scene8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v015",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene9",
+   "move": "panL",
+   "fx": "mesh_dolly_zoom_vertigo",
+   "tone": "ember",
+   "transition": "gl:cube",
+   "shots": [
+    {
+     "img": "v015_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "speed_ramp_punch",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v015_insert",
+     "framing": "insert",
+     "of": "scene9",
+     "fx": "depth_rack_focus",
+     "clip": "v015_v015_insert",
+     "clip_n": 96
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema",
+   "clip": "v015",
+   "clip_n": 97
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v016",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene9",
+   "move": "panR",
+   "fx": "eye_glow_energy_pulse",
+   "sticker": "burst",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "puppet_warp_breathing",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v016_insert",
+     "framing": "insert",
+     "of": "scene9",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v017",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene10",
+   "move": "push",
+   "fx": "volumetric_god_rays",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v017_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v018",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene10",
+   "move": "pull",
+   "fx": "sacred_geometry_carve",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v018_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v019",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene11",
+   "move": "panL",
+   "fx": "mesh_crane_push",
+   "tone": "gold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in",
+     "clip": "v019_v019_close",
+     "clip_n": 97
+    },
+    {
+     "img": "v019_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus",
+     "clip": "v019_v019_insert",
+     "clip_n": 97
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "clip": "v019",
+   "clip_n": 98
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v020",
+  "chapter": "ch1",
+  "comp": "fx",
+  "params": {
+   "img": "scene11",
+   "move": "panR",
+   "fx": "crane_up_reveal",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v020_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "chromatic_glitch_wipe",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v020_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus",
+     "clip": "v020_v020_insert",
+     "clip_n": 108
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "clip": "v020",
+   "clip_n": 108
+  },
+  "from": "rules"
+ },
+ {
+  "id": "v021",
+  "comp": "fx",
+  "params": {
+   "img": "scene11",
+   "move": "panL",
+   "label": "अगली कथा में",
+   "behind": "विंध्य पर्वत के रहस्य",
+   "fx": "crane_down",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v021_wide",
+     "framing": "wide",
+     "of": "scene11",
+     "fx": "drone_top_down_bird_eye",
+     "fxBy": "cinema",
+     "clip": "v021_v021_wide",
+     "clip_n": 176
+    },
+    {
+     "img": "v021_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in",
+     "clip": "v021_v021_close",
+     "clip_n": 176
+    },
+    {
+     "img": "v021_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus",
+     "clip": "v021_v021_insert",
+     "clip_n": 176
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "clip": "v021",
+   "clip_n": 176
+  },
+  "chapter": "ch1"
+ }
+]

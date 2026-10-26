@@ -1,0 +1,93 @@
+{
+ "item": "norse-tyr-fenrir-hand.video",
+ "started": "2026-10-25T13:34:13.942Z",
+ "minutes": 3,
+ "stages": [
+  {
+   "name": "script",
+   "status": "done",
+   "start": 1792935253942,
+   "detail": "21 beats, 211 words, by owner",
+   "seconds": 0
+  },
+  {
+   "name": "prepare",
+   "status": "done",
+   "start": 1792935253944,
+   "detail": "21 beats, 0 carousel paintings",
+   "seconds": 0
+  },
+  {
+   "name": "voice",
+   "status": "done",
+   "start": 1792935253944,
+   "detail": "70 s of speech",
+   "seconds": 235
+  },
+  {
+   "name": "director",
+   "status": "done",
+   "start": 1792935488517,
+   "detail": "21 beats, 5 visual types, 12 new scenes, 0 carousel paintings reused, 10 by rules",
+   "seconds": 200
+  },
+  {
+   "name": "coverage",
+   "status": "done",
+   "start": 1792935688306,
+   "detail": "33 extra shots, hold <= 1.5s",
+   "seconds": 0
+  },
+  {
+   "name": "art",
+   "status": "done",
+   "start": 1792935688307,
+   "detail": "45 new paintings of 45 scenes",
+   "seconds": 3434
+  },
+  {
+   "name": "layers+scene",
+   "status": "done",
+   "start": 1792939121867,
+   "detail": "45 of 45 scenes layered, 0 picture beats fell back to type",
+   "seconds": 76
+  },
+  {
+   "name": "camera",
+   "status": "done",
+   "start": 1792939197660,
+   "detail": "19 camera clips (19 rendered, 0 cached)",
+   "seconds": 42
+  },
+  {
+   "name": "sound",
+   "status": "done",
+   "start": 1792939240031,
+   "detail": "",
+   "seconds": 0
+  },
+  {
+   "name": "render+QA",
+   "status": "done",
+   "start": 1792939240121,
+   "detail": "QA all passed",
+   "seconds": 211
+  },
+  {
+   "name": "thumbnail",
+   "status": "done",
+   "start": 1792939451483,
+   "detail": "gold palette, \"हाथ का सौदा?\"",
+   "seconds": 59
+  },
+  {
+   "name": "package",
+   "status": "done",
+   "start": 1792939510537,
+   "detail": "seo.mjs ok, social.mjs ok",
+   "seconds": 0
+  }
+ ],
+ "total_seconds": 4257,
+ "ended": "2026-10-25T14:45:10.817Z"
+}

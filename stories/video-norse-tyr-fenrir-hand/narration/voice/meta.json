@@ -1,0 +1,511 @@
+{
+ "story": "video-norse-tyr-fenrir-hand",
+ "profile": "kathaaya-reels-v2",
+ "post": "natural",
+ "tempo_scale": 0.8692,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 211,
+ "duration_s": 69.79,
+ "speech_words_per_s": 3.3,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 0.975,
+   "start": 0.0,
+   "end": 2.503,
+   "tries": 1,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया.",
+   "raw_dur_s": 2.45,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "उसने भेड़िये के मुँह में हाथ क्यों रखा?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 2.743,
+   "end": 4.749,
+   "tries": 1,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "उसने भेड़िये के मुँह में हाथ क्यों रखा?",
+   "raw_dur_s": 1.92,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 4.18,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "गद्य एडा के अनुसार, देवताओं ने एक भेड़िया पाला, फ़ेनरिर नाम का।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 5.049,
+   "end": 9.107,
+   "tries": 1,
+   "beat": "v003",
+   "pause_after": 0.22,
+   "spoken": "गद्य एडा के अनुसार, देवताओं ने एक भेड़िया पाला, फ़ेनरिर नाम का.",
+   "raw_dur_s": 4.26,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 2.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "वह रोज़ बढ़ता गया, और डर भी साथ बढ़ता गया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 9.327,
+   "end": 12.174,
+   "tries": 1,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "वह रोज़ बढ़ता गया, और डर भी साथ बढ़ता गया.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 3.69,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "देवताओं ने उसे बाँधने की ठानी, पर मज़बूत ज़ंजीर नहीं टिकी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 12.394,
+   "end": 15.996,
+   "tries": 1,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "देवताओं ने उसे बाँधने की ठानी, पर मज़बूत ज़ंजीर नहीं टिकी.",
+   "raw_dur_s": 3.79,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 2.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "दो बार ज़ंजीरें बनीं, दोनों बार फ़ेनरिर ने तोड़ दीं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 16.216,
+   "end": 19.301,
+   "tries": 1,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "दो बार ज़ंजीरें बनीं, दोनों बार फ़ेनरिर ने तोड़ दीं.",
+   "raw_dur_s": 2.95,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 3.39,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "तब बौनों ने एक रेशमी डोरी बनाई, नाम था ग्लाइप्निर।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 19.521,
+   "end": 22.586,
+   "tries": 1,
+   "beat": "v007",
+   "pause_after": 0.22,
+   "spoken": "तब बौनों ने एक रेशमी डोरी बनाई, नाम था ग्लाइप्निर.",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "उसमें क्या था?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 22.806,
+   "end": 23.662,
+   "tries": 1,
+   "beat": "v008",
+   "pause_after": 0.12,
+   "spoken": "उसमें क्या था?",
+   "raw_dur_s": 0.82,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 3.66,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.2",
+   "text": "बिल्ली के पैरों की आहट, औरत की दाढ़ी।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 23.782,
+   "end": 26.331,
+   "tries": 1,
+   "beat": "v008",
+   "pause_after": 0.3,
+   "spoken": "बिल्ली के पैरों की आहट, औरत की दाढ़ी.",
+   "raw_dur_s": 2.43,
+   "checks": [
+    {
+     "seed": 53578,
+     "rate": 3.29,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "पहाड़ की जड़ें, मछली की साँस, और पक्षी की थूक।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 26.631,
+   "end": 29.69,
+   "tries": 1,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "पहाड़ की जड़ें, मछली की साँस, और पक्षी की थूक.",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.42,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "फ़ेनरिर को शक हुआ, \"इतनी पतली डोरी में कोई धोखा है।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 29.91,
+   "end": 33.219,
+   "tries": 1,
+   "beat": "v010",
+   "pause_after": 0.22,
+   "spoken": "फ़ेनरिर को शक हुआ, \"इतनी पतली डोरी में कोई धोखा है.\"",
+   "raw_dur_s": 3.15,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 3.49,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "वह बोला, \"कोई एक देवता मेरे मुँह में हाथ रखे।\"",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 33.439,
+   "end": 36.17,
+   "tries": 1,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "वह बोला, \"कोई एक देवता मेरे मुँह में हाथ रखे.\"",
+   "raw_dur_s": 2.6,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "\"तो मैं यह डोरी बँधवा लूँगा।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 36.39,
+   "end": 37.982,
+   "tries": 1,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "\"तो मैं यह डोरी बँधवा लूँगा.\"",
+   "raw_dur_s": 1.52,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 3.95,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "सब देवता चुप रहे।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 0.975,
+   "start": 38.202,
+   "end": 39.496,
+   "tries": 1,
+   "beat": "v013",
+   "pause_after": 0.28,
+   "spoken": "सब देवता चुप रहे.",
+   "raw_dur_s": 1.27,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "तब टीर आगे बढ़ा, और हाथ भेड़िये के मुँह में रख दिया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 39.776,
+   "end": 42.888,
+   "tries": 3,
+   "beat": "v014",
+   "pause_after": 0.38,
+   "spoken": "तब टीर आगे बढ़ा, और हाथ भेड़िये के मुँह में रख दिया.",
+   "raw_dur_s": 2.96,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 4.55,
+     "problems": [
+      "raw pace 4.6 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 74911,
+     "rate": 4.49,
+     "problems": [
+      "raw pace 4.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 82830,
+     "rate": 4.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "फ़ेनरिर बँध गया, ज़ंजीर कसती गई, वह छूट न पाया।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.05,
+   "start": 43.268,
+   "end": 46.462,
+   "tries": 1,
+   "beat": "v015",
+   "pause_after": 0.22,
+   "spoken": "फ़ेनरिर बँध गया, ज़ंजीर कसती गई, वह छूट न पाया.",
+   "raw_dur_s": 3.35,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "देवता हँसे, पर टीर नहीं।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 46.682,
+   "end": 48.425,
+   "tries": 1,
+   "beat": "v016",
+   "pause_after": 0.23,
+   "spoken": "देवता हँसे, पर टीर नहीं.",
+   "raw_dur_s": 1.66,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 3.0,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.2",
+   "text": "फ़ेनरिर ने उसका हाथ काट दिया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 48.655,
+   "end": 50.398,
+   "tries": 1,
+   "beat": "v016",
+   "pause_after": 0.48,
+   "spoken": "फ़ेनरिर ने उसका हाथ काट दिया.",
+   "raw_dur_s": 1.66,
+   "checks": [
+    {
+     "seed": 62245,
+     "rate": 3.61,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "टीर जानता था कि हाथ जाएगा, फिर भी रुका नहीं।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 50.878,
+   "end": 53.62,
+   "tries": 1,
+   "beat": "v017",
+   "pause_after": 0.38,
+   "spoken": "टीर जानता था कि हाथ जाएगा, फिर भी रुका नहीं.",
+   "raw_dur_s": 2.61,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.83,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "इसी वजह से, कथाओं में टीर को एक हाथ वाला देवता कहा गया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 54.0,
+   "end": 57.863,
+   "tries": 1,
+   "beat": "v018",
+   "pause_after": 0.22,
+   "spoken": "इसी वजह से, कथाओं में टीर को एक हाथ वाला देवता कहा गया.",
+   "raw_dur_s": 3.68,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 3.53,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "देवताओं ने सुरक्षा पाई, और एक ने उसका दाम चुकाया।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 58.083,
+   "end": 61.163,
+   "tries": 1,
+   "beat": "v019",
+   "pause_after": 0.38,
+   "spoken": "देवताओं ने सुरक्षा पाई, और एक ने उसका दाम चुकाया.",
+   "raw_dur_s": 2.93,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 3.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v020.1",
+   "text": "आप कहेंगे, टीर बहादुर था, या देवताओं ने उसे धोखे में रखा?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 61.543,
+   "end": 65.157,
+   "tries": 1,
+   "beat": "v020",
+   "pause_after": 0.3,
+   "spoken": "आप कहेंगे, टीर बहादुर था, या देवताओं ने उसे धोखे में रखा?",
+   "raw_dur_s": 3.44,
+   "checks": [
+    {
+     "seed": 31989,
+     "rate": 3.48,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v021.1",
+   "text": "अगली कथा में, विंध्य पर्वत आज भी झुका क्यों है?। फ़ॉलो कीजिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 65.457,
+   "end": 69.489,
+   "tries": 1,
+   "beat": "v021",
+   "pause_after": 0.3,
+   "spoken": "अगली कथा में, विंध्य पर्वत आज भी झुका क्यों है?. फ़ॉलो कीजिए.",
+   "raw_dur_s": 3.84,
+   "checks": [
+    {
+     "seed": 70029,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

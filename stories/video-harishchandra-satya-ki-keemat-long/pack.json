@@ -1,0 +1,404 @@
+{
+ "slug": "harishchandra-satya-ki-keemat-long",
+ "format": "long",
+ "title": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात",
+ "thumb": "क्या सच इतना भारी होता है?",
+ "thumbSupport": "मार्कण्डेय पुराण",
+ "thumbStyle": null,
+ "thumbArt": null,
+ "thumbScene": null,
+ "source_line": "स्रोत: मार्कण्डेय पुराण, अध्याय 7-8 (हरिश्चंद्र का आख्यान)",
+ "tradition": "यह कथा मार्कण्डेय पुराण के अनुसार है; ख़रीदार चांडाल है, कुछ संस्करणों में ब्राह्मण भी बताया गया है।",
+ "hashtags": [
+  "#kathaaya",
+  "#harishchandra",
+  "#markandeyapurana"
+ ],
+ "look": {},
+ "beats": [
+  {
+   "n": 1,
+   "text": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा।",
+   "intent": "hook",
+   "accent": null,
+   "chapter": "वचन का दान"
+  },
+  {
+   "n": 2,
+   "text": "वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "पर उसे यहाँ तक पहुँचाने वाला, सिर्फ़ एक वचन था।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "मार्कण्डेय पुराण के अनुसार, हरिश्चंद्र अयोध्या का सत्यवादी और दानी राजा था।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "ऋषि विश्वामित्र ने तय किया कि वे उसके सत्य की परीक्षा लेंगे।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "राजा ने दान देने का वचन दिया, और वचन से पीछे हटना उसने कभी जाना ही नहीं।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "लोग कहते हैं, राजा का सबसे बड़ा धन प्रजा होती है, पर हरिश्चंद्र का सबसे बड़ा धन उसका वचन था।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "ऋषि ने कहा, \"मुझे तुम्हारा पूरा राज्य चाहिए, ख़ज़ाना भी, सब कुछ।\"",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "ऋषि की माँग हर बार बड़ी होती गई, और राजा का उत्तर हर बार वही रहा।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "हरिश्चंद्र ने एक पल सोचा नहीं, और सारा राज्य उन्हें सौंप दिया।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "फिर ऋषि बोले, \"दान के बाद दक्षिणा भी देनी पड़ती है।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "अब राजा के पास देने को कुछ भी नहीं बचा था।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "वह पत्नी शैव्या और छोटे पुत्र रोहित को लेकर, अयोध्या से निकल पड़ा।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "तीनों काशी पहुँचे, जहाँ राजा कभी मुकुट पहनकर नहीं, सिर झुकाकर आया था।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "पर दक्षिणा अभी बाक़ी थी, और ऋषि का इंतज़ार ख़त्म हो रहा था।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "मार्कण्डेय पुराण के अनुसार, ऋषि ने दक्षिणा का समय तय कर दिया।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": "बिका हुआ राजा"
+  },
+  {
+   "n": 17,
+   "text": "राजा के पास बचा था सिर्फ़ अपना परिवार, और अपनी देह।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "उसने सबसे कठिन फ़ैसला लिया, और अपनी पत्नी और पुत्र को बेचने निकल पड़ा।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "कथा के अनुसार, पत्नी शैव्या ने ही सुझाया कि वह भी बिक जाएँ, ताकि वचन न टूटे।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "एक ब्राह्मण ने उन्हें ख़रीदा, और शैव्या दासी बनकर चली गई।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "राजा की आँखों में आँसू थे, पर हाथ वही थे, जो कभी राजदंड थामते थे।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 22,
+   "text": "रोहित, इतना छोटा था कि वह समझ भी नहीं पाया कि क्या हो रहा है।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 23,
+   "text": "राजा ने जो पैसे पाए, वे ऋषि के सामने रख दिए।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 24,
+   "text": "पर ऋषि ने कहा, \"यह दक्षिणा के लिए अभी भी कम है।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 25,
+   "text": "राजा के पास अब सिर्फ़ वह ख़ुद था।",
+   "intent": "punch",
+   "accent": "वह ख़ुद",
+   "chapter": null
+  },
+  {
+   "n": 26,
+   "text": "उसने ख़ुद को एक चांडाल के हाथों बेच दिया।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 27,
+   "text": "चांडाल ने उसे श्मशान घाट पर तैनात कर दिया।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 28,
+   "text": "उसका काम था, हर चिता जलाने वाले से, कर वसूलना।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 29,
+   "text": "जो कल तक राजा था, वह आज सबका शोक गिनता था।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 30,
+   "text": "पर सबसे बड़ा इम्तिहान अभी बाक़ी था।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 31,
+   "text": "मार्कण्डेय पुराण के अनुसार, एक दिन रोहित को साँप ने डस लिया।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": "श्मशान की रात"
+  },
+  {
+   "n": 32,
+   "text": "वह बालक वहीं गिर पड़ा, और उसके प्राण चले गए।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 33,
+   "text": "माँ शैव्या को ख़बर मिली, और वह अपने पुत्र का शव लेकर निकली।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 34,
+   "text": "वह रोती हुई, वही रास्ता चलकर, श्मशान घाट पहुँची।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 35,
+   "text": "रात का सन्नाटा, सिर्फ़ चिताओं की चटक से टूटता था।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 36,
+   "text": "वहाँ हरिश्चंद्र अपनी जगह खड़ा था, और रात गहरी थी।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 37,
+   "text": "उसने शैव्या को पहचान लिया, और शव में अपने बेटे को।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 38,
+   "text": "कथा के अनुसार, दोनों ने एक-दूसरे को पहचाना, और दोनों चुप रहे।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 39,
+   "text": "पर उसने अपना धर्म नहीं छोड़ा।",
+   "intent": "punch",
+   "accent": "नहीं छोड़ा",
+   "chapter": null
+  },
+  {
+   "n": 40,
+   "text": "उस पल एक पिता और एक सेवक के बीच, कोई जीत नहीं सकता था।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 41,
+   "text": "उसने कहा, \"कर चुकाओ, तभी अंतिम संस्कार होगा।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 42,
+   "text": "शैव्या के पास कुछ भी नहीं था, सिर्फ़ अपनी साड़ी का आँचल।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 43,
+   "text": "जैसे ही वह आँचल देने को हुई, आसमान चमक उठा।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 44,
+   "text": "यमराज, देवता और ऋषि विश्वामित्र स्वयं वहाँ प्रकट हो गए।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 45,
+   "text": "रोहित जी उठा, और राजा को उसका राज्य लौटा दिया गया।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 46,
+   "text": "जिसने सब खोकर भी सत्य नहीं छोड़ा, उसे सब लौट आया।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 47,
+   "text": "आप बताइए, इतना कठोर सत्य, धर्म है या अति?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 48,
+   "text": "अगली कथा में, बिके हुए राजा के बाद, एक राजा जिसे नदी ने पहचाना। फ़ॉलो कीजिए।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {},
+ "visuals": {},
+ "claims": [
+  {
+   "text": "हरिश्चंद्र अयोध्या का सत्यवादी राजा था",
+   "en": "King Harishchandra of Ayodhya, known for truth",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7"
+  },
+  {
+   "text": "विश्वामित्र ने उसके सत्य की परीक्षा ली",
+   "en": "Vishvamitra tested his truthfulness",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7"
+  },
+  {
+   "text": "उसने राज्य और दक्षिणा के लिए पत्नी और पुत्र को बेचा",
+   "en": "He sold his wife and son for the fee",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 7-8"
+  },
+  {
+   "text": "वह चांडाल का सेवक बनकर श्मशान पर रहा",
+   "en": "He served a chandala at the cremation ground",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 8"
+  },
+  {
+   "text": "रोहित को साँप ने डस लिया और देवताओं ने उसे जीवित किया",
+   "en": "Rohita died of a snakebite and was revived by the gods",
+   "status": "traditional-account",
+   "source": "मार्कण्डेय पुराण 8"
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "वचन का दान"
+  },
+  {
+   "n": 16,
+   "title": "बिका हुआ राजा"
+  },
+  {
+   "n": 31,
+   "title": "श्मशान की रात"
+  }
+ ]
+}

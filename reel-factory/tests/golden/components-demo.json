@@ -878,11 +878,70 @@
    "motion": [],
    "emphasis_word": "",
    "sfx": [],
-   "loop_to_start": true,
+   "loop_to_start": false,
    "hl": [
     "पहले",
     "बाद"
    ]
+  },
+  {
+   "id": 36,
+   "line_ids": [
+    36
+   ],
+   "seconds": 3.2,
+   "archetype": "cause_effect",
+   "component": "Ledger",
+   "variant": "",
+   "on_screen": [
+    "वर मिला",
+    "शर्त रखी",
+    "क़ीमत चुकाई"
+   ],
+   "accent_line": 1,
+   "sheet": "saffron",
+   "assets": [],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": false,
+   "stamp": "DEBT"
+  },
+  {
+   "id": 37,
+   "line_ids": [
+    37
+   ],
+   "seconds": 3.2,
+   "archetype": "many_scale",
+   "component": "CollageWall",
+   "variant": "",
+   "on_screen": [
+    "सब एक साथ"
+   ],
+   "accent_line": 1,
+   "sheet": "ivory",
+   "assets": [
+    {
+     "id": "lotus",
+     "subject": "a",
+     "reuse": true
+    },
+    {
+     "id": "flame",
+     "subject": "b",
+     "reuse": true
+    },
+    {
+     "id": "moon",
+     "subject": "c",
+     "reuse": true
+    }
+   ],
+   "motion": [],
+   "emphasis_word": "",
+   "sfx": [],
+   "loop_to_start": true
   }
  ]
 }

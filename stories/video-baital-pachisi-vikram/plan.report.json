@@ -1,0 +1,59 @@
+{
+ "fixed": [
+  "v002: kinetic trimmed to 7 words",
+  "v003: kinetic trimmed to 7 words",
+  "v015: kinetic trimmed to 7 words",
+  "v021: kinetic trimmed to 7 words",
+  "v022: versus needs both sides -> cinema",
+  "v003: repeated kinetic -> cinema",
+  "v009: repeated kinetic -> cinema",
+  "v001: painting beat had no listed effect -> drone_push_in",
+  "v003: painting beat had no listed effect -> puppet_warp_breathing",
+  "v004: painting beat had no listed effect -> drone_orbit_180",
+  "v005: painting beat had no listed effect -> matte_painting_extension",
+  "v006: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v009: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v011: painting beat had no listed effect -> matte_painting_extension",
+  "v012: painting beat had no listed effect -> mesh_ken_burns_3d",
+  "v013: painting beat had no listed effect -> puppet_warp_breathing",
+  "v016: painting beat had no listed effect -> parallax_occlusion_3d",
+  "v017: painting beat had no listed effect -> kinetography_cinemagraph",
+  "v018: painting beat had no listed effect -> crane_up_reveal",
+  "v020: painting beat had no listed effect -> 2.5d_parallax",
+  "v022: painting beat had no listed effect -> drone_orbit_180",
+  "v023: painting beat had no listed effect -> matte_painting_extension",
+  "v014: stat figures are not in the narration -> kinetic"
+ ],
+ "warnings": [
+  "no re-hook (question or turn) near 75% of the film",
+  "16 one-minute windows have fewer than 5 visual types"
+ ],
+ "stats": {
+  "fx": {
+   "drone_push_in": 1,
+   "puppet_warp_breathing": 2,
+   "drone_orbit_180": 2,
+   "matte_painting_extension": 3,
+   "parallax_occlusion_3d": 2,
+   "drone_pull_out_reveal": 1,
+   "kinetography_cinemagraph": 2,
+   "mesh_ken_burns_3d": 1,
+   "crane_up_reveal": 1,
+   "lightning_flash": 1,
+   "2.5d_parallax": 1
+  },
+  "fx_distinct": 11,
+  "scenes": 12,
+  "assets_used": 0,
+  "comps": {
+   "cinema": 15,
+   "kinetic": 5,
+   "fx": 2,
+   "stat": 1
+  },
+  "beats": 23,
+  "windows_low_variety": 16
+ },
+ "writer": "ollama:qwen3:14b",
+ "from_rules": 0
+}

@@ -1,0 +1,1287 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "push",
+   "label": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा",
+   "reveal": "circle",
+   "fx": "infinite_zoom_droste",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "chromatic_glitch_wipe",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v001_insert",
+     "framing": "insert",
+     "of": "scene0",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "fx",
+  "params": {
+   "img": "scene1",
+   "move": "panL",
+   "label": "वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था",
+   "fx": "sacred_geometry_carve",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v002_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "double_exposure_cosmos",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v002_insert",
+     "framing": "insert",
+     "of": "scene1",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पर उसे यहाँ तक *पहुँचाने* वाला सिर्फ़"
+   ],
+   "style": "wave",
+   "tone": "cold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "img": "scene2",
+   "move": "pull",
+   "label": "मार्कण्डेय पुराण के अनुसार, हरिश्चंद्र अयोध्या का सत्यवादी और दानी राजा था",
+   "fx": "disintegration_dispersal",
+   "sticker": "diya",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v004_wide",
+     "framing": "wide",
+     "of": "scene2",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v004_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v004_insert",
+     "framing": "insert",
+     "of": "scene2",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "fx",
+  "params": {
+   "img": "scene3",
+   "move": "panR",
+   "label": "ऋषि विश्वामित्र ने तय किया कि वे उसके सत्य की परीक्षा लेंगे",
+   "fx": "mesh_rack_focus_dof",
+   "tone": "cold",
+   "transition": "leak",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v005_insert",
+     "framing": "insert",
+     "of": "scene3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "fx",
+  "params": {
+   "fx": "lightning_flash",
+   "img": "scene4",
+   "move": "push",
+   "tone": "ember",
+   "transition": "gl:doorway",
+   "shots": [
+    {
+     "img": "v006_wide",
+     "framing": "wide",
+     "of": "scene4",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v006_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v006_insert",
+     "framing": "insert",
+     "of": "scene4",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "img": "scene5",
+   "move": "pull",
+   "label": "लोग कहते हैं, राजा का सबसे बड़ा धन प्रजा होती है, पर हरिश्चंद्र का सबसे बड़ा धन उसका वचन था",
+   "fx": "handheld_breathing_shake",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v007_wide",
+     "framing": "wide",
+     "of": "scene5",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v007_insert",
+     "framing": "insert",
+     "of": "scene5",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "fx",
+  "params": {
+   "img": "scene6",
+   "move": "push",
+   "label": "ऋषि ने कहा, \"मुझे तुम्हारा पूरा राज्य चाहिए, ख़ज़ाना भी, सब कुछ।\"",
+   "fx": "drone_orbit_180",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v008_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v008_insert",
+     "framing": "insert",
+     "of": "scene6",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "fx": "mesh_crane_push",
+   "img": "scene7",
+   "move": "pull",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v009_wide",
+     "framing": "wide",
+     "of": "scene7",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v009_insert",
+     "framing": "insert",
+     "of": "scene7",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "fx",
+  "params": {
+   "img": "scene8",
+   "move": "panL",
+   "label": "हरिश्चंद्र ने एक पल सोचा नहीं, और सारा राज्य उन्हें सौंप दिया",
+   "fx": "2.5d_parallax",
+   "sticker": "diya",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v010_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v010_insert",
+     "framing": "insert",
+     "of": "scene8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "फिर ऋषि बोले *दान के बाद दक्षिणा"
+   ],
+   "style": "slam",
+   "tone": "ember",
+   "transition": "gl:swap",
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "fx",
+  "params": {
+   "img": "scene9",
+   "move": "pull",
+   "label": "अब राजा के पास देने को कुछ भी नहीं बचा था।",
+   "reveal": "circle",
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "fx",
+  "params": {
+   "img": "scene10",
+   "move": "panL",
+   "label": "वह पत्नी शैव्या और छोटे पुत्र रोहित को लेकर, अयोध्या से निकल पड़ा।",
+   "reveal": "diamond",
+   "fx": "mesh_ken_burns_3d",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v013_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v013_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_fpv_flythrough",
+   "img": "scene11",
+   "img2": "scene4",
+   "move": "panL",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v014_wide",
+     "framing": "wide",
+     "of": "scene11",
+     "fx": "crane_down",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v014_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v014_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "पर *दक्षिणा* अभी बाक़ी थी और ऋषि"
+   ],
+   "style": "wave",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "push",
+   "label": "मार्कण्डेय पुराण के अनुसार, ऋषि ने दक्षिणा का समय तय कर दिया।",
+   "reveal": "wipe",
+   "fx": "morph_age_shift",
+   "sticker": "diya",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v016_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v017",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "राजा के पास बचा था *सिर्फ़*"
+   ],
+   "style": "mask",
+   "tone": "ember",
+   "transition": "gl:BookFlip",
+   "trBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v018",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "panR",
+   "label": "उसने सबसे कठिन फ़ैसला लिया, और अपनी पत्नी और पुत्र को बेचने निकल पड़ा।",
+   "reveal": "circle",
+   "fx": "mesh_ken_burns_3d",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v018_wide",
+     "framing": "wide",
+     "of": "scene12",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v018_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v019",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "pull",
+   "label": "कथा के अनुसार, पत्नी शैव्या ने ही सुझाया कि वह भी बिक जाएँ, ताकि वचन न टूटे।",
+   "reveal": "diamond",
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v019_wide",
+     "framing": "wide",
+     "of": "scene12",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v019_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v020",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "push",
+   "label": "एक ब्राह्मण ने उन्हें ख़रीदा, और शैव्या दासी बनकर चली गई।",
+   "reveal": "wipe",
+   "fx": "matte_painting_extension",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v020_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v020_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v021",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "pull",
+   "label": "राजा के आँखों में आँसू",
+   "behind": "कठोर राजा का अंतिम समय",
+   "fx": "kinetography_cinemagraph",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v021_wide",
+     "framing": "wide",
+     "of": "scene12",
+     "fx": "puppet_warp_breathing",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v021_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v021_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v022",
+  "comp": "fx",
+  "params": {
+   "fx": "dolly_zoom_vertigo",
+   "img": "scene12",
+   "label": "रोहित के छोटे आँखों में अनिश्चितता",
+   "move": "panR",
+   "sticker": "diya",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v022_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v022_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v023",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "panL",
+   "label": "राजा द्वारा ऋषि के सामने रखे गए सोने के मुद्रा",
+   "fx": "parallax_occlusion_3d",
+   "tone": "ember",
+   "transition": "gl:flyeye",
+   "shots": [
+    {
+     "img": "v023_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v023_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v024",
+  "comp": "fx",
+  "params": {
+   "fx": "handheld_breathing_shake",
+   "img": "scene12",
+   "label": "ऋषि के अंतिम शब्द के साथ राजा के हाथों में खाली हाथ",
+   "move": "push",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v024_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v024_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v025",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "राजा के पास अब *सिर्फ़* वह ख़ुद"
+   ],
+   "style": "slam",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v026",
+  "comp": "fx",
+  "params": {
+   "fx": "eye_glow_energy_pulse",
+   "img": "scene12",
+   "label": "राजा के आत्मा का बेच जाना",
+   "move": "pull",
+   "tone": "fire",
+   "transition": "gl:GlitchMemories",
+   "shots": [
+    {
+     "img": "v026_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "depth_rack_focus",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v027",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "push",
+   "label": "चांडाल द्वारा श्मशान घाट पर रखा गया राजा",
+   "fx": "diya_flicker_light",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v027_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v028",
+  "comp": "fx",
+  "params": {
+   "fx": "dolly_zoom_vertigo",
+   "img": "scene12",
+   "label": "चिता के धुएँ में विश्वासघात के भार",
+   "move": "panL",
+   "sticker": "diya",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v028_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v028_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v029",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "panR",
+   "label": "राजा के आँखों में अब शोक के आँसू",
+   "fx": "parallax_occlusion_3d",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v029_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v029_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v030",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_fpv_flythrough",
+   "img": "scene12",
+   "label": "अंतिम इम्तिहान के लिए राजा के अंतिम रास्ते की ओर उड़ान",
+   "move": "panR",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v030_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch2"
+ },
+ {
+  "id": "v031",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "pull",
+   "label": "रोहित के साथ एक दुर्घटना",
+   "reveal": "circle",
+   "fx": "day_to_night_timelapse",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v031_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v031_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v032",
+  "comp": "fx",
+  "params": {
+   "fx": "drone_top_down_bird_eye",
+   "img": "scene12",
+   "move": "push",
+   "tone": "gold",
+   "transition": "gl:FilmBurn",
+   "shots": [
+    {
+     "img": "v032_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v032_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v033",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "panL",
+   "label": "शैव्या के दुख की शुरुआत",
+   "reveal": "diamond",
+   "fx": "crane_up_reveal",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v033_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v033_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v034",
+  "comp": "fx",
+  "params": {
+   "fx": "mesh_dolly_zoom_vertigo",
+   "img": "scene12",
+   "move": "pull",
+   "sticker": "diya",
+   "tone": "gold",
+   "transition": "gl:cube",
+   "shots": [
+    {
+     "img": "v034_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v034_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema",
+   "trBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v035",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "panR",
+   "label": "रात के सन्नाटे में चिता की चटक",
+   "reveal": "wipe",
+   "fx": "depth_fog_haze",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v035_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v035_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v036",
+  "comp": "fx",
+  "params": {
+   "fx": "crane_up_reveal",
+   "img": "scene12",
+   "move": "panL",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v036_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "volumetric_god_rays",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v036_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v037",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "push",
+   "label": "हरिश्चंद्र के द्वारा शैव्या की पहचान",
+   "reveal": "circle",
+   "fx": "shadow_play_reveal",
+   "tone": "fire",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v037_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v037_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v038",
+  "comp": "fx",
+  "params": {
+   "fx": "split_screen_vs",
+   "img": "scene12",
+   "move": "panR",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v038_wide",
+     "framing": "wide",
+     "of": "scene12",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v038_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v038_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "img2": "scene11",
+   "labels": [],
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v039",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*धर्म* नहीं छोड़ा"
+   ],
+   "style": "slam",
+   "tone": "fire",
+   "transition": "gl:undulatingBurnOut",
+   "trBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v040",
+  "comp": "fx",
+  "params": {
+   "fx": "speed_ramp_punch",
+   "img": "scene12",
+   "move": "push",
+   "sticker": "diya",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v040_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v040_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v041",
+  "comp": "quote",
+  "params": {
+   "text": "उसने कहा, \"कर चुकाओ, तभी अंतिम संस्कार होगा।\"",
+   "by": "शैव्या",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v042",
+  "comp": "cinema",
+  "params": {
+   "img": "scene12",
+   "move": "pull",
+   "label": "शैव्या की साड़ी का आँचल",
+   "behind": "अपना सब कुछ देना चाहती थी",
+   "fx": "mesh_ken_burns_3d",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v042_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v042_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v043",
+  "comp": "fx",
+  "params": {
+   "fx": "lightning_flash",
+   "img": "scene12",
+   "move": "pull",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v043_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v043_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v044",
+  "comp": "fx",
+  "params": {
+   "img": "scene12",
+   "move": "push",
+   "label": "यमराज, देवता और ऋषि विश्वामित्र",
+   "behind": "देवता और ऋषि दिखाई देते हैं",
+   "fx": "particle_formation",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v044_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_pull_out_reveal",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v044_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "fxBy": "cinema"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v045",
+  "comp": "fx",
+  "params": {
+   "fx": "eye_glow_energy_pulse",
+   "img": "scene12",
+   "move": "panL",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v045_close",
+     "framing": "close",
+     "of": "scene12",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v045_insert",
+     "framing": "insert",
+     "of": "scene12",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v046",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "*जिसने* सब खोकर भी सत्य नहीं छोड़ा"
+   ],
+   "style": "wave",
+   "tone": "gold",
+   "transition": "zoom"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v047",
+  "comp": "versus",
+  "params": {
+   "left": {
+    "title": "धर्म",
+    "points": [
+     "सत्य के अनुसरण",
+     "मानवता के प्रति जिम्मेदारी"
+    ]
+   },
+   "right": {
+    "title": "अति",
+    "points": [
+     "सत्य के बहुत अधिक अनुसरण",
+     "मानवता के प्रति अत्यधिक जिम्मेदारी"
+    ]
+   },
+   "tone": "gold",
+   "transition": "zoom"
+  },
+  "chapter": "ch3"
+ },
+ {
+  "id": "v048",
+  "comp": "chapter",
+  "params": {
+   "kicker": "अगली कथा",
+   "title": "बिके हुए राजा के बाद, एक राजा जिसे नदी ने पहचाना",
+   "tone": "gold",
+   "transition": "dissolve"
+  },
+  "chapter": "ch3"
+ }
+]

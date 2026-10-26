@@ -1,0 +1,1077 @@
+{
+ "story": "video-harishchandra-satya-ki-keemat-long",
+ "profile": "kathaaya-reels-v2",
+ "post": "natural",
+ "tempo_scale": 0.8692,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 558,
+ "duration_s": 178.63,
+ "speech_words_per_s": 3.37,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 0.0,
+   "end": 3.041,
+   "tries": 1,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "राजा ने अपनी ही पत्नी से, श्मशान का कर माँगा.",
+   "raw_dur_s": 2.9,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.45,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.97,
+   "start": 3.281,
+   "end": 6.463,
+   "tries": 1,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था.",
+   "raw_dur_s": 3.1,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.23,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "पर उसे यहाँ तक पहुँचाने वाला, सिर्फ़ एक वचन था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 6.763,
+   "end": 9.826,
+   "tries": 1,
+   "beat": "v003",
+   "pause_after": 0.3,
+   "spoken": "पर उसे यहाँ तक पहुँचाने वाला, सिर्फ़ एक वचन था.",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "मार्कण्डेय पुराण के अनुसार, हरिश्चंद्र अयोध्या का सत्यवादी और दानी राजा था।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 10.126,
+   "end": 14.684,
+   "tries": 1,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "मार्कण्डेय पुराण के अनुसार, हरिश्चंद्र अयोध्या का सत्यवादी और दानी राजा था.",
+   "raw_dur_s": 4.8,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "ऋषि विश्वामित्र ने तय किया कि वे उसके सत्य की परीक्षा लेंगे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.992,
+   "start": 14.904,
+   "end": 18.669,
+   "tries": 1,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "ऋषि विश्वामित्र ने तय किया कि वे उसके सत्य की परीक्षा लेंगे.",
+   "raw_dur_s": 3.74,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 3.21,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "राजा ने दान देने का वचन दिया, और वचन से पीछे हटना उसने कभी जाना ही नहीं।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 18.889,
+   "end": 23.494,
+   "tries": 1,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "राजा ने दान देने का वचन दिया, और वचन से पीछे हटना उसने कभी जाना ही नहीं.",
+   "raw_dur_s": 4.38,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 3.88,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "लोग कहते हैं, राजा का सबसे बड़ा धन प्रजा होती है, पर हरिश्चंद्र का सबसे बड़ा धन उसका वचन था।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 23.714,
+   "end": 29.106,
+   "tries": 1,
+   "beat": "v007",
+   "pause_after": 0.38,
+   "spoken": "लोग कहते हैं, राजा का सबसे बड़ा धन प्रजा होती है, पर हरिश्चंद्र का सबसे बड़ा धन उसका वचन था.",
+   "raw_dur_s": 5.13,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.9,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "ऋषि ने कहा, \"मुझे तुम्हारा पूरा राज्य चाहिए, ख़ज़ाना भी, सब कुछ।\"",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 29.486,
+   "end": 33.409,
+   "tries": 1,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "ऋषि ने कहा, \"मुझे तुम्हारा पूरा राज्य चाहिए, ख़ज़ाना भी, सब कुछ.\"",
+   "raw_dur_s": 4.11,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 2.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "ऋषि की माँग हर बार बड़ी होती गई, और राजा का उत्तर हर बार वही रहा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 33.629,
+   "end": 37.925,
+   "tries": 1,
+   "beat": "v009",
+   "pause_after": 0.22,
+   "spoken": "ऋषि की माँग हर बार बड़ी होती गई, और राजा का उत्तर हर बार वही रहा.",
+   "raw_dur_s": 4.09,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.92,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "हरिश्चंद्र ने एक पल सोचा नहीं, और सारा राज्य उन्हें सौंप दिया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 38.145,
+   "end": 42.071,
+   "tries": 1,
+   "beat": "v010",
+   "pause_after": 0.38,
+   "spoken": "हरिश्चंद्र ने एक पल सोचा नहीं, और सारा राज्य उन्हें सौंप दिया.",
+   "raw_dur_s": 3.74,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 3.21,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "फिर ऋषि बोले, \"दान के बाद दक्षिणा भी देनी पड़ती है।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 42.451,
+   "end": 45.559,
+   "tries": 1,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "फिर ऋषि बोले, \"दान के बाद दक्षिणा भी देनी पड़ती है.\"",
+   "raw_dur_s": 2.96,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 3.71,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "अब राजा के पास देने को कुछ भी नहीं बचा था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 45.779,
+   "end": 48.406,
+   "tries": 3,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "अब राजा के पास देने को कुछ भी नहीं बचा था.",
+   "raw_dur_s": 2.5,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 4.4,
+     "problems": [
+      "raw pace 4.4 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 56693,
+     "rate": 4.8,
+     "problems": [
+      "raw pace 4.8 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 64612,
+     "rate": 4.83,
+     "problems": [
+      "raw pace 4.8 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "वह पत्नी शैव्या और छोटे पुत्र रोहित को लेकर, अयोध्या से निकल पड़ा।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.015,
+   "start": 48.626,
+   "end": 52.704,
+   "tries": 1,
+   "beat": "v013",
+   "pause_after": 0.22,
+   "spoken": "वह पत्नी शैव्या और छोटे पुत्र रोहित को लेकर, अयोध्या से निकल पड़ा.",
+   "raw_dur_s": 4.15,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 3.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "तीनों काशी पहुँचे, जहाँ राजा कभी मुकुट पहनकर नहीं, सिर झुकाकर आया था।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 52.924,
+   "end": 57.358,
+   "tries": 1,
+   "beat": "v014",
+   "pause_after": 0.22,
+   "spoken": "तीनों काशी पहुँचे, जहाँ राजा कभी मुकुट पहनकर नहीं, सिर झुकाकर आया था.",
+   "raw_dur_s": 4.66,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 2.79,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "पर दक्षिणा अभी बाक़ी थी, और ऋषि का इंतज़ार ख़त्म हो रहा था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 57.578,
+   "end": 61.284,
+   "tries": 1,
+   "beat": "v015",
+   "pause_after": 0.3,
+   "spoken": "पर दक्षिणा अभी बाक़ी थी, और ऋषि का इंतज़ार ख़त्म हो रहा था.",
+   "raw_dur_s": 3.54,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 3.67,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "मार्कण्डेय पुराण के अनुसार, ऋषि ने दक्षिणा का समय तय कर दिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.007,
+   "start": 61.584,
+   "end": 65.351,
+   "tries": 1,
+   "beat": "v016",
+   "pause_after": 0.22,
+   "spoken": "मार्कण्डेय पुराण के अनुसार, ऋषि ने दक्षिणा का समय तय कर दिया.",
+   "raw_dur_s": 3.8,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 3.16,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "राजा के पास बचा था सिर्फ़ अपना परिवार, और अपनी देह।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 65.571,
+   "end": 68.569,
+   "tries": 1,
+   "beat": "v017",
+   "pause_after": 0.22,
+   "spoken": "राजा के पास बचा था सिर्फ़ अपना परिवार, और अपनी देह.",
+   "raw_dur_s": 2.86,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "उसने सबसे कठिन फ़ैसला लिया, और अपनी पत्नी और पुत्र को बेचने निकल पड़ा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.022,
+   "start": 68.789,
+   "end": 73.144,
+   "tries": 1,
+   "beat": "v018",
+   "pause_after": 0.22,
+   "spoken": "उसने सबसे कठिन फ़ैसला लिया, और अपनी पत्नी और पुत्र को बेचने निकल पड़ा.",
+   "raw_dur_s": 4.46,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 3.14,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "कथा के अनुसार, पत्नी शैव्या ने ही सुझाया कि वह भी बिक जाएँ, ताकि वचन न टूटे।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 73.364,
+   "end": 78.008,
+   "tries": 1,
+   "beat": "v019",
+   "pause_after": 0.22,
+   "spoken": "कथा के अनुसार, पत्नी शैव्या ने ही सुझाया कि वह भी बिक जाएँ, ताकि वचन न टूटे.",
+   "raw_dur_s": 4.42,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 3.85,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v020.1",
+   "text": "एक ब्राह्मण ने उन्हें ख़रीदा, और शैव्या दासी बनकर चली गई।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.033,
+   "start": 78.228,
+   "end": 81.675,
+   "tries": 1,
+   "beat": "v020",
+   "pause_after": 0.22,
+   "spoken": "एक ब्राह्मण ने उन्हें ख़रीदा, और शैव्या दासी बनकर चली गई.",
+   "raw_dur_s": 3.57,
+   "checks": [
+    {
+     "seed": 31989,
+     "rate": 3.08,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v021.1",
+   "text": "राजा की आँखों में आँसू थे, पर हाथ वही थे, जो कभी राजदंड थामते थे।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 81.895,
+   "end": 86.442,
+   "tries": 1,
+   "beat": "v021",
+   "pause_after": 0.22,
+   "spoken": "राजा की आँखों में आँसू थे, पर हाथ वही थे, जो कभी राजदंड थामते थे.",
+   "raw_dur_s": 4.33,
+   "checks": [
+    {
+     "seed": 70029,
+     "rate": 3.47,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v022.1",
+   "text": "रोहित, इतना छोटा था कि वह समझ भी नहीं पाया कि क्या हो रहा है।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 86.662,
+   "end": 90.478,
+   "tries": 2,
+   "beat": "v022",
+   "pause_after": 0.38,
+   "spoken": "रोहित, इतना छोटा था कि वह समझ भी नहीं पाया कि क्या हो रहा है.",
+   "raw_dur_s": 3.64,
+   "checks": [
+    {
+     "seed": 86845,
+     "rate": 4.47,
+     "problems": [
+      "raw pace 4.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 94764,
+     "rate": 4.13,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v023.1",
+   "text": "राजा ने जो पैसे पाए, वे ऋषि के सामने रख दिए।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 90.858,
+   "end": 93.779,
+   "tries": 1,
+   "beat": "v023",
+   "pause_after": 0.22,
+   "spoken": "राजा ने जो पैसे पाए, वे ऋषि के सामने रख दिए.",
+   "raw_dur_s": 2.78,
+   "checks": [
+    {
+     "seed": 40937,
+     "rate": 3.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v024.1",
+   "text": "पर ऋषि ने कहा, \"यह दक्षिणा के लिए अभी भी कम है।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 93.999,
+   "end": 96.936,
+   "tries": 3,
+   "beat": "v024",
+   "pause_after": 0.22,
+   "spoken": "पर ऋषि ने कहा, \"यह दक्षिणा के लिए अभी भी कम है.\"",
+   "raw_dur_s": 2.8,
+   "checks": [
+    {
+     "seed": 85705,
+     "rate": 4.29,
+     "problems": [
+      "raw pace 4.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 93624,
+     "rate": 4.33,
+     "problems": [
+      "raw pace 4.3 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 101543,
+     "rate": 4.38,
+     "problems": [
+      "raw pace 4.4 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v025.1",
+   "text": "राजा के पास अब सिर्फ़ वह ख़ुद था।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 0.95,
+   "start": 97.156,
+   "end": 99.403,
+   "tries": 1,
+   "beat": "v025",
+   "pause_after": 0.28,
+   "spoken": "राजा के पास अब सिर्फ़ वह ख़ुद था.",
+   "raw_dur_s": 2.14,
+   "checks": [
+    {
+     "seed": 84825,
+     "rate": 3.73,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v026.1",
+   "text": "उसने ख़ुद को एक चांडाल के हाथों बेच दिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 99.683,
+   "end": 102.064,
+   "tries": 1,
+   "beat": "v026",
+   "pause_after": 0.22,
+   "spoken": "उसने ख़ुद को एक चांडाल के हाथों बेच दिया.",
+   "raw_dur_s": 2.27,
+   "checks": [
+    {
+     "seed": 89287,
+     "rate": 3.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v027.1",
+   "text": "चांडाल ने उसे श्मशान घाट पर तैनात कर दिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 102.284,
+   "end": 104.845,
+   "tries": 1,
+   "beat": "v027",
+   "pause_after": 0.22,
+   "spoken": "चांडाल ने उसे श्मशान घाट पर तैनात कर दिया.",
+   "raw_dur_s": 2.44,
+   "checks": [
+    {
+     "seed": 34257,
+     "rate": 3.68,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v028.1",
+   "text": "उसका काम था, हर चिता जलाने वाले से, कर वसूलना।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 105.065,
+   "end": 108.126,
+   "tries": 1,
+   "beat": "v028",
+   "pause_after": 0.22,
+   "spoken": "उसका काम था, हर चिता जलाने वाले से, कर वसूलना.",
+   "raw_dur_s": 2.91,
+   "checks": [
+    {
+     "seed": 17474,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v029.1",
+   "text": "जो कल तक राजा था, वह आज सबका शोक गिनता था।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 108.346,
+   "end": 111.192,
+   "tries": 1,
+   "beat": "v029",
+   "pause_after": 0.38,
+   "spoken": "जो कल तक राजा था, वह आज सबका शोक गिनता था.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 60892,
+     "rate": 4.06,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v030.1",
+   "text": "पर सबसे बड़ा इम्तिहान अभी बाक़ी था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 111.572,
+   "end": 113.726,
+   "tries": 1,
+   "beat": "v030",
+   "pause_after": 0.3,
+   "spoken": "पर सबसे बड़ा इम्तिहान अभी बाक़ी था.",
+   "raw_dur_s": 2.05,
+   "checks": [
+    {
+     "seed": 12777,
+     "rate": 3.41,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v031.1",
+   "text": "मार्कण्डेय पुराण के अनुसार, एक दिन रोहित को साँप ने डस लिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.966,
+   "start": 114.026,
+   "end": 117.792,
+   "tries": 1,
+   "beat": "v031",
+   "pause_after": 0.22,
+   "spoken": "मार्कण्डेय पुराण के अनुसार, एक दिन रोहित को साँप ने डस लिया.",
+   "raw_dur_s": 3.64,
+   "checks": [
+    {
+     "seed": 22366,
+     "rate": 3.29,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v032.1",
+   "text": "वह बालक वहीं गिर पड़ा, और उसके प्राण चले गए।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 118.012,
+   "end": 120.945,
+   "tries": 1,
+   "beat": "v032",
+   "pause_after": 0.22,
+   "spoken": "वह बालक वहीं गिर पड़ा, और उसके प्राण चले गए.",
+   "raw_dur_s": 2.8,
+   "checks": [
+    {
+     "seed": 26874,
+     "rate": 3.58,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v033.1",
+   "text": "माँ शैव्या को ख़बर मिली, और वह अपने पुत्र का शव लेकर निकली।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.95,
+   "start": 121.165,
+   "end": 125.143,
+   "tries": 1,
+   "beat": "v033",
+   "pause_after": 0.22,
+   "spoken": "माँ शैव्या को ख़बर मिली, और वह अपने पुत्र का शव लेकर निकली.",
+   "raw_dur_s": 3.79,
+   "checks": [
+    {
+     "seed": 48783,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v034.1",
+   "text": "वह रोती हुई, वही रास्ता चलकर, श्मशान घाट पहुँची।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 125.363,
+   "end": 128.502,
+   "tries": 1,
+   "beat": "v034",
+   "pause_after": 0.22,
+   "spoken": "वह रोती हुई, वही रास्ता चलकर, श्मशान घाट पहुँची.",
+   "raw_dur_s": 3.3,
+   "checks": [
+    {
+     "seed": 14618,
+     "rate": 2.73,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v035.1",
+   "text": "रात का सन्नाटा, सिर्फ़ चिताओं की चटक से टूटता था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.956,
+   "start": 128.722,
+   "end": 131.832,
+   "tries": 1,
+   "beat": "v035",
+   "pause_after": 0.22,
+   "spoken": "रात का सन्नाटा, सिर्फ़ चिताओं की चटक से टूटता था.",
+   "raw_dur_s": 2.98,
+   "checks": [
+    {
+     "seed": 55876,
+     "rate": 3.36,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v036.1",
+   "text": "वहाँ हरिश्चंद्र अपनी जगह खड़ा था, और रात गहरी थी।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.038,
+   "start": 132.052,
+   "end": 135.168,
+   "tries": 1,
+   "beat": "v036",
+   "pause_after": 0.22,
+   "spoken": "वहाँ हरिश्चंद्र अपनी जगह खड़ा था, और रात गहरी थी.",
+   "raw_dur_s": 3.23,
+   "checks": [
+    {
+     "seed": 41127,
+     "rate": 3.09,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v037.1",
+   "text": "उसने शैव्या को पहचान लिया, और शव में अपने बेटे को।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 135.388,
+   "end": 138.454,
+   "tries": 1,
+   "beat": "v037",
+   "pause_after": 0.48,
+   "spoken": "उसने शैव्या को पहचान लिया, और शव में अपने बेटे को.",
+   "raw_dur_s": 2.92,
+   "checks": [
+    {
+     "seed": 32814,
+     "rate": 3.76,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v038.1",
+   "text": "कथा के अनुसार, दोनों ने एक-दूसरे को पहचाना, और दोनों चुप रहे।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 138.934,
+   "end": 143.06,
+   "tries": 1,
+   "beat": "v038",
+   "pause_after": 0.38,
+   "spoken": "कथा के अनुसार, दोनों ने एक-दूसरे को पहचाना, और दोनों चुप रहे.",
+   "raw_dur_s": 3.93,
+   "checks": [
+    {
+     "seed": 7111,
+     "rate": 3.05,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v039.1",
+   "text": "पर उसने अपना धर्म नहीं छोड़ा।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 0.95,
+   "start": 143.44,
+   "end": 145.035,
+   "tries": 1,
+   "beat": "v039",
+   "pause_after": 0.28,
+   "spoken": "पर उसने अपना धर्म नहीं छोड़ा.",
+   "raw_dur_s": 1.52,
+   "checks": [
+    {
+     "seed": 92592,
+     "rate": 3.94,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v040.1",
+   "text": "उस पल एक पिता और एक सेवक के बीच, कोई जीत नहीं सकता था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 145.315,
+   "end": 148.809,
+   "tries": 3,
+   "beat": "v040",
+   "pause_after": 0.22,
+   "spoken": "उस पल एक पिता और एक सेवक के बीच, कोई जीत नहीं सकता था.",
+   "raw_dur_s": 3.33,
+   "checks": [
+    {
+     "seed": 70203,
+     "rate": 4.55,
+     "problems": [
+      "raw pace 4.5 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 78122,
+     "rate": 4.2,
+     "problems": [
+      "raw pace 4.2 w/s outside 1.8-4.2"
+     ]
+    },
+    {
+     "seed": 86041,
+     "rate": 4.44,
+     "problems": [
+      "raw pace 4.4 w/s outside 1.8-4.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v041.1",
+   "text": "उसने कहा, \"कर चुकाओ, तभी अंतिम संस्कार होगा।\"",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.05,
+   "start": 149.029,
+   "end": 151.744,
+   "tries": 1,
+   "beat": "v041",
+   "pause_after": 0.22,
+   "spoken": "उसने कहा, \"कर चुकाओ, तभी अंतिम संस्कार होगा.\"",
+   "raw_dur_s": 2.85,
+   "checks": [
+    {
+     "seed": 35275,
+     "rate": 2.81,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v042.1",
+   "text": "शैव्या के पास कुछ भी नहीं था, सिर्फ़ अपनी साड़ी का आँचल।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 151.964,
+   "end": 155.244,
+   "tries": 1,
+   "beat": "v042",
+   "pause_after": 0.22,
+   "spoken": "शैव्या के पास कुछ भी नहीं था, सिर्फ़ अपनी साड़ी का आँचल.",
+   "raw_dur_s": 3.12,
+   "checks": [
+    {
+     "seed": 58725,
+     "rate": 3.84,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v043.1",
+   "text": "जैसे ही वह आँचल देने को हुई, आसमान चमक उठा।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 155.464,
+   "end": 158.458,
+   "tries": 1,
+   "beat": "v043",
+   "pause_after": 0.38,
+   "spoken": "जैसे ही वह आँचल देने को हुई, आसमान चमक उठा.",
+   "raw_dur_s": 2.85,
+   "checks": [
+    {
+     "seed": 19897,
+     "rate": 3.51,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v044.1",
+   "text": "यमराज, देवता और ऋषि विश्वामित्र स्वयं वहाँ प्रकट हो गए।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 1.018,
+   "start": 158.838,
+   "end": 162.415,
+   "tries": 1,
+   "beat": "v044",
+   "pause_after": 0.48,
+   "spoken": "यमराज, देवता और ऋषि विश्वामित्र स्वयं वहाँ प्रकट हो गए.",
+   "raw_dur_s": 3.65,
+   "checks": [
+    {
+     "seed": 20563,
+     "rate": 2.74,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v045.1",
+   "text": "रोहित जी उठा, और राजा को उसका राज्य लौटा दिया गया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 162.895,
+   "end": 166.202,
+   "tries": 1,
+   "beat": "v045",
+   "pause_after": 0.38,
+   "spoken": "रोहित जी उठा, और राजा को उसका राज्य लौटा दिया गया.",
+   "raw_dur_s": 3.15,
+   "checks": [
+    {
+     "seed": 29702,
+     "rate": 3.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v046.1",
+   "text": "जिसने सब खोकर भी सत्य नहीं छोड़ा, उसे सब लौट आया।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 166.582,
+   "end": 169.949,
+   "tries": 1,
+   "beat": "v046",
+   "pause_after": 0.38,
+   "spoken": "जिसने सब खोकर भी सत्य नहीं छोड़ा, उसे सब लौट आया.",
+   "raw_dur_s": 3.21,
+   "checks": [
+    {
+     "seed": 83940,
+     "rate": 3.43,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v047.1",
+   "text": "आप बताइए, इतना कठोर सत्य, धर्म है या अति?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.05,
+   "start": 170.329,
+   "end": 173.201,
+   "tries": 1,
+   "beat": "v047",
+   "pause_after": 0.3,
+   "spoken": "आप बताइए, इतना कठोर सत्य, धर्म है या अति?",
+   "raw_dur_s": 3.02,
+   "checks": [
+    {
+     "seed": 99033,
+     "rate": 2.98,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v048.1",
+   "text": "अगली कथा में, बिके हुए राजा के बाद, एक राजा जिसे नदी ने पहचाना। फ़ॉलो कीजिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 173.501,
+   "end": 178.33,
+   "tries": 1,
+   "beat": "v048",
+   "pause_after": 0.3,
+   "spoken": "अगली कथा में, बिके हुए राजा के बाद, एक राजा जिसे नदी ने पहचाना. फ़ॉलो कीजिए.",
+   "raw_dur_s": 4.6,
+   "checks": [
+    {
+     "seed": 84362,
+     "rate": 3.48,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "channel": "kathaaya",
+ "format": "short",
+ "titles": [
+  {
+   "t": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला? | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "chosenTitle": 0,
+ "summary": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया। उसने भेड़िये के मुँह में हाथ क्यों रखा?",
+ "disclaimer": "यह कथा नॉर्स परंपरा के गद्य एडा के अनुसार है; यह भारतीय कथा नहीं है और स्रोत मध्ययुगीन आइसलैंड में लिखा गया।",
+ "hashtags": [
+  "#kathaaya",
+  "#norsemythology",
+  "#tyr"
+ ],
+ "tagRe": "katha|story|महाभारत|दुर्गा|कथा",
+ "topicQueries": "टीर|अपना|हाथ",
+ "extraTags": [
+  "norsemythology",
+  "tyr",
+  "अपना",
+  "भेड़िये",
+  "मुँह",
+  "हिंदू पौराणिक कथा",
+  "indian mythology stories",
+  "mahabharat katha hindi",
+  "kathaaya"
+ ],
+ "thumbnail": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "हाथ का सौदा?"
+   ],
+   "support": [
+    "देवताओं का धोखा"
+   ]
+  }
+ },
+ "categoryId": "24",
+ "language": "hi",
+ "brandLine": "यह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।",
+ "queries": [
+  "टीर ने अपना"
+ ],
+ "primaryKeyword": "टीर",
+ "social": {
+  "igHandle": "@kathaaya.stories",
+  "hook": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "story": "video-harishchandra-satya-ki-keemat-long",
+ "format": "long",
+ "generated": "2026-10-25T17:02:13.365Z",
+ "note": "Copy is generated from the same seed as YouTube; edit publish.seed.json `social` {hook, igHandle, keywords} to override.",
+ "instagram": {
+  "type": "NONE",
+  "note": "A 16:9 film is not an Instagram Reel. Cut 3-5 vertical Shorts from it (long-form-playbook: one idea each, new hook line) and publish those with this tool."
+ },
+ "facebook": {
+  "type": "VIDEO",
+  "title": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात",
+  "description": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात\n\nराजा ने अपनी ही पत्नी से, श्मशान का कर माँगा। वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।\n\n0:00 वचन का दान\n1:02 बिका हुआ राजा\n1:54 श्मशान की रात\n\nयह कथा मार्कण्डेय पुराण के अनुसार है; ख़रीदार चांडाल है, कुछ संस्करणों में ब्राह्मण भी बताया गया है। आवाज़ और चित्र AI की मदद से बने हैं।\n\n#kathaaya #harishchandra #markandeyapurana #Kathaaya",
+  "hashtags": [
+   "#kathaaya",
+   "#harishchandra",
+   "#markandeyapurana",
+   "#Kathaaya"
+  ],
+  "cover": "output/thumb-16x9.png",
+  "checks": [
+   {
+    "platform": "facebook",
+    "name": "title <= 100 chars",
+    "ok": true,
+    "detail": "45"
+   },
+   {
+    "platform": "facebook",
+    "name": "description <= 5000 chars",
+    "ok": true,
+    "detail": "391"
+   },
+   {
+    "platform": "facebook",
+    "name": "no external link in the post (Facebook monetization/reach: keep viewers on Facebook)",
+    "ok": true,
+    "detail": "none"
+   }
+  ]
+ },
+ "monetizationNotes": [
+  "Original content only: no reposts, no other creators' clips, no third-party watermarks (Meta deprioritises duplicative content; reported in secondary sources, verify in Monetization Manager).",
+  "Eligibility figures vary by source (5k-10k followers, watch-minute thresholds): check your Page in Meta Business Suite > Monetization before relying on any number.",
+  "A copyright check runs on every Reel upload (API: GET /{video-id}?fields=copyright_check_information). Our audio is procedural and our voice is synthetic; the paintings are public domain/CC0.",
+  "Long videos (Page videos) and Reels are separate surfaces: post the 16:9 film as a Page video and cut vertical Reels from it; in-stream ads are reported (secondary source) to need >= 3 minutes."
+ ]
+}

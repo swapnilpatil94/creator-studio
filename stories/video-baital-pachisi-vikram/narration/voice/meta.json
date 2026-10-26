@@ -1,0 +1,518 @@
+{
+ "story": "video-baital-pachisi-vikram",
+ "profile": "kathaaya-reels-v2",
+ "post": "natural",
+ "tempo_scale": 0.8692,
+ "controls_used": [
+  "exaggeration"
+ ],
+ "words": 216,
+ "duration_s": 73.39,
+ "speech_words_per_s": 3.24,
+ "phrases": [
+  {
+   "id": "v001.1",
+   "text": "शव पेड़ से उतरा, और राजा से सवाल पूछा।",
+   "emotion": "hook",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 0.0,
+   "end": 2.601,
+   "tries": 1,
+   "beat": "v001",
+   "pause_after": 0.24,
+   "spoken": "शव पेड़ से उतरा, और राजा से सवाल पूछा.",
+   "raw_dur_s": 2.48,
+   "checks": [
+    {
+     "seed": 78876,
+     "rate": 3.63,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v002.1",
+   "text": "शर्त थी: जवाब जानकर चुप रहा, तो सिर फट जाएगा।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.959,
+   "start": 2.841,
+   "end": 6.027,
+   "tries": 1,
+   "beat": "v002",
+   "pause_after": 0.3,
+   "spoken": "शर्त थी: जवाब जानकर चुप रहा, तो सिर फट जाएगा.",
+   "raw_dur_s": 3.06,
+   "checks": [
+    {
+     "seed": 52885,
+     "rate": 3.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v003.1",
+   "text": "और बोल पड़ा, तो शव वापस पेड़ पर उड़ जाएगा।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 6.327,
+   "end": 8.857,
+   "tries": 1,
+   "beat": "v003",
+   "pause_after": 0.3,
+   "spoken": "और बोल पड़ा, तो शव वापस पेड़ पर उड़ जाएगा.",
+   "raw_dur_s": 2.41,
+   "checks": [
+    {
+     "seed": 66878,
+     "rate": 4.15,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v004.1",
+   "text": "वेताल पंचविंशति की लोककथा के अनुसार, एक योगी ने राजा से वचन लिया।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 9.157,
+   "end": 13.32,
+   "tries": 1,
+   "beat": "v004",
+   "pause_after": 0.22,
+   "spoken": "वेताल पंचविंशति की लोककथा के अनुसार, एक योगी ने राजा से वचन लिया.",
+   "raw_dur_s": 4.37,
+   "checks": [
+    {
+     "seed": 53301,
+     "rate": 2.97,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v005.1",
+   "text": "वचन था: श्मशान के पेड़ पर लटका शव, उसके पास लाना।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.976,
+   "start": 13.54,
+   "end": 16.992,
+   "tries": 1,
+   "beat": "v005",
+   "pause_after": 0.22,
+   "spoken": "वचन था: श्मशान के पेड़ पर लटका शव, उसके पास लाना.",
+   "raw_dur_s": 3.38,
+   "checks": [
+    {
+     "seed": 82251,
+     "rate": 3.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v006.1",
+   "text": "राजा गया, शव को कंधे पर उठाया, और चल पड़ा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 17.212,
+   "end": 20.073,
+   "tries": 1,
+   "beat": "v006",
+   "pause_after": 0.22,
+   "spoken": "राजा गया, शव को कंधे पर उठाया, और चल पड़ा.",
+   "raw_dur_s": 2.72,
+   "checks": [
+    {
+     "seed": 27698,
+     "rate": 3.67,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v007.1",
+   "text": "तभी शव के भीतर बैठा वेताल हँस पड़ा।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.953,
+   "start": 20.293,
+   "end": 22.782,
+   "tries": 1,
+   "beat": "v007",
+   "pause_after": 0.22,
+   "spoken": "तभी शव के भीतर बैठा वेताल हँस पड़ा.",
+   "raw_dur_s": 2.38,
+   "checks": [
+    {
+     "seed": 86590,
+     "rate": 3.37,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v008.1",
+   "text": "बोला, \"रास्ता लंबा है, एक कहानी सुनो।\"",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 23.002,
+   "end": 25.456,
+   "tries": 1,
+   "beat": "v008",
+   "pause_after": 0.22,
+   "spoken": "बोला, \"रास्ता लंबा है, एक कहानी सुनो.\"",
+   "raw_dur_s": 2.58,
+   "checks": [
+    {
+     "seed": 14407,
+     "rate": 2.71,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v009.1",
+   "text": "हर कहानी के अंत में, वह एक पहेली छोड़ता था।",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 25.676,
+   "end": 28.451,
+   "tries": 1,
+   "beat": "v009",
+   "pause_after": 0.3,
+   "spoken": "हर कहानी के अंत में, वह एक पहेली छोड़ता था.",
+   "raw_dur_s": 2.65,
+   "checks": [
+    {
+     "seed": 46994,
+     "rate": 3.78,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v010.1",
+   "text": "जवाब जानते हो, तो बोलो।",
+   "emotion": "punch",
+   "exaggeration": 0.72,
+   "tempo": 0.95,
+   "start": 28.751,
+   "end": 30.129,
+   "tries": 1,
+   "beat": "v010",
+   "pause_after": 0.28,
+   "spoken": "जवाब जानते हो, तो बोलो.",
+   "raw_dur_s": 1.32,
+   "checks": [
+    {
+     "seed": 83909,
+     "rate": 3.79,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v011.1",
+   "text": "राजा मौन रहता, तो शाप, बोलता, तो शव उड़ जाता।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.05,
+   "start": 30.409,
+   "end": 33.594,
+   "tries": 1,
+   "beat": "v011",
+   "pause_after": 0.22,
+   "spoken": "राजा मौन रहता, तो शाप, बोलता, तो शव उड़ जाता.",
+   "raw_dur_s": 3.35,
+   "checks": [
+    {
+     "seed": 13925,
+     "rate": 2.99,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v012.1",
+   "text": "राजा जवाब देता, और हर बार शव लौट जाता।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 33.814,
+   "end": 36.509,
+   "tries": 1,
+   "beat": "v012",
+   "pause_after": 0.22,
+   "spoken": "राजा जवाब देता, और हर बार शव लौट जाता.",
+   "raw_dur_s": 2.57,
+   "checks": [
+    {
+     "seed": 48774,
+     "rate": 3.5,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v013.1",
+   "text": "राजा फिर श्मशान जाता, और फिर शव उतारता।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 1.05,
+   "start": 36.729,
+   "end": 39.295,
+   "tries": 1,
+   "beat": "v013",
+   "pause_after": 0.22,
+   "spoken": "राजा फिर श्मशान जाता, और फिर शव उतारता.",
+   "raw_dur_s": 2.7,
+   "checks": [
+    {
+     "seed": 3650,
+     "rate": 2.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.1",
+   "text": "ऐसा पच्चीस बार हुआ।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 39.515,
+   "end": 40.795,
+   "tries": 1,
+   "beat": "v014",
+   "pause_after": 0.17,
+   "spoken": "ऐसा पच्चीस बार हुआ.",
+   "raw_dur_s": 1.23,
+   "checks": [
+    {
+     "seed": 66992,
+     "rate": 3.26,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v014.2",
+   "text": "न थका, न डिगा।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 40.965,
+   "end": 42.326,
+   "tries": 1,
+   "beat": "v014",
+   "pause_after": 0.38,
+   "spoken": "न थका, न डिगा.",
+   "raw_dur_s": 1.3,
+   "checks": [
+    {
+     "seed": 30781,
+     "rate": 3.07,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v015.1",
+   "text": "आख़िर वेताल ने राजा की हिम्मत क्यों परखी?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 1.004,
+   "start": 42.706,
+   "end": 45.271,
+   "tries": 1,
+   "beat": "v015",
+   "pause_after": 0.3,
+   "spoken": "आख़िर वेताल ने राजा की हिम्मत क्यों परखी?",
+   "raw_dur_s": 2.57,
+   "checks": [
+    {
+     "seed": 23814,
+     "rate": 3.12,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v016.1",
+   "text": "पच्चीसवीं पहेली पर, राजा जवाब नहीं दे पाया।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 45.571,
+   "end": 48.414,
+   "tries": 1,
+   "beat": "v016",
+   "pause_after": 0.48,
+   "spoken": "पच्चीसवीं पहेली पर, राजा जवाब नहीं दे पाया.",
+   "raw_dur_s": 2.71,
+   "checks": [
+    {
+     "seed": 12282,
+     "rate": 2.95,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v017.1",
+   "text": "तब वेताल ने बताया, योगी की असली चाल क्या थी।",
+   "emotion": "reveal",
+   "exaggeration": 0.66,
+   "tempo": 0.95,
+   "start": 48.894,
+   "end": 51.839,
+   "tries": 1,
+   "beat": "v017",
+   "pause_after": 0.48,
+   "spoken": "तब वेताल ने बताया, योगी की असली चाल क्या थी.",
+   "raw_dur_s": 2.8,
+   "checks": [
+    {
+     "seed": 58077,
+     "rate": 3.57,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v018.1",
+   "text": "योगी उसी राजा की बलि चढ़ाकर, सिद्धि पाना चाहता था।",
+   "emotion": "tense",
+   "exaggeration": 0.66,
+   "tempo": 1.05,
+   "start": 52.319,
+   "end": 55.537,
+   "tries": 1,
+   "beat": "v018",
+   "pause_after": 0.22,
+   "spoken": "योगी उसी राजा की बलि चढ़ाकर, सिद्धि पाना चाहता था.",
+   "raw_dur_s": 3.38,
+   "checks": [
+    {
+     "seed": 46896,
+     "rate": 2.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v019.1",
+   "text": "वेताल की चेतावनी से, राजा बच गया।",
+   "emotion": "awe",
+   "exaggeration": 0.68,
+   "tempo": 0.95,
+   "start": 55.757,
+   "end": 57.977,
+   "tries": 1,
+   "beat": "v019",
+   "pause_after": 0.38,
+   "spoken": "वेताल की चेतावनी से, राजा बच गया.",
+   "raw_dur_s": 2.12,
+   "checks": [
+    {
+     "seed": 99548,
+     "rate": 3.3,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v020.1",
+   "text": "कथा के अनुसार, उसने उलटे योगी की बलि चढ़ा दी।",
+   "emotion": "narrate",
+   "exaggeration": 0.55,
+   "tempo": 0.971,
+   "start": 58.357,
+   "end": 61.495,
+   "tries": 1,
+   "beat": "v020",
+   "pause_after": 0.22,
+   "spoken": "कथा के अनुसार, उसने उलटे योगी की बलि चढ़ा दी.",
+   "raw_dur_s": 3.05,
+   "checks": [
+    {
+     "seed": 31989,
+     "rate": 3.28,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v021.1",
+   "text": "यानी जिसने सबसे ज़्यादा सवाल पूछे, वही सबसे सच्चा साथी निकला।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.988,
+   "start": 61.715,
+   "end": 65.655,
+   "tries": 1,
+   "beat": "v021",
+   "pause_after": 0.38,
+   "spoken": "यानी जिसने सबसे ज़्यादा सवाल पूछे, वही सबसे सच्चा साथी निकला.",
+   "raw_dur_s": 3.9,
+   "checks": [
+    {
+     "seed": 70029,
+     "rate": 2.82,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v022.1",
+   "text": "आप होते तो, पहेली पर बोलते या चुप रहते?",
+   "emotion": "curious",
+   "exaggeration": 0.6,
+   "tempo": 0.95,
+   "start": 66.035,
+   "end": 68.421,
+   "tries": 1,
+   "beat": "v022",
+   "pause_after": 0.3,
+   "spoken": "आप होते तो, पहेली पर बोलते या चुप रहते?",
+   "raw_dur_s": 2.27,
+   "checks": [
+    {
+     "seed": 86845,
+     "rate": 3.96,
+     "problems": []
+    }
+   ]
+  },
+  {
+   "id": "v023.1",
+   "text": "अगली कथा में, टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?। फ़ॉलो कीजिए।",
+   "emotion": "reflective",
+   "exaggeration": 0.5,
+   "tempo": 0.95,
+   "start": 68.721,
+   "end": 73.086,
+   "tries": 1,
+   "beat": "v023",
+   "pause_after": 0.3,
+   "spoken": "अगली कथा में, टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?. फ़ॉलो कीजिए.",
+   "raw_dur_s": 4.15,
+   "checks": [
+    {
+     "seed": 40937,
+     "rate": 3.61,
+     "problems": []
+    }
+   ]
+  }
+ ]
+}

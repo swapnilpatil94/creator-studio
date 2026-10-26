@@ -1,0 +1,558 @@
+[
+ {
+  "id": "v001",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "panL",
+   "label": "शव पेड़ से उतरा",
+   "behind": "वेताल की लोककथा की शुरुआत",
+   "fx": "drone_orbit_180",
+   "img2": "scene1",
+   "labels": [],
+   "fxBy": "cinema",
+   "tone": "cold",
+   "shots": [
+    {
+     "img": "v001_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "crane_down",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v001_insert",
+     "framing": "insert",
+     "of": "scene0",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v002",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "शर्त थी: जवाब *जानकर* चुप रहा, तो"
+   ],
+   "style": "slam",
+   "tone": "cold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v003",
+  "comp": "fx",
+  "params": {
+   "img": "scene0",
+   "move": "pull",
+   "fx": "split_screen_vs",
+   "fxBy": "cinema",
+   "tone": "cold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v003_close",
+     "framing": "close",
+     "of": "scene0",
+     "fx": "2.5d_parallax",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true,
+   "img2": "scene1",
+   "labels": []
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v004",
+  "comp": "fx",
+  "params": {
+   "img": "scene1",
+   "move": "pull",
+   "label": "वेताल पंचविंशति की लोककथा के अनुसार",
+   "reveal": "circle",
+   "fx": "infinite_zoom_droste",
+   "sticker": "sparkle",
+   "fxBy": "cinema",
+   "tone": "cold",
+   "transition": "leak"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v005",
+  "comp": "fx",
+  "params": {
+   "img": "scene1",
+   "move": "panR",
+   "label": "श्मशान के पेड़ पर लटका शव, उसके पास लाना।",
+   "fx": "sacred_geometry_carve",
+   "fxBy": "cinema",
+   "tone": "cold",
+   "transition": "gl:CrossZoom",
+   "shots": [
+    {
+     "img": "v005_close",
+     "framing": "close",
+     "of": "scene1",
+     "fx": "parallax_occlusion_3d",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v005_insert",
+     "framing": "insert",
+     "of": "scene1",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v006",
+  "comp": "fx",
+  "params": {
+   "img": "scene2",
+   "move": "push",
+   "label": "राजा गया, शव को कंधे पर उठाया, और चल पड़ा।",
+   "fx": "lightning_flash",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v006_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "crane_up_reveal",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v006_insert",
+     "framing": "insert",
+     "of": "scene2",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v007",
+  "comp": "fx",
+  "params": {
+   "fx": "mesh_crane_push",
+   "img": "scene2",
+   "move": "push",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v007_close",
+     "framing": "close",
+     "of": "scene2",
+     "fx": "depth_fog_haze",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v008",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "बोला,",
+    "*रास्ता* लंबा है, एक कहानी सुनो।"
+   ],
+   "style": "spring",
+   "tone": "ember",
+   "transition": "gl:cube",
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v009",
+  "comp": "fx",
+  "params": {
+   "img": "scene3",
+   "move": "pull",
+   "fx": "day_to_night_timelapse",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v009_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "double_exposure_cosmos",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v009_insert",
+     "framing": "insert",
+     "of": "scene3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "},{": "v010",
+  "chapter": "ch1"
+ },
+ {
+  "id": "v010",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "जवाब *जानते* हो, तो बोलो।"
+   ],
+   "style": "glitch",
+   "tone": "fire",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v011",
+  "comp": "fx",
+  "params": {
+   "img": "scene3",
+   "move": "pull",
+   "label": "राजा मौन रहता, तो शाप, बोलता, तो शव उड़ जाता",
+   "reveal": "circle",
+   "fx": "kinetography_cinemagraph",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v011_close",
+     "framing": "close",
+     "of": "scene3",
+     "fx": "mesh_ken_burns_3d",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v011_insert",
+     "framing": "insert",
+     "of": "scene3",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v012",
+  "comp": "fx",
+  "params": {
+   "img": "scene4",
+   "move": "panR",
+   "label": "राजा जवाब देता, और हर बार शव लौट जाता",
+   "reveal": "diamond",
+   "fx": "mesh_rack_focus_dof",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "gl:doorway",
+   "shots": [
+    {
+     "img": "v012_close",
+     "framing": "close",
+     "of": "scene4",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true,
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v013",
+  "comp": "fx",
+  "params": {
+   "img": "scene5",
+   "move": "push",
+   "label": "राजा फिर श्मशान जाता, और फिर शव उतारता",
+   "reveal": "wipe",
+   "fx": "drone_top_down_bird_eye",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v013_close",
+     "framing": "close",
+     "of": "scene5",
+     "fx": "depth_rack_focus",
+     "fxBy": "cinema"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v014",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "ऐसा *पच्चीस* बार हुआ न थका"
+   ],
+   "style": "mask",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v015",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "आख़िर वेताल ने राजा की *हिम्मत* क्यों"
+   ],
+   "style": "slam",
+   "tone": "ember",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v016",
+  "comp": "fx",
+  "params": {
+   "img": "scene6",
+   "move": "pull",
+   "label": "पच्चीसवीं पहेली पर, राजा जवाब नहीं दे पाया",
+   "reveal": "circle",
+   "fx": "handheld_breathing_shake",
+   "sticker": "sparkle",
+   "fxBy": "cinema",
+   "tone": "fire",
+   "transition": "gl:GlitchMemories",
+   "shots": [
+    {
+     "img": "v016_close",
+     "framing": "close",
+     "of": "scene6",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v016_insert",
+     "framing": "insert",
+     "of": "scene6",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v017",
+  "comp": "fx",
+  "params": {
+   "img": "scene7",
+   "move": "panL",
+   "label": "तब वेताल ने बताया, योगी की असली चाल क्या थी",
+   "reveal": "diamond",
+   "fx": "dolly_zoom_vertigo",
+   "fxBy": "cinema",
+   "tone": "fire",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v017_close",
+     "framing": "close",
+     "of": "scene7",
+     "fx": "drone_pull_out_reveal",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v017_insert",
+     "framing": "insert",
+     "of": "scene7",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v018",
+  "comp": "fx",
+  "params": {
+   "img": "scene8",
+   "move": "push",
+   "label": "योगी उसी राजा की बलि चढ़ाकर, सिद्धि पाना चाहता था",
+   "reveal": "wipe",
+   "fx": "mesh_dolly_zoom_vertigo",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "whip",
+   "shots": [
+    {
+     "img": "v018_close",
+     "framing": "close",
+     "of": "scene8",
+     "fx": "speed_ramp_punch",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v018_insert",
+     "framing": "insert",
+     "of": "scene8",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v019",
+  "comp": "fx",
+  "params": {
+   "fx": "volumetric_god_rays",
+   "img": "scene9",
+   "move": "pull",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "cut",
+   "shots": [
+    {
+     "img": "v019_close",
+     "framing": "close",
+     "of": "scene9",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v020",
+  "comp": "fx",
+  "params": {
+   "img": "scene10",
+   "move": "pull",
+   "label": "कथा के अनुसार, उसने उलटे योगी की बलि चढ़ा दी",
+   "reveal": "circle",
+   "fx": "puppet_warp_breathing",
+   "fxBy": "cinema",
+   "tone": "ember",
+   "transition": "gl:swap",
+   "shots": [
+    {
+     "img": "v020_close",
+     "framing": "close",
+     "of": "scene10",
+     "fx": "chromatic_glitch_wipe",
+     "fxBy": "cinema"
+    },
+    {
+     "img": "v020_insert",
+     "framing": "insert",
+     "of": "scene10",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true,
+   "trBy": "cinema"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v021",
+  "comp": "kinetic",
+  "params": {
+   "lines": [
+    "यानी जिसने सबसे *ज़्यादा* सवाल पूछे वही"
+   ],
+   "style": "wave",
+   "label": "सबसे ज़्यादा सवाल पूछे वाला साथी",
+   "tone": "gold",
+   "transition": "zoom"
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v022",
+  "comp": "fx",
+  "params": {
+   "img": "scene11",
+   "move": "push",
+   "fx": "diya_flicker_light",
+   "sticker": "sparkle",
+   "fxBy": "cinema",
+   "tone": "gold",
+   "transition": "zoom",
+   "shots": [
+    {
+     "img": "v022_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ },
+ {
+  "id": "v023",
+  "comp": "fx",
+  "params": {
+   "img": "scene11",
+   "move": "panL",
+   "label": "अगली कथा में",
+   "reveal": "circle",
+   "fx": "matte_painting_extension",
+   "fxBy": "cinema",
+   "tone": "gold",
+   "transition": "dissolve",
+   "shots": [
+    {
+     "img": "v023_wide",
+     "framing": "wide",
+     "of": "scene11",
+     "fx": "crane_up_reveal"
+    },
+    {
+     "img": "v023_close",
+     "framing": "close",
+     "of": "scene11",
+     "fx": "drone_push_in"
+    },
+    {
+     "img": "v023_insert",
+     "framing": "insert",
+     "of": "scene11",
+     "fx": "depth_rack_focus"
+    }
+   ],
+   "autoShots": true
+  },
+  "chapter": "ch1"
+ }
+]

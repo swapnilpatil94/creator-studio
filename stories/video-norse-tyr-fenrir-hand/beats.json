@@ -1,0 +1,233 @@
+[
+ {
+  "id": "v001",
+  "text": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया।",
+  "intent": "hook",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "1",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v002",
+  "text": "उसने भेड़िये के मुँह में हाथ क्यों रखा?",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "2",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v003",
+  "text": "गद्य एडा के अनुसार, देवताओं ने एक भेड़िया पाला, फ़ेनरिर नाम का।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "3",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v004",
+  "text": "वह रोज़ बढ़ता गया, और डर भी साथ बढ़ता गया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "4",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v005",
+  "text": "देवताओं ने उसे बाँधने की ठानी, पर मज़बूत ज़ंजीर नहीं टिकी।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "5",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v006",
+  "text": "दो बार ज़ंजीरें बनीं, दोनों बार फ़ेनरिर ने तोड़ दीं।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "6",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v007",
+  "text": "तब बौनों ने एक रेशमी डोरी बनाई, नाम था ग्लाइप्निर।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "7",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v008",
+  "text": "उसमें क्या था? बिल्ली के पैरों की आहट, औरत की दाढ़ी।",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "8",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v009",
+  "text": "पहाड़ की जड़ें, मछली की साँस, और पक्षी की थूक।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "9",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v010",
+  "text": "फ़ेनरिर को शक हुआ, \"इतनी पतली डोरी में कोई धोखा है।\"",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "10",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v011",
+  "text": "वह बोला, \"कोई एक देवता मेरे मुँह में हाथ रखे।\"",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "11",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v012",
+  "text": "\"तो मैं यह डोरी बँधवा लूँगा।\"",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "12",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v013",
+  "text": "सब देवता चुप रहे।",
+  "intent": "punch",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "13",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v014",
+  "text": "तब टीर आगे बढ़ा, और हाथ भेड़िये के मुँह में रख दिया।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "14",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v015",
+  "text": "फ़ेनरिर बँध गया, ज़ंजीर कसती गई, वह छूट न पाया।",
+  "intent": "tense",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "15",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v016",
+  "text": "देवता हँसे, पर टीर नहीं। फ़ेनरिर ने उसका हाथ काट दिया।",
+  "intent": "reveal",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "16",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v017",
+  "text": "टीर जानता था कि हाथ जाएगा, फिर भी रुका नहीं।",
+  "intent": "awe",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "17",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v018",
+  "text": "इसी वजह से, कथाओं में टीर को एक हाथ वाला देवता कहा गया।",
+  "intent": "narrate",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "18",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v019",
+  "text": "देवताओं ने सुरक्षा पाई, और एक ने उसका दाम चुकाया।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "19",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v020",
+  "text": "आप कहेंगे, टीर बहादुर था, या देवताओं ने उसे धोखे में रखा?",
+  "intent": "curious",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "20",
+   "mode": "reveal"
+  }
+ },
+ {
+  "id": "v021",
+  "text": "अगली कथा में, विंध्य पर्वत आज भी झुका क्यों है?। फ़ॉलो कीजिए।",
+  "intent": "reflective",
+  "chapter": "ch1",
+  "visual": {
+   "type": "painting",
+   "ref": "21",
+   "mode": "reveal"
+  }
+ }
+]

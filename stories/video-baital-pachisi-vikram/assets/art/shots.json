@@ -1,0 +1,345 @@
+{
+ "scene0": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "climbing down a banyan tree, asking a question",
+  "setting": "a sacred banyan tree in a forest clearing",
+  "lighting": "dappled sunlight through leaves",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v001_close": {
+  "subject": "PROTAGONIST the king, a bearded man",
+  "action": "climbing down from a tree, holding a staff",
+  "setting": "ancient forest clearing with tall banyan trees",
+  "lighting": "dappled sunlight through leaves",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v001_insert": {
+  "subject": "PROTAGONIST the king, a middle-aged man",
+  "action": "climbing down from a tree, holding a broken sword",
+  "setting": "ancient palace courtyard with carved stone pillars",
+  "lighting": "dusk, golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v003_close": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "clutching a broken idol in his hands",
+  "setting": "a ruined temple courtyard with broken pillars",
+  "lighting": "dusk, golden light through smoke",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene1": {
+  "subject": "PROTAGONIST the king, a middle-aged man",
+  "action": "clutching a corpse by the arms",
+  "setting": "charred forest clearing with a dead tree",
+  "lighting": "dim, flickering firelight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_close": {
+  "subject": "PROTAGONIST the king, an old man",
+  "action": "extending his hand in solemn vow",
+  "setting": "a stone-paved courtyard of a Himalayan monastery",
+  "lighting": "golden oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_insert": {
+  "subject": "PROTAGONIST the king, a solemn man",
+  "action": "extending his hand in a vow",
+  "setting": "a stone-paved courtyard of a Himalayan temple",
+  "lighting": "golden oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v005_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "carrying a corpse over his shoulder",
+  "setting": "charred forest clearing near a funeral pyre",
+  "lighting": "dim, flickering firelight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v005_insert": {
+  "subject": "PROTAGONIST, a bearded king in a red angavastram",
+  "action": "kneeling to lift a charred corpse from a funeral pyre",
+  "setting": "a moonlit cremation ground near a river",
+  "lighting": "glowing embers and pale moonlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene2": {
+  "subject": "PROTAGONIST, a bearded man, carrying a corpse",
+  "action": "struggling to lift the corpse onto his shoulder",
+  "setting": "a moonlit forest path with twisted trees",
+  "lighting": "cold blue moonlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v006_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "carrying a corpse on his shoulder",
+  "setting": "a dusty battlefield with broken chariots",
+  "lighting": "dim, orange glow of sunset",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "v006_insert": {
+  "subject": "PROTAGONIST, a bearded man with a turban",
+  "action": "carries a lifeless body over his shoulder",
+  "setting": "a dusty battlefield with broken chariots",
+  "lighting": "dull, golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "v007_close": {
+  "subject": "PROTAGONIST the king, a pale man",
+  "action": "clutching his chest as a shadowy figure cackles",
+  "setting": "a dimly lit palace chamber with carved stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene3": {
+  "subject": "PROTAGONIST, a bearded king in a silk dhoti",
+  "action": "clutching his throat as a shadowy figure looms behind him",
+  "setting": "a dimly lit throne room with carved stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v009_close": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "writing a riddle on a copper tablet",
+  "setting": "a stone throne room with pillars and oil lamps",
+  "lighting": "warm, flickering glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v009_insert": {
+  "subject": "PROTAGONIST, an aging king",
+  "action": "writing a riddle on a palm-leaf manuscript",
+  "setting": "a dimly lit royal study with carved wooden shelves",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v011_close": {
+  "subject": "PROTAGONIST, a king, standing motionless",
+  "action": "his shadow stretches as he speaks",
+  "setting": "a stone throne room with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v011_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clenching his jaw, eyes wide",
+  "setting": "stone throne room with carved pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene4": {
+  "subject": "PROTAGONIST, a bearded king in a gold-embroidered dhoti",
+  "action": "raises his hand as a lifeless body falls at his feet",
+  "setting": "a stone throne room with carved pillars and oil lamps",
+  "lighting": "dramatic shadows from torches",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v012_close": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "raises his sword, then lowers it",
+  "setting": "stone throne room with pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene5": {
+  "subject": "PROTAGONIST, an aging king",
+  "action": "carrying a charred corpse over his shoulder",
+  "setting": "a desolate cremation ground with pyres and bones",
+  "lighting": "orange glow of burning flames",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v013_close": {
+  "subject": "PROTAGONIST, a bearded king in a red dhoti",
+  "action": "carrying a wooden palanquin with a corpse",
+  "setting": "a desolate cremation ground with pyres",
+  "lighting": "orange glow of flames",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene6": {
+  "subject": "PROTAGONIST, the king, standing motionless",
+  "action": "clenching his fists in frustration",
+  "setting": "a grand stone throne room with carved pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v016_close": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "staring in silence at a stone tablet",
+  "setting": "a dimly lit throne room with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v016_insert": {
+  "subject": "PROTAGONIST, the king",
+  "action": "clenching his fists in frustration",
+  "setting": "a grand stone throne room with carved pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene7": {
+  "subject": "PROTAGONIST the king, a bearded man in a gold-embroidered dhoti",
+  "action": "listening intently as a skeletal creature speaks",
+  "setting": "a dimly lit cave with stone pillars and ancient carvings",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v017_close": {
+  "subject": "PROTAGONIST, a bearded king in a silk dhoti",
+  "action": "listening intently as a skeletal figure speaks",
+  "setting": "a dim stone chamber with oil lamps and ancient scrolls",
+  "lighting": "warm flickering light from lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v017_insert": {
+  "subject": "PROTAGONIST, a bearded king in a gold-embroidered dhoti",
+  "action": "listening intently as a skeletal figure speaks",
+  "setting": "a dimly lit cave with carved stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene8": {
+  "subject": "PROTAGONIST, a bearded man in dhoti and angavastram",
+  "action": "offering a goat to a fire on an altar",
+  "setting": "a stone platform in a forest clearing",
+  "lighting": "flame glow, dim twilight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v018_close": {
+  "subject": "PROTAGONIST, a young king, standing on a stone platform",
+  "action": "offering a white goat to a fierce-looking yogi",
+  "setting": "ancient stone altar in a forest clearing",
+  "lighting": "golden firelight from sacrificial pyre",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v018_insert": {
+  "subject": "PROTAGONIST, a bearded king in dhoti and angavastram",
+  "action": "offering a goat on an altar of stone and fire",
+  "setting": "a forest clearing with ancient stone pillars",
+  "lighting": "golden firelight and smoke",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene9": {
+  "subject": "PROTAGONIST, a bearded man in royal dhoti and gold armlets",
+  "action": "stepping back as a shadowy figure emerges from a tomb",
+  "setting": "a moonlit stone courtyard with broken pillars and ancient urns",
+  "lighting": "cold moonlight and flickering oil lamp",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v019_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "stepping back as a shadowy figure rises from the earth",
+  "setting": "ancient stone courtyard with carved pillars",
+  "lighting": "moonlight through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene10": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "offering a reversed yogi as a sacrifice on an altar",
+  "setting": "a stone courtyard with carved pillars and an ancient fire pit",
+  "lighting": "dramatic firelight and shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v020_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "offering a reversed yogi as a sacrifice on an altar",
+  "setting": "a stone courtyard with carved pillars and an ancient fire pit",
+  "lighting": "dramatic firelight and shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v020_insert": {
+  "subject": "PROTAGONIST the king, a bearded man",
+  "action": "offering a reversed yogi onto an altar",
+  "setting": "stone ritual platform in a forest temple",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene11": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "placing his hand into a tiger's mouth",
+  "setting": "ancient stone platform in a forest clearing",
+  "lighting": "golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v022_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "gripping a broken crown in his hands",
+  "setting": "a ruined palace courtyard with shattered pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v023_wide": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "extending his hand into a tiger's mouth",
+  "setting": "dense forest near a stone temple",
+  "lighting": "golden dawn through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v023_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "placing his hand into a tiger's mouth",
+  "setting": "a dense forest clearing near a stone temple",
+  "lighting": "golden hour glow through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v023_insert": {
+  "subject": "PROTAGONIST, a bearded king in a red dhoti",
+  "action": "stretches his hand toward a snarling tiger's mouth",
+  "setting": "a dense forest clearing with tall grass and ancient stone pillars",
+  "lighting": "golden shafts through trees",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ }
+}

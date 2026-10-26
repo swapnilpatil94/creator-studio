@@ -1,0 +1,797 @@
+{
+ "scene0": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "demanding tax from his queen",
+  "setting": "dimly lit palace hall with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v001_close": {
+  "subject": "PROTAGONIST, a bearded man",
+  "action": "demanding a tax from his wife",
+  "setting": "a stone courtyard with a burning pyre",
+  "lighting": "flame-lit shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v001_insert": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "demanding a tax from his wife",
+  "setting": "a dimly lit palace hall with stone pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "scene1": {
+  "subject": "PROTAGONIST, the king Harishchandra, a bearded man",
+  "action": "standing solemnly with a staff in his hand",
+  "setting": "a stone palace courtyard with carved pillars",
+  "lighting": "soft golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v002_close": {
+  "subject": "PROTAGONIST, the king Harishchandra, a bearded man",
+  "action": "standing tall, holding a broken bow",
+  "setting": "stone throne room with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v002_insert": {
+  "subject": "PROTAGONIST, the king Harishchandra, a bearded man",
+  "action": "standing firm, holding a staff",
+  "setting": "ancient stone throne hall with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene2": {
+  "subject": "PROTAGONIST, the king Harishchandra, an aged man",
+  "action": "standing solemnly with a begging bowl in hand",
+  "setting": "ancient Ayodhya palace courtyard with stone pillars",
+  "lighting": "soft golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v004_wide": {
+  "subject": "PROTAGONIST the king, an elderly man",
+  "action": "sitting on a throne, offering alms to a beggar",
+  "setting": "a grand hall in Ayodhya with carved stone pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_close": {
+  "subject": "PROTAGONIST the king, an elderly man",
+  "action": "offering rice and fruits to a brahmin",
+  "setting": "a stone-paved courtyard of Ayodhya palace",
+  "lighting": "soft golden glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v004_insert": {
+  "subject": "PROTAGONIST, the king, standing tall",
+  "action": "offering alms to a beggar",
+  "setting": "stone steps of Ayodhya palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene3": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "standing firm as a sage approaches",
+  "setting": "a stone courtyard near a fire altar",
+  "lighting": "golden firelight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v005_close": {
+  "subject": "PROTAGONIST the king, sage Vishwamitra",
+  "action": "standing in a tense pose, hands clasped in prayer",
+  "setting": "a stone courtyard of a Himalayan ashram",
+  "lighting": "golden dawn through pine trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v005_insert": {
+  "subject": "PROTAGONIST the king, an elderly man",
+  "action": "kneeling before sage Vishwamitra, a bearded man in white dhoti",
+  "setting": "a stone-paved courtyard of an ancient Himalayan ashram",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene4": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "kneeling before three ascetics",
+  "setting": "stone steps of Kashi temple",
+  "lighting": "golden oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v006_wide": {
+  "subject": "PROTAGONIST, an Indian king",
+  "action": "placing a golden bowl of rice into a beggar's hands",
+  "setting": "stone steps of an ancient Indian temple",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v006_close": {
+  "subject": "PROTAGONIST, a bearded man in a gold-embroidered dhoti",
+  "action": "placing a silver bowl of rice into a Brahmin's hands",
+  "setting": "a stone-paved courtyard of a royal palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v006_insert": {
+  "subject": "PROTAGONIST, a bearded man in a gold-embroidered dhoti",
+  "action": "placing a golden bowl of rice on an altar",
+  "setting": "a stone-paved temple courtyard with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene5": {
+  "subject": "PROTAGONIST, an elderly king",
+  "action": "standing firm, holding a staff",
+  "setting": "a stone throne room with carved pillars",
+  "lighting": "warm oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v007_wide": {
+  "subject": "PROTAGONIST, a solemn king",
+  "action": "standing firm with raised hand",
+  "setting": "stone throne room with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v007_close": {
+  "subject": "PROTAGONIST, a solemn king",
+  "action": "standing firm with raised hand",
+  "setting": "ancient stone throne hall",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v007_insert": {
+  "subject": "PROTAGONIST, a solemn king",
+  "action": "standing firm with raised hand",
+  "setting": "ancient stone throne room with pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene6": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clenches his fists in defiance",
+  "setting": "ancient stone throne room with carved pillars",
+  "lighting": "dramatic torchlight",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v008_close": {
+  "subject": "PROTAGONIST, a young king in a gold-embroidered dhoti",
+  "action": "staring defiantly at an old sage with a raised hand",
+  "setting": "a carved stone throne room with oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v008_insert": {
+  "subject": "PROTAGONIST, a young king in a gold-embroidered dhoti",
+  "action": "clenches his fists and stares defiantly",
+  "setting": "a grand stone throne room with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene7": {
+  "subject": "the king, a middle-aged man",
+  "action": "refusing to grant the sage's request",
+  "setting": "a carved stone throne room with oil lamps",
+  "lighting": "golden and dim",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v009_wide": {
+  "subject": "PROTAGONIST, a bearded man in a silk dhoti",
+  "action": "clenching his jaw as a robed sage raises a hand",
+  "setting": "a stone-paved courtyard with carved pillars",
+  "lighting": "golden from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v009_close": {
+  "subject": "PROTAGONIST, a middle-aged man with a crown",
+  "action": "clenching his fists and bowing his head",
+  "setting": "a carved stone throne room with oil lamps",
+  "lighting": "warm amber glow from lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v009_insert": {
+  "subject": "PROTAGONIST, a bearded man in a gold-embroidered dhoti",
+  "action": "clenching his fists and shaking his head",
+  "setting": "a carved stone throne room with oil lamps",
+  "lighting": "warm and flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "scene8": {
+  "subject": "PROTAGONIST, the king, standing solemn",
+  "action": "placing a jeweled crown on a young prince's head",
+  "setting": "a grand stone throne room with carved pillars",
+  "lighting": "golden light from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v010_close": {
+  "subject": "PROTAGONIST, the king, standing solemn",
+  "action": "handing the royal throne to a priest",
+  "setting": "ancient stone throne room with carved pillars",
+  "lighting": "golden oil lamps casting soft glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v010_insert": {
+  "subject": "PROTAGONIST, the king, standing resolute",
+  "action": "handing the throne to a priest",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "golden oil lamps glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene9": {
+  "subject": "PROTAGONIST, the king",
+  "action": "clutching empty hands in despair",
+  "setting": "royal throne room with shattered treasure chests",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v012_close": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "clutching a broken golden bowl",
+  "setting": "a ruined palace hall with shattered pillars",
+  "lighting": "flickering oil lamp light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "scene10": {
+  "subject": "PROTAGONIST, a young king, his wife Shavya, and their son Rohit",
+  "action": "walking hurriedly through the palace gates",
+  "setting": "ancient stone courtyard of Ayodhya palace",
+  "lighting": "warm golden dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v013_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "walking with wife Shavya and son Rohit",
+  "setting": "stone-paved road outside Ayodhya",
+  "lighting": "dusk, oil lamps glowing",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v013_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "leading his wife Shavya and son Rohit",
+  "setting": "ancient Ayodhya stone steps",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene11": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "kneeling before a stone idol with folded hands",
+  "setting": "the ancient temple of Kashi with carved pillars and incense smoke",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v014_wide": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "kneeling before three ascetics in saffron robes",
+  "setting": "the stone steps of Kashi's ancient temple",
+  "lighting": "golden dawn through arches",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v014_close": {
+  "subject": "PROTAGONIST, a young man with a crownless head",
+  "action": "kneeling before three goddesses in flowing silk sarees",
+  "setting": "the ancient stone courtyard of Kashi temple",
+  "lighting": "soft golden glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v014_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "kneeling before a goddess statue, head bowed",
+  "setting": "ancient stone temple in Varanasi, pillars carved with deities",
+  "lighting": "golden oil lamps casting long shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "scene12": {
+  "subject": "PROTAGONIST, a king, and his wife Shavya",
+  "action": "clutching each other, weeping silently",
+  "setting": "ash-heap ghats, oil lamps flickering",
+  "lighting": "dim, golden glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v016_close": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "sitting cross-legged on a stone platform",
+  "setting": "ancient stone hall with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v016_insert": {
+  "subject": "PROTAGONIST king, an elder man",
+  "action": "raising a carved wooden staff",
+  "setting": "stone platform in a temple courtyard",
+  "lighting": "golden afternoon light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v018_wide": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "clutching a coin purse and walking away",
+  "setting": "stone palace courtyard with guards",
+  "lighting": "dusk, oil lamps flickering",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v018_close": {
+  "subject": "PROTAGONIST, a middle-aged king",
+  "action": "clutching a sealed letter, stepping toward a merchant",
+  "setting": "stone-paved courtyard of a royal palace",
+  "lighting": "dim, with oil lamps flickering",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v018_insert": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "striding away from his weeping wife and child",
+  "setting": "stone steps of an ancient palace courtyard",
+  "lighting": "dusky, with oil lamps flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v019_wide": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "gripping a golden coin tightly",
+  "setting": "a dimly lit palace chamber with carved stone walls",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v019_close": {
+  "subject": "PROTAGONIST, a young king, and his wife Shavya",
+  "action": "standing together, holding hands and looking resolute",
+  "setting": "a stone-paved courtyard of an ancient Indian palace",
+  "lighting": "warm golden oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v019_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clutching a coin as his wife steps onto a market platform",
+  "setting": "ancient Indian palace courtyard with stone pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v020_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "watching a Brahmin buy a woman",
+  "setting": "a stone courtyard in a royal palace",
+  "lighting": "warm oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v020_insert": {
+  "subject": "PROTAGONIST, a young man, and a Brahmin man",
+  "action": "signing a contract with a trembling hand",
+  "setting": "a dimly lit temple hall with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v021_wide": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "clenching a broken staff",
+  "setting": "ruined palace courtyard",
+  "lighting": "dusk, dim oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v021_close": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "clenching a broken staff in trembling hands",
+  "setting": "crumbling throne room with carved stone pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v021_insert": {
+  "subject": "PROTAGONIST, an elderly king",
+  "action": "clenching his fists in silent sorrow",
+  "setting": "a dimly lit throne room with carved stone pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v022_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "staring in confusion as a priest raises a sacrificial blade",
+  "setting": "stone altar in a Vedic ritual hall",
+  "lighting": "golden oil lamps casting long shadows",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v022_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "staggering back in confusion",
+  "setting": "the throne room of an ancient Indian palace",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v023_close": {
+  "subject": "PROTAGONIST, an elderly king",
+  "action": "placing a bundle of gold coins before a seated sage",
+  "setting": "a stone-paved courtyard beside a sacred banyan tree",
+  "lighting": "golden glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v023_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "placing a bundle of gold coins before a bearded sage",
+  "setting": "a stone-paved courtyard beside a sacred banyan tree",
+  "lighting": "golden afternoon light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v024_close": {
+  "subject": "PROTAGONIST, a bearded king in a silk dhoti and gold armlets",
+  "action": "clenching his fists in frustration",
+  "setting": "a carved stone hall with oil lamps and tapestries",
+  "lighting": "warm amber glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v024_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clenching his fists in frustration",
+  "setting": "a carved stone throne room with oil lamps",
+  "lighting": "warm, flickering glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v026_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "signing a contract with a Chandala man",
+  "setting": "a dimly lit royal hall with carved pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v027_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "standing bound at the edge of a funeral pyre",
+  "setting": "a desolate cremation ground by the Ganges",
+  "lighting": "orange glow of burning pyres",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v028_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "collecting taxes from a trembling farmer",
+  "setting": "a dusty village square with clay huts",
+  "lighting": "harsh midday sun",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v028_insert": {
+  "subject": "PROTAGONIST, a bearded king in golden robes",
+  "action": "clutching a ledger as a fire priest approaches",
+  "setting": "a stone courtyard with burning pyres",
+  "lighting": "flame-lit, orange and red",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v029_close": {
+  "subject": "PROTAGONIST, an aged king",
+  "action": "sitting on a throne, head bowed in grief",
+  "setting": "a grand stone throne room with faded gold pillars",
+  "lighting": "dim, with flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v029_insert": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "kneeling in the palace courtyard",
+  "setting": "crumbling stone throne room with broken pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v030_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "clutching a broken crown in his trembling hands",
+  "setting": "the throne room of a ruined palace",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v031_close": {
+  "subject": "PROTAGONIST, a young king, bitten by a snake",
+  "action": "clutching his leg as the snake coils around it",
+  "setting": "a dense forest near the kingdom's border",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v031_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clutching his leg as a venomous snake bites him",
+  "setting": "a dense forest clearing near a stone temple",
+  "lighting": "dappled sunlight through trees",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v032_close": {
+  "subject": "PROTAGONIST, a young king, collapsing to his knees",
+  "action": "clutching his chest as his body convulses",
+  "setting": "a stone-paved courtyard of an ancient Indian palace",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v032_insert": {
+  "subject": "PROTAGONIST, a young king, collapsing to his knees",
+  "action": "clutching his chest as his body goes limp",
+  "setting": "a carved stone throne room with golden pillars",
+  "lighting": "dim, flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v033_close": {
+  "subject": "PROTAGONIST, a young king, and his mother, a grieving woman",
+  "action": "kneeling before a wooden funeral bier",
+  "setting": "a stone-paved courtyard of a ruined palace",
+  "lighting": "dusk, with oil lamps flickering",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v033_insert": {
+  "subject": "PROTAGONIST, a young king, and his mother, a noblewoman",
+  "action": "clutching a lifeless body in a pale shroud",
+  "setting": "a stone palace corridor lined with oil lamps",
+  "lighting": "dim, flickering glow",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "comic"
+ },
+ "v034_close": {
+  "subject": "PROTAGONIST, a young king, weeping",
+  "action": "walking slowly along a narrow path",
+  "setting": "Shmashan Ghat, with dark stone steps and smoke rising from the river",
+  "lighting": "dim, with flickering oil lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "luxury"
+ },
+ "v034_insert": {
+  "subject": "PROTAGONIST, a young king, weeping",
+  "action": "walking slowly through the cremation ghats",
+  "setting": "shrouded ghats by the Ganges river",
+  "lighting": "misty dawn light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "luxury"
+ },
+ "v035_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "gazing silently at a burning pyre",
+  "setting": "a moonlit funeral ground near a temple",
+  "lighting": "glowing embers and pale moonlight",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v035_insert": {
+  "subject": "PROTAGONIST, a bearded man in a gold-embroidered dhoti",
+  "action": "gripping a broken spear with trembling hands",
+  "setting": "a ruined battlefield under a blood-red moon",
+  "lighting": "moonlight through smoke",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "v036_close": {
+  "subject": "PROTAGONIST, the king, standing solemn",
+  "action": "gazing into the dark forest",
+  "setting": "ancient stone platform under a banyan tree",
+  "lighting": "moonlight through branches",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v036_insert": {
+  "subject": "PROTAGONIST the king, a middle-aged man",
+  "action": "standing motionless with hands clasped behind his back",
+  "setting": "a stone platform beneath a dark sky",
+  "lighting": "moonlight casting long shadows",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v037_close": {
+  "subject": "PROTAGONIST, a bearded king, and a young boy",
+  "action": "staggering back in horror, clutching his chest",
+  "setting": "a dimly lit stone chamber with carved pillars",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v037_insert": {
+  "subject": "PROTAGONIST, a bearded king",
+  "action": "stares in horror at a corpse",
+  "setting": "a charred battlefield under a blood-red sky",
+  "lighting": "flaming torches flicker",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "epic"
+ },
+ "v038_wide": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "stares silently at a veiled woman",
+  "setting": "timber-pillared hall of a royal palace",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v038_close": {
+  "subject": "PROTAGONIST, a young king, and a warrior woman",
+  "action": "stand facing each other in silence",
+  "setting": "a stone courtyard surrounded by ancient pillars",
+  "lighting": "golden dusk light",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "fresco"
+ },
+ "v038_insert": {
+  "subject": "PROTAGONIST the king and a young woman",
+  "action": "stand facing each other in silence",
+  "setting": "a dimly lit palace corridor with carved wooden pillars",
+  "lighting": "soft glow from oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v040_close": {
+  "subject": "PROTAGONIST, a young king, and his aged father",
+  "action": "clutching each other's hands in a silent plea",
+  "setting": "a carved stone throne room with oil lamps flickering",
+  "lighting": "warm amber glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v040_insert": {
+  "subject": "PROTAGONIST, a king, and his loyal servant",
+  "action": "clutching each other's hands in a desperate plea",
+  "setting": "a dimly lit throne room with carved stone pillars",
+  "lighting": "warm oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v042_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clutching the edge of his saree pallu",
+  "setting": "deserted palace courtyard at dusk",
+  "lighting": "flickering oil lamp glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v042_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "clutching the edge of his saree pallu",
+  "setting": "deserted palace courtyard at dusk",
+  "lighting": "fading golden light",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v043_close": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "lifting a crimson dhoti to offer as a sacrifice",
+  "setting": "a stone altar beneath a peepal tree in a sacred grove",
+  "lighting": "golden rays piercing through leaves",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v043_insert": {
+  "subject": "PROTAGONIST, a young king",
+  "action": "raising a golden lotus in offering",
+  "setting": "a stone platform beneath a temple spire",
+  "lighting": "radiant celestial glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v044_close": {
+  "subject": "the king, Yamaraj, and sage Vishvamitra",
+  "action": "stand facing each other in solemn silence",
+  "setting": "a grand stone hall with carved pillars and oil lamps",
+  "lighting": "golden and warm from hanging lamps",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v044_insert": {
+  "subject": "the king, Yamraj, and sage Vishwamitra",
+  "action": "stand in solemn formation, facing each other",
+  "setting": "a grand stone hall with carved pillars and oil lamps",
+  "lighting": "golden and dim, casting long shadows",
+  "medium": "photoreal",
+  "src": "writer",
+  "family": "noir"
+ },
+ "v045_close": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "receiving a crown from a priest in red robes",
+  "setting": "a stone throne room with carved pillars and oil lamps",
+  "lighting": "warm golden glow",
+  "medium": "photoreal",
+  "src": "writer"
+ },
+ "v045_insert": {
+  "subject": "PROTAGONIST the king, a young man",
+  "action": "receiving a golden crown from a priest",
+  "setting": "a stone throne room with carved pillars",
+  "lighting": "warm oil lamps",
+  "medium": "photoreal",
+  "src": "writer"
+ }
+}

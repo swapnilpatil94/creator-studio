@@ -1,0 +1,197 @@
+{
+ "slug": "norse-tyr-fenrir-hand",
+ "format": "short",
+ "title": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?",
+ "thumb": "हाथ का सौदा?",
+ "thumbSupport": "देवताओं का धोखा",
+ "thumbStyle": null,
+ "thumbArt": null,
+ "thumbScene": null,
+ "source_line": "स्रोत: गद्य एडा (स्नोरी स्टुर्लुसन), गिल्फ़ागिन्निंग, अध्याय 34",
+ "tradition": "यह कथा नॉर्स परंपरा के गद्य एडा के अनुसार है; यह भारतीय कथा नहीं है और स्रोत मध्ययुगीन आइसलैंड में लिखा गया।",
+ "hashtags": [
+  "#kathaaya",
+  "#norsemythology",
+  "#tyr"
+ ],
+ "look": {},
+ "beats": [
+  {
+   "n": 1,
+   "text": "एक देवता ने, ख़ुद अपना हाथ गँवाने दिया।",
+   "intent": "hook",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 2,
+   "text": "उसने भेड़िये के मुँह में हाथ क्यों रखा?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 3,
+   "text": "गद्य एडा के अनुसार, देवताओं ने एक भेड़िया पाला, फ़ेनरिर नाम का।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 4,
+   "text": "वह रोज़ बढ़ता गया, और डर भी साथ बढ़ता गया।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 5,
+   "text": "देवताओं ने उसे बाँधने की ठानी, पर मज़बूत ज़ंजीर नहीं टिकी।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 6,
+   "text": "दो बार ज़ंजीरें बनीं, दोनों बार फ़ेनरिर ने तोड़ दीं।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 7,
+   "text": "तब बौनों ने एक रेशमी डोरी बनाई, नाम था ग्लाइप्निर।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 8,
+   "text": "उसमें क्या था? बिल्ली के पैरों की आहट, औरत की दाढ़ी।",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 9,
+   "text": "पहाड़ की जड़ें, मछली की साँस, और पक्षी की थूक।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 10,
+   "text": "फ़ेनरिर को शक हुआ, \"इतनी पतली डोरी में कोई धोखा है।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 11,
+   "text": "वह बोला, \"कोई एक देवता मेरे मुँह में हाथ रखे।\"",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 12,
+   "text": "\"तो मैं यह डोरी बँधवा लूँगा।\"",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 13,
+   "text": "सब देवता चुप रहे।",
+   "intent": "punch",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 14,
+   "text": "तब टीर आगे बढ़ा, और हाथ भेड़िये के मुँह में रख दिया।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 15,
+   "text": "फ़ेनरिर बँध गया, ज़ंजीर कसती गई, वह छूट न पाया।",
+   "intent": "tense",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 16,
+   "text": "देवता हँसे, पर टीर नहीं। फ़ेनरिर ने उसका हाथ काट दिया।",
+   "intent": "reveal",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 17,
+   "text": "टीर जानता था कि हाथ जाएगा, फिर भी रुका नहीं।",
+   "intent": "awe",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 18,
+   "text": "इसी वजह से, कथाओं में टीर को एक हाथ वाला देवता कहा गया।",
+   "intent": "narrate",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 19,
+   "text": "देवताओं ने सुरक्षा पाई, और एक ने उसका दाम चुकाया।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 20,
+   "text": "आप कहेंगे, टीर बहादुर था, या देवताओं ने उसे धोखे में रखा?",
+   "intent": "curious",
+   "accent": null,
+   "chapter": null
+  },
+  {
+   "n": 21,
+   "text": "अगली कथा में, विंध्य पर्वत आज भी झुका क्यों है?। फ़ॉलो कीजिए।",
+   "intent": "reflective",
+   "accent": null,
+   "chapter": null
+  }
+ ],
+ "scenes": {},
+ "visuals": {},
+ "claims": [
+  {
+   "text": "देवताओं ने फ़ेनरिर नाम का भेड़िया पाला",
+   "en": "The gods raised the wolf Fenrir",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "बौनों की बनाई डोरी का नाम ग्लाइप्निर था",
+   "en": "The dwarf-made cord was named Gleipnir",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "टीर ने भेड़िये के मुँह में हाथ रखा",
+   "en": "Tyr put his hand in the wolf's mouth",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  },
+  {
+   "text": "फ़ेनरिर ने टीर का हाथ काट दिया",
+   "en": "Fenrir bit off Tyr's hand",
+   "status": "traditional-account",
+   "source": "Prose Edda, Gylfaginning 34"
+  }
+ ],
+ "chapters": [],
+ "culture": "norse"
+}

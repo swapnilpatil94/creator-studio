@@ -1,0 +1,249 @@
+{
+ "pinnedComment": "आपको इस कथा में सबसे अलग क्या लगा? नीचे लिखिए 👇 और अगले भाग के लिए सब्सक्राइब कीजिए।",
+ "chapters": [
+  "0:00 वचन का दान",
+  "1:02 बिका हुआ राजा",
+  "1:54 श्मशान की रात"
+ ],
+ "story": "video-harishchandra-satya-ki-keemat-long",
+ "channel": "kathaaya",
+ "format": "long",
+ "titleOptions": [
+  {
+   "t": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात | KATHAAYA",
+   "formula": "carousel hook"
+  }
+ ],
+ "title": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात | KATHAAYA",
+ "description": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात\n\nराजा ने अपनी ही पत्नी से, श्मशान का कर माँगा। वह राजा हरिश्चंद्र था, जिसने कभी झूठ नहीं बोला था।\n\n⏱ अध्याय:\n0:00 वचन का दान\n1:02 बिका हुआ राजा\n1:54 श्मशान की रात\n\nयह कथा मार्कण्डेय पुराण के अनुसार है; ख़रीदार चांडाल है, कुछ संस्करणों में ब्राह्मण भी बताया गया है।\n\nयह है KATHAAYA — जहाँ प्राचीन भारतीय कथाएँ स्याही, चित्र और सिनेमाई कहानी के साथ फिर से जीवित होती हैं।\n\nआवाज़ और चित्र AI की मदद से बनाए गए हैं (synthetic narration, animated visuals).\n\n📲 WhatsApp चैनल (हर कथा सबसे पहले): https://whatsapp.com/channel/0029VbC7ith1XquRxcfaKy2m\n🌐 वेबसाइट (स्रोत सहित पूरी कथा): https://kathaaya.getbyterush.com\n📸 Instagram @kathaaya.stories: https://www.instagram.com/kathaaya.stories/\n👍 Facebook पेज: https://www.facebook.com/profile.php?id=1354404841091894\n▶ YouTube @kathaayastories: https://www.youtube.com/channel/UCjnmYa2Vspe-lWk78rKerMQ\n\n#kathaaya #harishchandra #markandeyapurana",
+ "tags": [
+  "story",
+  "vat savitri vrat katha",
+  "vat savitri katha marathi",
+  "ai story",
+  "hindi story",
+  "savitri satyavan story",
+  "savitri katha",
+  "savitri yamraj story",
+  "वट सावित्री कथा",
+  "vat savitri katha",
+  "vat savitri vrat ki katha",
+  "harishchandra",
+  "markandeyapurana",
+  "हरिश्चंद्र:",
+  "सत्य"
+ ],
+ "hashtags": [
+  "#kathaaya",
+  "#harishchandra",
+  "#markandeyapurana"
+ ],
+ "categoryId": "24",
+ "defaultLanguage": "hi",
+ "defaultAudioLanguage": "hi",
+ "privacyStatus": "private",
+ "selfDeclaredMadeForKids": false,
+ "containsSyntheticMedia": true,
+ "video": "output/video-harishchandra-satya-ki-keemat-long-upload.mp4",
+ "thumbnails": [
+  "output/thumb-16x9.png"
+ ],
+ "tagEvidence": [
+  {
+   "t": "story",
+   "n": 7
+  },
+  {
+   "t": "vat savitri vrat katha",
+   "n": 6
+  },
+  {
+   "t": "vat savitri katha marathi",
+   "n": 3
+  },
+  {
+   "t": "ai story",
+   "n": 3
+  },
+  {
+   "t": "hindi story",
+   "n": 3
+  },
+  {
+   "t": "savitri satyavan story",
+   "n": 3
+  },
+  {
+   "t": "savitri katha",
+   "n": 3
+  },
+  {
+   "t": "savitri yamraj story",
+   "n": 3
+  },
+  {
+   "t": "वट सावित्री कथा",
+   "n": 3
+  },
+  {
+   "t": "vat savitri katha",
+   "n": 2
+  },
+  {
+   "t": "vat savitri vrat ki katha",
+   "n": 2
+  }
+ ],
+ "thumbnailSeed": {
+  "external": "output/thumb-9x16.png",
+  "artSource": "first frame",
+  "textOnArt": {
+   "headline": [
+    "क्या सच इतना भारी होता है?"
+   ],
+   "support": [
+    "मार्कण्डेय पुराण"
+   ]
+  }
+ },
+ "checks": [
+  {
+   "name": "title <= 100 chars",
+   "ok": true,
+   "detail": 56
+  },
+  {
+   "name": "title before | <= 60 chars (desktop truncation)",
+   "ok": true,
+   "detail": 45
+  },
+  {
+   "name": "primary keyword in first 55 chars of title",
+   "ok": true,
+   "detail": "हरिश्चंद्र:"
+  },
+  {
+   "name": "<= 1 emoji in title (channel style)",
+   "ok": true,
+   "detail": "0 emoji"
+  },
+  {
+   "name": "<= 2 all-caps Latin words",
+   "ok": true,
+   "detail": "1 (KATHAAYA)"
+  },
+  {
+   "name": "primary keyword in first 160 chars of description",
+   "ok": true,
+   "detail": "first 160: हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात  राजा ने अपनी …"
+  },
+  {
+   "name": "query test: title + first 2 description lines cover >= 2 of 3 target searches",
+   "ok": true,
+   "detail": "1/1 (हरिश्चंद्र: सत्य की)"
+  },
+  {
+   "name": "description <= 5000 bytes",
+   "ok": true,
+   "detail": 1695
+  },
+  {
+   "name": "tags <= 15 and <= 500 chars",
+   "ok": true,
+   "detail": "15 tags, 242 chars"
+  },
+  {
+   "name": "format fits Shorts (<= 180 s)",
+   "ok": true,
+   "detail": "181 s"
+  },
+  {
+   "name": "channel brand line in description",
+   "ok": true,
+   "detail": "tagline present"
+  },
+  {
+   "name": "variant/source note in description",
+   "ok": true,
+   "detail": "disclaimer present"
+  },
+  {
+   "name": "chapters valid (first 0:00, >= 3, each >= 10 s, ascending)",
+   "ok": true,
+   "detail": "3 chapters"
+  },
+  {
+   "name": "chapter titles are not bare labels",
+   "ok": true,
+   "detail": "curiosity-gap titles"
+  },
+  {
+   "name": "hashtags <= 15 (first 3 show above the title)",
+   "ok": true,
+   "detail": 3
+  },
+  {
+   "name": "picture credits listed (only when the film uses borrowed public-domain art)",
+   "ok": true,
+   "detail": "no CREDITS.md: all-original AI art, nothing to credit"
+  },
+  {
+   "name": "synthetic-media disclosure set",
+   "ok": true,
+   "detail": "containsSyntheticMedia=true + description line"
+  },
+  {
+   "name": "rendered video exists",
+   "ok": true,
+   "detail": "video-harishchandra-satya-ki-keemat-long-upload.mp4"
+  },
+  {
+   "name": "thumbnail: headline <= 7 words",
+   "ok": true,
+   "detail": "6 words: क्या सच इतना भारी होता है ?"
+  },
+  {
+   "name": "thumbnail: headline does not repeat the title",
+   "ok": true,
+   "detail": "carries the other half of the story"
+  },
+  {
+   "name": "thumbnail: own Flux painting for this story (not a film frame)",
+   "ok": true,
+   "detail": "KATHAAYA Gold (locked house style): King Harishchandra, resolute sorrow"
+  },
+  {
+   "name": "thumbnail: 120 px preview generated",
+   "ok": true,
+   "detail": "thumb-120-*.png"
+  },
+  {
+   "name": "thumbnail: channel mark (logo)",
+   "ok": true,
+   "detail": "channels/kathaaya/logo.png"
+  },
+  {
+   "name": "claims verified at source",
+   "ok": false,
+   "detail": "no ledger"
+  }
+ ],
+ "reviewItems": [
+  "Pair test: covering the title, the thumbnail alone still raises a question",
+  "Pair test: covering the thumbnail, the title alone still pulls",
+  "Honesty test: the film delivers what the title and thumbnail promise (variant note stated)",
+  "I watched the film with sound and the narration pace and emotion feel right",
+  "Thumbnail reads in the 120 px preview (mood, subject, text)",
+  "I reviewed the claims warnings and sources",
+  "Title, description and tags read correctly in Devanagari and Roman spelling"
+ ],
+ "skillsApplied": [
+  "titles-and-thumbnails",
+  "youtube-packaging",
+  "youtube-seo-description",
+  "youtube-thumbnail-design",
+  "storytelling-hooks",
+  "viral-hooks"
+ ],
+ "generated": "2026-10-25T17:02:13.248Z"
+}
