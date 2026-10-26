@@ -1,0 +1,80 @@
+{
+ "theme": "darkpsych",
+ "assets": [
+  {
+   "id": "chai_glass",
+   "subject": "a tall glass of milky tea with rising steam",
+   "character": false
+  },
+  {
+   "id": "tea_plant",
+   "subject": "a tea plant branch with leaves and a bud",
+   "character": false
+  },
+  {
+   "id": "steam_locomotive",
+   "subject": "a steam locomotive, side view",
+   "character": false
+  },
+  {
+   "id": "tea_stall",
+   "subject": "a small roadside tea stall cart with a kettle",
+   "character": false
+  },
+  {
+   "id": "puppet_hands",
+   "subject": "a pair of hands holding a marionette control bar with strings hanging down",
+   "character": true
+  },
+  {
+   "id": "signpost_arrows",
+   "subject": "a crossroads signpost with three arrow signs",
+   "character": false
+  },
+  {
+   "id": "open_door",
+   "subject": "a wooden door slightly open with a thin line of light",
+   "character": false
+  },
+  {
+   "id": "rupee_coin",
+   "subject": "an old silver coin",
+   "character": false
+  },
+  {
+   "id": "brass_kettle",
+   "subject": "a brass tea kettle",
+   "character": false
+  },
+  {
+   "id": "pocket_watch",
+   "subject": "an antique pocket watch",
+   "character": false
+  },
+  {
+   "id": "megaphone",
+   "subject": "an old megaphone",
+   "character": false
+  },
+  {
+   "id": "maze_plan",
+   "subject": "a small square maze seen from above",
+   "character": false
+  },
+  {
+   "id": "padlock",
+   "subject": "an old brass padlock",
+   "character": false
+  },
+  {
+   "id": "human_eye",
+   "subject": "a single human eye, engraved",
+   "character": false
+  },
+  {
+   "id": "chess_pawn",
+   "subject": "a single chess pawn",
+   "character": false
+  }
+ ]
+}

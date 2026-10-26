@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- TEMPLATE, NOT INSTALLED. Runs the KATHAAYA autopilot every night at 23:30 and each time you log in. It does nothing unless content/autopilot.json has "enabled": true.
+     Install:   cp tools/launchd/com.kathaaya.autopilot.plist ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/com.kathaaya.autopilot.plist
+     Remove:    launchctl unload ~/Library/LaunchAgents/com.kathaaya.autopilot.plist && rm ~/Library/LaunchAgents/com.kathaaya.autopilot.plist
+     The Mac must be awake: either leave the lid open on power (it can stay awake with caffeinate, which the job starts itself), or wake it on a schedule:  sudo pmset repeat wakeorpoweron MTWRFSU 23:20 -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.kathaaya.autopilot</string>
+  <key>ProgramArguments</key><array><string>/bin/zsh</string><string>-lc</string><string>cd /Users/swapnil/creator-studio &amp;&amp; export PATH="$HOME/.pyenv/versions/3.12.0/bin:/opt/homebrew/bin:/usr/local/bin:$PATH" &amp;&amp; /usr/bin/caffeinate -ims node tools/content/factory.mjs --run >> .cache/autopilot.log 2>&amp;1</string></array>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>23</integer><key>Minute</key><integer>30</integer></dict>
+  <key>RunAtLoad</key><true/>
+  <key>StandardErrorPath</key><string>/tmp/kathaaya-autopilot.err</string>
+</dict></plist>

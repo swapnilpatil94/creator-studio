@@ -68,11 +68,13 @@ async function directOne({ theme, style, genre = "psychology", beats, model = DE
   throw new Error("Director could not produce a valid plan after " + (rounds + 1) + " rounds: " + errs.slice(0, 5).join("; "));
 }
 
+// a chunk the model cannot answer (invalid JSON, wrong count) is split in two and each half is directed alone
+async function safeOne(o) { try { return await directOne(o); } catch (e) { if (o.beats.length < 4) throw e; (o.log || console.log)(`  chunk of ${o.beats.length} failed (${String(e.message).slice(0, 60)}); splitting`); const h = Math.ceil(o.beats.length / 2), a = await safeOne({ ...o, beats: o.beats.slice(0, h) }), b = await safeOne({ ...o, beats: o.beats.slice(h) }); return { plan: { ...a.plan, beats: [...a.plan.beats, ...b.plan.beats] }, rounds: a.rounds + b.rounds, model: o.model }; } }
 // A long script (more than 10 beats) is directed in balanced chunks of at most 9: the local model loses count and drifts words on a long list.
 export async function direct(o) {
   const n = o.beats.length; if (n <= 10) return directOne(o);
   const k = Math.ceil(n / 9), size = Math.ceil(n / k), parts = []; for (let i = 0; i < n; i += size) parts.push(o.beats.slice(i, i + size));
   let first = null, all = [], warnings = [], rounds = 0; (o.log || console.log)(`  long script: ${n} beats directed in ${parts.length} chunks of up to ${size}`);
-  for (const [i, beats] of parts.entries()) { const r = await directOne({ ...o, beats }); first ||= r.plan; all.push(...r.plan.beats); warnings.push(...(r.plan.warnings || [])); rounds += r.rounds; }
+  for (const [i, beats] of parts.entries()) { const r = await safeOne({ ...o, beats }); first ||= r.plan; all.push(...r.plan.beats); warnings.push(...(r.plan.warnings || [])); rounds += r.rounds; }
   return { plan: { ...first, beats: all, ...(warnings.length ? { warnings } : {}) }, rounds, model: o.model };
 }

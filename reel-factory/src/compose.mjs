@@ -3,8 +3,8 @@
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
 import { registry } from "../components/index.mjs"; import Particles from "../components/Particles.mjs"; import { enter } from "../components/_kit.mjs";
 import { styles } from "../styles/index.mjs"; import { transition, TRANSITIONS } from "./transitions.mjs"; import { captions } from "./captions.mjs";
-import { grainPng } from "./lib/grain.mjs"; import { allShapes } from "./lib/shapes.mjs";
-const here = path.dirname(fileURLToPath(import.meta.url)), RF = path.resolve(here, ".."), W = 1080, H = 1920;
+import { rails } from "./rails.mjs"; import { grainPng } from "./lib/grain.mjs"; import { allShapes } from "./lib/shapes.mjs";
+const here = path.dirname(fileURLToPath(import.meta.url)), RF = path.resolve(here, ".."), PW = 1080, PH = 1920;   // components are laid out in this portrait space; a landscape plan places it as a centred column (see COL below)
 export const loadTheme = name => JSON.parse(fs.readFileSync(path.join(RF, "themes", name, "tokens.json"), "utf8"));
 export const PACKS = { calm: ["dissolve", "cut", "dissolve", "cut"], punchy: ["whip", "cut", "flash", "whip"], tape: ["tapeRip", "cut", "tapeRip", "flash"], glitch: ["glitch", "cut", "flash", "glitch"], default: null };
 const kindOf = (style, plan, i) => plan.beats[i].transition || ((PACKS[plan.animation] || style.transitions)[i % (PACKS[plan.animation] || style.transitions).length]);
@@ -20,6 +20,7 @@ export function timing(plan, style = styles[plan.style || "scrapbook"]) {
   return { rows, total };
 }
 export async function compose({ plan, outDir, assetsDir, usePlaceholders = false }) {
+  const land = plan.size === "landscape", W = land ? 1920 : PW, H = land ? 1080 : PH, COL = { s: 0.9, x: Math.round((1920 - PW * 0.9) / 2), y: -Math.round(130 * 0.9) };   // landscape: the portrait stage, scaled and cropped to its 1200 px working window, stands in the middle; rails and tickers fill the sides
   const theme = loadTheme(plan.theme), style = styles[plan.style || "scrapbook"]; if (!style) throw new Error("unknown style " + plan.style);
   const { rows, total } = timing(plan, style), loop = style.loop !== false && plan.loop !== false, n = plan.beats.length, gaps = [], maps = [], cues = [], impacts = [], fx = [], used = [], leaks = [];
   fs.mkdirSync(path.join(outDir, "assets/fonts"), { recursive: true }); fs.mkdirSync(path.join(outDir, "assets/cutouts"), { recursive: true });
@@ -35,7 +36,7 @@ export async function compose({ plan, outDir, assetsDir, usePlaceholders = false
     const sheetName = beat.sheet && theme.sheets[beat.sheet] ? beat.sheet : sheetNames[i % sheetNames.length], sheet = theme.sheets[sheetName];
     const comp = registry[beat.component] || (gaps.push({ beat: i + 1, wanted: beat.component, archetype: beat.archetype }), registry.UniversalFallback);
     if (comp.gap) gaps.push({ beat: i + 1, wanted: beat.component, archetype: beat.archetype });
-    const base = { id, theme, sheet, style, beat, seconds: beat.seconds, ox: 0, oy: 0, first, t0: contentT, assetUrl: a => { used.push(a); return assetUrl(a); }, W, H };
+    const base = { id, theme, sheet, style, beat, seconds: beat.seconds, ox: 0, oy: 0, first, t0: contentT, assetUrl: a => { used.push(a); return assetUrl(a); }, W: PW, H: PH };
     let html = style.bg(base, sheet), body = "";
     const jsMark = js.length; const parsed = comp.parse(beat, base); let y0;
     if (comp.name === "HeadlineStrips") { const o = await comp.render({ ...base, props: parsed.props, y0: 420 }); body += o.html; js += o.js; y0 = o.bottom; }
@@ -50,7 +51,7 @@ export async function compose({ plan, outDir, assetsDir, usePlaceholders = false
       js += `tl.fromTo("#${id}-pulse",{opacity:0},{opacity:0.55,duration:0.45,ease:"sine.inOut",yoyo:true,repeat:${n * 2 - 1},immediateRender:false},${pt.toFixed(3)});`;
       if (!first) js += [0, 0.05, 0.1, 0.15].map((d, q) => `tl.set("#in${i}",{opacity:${[0.35, 1, 0.55, 1][q]}},${(contentT + d).toFixed(3)});`).join("");
     }
-    scenes += `<div class="scene" id="sc${i}" style="opacity:${first ? 1 : 0};z-index:${first ? 4 : 1}"><div class="inner" id="in${i}">${html}${body}</div></div>\n`;
+    scenes += `<div class="scene" id="sc${i}" style="opacity:${first ? 1 : 0};z-index:${first ? 4 : 1}"><div class="inner" id="in${i}">${html}${land ? `<div class="col" style="position:absolute;left:${COL.x}px;top:${COL.y}px;width:${PW}px;height:${PH}px;">${body}</div>` : body}</div></div>\n`;
     if (style.push) { const a = first ? 0 : contentT, b = r.speechEnd; js += `tl.fromTo("#in${i}",{scale:1},{scale:1.035,duration:${(b - a).toFixed(3)},ease:"none",immediateRender:false},${a.toFixed(3)});` + (first ? `tl.set("#in0",{scale:1},${rows[n - 1].speechEnd.toFixed(3)});` : "") + "\n"; }
     // transition into the next scene (the last one loops back to scene 1)
     const j2 = (i + 1) % n, tr = (!loop && i === n - 1) ? { js: "", html: "", dur: 0, impact: false } : transition(r.kind, { a: `#sc${i}`, b: `#sc${j2}`, t: r.trStart, i, theme, focus: beat.focus || { x: 540, y: 800 }, shapes: beat.shapes || ["circle", "moon"] });
@@ -59,7 +60,8 @@ export async function compose({ plan, outDir, assetsDir, usePlaceholders = false
   }
   if (loop) js += loopReset.join("").replace(/LOOPT/g, rows[n - 1].trStart.toFixed(3)) + "\n";
   const starts = rows.map((r, i) => r.start);
-  let cap = { html: "", js: "", estimated: false, groups: 0 }; if (style.captions && plan.captions !== false) cap = await captions({ plan, starts, theme });
+  let cap = { html: "", js: "", estimated: false, groups: 0 }; if (style.captions && plan.captions !== false) cap = await captions({ plan, starts, theme: land ? { ...theme, captions: { ...(theme.captions || {}), y: 905, size: 64, maxW: 1500 } } : theme });
+  const rl = land ? await rails({ plan, rows, starts, total, theme, W, H, COL }) : { html: "", js: "" };
   const fxHtml = fx.map((f, k) => { f.id = `fx${k}`; const dots = Array.from({ length: f.n }, (_, q) => Particles.dot(f.kind, f.color, q)).join(""); return `<div id="fx${k}" style="position:absolute;left:${f.x}px;top:${f.y}px;width:${f.w}px;height:${f.h}px;z-index:7;display:none;pointer-events:none">${dots}</div>`; }).join("\n");
   const film = style.film ? `<div id="filmleak" style="position:absolute;inset:0;z-index:12;opacity:0;mix-blend-mode:screen;background:radial-gradient(circle at 12% 18%,rgba(255,150,40,.85),rgba(255,70,10,0) 46%),radial-gradient(circle at 92% 88%,rgba(255,200,80,.6),rgba(255,70,10,0) 40%)"></div><div id="filmgrain" style="position:absolute;inset:-300px;z-index:13;background:url(assets/grain.png);background-size:256px 256px;opacity:.9"></div><div style="position:absolute;inset:0;z-index:14;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.62) 100%)"></div><div id="filmsc1" style="position:absolute;top:0;width:3px;height:1920px;background:rgba(255,255,255,.55);z-index:14;opacity:0"></div><div id="filmsc2" style="position:absolute;top:0;width:2px;height:1920px;background:rgba(255,255,255,.4);z-index:14;opacity:0"></div><div id="filmts" style="position:absolute;left:54px;top:1150px;z-index:15;font:500 34px 'IBM Plex Mono';color:#ffd9a0;letter-spacing:.1em;text-shadow:0 0 8px rgba(255,150,40,.8)">REC ● 00:00:00:00</div>` : "";
   const doc = style.doc ? `<div style="position:absolute;inset:0;z-index:12;pointer-events:none;background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,0) 58%,rgba(8,9,10,.55) 100%)"></div><div style="position:absolute;inset:0;z-index:12;pointer-events:none;mix-blend-mode:soft-light;opacity:.55;background:linear-gradient(180deg,rgba(80,120,140,.35),rgba(193,138,69,.30))"></div><div style="position:absolute;inset:-300px;z-index:13;pointer-events:none;background:url(assets/grain.png);background-size:256px 256px;opacity:.16"></div>` : "";
@@ -86,7 +88,7 @@ ${style.css || ""}
 <svg width="0" height="0" style="position:absolute"><defs><filter id="cutout" x="-12%" y="-12%" width="124%" height="124%"><feMorphology in="SourceAlpha" operator="dilate" radius="9" result="d"/><feFlood flood-color="#ffffff"/><feComposite in2="d" operator="in" result="border"/><feOffset in="d" dx="11" dy="13" result="o"/><feFlood flood-color="#0a0816" flood-opacity=".62"/><feComposite in2="o" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>
 <div id="root" data-composition-id="main" data-start="0" data-duration="${total}" data-width="${W}" data-height="${H}"><div id="cam"><div id="stage">
 ${scenes}${fxHtml}</div>
-${top}${doc}${dark}${cap.html}${hook}${film}</div></div>
+${top}${rl.html}${doc}${dark}${cap.html}${hook}${film}</div></div>
 <script src="assets/gsap.min.js"></script>
 ${geoScripts}
 <script>window.RF=${JSON.stringify(cfg)};</script>
@@ -95,6 +97,7 @@ ${geoScripts}
 const tl = gsap.timeline({ paused: true });
 ${js}
 ${cap.js}
+${rl.js}
 const clock = { t: 0 }; tl.fromTo(clock, { t: 0 }, { t: ${total}, duration: ${total}, ease: "none", onUpdate: () => window.RF.frameUpdate(clock.t) }, 0);
 window.RF.frameUpdate(0);
 window._timelines = window.__timelines = window.__timelines || {}; window.__timelines["main"] = tl;

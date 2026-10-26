@@ -1,93 +1,31 @@
-# Automation: what runs where, secrets, runbook
+# How the daily automation works (and what is real today, 26 Oct 2026)
 
-## 1. Architecture (heavy work local, light work in GitHub, public files on Cloudflare)
-```
-Mac (24 GB)                                  GitHub Actions                              Cloudflare
------------                                  --------------                              ----------
-voice (Chatterbox), Flux.2 Klein images,     content-ci   QA on every push               Pages: blog + /c/<slug>/NN.jpg
-video render, dashboard (studio-ui),         weekly-plan  Sunday PR with next week       Worker: comment replies (webhook)
-writer (Claude API or local Ollama),         post-due     11:00/19:00/20:00 IST posting  (later) R2 if videos outgrow Releases
-corpus + QA, manual upload kit               blog-deploy  build + deploy blog
-        |                                    daily-research  06:00 IST insights snapshot
-        +-- git push (items, plans, covers) -->        videos: GitHub Release asset  video-<story>
-```
-Why this split: a GitHub runner has no GPU and Chatterbox/Flux/render take hours; posting, QA and publishing take seconds. Instagram needs images at a **public URL** (carousels) and Facebook can take local bytes, so carousel JPEGs are rendered in CI and served by the blog site; videos are uploaded to a GitHub Release (limit 2 GB per file, we are at about 1 GB for the 10-minute film) and downloaded by the job.
+## Three layers, three different places
+| Layer | Runs on | Needs the laptop? | Status |
+|---|---|---|---|
+| **1. Make** the video (script -> voice -> pictures -> render) | this Mac (Hub, or `tools/content/factory.mjs`) | yes, awake, about 1.5 to 2.3 hours per video (a 3-minute long took 2 h 15 min) | works; every stage resumes from its cache after a crash, a closed lid or a reboot |
+| **2. Hand over** (YouTube upload scheduled natively, Facebook scheduled natively, or a GitHub Release + schedule entry) | this Mac, at hand-over time only | only while uploading (minutes) | YouTube upload is BLOCKED: the Google login has expired. Facebook native scheduling works |
+| **3. Post on time** | YouTube and Facebook servers (native schedule) or GitHub Actions `post-due` (10:55, 18:55, 19:55 IST) | **no** | post-due works on `main` (last runs green). Instagram posts from the Hub's LOCAL queue need the Hub running at post time |
 
-## 2. Files
-| Path | Purpose |
-|---|---|
-| `content/items/*.json` | one file per post (fb_text, carousel, blog, reel_script) with claims and sources |
-| `content/queue/topics.json` | topic bank with pillar, sensitivity, status |
-| `content/calendar.json` | weekly slots (IST) |
-| `content/schedule.json` | generated plan and the result of each post |
-| `content/prompts/writer_system.txt` | writer rules (mirrors the QA gate) |
-| `tools/content/corpus.mjs` | public-domain corpus fetch + BM25 search |
-| `tools/content/qa-content.mjs`, `tests/content-qa.test.mjs` | the QA gate and its tests |
-| `tools/content/write-item.mjs` | model-assisted drafting with QA repair rounds |
-| `tools/content/carousel.mjs`, `render-all-carousels.mjs` | 1080×1350 JPEG slides |
-| `tools/content/plan-week.mjs`, `post-due.mjs` | planning and posting |
-| `tools/content/insights.mjs` | Meta performance snapshot |
-| `tools/content/publish-cover.mjs` | puts a story cover on the public site for Instagram `cover_url` |
-| `tools/flux/klein.mjs`, `start-comfy.sh` | local FLUX.2 Klein generation |
-| `blog/build.mjs`, `blog/site.json` | static blog |
-| `cloudflare/worker/` | comment-reply Worker |
-| `studio-ui/meta.mjs` | Meta publishing (Reels, long video, text, carousels, covers) |
+## What goes out today (Mon 26 Oct) and the next days
+- 26 Oct short (रौरव नरक): YouTube scheduled 19:00 (held by YouTube), Facebook scheduled 19:00 (held by Facebook), **Instagram waits in the Hub's local queue: the Hub must be running at 19:00**. Long (लाक्षागृह): Facebook scheduled 20:00; its YouTube copy is scheduled for 1 Nov.
+- 27 Oct short (नीलकंठ): same as the 26th.
+- **28 Oct has no script**: a gap.
+- 29, 30 and 31 Oct (Baital, Tyr, Harishchandra long) are built but are **not uploaded or scheduled anywhere**. YouTube cannot take them until Google is reconnected.
+- 1 Nov onward: scripts are ready, videos are not built.
 
-## 3. Secrets and variables: what to give me and how to get it
-**Already set in GitHub (done 2026-10-17):** `META_APP_ID`, `META_PAGE_ID`, `META_IG_USER_ID`, `META_PAGE_TOKEN` (a non-expiring Page token).
+## Why GitHub is not yet carrying the videos
+`post-due.yml` can post Facebook and Instagram reels from a GitHub Release, and it runs fine, but nothing has been shipped to it, and all the new work (ship, readiness, status, factory) lives on branch `feat/reel-factory`, which is **not merged to main**. GitHub only runs workflows that are on main. Nothing was pushed.
 
-**Still needed (tell me when ready; I can set them with `gh secret set` as I did for Meta):**
-| Name | Where it comes from | Used by |
-|---|---|---|
-| `CLOUDFLARE_API_TOKEN` | Cloudflare dashboard > My Profile > API Tokens > Create Token > "Edit Cloudflare Workers" template plus "Cloudflare Pages: Edit" (scope it to your account) | blog-deploy, Worker deploy |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard > Workers & Pages > right sidebar "Account ID" | same |
-| variable `CF_PAGES_PROJECT` | name you give the Pages project (e.g. `kathaaya`) | blog-deploy |
-| DNS | is `getbyterush.com` on Cloudflare? Then the CNAME `kathaaya` -> `<project>.pages.dev` is one click | domain |
-| `ANTHROPIC_API_KEY` | console.anthropic.com > API keys | write-item in CI (optional: local Ollama works for drafts) |
-| `YOUTUBE_API_KEY` | already in `.env.local` (research); add as secret for `daily-research` | daily-research |
-| `YT_OAUTH_*` + refresh token | only if YouTube uploads should also run from GitHub; today they run from the Mac | later |
-| `META_APP_SECRET`, `META_VERIFY_TOKEN` | Meta app > Settings > Basic (secret), a random string you choose | comment Worker |
-| contact email | for the blog's contact page (`blog/site.json`) | blog |
-Never paste secrets into issues, commits or workflow files; use `gh secret set NAME` (or the GitHub UI). Rotate the Meta token and the OAuth secret that were pasted into chat.
+## The new pieces (all dry-run or off by default)
+- `node tools/content/status.mjs` and the Hub **Status** tab: every topic of every channel, script -> video -> GitHub -> YouTube/Facebook/Instagram, and the disk each one holds.
+- `node tools/content/readiness.mjs`: is each of the next 7 days ready? `readiness.yml` asks the same on GitHub every morning and keeps one issue open while a day is empty.
+- `node tools/content/ship.mjs <slug> --yes --push`: Release + schedule entry; re-encodes for QuickTime/phones when needed.
+- `node tools/content/cleanup.mjs --yes`: frees disk, but only for videos that are safe elsewhere (GitHub Release, or both YouTube and Facebook hold them, and no Instagram post still needs the local file).
+- `node tools/content/factory.mjs --run`: the overnight factory. Looks 7 days ahead, builds missing videos (resumable), ships when allowed, cleans up, flags gaps (no script, failed build, failed platform) in `content/factory-state.json` and as a macOS notification. Settings: `content/factory.json` (everything OFF), switchable in the Status tab. Template for running it nightly: `tools/launchd/com.kathaaya.autopilot.plist` (not installed).
 
-## 4. GitHub Actions: how to use it properly
-- **Scheduled workflows run only from the default branch (`main`).** Right now the work lives on `feature/stipple-engine`; merge it (or cherry-pick `.github/`, `content/`, `tools/`, `blog/`, `tests/`) before the schedules activate.
-- **Minutes:** `post-due` runs 3×/day (~3 min each, mostly installing Chromium; caches help). Budget about 300 minutes a month out of the free allowance for private repos (check *Settings > Billing* for your plan). Do not poll every few minutes.
-- **Timing:** cron can start several minutes late; `post-due` looks 20 minutes ahead and 6 hours back, marks entries before sending, and records results in `content/schedule.json`.
-- **Dry run:** *Actions > post-due > Run workflow* with `dry_run` = true shows what would be sent. Do this for the first week.
-- **Failures:** a failed entry stays `failed` with the error in `schedule.json`; fix and set `status: queued` to retry. A missed slot (>6 h late) is marked `missed` rather than posted at a bad time.
-- **Meta rate limits:** 30 API Reels per Page per 24 h, 100 Instagram API posts per 24 h (official); we stay far below. If Meta throttles shared GitHub IPs (you saw this once), the same script runs from the Mac: `node tools/content/post-due.mjs`.
-- **Stop button:** disable the `post-due` workflow in the Actions tab. Nothing else posts.
-- **Review control:** nothing is posted from an item that is not `approved`; the weekly plan is a PR you merge.
+## Keeping the Mac awake
+The nightly job wraps itself in `caffeinate`. To wake a sleeping Mac for it: `sudo pmset repeat wakeorpoweron MTWRFSU 23:20`. A closed lid on battery will sleep regardless; keep it on power.
 
-## 5. Local FLUX.2 Klein (images)
-Found on this Mac: `~/Documents/ComfyUI/models/diffusion_models/flux-2-klein-4b.safetensors` (distilled, 4 steps), `text_encoders/qwen_3_4b.safetensors`, `vae/flux2-vae.safetensors`; ComfyUI source in `~/Documents/ComfyUI-server`, venv in `~/Documents/ComfyUI/.venv`; earlier outputs in `~/Documents/ComfyUI/output/Flux2-Klein_*.png`.
-```
-bash tools/flux/start-comfy.sh                         # starts ComfyUI on 127.0.0.1:8188
-node tools/flux/klein.mjs --prompt "..." --out flux-out/x.jpg --ratio 4:5
-node tools/flux/klein.mjs --batch content/flux-batch.json   # resumable, one at a time
-```
-**Verified 2026-10-18:** a 1080×1350 image takes about 84 s once the server is up. The server source (`~/Documents/ComfyUI-server`) was newer than its venv, so two packages were upgraded in `~/Documents/ComfyUI/.venv` with `uv pip install --no-deps`: `comfyui-frontend-package==1.45.19`, `comfyui-embedded-docs==0.5.5`, `comfy-kitchen==0.2.14` (kitchen fixes the FP8 text-encoder error `'NoneType' object has no attribute 'Params'`). The first start after a reboot imports a lot of Python and can take 10-20 minutes while a render is running, so start it before bed or when no render is active; stop it afterwards (`pkill -f "main.py --base-directory"`) because it holds about 8 GB. Run one heavy job at a time (24 GB): stop video renders before generating images. Deity images: respectful iconography, flagged `ai_art_disclosed` in the item, never as meme material, never with text baked in by the model (we add Devanagari text ourselves because image models misspell it).
-
-## 6. Weekly operating rhythm (the manager's 3 hours)
-1. Sunday: merge the weekly plan PR (read the gap list). 2. Review drafts: approve or send back (checklist in `docs/QA_POLICY.md`). 3. Look at the Monday insights table; adjust `calendar.json` only after 4 weeks of data. 4. Answer the questions that came in as comments; the Worker only thanks people.
-
-## 7. First-time setup order
-1. Merge to `main`. 2. Add Cloudflare token + account id, create the Pages project, point the domain. 3. `blog-deploy` once (blog + carousels live). 4. `post-due` dry run for 7 days. 5. Meta webhook + Worker in DRY_RUN for a day. 6. Switch the Worker `DRY_RUN` to 0. 7. Enable weekly plan.
-
-## 8. Carousel art with local FLUX.2 Klein (added 2026-10-18)
-1. Each carousel item has `art: [{slide, subject, action, setting, lighting, medium}]`; `tools/flux/prompt-director.mjs` turns it into a prose prompt following Black Forest Labs' official rules (subject first, lighting, no negative prompts, 40-80 words) and lints it; the rules are vendored in the skill `flux-prompting-kathaaya` (source: docs.bfl.ai and github.com/black-forest-labs/skills, MIT).
-2. `node tools/flux/carousel-art.mjs content/items/<id>.json` (needs ComfyUI up) writes `content/art/<slug>/NN.jpg` and `prompts.json` (prompt, seed, seconds) so every picture can be reproduced. About 90 s per image.
-3. `node tools/content/carousel.mjs <item>` lays the Devanagari text over the art (full-bleed picture, dark lower panel, AI label in the corner); slides without art stay text-only.
-4. **Commit `content/art/**`**: GitHub Actions renders the carousel from those files, it never needs Flux.
-5. Review every picture (hands, attributes, stray marks, respectful iconography) before `approved`; the QA gate demands `ai_art_disclosed`, rejects negative prompts and gore/nudity words in the shot specs, and the post caption carries "AI-निर्मित".
-
-## 9. End-to-end test log (2026-10-18)
-| Step | Result |
-|---|---|
-| `content-ci` on push (lint with actionlint, corpus fetch from Wikisource inside Actions, policy tests, QA of every item, blog build, carousel render with Devanagari fonts, slides uploaded as an artifact) | passed on GitHub |
-| `post-due` from branch `e2e/first-live-run` (checkout, install, corpus, render the Ganga art carousel, upload 10 photos to the Page, publish one album post, record the result in `content/schedule.json`) | **posted live to the Facebook Page** (album, 10 slides) from GitHub Actions in about 6 minutes |
-| `daily-research` (insights snapshot of Facebook posts and Instagram media) | passed; snapshot committed to the `data` branch |
-| Instagram carousel | **not run**: Instagram needs each slide at a public URL; the blog host (Cloudflare Pages) is not connected yet. `platforms: ["facebook"]` on the schedule entry keeps the test from failing on this |
-| `workflow_dispatch` | GitHub only allows manual dispatch for workflows that exist on the default branch; until `main` has them, `post-due` and `daily-research` can be tested by pushing a branch named `e2e/<anything>` (their `push` trigger) |
-Workflow hygiene added: runner pinned to `ubuntu-24.04` (GitHub moves `ubuntu-latest` to Ubuntu 26 on 2026-10-19), GitHub-owned actions on current majors, the Cloudflare action pinned by commit SHA, actionlint in CI, step summaries, artifacts for downloads, an issue opened when posting fails.
+## Yantralok (hidden systems)
+Topics run through Reel Factory (`reel-factory/episodes/_queue.json`) and show in the Status tab under their own heading. **No YouTube channel, Facebook page or Instagram account is connected for Yantralok.** To post it you need a second YouTube OAuth token (a second token file for that channel), a Facebook Page token and an Instagram business id (store as GitHub secrets `YANTRALOK_*`). Until then Yantralok videos can be made and kept, not posted.

@@ -5,7 +5,7 @@
 //   3. content/ship-state.json records it, and the small files post-due needs (stories/video-<slug>/publish.json, social.json) are committed.
 // Dry run by default: it prints exactly what it would upload. --yes does it; --push also pushes the commit (that is what makes GitHub aware of it).
 // usage: node tools/content/ship.mjs <slug> [--yes] [--push] [--platforms facebook,instagram]
-import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { spawnSync } from "node:child_process"; import { tagOf } from "./readiness.mjs";
+import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url"; import { spawnSync } from "node:child_process"; import { tagOf } from "./readiness.mjs"; import { qtCheck } from "../../reel-factory/src/mix.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."), a = process.argv.slice(2), slug = a.find(x => !x.startsWith("--")), yes = a.includes("--yes"), push = a.includes("--push"), plats = (a.includes("--platforms") ? a[a.indexOf("--platforms") + 1] : "facebook,instagram").split(",");
 const J = (f, d = null) => { try { return JSON.parse(fs.readFileSync(path.join(root, f), "utf8")); } catch { return d; } }, W = (f, o) => fs.writeFileSync(path.join(root, f), JSON.stringify(o, null, 1)), sh = (cmd, args) => spawnSync(cmd, args, { cwd: root, encoding: "utf8" });
 const die = m => { console.error("ship: " + m); process.exit(2); };
@@ -21,7 +21,8 @@ const tag = tagOf(slug), assetName = `${story}.mp4`, entry = { id: `${story}.${k
 const sched = J("content/schedule.json", []), dupe = sched.find(e => e.id === entry.id);
 console.log(`${yes ? "SHIPPING" : "DRY RUN"}: ${slug} (${kind}) for ${card.date} ${istTime} IST`); console.log(`  release  ${tag}: ${assetName} (${(fs.statSync(mp4).size / 1e6).toFixed(0)} MB), ${path.basename(thumbF)}`); console.log(`  schedule ${entry.id} -> ${plats.join(", ")} at ${at}${dupe ? " (already in the schedule, left as is)" : ""}`); console.log(`  commit   stories/${story}/publish.json, social.json, content/schedule.json, content/ship-state.json${push ? ", then push" : " (no push: run again with --push or push yourself)"}`);
 if (!yes) process.exit(0);
-const tmp = path.join(root, ".cache", "ship"); fs.mkdirSync(tmp, { recursive: true }); const up = path.join(tmp, assetName), th = path.join(tmp, `${story}-thumb${path.extname(thumbF)}`); fs.copyFileSync(mp4, up); fs.copyFileSync(thumbF, th);
+const tmp = path.join(root, ".cache", "ship"); fs.mkdirSync(tmp, { recursive: true }); const up = path.join(tmp, assetName), th = path.join(tmp, `${story}-thumb${path.extname(thumbF)}`); fs.copyFileSync(thumbF, th);
+const qt = qtCheck(mp4); if (qt.ok) fs.copyFileSync(mp4, up); else { console.log("  re-encoding for QuickTime/phones (" + qt.problems.join("; ") + ")"); const e = sh("ffmpeg", ["-y", "-loglevel", "error", "-i", mp4, "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-profile:v", "high", "-level", "4.2", "-pix_fmt", "yuv420p", "-color_range", "tv", "-tag:v", "avc1", "-c:a", "aac", "-ar", "48000", "-b:a", "192k", "-movflags", "+faststart", up]); if (e.status !== 0) die("re-encode failed: " + (e.stderr || "").slice(0, 200)); }
 const has = sh("gh", ["release", "view", tag]).status === 0, r = has ? sh("gh", ["release", "upload", tag, up, th, "--clobber"]) : sh("gh", ["release", "create", tag, up, th, "--title", `${card.title || slug}`, "--notes", `Ready item for ${card.date} ${istTime} IST. Posted by the post-due workflow.`]);
 if (r.status !== 0) die("gh release failed: " + (r.stderr || "").slice(0, 300));
 if (!dupe) { sched.push(entry); W("content/schedule.json", sched); }

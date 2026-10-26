@@ -1,0 +1,4 @@
+{
+  "kathaaya": { "name": "KATHAAYA (Hindi mythology)", "pipeline": "kathaaya-video", "plan": "content/weekplan.json", "platforms": { "youtube": { "handle": "@KathaayaStories", "token": ".yt-token.json", "mode": "native schedule from the Hub" }, "facebook": { "page": "Kathaaya", "mode": "native schedule from the Hub, or GitHub post-due" }, "instagram": { "handle": "@kathaaya.stories", "mode": "Hub local queue (root schedule.json) or GitHub post-due" } } },
+  "yantralok": { "name": "Yantralok (hidden systems, dark psychology and agentic AI)", "pipeline": "reel-factory", "queue": "reel-factory/episodes/_queue.json", "platforms": { "youtube": null, "facebook": null, "instagram": null }, "note": "No YouTube channel, Facebook page or Instagram account is connected for Yantralok yet. Posting needs: a YouTube OAuth token for that channel (second token file), a Facebook Page token and an Instagram business id (GitHub secrets with a YANTRALOK_ prefix)." }
+}

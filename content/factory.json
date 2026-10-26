@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "bufferDays": 7,
+  "maxBuildHours": 9,
+  "ship": { "enabled": false, "push": false, "platforms": ["facebook", "instagram"] },
+  "cleanup": { "enabled": true, "keepNewest": 2 },
+  "notify": true,
+  "note": "Everything here is OFF until you turn it on (Hub Status tab). enabled=true lets the autopilot build missing videos overnight; ship.enabled uploads finished ones to a GitHub Release and schedules them; ship.push also pushes the commit so GitHub Actions can post them. Nothing is pushed while ship.push is false."
+}
