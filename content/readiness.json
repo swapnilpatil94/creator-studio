@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T04:32:48.455Z",
+ "generated": "2026-10-26T05:37:08.712Z",
  "mode": "remote",
  "from": "2026-10-26",
  "days": [
@@ -99,14 +99,7 @@
      "warnings": [
       "YouTube upload not scheduled"
      ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
-  {
-   "date": "2026-10-29",
-   "cards": [
+    },
     {
      "id": "wdb2aa24a",
      "slug": "baital-pachisi-vikram",
@@ -115,23 +108,21 @@
      "time": "19:00",
      "gates": {
       "script": true,
-      "shipped": false,
-      "scheduled": false
+      "shipped": true,
+      "scheduled": true
      },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
+     "ready": true,
+     "problems": [],
      "warnings": [
       "YouTube upload not scheduled"
      ]
     }
    ],
-   "ready": false,
+   "ready": true,
    "empty": false
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-10-29",
    "cards": [
     {
      "id": "wbf3c90ac",
@@ -141,43 +132,46 @@
      "time": "19:00",
      "gates": {
       "script": true,
-      "shipped": false,
-      "scheduled": false
+      "shipped": true,
+      "scheduled": true
      },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
+     "ready": true,
+     "problems": [],
      "warnings": [
       "YouTube upload not scheduled"
      ]
     }
    ],
-   "ready": false,
+   "ready": true,
    "empty": false
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-10-30",
    "cards": [
     {
      "id": "w3175ebaa",
      "slug": "harishchandra-satya-ki-keemat-long",
      "title": "हरिश्चंद्र: सत्य की क़ीमत और श्मशान की वह रात",
      "format": "long",
-     "time": "",
+     "time": "20:00",
      "gates": {
       "script": true,
-      "shipped": false,
-      "scheduled": false
+      "shipped": true,
+      "scheduled": true
      },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
+     "ready": true,
+     "problems": [],
      "warnings": [
       "YouTube upload not scheduled"
      ]
-    },
+    }
+   ],
+   "ready": true,
+   "empty": false
+  },
+  {
+   "date": "2026-10-31",
+   "cards": [
     {
      "id": "we789f418",
      "slug": "agastya-vindhya-bowing",
@@ -413,13 +407,10 @@
  "need": 7,
  "summary": {
   "needed": 7,
-  "ready": 0,
+  "ready": 3,
   "missing": [
    "2026-10-26",
    "2026-10-27",
-   "2026-10-28",
-   "2026-10-29",
-   "2026-10-30",
    "2026-10-31",
    "2026-11-01"
   ],
