@@ -208,5 +208,16 @@
   "at": "2026-10-29T13:30:00.000Z",
   "status": "queued",
   "mode": "post-due"
+ },
+ {
+  "id": "video-harishchandra-satya-ki-keemat-long.fb_long.2026-10-30T14",
+  "item": "story:video-harishchandra-satya-ki-keemat-long:fb_long",
+  "kind": "fb_long",
+  "platforms": [
+   "facebook"
+  ],
+  "at": "2026-10-30T14:30:00.000Z",
+  "status": "queued",
+  "mode": "post-due"
  }
 ]
