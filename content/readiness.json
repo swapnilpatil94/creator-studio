@@ -1,32 +1,8 @@
 {
- "generated": "2026-10-29T08:45:19.097Z",
+ "generated": "2026-10-30T08:56:02.685Z",
  "mode": "remote",
- "from": "2026-10-29",
+ "from": "2026-10-30",
  "days": [
-  {
-   "date": "2026-10-29",
-   "cards": [
-    {
-     "id": "wbf3c90ac",
-     "slug": "norse-tyr-fenrir-hand",
-     "title": "टीर ने अपना हाथ भेड़िये के मुँह में क्यों डाला?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": true,
-      "scheduled": true
-     },
-     "ready": true,
-     "problems": [],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": true,
-   "empty": false
-  },
   {
    "date": "2026-10-30",
    "cards": [
@@ -360,17 +336,44 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-12",
+   "cards": [
+    {
+     "id": "w2aafdc88",
+     "slug": "jagannath-brahma-padartha",
+     "title": "जगन्नाथ की मूर्ति में रखा वह रहस्यमय ब्रह्म-पदार्थ",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
  "summary": {
   "needed": 7,
-  "ready": 3,
+  "ready": 2,
   "missing": [
    "2026-11-01",
    "2026-11-02",
    "2026-11-03",
-   "2026-11-04"
+   "2026-11-04",
+   "2026-11-05"
   ],
   "ok": false
  }
