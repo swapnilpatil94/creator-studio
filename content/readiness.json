@@ -1,32 +1,8 @@
 {
- "generated": "2026-10-31T08:40:18.984Z",
+ "generated": "2026-11-01T09:30:42.549Z",
  "mode": "remote",
- "from": "2026-10-31",
+ "from": "2026-11-01",
  "days": [
-  {
-   "date": "2026-10-31",
-   "cards": [
-    {
-     "id": "we789f418",
-     "slug": "agastya-vindhya-bowing",
-     "title": "विंध्य पर्वत आज भी झुका क्यों है?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": true,
-      "scheduled": true
-     },
-     "ready": true,
-     "problems": [],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": true,
-   "empty": false
-  },
   {
    "date": "2026-11-01",
    "cards": [
@@ -364,19 +340,46 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-14",
+   "cards": [
+    {
+     "id": "wad0bf33b",
+     "slug": "brihaspati-tara-moon-budha",
+     "title": "चंद्रमा ने जिसे चुराया: तारा, बृहस्पति और बुध का जन्म",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
  "summary": {
   "needed": 7,
-  "ready": 1,
+  "ready": 0,
   "missing": [
    "2026-11-01",
    "2026-11-02",
    "2026-11-03",
    "2026-11-04",
    "2026-11-05",
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-07"
   ],
   "ok": false
  }
