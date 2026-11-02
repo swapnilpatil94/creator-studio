@@ -1,42 +1,42 @@
 # Outlier topics for 2026-11 -- across the whole KATHAAYA brand
 
-Generated 2026-10-26T06:52:59.753Z. Per pillar: seed queries are expanded every run with Google's live autocomplete suggestions (real search demand, not a fixed list). YouTube = official Data API outlier ratio. Instagram = real competitor accounts via Graph API. Facebook = proxy (no public API). Google Trends daily RSS cross-referenced for timeliness. Survivorship bias and competition are not measured; this ranks demand signals, it does not predict virality.
+Generated 2026-11-02T08:09:21.433Z. Per pillar: seed queries are expanded every run with Google's live autocomplete suggestions (real search demand, not a fixed list). YouTube = official Data API outlier ratio. Instagram = real competitor accounts via Graph API. Facebook = proxy (no public API). Google Trends daily RSS cross-referenced for timeliness. Survivorship bias and competition are not measured; this ranks demand signals, it does not predict virality.
 
 ## This week, across every pillar (top 20, deduplicated)
 
 | # | topic | pillar | score |
 |---|---|---|---|
-| 1 | एकादशी की कहानी | Indian mythology (all traditions, not one god) | 3.824 |
-| 2 | कार्तिक पूर्णिमा कथा | Indian mythology (all traditions, not one god) | 3.818 |
-| 3 | शनि देव कथा | Indian mythology (all traditions, not one god) | 3.659 |
-| 4 | शरद पूर्णिमा कृष्ण रास | Indian mythology (all traditions, not one god) | 3.599 |
-| 5 | तुलसी विवाह कथा | Indian mythology (all traditions, not one god) | 3.449 |
-| 6 | शिव पूजा कथा | Indian mythology (all traditions, not one god) | 3.348 |
-| 7 | रामायण कथा | Indian mythology (all traditions, not one god) | 3.244 |
-| 8 | विष्णु पुराण कथा | Indian mythology (all traditions, not one god) | 3.179 |
-| 9 | अमावस्या कथा | Indian mythology (all traditions, not one god) | 3.17 |
-| 10 | महाभारत कथा | Indian mythology (all traditions, not one god) | 3.118 |
-| 11 | सावित्री सत्यवान | Indian mythology (all traditions, not one god) | 3.106 |
-| 12 | एकादशी व्रत कथा | Indian mythology (all traditions, not one god) | 3.094 |
-| 13 | शनि व्रत कथा | Indian mythology (all traditions, not one god) | 3.09 |
-| 14 | देवी भागवत कथा | Indian mythology (all traditions, not one god) | 3.008 |
-| 15 | शिवरात्रि कथा | Indian mythology (all traditions, not one god) | 3.003 |
-| 16 | psychology facts hindi | Psychology (everyday mind, behaviour, relationships) | 2.963 |
-| 17 | human behavior psychology hindi | Psychology (everyday mind, behaviour, relationships) | 2.734 |
-| 18 | ग्रीक पौराणिक कथा | World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...) | 2.533 |
-| 19 | ग्रीक पौराणिक कथाएं | World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...) | 2.533 |
-| 20 | ग्रीक पौराणिक कथाएँ | World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...) | 2.437 |
+| 1 | करवा चौथ कथा | Indian mythology (all traditions, not one god) | 4.263 |
+| 2 | शरद पूर्णिमा कृष्ण रास | Indian mythology (all traditions, not one god) | 4.105 |
+| 3 | शिव पूजा कथा | Indian mythology (all traditions, not one god) | 3.957 |
+| 4 | धनतेरस यमराज | Indian mythology (all traditions, not one god) | 3.923 |
+| 5 | शनि देव कथा | Indian mythology (all traditions, not one god) | 3.916 |
+| 6 | तुलसी विवाह कथा | Indian mythology (all traditions, not one god) | 3.722 |
+| 7 | पूर्णिमा व्रत कथा | Indian mythology (all traditions, not one god) | 3.535 |
+| 8 | एकादशी की कहानी | Indian mythology (all traditions, not one god) | 3.505 |
+| 9 | शिवरात्रि कथा | Indian mythology (all traditions, not one god) | 3.447 |
+| 10 | रामायण कथा | Indian mythology (all traditions, not one god) | 3.412 |
+| 11 | अमावस्या कथा | Indian mythology (all traditions, not one god) | 3.354 |
+| 12 | देव उठनी एकादशी कथा | Indian mythology (all traditions, not one god) | 3.338 |
+| 13 | कृष्ण गोवर्धन पर्वत कथा | Indian mythology (all traditions, not one god) | 3.223 |
+| 14 | महाभारत कथा | Indian mythology (all traditions, not one god) | 3.216 |
+| 15 | विष्णु पुराण कथा | Indian mythology (all traditions, not one god) | 3.191 |
+| 16 | कार्तिक पूर्णिमा कथा | Indian mythology (all traditions, not one god) | 3.146 |
+| 17 | human behavior psychology hindi | Psychology (everyday mind, behaviour, relationships) | 2.883 |
+| 18 | psychology facts hindi | Psychology (everyday mind, behaviour, relationships) | 2.748 |
+| 19 | महिला मनोविज्ञान तथ्य | Psychology (everyday mind, behaviour, relationships) | 2.697 |
+| 20 | ग्रीक पौराणिक कथा | World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...) | 2.631 |
 
 ## Trending in India right now (Google Trends, cross-referenced above)
 
-- acquitted (200+)
-- कुंभ राशि (2000+)
-- पति (200+)
-- india new zealand live cricket match (500+)
-- net (1000+)
-- driving licence (200+)
-- শাদাব খান (200+)
-- ఒడిశా (1000+)
+- सांसद (200+)
+- airport (200+)
+- red dead redemption 2 (200+)
+- इज़राइल (200+)
+- perth scorchers vs melbourne stars (500+)
+- netflix, prime video new shows (200+)
+- ಚಿನ್ನ (2000+)
+- वायु गुणवत्ता सूचकांक (500+)
 
 ## Indian mythology (all traditions, not one god)
 
@@ -46,53 +46,53 @@ Queries researched: तुलसी विवाह कथा, देव उठ�
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | एकादशी की कहानी | 3.824 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-10 |
-| 2 | कार्तिक पूर्णिमा कथा | 3.818 | Kartik Purnima (Dev Diwali) → 2026-10-14 |
-| 3 | शरद पूर्णिमा कृष्ण रास | 3.599 | Sharad Purnima → 2026-10-13 |
-| 4 | शिव पूजा कथा | 3.348 | Masik Shivratri → 2026-10-27 |
-| 5 | विष्णु पुराण कथा | 3.179 |  |
-| 6 | अमावस्या कथा | 3.17 | Amavasya (No Moon) → 2026-10-28 |
-| 7 | रामायण कथा | 3.148 |  |
-| 8 | एकादशी व्रत कथा | 3.094 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-10 |
+| 1 | करवा चौथ कथा | 4.263 | Karwa Chauth → 2026-10-17 |
+| 2 | शिव पूजा कथा | 3.957 | Masik Shivratri → 2026-10-27 |
+| 3 | पूर्णिमा व्रत कथा | 3.535 | Purnima (Full Moon) → 2026-11-12 |
+| 4 | एकादशी की कहानी | 3.505 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-10 |
+| 5 | रामायण कथा | 3.412 |  |
+| 6 | तुलसी विवाह कथा | 3.364 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-10 |
+| 7 | अमावस्या कथा | 3.354 | Amavasya (No Moon) → 2026-10-28 |
+| 8 | शनि देव कथा | 3.315 | Saturday (Shani-vaar) → 2026-10-12 |
 
 ### YouTube Shorts
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | शनि देव कथा | 3.659 | Saturday (Shani-vaar) → 2026-10-19 |
-| 2 | कार्तिक पूर्णिमा कथा | 3.554 | Kartik Purnima (Dev Diwali) → 2026-10-21 |
-| 3 | तुलसी विवाह कथा | 3.449 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
-| 4 | रामायण कथा | 3.244 |  |
-| 5 | महाभारत कथा | 3.118 |  |
-| 6 | सावित्री सत्यवान | 3.106 | Karwa Chauth → 2026-10-24 |
-| 7 | शनि व्रत कथा | 3.09 | Saturday (Shani-vaar) → 2026-10-19 |
-| 8 | देवी भागवत कथा | 3.008 |  |
+| 1 | शरद पूर्णिमा कृष्ण रास | 4.105 | Sharad Purnima → 2026-10-20 |
+| 2 | धनतेरस यमराज | 3.923 | Dhanteras → 2026-11-01 |
+| 3 | शनि देव कथा | 3.916 | Saturday (Shani-vaar) → 2026-10-19 |
+| 4 | तुलसी विवाह कथा | 3.722 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
+| 5 | शिवरात्रि कथा | 3.447 | Masik Shivratri → 2026-11-03 |
+| 6 | देव उठनी एकादशी कथा | 3.338 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
+| 7 | कृष्ण गोवर्धन पर्वत कथा | 3.223 | Govardhan Puja → 2026-11-05 |
+| 8 | महाभारत कथा | 3.216 |  |
 
 ### Instagram
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | एकादशी की कहानी | 2.032 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-18 |
-| 2 | देव उठनी एकादशी कथा | 1.153 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-18 |
-| 3 | देव दीपावली कथा | 1.085 | Kartik Purnima (Dev Diwali) → 2026-10-22 |
-| 4 | शनि देव कथा | 1.008 | Saturday (Shani-vaar) → 2026-10-20 |
-| 5 | शिव पूजा कथा | 0.963 | Masik Shivratri → 2026-11-04 |
-| 6 | शिव पुराण कथा | 0.963 |  |
-| 7 | राम अयोध्या वापसी दिवाली कथा | 0.763 | Diwali (Lakshmi Puja) → 2026-11-05 |
-| 8 | शरद पूर्णिमा कृष्ण रास | 0.701 | Sharad Purnima → 2026-10-21 |
+| 1 | एकादशी की कहानी | 2.147 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-18 |
+| 2 | राम अयोध्या वापसी दिवाली कथा | 1.93 | Diwali (Lakshmi Puja) → 2026-11-05 |
+| 3 | गीता जयंती कथा | 1.438 | Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti → 2026-11-16 |
+| 4 | शिव पूजा कथा | 1.252 | Masik Shivratri → 2026-11-04 |
+| 5 | देव उठनी एकादशी कथा | 1.152 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-18 |
+| 6 | शनि देव कथा | 1.007 | Saturday (Shani-vaar) → 2026-10-20 |
+| 7 | देव दीपावली कथा | 1.007 | Kartik Purnima (Dev Diwali) → 2026-10-22 |
+| 8 | शिव पुराण कथा | 0.963 |  |
 
 ### Facebook (proxy)
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | कार्तिक पूर्णिमा कथा | 1.113 | Kartik Purnima (Dev Diwali) → 2026-10-21 |
-| 2 | एकादशी की कहानी | 1.105 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
-| 3 | शरद पूर्णिमा कृष्ण रास | 0.961 | Sharad Purnima → 2026-10-20 |
-| 4 | तुलसी विवाह कथा | 0.888 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
-| 5 | सावित्री सत्यवान | 0.828 | Karwa Chauth → 2026-10-24 |
-| 6 | शनि व्रत कथा | 0.818 | Saturday (Shani-vaar) → 2026-10-19 |
-| 7 | एकादशी व्रत कथा | 0.782 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
-| 8 | शिव पूजा कथा | 0.778 | Masik Shivratri → 2026-11-03 |
+| 1 | शनि देव कथा | 0.994 | Saturday (Shani-vaar) → 2026-10-19 |
+| 2 | एकादशी की कहानी | 0.978 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
+| 3 | शिव पूजा कथा | 0.945 | Masik Shivratri → 2026-11-03 |
+| 4 | तुलसी विवाह कथा | 0.871 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
+| 5 | कृष्ण गोवर्धन पर्वत कथा | 0.856 | Govardhan Puja → 2026-11-05 |
+| 6 | करवा चौथ कथा | 0.845 | Karwa Chauth → 2026-10-24 |
+| 7 | शिवरात्रि कथा | 0.84 | Masik Shivratri → 2026-11-03 |
+| 8 | देव उठनी एकादशी कथा | 0.819 | Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi → 2026-10-17 |
 
 **Festival deadlines:** Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi 2026-10-22: तुलसी विवाह कथा, देव उठनी एकादशी कथा, एकादशी व्रत कथा, एकादशी की कहानी; Saturday (Shani-vaar) 2026-10-24: शनि देव कथा, शनि व्रत कथा; Sharad Purnima 2026-10-25: शरद पूर्णिमा कृष्ण रास; Kartik Purnima (Dev Diwali) 2026-10-26: कार्तिक पूर्णिमा कथा, देव दीपावली कथा; Karwa Chauth 2026-10-29: सावित्री सत्यवान, करवा चौथ कथा; Saturday (Shani-vaar) 2026-10-31: शनि देव कथा, शनि व्रत कथा; Krishna Ekadashi 2026-11-05: एकादशी व्रत कथा, एकादशी की कहानी; Dhanteras 2026-11-06: धनतेरस यमराज; Saturday (Shani-vaar) 2026-11-07: शनि देव कथा, शनि व्रत कथा; Masik Shivratri 2026-11-08: शिवरात्रि कथा, शिव पूजा कथा; Diwali (Lakshmi Puja) 2026-11-09: दिवाली लक्ष्मी समुद्र मंथन, राम अयोध्या वापसी दिवाली कथा; Amavasya (No Moon) 2026-11-09: अमावस्या कथा, पितृ दोष कथा; Govardhan Puja 2026-11-10: कृष्ण गोवर्धन पर्वत कथा; Saturday (Shani-vaar) 2026-11-14: शनि देव कथा, शनि व्रत कथा; Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti 2026-11-20: वैकुंठ एकादशी कथा, गीता जयंती कथा, मोक्षदा एकादशी व्रत कथा, एकादशी व्रत कथा, एकादशी की कहानी; Saturday (Shani-vaar) 2026-11-21: शनि देव कथा, शनि व्रत कथा; Purnima (Full Moon) 2026-11-24: पूर्णिमा व्रत कथा; Saturday (Shani-vaar) 2026-11-28: शनि देव कथा, शनि व्रत कथा
 
@@ -104,27 +104,27 @@ Queries researched: ग्रीक पौराणिक कथा, नॉर�
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | ग्रीक पौराणिक कथा | 2.451 |  |
-| 2 | ग्रीक पौराणिक कथाएं | 2.37 |  |
-| 3 | egyptian mythology story hindi | 2.251 |  |
-| 4 | ग्रीक पौराणिक कथाएँ | 2.22 |  |
-| 5 | ग्रीक देवता कहानी | 2.198 |  |
-| 6 | नॉर्स पौराणिक कथा | 2.12 |  |
-| 7 | world mythology explained hindi | 2.054 |  |
-| 8 | zeus mythology story hindi | 1.931 |  |
+| 1 | ग्रीक पौराणिक कथा | 2.546 |  |
+| 2 | ग्रीक पौराणिक कथाएं | 2.498 |  |
+| 3 | ग्रीक पौराणिक कथाएँ | 2.465 |  |
+| 4 | ग्रीक देवता कहानी | 2.365 |  |
+| 5 | egyptian mythology story hindi | 2.333 |  |
+| 6 | world mythology explained hindi | 2.176 |  |
+| 7 | नॉर्स पौराणिक कथा | 2.071 |  |
+| 8 | zeus mythology story hindi | 2.001 |  |
 
 ### YouTube Shorts
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | ग्रीक पौराणिक कथा | 2.533 |  |
-| 2 | ग्रीक पौराणिक कथाएं | 2.533 |  |
-| 3 | ग्रीक पौराणिक कथाएँ | 2.437 |  |
-| 4 | मिस्र की पौराणिक कथा | 1.622 |  |
-| 5 | world mythology explained hindi | 1.569 |  |
-| 6 | zeus mythology story hindi | 1.532 |  |
-| 7 | egyptian mythology story hindi | 1.22 |  |
-| 8 | odin norse mythology hindi | 0.794 |  |
+| 1 | ग्रीक पौराणिक कथा | 2.631 |  |
+| 2 | ग्रीक पौराणिक कथाएं | 2.631 |  |
+| 3 | ग्रीक देवता कहानी | 2.594 |  |
+| 4 | ग्रीक पौराणिक कथाएँ | 2.412 |  |
+| 5 | egyptian mythology story hindi | 1.932 |  |
+| 6 | मिस्र की पौराणिक कथा | 1.603 |  |
+| 7 | zeus mythology story hindi | 1.569 |  |
+| 8 | odin norse mythology hindi | 0.815 |  |
 
 ### Instagram
 
@@ -135,65 +135,66 @@ Queries researched: ग्रीक पौराणिक कथा, नॉर�
 | # | topic | score | festival |
 |---|---|---|---|
 | 1 | ग्रीक पौराणिक कथा | 0.8 |  |
-| 2 | ग्रीक पौराणिक कथाएं | 0.782 |  |
-| 3 | ग्रीक पौराणिक कथाएँ | 0.742 |  |
-| 4 | egyptian mythology story hindi | 0.677 |  |
-| 5 | world mythology explained hindi | 0.654 |  |
-| 6 | zeus mythology story hindi | 0.624 |  |
-| 7 | ग्रीक देवता कहानी | 0.593 |  |
-| 8 | नॉर्स पौराणिक कथा | 0.576 |  |
+| 2 | ग्रीक पौराणिक कथाएं | 0.79 |  |
+| 3 | ग्रीक पौराणिक कथाएँ | 0.77 |  |
+| 4 | ग्रीक देवता कहानी | 0.759 |  |
+| 5 | egyptian mythology story hindi | 0.714 |  |
+| 6 | zeus mythology story hindi | 0.622 |  |
+| 7 | world mythology explained hindi | 0.57 |  |
+| 8 | नॉर्स पौराणिक कथा | 0.547 |  |
 
 ## Psychology (everyday mind, behaviour, relationships)
 
-Queries researched: मनोविज्ञान तथ्य, व्यवहार मनोविज्ञान, रिश्तों का मनोविज्ञान, psychology facts hindi, human behavior psychology hindi, mind psychology facts, मनोविज्ञान तथ्यों, 1000 मनोविज्ञान तथ्यों pdf, love मनोविज्ञान तथ्यों, दिलचस्प मनोविज्ञान तथ्यों
+Queries researched: मनोविज्ञान तथ्य, व्यवहार मनोविज्ञान, रिश्तों का मनोविज्ञान, psychology facts hindi, human behavior psychology hindi, mind psychology facts, मनोविज्ञान तथ्यों, 1000 मनोविज्ञान तथ्यों pdf, love मनोविज्ञान तथ्यों, महिला मनोविज्ञान तथ्य
 
 ### YouTube long-form
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | psychology facts hindi | 2.963 |  |
-| 2 | व्यवहार मनोविज्ञान | 2.325 |  |
-| 3 | human behavior psychology hindi | 2.304 |  |
-| 4 | रिश्तों का मनोविज्ञान | 1.88 |  |
+| 1 | महिला मनोविज्ञान तथ्य | 2.697 |  |
+| 2 | व्यवहार मनोविज्ञान | 2.4 |  |
+| 3 | human behavior psychology hindi | 2.349 |  |
+| 4 | mind psychology facts | 2.147 |  |
+| 5 | रिश्तों का मनोविज्ञान | 1.84 |  |
 
 ### YouTube Shorts
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | human behavior psychology hindi | 2.734 |  |
-| 2 | psychology facts hindi | 2.557 |  |
-| 3 | mind psychology facts | 2.43 |  |
-| 4 | love मनोविज्ञान तथ्यों | 2.346 |  |
-| 5 | व्यवहार मनोविज्ञान | 2.338 |  |
-| 6 | मनोविज्ञान तथ्य | 2.158 |  |
-| 7 | दिलचस्प मनोविज्ञान तथ्यों | 2.035 |  |
-| 8 | रिश्तों का मनोविज्ञान | 2.033 |  |
+| 1 | human behavior psychology hindi | 2.883 |  |
+| 2 | psychology facts hindi | 2.748 |  |
+| 3 | व्यवहार मनोविज्ञान | 2.612 |  |
+| 4 | love मनोविज्ञान तथ्यों | 2.298 |  |
+| 5 | mind psychology facts | 2.156 |  |
+| 6 | मनोविज्ञान तथ्य | 2.12 |  |
+| 7 | मनोविज्ञान तथ्यों | 1.94 |  |
+| 8 | महिला मनोविज्ञान तथ्य | 1.898 |  |
 
 ### Instagram
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | love मनोविज्ञान तथ्यों | 0.951 |  |
-| 2 | मनोविज्ञान तथ्य | 0.352 |  |
-| 3 | व्यवहार मनोविज्ञान | 0.352 |  |
-| 4 | रिश्तों का मनोविज्ञान | 0.352 |  |
-| 5 | mind psychology facts | 0.352 |  |
-| 6 | मनोविज्ञान तथ्यों | 0.352 |  |
-| 7 | 1000 मनोविज्ञान तथ्यों pdf | 0.352 |  |
-| 8 | दिलचस्प मनोविज्ञान तथ्यों | 0.352 |  |
+| 1 | love मनोविज्ञान तथ्यों | 0.88 |  |
+| 2 | मनोविज्ञान तथ्य | 0.874 |  |
+| 3 | व्यवहार मनोविज्ञान | 0.874 |  |
+| 4 | रिश्तों का मनोविज्ञान | 0.874 |  |
+| 5 | mind psychology facts | 0.874 |  |
+| 6 | मनोविज्ञान तथ्यों | 0.874 |  |
+| 7 | 1000 मनोविज्ञान तथ्यों pdf | 0.874 |  |
+| 8 | महिला मनोविज्ञान तथ्य | 0.874 |  |
 
 ### Facebook (proxy)
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | psychology facts hindi | 0.79 |  |
-| 2 | human behavior psychology hindi | 0.741 |  |
-| 3 | व्यवहार मनोविज्ञान | 0.734 |  |
-| 4 | रिश्तों का मनोविज्ञान | 0.635 |  |
-| 5 | love मनोविज्ञान तथ्यों | 0.429 |  |
-| 6 | mind psychology facts | 0.307 |  |
-| 7 | मनोविज्ञान तथ्य | 0.292 |  |
-| 8 | दिलचस्प मनोविज्ञान तथ्यों | 0.286 |  |
+| 1 | महिला मनोविज्ञान तथ्य | 0.947 |  |
+| 2 | व्यवहार मनोविज्ञान | 0.924 |  |
+| 3 | mind psychology facts | 0.849 |  |
+| 4 | human behavior psychology hindi | 0.797 |  |
+| 5 | रिश्तों का मनोविज्ञान | 0.75 |  |
+| 6 | love मनोविज्ञान तथ्यों | 0.42 |  |
+| 7 | मनोविज्ञान तथ्य | 0.409 |  |
+| 8 | मनोविज्ञान तथ्यों | 0.4 |  |
 
 ## Dark psychology (manipulation awareness, persuasion, self-protection)
 
@@ -203,40 +204,43 @@ Queries researched: डार्क साइकोलॉजी, मैनिप
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | डार्क साइकोलॉजी | 2.216 |  |
-| 2 | डार्क साइकोलॉजी क्या है | 2.033 |  |
-| 3 | मैनिपुलेशन ट्रिक्स | 1.942 |  |
-| 4 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 1.77 |  |
-| 5 | manipulation tactics hindi | 1.704 |  |
-| 6 | डार्क साइकोलॉजी pdf | 1.188 |  |
-| 7 | gaslighting kya hota hai | 0.439 |  |
+| 1 | डार्क साइकोलॉजी क्या है | 2.334 |  |
+| 2 | डार्क साइकोलॉजी | 2.21 |  |
+| 3 | डार्क साइकोलॉजी बुक | 2.064 |  |
+| 4 | मैनिपुलेशन ट्रिक्स | 1.9 |  |
+| 5 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 1.789 |  |
+| 6 | manipulation tactics hindi | 1.677 |  |
+| 7 | gaslighting kya hota hai | 0.645 |  |
+| 8 | डार्क साइकोलॉजी pdf | 0.178 |  |
 
 ### YouTube Shorts
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | डार्क साइकोलॉजी | 2.375 |  |
-| 2 | डार्क साइकोलॉजी क्या है | 2.279 |  |
-| 3 | dark psychology facts hindi | 2.26 |  |
-| 4 | डार्क साइकोलॉजी बुक | 1.849 |  |
-| 5 | मैनिपुलेशन ट्रिक्स | 1.838 |  |
-| 6 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 1.823 |  |
-| 7 | manipulation tactics hindi | 1.613 |  |
-| 8 | डार्क साइकोलॉजी pdf | 1.288 |  |
+| 1 | डार्क साइकोलॉजी | 2.471 |  |
+| 2 | डार्क साइकोलॉजी क्या है | 2.391 |  |
+| 3 | dark psychology facts hindi | 2.305 |  |
+| 4 | डार्क साइकोलॉजी बुक | 2.009 |  |
+| 5 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 1.834 |  |
+| 6 | मैनिपुलेशन ट्रिक्स | 1.817 |  |
+| 7 | manipulation tactics hindi | 1.578 |  |
+| 8 | डार्क साइकोलॉजी pdf | 1.338 |  |
 
 ### Instagram
 
-(no data this run)
+| # | topic | score | festival |
+|---|---|---|---|
+| 1 | dark psychology facts hindi | 0 |  |
 
 ### Facebook (proxy)
 
 | # | topic | score | festival |
 |---|---|---|---|
-| 1 | डार्क साइकोलॉजी | 0.8 |  |
-| 2 | डार्क साइकोलॉजी क्या है | 0.749 |  |
-| 3 | मैनिपुलेशन ट्रिक्स | 0.698 |  |
-| 4 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 0.654 |  |
-| 5 | manipulation tactics hindi | 0.625 |  |
-| 6 | डार्क साइकोलॉजी pdf | 0.476 |  |
-| 7 | gaslighting kya hota hai | 0.253 |  |
-| 8 | dark psychology facts hindi | 0.243 |  |
+| 1 | डार्क साइकोलॉजी क्या है | 0.914 |  |
+| 2 | डार्क साइकोलॉजी | 0.771 |  |
+| 3 | डार्क साइकोलॉजी बुक | 0.708 |  |
+| 4 | मैनिपुलेशन ट्रिक्स | 0.658 |  |
+| 5 | डार्क साइकोलॉजी सीक्रेट्स एंड मैनिपुलेशन | 0.633 |  |
+| 6 | manipulation tactics hindi | 0.591 |  |
+| 7 | gaslighting kya hota hai | 0.294 |  |
+| 8 | dark psychology facts hindi | 0.24 |  |
