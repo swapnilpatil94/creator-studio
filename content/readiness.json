@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-02T09:48:12.604Z",
+ "generated": "2026-11-03T09:51:21.372Z",
  "mode": "remote",
- "from": "2026-11-02",
+ "from": "2026-11-03",
  "days": [
-  {
-   "date": "2026-11-02",
-   "cards": [
-    {
-     "id": "w79aad1b4",
-     "slug": "egypt-ra-night-journey",
-     "title": "हर रात सूर्य मरता क्यों था? रा की पाताल यात्रा",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-03",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-16",
+   "cards": [
+    {
+     "id": "w4c0e67a3",
+     "slug": "kamadeva-burnt-rati-grief",
+     "title": "कामदेव की राख और रति का विलाप",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-02",
    "2026-11-03",
    "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
-   "2026-11-08"
+   "2026-11-08",
+   "2026-11-09"
   ],
   "ok": false
  }
