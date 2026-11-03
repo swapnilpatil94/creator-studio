@@ -1,5 +1,5 @@
 {
- "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-10-20",
+ "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-03",
  "events": [
   {
    "id": "ashtami",
@@ -219,6 +219,16 @@
     "amavasya",
     "pitru",
     "naraka"
+   ]
+  },
+  {
+   "id": "purnima-2027-01-22",
+   "name": "Purnima (Full Moon)",
+   "date": "2027-01-22",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
    ]
   }
  ],

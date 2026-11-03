@@ -1,0 +1,897 @@
+{
+ "_note": "Candidate stories for 2026-10-29 .. 2026-12-31, written by Claude from the Puranas and epics and graded against the real outlier data (planner/topic-plan.mjs). title = the Hindi working title / hook; source = where the owner verifies the story (never state a verse we have not read: see .claude/skills/mythology-research-verification); belief = write as मान्यता, not fact; regional = a regional or later retelling, label it. tags match calendar events (planner/data/panchang-*.json tags). fmt = which cut suits it.",
+ "topics": [
+  {
+   "slug": "savitri-satyavan-yamraj",
+   "theme": "afterlife_soul",
+   "mood": "PREM_TYAG",
+   "fmt": "long",
+   "source": "Mahabharata, Vana Parva (Savitri-Satyavan)",
+   "tags": [
+    "karwa-chauth",
+    "savitri",
+    "yama"
+   ],
+   "title": "सावित्री ने यमराज से पति के प्राण कैसे वापस लिए?",
+   "primary": true
+  },
+  {
+   "slug": "hanuman-shani-release",
+   "theme": "shani_remedy",
+   "mood": "UPAY_VIDHI",
+   "fmt": "short",
+   "source": "regional retelling (label it)",
+   "regional": true,
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "title": "हनुमान ने शनि को रावण की कैद से कैसे छुड़ाया?"
+  },
+  {
+   "slug": "shani-chhaya-curse-eyes",
+   "theme": "shani_remedy",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Brahma Vaivarta / Skanda traditions (verify)",
+   "tags": [
+    "shani",
+    "saturday"
+   ],
+   "title": "शनि की दृष्टि क्रूर क्यों मानी जाती है? छाया और सूर्य की कथा"
+  },
+  {
+   "slug": "shani-dasharatha",
+   "theme": "shani_remedy",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Padma Purana (verify)",
+   "tags": [
+    "shani",
+    "saturday"
+   ],
+   "title": "राजा दशरथ ने शनि को रोहिणी भेदने से क्यों रोका?"
+  },
+  {
+   "slug": "shani-vikramaditya",
+   "theme": "shani_remedy",
+   "mood": "UPAY_VIDHI",
+   "fmt": "short",
+   "source": "folk tradition (label it)",
+   "regional": true,
+   "tags": [
+    "shani",
+    "saturday"
+   ],
+   "title": "राजा विक्रमादित्य और शनि की साढ़ेसाती: उन्होंने क्या खोया?"
+  },
+  {
+   "slug": "hanuman-bhima-tail",
+   "theme": "hanuman",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Mahabharata, Vana Parva (Saugandhika)",
+   "tags": [
+    "hanuman",
+    "saturday"
+   ],
+   "title": "भीम हनुमान की पूँछ क्यों नहीं उठा पाए?"
+  },
+  {
+   "slug": "hanuman-ahiravan",
+   "theme": "hanuman",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Adhyatma / Krittivasi Ramayana (regional, label it)",
+   "regional": true,
+   "tags": [
+    "hanuman",
+    "saturday"
+   ],
+   "title": "हनुमान बनाम अहिरावण: पाताल लोक का युद्ध"
+  },
+  {
+   "slug": "hanuman-makardhwaj",
+   "theme": "hanuman",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "regional retelling (label it)",
+   "regional": true,
+   "tags": [
+    "hanuman"
+   ],
+   "title": "हनुमान का पुत्र मकरध्वज कैसे हुआ?"
+  },
+  {
+   "slug": "sanjeevani-mountain",
+   "theme": "hanuman",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Yuddha Kanda",
+   "tags": [
+    "hanuman"
+   ],
+   "title": "हनुमान पूरा संजीवनी पर्वत क्यों उठा लाए?"
+  },
+  {
+   "slug": "ekadashi-mura-asur",
+   "theme": "tulsi_vrat",
+   "mood": "UPAY_VIDHI",
+   "fmt": "long",
+   "source": "Padma Purana, Uttara Khanda (Ekadashi Mahatmya)",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "title": "एकादशी का जन्म: मुर दैत्य को किसने मारा?",
+   "primary": true
+  },
+  {
+   "slug": "gajendra-moksha",
+   "theme": "vishnu_lakshmi",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Bhagavata Purana, Skandha 8",
+   "tags": [
+    "ekadashi",
+    "vishnu"
+   ],
+   "title": "मगरमच्छ के जबड़े में हाथी: गजेंद्र को किसने बचाया?"
+  },
+  {
+   "slug": "jaya-vijaya-curse",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Bhagavata Purana 3.15-16",
+   "tags": [
+    "vishnu",
+    "ekadashi"
+   ],
+   "title": "विष्णु के द्वारपाल असुर क्यों बने? जय-विजय का शाप"
+  },
+  {
+   "slug": "varaha-prithvi",
+   "theme": "vishnu_avatar",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Bhagavata Purana 3.13-19",
+   "tags": [
+    "vishnu"
+   ],
+   "title": "जब हिरण्याक्ष पृथ्वी को समुद्र में ले गया: वराह ने उसे कैसे बचाया?"
+  },
+  {
+   "slug": "narasimha-prahlad",
+   "theme": "vishnu_avatar",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "long",
+   "source": "Bhagavata Purana, Skandha 7",
+   "tags": [
+    "vishnu"
+   ],
+   "title": "ब्रह्मा के वरदान में छिपा था हिरण्यकशिपु का अंत: नरसिंह ने उसे कैसे तोड़ा?"
+  },
+  {
+   "slug": "vamana-bali",
+   "theme": "vishnu_avatar",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Bhagavata Purana 8.18-22",
+   "tags": [
+    "vishnu",
+    "diwali"
+   ],
+   "title": "तीन पग में तीन लोक: वामन ने बलि से क्या माँगा?"
+  },
+  {
+   "slug": "kurma-samudra-manthan",
+   "theme": "creation_cosmic",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Bhagavata Purana, Skandha 8",
+   "tags": [
+    "vishnu",
+    "lakshmi",
+    "diwali"
+   ],
+   "title": "समुद्र मंथन में कछुआ क्यों बने विष्णु? चौदह रत्नों का क्रम"
+  },
+  {
+   "slug": "lakshmi-leaves-indra",
+   "theme": "vishnu_lakshmi",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "long",
+   "source": "Vishnu Purana 1.9 / Bhagavata 8.8 (Durvasa's curse)",
+   "tags": [
+    "diwali",
+    "lakshmi"
+   ],
+   "title": "लक्ष्मी जी इंद्र को छोड़कर क्यों चली गईं?",
+   "primary": true
+  },
+  {
+   "slug": "matsya-manu-pralay",
+   "theme": "creation_cosmic",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Matsya Purana / Bhagavata 8.24",
+   "tags": [
+    "vishnu"
+   ],
+   "title": "मनु की नाव और प्रलय: मत्स्य अवतार ने किसे बचाया?"
+  },
+  {
+   "slug": "mohini-bhasmasur",
+   "theme": "shiva_mahadev",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana / Bhagavata (verify version)",
+   "tags": [
+    "shiva",
+    "vishnu"
+   ],
+   "title": "मोहिनी रूप: विष्णु ने भस्मासुर को कैसे भस्म किया?"
+  },
+  {
+   "slug": "satyanarayan-katha-origin",
+   "theme": "vishnu_lakshmi",
+   "mood": "UPAY_VIDHI",
+   "fmt": "short",
+   "source": "Skanda Purana, Reva Khanda (verify)",
+   "tags": [
+    "purnima",
+    "vrat"
+   ],
+   "title": "सत्यनारायण कथा में साधु वैश्य से क्या भूल हुई?",
+   "primary": true
+  },
+  {
+   "slug": "tripurasura-vadh",
+   "theme": "shiva_mahadev",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "long",
+   "source": "Shiva Purana, Rudra Samhita / Mahabharata Karna Parva",
+   "tags": [
+    "kartik-purnima",
+    "dev-diwali",
+    "shiva"
+   ],
+   "title": "त्रिपुरासुर का अंत: एक ही बाण से तीन नगर कैसे गिरे?",
+   "primary": true
+  },
+  {
+   "slug": "markandeya-yamraj",
+   "theme": "shiva_mahadev",
+   "mood": "BHAY",
+   "fmt": "long",
+   "source": "Shiva Purana / Markandeya traditions (verify)",
+   "tags": [
+    "shiva",
+    "yama",
+    "masikshivratri"
+   ],
+   "title": "मार्कंडेय ने यमराज को शिवलिंग के सामने कैसे हराया?",
+   "primary": true
+  },
+  {
+   "slug": "kaal-bhairav-brahma-head",
+   "theme": "shiva_mahadev",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana (verify version)",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "bhairav"
+   ],
+   "title": "भैरव ने ब्रह्मा का पाँचवाँ सिर क्यों काटा?",
+   "primary": true
+  },
+  {
+   "slug": "kashi-trishul-tip",
+   "theme": "jagannath_temples",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Skanda Purana, Kashi Khanda (verify)",
+   "tags": [
+    "masikshivratri",
+    "shiva"
+   ],
+   "title": "काशी धरती पर नहीं, शिव के त्रिशूल पर क्यों टिकी मानी जाती है?"
+  },
+  {
+   "slug": "ardhanarishvara",
+   "theme": "shiva_mahadev",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana, Rudra Samhita",
+   "tags": [
+    "shiva"
+   ],
+   "title": "अर्धनारीश्वर: शिव आधे स्त्री रूप में क्यों प्रकट हुए?"
+  },
+  {
+   "slug": "ravana-atmalinga-gokarna",
+   "theme": "shiva_mahadev",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana / Skanda traditions (verify)",
+   "tags": [
+    "shiva"
+   ],
+   "title": "रावण का आत्मलिंग गोकर्ण में ज़मीन पर क्यों रुक गया?"
+  },
+  {
+   "slug": "kedarnath-bull-shiva",
+   "theme": "jagannath_temples",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Skanda Purana / folk tradition (label it)",
+   "regional": true,
+   "tags": [
+    "shiva"
+   ],
+   "title": "केदारनाथ में शिव बैल बनकर पांडवों से क्यों छिपे?"
+  },
+  {
+   "slug": "andhakasura",
+   "theme": "shiva_mahadev",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "long",
+   "source": "Shiva Purana / Matsya Purana (verify)",
+   "tags": [
+    "shiva"
+   ],
+   "title": "अंधकासुर: जो पार्वती को पाना चाहता था, उसका अंत कैसे हुआ?"
+  },
+  {
+   "slug": "sati-daksha-yagna",
+   "theme": "devi_shakti",
+   "mood": "PREM_TYAG",
+   "fmt": "long",
+   "source": "Shiva Purana / Devi Bhagavata",
+   "tags": [
+    "shiva",
+    "devi"
+   ],
+   "title": "सती ने दक्ष के यज्ञ में देह क्यों त्यागी?"
+  },
+  {
+   "slug": "ganesh-head-story",
+   "theme": "ganesh_kartikeya",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Shiva Purana, Rudra Samhita (Kumara Khanda); versions differ, label it",
+   "tags": [
+    "ganesh"
+   ],
+   "title": "गणेश जी का सिर कैसे कटा, और हाथी का सिर क्यों लगा?"
+  },
+  {
+   "slug": "ganesh-tulsi-curse",
+   "theme": "ganesh_kartikeya",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Brahma Vaivarta Purana (verify)",
+   "tags": [
+    "tulsi-vivah",
+    "ganesh"
+   ],
+   "title": "गणेश जी को तुलसी क्यों नहीं चढ़ाई जाती?"
+  },
+  {
+   "slug": "kartikeya-ganesh-race",
+   "theme": "ganesh_kartikeya",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana, Kumara Khanda",
+   "tags": [
+    "ganesh"
+   ],
+   "title": "कार्तिकेय और गणेश की दौड़: माता-पिता की परिक्रमा का सच"
+  },
+  {
+   "slug": "ganesh-vyasa-tusk",
+   "theme": "ganesh_kartikeya",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Mahabharata (northern recension, Adi Parva intro; label it)",
+   "regional": true,
+   "tags": [
+    "ganesh"
+   ],
+   "title": "गणेश ने महाभारत लिखते समय अपना दाँत क्यों तोड़ा?"
+  },
+  {
+   "slug": "vaitarani-river",
+   "theme": "garuda_naraka",
+   "mood": "BHAY",
+   "fmt": "short",
+   "source": "Garuda Purana, Preta Khanda",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "title": "वैतरणी नदी: मृत्यु के बाद इसे कौन पार करता है?",
+   "primary": true
+  },
+  {
+   "slug": "chitragupta-ledger",
+   "theme": "garuda_naraka",
+   "mood": "BHAY",
+   "fmt": "short",
+   "source": "Garuda Purana / Padma Purana (verify)",
+   "tags": [
+    "yama",
+    "naraka",
+    "dhanteras"
+   ],
+   "title": "चित्रगुप्त का बही-खाता: कर्म कैसे लिखे जाते हैं?"
+  },
+  {
+   "slug": "preta-thirteen-days",
+   "theme": "afterlife_soul",
+   "mood": "BHAY",
+   "fmt": "long",
+   "source": "Garuda Purana, Preta Khanda",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "title": "मृत्यु के बाद पहले 13 दिन: गरुड़ पुराण के अनुसार आत्मा कहाँ रहती है?",
+   "primary": true
+  },
+  {
+   "slug": "amavasya-tarpan-meaning",
+   "theme": "afterlife_soul",
+   "mood": "UPAY_VIDHI",
+   "fmt": "short",
+   "source": "Garuda Purana / Dharmashastra (verify)",
+   "tags": [
+    "amavasya",
+    "pitru"
+   ],
+   "title": "अमावस्या पर पितरों के लिए तर्पण क्यों किया जाता है?"
+  },
+  {
+   "slug": "nachiketa-yamraj",
+   "theme": "afterlife_soul",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Katha Upanishad",
+   "tags": [
+    "yama",
+    "pitru"
+   ],
+   "title": "नचिकेता ने यमराज से मृत्यु का रहस्य कैसे पूछा?"
+  },
+  {
+   "slug": "hima-prince-yama-deepam",
+   "theme": "afterlife_soul",
+   "mood": "UPAY_VIDHI",
+   "fmt": "short",
+   "source": "Skanda Purana / folk tradition (label it)",
+   "regional": true,
+   "tags": [
+    "dhanteras",
+    "yama"
+   ],
+   "title": "धनतेरस: 16 साल के राजकुमार को यमदूत क्यों नहीं ले जा सके?",
+   "primary": true
+  },
+  {
+   "slug": "yama-yamuna-bhai-dooj",
+   "theme": "karma_moral",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Bhavishya / Padma Purana traditions (verify)",
+   "tags": [
+    "bhai-dooj",
+    "yama"
+   ],
+   "title": "यम और यमुना: भाई दूज की कथा",
+   "primary": true
+  },
+  {
+   "slug": "narakasura-satyabhama",
+   "theme": "devi_shakti",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Bhagavata Purana 10.59",
+   "tags": [
+    "diwali",
+    "krishna"
+   ],
+   "title": "सत्यभामा ने नरकासुर का वध कैसे किया?",
+   "primary": true
+  },
+  {
+   "slug": "govardhan-annakut",
+   "theme": "krishna",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Bhagavata Purana 10.24-25",
+   "tags": [
+    "krishna",
+    "govardhan"
+   ],
+   "title": "इंद्र का घमंड और गोवर्धन: कृष्ण ने सात दिन पर्वत कैसे उठाया?",
+   "primary": true
+  },
+  {
+   "slug": "sudama-poha",
+   "theme": "krishna",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Bhagavata Purana 10.80-81",
+   "tags": [
+    "krishna"
+   ],
+   "title": "सुदामा के चावल: कृष्ण ने बिना माँगे उनकी गरीबी कैसे मिटाई?"
+  },
+  {
+   "slug": "kansa-six-sons",
+   "theme": "krishna",
+   "mood": "BHAY",
+   "fmt": "long",
+   "source": "Bhagavata Purana 10.1-4",
+   "tags": [
+    "krishna"
+   ],
+   "title": "कंस ने देवकी के छह पुत्र क्यों मारे, सातवें और आठवें का क्या हुआ?"
+  },
+  {
+   "slug": "kaliya-naag",
+   "theme": "naag_lok",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Bhagavata Purana 10.16",
+   "tags": [
+    "krishna",
+    "naga"
+   ],
+   "title": "कृष्ण ने कालिया नाग को यमुना से क्यों भगाया?"
+  },
+  {
+   "slug": "takshaka-parikshit",
+   "theme": "naag_lok",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "long",
+   "source": "Bhagavata Purana 1.18-19 / 12.6; Mahabharata Adi Parva",
+   "tags": [
+    "naga"
+   ],
+   "title": "राजा परीक्षित को तक्षक ने कैसे डसा? एक मुनि का शाप"
+  },
+  {
+   "slug": "astika-sarpa-satra",
+   "theme": "naag_lok",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "long",
+   "source": "Mahabharata, Adi Parva (Astika)",
+   "tags": [
+    "naga"
+   ],
+   "title": "जनमेजय का सर्प यज्ञ: आस्तीक ने नागों को कैसे बचाया?"
+  },
+  {
+   "slug": "gita-arjuna-vishada",
+   "theme": "krishna",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Bhagavad Gita, chapter 1-2 (Mahabharata, Bhishma Parva)",
+   "tags": [
+    "gita-jayanti",
+    "vaikuntha-ekadashi",
+    "krishna",
+    "moksha"
+   ],
+   "title": "गीता का पहला अध्याय: अर्जुन ने हथियार क्यों डाल दिए?",
+   "primary": true
+  },
+  {
+   "slug": "gandhari-curse-krishna",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Mahabharata, Stri Parva / Mausala Parva",
+   "tags": [
+    "krishna",
+    "gita-jayanti"
+   ],
+   "title": "गांधारी ने कृष्ण को कौन-सा शाप दिया, और वह कैसे पूरा हुआ?"
+  },
+  {
+   "slug": "abhimanyu-chakravyuh",
+   "theme": "mahabharat",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "long",
+   "source": "Mahabharata, Drona Parva",
+   "tags": [
+    "gita-jayanti"
+   ],
+   "title": "अभिमन्यु चक्रव्यूह में क्यों घुसा, और बाहर क्यों नहीं आ सका?"
+  },
+  {
+   "slug": "drona-ashwatthama-hata",
+   "theme": "mahabharat",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Mahabharata, Drona Parva",
+   "tags": [],
+   "title": "द्रोणाचार्य की मृत्यु: 'अश्वत्थामा हतो' के पीछे का सच"
+  },
+  {
+   "slug": "ashwatthama-curse",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Mahabharata, Sauptika Parva; the 'still alive' idea is a belief, write it as मान्यता",
+   "belief": true,
+   "tags": [],
+   "title": "अश्वत्थामा को कृष्ण ने कौन-सा शाप दिया?"
+  },
+  {
+   "slug": "ekalavya-thumb",
+   "theme": "karma_moral",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Mahabharata, Adi Parva",
+   "tags": [],
+   "title": "एकलव्य का अंगूठा: द्रोण ने गुरुदक्षिणा में क्यों माँगा?"
+  },
+  {
+   "slug": "draupadi-vastraharan-krishna",
+   "theme": "krishna",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Mahabharata, Sabha Parva",
+   "tags": [
+    "krishna"
+   ],
+   "title": "भरी सभा में द्रौपदी की पुकार: कृष्ण ने क्या किया?"
+  },
+  {
+   "slug": "barbarik-teen-baan",
+   "theme": "mahabharat",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "short",
+   "source": "Skanda Purana (Maheshwara Khanda) / folk tradition, label it",
+   "regional": true,
+   "tags": [],
+   "title": "बर्बरीक के तीन बाण: खाटू श्याम की कथा"
+  },
+  {
+   "slug": "yudhishthira-dog-heaven",
+   "theme": "karma_moral",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Mahabharata, Mahaprasthanika Parva",
+   "tags": [],
+   "title": "युधिष्ठिर कुत्ते के बिना स्वर्ग क्यों नहीं गए?"
+  },
+  {
+   "slug": "shikhandi-bhishma",
+   "theme": "mahabharat",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Mahabharata, Udyoga / Bhishma Parva",
+   "tags": [],
+   "title": "शिखंडी: भीष्म ने उस पर बाण क्यों नहीं चलाया?"
+  },
+  {
+   "slug": "parashurama-karna-curse",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Mahabharata, Shanti Parva",
+   "tags": [],
+   "title": "परशुराम ने कर्ण को ऐसा शाप क्यों दिया?"
+  },
+  {
+   "slug": "ravan-nagpash-garuda",
+   "theme": "ramayan",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Yuddha Kanda (Nagapasha)",
+   "tags": [
+    "garuda"
+   ],
+   "title": "रावण का सबसे बड़ा रहस्य: गरुड़ ने नागपाश कैसे तोड़ा?"
+  },
+  {
+   "slug": "kumbhakarna-sleep",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Uttara Kanda",
+   "tags": [],
+   "title": "कुंभकर्ण छह महीने क्यों सोता था?"
+  },
+  {
+   "slug": "vibhishan-lanka",
+   "theme": "ramayan",
+   "mood": "PREM_TYAG",
+   "fmt": "long",
+   "source": "Valmiki Ramayana, Yuddha Kanda",
+   "tags": [],
+   "title": "विभीषण ने भाई को क्यों छोड़ा: धर्म या विश्वासघात?"
+  },
+  {
+   "slug": "shabari-ber",
+   "theme": "karma_moral",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Aranya Kanda (Shabari; the 'jootha ber' detail is later tradition, label it)",
+   "regional": true,
+   "tags": [],
+   "title": "शबरी के बेर: राम ने उन्हें क्यों खाया?"
+  },
+  {
+   "slug": "jatayu-sacrifice",
+   "theme": "ramayan",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Aranya Kanda",
+   "tags": [],
+   "title": "जटायु ने रावण से अकेले क्यों लड़ाई की?"
+  },
+  {
+   "slug": "bharat-paduka",
+   "theme": "ramayan",
+   "mood": "PREM_TYAG",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Ayodhya Kanda",
+   "tags": [],
+   "title": "भरत ने राम की खड़ाऊँ को सिंहासन पर क्यों रखा?"
+  },
+  {
+   "slug": "ganga-descent-bhagiratha",
+   "theme": "ganga_river",
+   "mood": "PREM_TYAG",
+   "fmt": "long",
+   "source": "Valmiki Ramayana, Bala Kanda",
+   "tags": [
+    "purnima",
+    "kartik-purnima"
+   ],
+   "title": "गंगा धरती पर कैसे उतरीं: भगीरथ की तपस्या",
+   "primary": true
+  },
+  {
+   "slug": "ganga-sins-where-go",
+   "theme": "ganga_river",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "belief (write as मान्यता); Skanda Purana Kashi Khanda traditions",
+   "belief": true,
+   "tags": [
+    "purnima"
+   ],
+   "title": "गंगा में पाप धुलते हैं तो वे जाते कहाँ हैं?"
+  },
+  {
+   "slug": "shiva-jata-ganga",
+   "theme": "ganga_river",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Valmiki Ramayana, Bala Kanda / Bhagavata 9.9",
+   "tags": [
+    "shiva"
+   ],
+   "title": "शिव की जटाओं में गंगा क्यों समाईं?"
+  },
+  {
+   "slug": "kali-yuga-signs",
+   "theme": "creation_cosmic",
+   "mood": "BHAY",
+   "fmt": "long",
+   "source": "Vishnu Purana 6.1 / Bhagavata, Skandha 12",
+   "tags": [],
+   "title": "कलियुग के पाँच लक्षण: पुराणों में क्या लिखा है?"
+  },
+  {
+   "slug": "brahma-no-temple",
+   "theme": "creation_cosmic",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Padma Purana (Pushkar) / Shiva Purana (verify)",
+   "tags": [],
+   "title": "ब्रह्मा जी की पूजा क्यों नहीं होती?"
+  },
+  {
+   "slug": "four-yugas",
+   "theme": "creation_cosmic",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Vishnu Purana 6.3 / Manusmriti 1.68-86",
+   "tags": [],
+   "title": "चार युग और उनकी आयु: सत्ययुग से कलियुग तक"
+  },
+  {
+   "slug": "narad-monkey-face",
+   "theme": "sage_curse_boon",
+   "mood": "SHRAP_VARDAN",
+   "fmt": "short",
+   "source": "Shiva Purana, Rudra Samhita",
+   "tags": [
+    "vishnu"
+   ],
+   "title": "नारद का मुँह बंदर जैसा क्यों हुआ?"
+  },
+  {
+   "slug": "jagannath-incomplete-idol",
+   "theme": "jagannath_temples",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Skanda Purana, Utkala Khanda / temple tradition (label it)",
+   "regional": true,
+   "tags": [],
+   "title": "जगन्नाथ का अधूरा विग्रह: विश्वकर्मा ने मूर्ति अधूरी क्यों छोड़ी?"
+  },
+  {
+   "slug": "mahakal-ujjain-appear",
+   "theme": "jagannath_temples",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Shiva Purana, Koti Rudra Samhita",
+   "tags": [
+    "shiva"
+   ],
+   "title": "उज्जैन में महाकाल कैसे प्रकट हुए?"
+  },
+  {
+   "slug": "rameshwaram-linga-hanuman",
+   "theme": "jagannath_temples",
+   "mood": "RAHASYA",
+   "fmt": "short",
+   "source": "Skanda Purana / folk tradition (label it)",
+   "regional": true,
+   "tags": [
+    "hanuman",
+    "shiva"
+   ],
+   "title": "रामेश्वरम में हनुमान का लाया लिंग क्यों नहीं लगा?"
+  },
+  {
+   "slug": "shakti-peeth-sati-limbs",
+   "theme": "devi_shakti",
+   "mood": "RAHASYA",
+   "fmt": "long",
+   "source": "Devi Bhagavata 7.30 / Pitha-nirnaya (lists differ, label it)",
+   "tags": [
+    "devi"
+   ],
+   "title": "51 शक्तिपीठ: सती के अंग कहाँ गिरे?"
+  },
+  {
+   "slug": "kali-shiva-chest",
+   "theme": "devi_shakti",
+   "mood": "BHAY",
+   "fmt": "short",
+   "source": "Devi Mahatmya traditions / regional (label it)",
+   "regional": true,
+   "tags": [
+    "devi",
+    "shiva"
+   ],
+   "title": "काली ने शिव की छाती पर पाँव क्यों रखा?"
+  },
+  {
+   "slug": "raktabeej-chandi",
+   "theme": "devi_shakti",
+   "mood": "YUDH_SHAKTI",
+   "fmt": "long",
+   "source": "Markandeya Purana, Devi Mahatmya",
+   "tags": [
+    "devi"
+   ],
+   "title": "रक्तबीज: हर बूँद से नया असुर, देवी ने उसे कैसे हराया?"
+  }
+ ]
+}
