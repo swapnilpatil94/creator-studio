@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-03T09:51:21.372Z",
+ "generated": "2026-11-04T09:39:45.217Z",
  "mode": "remote",
- "from": "2026-11-03",
+ "from": "2026-11-04",
  "days": [
-  {
-   "date": "2026-11-03",
-   "cards": [
-    {
-     "id": "w46a6a4cf",
-     "slug": "mesopotamia-adapa-refused-food",
-     "title": "अडापा ने अमरता की रोटी खाने से क्यों मना कर दिया?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-04",
    "cards": [
@@ -40,12 +14,12 @@
      "time": "19:00",
      "gates": {
       "script": true,
-      "shipped": false,
+      "shipped": true,
       "scheduled": false
      },
      "ready": false,
      "problems": [
-      "not shipped to GitHub (no release with the mp4)"
+      "no Facebook/Instagram entry in the schedule"
      ],
      "warnings": [
       "YouTube upload not scheduled"
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-17",
+   "cards": [
+    {
+     "id": "w9b8db61b",
+     "slug": "slavic-koschei-needle",
+     "title": "कोशेई अमर क्यों था? उसकी मौत सुई में कैसे छिपी थी",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-03",
    "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10"
   ],
   "ok": false
  }
