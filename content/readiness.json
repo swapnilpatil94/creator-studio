@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-04T09:39:45.217Z",
+ "generated": "2026-11-05T09:43:57.029Z",
  "mode": "remote",
- "from": "2026-11-04",
+ "from": "2026-11-05",
  "days": [
-  {
-   "date": "2026-11-04",
-   "cards": [
-    {
-     "id": "w0ec36a44",
-     "slug": "chhaya-sanjna-yama-leg",
-     "title": "छाया को पीछे छोड़कर चली गई संज्ञा: जब यम ने माँ पर पैर उठाया",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": true,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "no Facebook/Instagram entry in the schedule"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-05",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-18",
+   "cards": [
+    {
+     "id": "w402463b8",
+     "slug": "jada-bharata-deer",
+     "title": "जड़ भरत: राजा हिरण के रूप में क्यों जन्मे?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
    "2026-11-09",
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-11"
   ],
   "ok": false
  }
