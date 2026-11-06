@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-05T09:43:57.029Z",
+ "generated": "2026-11-06T09:41:13.634Z",
  "mode": "remote",
- "from": "2026-11-05",
+ "from": "2026-11-06",
  "days": [
-  {
-   "date": "2026-11-05",
-   "cards": [
-    {
-     "id": "w553c71bb",
-     "slug": "ambarisha-durvasa",
-     "title": "सुदर्शन चक्र ने दुर्वासा का पीछा क्यों किया?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-06",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-19",
+   "cards": [
+    {
+     "id": "waf0a16b2",
+     "slug": "rahu-ketu-severed",
+     "title": "कटे सिर वाला वह अमर जो सूरज और चाँद को निगलता है",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
-   "2026-11-11"
+   "2026-11-11",
+   "2026-11-12"
   ],
   "ok": false
  }
