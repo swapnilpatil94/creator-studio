@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-06T09:41:13.634Z",
+ "generated": "2026-11-07T09:03:01.459Z",
  "mode": "remote",
- "from": "2026-11-06",
+ "from": "2026-11-07",
  "days": [
-  {
-   "date": "2026-11-06",
-   "cards": [
-    {
-     "id": "wcfeb2e1d",
-     "slug": "hima-prince-yama-deepam",
-     "title": "धनतेरस: 16 साल के राजकुमार को यमदूत क्यों नहीं ले जा सके?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-07",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-20",
+   "cards": [
+    {
+     "id": "w02a85427",
+     "slug": "vishnu-sleep-chaturmas-end",
+     "title": "चार महीने विष्णु क्यों सोते हैं? चातुर्मास का रहस्य",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
    "2026-11-11",
-   "2026-11-12"
+   "2026-11-12",
+   "2026-11-13"
   ],
   "ok": false
  }
