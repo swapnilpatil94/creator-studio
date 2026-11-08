@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-07T09:03:01.459Z",
+ "generated": "2026-11-08T09:20:17.325Z",
  "mode": "remote",
- "from": "2026-11-07",
+ "from": "2026-11-08",
  "days": [
-  {
-   "date": "2026-11-07",
-   "cards": [
-    {
-     "id": "w279adf6f",
-     "slug": "puranjana-nine-gates-city",
-     "title": "नौ दरवाज़ों वाला नगर और राजा पुरंजन: वह कथा जो शरीर की पहेली है",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-08",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-21",
+   "cards": [
+    {
+     "id": "w910eda21",
+     "slug": "ajamila-yamdoots-turned-back",
+     "title": "जब यमदूत एक पापी को लेने आए और लौट गए",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
    "2026-11-11",
    "2026-11-12",
-   "2026-11-13"
+   "2026-11-13",
+   "2026-11-14"
   ],
   "ok": false
  }
