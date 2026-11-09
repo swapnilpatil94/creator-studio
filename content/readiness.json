@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-08T09:20:17.325Z",
+ "generated": "2026-11-09T10:04:26.740Z",
  "mode": "remote",
- "from": "2026-11-08",
+ "from": "2026-11-09",
  "days": [
-  {
-   "date": "2026-11-08",
-   "cards": [
-    {
-     "id": "we6d42b58",
-     "slug": "ashoka-sundari",
-     "title": "अशोक सुंदरी: पार्वती की वह पुत्री जिसे कोई नहीं जानता",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-09",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-22",
+   "cards": [
+    {
+     "id": "wc2b5d900",
+     "slug": "africa-anansi-buys-stories",
+     "title": "अनांसी मकड़ी ने आसमान के देवता से सारी कहानियाँ कैसे खरीदीं?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-08",
    "2026-11-09",
    "2026-11-10",
    "2026-11-11",
    "2026-11-12",
    "2026-11-13",
-   "2026-11-14"
+   "2026-11-14",
+   "2026-11-15"
   ],
   "ok": false
  }
