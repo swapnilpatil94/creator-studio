@@ -1,0 +1,5104 @@
+{
+ "month": "2026-11",
+ "generated": "2026-11-09T08:37:25.381Z",
+ "pillars": {
+  "mythology-india": {
+   "label": "Indian mythology (all traditions, not one god)",
+   "queries": [
+    "तुलसी विवाह कथा",
+    "देव उठनी एकादशी कथा",
+    "एकादशी व्रत कथा",
+    "एकादशी की कहानी",
+    "शनि देव कथा",
+    "शनि व्रत कथा",
+    "शरद पूर्णिमा कृष्ण रास",
+    "कार्तिक पूर्णिमा कथा",
+    "देव दीपावली कथा",
+    "सावित्री सत्यवान",
+    "करवा चौथ कथा",
+    "धनतेरस यमराज",
+    "शिवरात्रि कथा",
+    "शिव पूजा कथा",
+    "दिवाली लक्ष्मी समुद्र मंथन",
+    "राम अयोध्या वापसी दिवाली कथा",
+    "अमावस्या कथा",
+    "पितृ दोष कथा",
+    "कृष्ण गोवर्धन पर्वत कथा",
+    "वैकुंठ एकादशी कथा",
+    "गीता जयंती कथा",
+    "मोक्षदा एकादशी व्रत कथा",
+    "पूर्णिमा व्रत कथा",
+    "महाभारत कथा",
+    "रामायण कथा",
+    "शिव पुराण कथा",
+    "विष्णु पुराण कथा",
+    "देवी भागवत कथा",
+    "बौद्ध कथा",
+    "सिख इतिहास कथा",
+    "भारतीय पौराणिक कथा",
+    "महाभारत कथा भाग 1",
+    "महाभारत कथा हिंदी"
+   ],
+   "source": {
+    "youtube": "outliers-kathaaya-mythology-india-2026-11-2026-11-09.json",
+    "quotaUnits": 3974,
+    "instagramHandles": 6
+   },
+   "platforms": {
+    "youtube_long": [
+     {
+      "topic": "करवा चौथ कथा",
+      "pillar": "mythology-india",
+      "n": 4,
+      "medViewsPerDay": 241376,
+      "medViewsPerSub": 49.68,
+      "share100k": 1,
+      "share1M": 1,
+      "score": 4.332,
+      "trending": false,
+      "event": {
+       "id": "karwa-chauth",
+       "name": "Karwa Chauth",
+       "date": "2026-10-29",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-17"
+      },
+      "publishBy": "2026-10-17",
+      "examples": [
+       {
+        "title": "करवा चौथ व्रत कथा /करवा चौथ की कहानी /karva chauth vrat katha🙏🌺🌼2026 sampurn Katha",
+        "url": "https://youtu.be/rqtV4XHhqh0",
+        "views": 2760529,
+        "subs": 7880,
+        "viewsPerSub": 350.3,
+        "channel": "Neha Rohit Dev"
+       },
+       {
+        "title": "करवा चौथ व्रत कथा 2026 | 7 भाइयों ने तुड़वाया बहन का व्रत , सम्पूर्ण कथा एवं पूजा विधि ! f",
+        "url": "https://youtu.be/i9IE_4h69Jo",
+        "views": 1765440,
+        "subs": 18100,
+        "viewsPerSub": 97.5,
+        "channel": "FaKT Dharmik Katha"
+       },
+       {
+        "title": "Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा | Karwa Chauth Ki Kah",
+        "url": "https://youtu.be/2wCLVpfOb2c",
+        "views": 2704286,
+        "subs": 1490000,
+        "viewsPerSub": 1.8,
+        "channel": "Bhakti Gyan"
+       }
+      ]
+     },
+     {
+      "topic": "शिव पूजा कथा",
+      "pillar": "mythology-india",
+      "n": 11,
+      "medViewsPerDay": 136003,
+      "medViewsPerSub": 0.96,
+      "share100k": 1,
+      "share1M": 0.82,
+      "score": 4.019,
+      "trending": false,
+      "event": {
+       "id": "masik-shivratri-2026-11-08",
+       "name": "Masik Shivratri",
+       "date": "2026-11-08",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-27"
+      },
+      "publishBy": "2026-10-27",
+      "examples": [
+       {
+        "title": "करवा चौथ व्रत कथा 2026  | Karwa Chauth Katha | करवा चौथ की कहानी",
+        "url": "https://youtu.be/J2awtJqsbII",
+        "views": 1497109,
+        "subs": 33900,
+        "viewsPerSub": 44.2,
+        "channel": "OmKiran Bhakti"
+       },
+       {
+        "title": "नाग पंचमी व्रत कथा जो सुनता है वह कभी गरीब नहीं रहता | Nag Panchami Vrat Katha #katha ",
+        "url": "https://youtu.be/M2NsM_EpLKo",
+        "views": 1775685,
+        "subs": 437000,
+        "viewsPerSub": 4.1,
+        "channel": "Dharmik Gyan."
+       },
+       {
+        "title": "Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा | Karwa Chauth Ki Kah",
+        "url": "https://youtu.be/2wCLVpfOb2c",
+        "views": 2704286,
+        "subs": 1490000,
+        "viewsPerSub": 1.8,
+        "channel": "Bhakti Gyan"
+       }
+      ]
+     },
+     {
+      "topic": "एकादशी की कहानी",
+      "pillar": "mythology-india",
+      "n": 15,
+      "medViewsPerDay": 29612,
+      "medViewsPerSub": 69.36,
+      "share100k": 1,
+      "share1M": 0.8,
+      "score": 3.699,
+      "trending": false,
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-10"
+      },
+      "publishBy": "2026-10-10",
+      "examples": [
+       {
+        "title": "एकादशी के दिन अढ़ैया ने बनाया भोजन, फिर हुआ चमत्कार | श्रीराम कथा🙏🚩",
+        "url": "https://youtu.be/QCYUo4xYZ2E",
+        "views": 26015453,
+        "subs": 50800,
+        "viewsPerSub": 512.1,
+        "channel": "Mahakavya Studios"
+       },
+       {
+        "title": "😱 अढ़ैया ने तान दिया धनुष! फिर भगवान श्रीराम के सामने हुआ चमत्कार | एकादशी की कथा",
+        "url": "https://youtu.be/AOJbL1Fpw-M",
+        "views": 3706857,
+        "subs": 9840,
+        "viewsPerSub": 376.7,
+        "channel": "Shikha Stories"
+       },
+       {
+        "title": "एकादशी के दिन भगवान राम ने अढ़ैया के हाथों का भोजन क्यों खाया? अढ़ैया की सच्ची भक्ति की कह",
+        "url": "https://youtu.be/SwN_7gQnz2E",
+        "views": 8375398,
+        "subs": 32800,
+        "viewsPerSub": 255.3,
+        "channel": "धर्म ग्रंथ "
+       }
+      ]
+     },
+     {
+      "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+      "pillar": "mythology-india",
+      "n": 3,
+      "medViewsPerDay": 90173,
+      "medViewsPerSub": 1.72,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 3.59,
+      "trending": false,
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-10-28"
+      },
+      "publishBy": "2026-10-28",
+      "examples": [
+       {
+        "title": "समुद्र मंथन की संपूर्ण कथा मात्र 20 मिनट में",
+        "url": "https://youtu.be/VkpfPV32T1U",
+        "views": 865326,
+        "subs": 503000,
+        "viewsPerSub": 1.7,
+        "channel": "Divya Katha"
+       },
+       {
+        "title": "माता लक्ष्मी ने गणेश जी को क्यों अपनाया?🪔लक्ष्मी-गणेश और दिवाली की 5 अनसुनी कथाएं | Aksha",
+        "url": "https://youtu.be/eNAEm1psRYw",
+        "views": 428655,
+        "subs": 1330000,
+        "viewsPerSub": 0.3,
+        "channel": "The 7c | Akshat Gupta"
+       }
+      ]
+     },
+     {
+      "topic": "शनि देव कथा",
+      "pillar": "mythology-india",
+      "n": 3,
+      "medViewsPerDay": 23107,
+      "medViewsPerSub": 22.04,
+      "share100k": 1,
+      "share1M": 0.67,
+      "score": 3.451,
+      "trending": false,
+      "event": {
+       "id": "shani-2026-10-24",
+       "name": "Saturday (Shani-vaar)",
+       "date": "2026-10-24",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-12"
+      },
+      "publishBy": "2026-10-12",
+      "examples": [
+       {
+        "title": "घर में बीमारी, धन की परेशानी या कलह है? सुनें हनुमान शनि रक्षा मंत्र",
+        "url": "https://youtu.be/TbyqyeK3DXM",
+        "views": 3081766,
+        "subs": 57500,
+        "viewsPerSub": 53.6,
+        "channel": "InnerBloom Studio"
+       },
+       {
+        "title": "शनिवार भक्ति भजन : ॐ निलांजन समाभासं, श्री हनुमान चालीसा, शनिदेव कथा, शनि चालीसा, शनि हनुम",
+        "url": "https://youtu.be/o2M7sKh7c5s",
+        "views": 1681363,
+        "subs": 76300,
+        "viewsPerSub": 22,
+        "channel": "Shivay Bhakti Geet"
+       },
+       {
+        "title": "शिव जी के 19 अवतारों की संपूर्ण कथा",
+        "url": "https://youtu.be/LC3r6zojnqk",
+        "views": 544511,
+        "subs": 503000,
+        "viewsPerSub": 1.1,
+        "channel": "Divya Katha"
+       }
+      ]
+     },
+     {
+      "topic": "राम अयोध्या वापसी दिवाली कथा",
+      "pillar": "mythology-india",
+      "n": 4,
+      "medViewsPerDay": 75945,
+      "medViewsPerSub": 0.01,
+      "share100k": 0.5,
+      "share1M": 0,
+      "score": 3.418,
+      "trending": false,
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-10-28"
+      },
+      "publishBy": "2026-10-28",
+      "examples": []
+     },
+     {
+      "topic": "अमावस्या कथा",
+      "pillar": "mythology-india",
+      "n": 6,
+      "medViewsPerDay": 19959,
+      "medViewsPerSub": 7.05,
+      "share100k": 1,
+      "share1M": 0.33,
+      "score": 3.404,
+      "trending": false,
+      "event": {
+       "id": "amavasya-2026-11-09",
+       "name": "Amavasya (No Moon)",
+       "date": "2026-11-09",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-28"
+      },
+      "publishBy": "2026-10-28",
+      "examples": [
+       {
+        "title": "पितृपक्ष समाप्त होने से पहले जरूर सुनें यह कथा | भगवान विष्णु ने गरुड़ जी को बताया पितृधर्",
+        "url": "https://youtu.be/n1p-YB0mBlg",
+        "views": 977341,
+        "subs": 5950,
+        "viewsPerSub": 164.3,
+        "channel": "मोक्ष ज्योति "
+       },
+       {
+        "title": "अमावस्या आणि पौर्णिमा दोन बहिणींची सत्यकथा | Purnima ani amavasya chi katha in marathi",
+        "url": "https://youtu.be/-mPPG6eZ3vg",
+        "views": 1197135,
+        "subs": 24900,
+        "viewsPerSub": 48.1,
+        "channel": "Sparsh Marathi"
+       },
+       {
+        "title": "आषाढ़ अमावस्या कथा | इस कथा को सुनते ही पितरों का आशीर्वाद और सुख-समृद्धि की प्राप्ति होती",
+        "url": "https://youtu.be/Ot2ThDJ3-so",
+        "views": 401162,
+        "subs": 39800,
+        "viewsPerSub": 10.1,
+        "channel": "Bhairam Ganga"
+       }
+      ]
+     },
+     {
+      "topic": "तुलसी विवाह कथा",
+      "pillar": "mythology-india",
+      "n": 5,
+      "medViewsPerDay": 26030,
+      "medViewsPerSub": 12.5,
+      "share100k": 1,
+      "share1M": 0.4,
+      "score": 3.32,
+      "trending": false,
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-10"
+      },
+      "publishBy": "2026-10-10",
+      "examples": [
+       {
+        "title": "तुलसीदास की पूरी कहानी | पत्नी के मोह से राम भक्ति तक | Tulsidas Life Story",
+        "url": "https://youtu.be/7i27WxXWMu8",
+        "views": 1233523,
+        "subs": 3130,
+        "viewsPerSub": 394.1,
+        "channel": "Anadikal"
+       },
+       {
+        "title": "गोस्वामी तुलसीदास की सम्पूर्ण कथा | मोह से राम तक की यात्रा | भक्तमाला",
+        "url": "https://youtu.be/FbN0k_pp1Ek",
+        "views": 1530920,
+        "subs": 31700,
+        "viewsPerSub": 48.3,
+        "channel": "Ask Sanatan Dharma "
+       },
+       {
+        "title": "तुलसी के विवाह पर गुरु शुक्राचार्य का क्रोध, आखिर क्या थी वजह? | Maa Shakti | Jai Mata Di",
+        "url": "https://youtu.be/weOAzCikIIg",
+        "views": 193683,
+        "subs": 15500,
+        "viewsPerSub": 12.5,
+        "channel": "Ramayan 4k"
+       }
+      ]
+     },
+     {
+      "topic": "पूर्णिमा व्रत कथा",
+      "pillar": "mythology-india",
+      "n": 6,
+      "medViewsPerDay": 48928,
+      "medViewsPerSub": 2.69,
+      "share100k": 1,
+      "share1M": 0.17,
+      "score": 3.261,
+      "trending": false,
+      "event": {
+       "id": "purnima-2026-11-24",
+       "name": "Purnima (Full Moon)",
+       "date": "2026-11-24",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-12"
+      },
+      "publishBy": "2026-11-12",
+      "examples": [
+       {
+        "title": "गुरु पूर्णिमा की कथा ~ Guru Poornima Ki Katha | Guru Purnima Ki Kahani | Guru Ki Mahima",
+        "url": "https://youtu.be/d6mx-N6fyW4",
+        "views": 1563316,
+        "subs": 29100,
+        "viewsPerSub": 53.7,
+        "channel": "Gyan Dharmik Katha"
+       },
+       {
+        "title": "🍀 गुरु पूर्णिमा व्रत कथा | आज के दिन अवश्य सुनें | गुरु पूर्णिमा की संपूर्ण कथा | #gurupu",
+        "url": "https://youtu.be/SLi4Tqnhp2g",
+        "views": 982273,
+        "subs": 36500,
+        "viewsPerSub": 26.9,
+        "channel": "HAR DIN KATHA "
+       },
+       {
+        "title": "शरद पूर्णिमा की कथा ~ Sharad Purnima Vrat Katha | Sharad Purnima ki Kahani | Sharad Purnim",
+        "url": "https://youtu.be/7ov2nTthrQg",
+        "views": 988361,
+        "subs": 213000,
+        "viewsPerSub": 4.6,
+        "channel": "Gyan Adhyatmik Katha"
+       }
+      ]
+     },
+     {
+      "topic": "शरद पूर्णिमा कृष्ण रास",
+      "pillar": "mythology-india",
+      "n": 5,
+      "medViewsPerDay": 33118,
+      "medViewsPerSub": 9.34,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 3.202,
+      "trending": false,
+      "event": {
+       "id": "sharad-purnima",
+       "name": "Sharad Purnima",
+       "date": "2026-10-25",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-13"
+      },
+      "publishBy": "2026-10-13",
+      "examples": [
+       {
+        "title": "25 अक्टूबर 2026🌕शरद पूर्णिमा विशेष कथा।ये रात इतनी विशेष क्यों है?श्रीकृष्ण रासलीला रहस्य",
+        "url": "https://youtu.be/Kr4w6G9cLDk",
+        "views": 521535,
+        "subs": 18800,
+        "viewsPerSub": 27.7,
+        "channel": "Bhakti Kathaa Ras"
+       },
+       {
+        "title": "Why Lord Shiva Turned into A Gopi? | What Happens On The Night Of Sharad Poornima?",
+        "url": "https://youtu.be/pT9a4jxZudE",
+        "views": 311253,
+        "subs": 18700,
+        "viewsPerSub": 16.6,
+        "channel": "Dev Kathan Official"
+       },
+       {
+        "title": "Gopi Geet with Lyrics | गोपी गीत | Krishna Bhajan | Sharad Purnima Special",
+        "url": "https://youtu.be/uSMWsobCkCg",
+        "views": 176547,
+        "subs": 18900,
+        "viewsPerSub": 9.3,
+        "channel": "The Soulful Stotra"
+       }
+      ]
+     }
+    ],
+    "youtube_short": [
+     {
+      "topic": "पितृ दोष कथा",
+      "pillar": "mythology-india",
+      "n": 3,
+      "medViewsPerDay": 33794,
+      "medViewsPerSub": 17.61,
+      "share100k": 1,
+      "share1M": 1,
+      "score": 3.946,
+      "trending": false,
+      "event": {
+       "id": "amavasya-2026-11-09",
+       "name": "Amavasya (No Moon)",
+       "date": "2026-11-09",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-04"
+      },
+      "publishBy": "2026-11-04",
+      "examples": [
+       {
+        "title": "10 अक्टूबर शनिवार अमावस्या टोटका और उपाय  #pradeepmishraji#pradeepmishrajidhankeupay #amav",
+        "url": "https://youtu.be/av2YwFKQUGI",
+        "views": 1085906,
+        "subs": 47700,
+        "viewsPerSub": 22.8,
+        "channel": "CATCH LIFE WITH MANI"
+       },
+       {
+        "title": "पितृ पक्ष में आत्मा की यात्रा कहाँ जाती है? 😱 वैतरणी नदी पार करना इतना कठिन क्यों है? #fa",
+        "url": "https://youtu.be/Lrx2Axl_GXM",
+        "views": 2712063,
+        "subs": 154000,
+        "viewsPerSub": 17.6,
+        "channel": "Amrit Dash Art"
+       },
+       {
+        "title": "श्राद्ध पक्ष में बस गाय माता को एक रोटी देने से नहीं रहती है घर में धन की कमी #pandit_prad",
+        "url": "https://youtu.be/W7qfB89nDcI",
+        "views": 1282289,
+        "subs": 9060000,
+        "viewsPerSub": 0.1,
+        "channel": "Pandit Pradeep Ji Mishra Sehore Wale"
+       }
+      ]
+     },
+     {
+      "topic": "कृष्ण गोवर्धन पर्वत कथा",
+      "pillar": "mythology-india",
+      "n": 6,
+      "medViewsPerDay": 38439,
+      "medViewsPerSub": 62.07,
+      "share100k": 1,
+      "share1M": 0.5,
+      "score": 3.923,
+      "trending": false,
+      "event": {
+       "id": "govardhan",
+       "name": "Govardhan Puja",
+       "date": "2026-11-10",
+       "uncertainDays": 1,
+       "publishBy": "2026-11-05"
+      },
+      "publishBy": "2026-11-05",
+      "examples": [
+       {
+        "title": "Bhagwan Shri Krishna Bal Leela - Part 4 | Shri Govardhan Leela",
+        "url": "https://youtu.be/jeKZ1xwbBxg",
+        "views": 581076,
+        "subs": 1650,
+        "viewsPerSub": 352.2,
+        "channel": "INVA ORIGINAL"
+       },
+       {
+        "title": "story of krishna-Govardhan l bhagvat",
+        "url": "https://youtu.be/QN990jpq2vg",
+        "views": 1402784,
+        "subs": 4490,
+        "viewsPerSub": 312.4,
+        "channel": "Bhakti bhav sansar"
+       },
+       {
+        "title": "गोवर्धन पर्वत क्यों हो रहा है छोटा? 😨 जानिए ऋषि पुलस्त्य के श्राप की कहानी #facts #shorts",
+        "url": "https://youtu.be/V1HDiPQfdOI",
+        "views": 534084,
+        "subs": 5150,
+        "viewsPerSub": 103.7,
+        "channel": "Fact Factory india"
+       }
+      ]
+     },
+     {
+      "topic": "धनतेरस यमराज",
+      "pillar": "mythology-india",
+      "n": 5,
+      "medViewsPerDay": 150403,
+      "medViewsPerSub": 21.75,
+      "share100k": 1,
+      "share1M": 0.4,
+      "score": 3.874,
+      "trending": false,
+      "event": {
+       "id": "dhanteras",
+       "name": "Dhanteras",
+       "date": "2026-11-06",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-01"
+      },
+      "publishBy": "2026-11-01",
+      "examples": [
+       {
+        "title": "धनतेरस पर यम का दीपक क्यों जलाते हैं? 😱 दुल्हन ने यमराज को कैसे रोका | Dhanteras Story #s",
+        "url": "https://youtu.be/eaE_eykY2gg",
+        "views": 1919596,
+        "subs": 31100,
+        "viewsPerSub": 61.7,
+        "channel": "Mythanova Tales"
+       },
+       {
+        "title": "धनतेरस पर सोना क्यों खरीदते हैं? असली वजह! 😱 #dhanteras #mythologyfacts #diwali",
+        "url": "https://youtu.be/NUKwwF3ongQ",
+        "views": 9429909,
+        "subs": 198000,
+        "viewsPerSub": 47.6,
+        "channel": "Itihas Shila"
+       },
+       {
+        "title": "धनतेरस पर झाड़ू पर पैर क्यों नहीं लगाते? यम दीपक की सच्ची कथा | धनतेरस विशेष |",
+        "url": "https://youtu.be/PYdsxqkJ6zg",
+        "views": 774410,
+        "subs": 35600,
+        "viewsPerSub": 21.8,
+        "channel": "श्रद्धा दीप"
+       }
+      ]
+     },
+     {
+      "topic": "शनि देव कथा",
+      "pillar": "mythology-india",
+      "n": 11,
+      "medViewsPerDay": 49107,
+      "medViewsPerSub": 29.79,
+      "share100k": 1,
+      "share1M": 0.73,
+      "score": 3.72,
+      "trending": false,
+      "event": {
+       "id": "shani-2026-10-24",
+       "name": "Saturday (Shani-vaar)",
+       "date": "2026-10-24",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-19"
+      },
+      "publishBy": "2026-10-19",
+      "examples": [
+       {
+        "title": "जब शनिदेव को बैठना पड़ा बाल हनुमान की पूँछ पर! 😱 हैरान कर देने वाली कथा #shorts",
+        "url": "https://youtu.be/QTHkb9KgIXo",
+        "views": 5769474,
+        "subs": 30100,
+        "viewsPerSub": 191.7,
+        "channel": "Atharv Animations - chalo chalo maja Kare "
+       },
+       {
+        "title": "रावण ने शनिदेव को क्यों बाँधकर रखा था? 😱🚩 वजह जानकर हैरान रह जाएंगे | राजन जी महाराज",
+        "url": "https://youtu.be/2uX9lPRlDVk",
+        "views": 2053211,
+        "subs": 11400,
+        "viewsPerSub": 180.1,
+        "channel": "Bhakti Ras Katha"
+       },
+       {
+        "title": "Even Shiva could not hide from Shani, because… शनि की दृष्टि से महादेव भी नहीं बचे 🪔",
+        "url": "https://youtu.be/pVm7yoW6hFE",
+        "views": 625894,
+        "subs": 4490,
+        "viewsPerSub": 139.4,
+        "channel": "Know Your Roots"
+       }
+      ]
+     },
+     {
+      "topic": "शिवरात्रि कथा",
+      "pillar": "mythology-india",
+      "n": 5,
+      "medViewsPerDay": 22108,
+      "medViewsPerSub": 6.54,
+      "share100k": 1,
+      "share1M": 0.8,
+      "score": 3.623,
+      "trending": false,
+      "event": {
+       "id": "masik-shivratri-2026-11-08",
+       "name": "Masik Shivratri",
+       "date": "2026-11-08",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-03"
+      },
+      "publishBy": "2026-11-03",
+      "examples": [
+       {
+        "title": "आज की शिव महापुराण कथा 🔴 पंडित प्रदीप मिश्रा जी महाराज 💥शिव कथा प्रदीप मिश्रा #viral #up",
+        "url": "https://youtu.be/Ixe_Y8XHLGs",
+        "views": 2976940,
+        "subs": 25000,
+        "viewsPerSub": 119.1,
+        "channel": "पंडित प्रदीप मिश्रा"
+       },
+       {
+        "title": "🔴 Online 11 अगस्त सावन शिवरात्रि पूजन सामग्री 2026  #shivratri #sawan #shivling #shortvid",
+        "url": "https://youtu.be/S7wnGROoZL0",
+        "views": 5089528,
+        "subs": 475000,
+        "viewsPerSub": 10.7,
+        "channel": "Shiv bhakti"
+       },
+       {
+        "title": "🔴08 नवम्बर 2026: श्री शिव महापुराण कथा | पूज्य पंडित प्रदीप जी मिश्रा | उन्नाव, UP #Live ",
+        "url": "https://youtu.be/IgPjvVwxYR8",
+        "views": 602027,
+        "subs": 92100,
+        "viewsPerSub": 6.5,
+        "channel": "Kedarnath Live Darshan Official"
+       }
+      ]
+     },
+     {
+      "topic": "तुलसी विवाह कथा",
+      "pillar": "mythology-india",
+      "n": 3,
+      "medViewsPerDay": 29348,
+      "medViewsPerSub": 12.11,
+      "share100k": 1,
+      "share1M": 1,
+      "score": 3.585,
+      "trending": false,
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-17"
+      },
+      "publishBy": "2026-10-17",
+      "examples": [
+       {
+        "title": "तुलसी के पास दीपक 🪔 और अगरबत्ती 🥢 कैसे जलाएं #tulsi #tulshivivahkatha #tulsivivah",
+        "url": "https://youtu.be/lds4v2VsNUQ",
+        "views": 2617763,
+        "subs": 136000,
+        "viewsPerSub": 19.3,
+        "channel": "Saanidhya Garden"
+       },
+       {
+        "title": "🌿🌺तुलसी विवाह के दिन स्वयं माता तुलसी आईं…फिर जो हुआ। Tulsi Mata Ki katha##TulsiVivah#su",
+        "url": "https://youtu.be/pfK_lLlm7Ig",
+        "views": 2445936,
+        "subs": 202000,
+        "viewsPerSub": 12.1,
+        "channel": "Sushma Kumari"
+       },
+       {
+        "title": "कार्तिक मास तुलसी जी की चमत्कारी कहानी | जब भगवान कृष्ण ने दिया बुढ़िया माई को काँधा।",
+        "url": "https://youtu.be/-hq0v96C5wU",
+        "views": 2926401,
+        "subs": 490000,
+        "viewsPerSub": 6,
+        "channel": "The Random Guy"
+       }
+      ]
+     },
+     {
+      "topic": "शरद पूर्णिमा कृष्ण रास",
+      "pillar": "mythology-india",
+      "n": 3,
+      "medViewsPerDay": 37416,
+      "medViewsPerSub": 10.63,
+      "share100k": 1,
+      "share1M": 0.33,
+      "score": 3.38,
+      "trending": false,
+      "event": {
+       "id": "sharad-purnima",
+       "name": "Sharad Purnima",
+       "date": "2026-10-25",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-20"
+      },
+      "publishBy": "2026-10-20",
+      "examples": [
+       {
+        "title": "शरद पूर्णिमा की रहस्यमयी कथा 🌕 | चंद्रदेव के अमृत का चमत्कार | माँ लक्ष्मी की महिमा #shor",
+        "url": "https://youtu.be/OcQOF2c0U4Q",
+        "views": 2127863,
+        "subs": 101000,
+        "viewsPerSub": 21.1,
+        "channel": "DivyaChronix"
+       },
+       {
+        "title": "आखिर शरद पूर्णिमा क्यों मनाई जाती है? 🌕 माता लक्ष्मी और चंद्रदेव की पौराणिक कथा 🙏#Sharad",
+        "url": "https://youtu.be/MOMyX3-5rXw",
+        "views": 556775,
+        "subs": 52400,
+        "viewsPerSub": 10.6,
+        "channel": "Ajeetvlogs "
+       },
+       {
+        "title": "sharad purnima 25 october 2026❤️🙏🏻🙌🏻 #radhakrishna #maa #krishna #kripa #bhakti #bhagw",
+        "url": "https://youtu.be/qVy6yUwcXwo",
+        "views": 296739,
+        "subs": 624000,
+        "viewsPerSub": 0.5,
+        "channel": "Maa Adishakti meditation kendra"
+       }
+      ]
+     },
+     {
+      "topic": "रामायण कथा",
+      "pillar": "mythology-india",
+      "n": 6,
+      "medViewsPerDay": 166562,
+      "medViewsPerSub": 180.05,
+      "share100k": 1,
+      "share1M": 1,
+      "score": 3.362,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "सुरसा की परीक्षा में हनुमान जी का अद्भुत रूप | Hanuman Ji Ki Leela 🚩 #Hanuman #Ramayan",
+        "url": "https://youtu.be/njJog3cHIxU",
+        "views": 3642133,
+        "subs": 4430,
+        "viewsPerSub": 822.1,
+        "channel": "Shreeji kripa"
+       },
+       {
+        "title": "🚩 सीता हरण से अशोक वाटिका तक | सम्पूर्ण रामायण कथा | हनुमान जी का चमत्कार #trending #shor",
+        "url": "https://youtu.be/IqqssbTtw64",
+        "views": 2964061,
+        "subs": 6780,
+        "viewsPerSub": 437.2,
+        "channel": "Ram bhajan"
+       },
+       {
+        "title": "Ramayan Ep 95 | समुद्र पार करते समय हनुमान जी के सामने आया मैनाक पर्वत! 😱🌊🔥 |",
+        "url": "https://youtu.be/Ys3ZYT4707I",
+        "views": 5826586,
+        "subs": 22900,
+        "viewsPerSub": 254.4,
+        "channel": "Trinetra VFX\n"
+       }
+      ]
+     },
+     {
+      "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+      "pillar": "mythology-india",
+      "n": 8,
+      "medViewsPerDay": 29654,
+      "medViewsPerSub": 4.11,
+      "share100k": 0.63,
+      "share1M": 0,
+      "score": 3.329,
+      "trending": false,
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-11-04"
+      },
+      "publishBy": "2026-11-04",
+      "examples": [
+       {
+        "title": "धनतेरस क्यों मनाई जाती है? 🪔 Dhanteras Story | भगवान धन्वंतरि की कथा #Shorts",
+        "url": "https://youtu.be/Ii8mkYSFXBc",
+        "views": 274435,
+        "subs": 3560,
+        "viewsPerSub": 77.1,
+        "channel": "Devine Stories"
+       },
+       {
+        "title": "दीवाली 2026: लक्ष्मी जी की बड़ी बहन अलक्ष्मी कौन हैं, और दीवाली की सफ़ाई क्यों की जाती है?",
+        "url": "https://youtu.be/w8HrzjIDkZ0",
+        "views": 80553,
+        "subs": 4880,
+        "viewsPerSub": 16.5,
+        "channel": "Yugon Paar"
+       },
+       {
+        "title": "दरिद्रता कौन है? दिवाली पर सूप बजाकर अलक्ष्मी को क्यों भगाते हैं? जानिए पौराणिक कथा Diwali",
+        "url": "https://youtu.be/1W4CzdRTOfs",
+        "views": 606686,
+        "subs": 59800,
+        "viewsPerSub": 10.2,
+        "channel": "Goodwill Cosmic"
+       }
+      ]
+     },
+     {
+      "topic": "देव दीपावली कथा",
+      "pillar": "mythology-india",
+      "n": 5,
+      "medViewsPerDay": 41860,
+      "medViewsPerSub": 6.34,
+      "share100k": 1,
+      "share1M": 0.2,
+      "score": 3.307,
+      "trending": false,
+      "event": {
+       "id": "kartik-purnima-2026-10-26",
+       "name": "Kartik Purnima (Dev Diwali)",
+       "date": "2026-10-26",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-21"
+      },
+      "publishBy": "2026-10-21",
+      "examples": [
+       {
+        "title": "आज की शिव महापुराण कथा🔴 प्रदीप मिश्रा जी | दीपावली की रात को करें उपाय #pandit_pradeep_ji",
+        "url": "https://youtu.be/z-Vw2Vd2zbU",
+        "views": 427762,
+        "subs": 22200,
+        "viewsPerSub": 19.3,
+        "channel": "@PanditPradeepMishraji"
+       },
+       {
+        "title": "आज की शिव महापुराण कथा🔴 प्रदीप मिश्रा जी | 8 नवंबर दीपावली का उपाय #pandit_pradeep_ji_mis",
+        "url": "https://youtu.be/5ihrNsfpD5M",
+        "views": 424560,
+        "subs": 22200,
+        "viewsPerSub": 19.1,
+        "channel": "@PanditPradeepMishraji"
+       },
+       {
+        "title": "दिवाली के 5 दिन का महाउपाय 1बेलपत्र 1कमलगट्टा 1पीला चावल शिव को चढ़ाए #shorts #viral #vide",
+        "url": "https://youtu.be/_lHZ3_Plv6I",
+        "views": 272631,
+        "subs": 43000,
+        "viewsPerSub": 6.3,
+        "channel": "Dimpi Creation "
+       }
+      ]
+     }
+    ],
+    "instagram": [
+     {
+      "topic": "राम अयोध्या वापसी दिवाली कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 15,
+      "outlierPosts": 5,
+      "score": 2.184,
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-11-05"
+      },
+      "publishBy": "2026-11-05",
+      "examples": [
+       {
+        "handle": "amarchitrakatha",
+        "caption": "From the Bhagavad Gita to Lord Rama’s Dharmaratha, chariots have always been the sacred battleground where human doubt taught timeless wisdom. Taking these teac",
+        "likes": 27044,
+        "ratio": 30.22,
+        "url": "https://www.instagram.com/p/DfJ4cJpjXzI/"
+       },
+       {
+        "handle": "hindustoriesofficial",
+        "caption": "क्या सच में मौजूद है राम सेतु? Science vs Ramayan Explained",
+        "likes": 12,
+        "ratio": 3,
+        "url": "https://www.instagram.com/reel/DXgsL4skrwW/"
+       }
+      ]
+     },
+     {
+      "topic": "गीता जयंती कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 7,
+      "outlierPosts": 2,
+      "score": 1.73,
+      "event": {
+       "id": "vaikuntha-ekadashi-2026-11-20",
+       "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
+       "date": "2026-11-20",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-16"
+      },
+      "publishBy": "2026-11-16",
+      "examples": [
+       {
+        "handle": "amarchitrakatha",
+        "caption": "From the Bhagavad Gita to Lord Rama’s Dharmaratha, chariots have always been the sacred battleground where human doubt taught timeless wisdom. Taking these teac",
+        "likes": 27044,
+        "ratio": 30.22,
+        "url": "https://www.instagram.com/p/DfJ4cJpjXzI/"
+       },
+       {
+        "handle": "hindu_gods_official",
+        "caption": "YOU MAY ASK, Why did Bhagwan Krishna give utmost importance to THOUGHTS & MIND In the Bhagavad Gita? Reasons: Arjuna's problem was not FEAR. He had all the powe",
+        "likes": 460,
+        "ratio": 2.71,
+        "url": "https://www.instagram.com/p/CRZM9bAL77U/"
+       }
+      ]
+     },
+     {
+      "topic": "शिव पूजा कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 8,
+      "outlierPosts": 4,
+      "score": 1.348,
+      "event": {
+       "id": "masik-shivratri-2026-11-08",
+       "name": "Masik Shivratri",
+       "date": "2026-11-08",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-04"
+      },
+      "publishBy": "2026-11-04",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "Murudeshwar Temple🙏 A beautiful post by the_petite_rover Located in Karnataka, this magnificent shrine is dedicated to Lord Shiva. This temple boasts of the se",
+        "likes": 634,
+        "ratio": 3.64,
+        "url": "https://www.instagram.com/reel/COQoHBgBeMe/"
+       },
+       {
+        "handle": "hindustoriesofficial",
+        "caption": "यह मंदिर दिन में दो बार समुद्र में डूब जाता है — और शिवलिंग गायब हो जाता है! 😨 #facts",
+        "likes": 11,
+        "ratio": 3.5,
+        "url": "https://www.instagram.com/reel/DXVqB3-j3YD/"
+       }
+      ]
+     },
+     {
+      "topic": "देव उठनी एकादशी कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 6,
+      "outlierPosts": 3,
+      "score": 1.152,
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-18"
+      },
+      "publishBy": "2026-10-18",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "#repost cycle.in_ II🌺 गणपती बाप्पा मोरया 🌺॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा🙏 #ganesha #lordganesha #ganesh #cute",
+        "likes": 892,
+        "ratio": 5.02,
+        "url": "https://www.instagram.com/reel/CY-hT9yqWlE/"
+       },
+       {
+        "handle": "hindustoriesofficial",
+        "caption": "निर्जला एकादशी (Nirjala Ekadashi) Vrat Date: 25 June 2026 (Thursday) निर्जला एकादशी का व्रत 25 जून 2026, गुरुवार को रखा जाएगा। इसे 'भीमसेनी एकादशी' भी कहा जाता ",
+        "likes": 11,
+        "ratio": 2.75,
+        "url": "https://www.instagram.com/p/DZ6gk1SjSDD/"
+       }
+      ]
+     },
+     {
+      "topic": "शनि देव कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 4,
+      "outlierPosts": 2,
+      "score": 1.007,
+      "event": {
+       "id": "shani-2026-10-24",
+       "name": "Saturday (Shani-vaar)",
+       "date": "2026-10-24",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-20"
+      },
+      "publishBy": "2026-10-20",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "#repost cycle.in_ II🌺 गणपती बाप्पा मोरया 🌺॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा🙏 #ganesha #lordganesha #ganesh #cute",
+        "likes": 892,
+        "ratio": 5.02,
+        "url": "https://www.instagram.com/reel/CY-hT9yqWlE/"
+       },
+       {
+        "handle": "hindu_gods_official",
+        "caption": "ॐ त्रयंबकम् यजामहे सुगंधिम् पुष्टिवर्धनम् उर्वारुकमिव बंधनान् मृतयोर्मोक्षीय मामृतात् जय महाँकाल ॐ हर हर महादेव ॐ नमः शिवाय जय_श्री_महाकाल जय श्री महाकाल | जय भ",
+        "likes": 335,
+        "ratio": 1.93,
+        "url": "https://www.instagram.com/reel/CV7J3pojZKm/"
+       }
+      ]
+     },
+     {
+      "topic": "देव दीपावली कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 4,
+      "outlierPosts": 2,
+      "score": 1.007,
+      "event": {
+       "id": "kartik-purnima-2026-10-26",
+       "name": "Kartik Purnima (Dev Diwali)",
+       "date": "2026-10-26",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-22"
+      },
+      "publishBy": "2026-10-22",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "#repost cycle.in_ II🌺 गणपती बाप्पा मोरया 🌺॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा🙏 #ganesha #lordganesha #ganesh #cute",
+        "likes": 892,
+        "ratio": 5.02,
+        "url": "https://www.instagram.com/reel/CY-hT9yqWlE/"
+       },
+       {
+        "handle": "hindu_gods_official",
+        "caption": "ॐ त्रयंबकम् यजामहे सुगंधिम् पुष्टिवर्धनम् उर्वारुकमिव बंधनान् मृतयोर्मोक्षीय मामृतात् जय महाँकाल ॐ हर हर महादेव ॐ नमः शिवाय जय_श्री_महाकाल जय श्री महाकाल | जय भ",
+        "likes": 335,
+        "ratio": 1.93,
+        "url": "https://www.instagram.com/reel/CV7J3pojZKm/"
+       }
+      ]
+     },
+     {
+      "topic": "शिव पुराण कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 7,
+      "outlierPosts": 4,
+      "score": 0.963,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "Murudeshwar Temple🙏 A beautiful post by the_petite_rover Located in Karnataka, this magnificent shrine is dedicated to Lord Shiva. This temple boasts of the se",
+        "likes": 634,
+        "ratio": 3.64,
+        "url": "https://www.instagram.com/reel/COQoHBgBeMe/"
+       },
+       {
+        "handle": "hindustoriesofficial",
+        "caption": "यह मंदिर दिन में दो बार समुद्र में डूब जाता है — और शिवलिंग गायब हो जाता है! 😨 #facts",
+        "likes": 11,
+        "ratio": 3.5,
+        "url": "https://www.instagram.com/reel/DXVqB3-j3YD/"
+       }
+      ]
+     },
+     {
+      "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+      "pillar": "mythology-india",
+      "matchingPosts": 5,
+      "outlierPosts": 1,
+      "score": 0.762,
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-11-05"
+      },
+      "publishBy": "2026-11-05",
+      "examples": [
+       {
+        "handle": "hindustoriesofficial",
+        "caption": "यह मंदिर दिन में दो बार समुद्र में डूब जाता है — और शिवलिंग गायब हो जाता है! 😨 #facts",
+        "likes": 11,
+        "ratio": 3.5,
+        "url": "https://www.instagram.com/reel/DXVqB3-j3YD/"
+       },
+       {
+        "handle": "amarchitrakatha",
+        "caption": "Keeping the flame of epic legends burning bright, today and always. Happy Diwali 🪔✨ #AmarChitraKatha #Diwali #Ramayana [AmarChitraKatha, Happy Diwali Greetings",
+        "likes": 389,
+        "ratio": 0.44,
+        "url": "https://www.instagram.com/reel/Dfd5vt9BAJD/"
+       }
+      ]
+     },
+     {
+      "topic": "कृष्ण गोवर्धन पर्वत कथा",
+      "pillar": "mythology-india",
+      "matchingPosts": 3,
+      "outlierPosts": 1,
+      "score": 0.701,
+      "event": {
+       "id": "govardhan",
+       "name": "Govardhan Puja",
+       "date": "2026-11-10",
+       "uncertainDays": 1,
+       "publishBy": "2026-11-06"
+      },
+      "publishBy": "2026-11-06",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "YOU MAY ASK, Why did Bhagwan Krishna give utmost importance to THOUGHTS & MIND In the Bhagavad Gita? Reasons: Arjuna's problem was not FEAR. He had all the powe",
+        "likes": 460,
+        "ratio": 2.71,
+        "url": "https://www.instagram.com/p/CRZM9bAL77U/"
+       },
+       {
+        "handle": "hindu_gods_official",
+        "caption": "In the 15th chapter called \"Purushottama Yoga \"Lord Krishna describes about the upside down tree of Samsara (repeated cycles birth and death and reincarnation) ",
+        "likes": 250,
+        "ratio": 1.46,
+        "url": "https://www.instagram.com/p/CRdVT_4LyQi/"
+       }
+      ]
+     },
+     {
+      "topic": "शरद पूर्णिमा कृष्ण रास",
+      "pillar": "mythology-india",
+      "matchingPosts": 4,
+      "outlierPosts": 1,
+      "score": 0.651,
+      "event": {
+       "id": "sharad-purnima",
+       "name": "Sharad Purnima",
+       "date": "2026-10-25",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-21"
+      },
+      "publishBy": "2026-10-21",
+      "examples": [
+       {
+        "handle": "hindu_gods_official",
+        "caption": "YOU MAY ASK, Why did Bhagwan Krishna give utmost importance to THOUGHTS & MIND In the Bhagavad Gita? Reasons: Arjuna's problem was not FEAR. He had all the powe",
+        "likes": 460,
+        "ratio": 2.71,
+        "url": "https://www.instagram.com/p/CRZM9bAL77U/"
+       },
+       {
+        "handle": "hindu_gods_official",
+        "caption": "In the 15th chapter called \"Purushottama Yoga \"Lord Krishna describes about the upside down tree of Samsara (repeated cycles birth and death and reincarnation) ",
+        "likes": 250,
+        "ratio": 1.46,
+        "url": "https://www.instagram.com/p/CRdVT_4LyQi/"
+       }
+      ]
+     }
+    ],
+    "facebook": [
+     {
+      "topic": "राम अयोध्या वापसी दिवाली कथा",
+      "pillar": "mythology-india",
+      "score": 1.202,
+      "basis": "proxy: YouTube long 0.79, Shorts 0.83, Instagram 1.00",
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-11-04"
+      },
+      "publishBy": "2026-11-04",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+      "pillar": "mythology-india",
+      "score": 1.053,
+      "basis": "proxy: YouTube long 0.83, Shorts 0.84, Instagram 0.35",
+      "event": {
+       "id": "diwali",
+       "name": "Diwali (Lakshmi Puja)",
+       "date": "2026-11-09",
+       "uncertainDays": 2,
+       "publishBy": "2026-11-04"
+      },
+      "publishBy": "2026-11-04",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "शिव पूजा कथा",
+      "pillar": "mythology-india",
+      "score": 1.027,
+      "basis": "proxy: YouTube long 0.93, Shorts 0.00, Instagram 0.62",
+      "event": {
+       "id": "masik-shivratri-2026-11-08",
+       "name": "Masik Shivratri",
+       "date": "2026-11-08",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-03"
+      },
+      "publishBy": "2026-11-03",
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "शनि देव कथा",
+      "pillar": "mythology-india",
+      "score": 1.003,
+      "basis": "proxy: YouTube long 0.80, Shorts 0.94, Instagram 0.46",
+      "event": {
+       "id": "shani-2026-10-24",
+       "name": "Saturday (Shani-vaar)",
+       "date": "2026-10-24",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-19"
+      },
+      "publishBy": "2026-10-19",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "कृष्ण गोवर्धन पर्वत कथा",
+      "pillar": "mythology-india",
+      "score": 0.972,
+      "basis": "proxy: YouTube long 0.69, Shorts 0.99, Instagram 0.32",
+      "event": {
+       "id": "govardhan",
+       "name": "Govardhan Puja",
+       "date": "2026-11-10",
+       "uncertainDays": 1,
+       "publishBy": "2026-11-05"
+      },
+      "publishBy": "2026-11-05",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "शरद पूर्णिमा कृष्ण रास",
+      "pillar": "mythology-india",
+      "score": 0.903,
+      "basis": "proxy: YouTube long 0.74, Shorts 0.86, Instagram 0.30",
+      "event": {
+       "id": "sharad-purnima",
+       "name": "Sharad Purnima",
+       "date": "2026-10-25",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-20"
+      },
+      "publishBy": "2026-10-20",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "शिवरात्रि कथा",
+      "pillar": "mythology-india",
+      "score": 0.887,
+      "basis": "proxy: YouTube long 0.72, Shorts 0.92, Instagram 0.00",
+      "event": {
+       "id": "masik-shivratri-2026-11-08",
+       "name": "Masik Shivratri",
+       "date": "2026-11-08",
+       "uncertainDays": 0,
+       "publishBy": "2026-11-03"
+      },
+      "publishBy": "2026-11-03",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "तुलसी विवाह कथा",
+      "pillar": "mythology-india",
+      "score": 0.855,
+      "basis": "proxy: YouTube long 0.77, Shorts 0.91, Instagram 0.00",
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-17"
+      },
+      "publishBy": "2026-10-17",
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "करवा चौथ कथा",
+      "pillar": "mythology-india",
+      "score": 0.845,
+      "basis": "proxy: YouTube long 1.00, Shorts 0.00, Instagram 0.00",
+      "event": {
+       "id": "karwa-chauth",
+       "name": "Karwa Chauth",
+       "date": "2026-10-29",
+       "uncertainDays": 1,
+       "publishBy": "2026-10-24"
+      },
+      "publishBy": "2026-10-24",
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "एकादशी की कहानी",
+      "pillar": "mythology-india",
+      "score": 0.808,
+      "basis": "proxy: YouTube long 0.85, Shorts 0.00, Instagram 0.26",
+      "event": {
+       "id": "tulsi-vivah-2026-10-22",
+       "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+       "date": "2026-10-22",
+       "uncertainDays": 0,
+       "publishBy": "2026-10-17"
+      },
+      "publishBy": "2026-10-17",
+      "suggestedFormat": "fb_long / reel"
+     }
+    ]
+   },
+   "festival_plan": [
+    {
+     "event": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+     "date": "2026-10-22",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-10",
+      "youtube_short": "2026-10-17",
+      "instagram": "2026-10-18",
+      "facebook": "2026-10-17"
+     },
+     "topics": [
+      "तुलसी विवाह कथा",
+      "देव उठनी एकादशी कथा",
+      "एकादशी व्रत कथा",
+      "एकादशी की कहानी"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-10-24",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-12",
+      "youtube_short": "2026-10-19",
+      "instagram": "2026-10-20",
+      "facebook": "2026-10-19"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    },
+    {
+     "event": "Sharad Purnima",
+     "date": "2026-10-25",
+     "uncertainDays": 1,
+     "publishBy": {
+      "youtube_long": "2026-10-13",
+      "youtube_short": "2026-10-20",
+      "instagram": "2026-10-21",
+      "facebook": "2026-10-20"
+     },
+     "topics": [
+      "शरद पूर्णिमा कृष्ण रास"
+     ]
+    },
+    {
+     "event": "Kartik Purnima (Dev Diwali)",
+     "date": "2026-10-26",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-14",
+      "youtube_short": "2026-10-21",
+      "instagram": "2026-10-22",
+      "facebook": "2026-10-21"
+     },
+     "topics": [
+      "कार्तिक पूर्णिमा कथा",
+      "देव दीपावली कथा"
+     ]
+    },
+    {
+     "event": "Karwa Chauth",
+     "date": "2026-10-29",
+     "uncertainDays": 1,
+     "publishBy": {
+      "youtube_long": "2026-10-17",
+      "youtube_short": "2026-10-24",
+      "instagram": "2026-10-25",
+      "facebook": "2026-10-24"
+     },
+     "topics": [
+      "सावित्री सत्यवान",
+      "करवा चौथ कथा"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-10-31",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-19",
+      "youtube_short": "2026-10-26",
+      "instagram": "2026-10-27",
+      "facebook": "2026-10-26"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    },
+    {
+     "event": "Krishna Ekadashi",
+     "date": "2026-11-05",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-24",
+      "youtube_short": "2026-10-31",
+      "instagram": "2026-11-01",
+      "facebook": "2026-10-31"
+     },
+     "topics": [
+      "एकादशी व्रत कथा",
+      "एकादशी की कहानी"
+     ]
+    },
+    {
+     "event": "Dhanteras",
+     "date": "2026-11-06",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-25",
+      "youtube_short": "2026-11-01",
+      "instagram": "2026-11-02",
+      "facebook": "2026-11-01"
+     },
+     "topics": [
+      "धनतेरस यमराज"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-11-07",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-26",
+      "youtube_short": "2026-11-02",
+      "instagram": "2026-11-03",
+      "facebook": "2026-11-02"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    },
+    {
+     "event": "Masik Shivratri",
+     "date": "2026-11-08",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-27",
+      "youtube_short": "2026-11-03",
+      "instagram": "2026-11-04",
+      "facebook": "2026-11-03"
+     },
+     "topics": [
+      "शिवरात्रि कथा",
+      "शिव पूजा कथा"
+     ]
+    },
+    {
+     "event": "Diwali (Lakshmi Puja)",
+     "date": "2026-11-09",
+     "uncertainDays": 2,
+     "publishBy": {
+      "youtube_long": "2026-10-28",
+      "youtube_short": "2026-11-04",
+      "instagram": "2026-11-05",
+      "facebook": "2026-11-04"
+     },
+     "topics": [
+      "दिवाली लक्ष्मी समुद्र मंथन",
+      "राम अयोध्या वापसी दिवाली कथा"
+     ]
+    },
+    {
+     "event": "Amavasya (No Moon)",
+     "date": "2026-11-09",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-10-28",
+      "youtube_short": "2026-11-04",
+      "instagram": "2026-11-05",
+      "facebook": "2026-11-04"
+     },
+     "topics": [
+      "अमावस्या कथा",
+      "पितृ दोष कथा"
+     ]
+    },
+    {
+     "event": "Govardhan Puja",
+     "date": "2026-11-10",
+     "uncertainDays": 1,
+     "publishBy": {
+      "youtube_long": "2026-10-29",
+      "youtube_short": "2026-11-05",
+      "instagram": "2026-11-06",
+      "facebook": "2026-11-05"
+     },
+     "topics": [
+      "कृष्ण गोवर्धन पर्वत कथा"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-11-14",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-11-02",
+      "youtube_short": "2026-11-09",
+      "instagram": "2026-11-10",
+      "facebook": "2026-11-09"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    },
+    {
+     "event": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
+     "date": "2026-11-20",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-11-08",
+      "youtube_short": "2026-11-15",
+      "instagram": "2026-11-16",
+      "facebook": "2026-11-15"
+     },
+     "topics": [
+      "वैकुंठ एकादशी कथा",
+      "गीता जयंती कथा",
+      "मोक्षदा एकादशी व्रत कथा",
+      "एकादशी व्रत कथा",
+      "एकादशी की कहानी"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-11-21",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-11-09",
+      "youtube_short": "2026-11-16",
+      "instagram": "2026-11-17",
+      "facebook": "2026-11-16"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    },
+    {
+     "event": "Purnima (Full Moon)",
+     "date": "2026-11-24",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-11-12",
+      "youtube_short": "2026-11-19",
+      "instagram": "2026-11-20",
+      "facebook": "2026-11-19"
+     },
+     "topics": [
+      "पूर्णिमा व्रत कथा"
+     ]
+    },
+    {
+     "event": "Saturday (Shani-vaar)",
+     "date": "2026-11-28",
+     "uncertainDays": 0,
+     "publishBy": {
+      "youtube_long": "2026-11-16",
+      "youtube_short": "2026-11-23",
+      "instagram": "2026-11-24",
+      "facebook": "2026-11-23"
+     },
+     "topics": [
+      "शनि देव कथा",
+      "शनि व्रत कथा"
+     ]
+    }
+   ],
+   "reddit": null
+  },
+  "mythology-world": {
+   "label": "World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...)",
+   "queries": [
+    "ग्रीक पौराणिक कथा",
+    "नॉर्स पौराणिक कथा",
+    "मिस्र की पौराणिक कथा",
+    "ग्रीक देवता कहानी",
+    "zeus mythology story hindi",
+    "odin norse mythology hindi",
+    "egyptian mythology story hindi",
+    "world mythology explained hindi",
+    "ग्रीक पौराणिक कथाएँ",
+    "ग्रीक पौराणिक कथाओं में"
+   ],
+   "source": {
+    "youtube": "outliers-kathaaya-mythology-world-2026-11-2026-11-09.json",
+    "quotaUnits": 1191,
+    "instagramHandles": 0
+   },
+   "platforms": {
+    "youtube_long": [
+     {
+      "topic": "ग्रीक पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 5,
+      "medViewsPerDay": 18207,
+      "medViewsPerSub": 58.47,
+      "share100k": 1,
+      "share1M": 0.6,
+      "score": 2.665,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Every Mythology in the World Explained",
+        "url": "https://youtu.be/6KvVOIqUHs4",
+        "views": 1253829,
+        "subs": 10900,
+        "viewsPerSub": 115,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every Monster From Greek Mythology Explained in 12 Minutes",
+        "url": "https://youtu.be/8DL_5TzX9hU",
+        "views": 681953,
+        "subs": 10900,
+        "viewsPerSub": 62.6,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every God in Greek Mythology Explained in 25 Minutes",
+        "url": "https://youtu.be/sp--PzI3Yz0",
+        "views": 625636,
+        "subs": 10700,
+        "viewsPerSub": 58.5,
+        "channel": "Yorp"
+       }
+      ]
+     },
+     {
+      "topic": "world mythology explained hindi",
+      "pillar": "mythology-world",
+      "n": 11,
+      "medViewsPerDay": 3876,
+      "medViewsPerSub": 89.15,
+      "share100k": 0.73,
+      "share1M": 0.18,
+      "score": 2.576,
+      "trending": true,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Complete Story of Greek Mythology | Explained in Hindi",
+        "url": "https://youtu.be/lFAvSjt_2wM",
+        "views": 167882,
+        "subs": 503,
+        "viewsPerSub": 333.8,
+        "channel": "Real History Zone"
+       },
+       {
+        "title": "The History of GREECE | (Part 1) (Hindi Documentry 4k)|",
+        "url": "https://youtu.be/YNuN39JuKro",
+        "views": 599635,
+        "subs": 3050,
+        "viewsPerSub": 196.6,
+        "channel": "Amosis"
+       },
+       {
+        "title": "Every Mythology in the World Explained",
+        "url": "https://youtu.be/6KvVOIqUHs4",
+        "views": 1253829,
+        "subs": 10900,
+        "viewsPerSub": 115,
+        "channel": "Mythological Man"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाओं में",
+      "pillar": "mythology-world",
+      "n": 7,
+      "medViewsPerDay": 12854,
+      "medViewsPerSub": 33.9,
+      "share100k": 1,
+      "share1M": 0.57,
+      "score": 2.535,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Every Mythology in the World Explained",
+        "url": "https://youtu.be/6KvVOIqUHs4",
+        "views": 1253829,
+        "subs": 10900,
+        "viewsPerSub": 115,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every Monster From Greek Mythology Explained in 12 Minutes",
+        "url": "https://youtu.be/8DL_5TzX9hU",
+        "views": 681953,
+        "subs": 10900,
+        "viewsPerSub": 62.6,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every God in Greek Mythology Explained in 25 Minutes",
+        "url": "https://youtu.be/sp--PzI3Yz0",
+        "views": 625636,
+        "subs": 10700,
+        "viewsPerSub": 58.5,
+        "channel": "Yorp"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक देवता कहानी",
+      "pillar": "mythology-world",
+      "n": 11,
+      "medViewsPerDay": 11611,
+      "medViewsPerSub": 33.39,
+      "share100k": 1,
+      "share1M": 0.18,
+      "score": 2.394,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The History of GREECE | (Part 1) (Hindi Documentry 4k)|",
+        "url": "https://youtu.be/YNuN39JuKro",
+        "views": 599635,
+        "subs": 3050,
+        "viewsPerSub": 196.6,
+        "channel": "Amosis"
+       },
+       {
+        "title": "Every Monster From Greek Mythology Explained in 12 Minutes",
+        "url": "https://youtu.be/8DL_5TzX9hU",
+        "views": 681953,
+        "subs": 10900,
+        "viewsPerSub": 62.6,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every God in Greek Mythology Explained in 25 Minutes",
+        "url": "https://youtu.be/sp--PzI3Yz0",
+        "views": 625636,
+        "subs": 10700,
+        "viewsPerSub": 58.5,
+        "channel": "Yorp"
+       }
+      ]
+     },
+     {
+      "topic": "egyptian mythology story hindi",
+      "pillar": "mythology-world",
+      "n": 10,
+      "medViewsPerDay": 8413,
+      "medViewsPerSub": 21.64,
+      "share100k": 0.9,
+      "share1M": 0.3,
+      "score": 2.323,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Every Mythology in the World Explained",
+        "url": "https://youtu.be/6KvVOIqUHs4",
+        "views": 1253829,
+        "subs": 10900,
+        "viewsPerSub": 115,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Every Mythology in the World Explained in 13 Minutes",
+        "url": "https://youtu.be/dtOhXagWmN4",
+        "views": 353930,
+        "subs": 3970,
+        "viewsPerSub": 89.2,
+        "channel": "Zoxi "
+       },
+       {
+        "title": "The History of Egypt - 5000 साल की खूनी और रहस्यमयी कहानी | मिस्र का इतिहास #historydocume",
+        "url": "https://youtu.be/abfyKkrnVtE",
+        "views": 1247820,
+        "subs": 22600,
+        "viewsPerSub": 55.2,
+        "channel": "Vault of History"
+       }
+      ]
+     },
+     {
+      "topic": "zeus mythology story hindi",
+      "pillar": "mythology-world",
+      "n": 10,
+      "medViewsPerDay": 5876,
+      "medViewsPerSub": 32.01,
+      "share100k": 0.9,
+      "share1M": 0.1,
+      "score": 2.218,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Complete Story of Greek Mythology | Explained in Hindi",
+        "url": "https://youtu.be/lFAvSjt_2wM",
+        "views": 167882,
+        "subs": 503,
+        "viewsPerSub": 333.8,
+        "channel": "Real History Zone"
+       },
+       {
+        "title": "Typhon the Monster Tore Zeus Apart… But Medusa Loved Him Before the Gods bury him , 4k AI ",
+        "url": "https://youtu.be/Ooa6RQvjxD8",
+        "views": 960373,
+        "subs": 3620,
+        "viewsPerSub": 265.3,
+        "channel": "CinemAIc Universe"
+       },
+       {
+        "title": "The Entire Story of Greek Mythology in 33 Minutes Explained",
+        "url": "https://youtu.be/N4wDhJyVyAc",
+        "views": 28243,
+        "subs": 154,
+        "viewsPerSub": 183.4,
+        "channel": "PalevoUP"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाएँ",
+      "pillar": "mythology-world",
+      "n": 9,
+      "medViewsPerDay": 5898,
+      "medViewsPerSub": 42,
+      "share100k": 0.89,
+      "share1M": 0,
+      "score": 2.212,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Every Mythology in the World Explained in 13 Minutes",
+        "url": "https://youtu.be/dtOhXagWmN4",
+        "views": 353930,
+        "subs": 3970,
+        "viewsPerSub": 89.2,
+        "channel": "Zoxi "
+       },
+       {
+        "title": "Greek Mythology: The Complete Story from Creation to Odysseus (Full Documentary)",
+        "url": "https://youtu.be/w7ZS0cpN9_M",
+        "views": 134784,
+        "subs": 1790,
+        "viewsPerSub": 75.3,
+        "channel": "Pyratheon"
+       },
+       {
+        "title": "Every Monster From Greek Mythology Explained in 12 Minutes",
+        "url": "https://youtu.be/8DL_5TzX9hU",
+        "views": 681953,
+        "subs": 10900,
+        "viewsPerSub": 62.6,
+        "channel": "Mythological Man"
+       }
+      ]
+     },
+     {
+      "topic": "नॉर्स पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 10,
+      "medViewsPerDay": 3065,
+      "medViewsPerSub": 27.77,
+      "share100k": 0.6,
+      "share1M": 0.1,
+      "score": 2.065,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Every Mythology in the World Explained",
+        "url": "https://youtu.be/6KvVOIqUHs4",
+        "views": 1253829,
+        "subs": 10900,
+        "viewsPerSub": 115,
+        "channel": "Mythological Man"
+       },
+       {
+        "title": "Top 10 Most Destructive Weapons in World Mythology: Greek, Norse, Hindu, Chinese & More",
+        "url": "https://youtu.be/O44olkJjobo",
+        "views": 131001,
+        "subs": 1460,
+        "viewsPerSub": 89.7,
+        "channel": "Godweight"
+       },
+       {
+        "title": "Every Mythology in the World Explained in 13 Minutes",
+        "url": "https://youtu.be/dtOhXagWmN4",
+        "views": 353930,
+        "subs": 3970,
+        "viewsPerSub": 89.2,
+        "channel": "Zoxi "
+       }
+      ]
+     },
+     {
+      "topic": "मिस्र की पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 9,
+      "medViewsPerDay": 2297,
+      "medViewsPerSub": 2.47,
+      "share100k": 0.33,
+      "share1M": 0,
+      "score": 1.789,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Age of Mythology -Egypt was always underrepresented: A Critique",
+        "url": "https://youtu.be/iN3HJNPWSFU",
+        "views": 23131,
+        "subs": 2830,
+        "viewsPerSub": 8.2,
+        "channel": "Modding AOM"
+       },
+       {
+        "title": "THE SECRET NAME OF RA / FULL EGYPTIAN MYTHOLOGY FILM /SEASON TWO",
+        "url": "https://youtu.be/b-1uBXWpNAs",
+        "views": 67193,
+        "subs": 11300,
+        "viewsPerSub": 6,
+        "channel": "MYTHIC AI FILMS"
+       },
+       {
+        "title": "Every Monster From Egyptian Mythology Explained in 11 Minutes",
+        "url": "https://youtu.be/g06qUiUTpxQ",
+        "views": 57502,
+        "subs": 10900,
+        "viewsPerSub": 5.3,
+        "channel": "Mythological Man"
+       }
+      ]
+     },
+     {
+      "topic": "odin norse mythology hindi",
+      "pillar": "mythology-world",
+      "n": 3,
+      "medViewsPerDay": 20,
+      "medViewsPerSub": 39.05,
+      "share100k": 0.33,
+      "share1M": 0.33,
+      "score": 1.082,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "THOR: The Last War of the Gods | Part 1",
+        "url": "https://youtu.be/nw9P8KIa_vc",
+        "views": 1264941,
+        "subs": 245000,
+        "viewsPerSub": 5.2,
+        "channel": "The Next Show | Stories That Feel Like Movies"
+       }
+      ]
+     }
+    ],
+    "youtube_short": [
+     {
+      "topic": "ग्रीक पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 9,
+      "medViewsPerDay": 36655,
+      "medViewsPerSub": 7.18,
+      "share100k": 1,
+      "share1M": 0.67,
+      "score": 2.665,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The 10 Tallest Giants in Mythology — Then the Scale Breaks",
+        "url": "https://youtu.be/256Z42hWKGA",
+        "views": 2233497,
+        "subs": 14300,
+        "viewsPerSub": 156.2,
+        "channel": "Hushsy"
+       },
+       {
+        "title": "Ranking The Best Greek God Memes Part-2",
+        "url": "https://youtu.be/nBzyMdgND_8",
+        "views": 4299595,
+        "subs": 41300,
+        "viewsPerSub": 104.1,
+        "channel": "Rankcuts"
+       },
+       {
+        "title": "The Real Story of Medusa | Greek Mythology Explained",
+        "url": "https://youtu.be/lo8jeo4HTWo",
+        "views": 912873,
+        "subs": 23800,
+        "viewsPerSub": 38.4,
+        "channel": "K12"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाओं में",
+      "pillar": "mythology-world",
+      "n": 5,
+      "medViewsPerDay": 26089,
+      "medViewsPerSub": 1.67,
+      "share100k": 1,
+      "share1M": 0.6,
+      "score": 2.474,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Real Story of Medusa | Greek Mythology Explained",
+        "url": "https://youtu.be/lo8jeo4HTWo",
+        "views": 912873,
+        "subs": 23800,
+        "viewsPerSub": 38.4,
+        "channel": "K12"
+       },
+       {
+        "title": "It’s La Peace (Greek Mythology)",
+        "url": "https://youtu.be/Xb0HbwU7df8",
+        "views": 2795624,
+        "subs": 302000,
+        "viewsPerSub": 9.3,
+        "channel": "XslappityVids"
+       },
+       {
+        "title": "Hercules VS Achilles - Who Wins? #hercules #achilles #mythology #greekmythology #olympus",
+        "url": "https://youtu.be/DaOqDF7u3n8",
+        "views": 989600,
+        "subs": 592000,
+        "viewsPerSub": 1.7,
+        "channel": "DanCo"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक देवता कहानी",
+      "pillar": "mythology-world",
+      "n": 3,
+      "medViewsPerDay": 26089,
+      "medViewsPerSub": 0.83,
+      "share100k": 1,
+      "share1M": 0.67,
+      "score": 2.461,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Indra, Zeus and Thor All Fought a Serpent. Why?",
+        "url": "https://youtu.be/Ctm2CPv9A08",
+        "views": 1173379,
+        "subs": 14300,
+        "viewsPerSub": 82,
+        "channel": "Hushsy"
+       },
+       {
+        "title": "The tale of Narcissus in Greek Mythology #history #art",
+        "url": "https://youtu.be/y6wKlsbKdEY",
+        "views": 1606653,
+        "subs": 1930000,
+        "viewsPerSub": 0.8,
+        "channel": "History by Mae"
+       },
+       {
+        "title": "POV: you get given a gift by a Greek god…(PART3) #mythology #pov #skit",
+        "url": "https://youtu.be/jBvSzKLNTvc",
+        "views": 636470,
+        "subs": 10100000,
+        "viewsPerSub": 0.1,
+        "channel": "Brianna Mizura"
+       }
+      ]
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाएँ",
+      "pillar": "mythology-world",
+      "n": 6,
+      "medViewsPerDay": 16059,
+      "medViewsPerSub": 7.97,
+      "share100k": 1,
+      "share1M": 0.17,
+      "score": 2.343,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Real Story of Medusa | Greek Mythology Explained",
+        "url": "https://youtu.be/lo8jeo4HTWo",
+        "views": 912873,
+        "subs": 23800,
+        "viewsPerSub": 38.4,
+        "channel": "K12"
+       },
+       {
+        "title": "According to Greek mythology 🤔",
+        "url": "https://youtu.be/TCRm2dYkIlI",
+        "views": 660957,
+        "subs": 53800,
+        "viewsPerSub": 12.3,
+        "channel": "Dingle"
+       },
+       {
+        "title": "It’s La Peace (Greek Mythology)",
+        "url": "https://youtu.be/Xb0HbwU7df8",
+        "views": 2795624,
+        "subs": 302000,
+        "viewsPerSub": 9.3,
+        "channel": "XslappityVids"
+       }
+      ]
+     },
+     {
+      "topic": "zeus mythology story hindi",
+      "pillar": "mythology-world",
+      "n": 4,
+      "medViewsPerDay": 3431,
+      "medViewsPerSub": 0.57,
+      "share100k": 0.25,
+      "share1M": 0.25,
+      "score": 1.882,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Watch This Before The Odyssey | The Complete Iliad Story Explained (Hindi)",
+        "url": "https://youtu.be/uYclLokp4Pk",
+        "views": 90328,
+        "subs": 13200,
+        "viewsPerSub": 6.8,
+        "channel": "Anupam Logic "
+       },
+       {
+        "title": "Zeus is not who you think he is ⚡️ #zeus #mythology #shorts #marvel",
+        "url": "https://youtu.be/qympSOI6S9k",
+        "views": 31900,
+        "subs": 40400,
+        "viewsPerSub": 0.8,
+        "channel": "Movie Lore"
+       },
+       {
+        "title": "पोसाइडन ने शहर डुबाने की धमकी दी…फिर जो हुआ😱🌊 #shorts",
+        "url": "https://youtu.be/dTJOrcmBvys",
+        "views": 1336221,
+        "subs": 3910000,
+        "viewsPerSub": 0.3,
+        "channel": "az factz"
+       }
+      ]
+     },
+     {
+      "topic": "egyptian mythology story hindi",
+      "pillar": "mythology-world",
+      "n": 3,
+      "medViewsPerDay": 2222,
+      "medViewsPerSub": 2.1,
+      "share100k": 0.33,
+      "share1M": 0,
+      "score": 1.772,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Egyptian Gods",
+        "url": "https://youtu.be/dN_PNazc37Y",
+        "views": 32489,
+        "subs": 1970,
+        "viewsPerSub": 16.5,
+        "channel": "Riddle Seeker"
+       },
+       {
+        "title": "Hindu Gods = Egyptian Gods 🥵 । #shorts",
+        "url": "https://youtu.be/csW9iFV0FGc",
+        "views": 781622,
+        "subs": 372000,
+        "viewsPerSub": 2.1,
+        "channel": "Nilkamal Mahto "
+       },
+       {
+        "title": "जिस देवता की आंखें छीन ली गईं, वही मिस्र का राजा था! ⚡🔥",
+        "url": "https://youtu.be/xW81MgwrLX8",
+        "views": 29639,
+        "subs": 4760000,
+        "viewsPerSub": 0,
+        "channel": "Animation cinema shorts"
+       }
+      ]
+     },
+     {
+      "topic": "नॉर्स पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 3,
+      "medViewsPerDay": 1051,
+      "medViewsPerSub": 1.18,
+      "share100k": 0,
+      "share1M": 0,
+      "score": 1.579,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Marvel Loki vs Mythological Loki 🔥 | The Real Story Behind Loki 😱 #Shorts #marvel #loki",
+        "url": "https://youtu.be/QvR8k8k86F0",
+        "views": 54864,
+        "subs": 16500,
+        "viewsPerSub": 3.3,
+        "channel": "Frankline Meme"
+       },
+       {
+        "title": "Why is there a difference between Norse & Egyptian Gods in the MCU? #mcu",
+        "url": "https://youtu.be/_02iTHET694",
+        "views": 78439,
+        "subs": 66700,
+        "viewsPerSub": 1.2,
+        "channel": "Pawfect Shorts"
+       },
+       {
+        "title": "Why Loki is the reason for earthquakes ⚡️ #norsemythology #loki",
+        "url": "https://youtu.be/H0NR7Ysvg5o",
+        "views": 38461,
+        "subs": 40200,
+        "viewsPerSub": 1,
+        "channel": "Stories Behind Art"
+       }
+      ]
+     },
+     {
+      "topic": "मिस्र की पौराणिक कथा",
+      "pillar": "mythology-world",
+      "n": 6,
+      "medViewsPerDay": 786,
+      "medViewsPerSub": 1.01,
+      "share100k": 0.33,
+      "share1M": 0,
+      "score": 1.509,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "⚔️ Ancient Egypt COMES TO LIFE 😱 | The Pharaoh's Smiting Ritual Revealed!",
+        "url": "https://youtu.be/A6Aectvc280",
+        "views": 81463,
+        "subs": 9460,
+        "viewsPerSub": 8.6,
+        "channel": "Primitive Minds"
+       },
+       {
+        "title": "👑 Ancient Egypt COMES TO LIFE 😱 | The Secret Behind Horus Guiding  Queen Nefertari to th",
+        "url": "https://youtu.be/urCDPAAMJJg",
+        "views": 53391,
+        "subs": 9460,
+        "viewsPerSub": 5.6,
+        "channel": "Primitive Minds"
+       },
+       {
+        "title": "Egypt’s Most Mysterious Granite Chamber: The Naos of Mendes",
+        "url": "https://youtu.be/ihy1HbvatlU",
+        "views": 133230,
+        "subs": 209000,
+        "viewsPerSub": 0.6,
+        "channel": "BassForge"
+       }
+      ]
+     },
+     {
+      "topic": "odin norse mythology hindi",
+      "pillar": "mythology-world",
+      "n": 11,
+      "medViewsPerDay": 19,
+      "medViewsPerSub": 4.54,
+      "share100k": 0,
+      "share1M": 0,
+      "score": 0.799,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Norse Mythology Odin vs God of War's Odin",
+        "url": "https://youtu.be/1TLdxDDNM3A",
+        "views": 24412,
+        "subs": 45700,
+        "viewsPerSub": 0.5,
+        "channel": "Sybaris Central"
+       }
+      ]
+     }
+    ],
+    "instagram": [],
+    "facebook": [
+     {
+      "topic": "ग्रीक पौराणिक कथा",
+      "pillar": "mythology-world",
+      "score": 0.8,
+      "basis": "proxy: YouTube long 1.00, Shorts 1.00, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाओं में",
+      "pillar": "mythology-world",
+      "score": 0.762,
+      "basis": "proxy: YouTube long 0.95, Shorts 0.93, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "ग्रीक देवता कहानी",
+      "pillar": "mythology-world",
+      "score": 0.733,
+      "basis": "proxy: YouTube long 0.90, Shorts 0.92, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "world mythology explained hindi",
+      "pillar": "mythology-world",
+      "score": 0.726,
+      "basis": "proxy: YouTube long 0.97, Shorts 0.00, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "ग्रीक पौराणिक कथाएँ",
+      "pillar": "mythology-world",
+      "score": 0.688,
+      "basis": "proxy: YouTube long 0.83, Shorts 0.88, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "egyptian mythology story hindi",
+      "pillar": "mythology-world",
+      "score": 0.679,
+      "basis": "proxy: YouTube long 0.87, Shorts 0.66, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "zeus mythology story hindi",
+      "pillar": "mythology-world",
+      "score": 0.664,
+      "basis": "proxy: YouTube long 0.83, Shorts 0.71, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "नॉर्स पौराणिक कथा",
+      "pillar": "mythology-world",
+      "score": 0.615,
+      "basis": "proxy: YouTube long 0.77, Shorts 0.59, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "मिस्र की पौराणिक कथा",
+      "pillar": "mythology-world",
+      "score": 0.554,
+      "basis": "proxy: YouTube long 0.67, Shorts 0.57, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "odin norse mythology hindi",
+      "pillar": "mythology-world",
+      "score": 0.368,
+      "basis": "proxy: YouTube long 0.41, Shorts 0.30, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     }
+    ]
+   },
+   "festival_plan": [],
+   "reddit": null
+  },
+  "psychology": {
+   "label": "Psychology (everyday mind, behaviour, relationships)",
+   "queries": [
+    "मनोविज्ञान तथ्य",
+    "व्यवहार मनोविज्ञान",
+    "रिश्तों का मनोविज्ञान",
+    "psychology facts hindi",
+    "human behavior psychology hindi",
+    "mind psychology facts",
+    "मनोविज्ञान तथ्यों",
+    "1000 मनोविज्ञान तथ्यों pdf",
+    "love मनोविज्ञान तथ्यों",
+    "महिला मनोविज्ञान तथ्य"
+   ],
+   "source": {
+    "youtube": "outliers-kathaaya-psychology-2026-11-2026-11-09.json",
+    "quotaUnits": 1132,
+    "instagramHandles": 3
+   },
+   "platforms": {
+    "youtube_long": [
+     {
+      "topic": "psychology facts hindi",
+      "pillar": "psychology",
+      "n": 5,
+      "medViewsPerDay": 16313,
+      "medViewsPerSub": 32.54,
+      "share100k": 1,
+      "share1M": 0.6,
+      "score": 2.591,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "​स्त्री को वश में करना सीखो 🤫 | Psychology Facts #shorts #osho",
+        "url": "https://youtu.be/MI-t9pQ03S0",
+        "views": 3366547,
+        "subs": 39600,
+        "viewsPerSub": 85,
+        "channel": "Dhayan Path"
+       },
+       {
+        "title": "अकेले रहने की 6 आदतें जो उन्हें खतरनाक बना देती हैं | Chankya Niti #tipsandtricks ",
+        "url": "https://youtu.be/FeqMWAHrMzA",
+        "views": 1889608,
+        "subs": 44300,
+        "viewsPerSub": 42.6,
+        "channel": "khan style Gk"
+       },
+       {
+        "title": "All of Human Psychology Explained in 20 Minutes",
+        "url": "https://youtu.be/rNjdRw0R4lA",
+        "views": 741932,
+        "subs": 22800,
+        "viewsPerSub": 32.5,
+        "channel": "20 Minute Professor"
+       }
+      ]
+     },
+     {
+      "topic": "महिला मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "n": 6,
+      "medViewsPerDay": 16371,
+      "medViewsPerSub": 75.78,
+      "share100k": 1,
+      "share1M": 0.17,
+      "score": 2.534,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "क्या बड़ी उम्र की महिलाएं भी प्यार और रोमांस चाहती हैं? | Women Psychology",
+        "url": "https://youtu.be/LHiLrBc1qPg",
+        "views": 444701,
+        "subs": 2040,
+        "viewsPerSub": 218,
+        "channel": "घर संसार की बातें"
+       },
+       {
+        "title": "पराई औरत 3 चीजें मांगने लगे तो समझ लेना सबंध चाहती हैं 👉| Women Psychology",
+        "url": "https://youtu.be/PHRPMOnIy2w",
+        "views": 491255,
+        "subs": 2970,
+        "viewsPerSub": 165.4,
+        "channel": "Alfaaz Dil ke 4.0"
+       },
+       {
+        "title": "​स्त्री को वश में करना सीखो 🤫 | Psychology Facts #shorts #osho",
+        "url": "https://youtu.be/MI-t9pQ03S0",
+        "views": 3366547,
+        "subs": 39600,
+        "viewsPerSub": 85,
+        "channel": "Dhayan Path"
+       }
+      ]
+     },
+     {
+      "topic": "व्यवहार मनोविज्ञान",
+      "pillar": "psychology",
+      "n": 9,
+      "medViewsPerDay": 17020,
+      "medViewsPerSub": 0.67,
+      "share100k": 1,
+      "share1M": 0.44,
+      "score": 2.293,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "All of Human Psychology Explained in 20 Minutes",
+        "url": "https://youtu.be/rNjdRw0R4lA",
+        "views": 741932,
+        "subs": 22800,
+        "viewsPerSub": 32.5,
+        "channel": "20 Minute Professor"
+       },
+       {
+        "title": "Psychology of Resilience: Build a Mind So Strong It Scares People",
+        "url": "https://youtu.be/TRd1kuUGazE",
+        "views": 1529020,
+        "subs": 226000,
+        "viewsPerSub": 6.8,
+        "channel": "PsychToons"
+       },
+       {
+        "title": "Trump's SHOCKING New Behavior HAS TO BE SEEN To Be Believed: Psychology & Body Language",
+        "url": "https://youtu.be/5rV1dgaS_fM",
+        "views": 740314,
+        "subs": 785000,
+        "viewsPerSub": 0.9,
+        "channel": "Dr. G Explains"
+       }
+      ]
+     },
+     {
+      "topic": "human behavior psychology hindi",
+      "pillar": "psychology",
+      "n": 6,
+      "medViewsPerDay": 12404,
+      "medViewsPerSub": 0.66,
+      "share100k": 1,
+      "share1M": 0.5,
+      "score": 2.241,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "All of Human Psychology Explained in 20 Minutes",
+        "url": "https://youtu.be/rNjdRw0R4lA",
+        "views": 741932,
+        "subs": 22800,
+        "viewsPerSub": 32.5,
+        "channel": "20 Minute Professor"
+       },
+       {
+        "title": "The Hidden Psychology Of Consistency 💀 | Why You FAIL ?",
+        "url": "https://youtu.be/Iz71DwxMk10",
+        "views": 839697,
+        "subs": 450000,
+        "viewsPerSub": 1.9,
+        "channel": "Darkful Mind"
+       },
+       {
+        "title": "Andrew Huberman: Become Mentally Dangerous With These Daily Habits | FO556 Raj Shamani",
+        "url": "https://youtu.be/Y566_T-YlNQ",
+        "views": 19585522,
+        "subs": 21800000,
+        "viewsPerSub": 0.9,
+        "channel": "Raj Shamani"
+       }
+      ]
+     },
+     {
+      "topic": "रिश्तों का मनोविज्ञान",
+      "pillar": "psychology",
+      "n": 9,
+      "medViewsPerDay": 1194,
+      "medViewsPerSub": 20.68,
+      "share100k": 0.33,
+      "share1M": 0,
+      "score": 1.806,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "PSYCHOLOGY OF MEN WHO LET WOMEN GO",
+        "url": "https://youtu.be/5aI6icg7bVU",
+        "views": 433231,
+        "subs": 2320,
+        "viewsPerSub": 186.7,
+        "channel": "The Grug Files"
+       },
+       {
+        "title": "Why Senior Men Cut Everyone Off After 60   Psychology Explained",
+        "url": "https://youtu.be/z-VrC6cUpKo",
+        "views": 266046,
+        "subs": 2780,
+        "viewsPerSub": 95.7,
+        "channel": "romantic connection"
+       },
+       {
+        "title": "स्त्री को अपनी लत कैसे लगाएं? | आकर्षण का मनोविज्ञान | Osho के विचार",
+        "url": "https://youtu.be/AobM4GLvtjM",
+        "views": 61296,
+        "subs": 826,
+        "viewsPerSub": 74.2,
+        "channel": "mind thought"
+       }
+      ]
+     }
+    ],
+    "youtube_short": [
+     {
+      "topic": "व्यवहार मनोविज्ञान",
+      "pillar": "psychology",
+      "n": 4,
+      "medViewsPerDay": 104063,
+      "medViewsPerSub": 11.02,
+      "share100k": 1,
+      "share1M": 0.5,
+      "score": 2.875,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "ये 1 गुप्त विद्या समझ लो, रिश्तों में आकर्षण बढ़ेगा! | Female Psychology #Shorts",
+        "url": "https://youtu.be/v4m6Nvfx4_o",
+        "views": 2035819,
+        "subs": 11000,
+        "viewsPerSub": 185.1,
+        "channel": "Payuu"
+       },
+       {
+        "title": "जब गुस्सा आपके ही खिलाफ काम करने लगे | Human Behavior",
+        "url": "https://youtu.be/Q_hTtdptBwI",
+        "views": 932614,
+        "subs": 80300,
+        "viewsPerSub": 11.6,
+        "channel": "Deep Life Lessons "
+       },
+       {
+        "title": "10 Psychology Tricks That Make You Difficult to Manipuate",
+        "url": "https://youtu.be/BGqgrUKdr1s",
+        "views": 6687590,
+        "subs": 641000,
+        "viewsPerSub": 10.4,
+        "channel": "Abhasa - Mental Health"
+       }
+      ]
+     },
+     {
+      "topic": "psychology facts hindi",
+      "pillar": "psychology",
+      "n": 6,
+      "medViewsPerDay": 20880,
+      "medViewsPerSub": 24.09,
+      "share100k": 1,
+      "share1M": 1,
+      "score": 2.74,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "5 जानवरों की सोच जो आपकी ज़िंदगी बदल देगी | Animal Mindset Psychology | #shorts #psycholog",
+        "url": "https://youtu.be/3ifCSm8gZjg",
+        "views": 2829960,
+        "subs": 53000,
+        "viewsPerSub": 53.4,
+        "channel": "Layer Unlocked"
+       },
+       {
+        "title": "Information Distortion: Kaise Sach Dheere-Dheere Badal Jaata Hai | #shorts #psychology",
+        "url": "https://youtu.be/zMCCFbEKTOk",
+        "views": 2109049,
+        "subs": 53000,
+        "viewsPerSub": 39.8,
+        "channel": "Layer Unlocked"
+       },
+       {
+        "title": "जिसने ताने नहीं सुने, वही जीत गया | Human Psychology",
+        "url": "https://youtu.be/xRJKj_HDuLI",
+        "views": 4692761,
+        "subs": 189000,
+        "viewsPerSub": 24.8,
+        "channel": "Deep Life Lessons – Psychology"
+       }
+      ]
+     },
+     {
+      "topic": "human behavior psychology hindi",
+      "pillar": "psychology",
+      "n": 7,
+      "medViewsPerDay": 38161,
+      "medViewsPerSub": 10.3,
+      "share100k": 1,
+      "share1M": 0.71,
+      "score": 2.716,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Information Distortion: Kaise Sach Dheere-Dheere Badal Jaata Hai | #shorts #psychology",
+        "url": "https://youtu.be/zMCCFbEKTOk",
+        "views": 2109049,
+        "subs": 53000,
+        "viewsPerSub": 39.8,
+        "channel": "Layer Unlocked"
+       },
+       {
+        "title": "जिसने ताने नहीं सुने, वही जीत गया | Human Psychology",
+        "url": "https://youtu.be/xRJKj_HDuLI",
+        "views": 4692761,
+        "subs": 189000,
+        "viewsPerSub": 24.8,
+        "channel": "Deep Life Lessons – Psychology"
+       },
+       {
+        "title": "जब गुस्सा आपके ही खिलाफ काम करने लगे | Human Behavior",
+        "url": "https://youtu.be/Q_hTtdptBwI",
+        "views": 932614,
+        "subs": 80300,
+        "viewsPerSub": 11.6,
+        "channel": "Deep Life Lessons "
+       }
+      ]
+     },
+     {
+      "topic": "mind psychology facts",
+      "pillar": "psychology",
+      "n": 9,
+      "medViewsPerDay": 13692,
+      "medViewsPerSub": 6.9,
+      "share100k": 1,
+      "share1M": 0.56,
+      "score": 2.414,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Your Mistakes Are Making You Better📈|| #shorts #mindset #success #selfimprovement #psycho",
+        "url": "https://youtu.be/qwsDzHH_a3g",
+        "views": 2644811,
+        "subs": 8950,
+        "viewsPerSub": 295.5,
+        "channel": "FactNova Prashant 🚀"
+       },
+       {
+        "title": "Information Distortion: Kaise Sach Dheere-Dheere Badal Jaata Hai | #shorts #psychology",
+        "url": "https://youtu.be/zMCCFbEKTOk",
+        "views": 2109049,
+        "subs": 53000,
+        "viewsPerSub": 39.8,
+        "channel": "Layer Unlocked"
+       },
+       {
+        "title": "3 Dark Psychology Tricks For Students💀#psychology#shortsfeed#youtubeshorts",
+        "url": "https://youtu.be/K8bH0ZhHCgw",
+        "views": 1625020,
+        "subs": 43000,
+        "viewsPerSub": 37.8,
+        "channel": "S6_Psycho06"
+       }
+      ]
+     },
+     {
+      "topic": "love मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "n": 14,
+      "medViewsPerDay": 9800,
+      "medViewsPerSub": 5.46,
+      "share100k": 1,
+      "share1M": 0.21,
+      "score": 2.222,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "3 Signs Someone Secretly Loves You ❤️ | Love Psychology in Hindi #shorts#shortvideo#viral#",
+        "url": "https://youtu.be/-WzsUUCpLLc",
+        "views": 381231,
+        "subs": 4940,
+        "viewsPerSub": 77.2,
+        "channel": "Dark-Mind Sensei"
+       },
+       {
+        "title": "3 Sign YOU'RE Crush Like You | Love Psychology 🫵🤫🥰 #love #crush #psychology #shortsfeed",
+        "url": "https://youtu.be/WowFkblWrgc",
+        "views": 1408136,
+        "subs": 60300,
+        "viewsPerSub": 23.4,
+        "channel": "PrynxhMind"
+       },
+       {
+        "title": "Girls Love Psychology Part 3 | What Makes Guys Attractive? 👀 #shorts #psychology #attract",
+        "url": "https://youtu.be/93lcFCgyU3g",
+        "views": 696282,
+        "subs": 80800,
+        "viewsPerSub": 8.6,
+        "channel": "CoreChanger "
+       }
+      ]
+     },
+     {
+      "topic": "मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "n": 12,
+      "medViewsPerDay": 7441,
+      "medViewsPerSub": 4.31,
+      "share100k": 1,
+      "share1M": 0.08,
+      "score": 2.106,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Dark Human Psychology Facts 🤯🧠|#shorts#psychology#motivation#quotes#deepquotes #ytshorts",
+        "url": "https://youtu.be/ER9xdVeEaDM",
+        "views": 984474,
+        "subs": 13800,
+        "viewsPerSub": 71.3,
+        "channel": "@motivation_points"
+       },
+       {
+        "title": "Why people ACTUALLY interrupt you #psychology #facts",
+        "url": "https://youtu.be/-EfaS2dTZXU",
+        "views": 560352,
+        "subs": 12100,
+        "viewsPerSub": 46.3,
+        "channel": "Sakinah Lab"
+       },
+       {
+        "title": "5 interesting psychological facts #selfimprovement #facts #psychologyfacts",
+        "url": "https://youtu.be/MOJW6jKjVcc",
+        "views": 731656,
+        "subs": 87000,
+        "viewsPerSub": 8.4,
+        "channel": "The Real Facts"
+       }
+      ]
+     },
+     {
+      "topic": "मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "n": 13,
+      "medViewsPerDay": 6770,
+      "medViewsPerSub": 2.99,
+      "share100k": 1,
+      "share1M": 0.08,
+      "score": 2.059,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "7 Psychology Facts That Will Blow Your Mind 🤯🧠 #shorts",
+        "url": "https://youtu.be/E72e-4LR0Dc",
+        "views": 324676,
+        "subs": 28200,
+        "viewsPerSub": 11.5,
+        "channel": "YOUR TUTOR CORNER"
+       },
+       {
+        "title": "5 interesting psychological facts #selfimprovement #facts #psychologyfacts",
+        "url": "https://youtu.be/MOJW6jKjVcc",
+        "views": 731656,
+        "subs": 87000,
+        "viewsPerSub": 8.4,
+        "channel": "The Real Facts"
+       },
+       {
+        "title": "7 Psychology Facts That Reveal Your Hidden Personality 🧠 | Mind-Blowing Facts",
+        "url": "https://youtu.be/snGBOqNrw-s",
+        "views": 528498,
+        "subs": 70100,
+        "viewsPerSub": 7.5,
+        "channel": "Aditya jaiswar"
+       }
+      ]
+     },
+     {
+      "topic": "रिश्तों का मनोविज्ञान",
+      "pillar": "psychology",
+      "n": 5,
+      "medViewsPerDay": 4611,
+      "medViewsPerSub": 3.56,
+      "share100k": 0.2,
+      "share1M": 0.2,
+      "score": 2.024,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "ये 1 गुप्त विद्या समझ लो, रिश्तों में आकर्षण बढ़ेगा! | Female Psychology #Shorts",
+        "url": "https://youtu.be/v4m6Nvfx4_o",
+        "views": 2035819,
+        "subs": 11000,
+        "viewsPerSub": 185.1,
+        "channel": "Payuu"
+       },
+       {
+        "title": "2 Love Psychology Facts ❤️ जो आपके रिश्ते की सच्चाई बता देंगे! | Life Lessons Part 32 #sho",
+        "url": "https://youtu.be/cjrsWZ6Zk-0",
+        "views": 26037,
+        "subs": 1780,
+        "viewsPerSub": 14.6,
+        "channel": "Life Dose"
+       },
+       {
+        "title": "रिश्तों में जीतने की ज़िद सब कुछ खत्म कर देती है! | Psychology",
+        "url": "https://youtu.be/oJ0z3NbPxvM",
+        "views": 87150,
+        "subs": 80300,
+        "viewsPerSub": 1.1,
+        "channel": "Deep Life Lessons "
+       }
+      ]
+     },
+     {
+      "topic": "महिला मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "n": 8,
+      "medViewsPerDay": 3376,
+      "medViewsPerSub": 2.83,
+      "share100k": 1,
+      "share1M": 0.13,
+      "score": 1.919,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "पुरुष महिलाओं की तरफ सबसे पहले क्या नोटिस करते हैं? जानिए मनोविज्ञान का सच! 😲 | Psycholog",
+        "url": "https://youtu.be/-NJHTdM93PU",
+        "views": 333425,
+        "subs": 30600,
+        "viewsPerSub": 10.9,
+        "channel": "karan"
+       },
+       {
+        "title": "जब मर्द पीछा करना छोड़ देता है, तब औरत के दिल में उठते हैं ये 4 तूफान! Women Psychology",
+        "url": "https://youtu.be/dyLpH3IhjLY",
+        "views": 1023354,
+        "subs": 274000,
+        "viewsPerSub": 3.7,
+        "channel": "𝐩𝐚𝐲𝐮𝐮"
+       },
+       {
+        "title": "5 interesting psychology facts #selfimprovement #intrestingfacts #psychologyfacts",
+        "url": "https://youtu.be/_qkgUFnwJhM",
+        "views": 272341,
+        "subs": 87000,
+        "viewsPerSub": 3.1,
+        "channel": "The Real Facts"
+       }
+      ]
+     }
+    ],
+    "instagram": [
+     {
+      "topic": "love मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "matchingPosts": 10,
+      "outlierPosts": 2,
+      "score": 0.942,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "themindsjournal",
+        "caption": "May life finally give you the kind of love and happiness you never have to question. 🤍 There comes a point when you're no longer asking for grand gestures or p",
+        "likes": 211,
+        "ratio": 1.67,
+        "url": "https://www.instagram.com/p/DfVUYktDwCs/"
+       }
+      ]
+     },
+     {
+      "topic": "मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "matchingPosts": 6,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "व्यवहार मनोविज्ञान",
+      "pillar": "psychology",
+      "matchingPosts": 7,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "रिश्तों का मनोविज्ञान",
+      "pillar": "psychology",
+      "matchingPosts": 8,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "mind psychology facts",
+      "pillar": "psychology",
+      "matchingPosts": 6,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "matchingPosts": 6,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "1000 मनोविज्ञान तथ्यों pdf",
+      "pillar": "psychology",
+      "matchingPosts": 6,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "महिला मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "matchingPosts": 6,
+      "outlierPosts": 1,
+      "score": 0.889,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "the.mind.journal",
+        "caption": "Mind Journal",
+        "likes": 1236,
+        "ratio": 7.74,
+        "url": "https://www.instagram.com/p/De8nskcRbvy/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Once you start looking at Astrology with only slight scepticism and an open mind, you’ll find how shallow and random astrological predictions are. We don’t fall",
+        "likes": 0,
+        "ratio": 0.55,
+        "url": "https://www.instagram.com/reel/DPwOz2kkqwN/"
+       }
+      ]
+     },
+     {
+      "topic": "human behavior psychology hindi",
+      "pillar": "psychology",
+      "matchingPosts": 5,
+      "outlierPosts": 1,
+      "score": 0.32,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Depression is NOT just sadness. It’s not about your reel not going viral, or a fight with your partner, or feeling low after a bad day. These are normal human e",
+        "likes": 0,
+        "ratio": 2.09,
+        "url": "https://www.instagram.com/reel/DLM0CBTSEa_/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Internet today is filled with a lot of noise in the name of Psychology. Many people are labelling their opinions as psychology just to sound credible. A lot of ",
+        "likes": 0,
+        "ratio": 0.45,
+        "url": "https://www.instagram.com/reel/DTpw8GqDERq/"
+       }
+      ]
+     },
+     {
+      "topic": "psychology facts hindi",
+      "pillar": "psychology",
+      "matchingPosts": 3,
+      "outlierPosts": 0,
+      "score": 0,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Internet today is filled with a lot of noise in the name of Psychology. Many people are labelling their opinions as psychology just to sound credible. A lot of ",
+        "likes": 0,
+        "ratio": 0.45,
+        "url": "https://www.instagram.com/reel/DTpw8GqDERq/"
+       },
+       {
+        "handle": "thepsychologyguy",
+        "caption": "Yes, there are incompetent and bad therapists… just like in every other field. But that does NOT justify discrediting the entire psychology profession. By that ",
+        "likes": 0,
+        "ratio": 0.18,
+        "url": "https://www.instagram.com/reel/DT8Nji2En1Q/"
+       }
+      ]
+     }
+    ],
+    "facebook": [
+     {
+      "topic": "महिला मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "score": 0.927,
+      "basis": "proxy: YouTube long 0.98, Shorts 0.67, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "व्यवहार मनोविज्ञान",
+      "pillar": "psychology",
+      "score": 0.925,
+      "basis": "proxy: YouTube long 0.88, Shorts 1.00, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "psychology facts hindi",
+      "pillar": "psychology",
+      "score": 0.793,
+      "basis": "proxy: YouTube long 1.00, Shorts 0.95, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "human behavior psychology hindi",
+      "pillar": "psychology",
+      "score": 0.785,
+      "basis": "proxy: YouTube long 0.86, Shorts 0.94, Instagram 0.34",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "रिश्तों का मनोविज्ञान",
+      "pillar": "psychology",
+      "score": 0.778,
+      "basis": "proxy: YouTube long 0.70, Shorts 0.70, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "love मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "score": 0.416,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.77, Instagram 1.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "mind psychology facts",
+      "pillar": "psychology",
+      "score": 0.415,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.84, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "मनोविज्ञान तथ्य",
+      "pillar": "psychology",
+      "score": 0.399,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.73, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "मनोविज्ञान तथ्यों",
+      "pillar": "psychology",
+      "score": 0.396,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.72, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "1000 मनोविज्ञान तथ्यों pdf",
+      "pillar": "psychology",
+      "score": 0.289,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.00, Instagram 0.94",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     }
+    ]
+   },
+   "festival_plan": [],
+   "reddit": null
+  },
+  "dark-psychology": {
+   "label": "Dark psychology (manipulation awareness, persuasion, self-protection)",
+   "queries": [
+    "डार्क साइकोलॉजी",
+    "मैनिपुलेशन ट्रिक्स",
+    "दिमागी हेरफेर",
+    "dark psychology facts hindi",
+    "manipulation tactics hindi",
+    "gaslighting kya hota hai",
+    "डार्क साइकोलॉजी pdf",
+    "डार्क साइकोलॉजी क्या है",
+    "डार्क साइकोलॉजी बुक",
+    "डार्क साइकोलॉजी बुक इन हिंदी"
+   ],
+   "source": {
+    "youtube": "outliers-kathaaya-dark-psychology-2026-11-2026-11-09.json",
+    "quotaUnits": 1177,
+    "instagramHandles": 1
+   },
+   "platforms": {
+    "youtube_long": [
+     {
+      "topic": "डार्क साइकोलॉजी",
+      "pillar": "dark-psychology",
+      "n": 3,
+      "medViewsPerDay": 15530,
+      "medViewsPerSub": 1.87,
+      "share100k": 1,
+      "share1M": 0.33,
+      "score": 2.287,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Dark Psychology of Super Rich People",
+        "url": "https://youtu.be/lrPVedqDA-U",
+        "views": 909568,
+        "subs": 23800,
+        "viewsPerSub": 38.2,
+        "channel": "how really?"
+       },
+       {
+        "title": "The Hidden Psychology Of Consistency 💀 | Why You FAIL ?",
+        "url": "https://youtu.be/Iz71DwxMk10",
+        "views": 839697,
+        "subs": 450000,
+        "viewsPerSub": 1.9,
+        "channel": "Darkful Mind"
+       },
+       {
+        "title": "The Dark Psychology of Wealth: How The System Steals Your Money",
+        "url": "https://youtu.be/ltwNzwy5Ghk",
+        "views": 1558865,
+        "subs": 2390000,
+        "viewsPerSub": 0.7,
+        "channel": "Rishabh Bidhuri"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी क्या है",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 11795,
+      "medViewsPerSub": 2.54,
+      "share100k": 1,
+      "share1M": 0.2,
+      "score": 2.206,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Dark Psychology of Super Rich People",
+        "url": "https://youtu.be/lrPVedqDA-U",
+        "views": 909568,
+        "subs": 23800,
+        "viewsPerSub": 38.2,
+        "channel": "how really?"
+       },
+       {
+        "title": "How Can A Person Build An Extremely Powerful Aura: 12 Smart Dark Psychology Tricks",
+        "url": "https://youtu.be/uFmyBvkkVRs",
+        "views": 789733,
+        "subs": 133000,
+        "viewsPerSub": 5.9,
+        "channel": "World of Wisdom"
+       },
+       {
+        "title": "Kendall Jenner’s Dark Psychology: Superiority, Privilege & the Need to Be Different",
+        "url": "https://youtu.be/BYewLBLyScY",
+        "views": 279096,
+        "subs": 110000,
+        "viewsPerSub": 2.5,
+        "channel": "Julie Theis M.S. "
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 3272,
+      "medViewsPerSub": 23.18,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 2.034,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Dark Psychology: How to Make People Fear Disrespecting You! | Robert Greene",
+        "url": "https://youtu.be/hvO8wAnXuWA",
+        "views": 443875,
+        "subs": 3970,
+        "viewsPerSub": 111.8,
+        "channel": "Greene Psychology "
+       },
+       {
+        "title": "Become Quieter, Smarter, Harder to Read — The Psychology of a Calculated Man | Machiavelli",
+        "url": "https://youtu.be/nlMXtJ5OOxU",
+        "views": 189235,
+        "subs": 6320,
+        "viewsPerSub": 29.9,
+        "channel": "Machiavellian Inspired"
+       },
+       {
+        "title": "लोगों को पढ़ना सीखो | Machiavelli Mindset Book Summary in Hindi | Dark Psychology & Human ",
+        "url": "https://youtu.be/QfoiYjUQhj8",
+        "views": 180797,
+        "subs": 7800,
+        "viewsPerSub": 23.2,
+        "channel": "Awaaz Mein Kitaab"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक इन हिंदी",
+      "pillar": "dark-psychology",
+      "n": 3,
+      "medViewsPerDay": 3272,
+      "medViewsPerSub": 3.24,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 1.883,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "लोगों को पढ़ना सीखो | Machiavelli Mindset Book Summary in Hindi | Dark Psychology & Human ",
+        "url": "https://youtu.be/QfoiYjUQhj8",
+        "views": 180797,
+        "subs": 7800,
+        "viewsPerSub": 23.2,
+        "channel": "Awaaz Mein Kitaab"
+       },
+       {
+        "title": "لوگ آپ کے ذہن میں کیسے داخل ہوتے ہیں؟ | Dark Psychology of Attraction",
+        "url": "https://youtu.be/kTLZ3OJ4BMI",
+        "views": 137850,
+        "subs": 42600,
+        "viewsPerSub": 3.2,
+        "channel": "Mazari-Talks"
+       },
+       {
+        "title": "Robert Greene के 5 खतरनाक PSYCHOLOGY Laws जो आपको आज ही पता होने चाहिए",
+        "url": "https://youtu.be/ycU_BpdwV7k",
+        "views": 230935,
+        "subs": 401000,
+        "viewsPerSub": 0.6,
+        "channel": "Book Tuber Hindi"
+       }
+      ]
+     },
+     {
+      "topic": "मैनिपुलेशन ट्रिक्स",
+      "pillar": "dark-psychology",
+      "n": 3,
+      "medViewsPerDay": 4536,
+      "medViewsPerSub": 0.18,
+      "share100k": 0.67,
+      "share1M": 0,
+      "score": 1.843,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Lord Krishna’s 5 Dark Manipulation Strategies ",
+        "url": "https://youtu.be/i8GyCqMfjaU",
+        "views": 405378,
+        "subs": 168000,
+        "viewsPerSub": 2.4,
+        "channel": "Chad Sensei"
+       },
+       {
+        "title": "4 Illegal Techniques To Control Anyone 💀 | Shadow Manipulation",
+        "url": "https://youtu.be/EZGG9iN-51M",
+        "views": 81245,
+        "subs": 450000,
+        "viewsPerSub": 0.2,
+        "channel": "Darkful Mind"
+       },
+       {
+        "title": "\"This Man is WAY Darker Than a Psychopath\" 8 Manipulation Tricks He'll Use to F*ck With Yo",
+        "url": "https://youtu.be/-RgmFbqQsr8",
+        "views": 117119,
+        "subs": 1680000,
+        "viewsPerSub": 0.1,
+        "channel": "Lisa Bilyeu"
+       }
+      ]
+     },
+     {
+      "topic": "manipulation tactics hindi",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 1352,
+      "medViewsPerSub": 0.88,
+      "share100k": 0.4,
+      "share1M": 0,
+      "score": 1.62,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Market Manipulation का नया दौर | Stock Operator 2.0 & Algorithm | Ft Pankaj Bhardwaj ",
+        "url": "https://youtu.be/xwvTqZRXUGc",
+        "views": 43480,
+        "subs": 13000,
+        "viewsPerSub": 3.3,
+        "channel": "Sagar Kummar"
+       },
+       {
+        "title": "Lord Krishna’s 5 Dark Manipulation Strategies ",
+        "url": "https://youtu.be/i8GyCqMfjaU",
+        "views": 405378,
+        "subs": 168000,
+        "viewsPerSub": 2.4,
+        "channel": "Chad Sensei"
+       },
+       {
+        "title": "The Monster: Johan Liebert | The Psychology of Pure Evil",
+        "url": "https://youtu.be/9DBgrxcTgBo",
+        "views": 148463,
+        "subs": 168000,
+        "viewsPerSub": 0.9,
+        "channel": "Chad Sensei"
+       }
+      ]
+     },
+     {
+      "topic": "gaslighting kya hota hai",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 5,
+      "medViewsPerSub": 0.1,
+      "share100k": 0,
+      "share1M": 0,
+      "score": 0.397,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": []
+     }
+    ],
+    "youtube_short": [
+     {
+      "topic": "डार्क साइकोलॉजी",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 13692,
+      "medViewsPerSub": 9.09,
+      "share100k": 1,
+      "share1M": 0.8,
+      "score": 2.509,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "3 Dark Psychology Tricks For Students💀#psychology#shortsfeed#youtubeshorts",
+        "url": "https://youtu.be/K8bH0ZhHCgw",
+        "views": 1625020,
+        "subs": 43000,
+        "viewsPerSub": 37.8,
+        "channel": "S6_Psycho06"
+       },
+       {
+        "title": "Chehra Padhna Seekho! 👁️🚨 #shorts #darkpsychology",
+        "url": "https://youtu.be/9ANFhGwh93s",
+        "views": 3125428,
+        "subs": 167000,
+        "viewsPerSub": 18.7,
+        "channel": "mind trap"
+       },
+       {
+        "title": "Kaise Pata Kare Wo Tumhe Like Karti Hai? 🤫❤️ #shorts #psychology",
+        "url": "https://youtu.be/-POu3GRnLao",
+        "views": 1517837,
+        "subs": 167000,
+        "viewsPerSub": 9.1,
+        "channel": "mind trap"
+       }
+      ]
+     },
+     {
+      "topic": "dark psychology facts hindi",
+      "pillar": "dark-psychology",
+      "n": 5,
+      "medViewsPerDay": 10897,
+      "medViewsPerSub": 4.39,
+      "share100k": 1,
+      "share1M": 0.4,
+      "score": 2.285,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "3 Dark Psychology Tricks For Students💀#psychology#shortsfeed#youtubeshorts",
+        "url": "https://youtu.be/K8bH0ZhHCgw",
+        "views": 1625020,
+        "subs": 43000,
+        "viewsPerSub": 37.8,
+        "channel": "S6_Psycho06"
+       },
+       {
+        "title": "Psychology of True Love! 🤫❤️ #shorts #psychology",
+        "url": "https://youtu.be/q2hcAIu3RJg",
+        "views": 1143147,
+        "subs": 167000,
+        "viewsPerSub": 6.8,
+        "channel": "mind trap"
+       },
+       {
+        "title": "ATTRACT Anyone SECRETLY 🤫 | 2 Psychology Tricks That Make People Notice You #shorts #shor",
+        "url": "https://youtu.be/1Vb2oiBfpYo",
+        "views": 597719,
+        "subs": 136000,
+        "viewsPerSub": 4.4,
+        "channel": "Mindset With Shiva"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी क्या है",
+      "pillar": "dark-psychology",
+      "n": 8,
+      "medViewsPerDay": 8800,
+      "medViewsPerSub": 1.33,
+      "share100k": 1,
+      "share1M": 0.25,
+      "score": 2.121,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "3 Dark Psychology Tricks For Students💀#psychology#shortsfeed#youtubeshorts",
+        "url": "https://youtu.be/K8bH0ZhHCgw",
+        "views": 1625020,
+        "subs": 43000,
+        "viewsPerSub": 37.8,
+        "channel": "S6_Psycho06"
+       },
+       {
+        "title": "Kaise Pata Kare Wo Tumhe Like Karti Hai? 🤫❤️ #shorts #psychology",
+        "url": "https://youtu.be/-POu3GRnLao",
+        "views": 1517837,
+        "subs": 167000,
+        "viewsPerSub": 9.1,
+        "channel": "mind trap"
+       },
+       {
+        "title": "Dark Psychology Chapter-2: Track The Orange Ball 🟠⚡ #Shorts #RealNoExcuse",
+        "url": "https://youtu.be/_7wt8HEenMs",
+        "views": 377900,
+        "subs": 137000,
+        "viewsPerSub": 2.8,
+        "channel": "Real No Excuse"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक",
+      "pillar": "dark-psychology",
+      "n": 4,
+      "medViewsPerDay": 4935,
+      "medViewsPerSub": 2.28,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 1.95,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "3 Books That Make You Uncontrollable 🔥",
+        "url": "https://youtu.be/hy6BeOHYpQ4",
+        "views": 143024,
+        "subs": 8470,
+        "viewsPerSub": 16.9,
+        "channel": "Zenshi Psyche"
+       },
+       {
+        "title": "How To Read People. 🧠👀",
+        "url": "https://youtu.be/7hbnMu6wcJM",
+        "views": 398174,
+        "subs": 131000,
+        "viewsPerSub": 3,
+        "channel": "MindTheory "
+       },
+       {
+        "title": "Read These 4 Books To Understand Human Psychology",
+        "url": "https://youtu.be/qWEcDVrFpho",
+        "views": 306033,
+        "subs": 201000,
+        "viewsPerSub": 1.5,
+        "channel": "MindZenX"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक इन हिंदी",
+      "pillar": "dark-psychology",
+      "n": 6,
+      "medViewsPerDay": 3324,
+      "medViewsPerSub": 1.06,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 1.823,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "Dark Psychology Secrets To Read Anyone Instantly 🧠👁️ #viral",
+        "url": "https://youtu.be/XhtF6fHzkRo",
+        "views": 187551,
+        "subs": 105000,
+        "viewsPerSub": 1.8,
+        "channel": "Phyco Talks "
+       },
+       {
+        "title": "Read These 4 Books To Understand Human Psychology",
+        "url": "https://youtu.be/qWEcDVrFpho",
+        "views": 306033,
+        "subs": 201000,
+        "viewsPerSub": 1.5,
+        "channel": "MindZenX"
+       },
+       {
+        "title": "5 Dangerous Mind Control Tricks (Use Caution)",
+        "url": "https://youtu.be/1E5CWNCccy8",
+        "views": 213660,
+        "subs": 201000,
+        "viewsPerSub": 1.1,
+        "channel": "MindZenX"
+       }
+      ]
+     },
+     {
+      "topic": "मैनिपुलेशन ट्रिक्स",
+      "pillar": "dark-psychology",
+      "n": 6,
+      "medViewsPerDay": 3340,
+      "medViewsPerSub": 0.63,
+      "share100k": 1,
+      "share1M": 0,
+      "score": 1.804,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "The Power of manipulation #manipulation #mindset #darkpsychology #ytshorts #tricks",
+        "url": "https://youtu.be/f-K6hwHbELc",
+        "views": 177737,
+        "subs": 21800,
+        "viewsPerSub": 8.2,
+        "channel": "@Darkmindofficial04 "
+       },
+       {
+        "title": "5 Dark Manipulation Tricks 🧠✨ #lifelessons #motivation #successmindset #growthmind",
+        "url": "https://youtu.be/51optpPVmSs",
+        "views": 508144,
+        "subs": 106000,
+        "viewsPerSub": 4.8,
+        "channel": "The Daily Lesson "
+       },
+       {
+        "title": "5 Dangerous Mind Control Tricks (Use Caution)",
+        "url": "https://youtu.be/1E5CWNCccy8",
+        "views": 213660,
+        "subs": 201000,
+        "viewsPerSub": 1.1,
+        "channel": "MindZenX"
+       }
+      ]
+     },
+     {
+      "topic": "manipulation tactics hindi",
+      "pillar": "dark-psychology",
+      "n": 6,
+      "medViewsPerDay": 896,
+      "medViewsPerSub": 1.62,
+      "share100k": 0.33,
+      "share1M": 0,
+      "score": 1.56,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "🖤 2 Dark Psychology Tricks Jo Tumhe Manipulate Kar Sakte Hain – Sambhal Jao",
+        "url": "https://youtu.be/D0g7yPxrPIU",
+        "views": 34960,
+        "subs": 3960,
+        "viewsPerSub": 8.8,
+        "channel": "MindAnalyze"
+       },
+       {
+        "title": "2 Dark Manipulation Techniques Jo Koi Nahi Batayega",
+        "url": "https://youtu.be/NDIhYLiUHSs",
+        "views": 31839,
+        "subs": 3960,
+        "viewsPerSub": 8,
+        "channel": "MindAnalyze"
+       },
+       {
+        "title": "Aapke Darr Ka Asli Sach 🛑 | Dark Psychology in Hindi | #shorts #psychology",
+        "url": "https://youtu.be/alj4pN_O_us",
+        "views": 115339,
+        "subs": 53000,
+        "viewsPerSub": 2.2,
+        "channel": "Layer Unlocked"
+       }
+      ]
+     },
+     {
+      "topic": "डार्क साइकोलॉजी pdf",
+      "pillar": "dark-psychology",
+      "n": 8,
+      "medViewsPerDay": 333,
+      "medViewsPerSub": 2.44,
+      "share100k": 0.13,
+      "share1M": 0,
+      "score": 1.369,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": [
+       {
+        "title": "How to Read People like a Book: 4 Dark Psychology Tricks",
+        "url": "https://youtu.be/PByz_XLnOfM",
+        "views": 30923,
+        "subs": 249,
+        "viewsPerSub": 124.2,
+        "channel": "Tamil Mystery"
+       },
+       {
+        "title": "5 Dark Psychology Tricks People Use to Control You",
+        "url": "https://youtu.be/r2MJEFKRWuY",
+        "views": 31837,
+        "subs": 4910,
+        "viewsPerSub": 6.5,
+        "channel": "PsycheThrive"
+       },
+       {
+        "title": "పరిచయం లేని వారిని కూడా సెకన్లలో ఆకర్షించడం ఎలా? 🧠 Dark Psychology Telugu #shorts",
+        "url": "https://youtu.be/tIY3YWvUgOo",
+        "views": 107993,
+        "subs": 19200,
+        "viewsPerSub": 5.6,
+        "channel": "Legendary Motivation Telugu"
+       }
+      ]
+     },
+     {
+      "topic": "gaslighting kya hota hai",
+      "pillar": "dark-psychology",
+      "n": 9,
+      "medViewsPerDay": 6,
+      "medViewsPerSub": 1.56,
+      "share100k": 0,
+      "share1M": 0,
+      "score": 0.504,
+      "trending": false,
+      "event": null,
+      "publishBy": null,
+      "examples": []
+     }
+    ],
+    "instagram": [],
+    "facebook": [
+     {
+      "topic": "डार्क साइकोलॉजी",
+      "pillar": "dark-psychology",
+      "score": 0.8,
+      "basis": "proxy: YouTube long 1.00, Shorts 1.00, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "डार्क साइकोलॉजी क्या है",
+      "pillar": "dark-psychology",
+      "score": 0.757,
+      "basis": "proxy: YouTube long 0.96, Shorts 0.85, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक",
+      "pillar": "dark-psychology",
+      "score": 0.706,
+      "basis": "proxy: YouTube long 0.89, Shorts 0.78, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "डार्क साइकोलॉजी बुक इन हिंदी",
+      "pillar": "dark-psychology",
+      "score": 0.662,
+      "basis": "proxy: YouTube long 0.82, Shorts 0.73, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "मैनिपुलेशन ट्रिक्स",
+      "pillar": "dark-psychology",
+      "score": 0.651,
+      "basis": "proxy: YouTube long 0.81, Shorts 0.72, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "manipulation tactics hindi",
+      "pillar": "dark-psychology",
+      "score": 0.583,
+      "basis": "proxy: YouTube long 0.71, Shorts 0.62, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     },
+     {
+      "topic": "dark psychology facts hindi",
+      "pillar": "dark-psychology",
+      "score": 0.237,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.91, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "gaslighting kya hota hai",
+      "pillar": "dark-psychology",
+      "score": 0.226,
+      "basis": "proxy: YouTube long 0.17, Shorts 0.20, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "डार्क साइकोलॉजी pdf",
+      "pillar": "dark-psychology",
+      "score": 0.182,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.55, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "reel + carousel"
+     },
+     {
+      "topic": "दिमागी हेरफेर",
+      "pillar": "dark-psychology",
+      "score": 0.1,
+      "basis": "proxy: YouTube long 0.00, Shorts 0.00, Instagram 0.00",
+      "event": null,
+      "publishBy": null,
+      "suggestedFormat": "fb_long / reel"
+     }
+    ]
+   },
+   "festival_plan": [],
+   "reddit": null
+  }
+ },
+ "brand_overview": [
+  {
+   "topic": "करवा चौथ कथा",
+   "pillar": "mythology-india",
+   "n": 4,
+   "medViewsPerDay": 241376,
+   "medViewsPerSub": 49.68,
+   "share100k": 1,
+   "share1M": 1,
+   "score": 4.332,
+   "trending": false,
+   "event": {
+    "id": "karwa-chauth",
+    "name": "Karwa Chauth",
+    "date": "2026-10-29",
+    "uncertainDays": 1,
+    "publishBy": "2026-10-17"
+   },
+   "publishBy": "2026-10-17",
+   "examples": [
+    {
+     "title": "करवा चौथ व्रत कथा /करवा चौथ की कहानी /karva chauth vrat katha🙏🌺🌼2026 sampurn Katha",
+     "url": "https://youtu.be/rqtV4XHhqh0",
+     "views": 2760529,
+     "subs": 7880,
+     "viewsPerSub": 350.3,
+     "channel": "Neha Rohit Dev"
+    },
+    {
+     "title": "करवा चौथ व्रत कथा 2026 | 7 भाइयों ने तुड़वाया बहन का व्रत , सम्पूर्ण कथा एवं पूजा विधि ! f",
+     "url": "https://youtu.be/i9IE_4h69Jo",
+     "views": 1765440,
+     "subs": 18100,
+     "viewsPerSub": 97.5,
+     "channel": "FaKT Dharmik Katha"
+    },
+    {
+     "title": "Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा | Karwa Chauth Ki Kah",
+     "url": "https://youtu.be/2wCLVpfOb2c",
+     "views": 2704286,
+     "subs": 1490000,
+     "viewsPerSub": 1.8,
+     "channel": "Bhakti Gyan"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "शिव पूजा कथा",
+   "pillar": "mythology-india",
+   "n": 11,
+   "medViewsPerDay": 136003,
+   "medViewsPerSub": 0.96,
+   "share100k": 1,
+   "share1M": 0.82,
+   "score": 4.019,
+   "trending": false,
+   "event": {
+    "id": "masik-shivratri-2026-11-08",
+    "name": "Masik Shivratri",
+    "date": "2026-11-08",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-27"
+   },
+   "publishBy": "2026-10-27",
+   "examples": [
+    {
+     "title": "करवा चौथ व्रत कथा 2026  | Karwa Chauth Katha | करवा चौथ की कहानी",
+     "url": "https://youtu.be/J2awtJqsbII",
+     "views": 1497109,
+     "subs": 33900,
+     "viewsPerSub": 44.2,
+     "channel": "OmKiran Bhakti"
+    },
+    {
+     "title": "नाग पंचमी व्रत कथा जो सुनता है वह कभी गरीब नहीं रहता | Nag Panchami Vrat Katha #katha ",
+     "url": "https://youtu.be/M2NsM_EpLKo",
+     "views": 1775685,
+     "subs": 437000,
+     "viewsPerSub": 4.1,
+     "channel": "Dharmik Gyan."
+    },
+    {
+     "title": "Karwa Chauth Vrat Katha 2026 | करवा चौथ की कहानी | करवा चौथ व्रत कथा | Karwa Chauth Ki Kah",
+     "url": "https://youtu.be/2wCLVpfOb2c",
+     "views": 2704286,
+     "subs": 1490000,
+     "viewsPerSub": 1.8,
+     "channel": "Bhakti Gyan"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "पितृ दोष कथा",
+   "pillar": "mythology-india",
+   "n": 3,
+   "medViewsPerDay": 33794,
+   "medViewsPerSub": 17.61,
+   "share100k": 1,
+   "share1M": 1,
+   "score": 3.946,
+   "trending": false,
+   "event": {
+    "id": "amavasya-2026-11-09",
+    "name": "Amavasya (No Moon)",
+    "date": "2026-11-09",
+    "uncertainDays": 0,
+    "publishBy": "2026-11-04"
+   },
+   "publishBy": "2026-11-04",
+   "examples": [
+    {
+     "title": "10 अक्टूबर शनिवार अमावस्या टोटका और उपाय  #pradeepmishraji#pradeepmishrajidhankeupay #amav",
+     "url": "https://youtu.be/av2YwFKQUGI",
+     "views": 1085906,
+     "subs": 47700,
+     "viewsPerSub": 22.8,
+     "channel": "CATCH LIFE WITH MANI"
+    },
+    {
+     "title": "पितृ पक्ष में आत्मा की यात्रा कहाँ जाती है? 😱 वैतरणी नदी पार करना इतना कठिन क्यों है? #fa",
+     "url": "https://youtu.be/Lrx2Axl_GXM",
+     "views": 2712063,
+     "subs": 154000,
+     "viewsPerSub": 17.6,
+     "channel": "Amrit Dash Art"
+    },
+    {
+     "title": "श्राद्ध पक्ष में बस गाय माता को एक रोटी देने से नहीं रहती है घर में धन की कमी #pandit_prad",
+     "url": "https://youtu.be/W7qfB89nDcI",
+     "views": 1282289,
+     "subs": 9060000,
+     "viewsPerSub": 0.1,
+     "channel": "Pandit Pradeep Ji Mishra Sehore Wale"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "कृष्ण गोवर्धन पर्वत कथा",
+   "pillar": "mythology-india",
+   "n": 6,
+   "medViewsPerDay": 38439,
+   "medViewsPerSub": 62.07,
+   "share100k": 1,
+   "share1M": 0.5,
+   "score": 3.923,
+   "trending": false,
+   "event": {
+    "id": "govardhan",
+    "name": "Govardhan Puja",
+    "date": "2026-11-10",
+    "uncertainDays": 1,
+    "publishBy": "2026-11-05"
+   },
+   "publishBy": "2026-11-05",
+   "examples": [
+    {
+     "title": "Bhagwan Shri Krishna Bal Leela - Part 4 | Shri Govardhan Leela",
+     "url": "https://youtu.be/jeKZ1xwbBxg",
+     "views": 581076,
+     "subs": 1650,
+     "viewsPerSub": 352.2,
+     "channel": "INVA ORIGINAL"
+    },
+    {
+     "title": "story of krishna-Govardhan l bhagvat",
+     "url": "https://youtu.be/QN990jpq2vg",
+     "views": 1402784,
+     "subs": 4490,
+     "viewsPerSub": 312.4,
+     "channel": "Bhakti bhav sansar"
+    },
+    {
+     "title": "गोवर्धन पर्वत क्यों हो रहा है छोटा? 😨 जानिए ऋषि पुलस्त्य के श्राप की कहानी #facts #shorts",
+     "url": "https://youtu.be/V1HDiPQfdOI",
+     "views": 534084,
+     "subs": 5150,
+     "viewsPerSub": 103.7,
+     "channel": "Fact Factory india"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "धनतेरस यमराज",
+   "pillar": "mythology-india",
+   "n": 5,
+   "medViewsPerDay": 150403,
+   "medViewsPerSub": 21.75,
+   "share100k": 1,
+   "share1M": 0.4,
+   "score": 3.874,
+   "trending": false,
+   "event": {
+    "id": "dhanteras",
+    "name": "Dhanteras",
+    "date": "2026-11-06",
+    "uncertainDays": 0,
+    "publishBy": "2026-11-01"
+   },
+   "publishBy": "2026-11-01",
+   "examples": [
+    {
+     "title": "धनतेरस पर यम का दीपक क्यों जलाते हैं? 😱 दुल्हन ने यमराज को कैसे रोका | Dhanteras Story #s",
+     "url": "https://youtu.be/eaE_eykY2gg",
+     "views": 1919596,
+     "subs": 31100,
+     "viewsPerSub": 61.7,
+     "channel": "Mythanova Tales"
+    },
+    {
+     "title": "धनतेरस पर सोना क्यों खरीदते हैं? असली वजह! 😱 #dhanteras #mythologyfacts #diwali",
+     "url": "https://youtu.be/NUKwwF3ongQ",
+     "views": 9429909,
+     "subs": 198000,
+     "viewsPerSub": 47.6,
+     "channel": "Itihas Shila"
+    },
+    {
+     "title": "धनतेरस पर झाड़ू पर पैर क्यों नहीं लगाते? यम दीपक की सच्ची कथा | धनतेरस विशेष |",
+     "url": "https://youtu.be/PYdsxqkJ6zg",
+     "views": 774410,
+     "subs": 35600,
+     "viewsPerSub": 21.8,
+     "channel": "श्रद्धा दीप"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "शनि देव कथा",
+   "pillar": "mythology-india",
+   "n": 11,
+   "medViewsPerDay": 49107,
+   "medViewsPerSub": 29.79,
+   "share100k": 1,
+   "share1M": 0.73,
+   "score": 3.72,
+   "trending": false,
+   "event": {
+    "id": "shani-2026-10-24",
+    "name": "Saturday (Shani-vaar)",
+    "date": "2026-10-24",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-19"
+   },
+   "publishBy": "2026-10-19",
+   "examples": [
+    {
+     "title": "जब शनिदेव को बैठना पड़ा बाल हनुमान की पूँछ पर! 😱 हैरान कर देने वाली कथा #shorts",
+     "url": "https://youtu.be/QTHkb9KgIXo",
+     "views": 5769474,
+     "subs": 30100,
+     "viewsPerSub": 191.7,
+     "channel": "Atharv Animations - chalo chalo maja Kare "
+    },
+    {
+     "title": "रावण ने शनिदेव को क्यों बाँधकर रखा था? 😱🚩 वजह जानकर हैरान रह जाएंगे | राजन जी महाराज",
+     "url": "https://youtu.be/2uX9lPRlDVk",
+     "views": 2053211,
+     "subs": 11400,
+     "viewsPerSub": 180.1,
+     "channel": "Bhakti Ras Katha"
+    },
+    {
+     "title": "Even Shiva could not hide from Shani, because… शनि की दृष्टि से महादेव भी नहीं बचे 🪔",
+     "url": "https://youtu.be/pVm7yoW6hFE",
+     "views": 625894,
+     "subs": 4490,
+     "viewsPerSub": 139.4,
+     "channel": "Know Your Roots"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "एकादशी की कहानी",
+   "pillar": "mythology-india",
+   "n": 15,
+   "medViewsPerDay": 29612,
+   "medViewsPerSub": 69.36,
+   "share100k": 1,
+   "share1M": 0.8,
+   "score": 3.699,
+   "trending": false,
+   "event": {
+    "id": "tulsi-vivah-2026-10-22",
+    "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+    "date": "2026-10-22",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-10"
+   },
+   "publishBy": "2026-10-10",
+   "examples": [
+    {
+     "title": "एकादशी के दिन अढ़ैया ने बनाया भोजन, फिर हुआ चमत्कार | श्रीराम कथा🙏🚩",
+     "url": "https://youtu.be/QCYUo4xYZ2E",
+     "views": 26015453,
+     "subs": 50800,
+     "viewsPerSub": 512.1,
+     "channel": "Mahakavya Studios"
+    },
+    {
+     "title": "😱 अढ़ैया ने तान दिया धनुष! फिर भगवान श्रीराम के सामने हुआ चमत्कार | एकादशी की कथा",
+     "url": "https://youtu.be/AOJbL1Fpw-M",
+     "views": 3706857,
+     "subs": 9840,
+     "viewsPerSub": 376.7,
+     "channel": "Shikha Stories"
+    },
+    {
+     "title": "एकादशी के दिन भगवान राम ने अढ़ैया के हाथों का भोजन क्यों खाया? अढ़ैया की सच्ची भक्ति की कह",
+     "url": "https://youtu.be/SwN_7gQnz2E",
+     "views": 8375398,
+     "subs": 32800,
+     "viewsPerSub": 255.3,
+     "channel": "धर्म ग्रंथ "
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "शिवरात्रि कथा",
+   "pillar": "mythology-india",
+   "n": 5,
+   "medViewsPerDay": 22108,
+   "medViewsPerSub": 6.54,
+   "share100k": 1,
+   "share1M": 0.8,
+   "score": 3.623,
+   "trending": false,
+   "event": {
+    "id": "masik-shivratri-2026-11-08",
+    "name": "Masik Shivratri",
+    "date": "2026-11-08",
+    "uncertainDays": 0,
+    "publishBy": "2026-11-03"
+   },
+   "publishBy": "2026-11-03",
+   "examples": [
+    {
+     "title": "आज की शिव महापुराण कथा 🔴 पंडित प्रदीप मिश्रा जी महाराज 💥शिव कथा प्रदीप मिश्रा #viral #up",
+     "url": "https://youtu.be/Ixe_Y8XHLGs",
+     "views": 2976940,
+     "subs": 25000,
+     "viewsPerSub": 119.1,
+     "channel": "पंडित प्रदीप मिश्रा"
+    },
+    {
+     "title": "🔴 Online 11 अगस्त सावन शिवरात्रि पूजन सामग्री 2026  #shivratri #sawan #shivling #shortvid",
+     "url": "https://youtu.be/S7wnGROoZL0",
+     "views": 5089528,
+     "subs": 475000,
+     "viewsPerSub": 10.7,
+     "channel": "Shiv bhakti"
+    },
+    {
+     "title": "🔴08 नवम्बर 2026: श्री शिव महापुराण कथा | पूज्य पंडित प्रदीप जी मिश्रा | उन्नाव, UP #Live ",
+     "url": "https://youtu.be/IgPjvVwxYR8",
+     "views": 602027,
+     "subs": 92100,
+     "viewsPerSub": 6.5,
+     "channel": "Kedarnath Live Darshan Official"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "दिवाली लक्ष्मी समुद्र मंथन",
+   "pillar": "mythology-india",
+   "n": 3,
+   "medViewsPerDay": 90173,
+   "medViewsPerSub": 1.72,
+   "share100k": 1,
+   "share1M": 0,
+   "score": 3.59,
+   "trending": false,
+   "event": {
+    "id": "diwali",
+    "name": "Diwali (Lakshmi Puja)",
+    "date": "2026-11-09",
+    "uncertainDays": 2,
+    "publishBy": "2026-10-28"
+   },
+   "publishBy": "2026-10-28",
+   "examples": [
+    {
+     "title": "समुद्र मंथन की संपूर्ण कथा मात्र 20 मिनट में",
+     "url": "https://youtu.be/VkpfPV32T1U",
+     "views": 865326,
+     "subs": 503000,
+     "viewsPerSub": 1.7,
+     "channel": "Divya Katha"
+    },
+    {
+     "title": "माता लक्ष्मी ने गणेश जी को क्यों अपनाया?🪔लक्ष्मी-गणेश और दिवाली की 5 अनसुनी कथाएं | Aksha",
+     "url": "https://youtu.be/eNAEm1psRYw",
+     "views": 428655,
+     "subs": 1330000,
+     "viewsPerSub": 0.3,
+     "channel": "The 7c | Akshat Gupta"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "तुलसी विवाह कथा",
+   "pillar": "mythology-india",
+   "n": 3,
+   "medViewsPerDay": 29348,
+   "medViewsPerSub": 12.11,
+   "share100k": 1,
+   "share1M": 1,
+   "score": 3.585,
+   "trending": false,
+   "event": {
+    "id": "tulsi-vivah-2026-10-22",
+    "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+    "date": "2026-10-22",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-17"
+   },
+   "publishBy": "2026-10-17",
+   "examples": [
+    {
+     "title": "तुलसी के पास दीपक 🪔 और अगरबत्ती 🥢 कैसे जलाएं #tulsi #tulshivivahkatha #tulsivivah",
+     "url": "https://youtu.be/lds4v2VsNUQ",
+     "views": 2617763,
+     "subs": 136000,
+     "viewsPerSub": 19.3,
+     "channel": "Saanidhya Garden"
+    },
+    {
+     "title": "🌿🌺तुलसी विवाह के दिन स्वयं माता तुलसी आईं…फिर जो हुआ। Tulsi Mata Ki katha##TulsiVivah#su",
+     "url": "https://youtu.be/pfK_lLlm7Ig",
+     "views": 2445936,
+     "subs": 202000,
+     "viewsPerSub": 12.1,
+     "channel": "Sushma Kumari"
+    },
+    {
+     "title": "कार्तिक मास तुलसी जी की चमत्कारी कहानी | जब भगवान कृष्ण ने दिया बुढ़िया माई को काँधा।",
+     "url": "https://youtu.be/-hq0v96C5wU",
+     "views": 2926401,
+     "subs": 490000,
+     "viewsPerSub": 6,
+     "channel": "The Random Guy"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "राम अयोध्या वापसी दिवाली कथा",
+   "pillar": "mythology-india",
+   "n": 4,
+   "medViewsPerDay": 75945,
+   "medViewsPerSub": 0.01,
+   "share100k": 0.5,
+   "share1M": 0,
+   "score": 3.418,
+   "trending": false,
+   "event": {
+    "id": "diwali",
+    "name": "Diwali (Lakshmi Puja)",
+    "date": "2026-11-09",
+    "uncertainDays": 2,
+    "publishBy": "2026-10-28"
+   },
+   "publishBy": "2026-10-28",
+   "examples": [],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "अमावस्या कथा",
+   "pillar": "mythology-india",
+   "n": 6,
+   "medViewsPerDay": 19959,
+   "medViewsPerSub": 7.05,
+   "share100k": 1,
+   "share1M": 0.33,
+   "score": 3.404,
+   "trending": false,
+   "event": {
+    "id": "amavasya-2026-11-09",
+    "name": "Amavasya (No Moon)",
+    "date": "2026-11-09",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-28"
+   },
+   "publishBy": "2026-10-28",
+   "examples": [
+    {
+     "title": "पितृपक्ष समाप्त होने से पहले जरूर सुनें यह कथा | भगवान विष्णु ने गरुड़ जी को बताया पितृधर्",
+     "url": "https://youtu.be/n1p-YB0mBlg",
+     "views": 977341,
+     "subs": 5950,
+     "viewsPerSub": 164.3,
+     "channel": "मोक्ष ज्योति "
+    },
+    {
+     "title": "अमावस्या आणि पौर्णिमा दोन बहिणींची सत्यकथा | Purnima ani amavasya chi katha in marathi",
+     "url": "https://youtu.be/-mPPG6eZ3vg",
+     "views": 1197135,
+     "subs": 24900,
+     "viewsPerSub": 48.1,
+     "channel": "Sparsh Marathi"
+    },
+    {
+     "title": "आषाढ़ अमावस्या कथा | इस कथा को सुनते ही पितरों का आशीर्वाद और सुख-समृद्धि की प्राप्ति होती",
+     "url": "https://youtu.be/Ot2ThDJ3-so",
+     "views": 401162,
+     "subs": 39800,
+     "viewsPerSub": 10.1,
+     "channel": "Bhairam Ganga"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "शरद पूर्णिमा कृष्ण रास",
+   "pillar": "mythology-india",
+   "n": 3,
+   "medViewsPerDay": 37416,
+   "medViewsPerSub": 10.63,
+   "share100k": 1,
+   "share1M": 0.33,
+   "score": 3.38,
+   "trending": false,
+   "event": {
+    "id": "sharad-purnima",
+    "name": "Sharad Purnima",
+    "date": "2026-10-25",
+    "uncertainDays": 1,
+    "publishBy": "2026-10-20"
+   },
+   "publishBy": "2026-10-20",
+   "examples": [
+    {
+     "title": "शरद पूर्णिमा की रहस्यमयी कथा 🌕 | चंद्रदेव के अमृत का चमत्कार | माँ लक्ष्मी की महिमा #shor",
+     "url": "https://youtu.be/OcQOF2c0U4Q",
+     "views": 2127863,
+     "subs": 101000,
+     "viewsPerSub": 21.1,
+     "channel": "DivyaChronix"
+    },
+    {
+     "title": "आखिर शरद पूर्णिमा क्यों मनाई जाती है? 🌕 माता लक्ष्मी और चंद्रदेव की पौराणिक कथा 🙏#Sharad",
+     "url": "https://youtu.be/MOMyX3-5rXw",
+     "views": 556775,
+     "subs": 52400,
+     "viewsPerSub": 10.6,
+     "channel": "Ajeetvlogs "
+    },
+    {
+     "title": "sharad purnima 25 october 2026❤️🙏🏻🙌🏻 #radhakrishna #maa #krishna #kripa #bhakti #bhagw",
+     "url": "https://youtu.be/qVy6yUwcXwo",
+     "views": 296739,
+     "subs": 624000,
+     "viewsPerSub": 0.5,
+     "channel": "Maa Adishakti meditation kendra"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "रामायण कथा",
+   "pillar": "mythology-india",
+   "n": 6,
+   "medViewsPerDay": 166562,
+   "medViewsPerSub": 180.05,
+   "share100k": 1,
+   "share1M": 1,
+   "score": 3.362,
+   "trending": false,
+   "event": null,
+   "publishBy": null,
+   "examples": [
+    {
+     "title": "सुरसा की परीक्षा में हनुमान जी का अद्भुत रूप | Hanuman Ji Ki Leela 🚩 #Hanuman #Ramayan",
+     "url": "https://youtu.be/njJog3cHIxU",
+     "views": 3642133,
+     "subs": 4430,
+     "viewsPerSub": 822.1,
+     "channel": "Shreeji kripa"
+    },
+    {
+     "title": "🚩 सीता हरण से अशोक वाटिका तक | सम्पूर्ण रामायण कथा | हनुमान जी का चमत्कार #trending #shor",
+     "url": "https://youtu.be/IqqssbTtw64",
+     "views": 2964061,
+     "subs": 6780,
+     "viewsPerSub": 437.2,
+     "channel": "Ram bhajan"
+    },
+    {
+     "title": "Ramayan Ep 95 | समुद्र पार करते समय हनुमान जी के सामने आया मैनाक पर्वत! 😱🌊🔥 |",
+     "url": "https://youtu.be/Ys3ZYT4707I",
+     "views": 5826586,
+     "subs": 22900,
+     "viewsPerSub": 254.4,
+     "channel": "Trinetra VFX\n"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "देव दीपावली कथा",
+   "pillar": "mythology-india",
+   "n": 5,
+   "medViewsPerDay": 41860,
+   "medViewsPerSub": 6.34,
+   "share100k": 1,
+   "share1M": 0.2,
+   "score": 3.307,
+   "trending": false,
+   "event": {
+    "id": "kartik-purnima-2026-10-26",
+    "name": "Kartik Purnima (Dev Diwali)",
+    "date": "2026-10-26",
+    "uncertainDays": 0,
+    "publishBy": "2026-10-21"
+   },
+   "publishBy": "2026-10-21",
+   "examples": [
+    {
+     "title": "आज की शिव महापुराण कथा🔴 प्रदीप मिश्रा जी | दीपावली की रात को करें उपाय #pandit_pradeep_ji",
+     "url": "https://youtu.be/z-Vw2Vd2zbU",
+     "views": 427762,
+     "subs": 22200,
+     "viewsPerSub": 19.3,
+     "channel": "@PanditPradeepMishraji"
+    },
+    {
+     "title": "आज की शिव महापुराण कथा🔴 प्रदीप मिश्रा जी | 8 नवंबर दीपावली का उपाय #pandit_pradeep_ji_mis",
+     "url": "https://youtu.be/5ihrNsfpD5M",
+     "views": 424560,
+     "subs": 22200,
+     "viewsPerSub": 19.1,
+     "channel": "@PanditPradeepMishraji"
+    },
+    {
+     "title": "दिवाली के 5 दिन का महाउपाय 1बेलपत्र 1कमलगट्टा 1पीला चावल शिव को चढ़ाए #shorts #viral #vide",
+     "url": "https://youtu.be/_lHZ3_Plv6I",
+     "views": 272631,
+     "subs": 43000,
+     "viewsPerSub": 6.3,
+     "channel": "Dimpi Creation "
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "पूर्णिमा व्रत कथा",
+   "pillar": "mythology-india",
+   "n": 6,
+   "medViewsPerDay": 48928,
+   "medViewsPerSub": 2.69,
+   "share100k": 1,
+   "share1M": 0.17,
+   "score": 3.261,
+   "trending": false,
+   "event": {
+    "id": "purnima-2026-11-24",
+    "name": "Purnima (Full Moon)",
+    "date": "2026-11-24",
+    "uncertainDays": 0,
+    "publishBy": "2026-11-12"
+   },
+   "publishBy": "2026-11-12",
+   "examples": [
+    {
+     "title": "गुरु पूर्णिमा की कथा ~ Guru Poornima Ki Katha | Guru Purnima Ki Kahani | Guru Ki Mahima",
+     "url": "https://youtu.be/d6mx-N6fyW4",
+     "views": 1563316,
+     "subs": 29100,
+     "viewsPerSub": 53.7,
+     "channel": "Gyan Dharmik Katha"
+    },
+    {
+     "title": "🍀 गुरु पूर्णिमा व्रत कथा | आज के दिन अवश्य सुनें | गुरु पूर्णिमा की संपूर्ण कथा | #gurupu",
+     "url": "https://youtu.be/SLi4Tqnhp2g",
+     "views": 982273,
+     "subs": 36500,
+     "viewsPerSub": 26.9,
+     "channel": "HAR DIN KATHA "
+    },
+    {
+     "title": "शरद पूर्णिमा की कथा ~ Sharad Purnima Vrat Katha | Sharad Purnima ki Kahani | Sharad Purnim",
+     "url": "https://youtu.be/7ov2nTthrQg",
+     "views": 988361,
+     "subs": 213000,
+     "viewsPerSub": 4.6,
+     "channel": "Gyan Adhyatmik Katha"
+    }
+   ],
+   "pillarLabel": "Indian mythology (all traditions, not one god)"
+  },
+  {
+   "topic": "व्यवहार मनोविज्ञान",
+   "pillar": "psychology",
+   "n": 4,
+   "medViewsPerDay": 104063,
+   "medViewsPerSub": 11.02,
+   "share100k": 1,
+   "share1M": 0.5,
+   "score": 2.875,
+   "trending": false,
+   "event": null,
+   "publishBy": null,
+   "examples": [
+    {
+     "title": "ये 1 गुप्त विद्या समझ लो, रिश्तों में आकर्षण बढ़ेगा! | Female Psychology #Shorts",
+     "url": "https://youtu.be/v4m6Nvfx4_o",
+     "views": 2035819,
+     "subs": 11000,
+     "viewsPerSub": 185.1,
+     "channel": "Payuu"
+    },
+    {
+     "title": "जब गुस्सा आपके ही खिलाफ काम करने लगे | Human Behavior",
+     "url": "https://youtu.be/Q_hTtdptBwI",
+     "views": 932614,
+     "subs": 80300,
+     "viewsPerSub": 11.6,
+     "channel": "Deep Life Lessons "
+    },
+    {
+     "title": "10 Psychology Tricks That Make You Difficult to Manipuate",
+     "url": "https://youtu.be/BGqgrUKdr1s",
+     "views": 6687590,
+     "subs": 641000,
+     "viewsPerSub": 10.4,
+     "channel": "Abhasa - Mental Health"
+    }
+   ],
+   "pillarLabel": "Psychology (everyday mind, behaviour, relationships)"
+  },
+  {
+   "topic": "psychology facts hindi",
+   "pillar": "psychology",
+   "n": 6,
+   "medViewsPerDay": 20880,
+   "medViewsPerSub": 24.09,
+   "share100k": 1,
+   "share1M": 1,
+   "score": 2.74,
+   "trending": false,
+   "event": null,
+   "publishBy": null,
+   "examples": [
+    {
+     "title": "5 जानवरों की सोच जो आपकी ज़िंदगी बदल देगी | Animal Mindset Psychology | #shorts #psycholog",
+     "url": "https://youtu.be/3ifCSm8gZjg",
+     "views": 2829960,
+     "subs": 53000,
+     "viewsPerSub": 53.4,
+     "channel": "Layer Unlocked"
+    },
+    {
+     "title": "Information Distortion: Kaise Sach Dheere-Dheere Badal Jaata Hai | #shorts #psychology",
+     "url": "https://youtu.be/zMCCFbEKTOk",
+     "views": 2109049,
+     "subs": 53000,
+     "viewsPerSub": 39.8,
+     "channel": "Layer Unlocked"
+    },
+    {
+     "title": "जिसने ताने नहीं सुने, वही जीत गया | Human Psychology",
+     "url": "https://youtu.be/xRJKj_HDuLI",
+     "views": 4692761,
+     "subs": 189000,
+     "viewsPerSub": 24.8,
+     "channel": "Deep Life Lessons – Psychology"
+    }
+   ],
+   "pillarLabel": "Psychology (everyday mind, behaviour, relationships)"
+  },
+  {
+   "topic": "human behavior psychology hindi",
+   "pillar": "psychology",
+   "n": 7,
+   "medViewsPerDay": 38161,
+   "medViewsPerSub": 10.3,
+   "share100k": 1,
+   "share1M": 0.71,
+   "score": 2.716,
+   "trending": false,
+   "event": null,
+   "publishBy": null,
+   "examples": [
+    {
+     "title": "Information Distortion: Kaise Sach Dheere-Dheere Badal Jaata Hai | #shorts #psychology",
+     "url": "https://youtu.be/zMCCFbEKTOk",
+     "views": 2109049,
+     "subs": 53000,
+     "viewsPerSub": 39.8,
+     "channel": "Layer Unlocked"
+    },
+    {
+     "title": "जिसने ताने नहीं सुने, वही जीत गया | Human Psychology",
+     "url": "https://youtu.be/xRJKj_HDuLI",
+     "views": 4692761,
+     "subs": 189000,
+     "viewsPerSub": 24.8,
+     "channel": "Deep Life Lessons – Psychology"
+    },
+    {
+     "title": "जब गुस्सा आपके ही खिलाफ काम करने लगे | Human Behavior",
+     "url": "https://youtu.be/Q_hTtdptBwI",
+     "views": 932614,
+     "subs": 80300,
+     "viewsPerSub": 11.6,
+     "channel": "Deep Life Lessons "
+    }
+   ],
+   "pillarLabel": "Psychology (everyday mind, behaviour, relationships)"
+  },
+  {
+   "topic": "ग्रीक पौराणिक कथा",
+   "pillar": "mythology-world",
+   "n": 5,
+   "medViewsPerDay": 18207,
+   "medViewsPerSub": 58.47,
+   "share100k": 1,
+   "share1M": 0.6,
+   "score": 2.665,
+   "trending": false,
+   "event": null,
+   "publishBy": null,
+   "examples": [
+    {
+     "title": "Every Mythology in the World Explained",
+     "url": "https://youtu.be/6KvVOIqUHs4",
+     "views": 1253829,
+     "subs": 10900,
+     "viewsPerSub": 115,
+     "channel": "Mythological Man"
+    },
+    {
+     "title": "Every Monster From Greek Mythology Explained in 12 Minutes",
+     "url": "https://youtu.be/8DL_5TzX9hU",
+     "views": 681953,
+     "subs": 10900,
+     "viewsPerSub": 62.6,
+     "channel": "Mythological Man"
+    },
+    {
+     "title": "Every God in Greek Mythology Explained in 25 Minutes",
+     "url": "https://youtu.be/sp--PzI3Yz0",
+     "views": 625636,
+     "subs": 10700,
+     "viewsPerSub": 58.5,
+     "channel": "Yorp"
+    }
+   ],
+   "pillarLabel": "World mythology (Greek, Norse, Egyptian, Mesopotamian, Japanese, Maya...)"
+  }
+ ],
+ "trending_now_india": [
+  {
+   "title": "उत्तर भारत",
+   "traffic": "500+"
+  },
+  {
+   "title": "अनंत कुमार सिंह",
+   "traffic": "1000+"
+  },
+  {
+   "title": "kaviya maran",
+   "traffic": "500+"
+  },
+  {
+   "title": "ദീപാവലി",
+   "traffic": "500+"
+  },
+  {
+   "title": "ashutosh sharma",
+   "traffic": "500+"
+  },
+  {
+   "title": "kangana ranaut",
+   "traffic": "200+"
+  },
+  {
+   "title": "india vs pakistan u19 cricket match",
+   "traffic": "20000+"
+  },
+  {
+   "title": "pokhara avengers vs karnali yaks",
+   "traffic": "500+"
+  },
+  {
+   "title": "arpita singh",
+   "traffic": "500+"
+  },
+  {
+   "title": "सोने चांदी का भाव",
+   "traffic": "200+"
+  }
+ ],
+ "events": [
+  {
+   "id": "tulsi-vivah-2026-10-22",
+   "name": "Tulsi Vivah / Prabodhini (Dev Uthani) Ekadashi",
+   "date": "2026-10-22",
+   "uncertain_days": 0
+  },
+  {
+   "id": "shani-2026-10-24",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-10-24",
+   "uncertain_days": 0
+  },
+  {
+   "id": "sharad-purnima",
+   "name": "Sharad Purnima",
+   "date": "2026-10-25",
+   "uncertain_days": 1
+  },
+  {
+   "id": "kartik-purnima-2026-10-26",
+   "name": "Kartik Purnima (Dev Diwali)",
+   "date": "2026-10-26",
+   "uncertain_days": 0
+  },
+  {
+   "id": "karwa-chauth",
+   "name": "Karwa Chauth",
+   "date": "2026-10-29",
+   "uncertain_days": 1
+  },
+  {
+   "id": "shani-2026-10-31",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-10-31",
+   "uncertain_days": 0
+  },
+  {
+   "id": "ekadashi-2026-11-05",
+   "name": "Krishna Ekadashi",
+   "date": "2026-11-05",
+   "uncertain_days": 0
+  },
+  {
+   "id": "dhanteras",
+   "name": "Dhanteras",
+   "date": "2026-11-06",
+   "uncertain_days": 0
+  },
+  {
+   "id": "shani-2026-11-07",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-07",
+   "uncertain_days": 0
+  },
+  {
+   "id": "masik-shivratri-2026-11-08",
+   "name": "Masik Shivratri",
+   "date": "2026-11-08",
+   "uncertain_days": 0
+  },
+  {
+   "id": "diwali",
+   "name": "Diwali (Lakshmi Puja)",
+   "date": "2026-11-09",
+   "uncertain_days": 2
+  },
+  {
+   "id": "amavasya-2026-11-09",
+   "name": "Amavasya (No Moon)",
+   "date": "2026-11-09",
+   "uncertain_days": 0
+  },
+  {
+   "id": "govardhan",
+   "name": "Govardhan Puja",
+   "date": "2026-11-10",
+   "uncertain_days": 1
+  },
+  {
+   "id": "shani-2026-11-14",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-14",
+   "uncertain_days": 0
+  },
+  {
+   "id": "vaikuntha-ekadashi-2026-11-20",
+   "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
+   "date": "2026-11-20",
+   "uncertain_days": 0
+  },
+  {
+   "id": "shani-2026-11-21",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-21",
+   "uncertain_days": 0
+  },
+  {
+   "id": "purnima-2026-11-24",
+   "name": "Purnima (Full Moon)",
+   "date": "2026-11-24",
+   "uncertain_days": 0
+  },
+  {
+   "id": "shani-2026-11-28",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2026-11-28",
+   "uncertain_days": 0
+  }
+ ],
+ "errors": [],
+ "method": "Per pillar: seed queries are expanded every run with Google's live autocomplete suggestions (real search demand, not a fixed list). YouTube = official Data API outlier ratio. Instagram = real competitor accounts via Graph API. Facebook = proxy (no public API). Google Trends daily RSS cross-referenced for timeliness. Survivorship bias and competition are not measured; this ranks demand signals, it does not predict virality."
+}
