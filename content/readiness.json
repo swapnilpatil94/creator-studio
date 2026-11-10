@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-09T10:04:26.740Z",
+ "generated": "2026-11-10T10:14:08.389Z",
  "mode": "remote",
- "from": "2026-11-09",
+ "from": "2026-11-10",
  "days": [
-  {
-   "date": "2026-11-09",
-   "cards": [
-    {
-     "id": "wbac98fbd",
-     "slug": "narakasura-satyabhama",
-     "title": "सत्यभामा ने नरकासुर का वध कैसे किया?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-10",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-23",
+   "cards": [
+    {
+     "id": "w4d1df1eb",
+     "slug": "hanuman-sanjeevani-timeline",
+     "title": "संजीवनी की रात: कालनेमि का जाल",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-09",
    "2026-11-10",
    "2026-11-11",
    "2026-11-12",
    "2026-11-13",
    "2026-11-14",
-   "2026-11-15"
+   "2026-11-15",
+   "2026-11-16"
   ],
   "ok": false
  }
