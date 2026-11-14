@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-13T09:51:37.365Z",
+ "generated": "2026-11-14T09:15:17.438Z",
  "mode": "remote",
- "from": "2026-11-13",
+ "from": "2026-11-14",
  "days": [
-  {
-   "date": "2026-11-13",
-   "cards": [
-    {
-     "id": "w8a84c41e",
-     "slug": "china-nuwa-mends-sky",
-     "title": "आकाश में छेद हो गया: नुवा ने उसे पाँच रंग के पत्थरों से कैसे जोड़ा?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-14",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-27",
+   "cards": [
+    {
+     "id": "w003bd760",
+     "slug": "polynesia-maui-sun",
+     "title": "माउई ने सूरज को रस्सी से क्यों बाँधा?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-13",
    "2026-11-14",
    "2026-11-15",
    "2026-11-16",
    "2026-11-17",
    "2026-11-18",
-   "2026-11-19"
+   "2026-11-19",
+   "2026-11-20"
   ],
   "ok": false
  }
