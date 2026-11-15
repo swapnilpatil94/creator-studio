@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-14T09:15:17.438Z",
+ "generated": "2026-11-15T09:44:55.343Z",
  "mode": "remote",
- "from": "2026-11-14",
+ "from": "2026-11-15",
  "days": [
-  {
-   "date": "2026-11-14",
-   "cards": [
-    {
-     "id": "wad0bf33b",
-     "slug": "brihaspati-tara-moon-budha",
-     "title": "चंद्रमा ने जिसे चुराया: तारा, बृहस्पति और बुध का जन्म",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-15",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-28",
+   "cards": [
+    {
+     "id": "w7a21b740",
+     "slug": "gokarna-mahabaleshwar-linga",
+     "title": "गोकर्ण के महाबलेश्वर: रावण के हाथ से छूटा शिवलिंग",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-14",
    "2026-11-15",
    "2026-11-16",
    "2026-11-17",
    "2026-11-18",
    "2026-11-19",
-   "2026-11-20"
+   "2026-11-20",
+   "2026-11-21"
   ],
   "ok": false
  }
