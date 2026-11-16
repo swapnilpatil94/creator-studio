@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-15T09:44:55.343Z",
+ "generated": "2026-11-16T10:00:56.404Z",
  "mode": "remote",
- "from": "2026-11-15",
+ "from": "2026-11-16",
  "days": [
-  {
-   "date": "2026-11-15",
-   "cards": [
-    {
-     "id": "wfaa4da7d",
-     "slug": "mesoamerica-fifth-sun",
-     "title": "नानाउआत्ज़िन आग में क्यों कूदा? पाँचवें सूर्य की कथा",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-16",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-29",
+   "cards": [
+    {
+     "id": "w70df6aa0",
+     "slug": "egypt-sekhmet-red-beer",
+     "title": "सेख़मेत ने इंसानों को लगभग खत्म क्यों कर दिया था?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-15",
    "2026-11-16",
    "2026-11-17",
    "2026-11-18",
    "2026-11-19",
    "2026-11-20",
-   "2026-11-21"
+   "2026-11-21",
+   "2026-11-22"
   ],
   "ok": false
  }
