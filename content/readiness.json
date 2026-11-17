@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-16T10:00:56.404Z",
+ "generated": "2026-11-17T10:58:11.937Z",
  "mode": "remote",
- "from": "2026-11-16",
+ "from": "2026-11-17",
  "days": [
-  {
-   "date": "2026-11-16",
-   "cards": [
-    {
-     "id": "w4c0e67a3",
-     "slug": "kamadeva-burnt-rati-grief",
-     "title": "कामदेव की राख और रति का विलाप",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-17",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-11-30",
+   "cards": [
+    {
+     "id": "w773c0b42",
+     "slug": "kamakhya-ambubachi",
+     "title": "कामाख्या: जिस देवी को हर साल रजस्वला माना जाता है",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-16",
    "2026-11-17",
    "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
-   "2026-11-22"
+   "2026-11-22",
+   "2026-11-23"
   ],
   "ok": false
  }
