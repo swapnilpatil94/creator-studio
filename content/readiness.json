@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-17T10:58:11.937Z",
+ "generated": "2026-11-18T10:30:38.377Z",
  "mode": "remote",
- "from": "2026-11-17",
+ "from": "2026-11-18",
  "days": [
-  {
-   "date": "2026-11-17",
-   "cards": [
-    {
-     "id": "w9b8db61b",
-     "slug": "slavic-koschei-needle",
-     "title": "कोशेई अमर क्यों था? उसकी मौत सुई में कैसे छिपी थी",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-18",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-01",
+   "cards": [
+    {
+     "id": "w3041be89",
+     "slug": "norse-odin-runes-sacrifice",
+     "title": "ओडिन नौ रातें पेड़ पर क्यों लटके रहे?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-17",
    "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
    "2026-11-22",
-   "2026-11-23"
+   "2026-11-23",
+   "2026-11-24"
   ],
   "ok": false
  }
