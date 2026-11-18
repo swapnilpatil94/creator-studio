@@ -1,75 +1,10 @@
 {
  "source": "computed: hindu-panchang (sunrise tithi, New Delhi reference) -- not scraped",
- "generated_at": "2026-11-03T07:06:26.980Z",
- "from": "2026-11-04",
+ "generated_at": "2026-11-18T07:49:55.545Z",
+ "from": "2026-11-19",
  "days": 90,
  "count": 27,
  "events": [
-  {
-   "id": "ekadashi-2026-11-05",
-   "name": "Krishna Ekadashi",
-   "date": "2026-11-05",
-   "tithi": "Ekadasi",
-   "masa": "Karttika",
-   "tags": [
-    "ekadashi",
-    "vishnu",
-    "vrat"
-   ],
-   "mood": "upay"
-  },
-  {
-   "id": "shani-2026-11-07",
-   "name": "Saturday (Shani-vaar)",
-   "date": "2026-11-07",
-   "tithi": "Trayodasi",
-   "masa": "Karttika",
-   "tags": [
-    "shani",
-    "hanuman",
-    "saturday"
-   ],
-   "mood": "upay"
-  },
-  {
-   "id": "masik-shivratri-2026-11-08",
-   "name": "Masik Shivratri",
-   "date": "2026-11-08",
-   "tithi": "Chaturdasi",
-   "masa": "Karttika",
-   "tags": [
-    "masikshivratri",
-    "shiva",
-    "rahasya"
-   ],
-   "mood": "rahasya"
-  },
-  {
-   "id": "amavasya-2026-11-09",
-   "name": "Amavasya (No Moon)",
-   "date": "2026-11-09",
-   "tithi": "Amavasya",
-   "masa": "Karttika",
-   "tags": [
-    "amavasya",
-    "pitru",
-    "naraka"
-   ],
-   "mood": "bhay"
-  },
-  {
-   "id": "shani-2026-11-14",
-   "name": "Saturday (Shani-vaar)",
-   "date": "2026-11-14",
-   "tithi": "Panchami",
-   "masa": "Karttika",
-   "tags": [
-    "shani",
-    "hanuman",
-    "saturday"
-   ],
-   "mood": "upay"
-  },
   {
    "id": "vaikuntha-ekadashi-2026-11-20",
    "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
@@ -350,6 +285,71 @@
    "name": "Saturday (Shani-vaar)",
    "date": "2027-01-30",
    "tithi": "Navami",
+   "masa": "Magha",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2027-02-02",
+   "name": "Krishna Ekadashi",
+   "date": "2027-02-02",
+   "tithi": "Ekadasi",
+   "masa": "Magha",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "masik-shivratri-2027-02-05",
+   "name": "Masik Shivratri",
+   "date": "2027-02-05",
+   "tithi": "Chaturdasi",
+   "masa": "Magha",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ],
+   "mood": "rahasya"
+  },
+  {
+   "id": "shani-2027-02-06",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-06",
+   "tithi": "Amavasya",
+   "masa": "Magha",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "amavasya-2027-02-06",
+   "name": "Amavasya (No Moon)",
+   "date": "2027-02-06",
+   "tithi": "Amavasya",
+   "masa": "Magha",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "mood": "bhay"
+  },
+  {
+   "id": "shani-2027-02-13",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-13",
+   "tithi": "Sapthami",
    "masa": "Magha",
    "tags": [
     "shani",

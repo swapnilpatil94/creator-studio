@@ -1,5 +1,5 @@
 {
- "source": "web search 2026-10-18 (SAHMS, Dipika, HinduPad, Drik Panchang, SmartPuja, Calendarific); lunar dates differ by 1-2 days between sources and cities. `uncertain_days` is the spread we saw. The engine only uses these dates for planning windows (publish a few days BEFORE), never to state a date publicly: confirm with a panchang for your city before posting a date. + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-03",
+ "source": "web search 2026-10-18 (SAHMS, Dipika, HinduPad, Drik Panchang, SmartPuja, Calendarific); lunar dates differ by 1-2 days between sources and cities. `uncertain_days` is the spread we saw. The engine only uses these dates for planning windows (publish a few days BEFORE), never to state a date publicly: confirm with a panchang for your city before posting a date. + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-18",
  "events": [
   {
    "id": "ashtami",
@@ -610,6 +610,66 @@
    ]
   },
   {
+   "id": "ekadashi-2027-02-02",
+   "name": "Krishna Ekadashi",
+   "date": "2027-02-02",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "एकादशी व्रत कथा",
+    "एकादशी की कहानी"
+   ]
+  },
+  {
+   "id": "masik-shivratri-2027-02-05",
+   "name": "Masik Shivratri",
+   "date": "2027-02-05",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "शिवरात्रि कथा",
+    "शिव पूजा कथा"
+   ]
+  },
+  {
+   "id": "shani-2027-02-06",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-06",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "शनि देव कथा",
+    "शनि व्रत कथा"
+   ]
+  },
+  {
+   "id": "amavasya-2027-02-06",
+   "name": "Amavasya (No Moon)",
+   "date": "2027-02-06",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "अमावस्या कथा",
+    "पितृ दोष कथा"
+   ]
+  },
+  {
    "id": "vasant-panchami",
    "name": "Vasant Panchami",
    "date": "2027-02-11",
@@ -619,6 +679,21 @@
    "uncertain_days": 1,
    "queries": [
     "सरस्वती उत्पत्ति कथा"
+   ]
+  },
+  {
+   "id": "shani-2027-02-13",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-13",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "शनि देव कथा",
+    "शनि व्रत कथा"
    ]
   },
   {

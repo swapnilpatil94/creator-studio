@@ -1,5 +1,5 @@
 {
- "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-03",
+ "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-18",
  "events": [
   {
    "id": "ashtami",
@@ -229,6 +229,36 @@
     "purnima",
     "moon",
     "vrat"
+   ]
+  },
+  {
+   "id": "ekadashi-2027-02-02",
+   "name": "Krishna Ekadashi",
+   "date": "2027-02-02",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
+   ]
+  },
+  {
+   "id": "masik-shivratri-2027-02-05",
+   "name": "Masik Shivratri",
+   "date": "2027-02-05",
+   "tags": [
+    "masikshivratri",
+    "shiva",
+    "rahasya"
+   ]
+  },
+  {
+   "id": "amavasya-2027-02-06",
+   "name": "Amavasya (No Moon)",
+   "date": "2027-02-06",
+   "tags": [
+    "amavasya",
+    "pitru",
+    "naraka"
    ]
   }
  ],
