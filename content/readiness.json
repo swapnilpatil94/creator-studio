@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-18T10:30:38.377Z",
+ "generated": "2026-11-19T10:37:48.166Z",
  "mode": "remote",
- "from": "2026-11-18",
+ "from": "2026-11-19",
  "days": [
-  {
-   "date": "2026-11-18",
-   "cards": [
-    {
-     "id": "w402463b8",
-     "slug": "jada-bharata-deer",
-     "title": "जड़ भरत: राजा हिरण के रूप में क्यों जन्मे?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-19",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-02",
+   "cards": [
+    {
+     "id": "we9635474",
+     "slug": "yayati-puru-youth",
+     "title": "पुरु ने पिता के लिए अपना यौवन क्यों दे दिया?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
    "2026-11-22",
    "2026-11-23",
-   "2026-11-24"
+   "2026-11-24",
+   "2026-11-25"
   ],
   "ok": false
  }
