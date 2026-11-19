@@ -1,5 +1,5 @@
 {
- "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-18",
+ "source": "web search 2026-10-17 (smartpuja, drikpanchang listings); sources disagree by 1-2 days; confirm with a panchang for your city + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-19",
  "events": [
   {
    "id": "ashtami",
@@ -259,6 +259,16 @@
     "amavasya",
     "pitru",
     "naraka"
+   ]
+  },
+  {
+   "id": "ekadashi-2027-02-17",
+   "name": "Shukla Ekadashi",
+   "date": "2027-02-17",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
    ]
   }
  ],

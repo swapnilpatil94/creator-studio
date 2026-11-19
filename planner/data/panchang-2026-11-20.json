@@ -1,9 +1,9 @@
 {
  "source": "computed: hindu-panchang (sunrise tithi, New Delhi reference) -- not scraped",
- "generated_at": "2026-11-18T07:49:55.545Z",
- "from": "2026-11-19",
+ "generated_at": "2026-11-19T07:45:28.891Z",
+ "from": "2026-11-20",
  "days": 90,
- "count": 27,
+ "count": 28,
  "events": [
   {
    "id": "vaikuntha-ekadashi-2026-11-20",
@@ -355,6 +355,19 @@
     "shani",
     "hanuman",
     "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "ekadashi-2027-02-17",
+   "name": "Shukla Ekadashi",
+   "date": "2027-02-17",
+   "tithi": "Ekadasi",
+   "masa": "Phalguna",
+   "tags": [
+    "ekadashi",
+    "vishnu",
+    "vrat"
    ],
    "mood": "upay"
   }
