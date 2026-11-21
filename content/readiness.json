@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-20T10:18:20.010Z",
+ "generated": "2026-11-21T10:02:54.065Z",
  "mode": "remote",
- "from": "2026-11-20",
+ "from": "2026-11-21",
  "days": [
-  {
-   "date": "2026-11-20",
-   "cards": [
-    {
-     "id": "w02a85427",
-     "slug": "vishnu-sleep-chaturmas-end",
-     "title": "चार महीने विष्णु क्यों सोते हैं? चातुर्मास का रहस्य",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-21",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-04",
+   "cards": [
+    {
+     "id": "w3de49224",
+     "slug": "hayagriva-vedas",
+     "title": "घोड़े के सिर वाले विष्णु: हयग्रीव ने वेद कैसे बचाए?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-20",
    "2026-11-21",
    "2026-11-22",
    "2026-11-23",
    "2026-11-24",
    "2026-11-25",
-   "2026-11-26"
+   "2026-11-26",
+   "2026-11-27"
   ],
   "ok": false
  }
