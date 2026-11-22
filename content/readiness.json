@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-21T10:02:54.065Z",
+ "generated": "2026-11-22T10:05:00.066Z",
  "mode": "remote",
- "from": "2026-11-21",
+ "from": "2026-11-22",
  "days": [
-  {
-   "date": "2026-11-21",
-   "cards": [
-    {
-     "id": "w910eda21",
-     "slug": "ajamila-yamdoots-turned-back",
-     "title": "जब यमदूत एक पापी को लेने आए और लौट गए",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-22",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-05",
+   "cards": [
+    {
+     "id": "wd7099167",
+     "slug": "duryodhana-heaven-brothers-hell",
+     "title": "स्वर्ग में दुर्योधन, नर्क में भाई: युधिष्ठिर के साथ आख़िरी छल",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-21",
    "2026-11-22",
    "2026-11-23",
    "2026-11-24",
    "2026-11-25",
    "2026-11-26",
-   "2026-11-27"
+   "2026-11-27",
+   "2026-11-28"
   ],
   "ok": false
  }
