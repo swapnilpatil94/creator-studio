@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-23T11:01:31.635Z",
+ "generated": "2026-11-24T12:48:12.860Z",
  "mode": "remote",
- "from": "2026-11-23",
+ "from": "2026-11-24",
  "days": [
-  {
-   "date": "2026-11-23",
-   "cards": [
-    {
-     "id": "w4d1df1eb",
-     "slug": "hanuman-sanjeevani-timeline",
-     "title": "संजीवनी की रात: कालनेमि का जाल",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-24",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-07",
+   "cards": [
+    {
+     "id": "w8d682ed7",
+     "slug": "mandodari-untold",
+     "title": "मंदोदरी: रावण की रानी ने उसे बार-बार क्या चेताया?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-23",
    "2026-11-24",
    "2026-11-25",
    "2026-11-26",
    "2026-11-27",
    "2026-11-28",
-   "2026-11-29"
+   "2026-11-29",
+   "2026-11-30"
   ],
   "ok": false
  }
