@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-24T12:48:12.860Z",
+ "generated": "2026-11-25T11:34:22.049Z",
  "mode": "remote",
- "from": "2026-11-24",
+ "from": "2026-11-25",
  "days": [
-  {
-   "date": "2026-11-24",
-   "cards": [
-    {
-     "id": "w8fcf13bb",
-     "slug": "persia-zahhak-snakes",
-     "title": "ज़हाक के कंधों पर साँप क्यों उग आए?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-25",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-08",
+   "cards": [
+    {
+     "id": "w9d99ff5f",
+     "slug": "mesopotamia-inanna-descent",
+     "title": "इनाना सात दरवाज़ों से पाताल क्यों गईं?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-24",
    "2026-11-25",
    "2026-11-26",
    "2026-11-27",
    "2026-11-28",
    "2026-11-29",
-   "2026-11-30"
+   "2026-11-30",
+   "2026-12-01"
   ],
   "ok": false
  }
