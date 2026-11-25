@@ -1,51 +1,10 @@
 {
  "source": "computed: hindu-panchang (sunrise tithi, New Delhi reference) -- not scraped",
- "generated_at": "2026-11-19T07:45:28.891Z",
- "from": "2026-11-20",
+ "generated_at": "2026-11-25T08:58:26.414Z",
+ "from": "2026-11-26",
  "days": 90,
- "count": 28,
+ "count": 27,
  "events": [
-  {
-   "id": "vaikuntha-ekadashi-2026-11-20",
-   "name": "Vaikuntha Ekadashi / Mokshada Ekadashi / Gita Jayanti",
-   "date": "2026-11-20",
-   "tithi": "Ekadasi",
-   "masa": "Margasira",
-   "tags": [
-    "vaikuntha-ekadashi",
-    "gita-jayanti",
-    "ekadashi",
-    "krishna",
-    "moksha"
-   ],
-   "mood": "gyan"
-  },
-  {
-   "id": "shani-2026-11-21",
-   "name": "Saturday (Shani-vaar)",
-   "date": "2026-11-21",
-   "tithi": "Dvadasi",
-   "masa": "Margasira",
-   "tags": [
-    "shani",
-    "hanuman",
-    "saturday"
-   ],
-   "mood": "upay"
-  },
-  {
-   "id": "purnima-2026-11-24",
-   "name": "Purnima (Full Moon)",
-   "date": "2026-11-24",
-   "tithi": "Punnami",
-   "masa": "Margasira",
-   "tags": [
-    "purnima",
-    "moon",
-    "vrat"
-   ],
-   "mood": "ananda"
-  },
   {
    "id": "shani-2026-11-28",
    "name": "Saturday (Shani-vaar)",
@@ -370,6 +329,32 @@
     "vrat"
    ],
    "mood": "upay"
+  },
+  {
+   "id": "shani-2027-02-20",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-20",
+   "tithi": "Punnami",
+   "masa": "Phalguna",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "mood": "upay"
+  },
+  {
+   "id": "purnima-2027-02-20",
+   "name": "Purnima (Full Moon)",
+   "date": "2027-02-20",
+   "tithi": "Punnami",
+   "masa": "Phalguna",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ],
+   "mood": "ananda"
   }
  ]
 }

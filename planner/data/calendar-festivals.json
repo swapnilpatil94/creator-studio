@@ -1,5 +1,5 @@
 {
- "source": "web search 2026-10-18 (SAHMS, Dipika, HinduPad, Drik Panchang, SmartPuja, Calendarific); lunar dates differ by 1-2 days between sources and cities. `uncertain_days` is the spread we saw. The engine only uses these dates for planning windows (publish a few days BEFORE), never to state a date publicly: confirm with a panchang for your city before posting a date. + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-19",
+ "source": "web search 2026-10-18 (SAHMS, Dipika, HinduPad, Drik Panchang, SmartPuja, Calendarific); lunar dates differ by 1-2 days between sources and cities. `uncertain_days` is the spread we saw. The engine only uses these dates for planning windows (publish a few days BEFORE), never to state a date publicly: confirm with a panchang for your city before posting a date. + panchang.mjs computed lunar dates (astronomical, not scraped) merged 2026-11-25",
  "events": [
   {
    "id": "ashtami",
@@ -709,6 +709,35 @@
    "queries": [
     "एकादशी व्रत कथा",
     "एकादशी की कहानी"
+   ]
+  },
+  {
+   "id": "shani-2027-02-20",
+   "name": "Saturday (Shani-vaar)",
+   "date": "2027-02-20",
+   "tags": [
+    "shani",
+    "hanuman",
+    "saturday"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "शनि देव कथा",
+    "शनि व्रत कथा"
+   ]
+  },
+  {
+   "id": "purnima-2027-02-20",
+   "name": "Purnima (Full Moon)",
+   "date": "2027-02-20",
+   "tags": [
+    "purnima",
+    "moon",
+    "vrat"
+   ],
+   "uncertain_days": 0,
+   "queries": [
+    "पूर्णिमा व्रत कथा"
    ]
   },
   {
