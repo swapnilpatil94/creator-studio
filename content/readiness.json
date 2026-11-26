@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-25T11:34:22.049Z",
+ "generated": "2026-11-26T11:17:27.907Z",
  "mode": "remote",
- "from": "2026-11-25",
+ "from": "2026-11-26",
  "days": [
-  {
-   "date": "2026-11-25",
-   "cards": [
-    {
-     "id": "w6403366d",
-     "slug": "sukra-swallowed-by-shiva",
-     "title": "जब महादेव ने शुक्राचार्य को निगल लिया",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-26",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-09",
+   "cards": [
+    {
+     "id": "wfa8e56b5",
+     "slug": "ekalavya-after-the-thumb",
+     "title": "अंगूठा कटने के बाद एकलव्य का क्या हुआ? कृष्ण ने उसे क्यों मारा?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-25",
    "2026-11-26",
    "2026-11-27",
    "2026-11-28",
    "2026-11-29",
    "2026-11-30",
-   "2026-12-01"
+   "2026-12-01",
+   "2026-12-02"
   ],
   "ok": false
  }
