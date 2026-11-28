@@ -1,34 +1,8 @@
 {
- "generated": "2026-11-27T11:12:24.970Z",
+ "generated": "2026-11-28T10:44:15.099Z",
  "mode": "remote",
- "from": "2026-11-27",
+ "from": "2026-11-28",
  "days": [
-  {
-   "date": "2026-11-27",
-   "cards": [
-    {
-     "id": "w003bd760",
-     "slug": "polynesia-maui-sun",
-     "title": "माउई ने सूरज को रस्सी से क्यों बाँधा?",
-     "format": "short",
-     "time": "19:00",
-     "gates": {
-      "script": true,
-      "shipped": false,
-      "scheduled": false
-     },
-     "ready": false,
-     "problems": [
-      "not shipped to GitHub (no release with the mp4)"
-     ],
-     "warnings": [
-      "YouTube upload not scheduled"
-     ]
-    }
-   ],
-   "ready": false,
-   "empty": false
-  },
   {
    "date": "2026-11-28",
    "cards": [
@@ -366,6 +340,32 @@
    ],
    "ready": false,
    "empty": false
+  },
+  {
+   "date": "2026-12-11",
+   "cards": [
+    {
+     "id": "w9303a66c",
+     "slug": "celtic-cuchulainn-geis",
+     "title": "कू शुलैन ने दो कसमें क्यों तोड़ीं, और इससे उसकी मौत कैसे हुई?",
+     "format": "short",
+     "time": "19:00",
+     "gates": {
+      "script": true,
+      "shipped": false,
+      "scheduled": false
+     },
+     "ready": false,
+     "problems": [
+      "not shipped to GitHub (no release with the mp4)"
+     ],
+     "warnings": [
+      "YouTube upload not scheduled"
+     ]
+    }
+   ],
+   "ready": false,
+   "empty": false
   }
  ],
  "need": 7,
@@ -373,13 +373,13 @@
   "needed": 7,
   "ready": 0,
   "missing": [
-   "2026-11-27",
    "2026-11-28",
    "2026-11-29",
    "2026-11-30",
    "2026-12-01",
    "2026-12-02",
-   "2026-12-03"
+   "2026-12-03",
+   "2026-12-04"
   ],
   "ok": false
  }
